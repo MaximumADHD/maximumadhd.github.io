@@ -1,0 +1,304 @@
+body
+{
+	background-color: #151515;
+	color: white;
+	font-family: Courier New;
+	white-space: nowrap;
+	padding: 10px;
+}
+
+div::before,
+span::before
+{
+	font-weight: bold;
+}
+
+.Class::before
+{
+	content: "Class";
+	color: #FF6400;
+}
+
+.Enum::before
+{
+	content: "Enum";
+	color: #FF6400;
+}
+
+.Property::before
+{
+	content: "Property";
+	color: #00FFFF;
+}
+
+.Function::before
+{
+	content: "Function";
+	color: #00FF00;
+}
+
+.Event::before
+{
+	content: "Event";
+	color: #E4B731;
+}
+
+.Callback::before
+{
+	content: "Callback";
+	color: #FF00FF;
+}
+
+.EnumItem::before
+{
+	content: "EnumItem";
+	color: #FF6400;
+}
+
+div.Added::before
+{
+	content: "Added";
+	color: #7FFF7F;
+}
+
+div.Changed::before
+{
+	content: "Changed";
+}
+
+div.Removed::before
+{
+	content: "Removed";
+	color: #FF7F7F;
+}
+
+div.ChangeFrom::before
+{
+	content: "from";
+	font-weight: normal;
+	margin-left: 30px;
+}
+
+div.ChangeTo::before
+{
+	content: "to";
+	font-weight: normal;
+	margin-left: 49px;
+}
+
+span.ChangeList::before
+{
+	content: ":";
+	margin-left: -10px;
+}
+
+div.Changed::before,
+span.TagChange::before
+{
+	color: #FFFF7F;
+}
+
+span.TagChange::before
+{
+	content: "Tags";
+}
+
+span.TagChange.Singular::before
+{
+	content: "Tag";
+}
+
+span.TagChange.To::after
+{
+	content: "to";
+}
+
+span.TagChange.From::after
+{
+	content: "from";
+}
+
+span.WhatChanged
+{
+	font-style: italic;
+	font-weight: normal;
+}
+
+span.WhatChanged::before
+{
+	content: "the ";
+	font-style: normal;
+	font-weight: normal;
+}
+
+span.WhatChanged::after
+{
+	content: " of";
+	font-style: normal;
+}
+
+span.Tag,
+span.Security,
+span.Serialization
+{
+	font-weight: bold !important;
+	font-size: 12px !important;
+	font-style: normal !important;
+	text-decoration: none !important;
+}
+
+span.Tag
+{
+	background-color: #56562C;
+	color: #F3F385 !important;
+}
+
+span.Security
+{
+	background-color: #3F0000;
+	color: #FF0000 !important;
+}
+
+span.Serialization
+{
+	background-color: #3F3F6F;
+	color: #CF9FFF !important;
+}
+
+span.Type,
+span.InnerType,
+span.ParamDefault
+{
+	color: #FF6400;
+	font-weight: bold;
+}
+
+span.InnerType::before
+{
+	content: '<';
+	margin-left: -8px;
+}
+
+span.InnerType::after
+{
+	content: '>';
+}
+
+span.ClassName::after,
+span.EnumName::after
+{
+	content: '.';
+	margin-right: -10px;
+}
+
+span.ClassName.Function::after
+{
+	content: ':';
+}
+
+span.Superclass::before,
+span.Value::before
+{
+	content: ":";
+	margin-right: 10px;
+}
+
+span.Value::before,
+span.EnumName::after,
+span.ClassName::after,
+span.InnerType::after,
+span.InnerType::before,
+span.Parameter::after,
+span.Parameters::after,
+span.Parameters::before,
+span.Superclass::before,
+span.ChangeList::before,
+span.ParamDefault.Array,
+span.ParamName.Default::after
+{
+	color: #FFAA50;
+	font-weight: normal;
+}
+
+span.Parameters::before
+{
+	content: '(';
+	font-weight: normal;
+	margin-left: -10px;
+}
+
+span.Parameters::after
+{
+	content: ')';
+}
+
+span.Parameters.Change::before
+{
+	margin-left: 0px;
+}
+
+span.Parameter::after
+{
+	content: ',';
+	margin-left: -8px;
+}
+
+span.Parameter:first-child
+{
+	margin-left: -8px;
+}
+
+span.Parameter:last-child::after
+{
+	content: "";
+}
+
+span.ParamName.Default::after
+{
+	content: " = ";
+}
+
+span.String,
+span.ParamDefault.String
+{
+	color: #00FF00;
+}
+
+span.ParamDefault.String::before,
+span.ParamDefault.String::after
+{
+	content: '"';
+}
+
+span.Value,
+span.Int32,
+span.ParamDefault.Int,
+span.ParamDefault.Int64,
+span.ParamDefault.Float,
+span.ParamDefault.Double
+{
+	color: #FF0000;
+	font-weight: normal;
+}
+
+span.ClassName::before
+{
+	content: "" !important;
+}
+
+.deprecated *,
+.deprecated ::before,
+.deprecated ::after,
+.deprecated::before,
+.deprecated::after
+{
+	font-style: italic;
+	font-weight: normal !important;
+	text-decoration: line-through;
+	color: #7F7F7F !important;
+}
+
+.child
+{
+	margin-left: 40px;
+}
