@@ -1,0 +1,6183 @@
+<head>
+	<link rel="stylesheet" href="api-dump.css">
+</head>
+
+<h2>Version 0.368.0.271345</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Import mesh files as single mesh</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">GamePassService</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">GamePassService</span>
+				<span class="Name">PlayerHasPass</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security and serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">ImageButton</span>
+		<span class="Name">SliceScale</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Serialization">[<🕒> Runtime-only]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{None}</span>
+			<span class="Serialization">[<💾|📁> Saves & Loads]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security and serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">ImageLabel</span>
+		<span class="Name">SliceScale</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Serialization">[<🕒> Runtime-only]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{None}</span>
+			<span class="Serialization">[<💾|📁> Saves & Loads]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Split Meshes</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Font</span>
+			<span class="Name">Gotham</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Font</span>
+			<span class="Name">GothamSemibold</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Font</span>
+			<span class="Name">GothamBold</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Font</span>
+			<span class="Name">GothamBlack</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange from">
+		<span class="Tag">[Hidden]</span>
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ImageButton</span>
+			<span class="Name">SliceScale</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange from">
+		<span class="Tag">[Hidden]</span>
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ImageLabel</span>
+			<span class="Name">SliceScale</span>
+		</span>
+	</span>
+</div>
+
+<h2>Version 0.367.0.269547</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">MessagingService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">MessagingService</span>
+				<span class="Name">PublishAsync</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">topic</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Variant</span>
+						<span class="ParamName">message</span>
+					</span>
+				</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">RBXScriptConnection</span>
+				<span class="ClassName Function">MessagingService</span>
+				<span class="Name">SubscribeAsync</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">topic</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Function</span>
+						<span class="ParamName">callback</span>
+					</span>
+				</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Clothing</span>
+			<span class="Name">Color3</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">ProxyEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">ProxyURL</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">NotificationService</span>
+			<span class="Name">IsLuaBottomBarEnabled</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">ShirtGraphic</span>
+			<span class="Name">Color3</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Split Meshes</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">ViewportFrame</span>
+			<span class="Name">ImageColor3</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">ViewportFrame</span>
+			<span class="Name">ImageTransparency</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">ClassName</span>
+	<span class="Class">
+		<span class="Name">Button</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">"Button"</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">"PluginToolbarButton"</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">ClassName</span>
+	<span class="Class">
+		<span class="Name">Toolbar</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">"Toolbar"</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">"PluginToolbar"</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">InstancePacketCache</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">UseInstancePacketCache</span>
+		</span>
+	</span>
+</div>
+
+<h2>Version 0.366.0.265730</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">KeyframeMarker</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">KeyframeMarker</span>
+				<span class="Name">Value</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">LocalStorageService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">LocalStorageService</span>
+				<span class="Name">Flush</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">LocalStorageService</span>
+				<span class="Name">GetItem</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">key</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">LocalStorageService</span>
+				<span class="Name">SetItem</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">key</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">value</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">LocalStorageService</span>
+				<span class="Name">WhenLoaded</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Function</span>
+						<span class="ParamName">callback</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">LocalStorageService</span>
+				<span class="Name">ItemWasSet</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">key</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">value</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">LocalStorageService</span>
+				<span class="Name">StoreWasCleared</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AppStorageService</span>
+			<span class="Superclass">LocalStorageService</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">UserStorageService</span>
+			<span class="Superclass">LocalStorageService</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ReflectionMetadataItem</span>
+			<span class="Name">ClientOnly</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ReflectionMetadataItem</span>
+			<span class="Name">ServerOnly</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Enum</span>
+			<span class="InnerType">DEPRECATED_DebuggerDataModelPreference</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Attach Debugger To</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">LuaDebuggerEnabledAtStartup</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">RBXScriptSignal</span>
+			<span class="ClassName Function">AnimationTrack</span>
+			<span class="Name">GetMarkerReachedSignal</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Objects</span>
+			<span class="ClassName Function">BasePlayerGui</span>
+			<span class="Name">GetGuiObjectsAtPosition</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">y</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Humanoid</span>
+			<span class="Name">ApplyDescription</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Humanoid</span>
+			<span class="Name">CacheDefaults</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">Humanoid</span>
+			<span class="Name">GetAppliedDescription</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Keyframe</span>
+			<span class="Name">AddMarker</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">marker</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Objects</span>
+			<span class="ClassName Function">Keyframe</span>
+			<span class="Name">GetMarkers</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Keyframe</span>
+			<span class="Name">RemoveMarker</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">marker</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">StarterPlayer</span>
+			<span class="Name">ClearDefaults</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">DEPRECATED_DebuggerDataModelPreference</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DEPRECATED_DebuggerDataModelPreference</span>
+				<span class="Name">Server</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DEPRECATED_DebuggerDataModelPreference</span>
+				<span class="Name">Client</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security and parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Plugin</span>
+		<span class="Name">StartDrag</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">PluginDrag</span>
+					<span class="ParamName">drag</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">dragData</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security and parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">PluginGui</span>
+		<span class="Name">PluginDragDropped</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginDragEvent</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">dragData</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security and parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">PluginGui</span>
+		<span class="Name">PluginDragEntered</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginDragEvent</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">dragData</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security and parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">PluginGui</span>
+		<span class="Name">PluginDragLeft</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginDragEvent</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">dragData</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security and parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">PluginGui</span>
+		<span class="Name">PluginDragMoved</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginDragEvent</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">dragData</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Debug Client In APS Mode</span>
+		</span>
+	</span>
+</div>
+
+<h2>Version 0.365.0.264528</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">NotificationService</span>
+			<span class="Name">IsLuaGameDetailsEnabled</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">string</span>
+			<span class="ClassName Function">AnalyticsService</span>
+			<span class="Name">GetClientId</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">string</span>
+			<span class="ClassName Function">AnalyticsService</span>
+			<span class="Name">GetSessionId</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">UITheme</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">UITheme</span>
+				<span class="Name">Light</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">UITheme</span>
+				<span class="Name">Dark</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange to">
+		<span class="Tag">[ReadOnly]</span>
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">UI Theme</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Studio</span>
+		<span class="Name">UI Theme</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves & Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾> Save-only]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+
+<h2>Version 0.364.0.262407</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PluginMenu</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">PluginMenu</span>
+				<span class="Name">Icon</span>
+				<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">PluginMenu</span>
+				<span class="Name">Title</span>
+				<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">PluginMenu</span>
+				<span class="Name">AddAction</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">action</span>
+					</span>
+				</span>
+				<span class="Security">{PluginSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">PluginMenu</span>
+				<span class="Name">AddMenu</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">menu</span>
+					</span>
+				</span>
+				<span class="Security">{PluginSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Instance</span>
+				<span class="ClassName Function">PluginMenu</span>
+				<span class="Name">AddNewAction</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">actionId</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">text</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName default">icon</span>
+						<span class="ParamDefault string"></span>
+					</span>
+				</span>
+				<span class="Security">{PluginSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">PluginMenu</span>
+				<span class="Name">AddSeparator</span>
+				<span class="Parameters"></span>
+				<span class="Security">{PluginSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">PluginMenu</span>
+				<span class="Name">Clear</span>
+				<span class="Parameters"></span>
+				<span class="Security">{PluginSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Instance</span>
+				<span class="ClassName Function">PluginMenu</span>
+				<span class="Name">ShowAsync</span>
+				<span class="Parameters"></span>
+				<span class="Security">{PluginSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StopWatchReporter</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">StopWatchReporter</span>
+				<span class="Name">FinishTask</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">taskId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">StopWatchReporter</span>
+				<span class="Name">SendReport</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">reportName</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">int</span>
+				<span class="ClassName Function">StopWatchReporter</span>
+				<span class="Name">StartTask</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">reportName</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">taskName</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">KeyframeSequence</span>
+			<span class="Name">AuthoredHipHeight</span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">PluginAction</span>
+			<span class="Name">AllowBinding</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">UserGameSettings</span>
+			<span class="Name">RCCProfilerRecordFrameRate</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">UserGameSettings</span>
+			<span class="Name">RCCProfilerRecordTimeFrame</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">ClientReplicator</span>
+			<span class="Name">RequestRCCProfilerData</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">frameRate</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">timeFrame</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">LocalizationService</span>
+			<span class="Name">PromptDownloadGameTableToCSV</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">table</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">LocalizationService</span>
+			<span class="Name">PromptUploadCSVToGameTable</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">Plugin</span>
+			<span class="Name">CreatePluginMenu</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">id</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName default">title</span>
+					<span class="ParamDefault string"></span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName default">icon</span>
+					<span class="ParamDefault string"></span>
+				</span>
+			</span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">StudioService</span>
+			<span class="Name">CopyToClipboard</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">stringToCopy</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">StudioService</span>
+			<span class="Name">OpenPluginInsertPage</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">assetId</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">StudioService</span>
+			<span class="Name">SetUniverseDisplayName</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">newName</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">ClientReplicator</span>
+			<span class="Name">RCCProfilerDataComplete</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">success</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">message</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Font</span>
+			<span class="Name">Gotham</span>
+			<span class="Value">17</span>
+			<span class="Tag">[Deprecated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Font</span>
+			<span class="Name">GothamSemibold</span>
+			<span class="Value">18</span>
+			<span class="Tag">[Deprecated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Font</span>
+			<span class="Name">GothamBold</span>
+			<span class="Value">19</span>
+			<span class="Tag">[Deprecated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Font</span>
+			<span class="Name">GothamBlack</span>
+			<span class="Value">20</span>
+			<span class="Tag">[Deprecated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Plugin</span>
+		<span class="Name">CreatePluginAction</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">actionId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">text</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">statusTip</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName default">iconName</span>
+					<span class="ParamDefault string"></span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">actionId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">text</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">statusTip</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName default">iconName</span>
+					<span class="ParamDefault string"></span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName default">allowBinding</span>
+					<span class="ParamDefault bool">true</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+
+<h2>Version 0.363.0.258465</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ABTestService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">ABTestService</span>
+				<span class="Name">GetVariant</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">name</span>
+					</span>
+				</span>
+				<span class="Security">{LocalUserSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">ABTestService</span>
+				<span class="Name">InitializeForUserId</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int64</span>
+						<span class="ParamName">userId</span>
+					</span>
+				</span>
+				<span class="Security">{LocalUserSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">HumanoidDescription</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">BackAccessory</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">FaceAccessory</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">FrontAccessory</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">HairAccessory</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">HatAccessory</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">NeckAccessory</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">ShouldersAccessory</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">WaistAccessory</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">ClimbAnimation</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">FallAnimation</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">IdleAnimation</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">JumpAnimation</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">RunAnimation</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">SwimAnimation</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">WalkAnimation</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Color3</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">HeadColor</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Color3</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">LeftArmColor</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Color3</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">LeftLegColor</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Color3</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">RightArmColor</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Color3</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">RightLegColor</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Color3</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">TorsoColor</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">Face</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">Head</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">LeftArm</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">LeftLeg</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">RightArm</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">RightLeg</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">Torso</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">GraphicTShirt</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">Pants</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">Shirt</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">BodyTypeScale</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">DepthScale</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">HeadScale</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">HeightScale</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">ProportionScale</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">HumanoidDescription</span>
+				<span class="Name">WidthScale</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Chat</span>
+			<span class="Name">BubbleChatEnabled</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Player</span>
+			<span class="Name">LoadCharacterWithHumanoidDescription</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ViewportFrame</span>
+			<span class="Name">CurrentCamera</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">ViewportFrame</span>
+		<span class="Name">CurrentCamera</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves & Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> Load-only]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+
+<h2>Version 0.362.0.255825</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">StreamingMinRadius</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">StreamingTargetRadius</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">HttpRequestType</span>
+			<span class="Name">Analytics</span>
+			<span class="Value">22</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">StatusBar</span>
+			<span class="Value">83</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PackageLink</span>
+		</span>
+	</span>
+</div>
+
+<h2>Version 0.361.0.253277</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ViewportFrame</span>
+			<span class="Superclass">GuiObject</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Class</span>
+				<span class="InnerType">Camera</span>
+				<span class="ClassName Property">ViewportFrame</span>
+				<span class="Name">CurrentCamera</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">Massless</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">RootPriority</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">TextBox</span>
+			<span class="Name">CursorPosition</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">LocalizationService</span>
+			<span class="Name">GetTranslatorForPlayerAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">player</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">Midlight</span>
+			<span class="Value">82</span>
+		</span>
+	</span>
+</div>
+
+<h2>Version 0.360.0.251607</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Constraint</span>
+			<span class="Name">Active</span>
+			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">JointInstance</span>
+			<span class="Name">Active</span>
+			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Vector2</span>
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">RightBarSize</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">WeldConstraint</span>
+			<span class="Name">Active</span>
+			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Dictionary</span>
+			<span class="ClassName Function">AssetService</span>
+			<span class="Name">GetBundleDetailsAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">bundleId</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">UserInputService</span>
+		<span class="Name">SendAppUISizes</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Vector2</span>
+					<span class="ParamName">statusBarSize</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector2</span>
+					<span class="ParamName">navBarSize</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector2</span>
+					<span class="ParamName">bottomBarSize</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Vector2</span>
+					<span class="ParamName">statusBarSize</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector2</span>
+					<span class="ParamName">navBarSize</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector2</span>
+					<span class="ParamName">bottomBarSize</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector2</span>
+					<span class="ParamName">rightBarSize</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+
+<h2>Version 0.359.0.249529</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">CoreScriptSyncService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">NotificationService</span>
+			<span class="Name">SelectedTheme</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">PackageLink</span>
+			<span class="Name">Status</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Enable CoreScript Debugger</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">CoreGui</span>
+			<span class="Name">TakeScreenshot</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">CoreGui</span>
+			<span class="Name">ToggleRecording</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Path</span>
+			<span class="Name">ComputeAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">start</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">finish</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">PathfindingService</span>
+			<span class="Name">CreatePath</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName default">agentParameters</span>
+					<span class="ParamDefault Dictionary">nil</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">Path</span>
+			<span class="Name">Blocked</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">blockedWaypointIdx</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">Separator</span>
+			<span class="Value">74</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">ButtonBorder</span>
+			<span class="Value">75</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">ButtonText</span>
+			<span class="Value">76</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">InputFieldBorder</span>
+			<span class="Value">77</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">CheckedFieldBackground</span>
+			<span class="Value">78</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">CheckedFieldBorder</span>
+			<span class="Value">79</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">CheckedFieldIndicator</span>
+			<span class="Value">80</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">HeaderSection</span>
+			<span class="Value">81</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PointsService</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">PointsService</span>
+				<span class="Name">AwardPoints</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">PointsService</span>
+				<span class="Name">GetGamePointBalance</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">PointsService</span>
+				<span class="Name">PointsAwarded</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">TemporaryLegacyPhysicsSolverOverride</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange to">
+		<span class="Tag">[Hidden]</span>
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ImageButton</span>
+			<span class="Name">SliceScale</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange to">
+		<span class="Tag">[Hidden]</span>
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ImageLabel</span>
+			<span class="Name">SliceScale</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security and serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">ImageButton</span>
+		<span class="Name">SliceScale</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{None}</span>
+			<span class="Serialization">[<💾|📁> Saves & Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Serialization">[<🕒> Runtime-only]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security and serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">ImageLabel</span>
+		<span class="Name">SliceScale</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{None}</span>
+			<span class="Serialization">[<💾|📁> Saves & Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Serialization">[<🕒> Runtime-only]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Attachment</span>
+		<span class="Name">Axis</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> Runtime-only]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> Load-only]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Attachment</span>
+		<span class="Name">SecondaryAxis</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> Runtime-only]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> Load-only]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Use Accurate Play Solo</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Lighting</span>
+			<span class="Name">Technology</span>
+		</span>
+	</span>
+</div>
+
+<h2>Version 0.358.0.246716</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Debug Client In APS Mode</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ConnectionError</span>
+			<span class="Name">DisconnectRaknetErrors</span>
+			<span class="Value">279</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ConnectionError</span>
+			<span class="Name">DisconnectWrongVersion</span>
+			<span class="Value">280</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">BadgeService</span>
+			<span class="Name">IsDisabled</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">BadgeService</span>
+			<span class="Name">IsLegal</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Studio</span>
+			<span class="Name">FindTheme</span>
+		</span>
+	</span>
+</div>
+
+<h2>Version 0.357.0.244916</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StudioService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Instance</span>
+				<span class="ClassName Property">StudioService</span>
+				<span class="Name">ActiveScript</span>
+				<span class="Tag">[ReadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Enum</span>
+			<span class="InnerType">RenderFidelity</span>
+			<span class="ClassName Property">PartOperation</span>
+			<span class="Name">RenderFidelity</span>
+			<span class="Security">{✏️PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Tuple</span>
+			<span class="ClassName Function">Model</span>
+			<span class="Name">GetBoundingBox</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">RenderFidelity</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RenderFidelity</span>
+				<span class="Name">Automatic</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RenderFidelity</span>
+				<span class="Name">Precise</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ConnectionError</span>
+			<span class="Name">DisconnectIdle</span>
+			<span class="Value">278</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ConnectionError</span>
+			<span class="Name">PlacelaunchError</span>
+			<span class="Value">516</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">BasePart</span>
+		<span class="Name">SubtractAsync</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Objects</span>
+					<span class="ParamName">parts</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">CollisionFidelity</span>
+					<span class="ParamName default">collisionfidelity</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Objects</span>
+					<span class="ParamName">parts</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">CollisionFidelity</span>
+					<span class="ParamName default">collisionfidelity</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">RenderFidelity</span>
+					<span class="ParamName default">renderFidelity</span>
+					<span class="ParamDefault String">Automatic</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">BasePart</span>
+		<span class="Name">UnionAsync</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Objects</span>
+					<span class="ParamName">parts</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">CollisionFidelity</span>
+					<span class="ParamName default">collisionfidelity</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Objects</span>
+					<span class="ParamName">parts</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">CollisionFidelity</span>
+					<span class="ParamName default">collisionfidelity</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">RenderFidelity</span>
+					<span class="ParamName default">renderFidelity</span>
+					<span class="ParamDefault String">Automatic</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ConnectionError</span>
+			<span class="Name">PlacelauchError</span>
+		</span>
+	</span>
+</div>
+
+<h2>Version 0.356.0.242723</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">ImageButton</span>
+			<span class="Name">SliceScale</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">ImageLabel</span>
+			<span class="Name">SliceScale</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Disable Accurate Play Solo</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">GuiService</span>
+			<span class="Name">ClearError</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Array</span>
+			<span class="ClassName Function">ScriptContext</span>
+			<span class="Name">GetCoverageStats</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">ScriptContext</span>
+			<span class="Name">ResetCoverageCollection</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">ScriptContext</span>
+			<span class="Name">SetCoverageFilter</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">callback</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">ScriptContext</span>
+			<span class="Name">StartCoverageCollection</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">ScriptContext</span>
+			<span class="Name">StopCoverageCollection</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffFilePathBackground</span>
+			<span class="Value">72</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffFilePathBorder</span>
+			<span class="Value">73</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">InputType</span>
+			<span class="Name">LeftTread</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">InputType</span>
+			<span class="Name">RightTread</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">InputType</span>
+			<span class="Name">Steer</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">InputType</span>
+			<span class="Name">Throttle</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">InputType</span>
+			<span class="Name">UpDown</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">InputType</span>
+			<span class="Name">Action1</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">InputType</span>
+			<span class="Name">Action2</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">InputType</span>
+			<span class="Name">Action3</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">InputType</span>
+			<span class="Name">Action4</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">InputType</span>
+			<span class="Name">Action5</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">SurfaceType</span>
+			<span class="Name">Unjoinable</span>
+		</span>
+	</span>
+</div>
+
+<h2>Version 0.355.0.241665</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Enum</span>
+			<span class="InnerType">Technology</span>
+			<span class="ClassName Property">Lighting</span>
+			<span class="Name">Technology</span>
+			<span class="Tag">[NotReplicated]</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Lighting</span>
+			<span class="Name">ExposureCompensation</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Tuple</span>
+			<span class="ClassName Function">Chat</span>
+			<span class="Name">InvokeChatCallback</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">ChatCallbackType</span>
+					<span class="ParamName">callbackType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Tuple</span>
+					<span class="ParamName">callbackArguments</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Chat</span>
+			<span class="Name">RegisterChatCallback</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">ChatCallbackType</span>
+					<span class="ParamName">callbackType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">callbackFunction</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">PhysicsService</span>
+			<span class="Name">IkSolve</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">part</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">CFrame</span>
+					<span class="ParamName">target</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">translateStiffness</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">rotateStiffness</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">PhysicsService</span>
+			<span class="Name">LocalIkSolve</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">part</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">CFrame</span>
+					<span class="ParamName">target</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">translateStiffness</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">rotateStiffness</span>
+				</span>
+			</span>
+			<span class="Security">{LocalUserSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Plugin</span>
+			<span class="Name">StartDecalDrag</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">decal</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">VirtualInputManager</span>
+			<span class="Name">sendRobloxEvent</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">namespace</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">detail</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">detailType</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">ChatCallbackType</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ChatCallbackType</span>
+				<span class="Name">OnCreatingChatWindow</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ChatCallbackType</span>
+				<span class="Name">OnClientSendingMessage</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ChatCallbackType</span>
+				<span class="Name">OnClientFormattingMessage</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ChatCallbackType</span>
+				<span class="Name">OnServerReceivingMessage</span>
+				<span class="Value">17</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">Technology</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">Technology</span>
+				<span class="Name">Legacy</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">Technology</span>
+				<span class="Name">Voxel</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">VirtualInputManager</span>
+		<span class="Name">SendKeyEvent</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isPressed</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">KeyCode</span>
+					<span class="ParamName">keyCode</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isRepeatedKey</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isPressed</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">KeyCode</span>
+					<span class="ParamName">keyCode</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isRepeatedKey</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginGui</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">VirtualInputManager</span>
+		<span class="Name">SendMouseButtonEvent</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">y</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">mouseButton</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isDown</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">y</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">mouseButton</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isDown</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginGui</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">VirtualInputManager</span>
+		<span class="Name">SendMouseMoveEvent</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">y</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">y</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginGui</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">VirtualInputManager</span>
+		<span class="Name">SendMouseWheelEvent</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">y</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isForwardScroll</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">y</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isForwardScroll</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginGui</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">VirtualInputManager</span>
+		<span class="Name">SendTextInputCharacterEvent</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">str</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">str</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginGui</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">MeshPart</span>
+		<span class="Name">CollisionFidelity</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves & Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> Runtime-only]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">PartOperation</span>
+		<span class="Name">CollisionFidelity</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves & Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> Runtime-only]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+
+<h2>Version 0.354.0.238636</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PluginDragEvent</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">PluginDragEvent</span>
+				<span class="Name">Data</span>
+				<span class="Tag">[ReadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">PluginDragEvent</span>
+				<span class="Name">MimeType</span>
+				<span class="Tag">[ReadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector2</span>
+				<span class="ClassName Property">PluginDragEvent</span>
+				<span class="Name">Position</span>
+				<span class="Tag">[ReadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">PluginDragEvent</span>
+				<span class="Name">Sender</span>
+				<span class="Tag">[ReadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int64</span>
+			<span class="ClassName Property">PackageLink</span>
+			<span class="Name">VersionNumber</span>
+			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Plugin</span>
+			<span class="Name">UsesAssetInsertionDrag</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Plugin</span>
+			<span class="Name">StartDrag</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">PluginDrag</span>
+					<span class="ParamName">drag</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">PluginGui</span>
+			<span class="Name">PluginDragDropped</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginDragEvent</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">PluginGui</span>
+			<span class="Name">PluginDragEntered</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginDragEvent</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">PluginGui</span>
+			<span class="Name">PluginDragLeft</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginDragEvent</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">PluginGui</span>
+			<span class="Name">PluginDragMoved</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginDragEvent</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">PluginGui</span>
+			<span class="Name">WindowFocusReleased</span>
+			<span class="Parameters"></span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">PluginGui</span>
+			<span class="Name">WindowFocused</span>
+			<span class="Parameters"></span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PackageLink</span>
+			<span class="Name">VersionId</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">DockWidgetPluginGui</span>
+			<span class="Name">WindowFocusReleased</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">DockWidgetPluginGui</span>
+			<span class="Name">WindowFocused</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange from">
+		<span class="Tag">[ReadOnly]</span>
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">LocalizationService</span>
+			<span class="Name">IsTextScraperRunning</span>
+		</span>
+	</span>
+</div>
+
+<h2>Version 0.353.0.236588</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Objects</span>
+			<span class="ClassName Function">InsertService</span>
+			<span class="Name">LoadPackageAsset</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Content</span>
+					<span class="ParamName">url</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">HttpCachePolicy</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpCachePolicy</span>
+				<span class="Name">None</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpCachePolicy</span>
+				<span class="Name">Full</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpCachePolicy</span>
+				<span class="Name">DataOnly</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpCachePolicy</span>
+				<span class="Name">Default</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpCachePolicy</span>
+				<span class="Name">InternalRedirectRefresh</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">Mid</span>
+			<span class="Value">29</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DebuggerCurrentLine</span>
+			<span class="Value">56</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DebuggerErrorLine</span>
+			<span class="Value">57</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">MainText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">29</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">30</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">SubText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">30</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">31</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">TitlebarText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">31</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">32</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">BrightText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">32</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">33</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DimmedText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">33</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">34</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">LinkText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">34</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">35</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">WarningText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">35</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">36</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ErrorText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">36</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">37</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">InfoText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">37</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">38</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">SensitiveText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">38</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">39</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptSideWidget</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">39</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">40</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">40</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">41</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">41</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">42</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptSelectionText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">42</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">43</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptSelectionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">43</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">44</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptFindSelectionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">44</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">45</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptMatchingWordSelectionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">45</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">46</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptOperator</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">46</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">47</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptNumber</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">47</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">48</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptString</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">48</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">49</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptComment</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">49</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">50</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptPreprocessor</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">50</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">51</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptKeyword</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">51</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">52</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptBuiltInFunction</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">52</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">53</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptWarning</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">53</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">54</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptError</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">54</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">55</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffFilePathText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">55</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">58</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextHunkInfo</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">56</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">59</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextNoChange</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">57</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">60</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextAddition</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">58</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">61</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextDeletion</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">59</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">62</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextSeparatorBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">60</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">63</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextNoChangeBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">61</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">64</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextAdditionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">62</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">65</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextDeletionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">63</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">66</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffLineNum</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">64</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">67</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffLineNumSeparatorBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">65</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">68</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffLineNumNoChangeBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">66</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">69</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffLineNumAdditionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">67</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">70</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffLineNumDeletionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">68</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">71</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">value-type</span>
+	<span class="Property">
+		<span class="ClassName Property">PackageLink</span>
+		<span class="Name">PackageId</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Type">int</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Type">Content</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value-type</span>
+	<span class="Property">
+		<span class="ClassName Property">PackageLink</span>
+		<span class="Name">VersionId</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Type">int</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Type">int64</span>
+	</span>
+</div>
+
+<h2>Version 0.352.0.235319</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">HttpRequest</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">HttpRequest</span>
+				<span class="Name">Cancel</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">HttpRequest</span>
+				<span class="Name">Start</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Function</span>
+						<span class="ParamName">callback</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">PrivateServerId</span>
+			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int64</span>
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">PrivateServerOwnerId</span>
+			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">BasePart</span>
+			<span class="Name">SubtractAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Objects</span>
+					<span class="ParamName">parts</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">CollisionFidelity</span>
+					<span class="ParamName default">collisionfidelity</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">BasePart</span>
+			<span class="Name">UnionAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Objects</span>
+					<span class="ParamName">parts</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">CollisionFidelity</span>
+					<span class="ParamName default">collisionfidelity</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">HttpService</span>
+			<span class="Name">RequestInternal</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">options</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">PluginGui</span>
+			<span class="Name">BindToClose</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName default">function</span>
+					<span class="ParamDefault Function">nil</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Vector2</span>
+			<span class="ClassName Function">PluginGui</span>
+			<span class="Name">GetRelativeMousePosition</span>
+			<span class="Parameters"></span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">HttpError</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpError</span>
+				<span class="Name">OK</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpError</span>
+				<span class="Name">InvalidUrl</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpError</span>
+				<span class="Name">DnsResolve</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpError</span>
+				<span class="Name">ConnectFail</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpError</span>
+				<span class="Name">OutOfMemory</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpError</span>
+				<span class="Name">TimedOut</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpError</span>
+				<span class="Name">TooManyRedirects</span>
+				<span class="Value">6</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpError</span>
+				<span class="Name">InvalidRedirect</span>
+				<span class="Value">7</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpError</span>
+				<span class="Name">NetFail</span>
+				<span class="Value">8</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpError</span>
+				<span class="Name">Aborted</span>
+				<span class="Value">9</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpError</span>
+				<span class="Name">SslConnectFail</span>
+				<span class="Value">10</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HttpError</span>
+				<span class="Name">Unknown</span>
+				<span class="Value">11</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffFilePathText</span>
+			<span class="Value">55</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffTextHunkInfo</span>
+			<span class="Value">56</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffTextNoChange</span>
+			<span class="Value">57</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffTextAddition</span>
+			<span class="Value">58</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffTextDeletion</span>
+			<span class="Value">59</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffTextSeparatorBackground</span>
+			<span class="Value">60</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffTextNoChangeBackground</span>
+			<span class="Value">61</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffTextAdditionBackground</span>
+			<span class="Value">62</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffTextDeletionBackground</span>
+			<span class="Value">63</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffLineNum</span>
+			<span class="Value">64</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffLineNumSeparatorBackground</span>
+			<span class="Value">65</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffLineNumNoChangeBackground</span>
+			<span class="Value">66</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffLineNumAdditionBackground</span>
+			<span class="Value">67</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DiffLineNumDeletionBackground</span>
+			<span class="Value">68</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange to">
+		<span class="Tag">[Hidden]</span>
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">VIPServerId</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange to">
+		<span class="Tag">[Hidden]</span>
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">VIPServerOwnerId</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">TeleportService</span>
+		<span class="Name">ReserveServer</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Type">string</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Type">Tuple</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">BasePart</span>
+			<span class="Name">Negate</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">BasePart</span>
+			<span class="Name">Separate</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">BasePart</span>
+			<span class="Name">UnionWith</span>
+		</span>
+	</span>
+</div>
+
+<h2>Version 0.351.0.232950</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PackageLink</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int</span>
+				<span class="ClassName Property">PackageLink</span>
+				<span class="Name">PackageId</span>
+				<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+				<span class="Tag">[ReadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int</span>
+				<span class="ClassName Property">PackageLink</span>
+				<span class="Name">VersionId</span>
+				<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+				<span class="Tag">[ReadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">QWidgetPluginGui</span>
+			<span class="Superclass">PluginGui</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">RenderingTest</span>
+			<span class="Name">Description</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">RenderingTest</span>
+			<span class="Name">ShouldSkip</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">RenderingTest</span>
+			<span class="Name">Ticket</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">string</span>
+			<span class="ClassName Function">HttpRbxApiService</span>
+			<span class="Name">RequestAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">requestOptions</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">ThrottlingPriority</span>
+					<span class="ParamName default">priority</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">HttpContentType</span>
+					<span class="ParamName default">content_type</span>
+					<span class="ParamDefault String">ApplicationJson</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">HttpRequestType</span>
+					<span class="ParamName default">httpRequestType</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName default">doNotAllowDiabolicalMode</span>
+					<span class="ParamDefault bool">false</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">HttpService</span>
+			<span class="Name">GetHttpEnabled</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">HttpService</span>
+			<span class="Name">SetHttpEnabled</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">enabled</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">Plugin</span>
+			<span class="Name">CreateQWidgetPluginGui</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">pluginGuiId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">pluginGuiOptions</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">ScriptMatchingWordSelectionBackground</span>
+			<span class="Value">45</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">Elasticity</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves & Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> Load-only]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">Friction</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves & Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> Load-only]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">superclass</span>
+	<span class="Class">
+		<span class="Name">Workspace</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">RootInstance</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Model</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">RootInstance</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">Scale9Frame</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">Scale9Frame</span>
+				<span class="Name">ScaleEdgeSize</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">Scale9Frame</span>
+				<span class="Name">SlicePrefix</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">ScriptMachtingWordSelectionBackground</span>
+		</span>
+	</span>
+</div>
+
+<h2>Version 0.350.0.231118</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StudioTheme</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Color3</span>
+				<span class="ClassName Function">StudioTheme</span>
+				<span class="Name">GetColor</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Enum</span>
+						<span class="InnerType">StudioStyleGuideColor</span>
+						<span class="ParamName">styleguideitem</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Enum</span>
+						<span class="InnerType">StudioStyleGuideModifier</span>
+						<span class="ParamName default">modifier</span>
+						<span class="ParamDefault String">Default</span>
+					</span>
+				</span>
+				<span class="Security">{PluginSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">StudioTheme</span>
+				<span class="Name">GetPath</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">assetid</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Enum</span>
+						<span class="InnerType">StudioStyleGuideModifier</span>
+						<span class="ParamName default">modifier</span>
+						<span class="ParamDefault String">Default</span>
+					</span>
+				</span>
+				<span class="Security">{PluginSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Content</span>
+			<span class="ClassName Property">ImageButton</span>
+			<span class="Name">HoverImage</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Content</span>
+			<span class="ClassName Property">ImageButton</span>
+			<span class="Name">PressedImage</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Instance</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Theme</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">Studio</span>
+			<span class="Name">FindTheme</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">themeName</span>
+				</span>
+			</span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Array</span>
+			<span class="ClassName Function">Studio</span>
+			<span class="Name">GetAvailableThemes</span>
+			<span class="Parameters"></span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">TeleportService</span>
+			<span class="Name">GetArrivingTeleportGui</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">Studio</span>
+			<span class="Name">ThemeChanged</span>
+			<span class="Parameters"></span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">MainBackground</span>
+			<span class="Value">0</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">Titlebar</span>
+			<span class="Value">1</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">Dropdown</span>
+			<span class="Value">2</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">InputFieldBackground</span>
+			<span class="Value">15</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">CategoryItem</span>
+			<span class="Value">18</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">GameSettingsTableItem</span>
+			<span class="Value">19</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">GameSettingsTooltip</span>
+			<span class="Value">20</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">ColorPickerFrame</span>
+			<span class="Value">23</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">CurrentMarker</span>
+			<span class="Value">24</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">Light</span>
+			<span class="Value">27</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">Dark</span>
+			<span class="Value">28</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">SubText</span>
+			<span class="Value">30</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">BrightText</span>
+			<span class="Value">32</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DimmedText</span>
+			<span class="Value">33</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">ScriptSideWidget</span>
+			<span class="Value">39</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Settings]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DebugSettings</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Settings]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">GameSettings</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Settings]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">LuaSettings</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Settings]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PhysicsSettings</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">Tooltip</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">2</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">3</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">Notification</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">1</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">4</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScrollBar</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">12</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">5</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScrollBarBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">13</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">6</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">TabBar</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">5</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">7</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">Tab</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">6</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">8</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">RibbonTab</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">8</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">9</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">RibbonTabTopBar</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">9</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">10</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">Button</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">16</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">11</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">MainButton</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">17</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">12</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">RibbonButton</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">18</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">13</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">Item</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">3</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">16</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">TableItem</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">4</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">17</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">EmulatorBar</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">10</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">21</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">EmulatorDropDown</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">11</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">22</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">Border</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">19</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">25</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">Shadow</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">20</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">26</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">MainText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">21</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">29</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">TitlebarText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">22</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">31</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">LinkText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">25</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">34</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">WarningText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">26</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">35</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ErrorText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">27</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">36</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">InfoText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">28</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">37</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">SensitiveText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">29</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">38</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">30</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">40</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">31</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">41</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptSelectionText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">32</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">42</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptSelectionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">33</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">43</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptFindSelectionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">34</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">44</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptMachtingWordSelectionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">35</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">45</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptOperator</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">36</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">46</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptNumber</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">37</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">47</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptString</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">38</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">48</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptComment</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">39</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">49</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptPreprocessor</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">40</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">50</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptKeyword</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">41</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">51</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptBuiltInFunction</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">42</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">52</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptWarning</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">43</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">53</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptError</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">44</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">54</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">Theme</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">MainSection</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">Menu</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">InputField</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">HighlightText</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">DimmerText</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Service]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DebugSettings</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Service]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">GameSettings</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Service]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">LuaSettings</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Service]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PhysicsSettings</span>
+		</span>
+	</span>
+</div>
