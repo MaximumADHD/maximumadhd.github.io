@@ -4,9 +4,25 @@ body
 	color: white;
 	font-family: Courier New;
 	white-space: nowrap;
-	padding: 10px;
+	padding: 20px;
+	padding-top: unset;
+	padding-bottom: unset;
+	margin-top: -20px;
 	transform: scale(1.5);
 	transform-origin: 0 0;
+}
+
+h2
+{
+	margin-left: -18px;
+}
+
+hr
+{
+	margin-left: -30px;
+	margin-right: -50px;
+	margin-top: 20px;
+	background-color: #555;
 }
 
 ::before
@@ -230,7 +246,6 @@ span.ParamDefault.Array,
 span.ParamName.Default::after
 {
 	color: #FFAA50;
-	font-weight: normal;
 }
 
 span.Parameters::before
@@ -275,12 +290,16 @@ span.String,
 span.ParamDefault.String
 {
 	color: #00FF00;
+	font-weight: normal;
 }
 
+span.String::after,
+span.String::before,
 span.ParamDefault.String::after,
 span.ParamDefault.String::before
 {
 	content: '"' !important;
+	font-weight: normal !important;
 }
 
 span.Int32,
@@ -291,7 +310,6 @@ span.ParamDefault.Float,
 span.ParamDefault.Double
 {
 	color: #FF0000;
-	font-weight: normal;
 }
 
 span.ClassName::before,
