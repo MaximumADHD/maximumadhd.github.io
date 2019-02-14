@@ -1071,6 +1071,68 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AntiAddictionService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">AntiAddictionService</span>
+	<span class="Name">GetAntiAddictionData</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AntiAddictionService</span>
+	<span class="Name">MarkRead</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">messageId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AntiAddictionService</span>
+	<span class="Name">Start</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AntiAddictionService</span>
+	<span class="Name">Stop</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AntiAddictionService</span>
+	<span class="Name">Updated</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">antiAddictionData</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">AssetService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -5891,6 +5953,70 @@
 	<span class="Name">MotorFeature</span>
 	<span class="Superclass">Feature</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">File</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">File</span>
+	<span class="Name">FileName</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">File</span>
+	<span class="Name">FileSize</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">File</span>
+	<span class="Name">Size</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">File</span>
+	<span class="Name">GetBinaryContents</span>
+	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function deprecated child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">File</span>
+	<span class="Name">GetFileContentsBinary</span>
+	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Content</span>
+	<span class="ClassName Function">File</span>
+	<span class="Name">GetTemporaryId</span>
+	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
@@ -12437,49 +12563,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">LocalAsset</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">LocalAsset</span>
-	<span class="Name">FileName</span>
-	<span class="Security">{PluginSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int64</span>
-	<span class="ClassName Property">LocalAsset</span>
-	<span class="Name">FileSize</span>
-	<span class="Security">{PluginSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">string</span>
-	<span class="ClassName Function">LocalAsset</span>
-	<span class="Name">GetFileContentsBinary</span>
-	<span class="Parameters"></span>
-	<span class="Security">{PluginSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Content</span>
-	<span class="ClassName Function">LocalAsset</span>
-	<span class="Name">GetTemporaryId</span>
-	<span class="Parameters"></span>
-	<span class="Security">{PluginSecurity}</span>
-</div>
-
-<div class="Class">
 	<span class="Name">LocalStorageService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -12650,6 +12733,20 @@
 	<span class="ClassName Function">LocalizationService</span>
 	<span class="Name">GetCorescriptLocalizations</span>
 	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">LocalizationService</span>
+	<span class="Name">GetTableEntries</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName default">instance</span>
+			<span class="ParamDefault Instance">nil</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Function child">
@@ -16754,7 +16851,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">StreamingEnabled</span>
-	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -23263,6 +23359,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">SoundService</span>
+	<span class="Name">GetSoundMemoryData</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">SoundService</span>
 	<span class="Name">PlayLocalSound</span>
@@ -24210,6 +24314,36 @@
 <div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">StudioService</span>
+	<span class="Name">PromptImportFile</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName default">fileTypeFilter</span>
+			<span class="ParamDefault Array">{}</span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">PromptImportFiles</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName default">fileTypeFilter</span>
+			<span class="ParamDefault Array">{}</span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function deprecated child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">StudioService</span>
 	<span class="Name">PromptImportLocalAsset</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -24224,9 +24358,10 @@
 	</span>
 	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[Yields]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">Objects</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">PromptImportLocalAssets</span>
@@ -24243,6 +24378,7 @@
 	</span>
 	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[Yields]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -37275,8 +37411,14 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">UserInputType</span>
-	<span class="Name">None</span>
+	<span class="Name">InputMethod</span>
 	<span class="Value">21</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">UserInputType</span>
+	<span class="Name">None</span>
+	<span class="Value">22</span>
 </div>
 
 <div class="Enum">
