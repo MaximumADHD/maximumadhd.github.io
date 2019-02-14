@@ -93,6 +93,12 @@ div.Removed::before
 	color: #FF7F7F;
 }
 
+div.Renamed::before
+{
+	content: "Renamed";
+	color: #7F7FFF;
+}
+
 .ChangeTo::before,
 .ChangeFrom::before,
 .TagChange.To::before,
