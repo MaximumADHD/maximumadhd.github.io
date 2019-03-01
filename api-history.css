@@ -252,6 +252,7 @@ span.ParamDefault.Array,
 span.ParamName.Default::after
 {
 	color: #FFAA50;
+	font-weight: normal;
 }
 
 span.Parameters::before
@@ -316,6 +317,7 @@ span.ParamDefault.Float,
 span.ParamDefault.Double
 {
 	color: #FF0000;
+	font-weight: normal;
 }
 
 span.ClassName::before,

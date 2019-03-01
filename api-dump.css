@@ -275,12 +275,14 @@ span.String,
 span.ParamDefault.String
 {
 	color: #00FF00;
+	font-weight: normal;
 }
 
 span.ParamDefault.String::after,
 span.ParamDefault.String::before
 {
 	content: '"' !important;
+	font-weight: normal;
 }
 
 span.Int32,

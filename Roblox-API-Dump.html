@@ -1071,68 +1071,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">AntiAddictionService</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Dictionary</span>
-	<span class="ClassName Function">AntiAddictionService</span>
-	<span class="Name">GetAntiAddictionData</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AntiAddictionService</span>
-	<span class="Name">MarkRead</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">messageId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AntiAddictionService</span>
-	<span class="Name">Start</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">userId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AntiAddictionService</span>
-	<span class="Name">Stop</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">AntiAddictionService</span>
-	<span class="Name">Updated</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Dictionary</span>
-			<span class="ParamName">antiAddictionData</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Class">
 	<span class="Name">AssetService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -2405,6 +2343,14 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">BrowserService</span>
+	<span class="Name">CopyAuthCookieFromBrowserToEngine</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">BrowserService</span>
 	<span class="Name">EmitHybridEvent</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -2456,6 +2402,14 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">BrowserService</span>
+	<span class="Name">OpenWeChatAuthWindow</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">BrowserService</span>
 	<span class="Name">ReturnToJavaScript</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -2471,6 +2425,13 @@
 			<span class="ParamName">params</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">BrowserService</span>
+	<span class="Name">AuthCookieCopiedToEngine</span>
+	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -12746,7 +12707,6 @@
 			<span class="ParamDefault Instance">nil</span>
 		</span>
 	</span>
-	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Function child">
@@ -17232,6 +17192,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PackageLink</span>
+	<span class="Name">AutoUpdate</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">PackageLink</span>
 	<span class="Name">PackageId</span>
@@ -19483,6 +19450,32 @@
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Players</span>
+	<span class="Name">SetLocalPlayerInfo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">userName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">MembershipType</span>
+			<span class="ParamName">membershipType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isUnder13</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -24034,6 +24027,24 @@
 	<span class="InnerType">ServerAudioBehavior</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Server Audio Behavior</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Auto-Recovery Enabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Auto-Recovery Interval (Minutes)</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">QDir</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Auto-Recovery Path</span>
 </div>
 
 <div class="Property child">
@@ -34323,6 +34334,13 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Glass</span>
 	<span class="Value">1568</span>
+</div>
+
+<div class="EnumItem deprecated child">
+	<span class="EnumName">Material</span>
+	<span class="Name">ForceField</span>
+	<span class="Value">1584</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="EnumItem child">

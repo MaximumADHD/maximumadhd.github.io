@@ -2,6 +2,192 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="374">
+
+<h2>Version 0.374.0.282978</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">PackageLink</span>
+			<span class="Name">AutoUpdate</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Auto-Recovery Enabled</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Auto-Recovery Interval (Minutes)</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">QDir</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Auto-Recovery Path</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">BrowserService</span>
+			<span class="Name">CopyAuthCookieFromBrowserToEngine</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">BrowserService</span>
+			<span class="Name">OpenWeChatAuthWindow</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Players</span>
+			<span class="Name">SetLocalPlayerInfo</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">userId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">userName</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">MembershipType</span>
+					<span class="ParamName">membershipType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isUnder13</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">BrowserService</span>
+			<span class="Name">AuthCookieCopiedToEngine</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">ForceField</span>
+			<span class="Value">1584</span>
+			<span class="Tag">[Deprecated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AntiAddictionService</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">AntiAddictionService</span>
+				<span class="Name">GetAntiAddictionData</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">AntiAddictionService</span>
+				<span class="Name">MarkRead</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">AntiAddictionService</span>
+				<span class="Name">Start</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">AntiAddictionService</span>
+				<span class="Name">Stop</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">AntiAddictionService</span>
+				<span class="Name">Updated</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Yields]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">LocalizationService</span>
+			<span class="Name">GetTableEntries</span>
+		</span>
+	</span>
+</div>
+
 <hr id="373">
 
 <h2>Version 0.373.0.280591</h2>
