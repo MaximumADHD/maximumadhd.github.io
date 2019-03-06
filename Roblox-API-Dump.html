@@ -1174,6 +1174,19 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">AssetService</span>
+	<span class="Name">GetBundleDetailsSync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">bundleId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">int64</span>
 	<span class="ClassName Function">AssetService</span>
@@ -1351,6 +1364,210 @@
 			<span class="ParamName">axis</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">Backpack</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Class">
+	<span class="Name">BackpackItem</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">BackpackItem</span>
+	<span class="Name">TextureId</span>
+</div>
+
+<div class="Class deprecated">
+	<span class="Name">HopperBin</span>
+	<span class="Superclass">BackpackItem</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">HopperBin</span>
+	<span class="Name">Active</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">BinType</span>
+	<span class="ClassName Property">HopperBin</span>
+	<span class="Name">BinType</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function deprecated child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">HopperBin</span>
+	<span class="Name">Disable</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function deprecated child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">HopperBin</span>
+	<span class="Name">ToggleSelect</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Event deprecated child">
+	<span class="ClassName Event">HopperBin</span>
+	<span class="Name">Deselected</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Event deprecated child">
+	<span class="ClassName Event">HopperBin</span>
+	<span class="Name">Selected</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">mouse</span>
+		</span>
+	</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">Tool</span>
+	<span class="Superclass">BackpackItem</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">Grip</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">GripForward</span>
+	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">GripPos</span>
+	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">GripRight</span>
+	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">GripUp</span>
+	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">ToolTip</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">CanBeDropped</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">ManualActivationOnly</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">RequiresHandle</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">Enabled</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Tool</span>
+	<span class="Name">Activate</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Tool</span>
+	<span class="Name">Deactivate</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Tool</span>
+	<span class="Name">Activated</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Tool</span>
+	<span class="Name">Deactivated</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Tool</span>
+	<span class="Name">Equipped</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">mouse</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Tool</span>
+	<span class="Name">Unequipped</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Class deprecated">
+	<span class="Name">Flag</span>
+	<span class="Superclass">Tool</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">BrickColor</span>
+	<span class="ClassName Property">Flag</span>
+	<span class="Name">TeamColor</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -9062,244 +9279,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">GuiItem</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">Backpack</span>
-	<span class="Superclass">GuiItem</span>
-</div>
-
-<div class="Class">
-	<span class="Name">BackpackItem</span>
-	<span class="Superclass">GuiItem</span>
-	<span class="Tag">[NotCreatable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Content</span>
-	<span class="ClassName Property">BackpackItem</span>
-	<span class="Name">TextureId</span>
-</div>
-
-<div class="Class deprecated">
-	<span class="Name">HopperBin</span>
-	<span class="Superclass">BackpackItem</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">HopperBin</span>
-	<span class="Name">Active</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">Enum</span>
-	<span class="InnerType">BinType</span>
-	<span class="ClassName Property">HopperBin</span>
-	<span class="Name">BinType</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Function deprecated child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">HopperBin</span>
-	<span class="Name">Disable</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Function deprecated child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">HopperBin</span>
-	<span class="Name">ToggleSelect</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Event deprecated child">
-	<span class="ClassName Event">HopperBin</span>
-	<span class="Name">Deselected</span>
-	<span class="Parameters"></span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Event deprecated child">
-	<span class="ClassName Event">HopperBin</span>
-	<span class="Name">Selected</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">mouse</span>
-		</span>
-	</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">Tool</span>
-	<span class="Superclass">BackpackItem</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">CFrame</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">Grip</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">GripForward</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">GripPos</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">GripRight</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">GripUp</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">ToolTip</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">CanBeDropped</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">ManualActivationOnly</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">RequiresHandle</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">Enabled</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">Tool</span>
-	<span class="Name">Activate</span>
-	<span class="Parameters"></span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">Tool</span>
-	<span class="Name">Deactivate</span>
-	<span class="Parameters"></span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">Tool</span>
-	<span class="Name">Activated</span>
-	<span class="Parameters"></span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">Tool</span>
-	<span class="Name">Deactivated</span>
-	<span class="Parameters"></span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">Tool</span>
-	<span class="Name">Equipped</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">mouse</span>
-		</span>
-	</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">Tool</span>
-	<span class="Name">Unequipped</span>
-	<span class="Parameters"></span>
-</div>
-
-<div class="Class deprecated">
-	<span class="Name">Flag</span>
-	<span class="Superclass">Tool</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">BrickColor</span>
-	<span class="ClassName Property">Flag</span>
-	<span class="Name">TeamColor</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">ButtonBindingWidget</span>
-	<span class="Superclass">GuiItem</span>
-	<span class="Tag">[NotCreatable]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">GuiRoot</span>
-	<span class="Superclass">GuiItem</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class deprecated">
-	<span class="Name">Hopper</span>
-	<span class="Superclass">GuiItem</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">StarterPack</span>
-	<span class="Superclass">GuiItem</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-</div>
-
-<div class="Class">
 	<span class="Name">GuiService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -10010,6 +9989,14 @@
 	</span>
 </div>
 
+<div class="Class deprecated">
+	<span class="Name">Hopper</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">HttpRbxApiService</span>
 	<span class="Superclass">Instance</span>
@@ -10589,6 +10576,12 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">JumpHeight</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">JumpPower</span>
 </div>
 
@@ -10602,6 +10595,12 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">MaxSlopeAngle</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">UseJumpPower</span>
 </div>
 
 <div class="Property child">
@@ -16864,6 +16863,23 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">float</span>
+	<span class="ClassName Function">Workspace</span>
+	<span class="Name">CalculateJumpPower</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">gravity</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">jumpHeight</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">Workspace</span>
 	<span class="Name">ExperimentalSolverIsEnabled</span>
@@ -17220,8 +17236,8 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">PackageLink</span>
 	<span class="Name">VersionNumber</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
-	<span class="Tag">[ReadOnly]</span>
+	<span class="Security">{✏️NotAccessibleSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -22237,6 +22253,19 @@
 	<span class="Security">{PluginSecurity}</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">GetObjectsList</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">urls</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">DataModel</span>
@@ -23447,6 +23476,13 @@
 </div>
 
 <div class="Class">
+	<span class="Name">StarterPack</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">StarterPlayer</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -23499,6 +23535,36 @@
 	<span class="Name">AllowCustomAnimations</span>
 	<span class="Security">{✏️RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">CharacterJumpHeight</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">CharacterJumpPower</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">CharacterMaxSlopeAngle</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">CharacterUseJumpPower</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">CharacterWalkSpeed</span>
 </div>
 
 <div class="Property child">
@@ -24455,6 +24521,19 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">GetClassIcon</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">className</span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
