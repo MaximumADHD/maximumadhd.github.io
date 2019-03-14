@@ -2699,6 +2699,14 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">MeshContentProvider</span>
+	<span class="Name">GetContentMemoryData</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">SolidModelContentProvider</span>
 	<span class="Superclass">CacheableContentProvider</span>
@@ -10388,6 +10396,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">HumanoidCollisionType</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">CollisionType</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">AutoJumpEnabled</span>
@@ -12791,7 +12807,13 @@
 	<span class="Type">void</span>
 	<span class="ClassName Function">LocalizationService</span>
 	<span class="Name">StartTextScraper</span>
-	<span class="Parameters"></span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName default">enforceRequirements</span>
+			<span class="ParamDefault bool">false</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -14935,6 +14957,10 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">sequenceNumber</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">namespaceSequenceNumbers</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -17238,6 +17264,14 @@
 	<span class="Name">VersionNumber</span>
 	<span class="Security">{✏️NotAccessibleSecurity}</span>
 	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PackageService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -25931,6 +25965,28 @@
 	</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">float</span>
+	<span class="ClassName Function">TweenService</span>
+	<span class="Name">GetValue</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">alpha</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">EasingStyle</span>
+			<span class="ParamName">easingStyle</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">EasingDirection</span>
+			<span class="ParamName">easingDirection</span>
+		</span>
+	</span>
+</div>
+
 <div class="Class">
 	<span class="Name">UIBase</span>
 	<span class="Superclass">Instance</span>
@@ -32170,6 +32226,22 @@
 	<span class="EnumName">HttpRequestType</span>
 	<span class="Name">Localization</span>
 	<span class="Value">24</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">HumanoidCollisionType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">HumanoidCollisionType</span>
+	<span class="Name">OuterBox</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">HumanoidCollisionType</span>
+	<span class="Name">InnerBox</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
