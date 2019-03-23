@@ -794,6 +794,36 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AnalyticsService</span>
+	<span class="Name">TrackEventWithArgs</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">category</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">action</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">label</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">args</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName default">value</span>
+			<span class="ParamDefault int64">0</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AnalyticsService</span>
 	<span class="Name">UpdateHeartbeatObject</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -3878,6 +3908,30 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">AlignPosition</span>
 	<span class="Name">Responsiveness</span>
+</div>
+
+<div class="Class">
+	<span class="Name">AngularVelocity</span>
+	<span class="Superclass">Constraint</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">AngularVelocity</span>
+	<span class="Name">AngularVelocity</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">AngularVelocity</span>
+	<span class="Name">MaxTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">ActuatorRelativeTo</span>
+	<span class="ClassName Property">AngularVelocity</span>
+	<span class="Name">RelativeTo</span>
 </div>
 
 <div class="Class">
@@ -10406,12 +10460,6 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Humanoid</span>
-	<span class="Name">AutoJumpEnabled</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">AutoRotate</span>
 </div>
 
@@ -10592,18 +10640,6 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Humanoid</span>
-	<span class="Name">JumpHeight</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">Humanoid</span>
-	<span class="Name">JumpPower</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">MaxHealth</span>
 </div>
 
@@ -10614,15 +10650,33 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">WalkSpeed</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Humanoid</span>
-	<span class="Name">UseJumpPower</span>
+	<span class="Name">AutoJumpEnabled</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Humanoid</span>
-	<span class="Name">WalkSpeed</span>
+	<span class="Name">JumpHeight</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">JumpPower</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">UseJumpPower</span>
 </div>
 
 <div class="Property deprecated child">
@@ -19316,6 +19370,39 @@
 <div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">Players</span>
+	<span class="Name">CreateHumanoidModelFromDescription</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">description</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">HumanoidRigType</span>
+			<span class="ParamName">rigType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">Players</span>
+	<span class="Name">CreateHumanoidModelFromUserId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">Players</span>
 	<span class="Name">CreateLocalPlayer</span>
 	<span class="Parameters"></span>
 	<span class="Security">{LocalUserSecurity}</span>
@@ -19927,6 +20014,11 @@
 			<span class="Type">Instance</span>
 			<span class="ParamName">rigModel</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName default">isR15</span>
+			<span class="ParamDefault bool">true</span>
+		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[Yields]</span>
@@ -19936,7 +20028,13 @@
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">Plugin</span>
 	<span class="Name">ImportFbxRig</span>
-	<span class="Parameters"></span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName default">isR15</span>
+			<span class="ParamDefault bool">true</span>
+		</span>
+	</span>
 	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
@@ -23575,30 +23673,40 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">CharacterJumpHeight</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">CharacterJumpPower</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">CharacterMaxSlopeAngle</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">CharacterUseJumpPower</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">CharacterWalkSpeed</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
@@ -27053,6 +27161,15 @@
 	<span class="ClassName Function">UserInputService</span>
 	<span class="Name">GetDeviceRotation</span>
 	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">DeviceType</span>
+	<span class="ClassName Function">UserInputService</span>
+	<span class="Name">GetDeviceType</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -31018,6 +31135,34 @@
 	<span class="EnumName">DeveloperMemoryTag</span>
 	<span class="Name">Navigation</span>
 	<span class="Value">22</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">DeviceType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DeviceType</span>
+	<span class="Name">Unknown</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DeviceType</span>
+	<span class="Name">Desktop</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DeviceType</span>
+	<span class="Name">Tablet</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DeviceType</span>
+	<span class="Name">Phone</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
