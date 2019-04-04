@@ -3810,7 +3810,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Constraint</span>
 	<span class="Name">Active</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -11834,7 +11833,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">JointInstance</span>
 	<span class="Name">Active</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -11897,33 +11895,38 @@
 	<span class="Superclass">DynamicRotate</span>
 </div>
 
-<div class="Class">
+<div class="Class deprecated">
 	<span class="Name">Glue</span>
 	<span class="Superclass">JointInstance</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Glue</span>
 	<span class="Name">F0</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Glue</span>
 	<span class="Name">F1</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Glue</span>
 	<span class="Name">F2</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Glue</span>
 	<span class="Name">F3</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class">
@@ -12037,28 +12040,31 @@
 	<span class="Superclass">JointInstance</span>
 </div>
 
-<div class="Class">
+<div class="Class deprecated">
 	<span class="Name">JointsService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">JointsService</span>
 	<span class="Name">ClearJoinAfterMoveJoints</span>
 	<span class="Parameters"></span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">JointsService</span>
 	<span class="Name">CreateJoinAfterMoveJoints</span>
 	<span class="Parameters"></span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">JointsService</span>
 	<span class="Name">SetJoinAfterMoveInstance</span>
@@ -12068,9 +12074,10 @@
 			<span class="ParamName">joinInstance</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">JointsService</span>
 	<span class="Name">SetJoinAfterMoveTarget</span>
@@ -12080,13 +12087,15 @@
 			<span class="ParamName">joinTarget</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">JointsService</span>
 	<span class="Name">ShowPermissibleJoints</span>
 	<span class="Parameters"></span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class">
@@ -23685,41 +23694,13 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">StarterPlayer</span>
-	<span class="Name">CharacterJumpHeight</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">StarterPlayer</span>
-	<span class="Name">CharacterJumpPower</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">CharacterMaxSlopeAngle</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">StarterPlayer</span>
-	<span class="Name">CharacterUseJumpPower</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">CharacterWalkSpeed</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
@@ -23881,6 +23862,24 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">LoadCharacterAppearance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">CharacterJumpHeight</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">CharacterJumpPower</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">CharacterUseJumpPower</span>
 </div>
 
 <div class="Property child">
@@ -24689,6 +24688,14 @@
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int64</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">GetUserId</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -27269,6 +27276,19 @@
 	<span class="Name">GetPlatform</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">UserInputService</span>
+	<span class="Name">GetStringForKeyCode</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">KeyCode</span>
+			<span class="ParamName">keyCode</span>
+		</span>
+	</span>
 </div>
 
 <div class="Function child">
