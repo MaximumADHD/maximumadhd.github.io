@@ -192,6 +192,12 @@ span.Security
 	color: #FF0000 !important;
 }
 
+span.Security.Darken
+{
+	background-color: #2F2F2F;
+	color: #9F9F9F !important;
+}
+
 span.Serialization
 {
 	background-color: #3F3F6F;
