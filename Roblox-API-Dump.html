@@ -9583,6 +9583,13 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">GuiService</span>
+	<span class="Name">GetEmotesMenuOpen</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Enum</span>
 	<span class="InnerType">ConnectionError</span>
 	<span class="ClassName Function">GuiService</span>
@@ -9759,6 +9766,18 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">GuiService</span>
+	<span class="Name">SetEmotesMenuOpen</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isOpen</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GuiService</span>
 	<span class="Name">SetGlobalGuiInset</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -9870,6 +9889,18 @@
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">GuiService</span>
+	<span class="Name">EmotesMenuOpenChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isOpen</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event deprecated child">
@@ -16035,88 +16066,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">MeshPart</span>
-	<span class="Superclass">BasePart</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">Content</span>
-	<span class="ClassName Property">MeshPart</span>
-	<span class="Name">MeshID</span>
-	<span class="Tag">[NotScriptable]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Content</span>
-	<span class="ClassName Property">MeshPart</span>
-	<span class="Name">MeshId</span>
-	<span class="Security">{✏️NotAccessibleSecurity}</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Content</span>
-	<span class="ClassName Property">MeshPart</span>
-	<span class="Name">TextureID</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Enum</span>
-	<span class="InnerType">CollisionFidelity</span>
-	<span class="ClassName Property">MeshPart</span>
-	<span class="Name">CollisionFidelity</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">PartOperation</span>
-	<span class="Superclass">BasePart</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Enum</span>
-	<span class="InnerType">CollisionFidelity</span>
-	<span class="ClassName Property">PartOperation</span>
-	<span class="Name">CollisionFidelity</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Enum</span>
-	<span class="InnerType">RenderFidelity</span>
-	<span class="ClassName Property">PartOperation</span>
-	<span class="Name">RenderFidelity</span>
-	<span class="Security">{✏️PluginSecurity}</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">PartOperation</span>
-	<span class="Name">TriangleCount</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">PartOperation</span>
-	<span class="Name">UsePartColor</span>
-</div>
-
-<div class="Class">
-	<span class="Name">NegateOperation</span>
-	<span class="Superclass">PartOperation</span>
-</div>
-
-<div class="Class">
-	<span class="Name">UnionOperation</span>
-	<span class="Superclass">PartOperation</span>
-</div>
-
-<div class="Class">
 	<span class="Name">Terrain</span>
 	<span class="Superclass">BasePart</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -16611,6 +16560,93 @@
 		</span>
 	</span>
 	<span class="Tag">[CustomLuaState]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">TriangleMeshPart</span>
+	<span class="Superclass">BasePart</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">CollisionFidelity</span>
+	<span class="ClassName Property">TriangleMeshPart</span>
+	<span class="Name">CollisionFidelity</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">MeshPart</span>
+	<span class="Superclass">TriangleMeshPart</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">MeshID</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">MeshId</span>
+	<span class="Security">{✏️NotAccessibleSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">TextureID</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">RenderFidelity</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">RenderFidelity</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PartOperation</span>
+	<span class="Superclass">TriangleMeshPart</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">RenderFidelity</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">RenderFidelity</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">TriangleCount</span>
+	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">UsePartColor</span>
+</div>
+
+<div class="Class">
+	<span class="Name">NegateOperation</span>
+	<span class="Superclass">PartOperation</span>
+</div>
+
+<div class="Class">
+	<span class="Name">UnionOperation</span>
+	<span class="Superclass">PartOperation</span>
 </div>
 
 <div class="Class">
@@ -23818,7 +23854,7 @@
 	<span class="Type">Enum</span>
 	<span class="InnerType">GameAvatarType</span>
 	<span class="ClassName Property">StarterPlayer</span>
-	<span class="Name">GameSettingsAvatarType</span>
+	<span class="Name">GameSettingsAvatar</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -23828,7 +23864,7 @@
 	<span class="Type">Enum</span>
 	<span class="InnerType">R15CollisionType</span>
 	<span class="ClassName Property">StarterPlayer</span>
-	<span class="Name">GameSettingsR15CollisionType</span>
+	<span class="Name">GameSettingsR15Collision</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -23837,7 +23873,7 @@
 <div class="Property child">
 	<span class="Type">NumberRange</span>
 	<span class="ClassName Property">StarterPlayer</span>
-	<span class="Name">GameSettingsScaleBodyType</span>
+	<span class="Name">GameSettingsScaleRangeBodyType</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -23846,7 +23882,7 @@
 <div class="Property child">
 	<span class="Type">NumberRange</span>
 	<span class="ClassName Property">StarterPlayer</span>
-	<span class="Name">GameSettingsScaleHead</span>
+	<span class="Name">GameSettingsScaleRangeHead</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -23855,7 +23891,7 @@
 <div class="Property child">
 	<span class="Type">NumberRange</span>
 	<span class="ClassName Property">StarterPlayer</span>
-	<span class="Name">GameSettingsScaleHeight</span>
+	<span class="Name">GameSettingsScaleRangeHeight</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -23864,7 +23900,7 @@
 <div class="Property child">
 	<span class="Type">NumberRange</span>
 	<span class="ClassName Property">StarterPlayer</span>
-	<span class="Name">GameSettingsScaleProportion</span>
+	<span class="Name">GameSettingsScaleRangeProportion</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -23873,7 +23909,7 @@
 <div class="Property child">
 	<span class="Type">NumberRange</span>
 	<span class="ClassName Property">StarterPlayer</span>
-	<span class="Name">GameSettingsScaleWidth</span>
+	<span class="Name">GameSettingsScaleRangeWidth</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -24414,6 +24450,13 @@
 	<span class="InnerType">ListDisplayMode</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Basic Objects Display Mode</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">LanguagePreference</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Language</span>
 </div>
 
 <div class="Property child">
@@ -34336,6 +34379,28 @@
 	<span class="EnumName">Language</span>
 	<span class="Name">Default</span>
 	<span class="Value">0</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">LanguagePreference</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LanguagePreference</span>
+	<span class="Name">SystemDefault</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LanguagePreference</span>
+	<span class="Name">English</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LanguagePreference</span>
+	<span class="Name">SimplifiedChinese</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">

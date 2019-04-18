@@ -99,8 +99,26 @@ div.Renamed::before
 	color: #7F7FFF;
 }
 
+div.Merged::before
+{
+	content: "Merged";
+}
+
+span.MergeListInto::before
+{
+	content: "Into";
+	margin-left: 19px;
+}
+
+div.Merged::before,
+span.MergeListInto::before
+{
+	color: #FF7F3F;
+}
+
 .ChangeTo::before,
 .ChangeFrom::before,
+.MergedInto::before,
 .TagChange.To::before,
 .TagChange.From::before
 {
@@ -117,6 +135,12 @@ div.Renamed::before
 .TagChange.To::after
 {
 	content: "to";
+}
+
+.MergedInto::before
+{
+	content: "into";
+	margin-left: 48px;
 }
 
 div.ChangeFrom::before
@@ -330,6 +354,11 @@ span.ClassName::before,
 span.ParamDefault::before
 {
 	content: "" !important;
+}
+
+span.ChangeList li
+{
+	margin-left: 40px;
 }
 
 .deprecated *,
