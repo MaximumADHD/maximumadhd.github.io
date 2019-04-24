@@ -8485,6 +8485,32 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">BillboardGui</span>
+	<span class="Name">CurrentDistance</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">BillboardGui</span>
+	<span class="Name">DistanceLowerLimit</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">BillboardGui</span>
+	<span class="Name">DistanceStep</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">BillboardGui</span>
+	<span class="Name">DistanceUpperLimit</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">BillboardGui</span>
 	<span class="Name">ExtentsOffset</span>
@@ -10788,6 +10814,20 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Humanoid</span>
+	<span class="Name">ApplyDescriptionClientServer</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">humanoidDescription</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Humanoid</span>
 	<span class="Name">BuildRigFromAttachments</span>
 	<span class="Parameters"></span>
 </div>
@@ -12923,6 +12963,19 @@
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">LocalizationService</span>
+	<span class="Name">SetRobloxLocaleId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">locale</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21402,6 +21455,13 @@
 	<span class="Name">Ticket</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RenderingTest</span>
+	<span class="Name">RenderdocTriggerCapture</span>
+	<span class="Parameters"></span>
+</div>
+
 <div class="Class">
 	<span class="Name">ReplicatedFirst</span>
 	<span class="Superclass">Instance</span>
@@ -22462,6 +22522,20 @@
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">GetObjectsAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">url</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Function child">
@@ -24863,6 +24937,18 @@
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">ShowPublishToRoblox</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
+	<span class="Name">OnSaveToRoblox</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">instances</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
