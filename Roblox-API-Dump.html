@@ -8750,12 +8750,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">Vector2</span>
-	<span class="ClassName Property">SurfaceGui</span>
-	<span class="Name">CanvasSize</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">Enum</span>
 	<span class="InnerType">NormalId</span>
 	<span class="ClassName Property">SurfaceGui</span>
@@ -8772,6 +8766,25 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">SurfaceGui</span>
 	<span class="Name">ToolPunchThroughDistance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Property">SurfaceGui</span>
+	<span class="Name">CanvasSize</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">SurfaceGui</span>
+	<span class="Name">PixelsPerStud</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">SurfaceGuiSizingMode</span>
+	<span class="ClassName Property">SurfaceGui</span>
+	<span class="Name">SizingMode</span>
 </div>
 
 <div class="Class">
@@ -9662,7 +9675,7 @@
 	<span class="ClassName Function">GuiService</span>
 	<span class="Name">GetResolutionScale</span>
 	<span class="Parameters"></span>
-	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -24346,12 +24359,6 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
-	<span class="Name">Import mesh files as single mesh</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
 	<span class="Name">Respect Studio shortcuts when game has focus</span>
 </div>
 
@@ -24396,24 +24403,6 @@
 	<span class="Type">QDir</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Auto-Recovery Path</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">Auto-Save Enabled</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">Auto-Save Interval (Minutes)</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">QDir</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">Auto-Save Path</span>
 </div>
 
 <div class="Property child">
@@ -34844,11 +34833,10 @@
 	<span class="Value">1568</span>
 </div>
 
-<div class="EnumItem deprecated child">
+<div class="EnumItem child">
 	<span class="EnumName">Material</span>
 	<span class="Name">ForceField</span>
 	<span class="Value">1584</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="EnumItem child">
@@ -37228,6 +37216,22 @@
 	<span class="EnumName">SurfaceConstraint</span>
 	<span class="Name">Motor</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">SurfaceGuiSizingMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SurfaceGuiSizingMode</span>
+	<span class="Name">FixedSize</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SurfaceGuiSizingMode</span>
+	<span class="Name">PixelsPerStud</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
