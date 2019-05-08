@@ -1,5 +1,4 @@
-﻿
-<head>
+﻿<head>
 	<link rel="stylesheet" href="api-dump.css">
 </head>
 
@@ -216,6 +215,7 @@
 			<span class="ParamName">className</span>
 		</span>
 	</span>
+	<span class="Tag">[CustomLuaState]</span>
 </div>
 
 <div class="Function child">
@@ -8134,6 +8134,24 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">ViewportFrame</span>
+	<span class="Name">Ambient</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">ViewportFrame</span>
+	<span class="Name">LightColor</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">ViewportFrame</span>
+	<span class="Name">LightDirection</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Class</span>
 	<span class="InnerType">Camera</span>
 	<span class="ClassName Property">ViewportFrame</span>
@@ -9313,6 +9331,13 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GuiService</span>
+	<span class="Name">CloseInspectMenu</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">GuiService</span>
 	<span class="Name">CloseStatsBasedOnInputString</span>
@@ -9388,6 +9413,13 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">GuiService</span>
+	<span class="Name">GetInspectMenuEnabled</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">GuiService</span>
 	<span class="Name">GetNotificationTypeList</span>
@@ -9426,6 +9458,34 @@
 	<span class="Name">GetUiMessage</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GuiService</span>
+	<span class="Name">InspectPlayerFromHumanoidDescription</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">humanoidDescription</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GuiService</span>
+	<span class="Name">InspectPlayerFromUserId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
 </div>
 
 <div class="Function child">
@@ -9567,6 +9627,18 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">GuiService</span>
+	<span class="Name">SetInspectMenuEnabled</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">enabled</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GuiService</span>
 	<span class="Name">SetMenuIsOpen</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -9657,6 +9729,13 @@
 
 <div class="Event child">
 	<span class="ClassName Event">GuiService</span>
+	<span class="Name">CloseInspectMenuRequest</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">GuiService</span>
 	<span class="Name">EmotesMenuOpenChanged</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -9678,6 +9757,46 @@
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">GuiService</span>
+	<span class="Name">InspectMenuEnabledChangedSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">enabled</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">GuiService</span>
+	<span class="Name">InspectPlayerFromHumanoidDescriptionRequest</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">humanoidDescription</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">GuiService</span>
+	<span class="Name">InspectPlayerFromUserIdRequest</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -10746,6 +10865,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">Humanoid</span>
+	<span class="Name">PlayEmote</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">emoteName</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Humanoid</span>
 	<span class="Name">RemoveAccessories</span>
@@ -11333,6 +11465,94 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">HumanoidDescription</span>
 	<span class="Name">WidthScale</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">HumanoidDescription</span>
+	<span class="Name">AddEmote</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">assetId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">HumanoidDescription</span>
+	<span class="Name">GetEmotes</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">HumanoidDescription</span>
+	<span class="Name">GetEquippedEmotes</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">HumanoidDescription</span>
+	<span class="Name">RemoveEmote</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">HumanoidDescription</span>
+	<span class="Name">SetEmotes</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">emotes</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">HumanoidDescription</span>
+	<span class="Name">SetEquippedEmotes</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">equippedEmotes</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">HumanoidDescription</span>
+	<span class="Name">EmotesChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">newEmotes</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">HumanoidDescription</span>
+	<span class="Name">EquippedEmotesChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">newEquippedEmotes</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -13410,6 +13630,23 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">PromptBundlePurchase</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">bundleId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">PromptGamePassPurchase</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -13533,6 +13770,24 @@
 	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">ReportRobuxUpsellStarted</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">SignalAssetTypePurchased</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">AssetType</span>
+			<span class="ParamName">assetType</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -13697,6 +13952,22 @@
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName">wasPurchased</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PromptBundlePurchaseRequested</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">bundleId</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -16518,6 +16789,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">StreamingPauseMode</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">StreamingPauseMode</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">StreamingTargetRadius</span>
@@ -16951,6 +17230,13 @@
 <div class="Class">
 	<span class="Name">InventoryPages</span>
 	<span class="Superclass">Pages</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">EmotesPages</span>
+	<span class="Superclass">InventoryPages</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -17639,6 +17925,15 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Player</span>
 	<span class="Name">CanLoadCharacterAppearance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">GameplayPaused</span>
+	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -23192,6 +23487,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">UserEmotesEnabled</span>
+	<span class="Security">{✏️RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">CharacterJumpHeight</span>
@@ -23956,6 +24258,32 @@
 	<span class="Name">ThemeChanged</span>
 	<span class="Parameters"></span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">StudioData</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">StudioData</span>
+	<span class="Name">SrcPlaceId</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">StudioData</span>
+	<span class="Name">SrcUniverseId</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -28751,6 +29079,12 @@
 	<span class="Value">58</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">AssetType</span>
+	<span class="Name">EmoteAnimation</span>
+	<span class="Value">61</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">AutoJointsMode</span>
 </div>
@@ -28793,6 +29127,12 @@
 	<span class="EnumName">AvatarContextMenuOption</span>
 	<span class="Name">Emote</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarContextMenuOption</span>
+	<span class="Name">InspectMenu</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
@@ -35633,6 +35973,28 @@
 	<span class="Name">Confusion</span>
 	<span class="Value">1</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">StreamingPauseMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StreamingPauseMode</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StreamingPauseMode</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StreamingPauseMode</span>
+	<span class="Name">ClientPhysicsPause</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
