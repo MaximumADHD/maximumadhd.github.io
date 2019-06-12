@@ -1,4 +1,4 @@
-﻿<head>
+<head>
 	<link rel="stylesheet" href="api-dump.css">
 </head>
 
@@ -465,267 +465,6 @@
 <div class="Class">
 	<span class="Name">AdvancedDragger</span>
 	<span class="Superclass">Instance</span>
-</div>
-
-<div class="Class">
-	<span class="Name">AnalyticsService</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">string</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">GetClientId</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">string</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">GetSessionId</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">ReleaseRBXEventStream</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">target</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">ReportCounter</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">counterName</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName default">amount</span>
-			<span class="ParamDefault int">1</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">ReportInfluxSeries</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">seriesName</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Dictionary</span>
-			<span class="ParamName">points</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName">throttlingPercentage</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">ReportStats</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">category</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">float</span>
-			<span class="ParamName">value</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">SendEventDeferred</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">target</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">eventContext</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">eventName</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Dictionary</span>
-			<span class="ParamName">additionalArgs</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">SendEventImmediately</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">target</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">eventContext</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">eventName</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Dictionary</span>
-			<span class="ParamName">additionalArgs</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">SetRBXEvent</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">target</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">eventContext</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">eventName</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Dictionary</span>
-			<span class="ParamName">additionalArgs</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">SetRBXEventStream</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">target</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">eventContext</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">eventName</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Dictionary</span>
-			<span class="ParamName">additionalArgs</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">TrackEvent</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">category</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">action</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">label</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName default">value</span>
-			<span class="ParamDefault int64">0</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">TrackEventWithArgs</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">category</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">action</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">label</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Dictionary</span>
-			<span class="ParamName">args</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName default">value</span>
-			<span class="ParamDefault int64">0</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AnalyticsService</span>
-	<span class="Name">UpdateHeartbeatObject</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Dictionary</span>
-			<span class="ParamName">args</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -4303,6 +4042,11 @@
 			<span class="Type">Array</span>
 			<span class="ParamName">contentIdList</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName default">callbackFunction</span>
+			<span class="ParamDefault Function">nil</span>
+		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
 </div>
@@ -4921,6 +4665,19 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">CoreScriptSyncService</span>
+	<span class="Name">GetScriptFilePath</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">script</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class deprecated">
@@ -12449,6 +12206,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Lighting</span>
+	<span class="Name">LegacyOutlines</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Lighting</span>
 	<span class="Name">OutdoorAmbient</span>
@@ -12860,13 +12624,7 @@
 	<span class="Type">void</span>
 	<span class="ClassName Function">LocalizationService</span>
 	<span class="Name">StartTextScraper</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">enforceRequirements</span>
-			<span class="ParamDefault bool">false</span>
-		</span>
-	</span>
+	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -14856,6 +14614,31 @@
 </div>
 
 <div class="Class">
+	<span class="Name">NoCollisionConstraint</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">NoCollisionConstraint</span>
+	<span class="Name">Enabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Class</span>
+	<span class="InnerType">BasePart</span>
+	<span class="ClassName Property">NoCollisionConstraint</span>
+	<span class="Name">Part0</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Class</span>
+	<span class="InnerType">BasePart</span>
+	<span class="ClassName Property">NoCollisionConstraint</span>
+	<span class="Name">Part1</span>
+</div>
+
+<div class="Class">
 	<span class="Name">NotificationService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -14874,6 +14657,15 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">NotificationService</span>
+	<span class="Name">IsLuaBottomBarWithText</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">NotificationService</span>
 	<span class="Name">IsLuaChatEnabled</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
@@ -14884,24 +14676,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">NotificationService</span>
 	<span class="Name">IsLuaGameDetailsEnabled</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NotificationService</span>
-	<span class="Name">IsLuaGamesPageEnabled</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NotificationService</span>
-	<span class="Name">IsLuaHomePageEnabled</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -16445,17 +16219,17 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">Content</span>
-	<span class="ClassName Property">MeshPart</span>
-	<span class="Name">TextureID</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">Enum</span>
 	<span class="InnerType">RenderFidelity</span>
 	<span class="ClassName Property">MeshPart</span>
 	<span class="Name">RenderFidelity</span>
 	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">TextureID</span>
 </div>
 
 <div class="Class">
@@ -17931,9 +17705,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Player</span>
 	<span class="Name">GameplayPaused</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
+	<span class="Security">{✏️NotAccessibleSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -20526,6 +20298,267 @@
 </div>
 
 <div class="Class">
+	<span class="Name">RbxAnalyticsService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">GetClientId</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">GetSessionId</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">ReleaseRBXEventStream</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">target</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">ReportCounter</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">counterName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">amount</span>
+			<span class="ParamDefault int">1</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">ReportInfluxSeries</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">seriesName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">points</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">throttlingPercentage</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">ReportStats</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">category</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">value</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">SendEventDeferred</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">target</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventContext</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">additionalArgs</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">SendEventImmediately</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">target</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventContext</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">additionalArgs</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">SetRBXEvent</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">target</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventContext</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">additionalArgs</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">SetRBXEventStream</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">target</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventContext</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">additionalArgs</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">TrackEvent</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">category</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">action</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">label</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName default">value</span>
+			<span class="ParamDefault int64">0</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">TrackEventWithArgs</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">category</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">action</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">label</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">args</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName default">value</span>
+			<span class="ParamDefault int64">0</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">UpdateHeartbeatObject</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">args</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ReflectionMetadata</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -21073,6 +21106,14 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">RobloxPluginGuiService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -21922,13 +21963,14 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">Enum</span>
 	<span class="InnerType">GearGenreSetting</span>
 	<span class="ClassName Property">DataModel</span>
 	<span class="Name">GearGenreSetting</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -21975,6 +22017,96 @@
 			<span class="ParamName">function</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">DefineFastFlag</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">defaultValue</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">DefineFastInt</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">defaultValue</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">DefineFastString</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">defaultValue</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">GetFastFlag</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">GetFastInt</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">GetFastString</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -22142,7 +22274,7 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">DataModel</span>
 	<span class="Name">IsGearTypeAllowed</span>
@@ -22153,6 +22285,7 @@
 			<span class="ParamName">gearType</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -22673,6 +22806,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">PlaybackSpeed</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -23560,11 +23694,13 @@
 <div class="Class">
 	<span class="Name">StarterPlayerScripts</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 </div>
 
 <div class="Class">
 	<span class="Name">StarterCharacterScripts</span>
 	<span class="Superclass">StarterPlayerScripts</span>
+	<span class="Tag">[NotCreatable]</span>
 </div>
 
 <div class="Class">
@@ -23652,6 +23788,14 @@
 	<span class="Name">PrimitivesCount</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">Stats</span>
+	<span class="Name">GetBrowserTrackerId</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -23799,13 +23943,6 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Enum</span>
-	<span class="InnerType">DEPRECATED_DebuggerDataModelPreference</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">Attach Debugger To</span>
 </div>
 
 <div class="Property child">
@@ -23979,6 +24116,12 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Show Plugin GUI Service in Explorer</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Show Roblox Plugin GUI Service in Explorer</span>
 </div>
 
 <div class="Property child">
@@ -24298,6 +24441,14 @@
 	<span class="Type">Instance</span>
 	<span class="ClassName Property">StudioService</span>
 	<span class="Name">ActiveScript</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">StudioService</span>
+	<span class="Name">StudioLocaleId</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -25942,6 +26093,18 @@
 	<span class="InnerType">StartCorner</span>
 	<span class="ClassName Property">UIGridLayout</span>
 	<span class="Name">StartCorner</span>
+</div>
+
+<div class="Class">
+	<span class="Name">UIInlineLayout</span>
+	<span class="Superclass">UIGridStyleLayout</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">InlineAlignment</span>
+	<span class="ClassName Property">UIInlineLayout</span>
+	<span class="Name">InlineAlignment</span>
 </div>
 
 <div class="Class">
@@ -28818,6 +28981,22 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">AssetFetchStatus</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AssetFetchStatus</span>
+	<span class="Name">Success</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AssetFetchStatus</span>
+	<span class="Name">Failure</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">AssetType</span>
 </div>
 
@@ -30358,22 +30537,6 @@
 </div>
 
 <div class="Enum">
-	<span class="Name">DEPRECATED_DebuggerDataModelPreference</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">DEPRECATED_DebuggerDataModelPreference</span>
-	<span class="Name">Server</span>
-	<span class="Value">0</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">DEPRECATED_DebuggerDataModelPreference</span>
-	<span class="Name">Client</span>
-	<span class="Value">1</span>
-</div>
-
-<div class="Enum">
 	<span class="Name">DataStoreRequestType</span>
 </div>
 
@@ -31462,62 +31625,72 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Enum">
+<div class="Enum deprecated">
 	<span class="Name">GearType</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">GearType</span>
 	<span class="Name">MeleeWeapons</span>
 	<span class="Value">0</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">GearType</span>
 	<span class="Name">RangedWeapons</span>
 	<span class="Value">1</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">GearType</span>
 	<span class="Name">Explosives</span>
 	<span class="Value">2</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">GearType</span>
 	<span class="Name">PowerUps</span>
 	<span class="Value">3</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">GearType</span>
 	<span class="Name">NavigationEnhancers</span>
 	<span class="Value">4</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">GearType</span>
 	<span class="Name">MusicalInstruments</span>
 	<span class="Value">5</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">GearType</span>
 	<span class="Name">SocialItems</span>
 	<span class="Value">6</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">GearType</span>
 	<span class="Name">BuildingTools</span>
 	<span class="Value">7</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">GearType</span>
 	<span class="Name">Transport</span>
 	<span class="Value">8</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Enum deprecated">
@@ -32189,6 +32362,28 @@
 	<span class="EnumName">InitialDockState</span>
 	<span class="Name">Float</span>
 	<span class="Value">4</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">InlineAlignment</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">InlineAlignment</span>
+	<span class="Name">Bottom</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">InlineAlignment</span>
+	<span class="Name">Center</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">InlineAlignment</span>
+	<span class="Name">Top</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
@@ -34258,6 +34453,12 @@
 	<span class="EnumName">MembershipType</span>
 	<span class="Name">OutrageousBuildersClub</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">MembershipType</span>
+	<span class="Name">Premium</span>
+	<span class="Value">4</span>
 </div>
 
 <div class="Enum">
