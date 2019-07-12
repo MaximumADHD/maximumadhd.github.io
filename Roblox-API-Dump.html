@@ -7660,6 +7660,22 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">ScrollingFrame</span>
+	<span class="Name">ClearInertialScrolling</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Function">ScrollingFrame</span>
+	<span class="Name">GetSampledInertialVelocity</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ScrollingFrame</span>
 	<span class="Name">ScrollToTop</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -11128,6 +11144,14 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">HumanoidDescription</span>
 	<span class="Name">JumpAnimation</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">HumanoidDescription</span>
+	<span class="Name">NumberEmotesLoaded</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
@@ -15956,6 +15980,31 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Terrain</span>
+	<span class="Name">FillCylinder</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">cframe</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">height</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">radius</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">Material</span>
+			<span class="ParamName">material</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Terrain</span>
 	<span class="Name">FillRegion</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -19844,6 +19893,15 @@
 	<span class="ClassName Property">PluginAction</span>
 	<span class="Name">AllowBinding</span>
 	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PluginAction</span>
+	<span class="Name">DefaultShortcut</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -24079,12 +24137,6 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
-	<span class="Name">Enable Autocomplete</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
 	<span class="Name">Enable CoreScript Debugger</span>
 </div>
 
@@ -24352,13 +24404,37 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
+	<span class="Name">Auto Closing Brackets</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Auto Closing Quotes</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
 	<span class="Name">Auto Indent</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Enable Autocomplete</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">QFont</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Font</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Skip Closing Brackets and Quotes</span>
 </div>
 
 <div class="Property child">
@@ -36919,6 +36995,24 @@
 	<span class="EnumName">StudioStyleGuideColor</span>
 	<span class="Name">DialogMainButtonText</span>
 	<span class="Value">88</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">Merge3HighlightOriginal</span>
+	<span class="Value">89</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">Merge3HighlightMine</span>
+	<span class="Value">90</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">Merge3HighlightTheirs</span>
+	<span class="Value">91</span>
 </div>
 
 <div class="Enum">
