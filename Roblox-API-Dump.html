@@ -13411,6 +13411,23 @@
 <div class="Function child">
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">GetSubscriptionStatus</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">PerformPurchase</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -13572,6 +13589,38 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">PromptSubscriptionCancellation</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">PromptSubscriptionPurchase</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">PromptThirdPartyPurchase</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -13708,6 +13757,48 @@
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName">success</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">SignalPromptSubscriptionCancellationFinished</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">wasCanceled</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">SignalPromptSubscriptionPurchaseFinished</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">wasPurchased</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -13930,6 +14021,76 @@
 			<span class="Type">Enum</span>
 			<span class="InnerType">CurrencyType</span>
 			<span class="ParamName">currencyType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PromptSubscriptionCancellationFinished</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">wasCanceled</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PromptSubscriptionCancellationRequested</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PromptSubscriptionPurchaseFinished</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">wasPurchased</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PromptSubscriptionPurchaseRequested</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">subscriptionId</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -24801,6 +24962,13 @@
 
 <div class="Event child">
 	<span class="ClassName Event">StudioService</span>
+	<span class="Name">OnPublishPlaceToRoblox</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
 	<span class="Name">OnSaveToRoblox</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -32589,6 +32757,12 @@
 	<span class="EnumName">InfoType</span>
 	<span class="Name">GamePass</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">InfoType</span>
+	<span class="Name">Subscription</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
