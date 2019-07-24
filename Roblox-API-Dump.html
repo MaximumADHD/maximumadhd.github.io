@@ -9318,6 +9318,23 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GuiService</span>
+	<span class="Name">InspectPlayerFromUserIdWithCtx</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">ctx</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">GuiService</span>
 	<span class="Name">IsMemoryTrackerEnabled</span>
@@ -9623,6 +9640,22 @@
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">GuiService</span>
+	<span class="Name">InspectPlayerFromUserIdWithCtxRequest</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">ctx</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -10703,6 +10736,24 @@
 			<span class="ParamName">emoteName</span>
 		</span>
 	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">Humanoid</span>
+	<span class="Name">PlayEmoteById</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">emoteName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">emoteId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -13702,6 +13753,27 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">SignalPromptBundlePurchaseFinished</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">bundleId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">success</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">SignalPromptGamePassPurchaseFinished</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -13877,6 +13949,26 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">productId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">wasPurchased</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PromptBundlePurchaseFinished</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">bundleId</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">bool</span>
@@ -20054,6 +20146,15 @@
 	<span class="ClassName Property">PluginAction</span>
 	<span class="Name">AllowBinding</span>
 	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PluginAction</span>
+	<span class="Name">Checked</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -32763,6 +32864,12 @@
 	<span class="EnumName">InfoType</span>
 	<span class="Name">Subscription</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">InfoType</span>
+	<span class="Name">Bundle</span>
+	<span class="Value">4</span>
 </div>
 
 <div class="Enum">
