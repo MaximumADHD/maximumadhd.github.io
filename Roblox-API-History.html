@@ -2,6 +2,326 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="395"/>
+<h2>Version 0.395.0.324413</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DraftsService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">DraftsService</span>
+				<span class="Name">CommitEdits</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Array</span>
+						<span class="ParamName">scriptGuids</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">DraftsService</span>
+				<span class="Name">DiscardEdits</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Array</span>
+						<span class="ParamName">scriptGuids</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Dictionary</span>
+				<span class="ClassName Function">DraftsService</span>
+				<span class="Name">GetDrafts</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Array</span>
+				<span class="ClassName Function">DraftsService</span>
+				<span class="Name">GetEditors</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">scriptGuid</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">DraftsService</span>
+				<span class="Name">OpenDrafts</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Array</span>
+						<span class="ParamName">scriptGuids</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">DraftsService</span>
+				<span class="Name">ShowDiffsAgainstBase</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Array</span>
+						<span class="ParamName">scriptGuids</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">DraftsService</span>
+				<span class="Name">ShowDiffsAgainstServer</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Array</span>
+						<span class="ParamName">scriptGuids</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Dictionary</span>
+				<span class="ClassName Function">DraftsService</span>
+				<span class="Name">UpdateToLatestVersion</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Array</span>
+						<span class="ParamName">scriptGuids</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">DraftsService</span>
+				<span class="Name">CommitStatusChanged</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">scriptGuid</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">commitStatus</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">DraftsService</span>
+				<span class="Name">DraftAdded</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">scriptGuid</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">script</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">DraftsService</span>
+				<span class="Name">DraftDeleted</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">scriptGuid</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">DraftsService</span>
+				<span class="Name">EditorsListChanged</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">scriptGuid</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">DraftsService</span>
+				<span class="Name">ScriptDeleted</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">scriptGuid</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">DraftsService</span>
+				<span class="Name">ScriptServerVersionChanged</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">scriptGuid</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">DraftStatusCode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DraftStatusCode</span>
+				<span class="Name">OK</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DraftStatusCode</span>
+				<span class="Name">DraftOutdated</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DraftStatusCode</span>
+				<span class="Name">ScriptRemoved</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">EasingStyle</span>
+			<span class="Name">Exponential</span>
+			<span class="Value">8</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">EasingStyle</span>
+			<span class="Name">Circular</span>
+			<span class="Value">9</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">EasingStyle</span>
+			<span class="Name">Cubic</span>
+			<span class="Value">10</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Lighting</span>
+			<span class="Name">Outlines</span>
+		</span>
+	</span>
+</div>
+
 <hr id="394"/>
 <h2>Version 0.394.0.322464</h2>
 
