@@ -2524,6 +2524,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Camera</span>
+	<span class="Name">SetImageServerView</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">modelCoord</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Camera</span>
 	<span class="Name">SetRoll</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -4052,6 +4065,20 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">ContentProvider</span>
+	<span class="Name">CalculateNumTrianglesInMesh</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">ContentProvider</span>
@@ -5490,8 +5517,8 @@
 	<span class="Name">CommitEdits</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Array</span>
-			<span class="ParamName">scriptGuids</span>
+			<span class="Type">Objects</span>
+			<span class="ParamName">scripts</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -5504,15 +5531,15 @@
 	<span class="Name">DiscardEdits</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Array</span>
-			<span class="ParamName">scriptGuids</span>
+			<span class="Type">Objects</span>
+			<span class="ParamName">scripts</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
-	<span class="Type">Dictionary</span>
+	<span class="Type">Objects</span>
 	<span class="ClassName Function">DraftsService</span>
 	<span class="Name">GetDrafts</span>
 	<span class="Parameters"></span>
@@ -5521,13 +5548,13 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Array</span>
+	<span class="Type">Objects</span>
 	<span class="ClassName Function">DraftsService</span>
 	<span class="Name">GetEditors</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">scriptGuid</span>
+			<span class="Type">Instance</span>
+			<span class="ParamName">script</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -5539,8 +5566,8 @@
 	<span class="Name">OpenDrafts</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Array</span>
-			<span class="ParamName">scriptGuids</span>
+			<span class="Type">Objects</span>
+			<span class="ParamName">scripts</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -5552,8 +5579,8 @@
 	<span class="Name">ShowDiffsAgainstBase</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Array</span>
-			<span class="ParamName">scriptGuids</span>
+			<span class="Type">Objects</span>
+			<span class="ParamName">scripts</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -5565,21 +5592,21 @@
 	<span class="Name">ShowDiffsAgainstServer</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Array</span>
-			<span class="ParamName">scriptGuids</span>
+			<span class="Type">Objects</span>
+			<span class="ParamName">scripts</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
-	<span class="Type">Dictionary</span>
+	<span class="Type">void</span>
 	<span class="ClassName Function">DraftsService</span>
 	<span class="Name">UpdateToLatestVersion</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Array</span>
-			<span class="ParamName">scriptGuids</span>
+			<span class="Type">Objects</span>
+			<span class="ParamName">scripts</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -5591,12 +5618,13 @@
 	<span class="Name">CommitStatusChanged</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">scriptGuid</span>
+			<span class="Type">Instance</span>
+			<span class="ParamName">script</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName">commitStatus</span>
+			<span class="Type">Enum</span>
+			<span class="InnerType">DraftStatusCode</span>
+			<span class="ParamName">status</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -5606,10 +5634,6 @@
 	<span class="ClassName Event">DraftsService</span>
 	<span class="Name">DraftAdded</span>
 	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">scriptGuid</span>
-		</span>
 		<span class="Parameter">
 			<span class="Type">Instance</span>
 			<span class="ParamName">script</span>
@@ -5623,8 +5647,8 @@
 	<span class="Name">DraftDeleted</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">scriptGuid</span>
+			<span class="Type">Instance</span>
+			<span class="ParamName">script</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -5635,8 +5659,8 @@
 	<span class="Name">EditorsListChanged</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">scriptGuid</span>
+			<span class="Type">Instance</span>
+			<span class="ParamName">script</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -5647,8 +5671,8 @@
 	<span class="Name">ScriptDeleted</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">scriptGuid</span>
+			<span class="Type">Instance</span>
+			<span class="ParamName">script</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -5659,8 +5683,25 @@
 	<span class="Name">ScriptServerVersionChanged</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">scriptGuid</span>
+			<span class="Type">Instance</span>
+			<span class="ParamName">script</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">DraftsService</span>
+	<span class="Name">UpdateStatusChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">script</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">DraftStatusCode</span>
+			<span class="ParamName">status</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -13651,9 +13692,9 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Dictionary</span>
+	<span class="Type">bool</span>
 	<span class="ClassName Function">MarketplaceService</span>
-	<span class="Name">GetSubscriptionStatus</span>
+	<span class="Name">IsPlayerSubscribed</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Instance</span>
@@ -17102,14 +17143,6 @@
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">AllowThirdPartySales</span>
 	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Enum</span>
-	<span class="InnerType">AutoJointsMode</span>
-	<span class="ClassName Property">Workspace</span>
-	<span class="Name">AutoJointsMode</span>
-	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -22904,6 +22937,20 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">InsertObjectsAndJoinIfLegacyAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">url</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">DataModel</span>
@@ -25128,6 +25175,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">GetResourceByCategory</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">category</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">int64</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">GetUserId</span>
@@ -25219,6 +25279,23 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">PublishAs</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">universeId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">placeId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">string</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">SerializeInstances</span>
@@ -25249,6 +25326,44 @@
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">ShowPublishToRoblox</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">emitPlacePublishedSignal</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
+	<span class="Name">GamePublishedToRoblox</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
+	<span class="Name">OnOpenConvertToPackagePlugin</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
+	<span class="Name">OnOpenManagePackagePlugin</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">assetId</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -26761,6 +26876,24 @@
 	<span class="InnerType">StartCorner</span>
 	<span class="ClassName Property">UIGridLayout</span>
 	<span class="Name">StartCorner</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Property">UIGridLayout</span>
+	<span class="Name">AbsoluteCellCount</span>
+	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Property">UIGridLayout</span>
+	<span class="Name">AbsoluteCellSize</span>
+	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -29943,28 +30076,6 @@
 	<span class="EnumName">AssetType</span>
 	<span class="Name">EmoteAnimation</span>
 	<span class="Value">61</span>
-</div>
-
-<div class="Enum">
-	<span class="Name">AutoJointsMode</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">AutoJointsMode</span>
-	<span class="Name">Default</span>
-	<span class="Value">0</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">AutoJointsMode</span>
-	<span class="Name">Explicit</span>
-	<span class="Value">1</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">AutoJointsMode</span>
-	<span class="Name">LegacyImplicit</span>
-	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
