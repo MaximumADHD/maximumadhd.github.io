@@ -473,7 +473,6 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -5644,7 +5643,7 @@
 
 <div class="Event child">
 	<span class="ClassName Event">DraftsService</span>
-	<span class="Name">DraftDeleted</span>
+	<span class="Name">DraftRemoved</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Instance</span>
@@ -5668,7 +5667,7 @@
 
 <div class="Event child">
 	<span class="ClassName Event">DraftsService</span>
-	<span class="Name">ScriptDeleted</span>
+	<span class="Name">ScriptRemoved</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Instance</span>
@@ -6592,7 +6591,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">AbsoluteRotation</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -6731,6 +6729,13 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">GuiObject</span>
 	<span class="Name">BorderColor3</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">BorderMode</span>
+	<span class="ClassName Property">GuiObject</span>
+	<span class="Name">BorderMode</span>
 </div>
 
 <div class="Property child">
@@ -14469,6 +14474,125 @@
 	</span>
 </div>
 
+<div class="Class">
+	<span class="Name">MemStorageConnection</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MemStorageConnection</span>
+	<span class="Name">Disconnect</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">MemStorageService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">MemStorageService</span>
+	<span class="Name">Bind</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">MemStorageService</span>
+	<span class="Name">BindAndFire</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">MemStorageService</span>
+	<span class="Name">GetItem</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">defaultValue</span>
+			<span class="ParamDefault string"></span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">MemStorageService</span>
+	<span class="Name">HasItem</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">MemStorageService</span>
+	<span class="Name">RemoveItem</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MemStorageService</span>
+	<span class="Name">SetItem</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">value</span>
+			<span class="ParamDefault string"></span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class deprecated">
 	<span class="Name">Message</span>
 	<span class="Superclass">Instance</span>
@@ -15241,6 +15365,15 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">NotificationService</span>
 	<span class="Name">IsLuaGameDetailsEnabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">NotificationService</span>
+	<span class="Name">IsLuaHomeWithAvatarEnabled</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -26821,7 +26954,6 @@
 	<span class="Type">Vector2</span>
 	<span class="ClassName Property">UIGridStyleLayout</span>
 	<span class="Name">AbsoluteContentSize</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26882,7 +27014,6 @@
 	<span class="Type">Vector2</span>
 	<span class="ClassName Property">UIGridLayout</span>
 	<span class="Name">AbsoluteCellCount</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26891,7 +27022,6 @@
 	<span class="Type">Vector2</span>
 	<span class="ClassName Property">UIGridLayout</span>
 	<span class="Name">AbsoluteCellSize</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -30322,6 +30452,28 @@
 	<span class="EnumName">BodyPartR15</span>
 	<span class="Name">Unknown</span>
 	<span class="Value">17</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">BorderMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">BorderMode</span>
+	<span class="Name">Outline</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">BorderMode</span>
+	<span class="Name">Middle</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">BorderMode</span>
+	<span class="Name">Inset</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
@@ -37875,11 +38027,10 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem deprecated child">
+<div class="EnumItem child">
 	<span class="EnumName">Technology</span>
 	<span class="Name">ShadowMap</span>
 	<span class="Value">3</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Enum">
