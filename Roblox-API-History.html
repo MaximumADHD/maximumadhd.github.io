@@ -2,6 +2,111 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="401"/>
+<h2>Version 0.401.0.338533</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">StudioService</span>
+			<span class="Name">ConvertToPackageUpload</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">uploadUrl</span>
+				</span>
+			</span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">StudioService</span>
+			<span class="Name">OnConvertToPackageResult</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">result</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">StudioService</span>
+		<span class="Name">OnOpenConvertToPackagePlugin</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change"></span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Objects</span>
+					<span class="ParamName">instances</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DebugSettings</span>
+			<span class="Name">LuaRamLimit</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">ScriptContext</span>
+			<span class="Name">ResetCoverageCollection</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">ScriptContext</span>
+			<span class="Name">StartCoverageCollection</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">ScriptContext</span>
+			<span class="Name">StopCoverageCollection</span>
+		</span>
+	</span>
+</div>
+
 <hr id="400"/>
 <h2>Version 0.400.0.336387</h2>
 

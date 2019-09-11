@@ -5162,12 +5162,6 @@
 <div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">DebugSettings</span>
-	<span class="Name">LuaRamLimit</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">DebugSettings</span>
 	<span class="Name">DataModel</span>
 	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
@@ -22510,14 +22504,6 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">ScriptContext</span>
-	<span class="Name">ResetCoverageCollection</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">ScriptContext</span>
 	<span class="Name">SetTimeout</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -22526,22 +22512,6 @@
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">ScriptContext</span>
-	<span class="Name">StartCoverageCollection</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">ScriptContext</span>
-	<span class="Name">StopCoverageCollection</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -25642,6 +25612,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
+	<span class="Name">ConvertToPackageUpload</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">uploadUrl</span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
 	<span class="Name">CopyToClipboard</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -25932,8 +25915,29 @@
 
 <div class="Event child">
 	<span class="ClassName Event">StudioService</span>
+	<span class="Name">OnConvertToPackageResult</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">result</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
 	<span class="Name">OnOpenConvertToPackagePlugin</span>
-	<span class="Parameters"></span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">instances</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
