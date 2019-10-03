@@ -5454,13 +5454,6 @@
 	<span class="Name">Expression</span>
 </div>
 
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">DebuggerWatch</span>
-	<span class="Name">CheckSyntax</span>
-	<span class="Parameters"></span>
-</div>
-
 <div class="Class">
 	<span class="Name">Dialog</span>
 	<span class="Superclass">Instance</span>
@@ -6519,7 +6512,7 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">RBXScriptConnection</span>
 	<span class="ClassName Function">GlobalDataStore</span>
 	<span class="Name">OnUpdate</span>
@@ -6533,6 +6526,7 @@
 			<span class="ParamName">callback</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -8092,6 +8086,8 @@
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">EnableRealtimeFilteringHints</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -25669,6 +25665,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">StudioService</span>
+	<span class="Name">InstalledPluginData</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">StudioService</span>
 	<span class="Name">RotateIncrement</span>
@@ -25748,15 +25753,6 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">string</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">GetInstalledPluginData</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function child">
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">GetResourceByCategory</span>
@@ -25766,6 +25762,14 @@
 			<span class="ParamName">category</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">GetStartupPluginId</span>
+	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -26061,6 +26065,18 @@
 	<span class="ClassName Event">StudioService</span>
 	<span class="Name">OnPluginInstalledFromToolbox</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
+	<span class="Name">OnPluginInstalledFromWeb</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pluginId</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
