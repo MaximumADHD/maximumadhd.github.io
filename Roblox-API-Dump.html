@@ -8054,6 +8054,16 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">ReturnKeyType</span>
+	<span class="ClassName Property">TextBox</span>
+	<span class="Name">ReturnKeyType</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">SelectionStart</span>
@@ -8295,6 +8305,12 @@
 <div class="Event child">
 	<span class="ClassName Event">TextBox</span>
 	<span class="Name">Focused</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TextBox</span>
+	<span class="Name">ReturnPressedFromOnScreenKeyboard</span>
 	<span class="Parameters"></span>
 </div>
 
@@ -27413,6 +27429,95 @@
 </div>
 
 <div class="Class">
+	<span class="Name">UGCValidationService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">GetMeshTriCount</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">GetMeshTriCountSync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">GetMeshVerts</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">GetMeshVertsSync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">GetTextureSize</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">textureId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">GetTextureSizeSync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">textureId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">UIBase</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -37073,6 +37178,46 @@
 	<span class="EnumName">RenderingTestComparisonMethod</span>
 	<span class="Name">diff</span>
 	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ReturnKeyType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReturnKeyType</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReturnKeyType</span>
+	<span class="Name">Done</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReturnKeyType</span>
+	<span class="Name">Go</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReturnKeyType</span>
+	<span class="Name">Next</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReturnKeyType</span>
+	<span class="Name">Search</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReturnKeyType</span>
+	<span class="Name">Send</span>
+	<span class="Value">5</span>
 </div>
 
 <div class="Enum">
