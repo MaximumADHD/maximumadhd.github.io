@@ -43,7 +43,7 @@
 	<span class="Type">Instance</span>
 	<span class="ClassName Property">Instance</span>
 	<span class="Name">Parent</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -158,6 +158,37 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Variant</span>
+	<span class="ClassName Function">Instance</span>
+	<span class="Name">GetAttribute</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">attribute</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">RBXScriptSignal</span>
+	<span class="ClassName Function">Instance</span>
+	<span class="Name">GetAttributeChangedSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">attribute</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">Instance</span>
+	<span class="Name">GetAttributes</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Objects</span>
 	<span class="ClassName Function">Instance</span>
 	<span class="Name">GetChildren</span>
@@ -252,6 +283,22 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Instance</span>
+	<span class="Name">SetAttribute</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">attribute</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">value</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">Instance</span>
 	<span class="Name">WaitForChild</span>
@@ -288,6 +335,17 @@
 		<span class="Parameter">
 			<span class="Type">Instance</span>
 			<span class="ParamName">parent</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Instance</span>
+	<span class="Name">AttributeChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">attribute</span>
 		</span>
 	</span>
 </div>
@@ -412,7 +470,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Accoutrement</span>
 	<span class="Name">AttachmentForward</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -426,7 +484,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Accoutrement</span>
 	<span class="Name">AttachmentPos</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -434,7 +492,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Accoutrement</span>
 	<span class="Name">AttachmentRight</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -442,7 +500,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Accoutrement</span>
 	<span class="Name">AttachmentUp</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -622,7 +680,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">AnimationTrack</span>
 	<span class="Name">TimePosition</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -762,6 +820,13 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">Animator</span>
+	<span class="Name">GetPlayingAnimationTracks</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">Animator</span>
 	<span class="Name">LoadAnimation</span>
@@ -784,6 +849,17 @@
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Animator</span>
+	<span class="Name">AnimationPlayed</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">animationTrack</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -954,7 +1030,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">Orientation</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -962,7 +1038,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">Position</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -979,7 +1055,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">Axis</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -987,7 +1063,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">SecondaryAxis</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -1005,7 +1081,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">WorldAxis</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -1013,7 +1089,7 @@
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">WorldCFrame</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -1021,7 +1097,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">WorldOrientation</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -1029,7 +1105,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">WorldPosition</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -1037,7 +1113,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">WorldSecondaryAxis</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -1173,7 +1249,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Tool</span>
 	<span class="Name">GripForward</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -1181,7 +1257,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Tool</span>
 	<span class="Name">GripPos</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -1189,7 +1265,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Tool</span>
 	<span class="Name">GripRight</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -1197,7 +1273,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Tool</span>
 	<span class="Name">GripUp</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -1449,7 +1525,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">CoreGui</span>
 	<span class="Name">Version</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -1918,7 +1993,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">BodyAngularVelocity</span>
 	<span class="Name">angularvelocity</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -1967,7 +2042,7 @@
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">BodyGyro</span>
 	<span class="Name">cframe</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -2385,7 +2460,7 @@
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">Camera</span>
 	<span class="Name">CoordinateFrame</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -2419,7 +2494,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Camera</span>
 	<span class="Name">NearPlaneZ</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -2428,7 +2502,6 @@
 	<span class="Type">Vector2</span>
 	<span class="ClassName Property">Camera</span>
 	<span class="Name">ViewportSize</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -2773,7 +2846,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">BodyColors</span>
 	<span class="Name">HeadColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -2786,7 +2859,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">BodyColors</span>
 	<span class="Name">LeftArmColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -2799,7 +2872,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">BodyColors</span>
 	<span class="Name">LeftLegColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -2812,7 +2885,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">BodyColors</span>
 	<span class="Name">RightArmColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -2825,7 +2898,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">BodyColors</span>
 	<span class="Name">RightLegColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -2838,7 +2911,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">BodyColors</span>
 	<span class="Name">TorsoColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -3590,7 +3663,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">HingeConstraint</span>
 	<span class="Name">CurrentAngle</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -3712,7 +3784,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">RodConstraint</span>
 	<span class="Name">CurrentDistance</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -3738,7 +3809,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">RopeConstraint</span>
 	<span class="Name">CurrentDistance</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -3771,7 +3841,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">SlidingBallConstraint</span>
 	<span class="Name">CurrentPosition</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -3931,7 +4000,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">CylindricalConstraint</span>
 	<span class="Name">CurrentAngle</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -3940,7 +4008,6 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">CylindricalConstraint</span>
 	<span class="Name">WorldRotationAxis</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -3977,7 +4044,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">SpringConstraint</span>
 	<span class="Name">CurrentLength</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -4078,7 +4144,6 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">ContentProvider</span>
 	<span class="Name">BaseUrl</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -4087,7 +4152,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">ContentProvider</span>
 	<span class="Name">RequestQueueSize</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5192,7 +5256,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">DebugSettings</span>
 	<span class="Name">DataModel</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5201,7 +5264,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">DebugSettings</span>
 	<span class="Name">InstanceCount</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5210,7 +5272,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">DebugSettings</span>
 	<span class="Name">JobCount</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5219,7 +5280,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">DebugSettings</span>
 	<span class="Name">PlayerCount</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5228,7 +5288,6 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">DebugSettings</span>
 	<span class="Name">RobloxVersion</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5270,7 +5329,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">DebuggerManager</span>
 	<span class="Name">DebuggingEnabled</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5860,7 +5918,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Decal</span>
 	<span class="Name">Shiny</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -5869,7 +5927,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Decal</span>
 	<span class="Name">Specular</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -6041,7 +6099,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Fire</span>
 	<span class="Name">Heat</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -6055,7 +6113,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Fire</span>
 	<span class="Name">Size</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -6295,7 +6353,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">GameSettings</span>
 	<span class="Name">CollisionSoundEnabled</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -6304,7 +6362,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">GameSettings</span>
 	<span class="Name">CollisionSoundVolume</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -6313,7 +6371,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">GameSettings</span>
 	<span class="Name">MaxCollisionSounds</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -6610,7 +6668,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">Localize</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -6694,7 +6752,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">GuiObject</span>
 	<span class="Name">BackgroundColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -6716,7 +6774,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">GuiObject</span>
 	<span class="Name">BorderColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -6782,7 +6840,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">GuiObject</span>
 	<span class="Name">Transparency</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -7399,7 +7457,6 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">TextButton</span>
 	<span class="Name">LocalizedText</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -7417,7 +7474,7 @@
 	<span class="InnerType">FontSize</span>
 	<span class="ClassName Property">TextButton</span>
 	<span class="Name">FontSize</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -7446,7 +7503,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">TextButton</span>
 	<span class="Name">TextColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -7507,7 +7564,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">TextButton</span>
 	<span class="Name">TextWrap</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -7628,7 +7685,6 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">TextLabel</span>
 	<span class="Name">LocalizedText</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -7646,7 +7702,7 @@
 	<span class="InnerType">FontSize</span>
 	<span class="ClassName Property">TextLabel</span>
 	<span class="Name">FontSize</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -7675,7 +7731,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">TextLabel</span>
 	<span class="Name">TextColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -7736,7 +7792,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">TextLabel</span>
 	<span class="Name">TextWrap</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -7783,7 +7839,6 @@
 	<span class="Type">Vector2</span>
 	<span class="ClassName Property">ScrollingFrame</span>
 	<span class="Name">AbsoluteWindowSize</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -7923,7 +7978,7 @@
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">ManualFocusRelease</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -7938,7 +7993,7 @@
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">OverlayNativeInput</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -7948,7 +8003,7 @@
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">ReturnKeyType</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -7976,7 +8031,7 @@
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">TextInputType</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -7985,7 +8040,7 @@
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">EnableRealtimeFilteringHints</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -8001,7 +8056,7 @@
 	<span class="InnerType">FontSize</span>
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">FontSize</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -8042,7 +8097,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">TextColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -8103,7 +8158,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">TextWrap</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -8231,7 +8286,7 @@
 	<span class="InnerType">Camera</span>
 	<span class="ClassName Property">ViewportFrame</span>
 	<span class="Name">CurrentCamera</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -8489,7 +8544,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">DockWidgetPluginGui</span>
 	<span class="Name">HostWidgetWasRestored</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -8615,7 +8669,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">GuiBase3d</span>
 	<span class="Name">Color</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -8923,7 +8977,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">SelectionBox</span>
 	<span class="Name">SurfaceColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -8950,7 +9004,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">SelectionSphere</span>
 	<span class="Name">SurfaceColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -9268,7 +9322,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">GuiService</span>
 	<span class="Name">MenuIsOpen</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -9279,7 +9332,7 @@
 	<span class="ClassName Property">GuiService</span>
 	<span class="Name">SelectedCoreObject</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -10532,7 +10585,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">Jump</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -10615,7 +10668,7 @@
 	<span class="InnerType">BasePart</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">LeftLeg</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -10646,7 +10699,7 @@
 	<span class="InnerType">BasePart</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">RightLeg</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -10657,7 +10710,6 @@
 	<span class="InnerType">BasePart</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">RootPart</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -10667,7 +10719,7 @@
 	<span class="InnerType">BasePart</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">Torso</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -10683,7 +10735,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">Health</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -11749,6 +11801,19 @@
 	<span class="Name">UserInputState</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">InputObject</span>
+	<span class="Name">IsModifierKeyDown</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">ModifierKey</span>
+			<span class="ParamName">modifierKey</span>
+		</span>
+	</span>
+</div>
+
 <div class="Class">
 	<span class="Name">InsertService</span>
 	<span class="Superclass">Instance</span>
@@ -11983,6 +12048,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">JointInstance</span>
+	<span class="Name">Enabled</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">JointInstance</span>
 	<span class="Name">C0</span>
@@ -12089,7 +12161,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Motor</span>
 	<span class="Name">CurrentAngle</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -12641,7 +12713,7 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Lighting</span>
 	<span class="Name">ShadowColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -12665,7 +12737,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Lighting</span>
 	<span class="Name">ClockTime</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -12862,7 +12934,7 @@
 	<span class="ClassName Property">LocalizationService</span>
 	<span class="Name">ForcePlayModeGameLocaleId</span>
 	<span class="Security">{LocalUserSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -12871,7 +12943,7 @@
 	<span class="ClassName Property">LocalizationService</span>
 	<span class="Name">ForcePlayModeRobloxLocaleId</span>
 	<span class="Security">{LocalUserSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -12880,7 +12952,7 @@
 	<span class="ClassName Property">LocalizationService</span>
 	<span class="Name">RobloxForcePlayModeGameLocaleId</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -12889,7 +12961,7 @@
 	<span class="ClassName Property">LocalizationService</span>
 	<span class="Name">RobloxForcePlayModeRobloxLocaleId</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -13083,7 +13155,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">LocalizationTable</span>
 	<span class="Name">DevelopmentLanguage</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -13703,51 +13775,6 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">MDIInstance</span>
-	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[NotCreatable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Instance</span>
-	<span class="ClassName Property">MDIInstance</span>
-	<span class="Name">FocusedDataModelSession</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">MDIInstance</span>
-	<span class="Name">FocusedDataModelSessionId</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">MDIInstance</span>
-	<span class="Name">DataModelSessionEnded</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">sessionId</span>
-		</span>
-	</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">MDIInstance</span>
-	<span class="Name">DataModelSessionStarted</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">sessionId</span>
-		</span>
-	</span>
 </div>
 
 <div class="Class">
@@ -14773,7 +14800,6 @@
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">Hit</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14788,7 +14814,6 @@
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">Origin</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14798,7 +14823,6 @@
 	<span class="InnerType">BasePart</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">Target</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14814,7 +14838,6 @@
 	<span class="InnerType">NormalId</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">TargetSurface</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14823,7 +14846,6 @@
 	<span class="Type">Ray</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">UnitRay</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14832,7 +14854,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">ViewSizeX</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14841,7 +14862,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">ViewSizeY</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14850,7 +14870,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">X</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14859,7 +14878,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">Y</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14969,6 +14987,43 @@
 </div>
 
 <div class="Class">
+	<span class="Name">MultipleDocumentInterfaceInstance</span>
+	<span class="Superclass">Instance</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">MultipleDocumentInterfaceInstance</span>
+	<span class="Name">FocusedDataModelSession</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MultipleDocumentInterfaceInstance</span>
+	<span class="Name">DataModelSessionEnded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">dataModelSession</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MultipleDocumentInterfaceInstance</span>
+	<span class="Name">DataModelSessionStarted</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">dataModelSession</span>
+		</span>
+	</span>
+</div>
+
+<div class="Class">
 	<span class="Name">NetworkMarker</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -15072,7 +15127,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">NetworkServer</span>
 	<span class="Name">Port</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -15479,7 +15533,7 @@
 	<span class="ClassName Property">NotificationService</span>
 	<span class="Name">SelectedTheme</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -15631,7 +15685,7 @@
 	<span class="Type">BrickColor</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">BrickColor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -15645,7 +15699,7 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Color</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -15740,7 +15794,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Orientation</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -15748,7 +15802,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Position</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -15762,7 +15816,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Rotation</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -15791,7 +15845,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Elasticity</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -15801,7 +15855,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Friction</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -15826,7 +15880,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Size</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -16247,7 +16301,7 @@
 	<span class="InnerType">FormFactor</span>
 	<span class="ClassName Property">FormFactorPart</span>
 	<span class="Name">FormFactor</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -16262,7 +16316,7 @@
 	<span class="InnerType">PartType</span>
 	<span class="ClassName Property">Part</span>
 	<span class="Name">Shape</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -17070,7 +17124,7 @@
 	<span class="ClassName Property">TriangleMeshPart</span>
 	<span class="Name">CollisionFidelity</span>
 	<span class="Security">{✏️PluginSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -17126,7 +17180,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">PartOperation</span>
 	<span class="Name">TriangleCount</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -17157,7 +17210,7 @@
 	<span class="InnerType">Style</span>
 	<span class="ClassName Property">TrussPart</span>
 	<span class="Name">Style</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -17800,7 +17853,6 @@
 	<span class="Type">Content</span>
 	<span class="ClassName Property">PackageLink</span>
 	<span class="Name">PackageId</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -17819,7 +17871,7 @@
 	<span class="ClassName Property">PackageLink</span>
 	<span class="Name">VersionNumber</span>
 	<span class="Security">{✏️NotAccessibleSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -18001,7 +18053,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">ParticleEmitter</span>
 	<span class="Name">VelocitySpread</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -18062,7 +18114,6 @@
 	<span class="InnerType">PathStatus</span>
 	<span class="ClassName Property">Path</span>
 	<span class="Name">Status</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -18135,7 +18186,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">PathfindingService</span>
 	<span class="Name">EmptyCutoff</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -18723,7 +18774,7 @@
 	<span class="ClassName Property">Player</span>
 	<span class="Name">DataComplexityLimit</span>
 	<span class="Security">{LocalUserSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -18748,7 +18799,6 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">Player</span>
 	<span class="Name">FollowUserId</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -18776,7 +18826,7 @@
 	<span class="ClassName Property">Player</span>
 	<span class="Name">MaximumSimulationRadius</span>
 	<span class="Security">{LocalUserSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -20139,7 +20189,7 @@
 	<span class="ClassName Property">Plugin</span>
 	<span class="Name">UsesAssetInsertionDrag</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -20180,9 +20230,9 @@
 
 <div class="Property child">
 	<span class="Type">Class</span>
-	<span class="InnerType">MDIInstance</span>
+	<span class="InnerType">MultipleDocumentInterfaceInstance</span>
 	<span class="ClassName Property">Plugin</span>
-	<span class="Name">MDIInstance</span>
+	<span class="Name">MultipleDocumentInterfaceInstance</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -20199,40 +20249,6 @@
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Instance</span>
-	<span class="ClassName Function">Plugin</span>
-	<span class="Name">Bind</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">key</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">callback</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Instance</span>
-	<span class="ClassName Function">Plugin</span>
-	<span class="Name">BindAndFire</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">key</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">callback</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -20347,25 +20363,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">Plugin</span>
-	<span class="Name">Fire</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">key</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName default">value</span>
-			<span class="ParamDefault string"></span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">string</span>
+	<span class="Type">Variant</span>
 	<span class="ClassName Function">Plugin</span>
 	<span class="Name">GetItem</span>
 	<span class="Parameters">
@@ -20374,9 +20372,8 @@
 			<span class="ParamName">key</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName default">defaultValue</span>
-			<span class="ParamDefault string"></span>
+			<span class="Type">Variant</span>
+			<span class="ParamName">defaultValue</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -20430,19 +20427,6 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">bool</span>
-	<span class="ClassName Function">Plugin</span>
-	<span class="Name">HasItem</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">key</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">Plugin</span>
 	<span class="Name">ImportFbxAnimation</span>
@@ -20477,6 +20461,23 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Plugin</span>
+	<span class="Name">Invoke</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">arguments</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">Plugin</span>
 	<span class="Name">IsActivated</span>
@@ -20503,6 +20504,40 @@
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">Plugin</span>
+	<span class="Name">OnInvoke</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">Plugin</span>
+	<span class="Name">OnSetItem</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -20592,19 +20627,6 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">bool</span>
-	<span class="ClassName Function">Plugin</span>
-	<span class="Name">RemoveItem</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">key</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Plugin</span>
 	<span class="Name">ResumeSound</span>
@@ -20666,9 +20688,8 @@
 			<span class="ParamName">key</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName default">value</span>
-			<span class="ParamDefault string"></span>
+			<span class="Type">Variant</span>
+			<span class="ParamName">value</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -20779,7 +20800,7 @@
 	<span class="ClassName Property">PluginAction</span>
 	<span class="Name">Checked</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -20788,7 +20809,7 @@
 	<span class="ClassName Property">PluginAction</span>
 	<span class="Name">DefaultShortcut</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -20797,7 +20818,7 @@
 	<span class="ClassName Property">PluginAction</span>
 	<span class="Name">Enabled</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -20923,7 +20944,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">PluginMenu</span>
 	<span class="Name">Icon</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -20931,7 +20952,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">PluginMenu</span>
 	<span class="Name">Title</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -21050,7 +21071,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PluginToolbarButton</span>
 	<span class="Name">ClickableWhenViewportHidden</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -21058,7 +21079,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PluginToolbarButton</span>
 	<span class="Name">Enabled</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -21066,7 +21087,7 @@
 	<span class="Type">Content</span>
 	<span class="ClassName Property">PluginToolbarButton</span>
 	<span class="Name">Icon</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -21226,7 +21247,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Pose</span>
 	<span class="Name">MaskWeight</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -21954,7 +21975,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">RenderSettings</span>
 	<span class="Name">EnableFRM</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -22070,7 +22091,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">RenderingTest</span>
 	<span class="Name">Orientation</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -22078,7 +22099,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">RenderingTest</span>
 	<span class="Name">Position</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -22410,7 +22431,7 @@
 	<span class="ClassName Property">ScriptContext</span>
 	<span class="Name">ScriptsDisabled</span>
 	<span class="Security">{LocalUserSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -22909,6 +22930,14 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">DataModel</span>
+	<span class="Name">EnableScriptCollabOnLoad</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DataModel</span>
 	<span class="Name">IsSFFlagsLoaded</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
@@ -22919,7 +22948,6 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">DataModel</span>
 	<span class="Name">PrivateServerId</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -22928,7 +22956,6 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">DataModel</span>
 	<span class="Name">PrivateServerOwnerId</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -22937,7 +22964,6 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">DataModel</span>
 	<span class="Name">VIPServerId</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -22948,7 +22974,6 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">DataModel</span>
 	<span class="Name">VIPServerOwnerId</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -23676,7 +23701,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Smoke</span>
 	<span class="Name">Opacity</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -23684,7 +23709,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Smoke</span>
 	<span class="Name">RiseVelocity</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -23692,7 +23717,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Smoke</span>
 	<span class="Name">Size</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -23830,7 +23855,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">MinDistance</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -23838,7 +23863,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">Pitch</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -24404,7 +24429,7 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Sparkles</span>
 	<span class="Name">Color</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -25016,7 +25041,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Enable Intellisense</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -25210,7 +25235,6 @@
 	<span class="InnerType">UITheme</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">UI Theme</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -25532,7 +25556,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">StudioService</span>
 	<span class="Name">UseLocalSpace</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -26020,7 +26044,6 @@
 	<span class="Type">double</span>
 	<span class="ClassName Property">TaskScheduler</span>
 	<span class="Name">SchedulerDutyCycle</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26029,7 +26052,6 @@
 	<span class="Type">double</span>
 	<span class="ClassName Property">TaskScheduler</span>
 	<span class="Name">SchedulerRate</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26038,7 +26060,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">TaskScheduler</span>
 	<span class="Name">ThreadPoolSize</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26058,7 +26079,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Team</span>
 	<span class="Name">AutoColorCharacters</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -26067,7 +26088,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">Team</span>
 	<span class="Name">Score</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -26140,7 +26161,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">TeleportService</span>
 	<span class="Name">CustomizedTeleportUI</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -26490,7 +26511,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">TestService</span>
 	<span class="Name">ErrorCount</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26499,7 +26519,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">TestService</span>
 	<span class="Name">TestCount</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26508,7 +26527,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">TestService</span>
 	<span class="Name">WarnCount</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -27088,7 +27106,6 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">Translator</span>
 	<span class="Name">LocaleId</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -27154,7 +27171,6 @@
 	<span class="InnerType">PlaybackState</span>
 	<span class="ClassName Property">TweenBase</span>
 	<span class="Name">PlaybackState</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -27617,7 +27633,6 @@
 	<span class="InnerType">GuiObject</span>
 	<span class="ClassName Property">UIPageLayout</span>
 	<span class="Name">CurrentPage</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -27892,7 +27907,6 @@
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">IsUsingCameraYInverted</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -27903,7 +27917,6 @@
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">IsUsingGamepadCameraSensitivity</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -27928,7 +27941,6 @@
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">MicroProfilerWebServerIP</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -27939,7 +27951,6 @@
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">MicroProfilerWebServerPort</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -28227,7 +28238,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">AccelerometerEnabled</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -28245,7 +28255,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">GamepadEnabled</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -28263,7 +28272,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">GyroscopeEnabled</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -28272,7 +28280,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">KeyboardEnabled</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -28288,7 +28295,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">MouseDeltaSensitivity</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28296,7 +28303,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">MouseEnabled</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -28379,7 +28385,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">TouchEnabled</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -28397,7 +28402,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">VREnabled</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -29122,7 +29126,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">VRService</span>
 	<span class="Name">VREnabled</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -29394,7 +29397,7 @@
 	<span class="Type">double</span>
 	<span class="ClassName Property">DoubleConstrainedValue</span>
 	<span class="Name">ConstrainedValue</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -29418,7 +29421,7 @@
 	<span class="Type">double</span>
 	<span class="ClassName Property">DoubleConstrainedValue</span>
 	<span class="Name">Value</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -29445,7 +29448,7 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">IntConstrainedValue</span>
 	<span class="Name">ConstrainedValue</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -29469,7 +29472,7 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">IntConstrainedValue</span>
 	<span class="Name">Value</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -29636,7 +29639,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">VirtualInputManager</span>
 	<span class="Name">AdditionalLuaState</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -30192,7 +30195,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">WeldConstraint</span>
 	<span class="Name">Active</span>
-	<span class="Serialization">[&lt;💾&gt; Save-only]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -30208,7 +30210,7 @@
 	<span class="InnerType">BasePart</span>
 	<span class="ClassName Property">WeldConstraint</span>
 	<span class="Name">Part0</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -30217,7 +30219,7 @@
 	<span class="InnerType">BasePart</span>
 	<span class="ClassName Property">WeldConstraint</span>
 	<span class="Name">Part1</span>
-	<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -36034,6 +36036,34 @@
 <div class="EnumItem child">
 	<span class="EnumName">MessageType</span>
 	<span class="Name">MessageError</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ModifierKey</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ModifierKey</span>
+	<span class="Name">Shift</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ModifierKey</span>
+	<span class="Name">Ctrl</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ModifierKey</span>
+	<span class="Name">Alt</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ModifierKey</span>
+	<span class="Name">Meta</span>
 	<span class="Value">3</span>
 </div>
 
