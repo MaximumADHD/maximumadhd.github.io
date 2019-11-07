@@ -408,7 +408,6 @@
 <div class="Class">
 	<span class="Name">ABTestService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{LocalUserSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -419,6 +418,7 @@
 	<span class="ClassName Function">ABTestService</span>
 	<span class="Name">ClearUserVariations</span>
 	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -431,6 +431,7 @@
 			<span class="ParamName">name</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -443,6 +444,7 @@
 			<span class="ParamName">userId</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -450,6 +452,7 @@
 	<span class="ClassName Function">ABTestService</span>
 	<span class="Name">WaitUntilBrowserTrackerABTestsInitialized</span>
 	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -458,6 +461,7 @@
 	<span class="ClassName Function">ABTestService</span>
 	<span class="Name">WaitUntilUserABTestsInitialized</span>
 	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -1483,6 +1487,26 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">BadgeService</span>
+	<span class="Name">OnBadgeAwarded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">creatorId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">badgeId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">BasePlayerGui</span>
 	<span class="Superclass">Instance</span>
@@ -1525,6 +1549,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">CoreGui</span>
 	<span class="Name">Version</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -2246,7 +2271,6 @@
 <div class="Class">
 	<span class="Name">BrowserService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -2257,6 +2281,7 @@
 	<span class="ClassName Function">BrowserService</span>
 	<span class="Name">CloseBrowserWindow</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2264,6 +2289,7 @@
 	<span class="ClassName Function">BrowserService</span>
 	<span class="Name">CopyAuthCookieFromBrowserToEngine</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2284,6 +2310,7 @@
 			<span class="ParamName">params</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2296,6 +2323,7 @@
 			<span class="ParamName">javascript</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2308,6 +2336,7 @@
 			<span class="ParamName">url</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2324,6 +2353,7 @@
 			<span class="ParamName">url</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2331,6 +2361,7 @@
 	<span class="ClassName Function">BrowserService</span>
 	<span class="Name">OpenWeChatAuthWindow</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2351,6 +2382,7 @@
 			<span class="ParamName">params</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2363,18 +2395,21 @@
 			<span class="ParamName">command</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
 	<span class="ClassName Event">BrowserService</span>
 	<span class="Name">AuthCookieCopiedToEngine</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
 	<span class="ClassName Event">BrowserService</span>
 	<span class="Name">BrowserWindowClosed</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -2386,6 +2421,7 @@
 			<span class="ParamName">url</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -2397,6 +2433,7 @@
 			<span class="ParamName">content</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -2410,7 +2447,6 @@
 <div class="Class">
 	<span class="Name">MeshContentProvider</span>
 	<span class="Superclass">CacheableContentProvider</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -2421,6 +2457,7 @@
 	<span class="ClassName Function">MeshContentProvider</span>
 	<span class="Name">GetContentMemoryData</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -2494,6 +2531,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Camera</span>
 	<span class="Name">NearPlaneZ</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -2502,6 +2540,7 @@
 	<span class="Type">Vector2</span>
 	<span class="ClassName Property">Camera</span>
 	<span class="Name">ViewportSize</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -2745,7 +2784,6 @@
 <div class="Class">
 	<span class="Name">ChangeHistoryService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 </div>
@@ -2755,6 +2793,7 @@
 	<span class="ClassName Function">ChangeHistoryService</span>
 	<span class="Name">GetCanRedo</span>
 	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2762,6 +2801,7 @@
 	<span class="ClassName Function">ChangeHistoryService</span>
 	<span class="Name">GetCanUndo</span>
 	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2769,6 +2809,7 @@
 	<span class="ClassName Function">ChangeHistoryService</span>
 	<span class="Name">Redo</span>
 	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2776,6 +2817,7 @@
 	<span class="ClassName Function">ChangeHistoryService</span>
 	<span class="Name">ResetWaypoints</span>
 	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2788,6 +2830,7 @@
 			<span class="ParamName">state</span>
 		</span>
 	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2800,6 +2843,7 @@
 			<span class="ParamName">name</span>
 		</span>
 	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2807,6 +2851,7 @@
 	<span class="ClassName Function">ChangeHistoryService</span>
 	<span class="Name">Undo</span>
 	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -2818,6 +2863,7 @@
 			<span class="ParamName">waypoint</span>
 		</span>
 	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -2829,6 +2875,7 @@
 			<span class="ParamName">waypoint</span>
 		</span>
 	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
@@ -3663,6 +3710,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">HingeConstraint</span>
 	<span class="Name">CurrentAngle</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -3784,6 +3832,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">RodConstraint</span>
 	<span class="Name">CurrentDistance</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -3809,6 +3858,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">RopeConstraint</span>
 	<span class="Name">CurrentDistance</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -3841,6 +3891,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">SlidingBallConstraint</span>
 	<span class="Name">CurrentPosition</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -4000,6 +4051,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">CylindricalConstraint</span>
 	<span class="Name">CurrentAngle</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -4008,6 +4060,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">CylindricalConstraint</span>
 	<span class="Name">WorldRotationAxis</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -4044,6 +4097,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">SpringConstraint</span>
 	<span class="Name">CurrentLength</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -4144,6 +4198,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">ContentProvider</span>
 	<span class="Name">BaseUrl</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -4152,6 +4207,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">ContentProvider</span>
 	<span class="Name">RequestQueueSize</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -4833,7 +4889,6 @@
 <div class="Class">
 	<span class="Name">CoreScriptSyncService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -4849,6 +4904,7 @@
 			<span class="ParamName">script</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class deprecated">
@@ -5035,7 +5091,6 @@
 <div class="Class">
 	<span class="Name">DataModelSession</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 </div>
 
@@ -5044,6 +5099,7 @@
 	<span class="InnerType">StudioDataModelType</span>
 	<span class="ClassName Property">DataModelSession</span>
 	<span class="Name">CurrentDataModelType</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5052,6 +5108,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">DataModelSession</span>
 	<span class="Name">SessionId</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5066,12 +5123,14 @@
 			<span class="ParamName">dataModelType</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
 	<span class="ClassName Event">DataModelSession</span>
 	<span class="Name">CurrentDataModelTypeChanged</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -5084,6 +5143,7 @@
 			<span class="ParamName">gameStateType</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -5096,6 +5156,7 @@
 			<span class="ParamName">gameStateType</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -5256,6 +5317,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">DebugSettings</span>
 	<span class="Name">DataModel</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5264,6 +5326,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">DebugSettings</span>
 	<span class="Name">InstanceCount</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5272,6 +5335,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">DebugSettings</span>
 	<span class="Name">JobCount</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5280,6 +5344,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">DebugSettings</span>
 	<span class="Name">PlayerCount</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5288,6 +5353,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">DebugSettings</span>
 	<span class="Name">RobloxVersion</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5329,6 +5395,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">DebuggerManager</span>
 	<span class="Name">DebuggingEnabled</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5577,7 +5644,6 @@
 <div class="Class">
 	<span class="Name">DraftsService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -5593,6 +5659,7 @@
 			<span class="ParamName">scripts</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -5606,6 +5673,7 @@
 			<span class="ParamName">scripts</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -5619,6 +5687,7 @@
 			<span class="ParamName">script</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -5626,6 +5695,7 @@
 	<span class="ClassName Function">DraftsService</span>
 	<span class="Name">GetDrafts</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -5639,6 +5709,7 @@
 			<span class="ParamName">script</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -5651,6 +5722,7 @@
 			<span class="ParamName">scripts</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -5663,6 +5735,7 @@
 			<span class="ParamName">scripts</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -5675,6 +5748,7 @@
 			<span class="ParamName">scripts</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -5687,6 +5761,7 @@
 			<span class="ParamName">scripts</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -5704,6 +5779,7 @@
 			<span class="ParamName">status</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -5715,6 +5791,7 @@
 			<span class="ParamName">script</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -5726,6 +5803,7 @@
 			<span class="ParamName">script</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -5737,6 +5815,7 @@
 			<span class="ParamName">script</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -5748,6 +5827,7 @@
 			<span class="ParamName">script</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -5764,6 +5844,7 @@
 			<span class="ParamName">status</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -6022,7 +6103,6 @@
 <div class="Class">
 	<span class="Name">File</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -6031,6 +6111,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">File</span>
 	<span class="Name">FileName</span>
+	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -6041,6 +6122,7 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">File</span>
 	<span class="Name">FileSize</span>
+	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -6051,6 +6133,7 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">File</span>
 	<span class="Name">Size</span>
+	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -6061,6 +6144,7 @@
 	<span class="ClassName Function">File</span>
 	<span class="Name">GetBinaryContents</span>
 	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function deprecated child">
@@ -6068,6 +6152,7 @@
 	<span class="ClassName Function">File</span>
 	<span class="Name">GetFileContentsBinary</span>
 	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -6076,6 +6161,7 @@
 	<span class="ClassName Function">File</span>
 	<span class="Name">GetTemporaryId</span>
 	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
@@ -6161,7 +6247,6 @@
 <div class="Class">
 	<span class="Name">FriendService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 </div>
@@ -6171,6 +6256,7 @@
 	<span class="ClassName Function">FriendService</span>
 	<span class="Name">GetPlatformFriends</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -6183,6 +6269,7 @@
 			<span class="ParamName">friendData</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class deprecated">
@@ -7457,6 +7544,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">TextButton</span>
 	<span class="Name">LocalizedText</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -7685,6 +7773,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">TextLabel</span>
 	<span class="Name">LocalizedText</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -7839,6 +7928,7 @@
 	<span class="Type">Vector2</span>
 	<span class="ClassName Property">ScrollingFrame</span>
 	<span class="Name">AbsoluteWindowSize</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -8544,6 +8634,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">DockWidgetPluginGui</span>
 	<span class="Name">HostWidgetWasRestored</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -8917,37 +9008,41 @@
 <div class="Class">
 	<span class="Name">ParabolaAdornment</span>
 	<span class="Superclass">PVAdornment</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">ParabolaAdornment</span>
 	<span class="Name">A</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">ParabolaAdornment</span>
 	<span class="Name">B</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">ParabolaAdornment</span>
 	<span class="Name">C</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">ParabolaAdornment</span>
 	<span class="Name">Range</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">ParabolaAdornment</span>
 	<span class="Name">Thickness</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -8960,6 +9055,7 @@
 			<span class="ParamName">ignoreDescendentsTable</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -9322,6 +9418,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">GuiService</span>
 	<span class="Name">MenuIsOpen</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -10176,7 +10273,6 @@
 <div class="Class">
 	<span class="Name">HttpRbxApiService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 </div>
@@ -10208,6 +10304,7 @@
 			<span class="ParamDefault bool">false</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -10238,6 +10335,7 @@
 			<span class="ParamDefault bool">false</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -10278,6 +10376,7 @@
 			<span class="ParamDefault bool">false</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -10318,6 +10417,7 @@
 			<span class="ParamDefault bool">false</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -10354,13 +10454,13 @@
 			<span class="ParamDefault bool">false</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Class">
 	<span class="Name">HttpRequest</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 </div>
 
@@ -10369,6 +10469,7 @@
 	<span class="ClassName Function">HttpRequest</span>
 	<span class="Name">Cancel</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -10381,6 +10482,7 @@
 			<span class="ParamName">callback</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -10710,6 +10812,7 @@
 	<span class="InnerType">BasePart</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">RootPart</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -11825,7 +11928,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">InsertService</span>
 	<span class="Name">AllowClientInsertModels</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -12692,7 +12794,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Lighting</span>
 	<span class="Name">LegacyOutlines</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -12729,7 +12830,6 @@
 	<span class="InnerType">Technology</span>
 	<span class="ClassName Property">Lighting</span>
 	<span class="Name">Technology</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -12831,7 +12931,6 @@
 <div class="Class">
 	<span class="Name">LocalStorageService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -12842,6 +12941,7 @@
 	<span class="ClassName Function">LocalStorageService</span>
 	<span class="Name">Flush</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -12854,6 +12954,7 @@
 			<span class="ParamName">key</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -12870,6 +12971,7 @@
 			<span class="ParamName">value</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -12882,6 +12984,7 @@
 			<span class="ParamName">callback</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -12897,12 +13000,14 @@
 			<span class="ParamName">value</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
 	<span class="ClassName Event">LocalStorageService</span>
 	<span class="Name">StoreWasCleared</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -13598,7 +13703,6 @@
 <div class="Class">
 	<span class="Name">LoginService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 </div>
@@ -13608,6 +13712,7 @@
 	<span class="ClassName Function">LoginService</span>
 	<span class="Name">Logout</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -13615,6 +13720,7 @@
 	<span class="ClassName Function">LoginService</span>
 	<span class="Name">PromptLogin</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -13626,6 +13732,7 @@
 			<span class="ParamName">loginError</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -13637,6 +13744,7 @@
 			<span class="ParamName">username</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxSecurity}</span>
 </div>
 
 <div class="Class">
@@ -13690,7 +13798,6 @@
 <div class="Class">
 	<span class="Name">LuaSourceContainer</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
@@ -13730,13 +13837,13 @@
 <div class="Class">
 	<span class="Name">Script</span>
 	<span class="Superclass">BaseScript</span>
-	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">ProtectedString</span>
 	<span class="ClassName Property">Script</span>
 	<span class="Name">Source</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -14601,7 +14708,6 @@
 <div class="Class">
 	<span class="Name">MemStorageConnection</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14611,12 +14717,12 @@
 	<span class="ClassName Function">MemStorageConnection</span>
 	<span class="Name">Disconnect</span>
 	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
 	<span class="Name">MemStorageService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -14636,6 +14742,7 @@
 			<span class="ParamName">callback</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -14652,6 +14759,7 @@
 			<span class="ParamName">callback</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -14669,6 +14777,7 @@
 			<span class="ParamDefault string"></span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -14686,6 +14795,7 @@
 			<span class="ParamDefault string"></span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -14698,6 +14808,7 @@
 			<span class="ParamName">key</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -14710,6 +14821,7 @@
 			<span class="ParamName">key</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -14727,6 +14839,7 @@
 			<span class="ParamDefault string"></span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class deprecated">
@@ -14800,6 +14913,7 @@
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">Hit</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14814,6 +14928,7 @@
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">Origin</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14823,6 +14938,7 @@
 	<span class="InnerType">BasePart</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">Target</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14838,6 +14954,7 @@
 	<span class="InnerType">NormalId</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">TargetSurface</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14846,6 +14963,7 @@
 	<span class="Type">Ray</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">UnitRay</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14854,6 +14972,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">ViewSizeX</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14862,6 +14981,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">ViewSizeY</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14870,6 +14990,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">X</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14878,6 +14999,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">Mouse</span>
 	<span class="Name">Y</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -14963,7 +15085,6 @@
 <div class="Class">
 	<span class="Name">PluginMouse</span>
 	<span class="Superclass">Mouse</span>
-	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 </div>
 
@@ -14976,6 +15097,7 @@
 			<span class="ParamName">instances</span>
 		</span>
 	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
@@ -14989,7 +15111,6 @@
 <div class="Class">
 	<span class="Name">MultipleDocumentInterfaceInstance</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 </div>
 
@@ -14997,6 +15118,7 @@
 	<span class="Type">Instance</span>
 	<span class="ClassName Property">MultipleDocumentInterfaceInstance</span>
 	<span class="Name">FocusedDataModelSession</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -15010,6 +15132,7 @@
 			<span class="ParamName">dataModelSession</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -15021,6 +15144,7 @@
 			<span class="ParamName">dataModelSession</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -15039,7 +15163,6 @@
 <div class="Class">
 	<span class="Name">NetworkPeer</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
@@ -15054,6 +15177,7 @@
 			<span class="ParamName">limit</span>
 		</span>
 	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
@@ -15127,6 +15251,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">NetworkServer</span>
 	<span class="Name">Port</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -15178,7 +15303,6 @@
 <div class="Class">
 	<span class="Name">ClientReplicator</span>
 	<span class="Superclass">NetworkReplicator</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -15197,6 +15321,7 @@
 			<span class="ParamName">timeFrame</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -15209,6 +15334,7 @@
 			<span class="ParamName">request</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -15224,6 +15350,7 @@
 			<span class="ParamName">message</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -15235,6 +15362,7 @@
 			<span class="ParamName">stats</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -15496,7 +15624,6 @@
 <div class="Class">
 	<span class="Name">NotificationService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{LocalUserSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 </div>
@@ -15575,6 +15702,7 @@
 			<span class="ParamName">userId</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -15591,6 +15719,7 @@
 			<span class="ParamName">alertId</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -15603,6 +15732,7 @@
 			<span class="ParamName">userId</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -15628,6 +15758,7 @@
 			<span class="ParamName">minutesToFire</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -16539,7 +16670,6 @@
 	<span class="Type">BinaryString</span>
 	<span class="ClassName Property">Terrain</span>
 	<span class="Name">MaterialColors</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -17137,7 +17267,6 @@
 	<span class="Type">Content</span>
 	<span class="ClassName Property">MeshPart</span>
 	<span class="Name">MeshID</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
@@ -17180,6 +17309,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">PartOperation</span>
 	<span class="Name">TriangleCount</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -17481,7 +17611,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">StreamingMinRadius</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -17490,7 +17619,6 @@
 	<span class="InnerType">StreamingPauseMode</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">StreamingPauseMode</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -17498,7 +17626,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">StreamingTargetRadius</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -17506,7 +17633,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">TemporaryLegacyPhysicsSolverOverride</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -17845,7 +17971,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PackageLink</span>
 	<span class="Name">AutoUpdate</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -17853,6 +17978,7 @@
 	<span class="Type">Content</span>
 	<span class="ClassName Property">PackageLink</span>
 	<span class="Name">PackageId</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -18114,6 +18240,7 @@
 	<span class="InnerType">PathStatus</span>
 	<span class="ClassName Property">Path</span>
 	<span class="Name">Status</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -18799,6 +18926,7 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">Player</span>
 	<span class="Name">FollowUserId</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -20895,7 +21023,6 @@
 <div class="Class">
 	<span class="Name">PluginManager</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 </div>
 
@@ -20904,6 +21031,7 @@
 	<span class="ClassName Function">PluginManager</span>
 	<span class="Name">CreatePlugin</span>
 	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[CustomLuaState]</span>
 </div>
 
@@ -20918,6 +21046,7 @@
 			<span class="ParamDefault string"></span>
 		</span>
 	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -20931,6 +21060,7 @@
 			<span class="ParamDefault string"></span>
 		</span>
 	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
@@ -21032,7 +21162,6 @@
 <div class="Class">
 	<span class="Name">PluginToolbar</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 </div>
 
@@ -21059,6 +21188,7 @@
 			<span class="ParamDefault string"></span>
 		</span>
 	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
@@ -21384,7 +21514,6 @@
 <div class="Class">
 	<span class="Name">RbxAnalyticsService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 </div>
@@ -21394,6 +21523,7 @@
 	<span class="ClassName Function">RbxAnalyticsService</span>
 	<span class="Name">GetClientId</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21401,6 +21531,7 @@
 	<span class="ClassName Function">RbxAnalyticsService</span>
 	<span class="Name">GetSessionId</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21413,6 +21544,7 @@
 			<span class="ParamName">target</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21430,6 +21562,7 @@
 			<span class="ParamDefault int">1</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21450,6 +21583,7 @@
 			<span class="ParamName">throttlingPercentage</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21466,6 +21600,7 @@
 			<span class="ParamName">value</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21486,6 +21621,7 @@
 			<span class="ParamName">seconds</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21510,6 +21646,7 @@
 			<span class="ParamName">additionalArgs</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21534,6 +21671,7 @@
 			<span class="ParamName">additionalArgs</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21558,6 +21696,7 @@
 			<span class="ParamName">additionalArgs</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21582,6 +21721,7 @@
 			<span class="ParamName">additionalArgs</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21607,6 +21747,7 @@
 			<span class="ParamDefault int64">0</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21636,6 +21777,7 @@
 			<span class="ParamDefault int64">0</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21648,6 +21790,7 @@
 			<span class="ParamName">args</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -22820,7 +22963,6 @@
 <div class="Class">
 	<span class="Name">ServerScriptService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -22930,14 +23072,6 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">DataModel</span>
-	<span class="Name">EnableScriptCollabOnLoad</span>
-	<span class="Security">{PluginSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">DataModel</span>
 	<span class="Name">IsSFFlagsLoaded</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
@@ -22948,6 +23082,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">DataModel</span>
 	<span class="Name">PrivateServerId</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -22956,6 +23091,7 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">DataModel</span>
 	<span class="Name">PrivateServerOwnerId</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -22964,6 +23100,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">DataModel</span>
 	<span class="Name">VIPServerId</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -22974,6 +23111,7 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">DataModel</span>
 	<span class="Name">VIPServerOwnerId</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -24921,7 +25059,6 @@
 <div class="Class">
 	<span class="Name">StatsItem</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 </div>
 
@@ -24930,6 +25067,7 @@
 	<span class="ClassName Function">StatsItem</span>
 	<span class="Name">GetValue</span>
 	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -24937,6 +25075,7 @@
 	<span class="ClassName Function">StatsItem</span>
 	<span class="Name">GetValueString</span>
 	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
@@ -24966,7 +25105,6 @@
 <div class="Class">
 	<span class="Name">StopWatchReporter</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -24982,6 +25120,7 @@
 			<span class="ParamName">taskId</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -24994,6 +25133,7 @@
 			<span class="ParamName">reportName</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -25010,6 +25150,7 @@
 			<span class="ParamName">taskName</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -25235,6 +25376,7 @@
 	<span class="InnerType">UITheme</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">UI Theme</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -25497,16 +25639,23 @@
 <div class="Class">
 	<span class="Name">StudioData</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StudioData</span>
+	<span class="Name">EnableScriptCollabOnLoad</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">int64</span>
 	<span class="ClassName Property">StudioData</span>
 	<span class="Name">SrcPlaceId</span>
+	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -25515,6 +25664,7 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">StudioData</span>
 	<span class="Name">SrcUniverseId</span>
+	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -25677,6 +25827,19 @@
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">currentAssetVersion</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">OpenInBrowser_DONOTUSE</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">url</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -25985,7 +26148,6 @@
 <div class="Class">
 	<span class="Name">StudioTheme</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26007,6 +26169,7 @@
 			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -26025,6 +26188,7 @@
 			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
@@ -26044,6 +26208,7 @@
 	<span class="Type">double</span>
 	<span class="ClassName Property">TaskScheduler</span>
 	<span class="Name">SchedulerDutyCycle</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26052,6 +26217,7 @@
 	<span class="Type">double</span>
 	<span class="ClassName Property">TaskScheduler</span>
 	<span class="Name">SchedulerRate</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26060,6 +26226,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">TaskScheduler</span>
 	<span class="Name">ThreadPoolSize</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26511,6 +26678,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">TestService</span>
 	<span class="Name">ErrorCount</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26519,6 +26687,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">TestService</span>
 	<span class="Name">TestCount</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26527,6 +26696,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">TestService</span>
 	<span class="Name">WarnCount</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26891,7 +27061,6 @@
 <div class="Class">
 	<span class="Name">ThirdPartyUserService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -26902,6 +27071,7 @@
 	<span class="ClassName Function">ThirdPartyUserService</span>
 	<span class="Name">GetUserDisplayName</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -26909,6 +27079,7 @@
 	<span class="ClassName Function">ThirdPartyUserService</span>
 	<span class="Name">GetUserPlatformId</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -26916,6 +27087,7 @@
 	<span class="ClassName Function">ThirdPartyUserService</span>
 	<span class="Name">HaveActiveUser</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -26929,6 +27101,7 @@
 			<span class="ParamName">gamepadId</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -26937,6 +27110,7 @@
 	<span class="ClassName Function">ThirdPartyUserService</span>
 	<span class="Name">ReturnToEngagement</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -26944,18 +27118,21 @@
 	<span class="ClassName Function">ThirdPartyUserService</span>
 	<span class="Name">ShowAccountPicker</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
 	<span class="ClassName Event">ThirdPartyUserService</span>
 	<span class="Name">ActiveGamepadAdded</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
 	<span class="ClassName Event">ThirdPartyUserService</span>
 	<span class="Name">ActiveGamepadRemoved</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -26967,6 +27144,7 @@
 			<span class="ParamName">signOutStatus</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -27106,6 +27284,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">Translator</span>
 	<span class="Name">LocaleId</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -27171,6 +27350,7 @@
 	<span class="InnerType">PlaybackState</span>
 	<span class="ClassName Property">TweenBase</span>
 	<span class="Name">PlaybackState</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -27281,7 +27461,6 @@
 <div class="Class">
 	<span class="Name">UGCValidationService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -27297,6 +27476,7 @@
 			<span class="ParamName">meshId</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -27310,6 +27490,7 @@
 			<span class="ParamName">meshId</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -27322,6 +27503,7 @@
 			<span class="ParamName">meshId</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -27335,6 +27517,7 @@
 			<span class="ParamName">meshId</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -27347,6 +27530,7 @@
 			<span class="ParamName">textureId</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -27360,6 +27544,7 @@
 			<span class="ParamName">textureId</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -27633,6 +27818,7 @@
 	<span class="InnerType">GuiObject</span>
 	<span class="ClassName Property">UIPageLayout</span>
 	<span class="Name">CurrentPage</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -27907,6 +28093,7 @@
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">IsUsingCameraYInverted</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -27917,6 +28104,7 @@
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">IsUsingGamepadCameraSensitivity</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -27941,6 +28129,7 @@
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">MicroProfilerWebServerIP</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -27951,6 +28140,7 @@
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">MicroProfilerWebServerPort</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -28019,7 +28209,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">StartMaximized</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -28028,7 +28218,7 @@
 	<span class="Type">Vector2</span>
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">StartScreenPosition</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -28037,7 +28227,7 @@
 	<span class="Type">Vector2</span>
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">StartScreenSize</span>
-	<span class="Security">{NotAccessibleSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -28238,6 +28428,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">AccelerometerEnabled</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -28255,6 +28446,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">GamepadEnabled</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -28272,6 +28464,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">GyroscopeEnabled</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -28280,6 +28473,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">KeyboardEnabled</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -28303,6 +28497,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">MouseEnabled</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -28385,6 +28580,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">TouchEnabled</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -28402,6 +28598,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">VREnabled</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -29126,6 +29323,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">VRService</span>
 	<span class="Name">VREnabled</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -29631,7 +29829,6 @@
 <div class="Class">
 	<span class="Name">VirtualInputManager</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Service]</span>
 </div>
 
@@ -29639,6 +29836,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">VirtualInputManager</span>
 	<span class="Name">AdditionalLuaState</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -29648,6 +29846,7 @@
 	<span class="ClassName Function">VirtualInputManager</span>
 	<span class="Name">Dump</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29677,6 +29876,7 @@
 			<span class="ParamName">z</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29698,6 +29898,7 @@
 			<span class="ParamName">buttonState</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29710,6 +29911,7 @@
 			<span class="ParamName">deviceId</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29722,6 +29924,7 @@
 			<span class="ParamName">deviceId</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29742,6 +29945,7 @@
 			<span class="ParamName">z</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29762,6 +29966,7 @@
 			<span class="ParamName">z</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29786,6 +29991,7 @@
 			<span class="ParamName">quatW</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29811,6 +30017,7 @@
 			<span class="ParamName">pluginGui</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29839,6 +30046,7 @@
 			<span class="ParamName">pluginGui</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29859,6 +30067,7 @@
 			<span class="ParamName">pluginGui</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29883,6 +30092,7 @@
 			<span class="ParamName">pluginGui</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29899,6 +30109,7 @@
 			<span class="ParamName">pluginGui</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29923,6 +30134,7 @@
 			<span class="ParamName">y</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29935,6 +30147,7 @@
 			<span class="ParamName">fileName</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29942,6 +30155,7 @@
 	<span class="ClassName Function">VirtualInputManager</span>
 	<span class="Name">StartRecording</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29949,6 +30163,7 @@
 	<span class="ClassName Function">VirtualInputManager</span>
 	<span class="Name">StopRecording</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29969,6 +30184,7 @@
 			<span class="ParamName">detailType</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -29980,6 +30196,7 @@
 			<span class="ParamName">additionalLuaState</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -29991,12 +30208,12 @@
 			<span class="ParamName">result</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
 	<span class="Name">VirtualUser</span>
 	<span class="Superclass">Instance</span>
-	<span class="Security">{LocalUserSecurity}</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -30017,6 +30234,7 @@
 			<span class="ParamDefault CFrame">Identity</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30034,6 +30252,7 @@
 			<span class="ParamDefault CFrame">Identity</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30051,6 +30270,7 @@
 			<span class="ParamDefault CFrame">Identity</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30068,6 +30288,7 @@
 			<span class="ParamDefault CFrame">Identity</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30075,6 +30296,7 @@
 	<span class="ClassName Function">VirtualUser</span>
 	<span class="Name">CaptureController</span>
 	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30092,6 +30314,7 @@
 			<span class="ParamDefault CFrame">Identity</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30109,6 +30332,7 @@
 			<span class="ParamDefault CFrame">Identity</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30126,6 +30350,7 @@
 			<span class="ParamDefault CFrame">Identity</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30138,6 +30363,7 @@
 			<span class="ParamName">key</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30150,6 +30376,7 @@
 			<span class="ParamName">key</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30157,6 +30384,7 @@
 	<span class="ClassName Function">VirtualUser</span>
 	<span class="Name">StartRecording</span>
 	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30164,6 +30392,7 @@
 	<span class="ClassName Function">VirtualUser</span>
 	<span class="Name">StopRecording</span>
 	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30176,6 +30405,7 @@
 			<span class="ParamName">key</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Class">
@@ -30195,6 +30425,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">WeldConstraint</span>
 	<span class="Name">Active</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -32065,6 +32296,22 @@
 	<span class="EnumName">DataStoreRequestType</span>
 	<span class="Name">OnUpdate</span>
 	<span class="Value">5</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">DateTimeKind</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DateTimeKind</span>
+	<span class="Name">Utc</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DateTimeKind</span>
+	<span class="Name">Local</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
