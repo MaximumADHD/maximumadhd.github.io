@@ -104,6 +104,12 @@ div.Merged::before
 	content: "Merged";
 }
 
+div.Moved::before
+{
+	content: "Moved";
+	color: #FF7FFF;
+}
+
 span.MergeListInto::before
 {
 	content: "Into";
