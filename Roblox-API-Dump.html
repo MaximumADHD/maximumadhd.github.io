@@ -13865,6 +13865,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ModuleScript</span>
+	<span class="Name">CoreScriptModified</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">ModuleScript</span>
 	<span class="Name">LinkedSource</span>
@@ -16667,6 +16676,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Terrain</span>
+	<span class="Name">Decoration</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">BinaryString</span>
 	<span class="ClassName Property">Terrain</span>
 	<span class="Name">MaterialColors</span>
@@ -17568,8 +17584,185 @@
 </div>
 
 <div class="Class">
-	<span class="Name">Workspace</span>
+	<span class="Name">WorldRoot</span>
 	<span class="Superclass">Model</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">FindPartOnRay</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Ray</span>
+			<span class="ParamName">ray</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName default">ignoreDescendantsInstance</span>
+			<span class="ParamDefault Instance">nil</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName default">terrainCellsAreCubes</span>
+			<span class="ParamDefault bool">false</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName default">ignoreWater</span>
+			<span class="ParamDefault bool">false</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">FindPartOnRayWithIgnoreList</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Ray</span>
+			<span class="ParamName">ray</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">ignoreDescendantsTable</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName default">terrainCellsAreCubes</span>
+			<span class="ParamDefault bool">false</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName default">ignoreWater</span>
+			<span class="ParamDefault bool">false</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">FindPartOnRayWithWhitelist</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Ray</span>
+			<span class="ParamName">ray</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">whitelistDescendantsTable</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName default">ignoreWater</span>
+			<span class="ParamDefault bool">false</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">FindPartsInRegion3</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Region3</span>
+			<span class="ParamName">region</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName default">ignoreDescendantsInstance</span>
+			<span class="ParamDefault Instance">nil</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">maxParts</span>
+			<span class="ParamDefault int">20</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">FindPartsInRegion3WithIgnoreList</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Region3</span>
+			<span class="ParamName">region</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">ignoreDescendantsTable</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">maxParts</span>
+			<span class="ParamDefault int">20</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">FindPartsInRegion3WithWhiteList</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Region3</span>
+			<span class="ParamName">region</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">whitelistDescendantsTable</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">maxParts</span>
+			<span class="ParamDefault int">20</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">IsRegion3Empty</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Region3</span>
+			<span class="ParamName">region</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName default">ignoreDescendentsInstance</span>
+			<span class="ParamDefault Instance">nil</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">IsRegion3EmptyWithIgnoreList</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Region3</span>
+			<span class="ParamName">region</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">ignoreDescendentsTable</span>
+		</span>
+	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">Workspace</span>
+	<span class="Superclass">WorldRoot</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 </div>
@@ -17699,144 +17892,6 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Tuple</span>
-	<span class="ClassName Function">Workspace</span>
-	<span class="Name">FindPartOnRay</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Ray</span>
-			<span class="ParamName">ray</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName default">ignoreDescendantsInstance</span>
-			<span class="ParamDefault Instance">nil</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">terrainCellsAreCubes</span>
-			<span class="ParamDefault bool">false</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">ignoreWater</span>
-			<span class="ParamDefault bool">false</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Tuple</span>
-	<span class="ClassName Function">Workspace</span>
-	<span class="Name">FindPartOnRayWithIgnoreList</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Ray</span>
-			<span class="ParamName">ray</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Objects</span>
-			<span class="ParamName">ignoreDescendantsTable</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">terrainCellsAreCubes</span>
-			<span class="ParamDefault bool">false</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">ignoreWater</span>
-			<span class="ParamDefault bool">false</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Tuple</span>
-	<span class="ClassName Function">Workspace</span>
-	<span class="Name">FindPartOnRayWithWhitelist</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Ray</span>
-			<span class="ParamName">ray</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Objects</span>
-			<span class="ParamName">whitelistDescendantsTable</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">ignoreWater</span>
-			<span class="ParamDefault bool">false</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Objects</span>
-	<span class="ClassName Function">Workspace</span>
-	<span class="Name">FindPartsInRegion3</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Region3</span>
-			<span class="ParamName">region</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName default">ignoreDescendantsInstance</span>
-			<span class="ParamDefault Instance">nil</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName default">maxParts</span>
-			<span class="ParamDefault int">20</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Objects</span>
-	<span class="ClassName Function">Workspace</span>
-	<span class="Name">FindPartsInRegion3WithIgnoreList</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Region3</span>
-			<span class="ParamName">region</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Objects</span>
-			<span class="ParamName">ignoreDescendantsTable</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName default">maxParts</span>
-			<span class="ParamDefault int">20</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Objects</span>
-	<span class="ClassName Function">Workspace</span>
-	<span class="Name">FindPartsInRegion3WithWhiteList</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Region3</span>
-			<span class="ParamName">region</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Objects</span>
-			<span class="ParamName">whitelistDescendantsTable</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName default">maxParts</span>
-			<span class="ParamDefault int">20</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
 	<span class="Type">int</span>
 	<span class="ClassName Function">Workspace</span>
 	<span class="Name">GetNumAwakeParts</span>
@@ -17855,39 +17910,6 @@
 	<span class="ClassName Function">Workspace</span>
 	<span class="Name">GetRealPhysicsFPS</span>
 	<span class="Parameters"></span>
-</div>
-
-<div class="Function child">
-	<span class="Type">bool</span>
-	<span class="ClassName Function">Workspace</span>
-	<span class="Name">IsRegion3Empty</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Region3</span>
-			<span class="ParamName">region</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName default">ignoreDescendentsInstance</span>
-			<span class="ParamDefault Instance">nil</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">bool</span>
-	<span class="ClassName Function">Workspace</span>
-	<span class="Name">IsRegion3EmptyWithIgnoreList</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Region3</span>
-			<span class="ParamName">region</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Objects</span>
-			<span class="ParamName">ignoreDescendentsTable</span>
-		</span>
-	</span>
 </div>
 
 <div class="Function child">
@@ -17958,6 +17980,11 @@
 	<span class="Name">ZoomToExtents</span>
 	<span class="Parameters"></span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">WorldModel</span>
+	<span class="Superclass">WorldRoot</span>
 </div>
 
 <div class="Class">
