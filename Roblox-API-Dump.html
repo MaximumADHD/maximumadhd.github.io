@@ -10556,6 +10556,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">HttpService</span>
+	<span class="Name">GetUserAgent</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Variant</span>
 	<span class="ClassName Function">HttpService</span>
 	<span class="Name">JSONDecode</span>
@@ -23620,6 +23628,57 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">SetFastFlagForTesting</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">newValue</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">SetFastIntForTesting</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">newValue</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">SetFastStringForTesting</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">newValue</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">DataModel</span>
 	<span class="Name">SetPlaceId</span>
@@ -25365,12 +25424,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Show Plugin GUI Service in Explorer</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">Show Roblox Plugin GUI Service in Explorer</span>
 </div>
 
 <div class="Property child">
@@ -27665,6 +27718,35 @@
 </div>
 
 <div class="Class">
+	<span class="Name">UIGradient</span>
+	<span class="Superclass">UIComponent</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">ColorSequence</span>
+	<span class="ClassName Property">UIGradient</span>
+	<span class="Name">Color</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Property">UIGradient</span>
+	<span class="Name">Offset</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">UIGradient</span>
+	<span class="Name">Rotation</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">NumberSequence</span>
+	<span class="ClassName Property">UIGradient</span>
+	<span class="Name">Transparency</span>
+</div>
+
+<div class="Class">
 	<span class="Name">UILayout</span>
 	<span class="Superclass">UIComponent</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -28025,7 +28107,7 @@
 <div class="Class">
 	<span class="Name">UserGameSettings</span>
 	<span class="Superclass">Instance</span>
-	<span class="Tag">[Service]</span>
+	<span class="Tag">[UserSettings]</span>
 </div>
 
 <div class="Property child">
