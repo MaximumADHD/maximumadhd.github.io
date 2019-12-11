@@ -5284,6 +5284,7 @@
 <div class="Class">
 	<span class="Name">DebugSettings</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Settings]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
@@ -6384,6 +6385,7 @@
 <div class="Class">
 	<span class="Name">GameSettings</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Settings]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
@@ -6645,6 +6647,7 @@
 <div class="Class">
 	<span class="Name">GoogleAnalyticsConfiguration</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 </div>
 
@@ -13771,6 +13774,7 @@
 <div class="Class">
 	<span class="Name">LuaSettings</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Settings]</span>
 </div>
 
@@ -15405,6 +15409,7 @@
 <div class="Class">
 	<span class="Name">NetworkSettings</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
@@ -15617,13 +15622,15 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">ProxyEnabled</span>
+	<span class="Name">HttpProxyEnabled</span>
+	<span class="Security">{✏️RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">ProxyURL</span>
+	<span class="Name">HttpProxyURL</span>
+	<span class="Security">{✏️RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -18654,6 +18661,7 @@
 <div class="Class">
 	<span class="Name">PhysicsSettings</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Settings]</span>
 </div>
 
@@ -19694,6 +19702,53 @@
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PlayerEmulatorService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PlayerEmulatorService</span>
+	<span class="Name">PlayerEmulationEnabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PlayerEmulatorService</span>
+	<span class="Name">StudioEmulatedCountryRegionCode</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">PlayerEmulatorService</span>
+	<span class="Name">GetEmulatedPolicyInfo</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">PlayerEmulatorService</span>
+	<span class="Name">SetEmulatedPolicyInfo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">emulatedPolicyInfo</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -22146,6 +22201,7 @@
 <div class="Class">
 	<span class="Name">RenderSettings</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
@@ -25255,6 +25311,7 @@
 <div class="Class">
 	<span class="Name">Studio</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26287,6 +26344,7 @@
 <div class="Class">
 	<span class="Name">TaskScheduler</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 </div>
 
@@ -28107,6 +28165,7 @@
 <div class="Class">
 	<span class="Name">UserGameSettings</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[UserSettings]</span>
 </div>
 
