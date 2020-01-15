@@ -8352,6 +8352,128 @@
 </div>
 
 <div class="Class">
+	<span class="Name">VideoFrame</span>
+	<span class="Superclass">GuiObject</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VideoFrame</span>
+	<span class="Name">IsLoaded</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VideoFrame</span>
+	<span class="Name">Looped</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VideoFrame</span>
+	<span class="Name">Playing</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">VideoFrame</span>
+	<span class="Name">TimeLength</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">VideoFrame</span>
+	<span class="Name">TimePosition</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">VideoFrame</span>
+	<span class="Name">Video</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">VideoFrame</span>
+	<span class="Name">Volume</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">VideoFrame</span>
+	<span class="Name">Pause</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">VideoFrame</span>
+	<span class="Name">Play</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VideoFrame</span>
+	<span class="Name">DidLoop</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">video</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VideoFrame</span>
+	<span class="Name">Ended</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">video</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VideoFrame</span>
+	<span class="Name">Loaded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">video</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VideoFrame</span>
+	<span class="Name">Paused</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">video</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VideoFrame</span>
+	<span class="Name">Played</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">video</span>
+		</span>
+	</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ViewportFrame</span>
 	<span class="Superclass">GuiObject</span>
 </div>
@@ -10301,11 +10423,6 @@
 			<span class="ParamName default">httpRequestType</span>
 			<span class="ParamDefault String">Default</span>
 		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">doNotAllowDiabolicalMode</span>
-			<span class="ParamDefault bool">false</span>
-		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
@@ -10331,11 +10448,6 @@
 			<span class="InnerType">HttpRequestType</span>
 			<span class="ParamName default">httpRequestType</span>
 			<span class="ParamDefault String">Default</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">doNotAllowDiabolicalMode</span>
-			<span class="ParamDefault bool">false</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -10386,11 +10498,6 @@
 			<span class="ParamName default">httpRequestType</span>
 			<span class="ParamDefault String">Default</span>
 		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">doNotAllowDiabolicalMode</span>
-			<span class="ParamDefault bool">false</span>
-		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
@@ -10427,11 +10534,6 @@
 			<span class="ParamName default">httpRequestType</span>
 			<span class="ParamDefault String">Default</span>
 		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">doNotAllowDiabolicalMode</span>
-			<span class="ParamDefault bool">false</span>
-		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
@@ -10463,11 +10565,6 @@
 			<span class="InnerType">HttpRequestType</span>
 			<span class="ParamName default">httpRequestType</span>
 			<span class="ParamDefault String">Default</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">doNotAllowDiabolicalMode</span>
-			<span class="ParamDefault bool">false</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -15684,15 +15781,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NotificationService</span>
-	<span class="Name">IsLuaHomeWithAvatarEnabled</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">NotificationService</span>
 	<span class="Name">SelectedTheme</span>
@@ -18448,14 +18536,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">PhysicsPacketCache</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
 	<span class="Name">PhysicsService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -18735,6 +18815,12 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PhysicsSettings</span>
 	<span class="Name">AreRegionsShown</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PhysicsSettings</span>
+	<span class="Name">AreTerrainReplicationRegionsShown</span>
 </div>
 
 <div class="Property child">
@@ -23531,11 +23617,6 @@
 			<span class="ParamName default">httpRequestType</span>
 			<span class="ParamDefault String">Default</span>
 		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">doNotAllowDiabolicalMode</span>
-			<span class="ParamDefault bool">false</span>
-		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
@@ -23564,11 +23645,6 @@
 			<span class="InnerType">HttpRequestType</span>
 			<span class="ParamName default">httpRequestType</span>
 			<span class="ParamDefault String">Default</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName default">doNotAllowDiabolicalMode</span>
-			<span class="ParamDefault bool">false</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -31931,6 +32007,12 @@
 	<span class="Value">3</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">ComputerCameraMovementMode</span>
+	<span class="Name">CameraToggle</span>
+	<span class="Value">4</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">ComputerMovementMode</span>
 </div>
@@ -32537,6 +32619,12 @@
 	<span class="EnumName">DevComputerCameraMovementMode</span>
 	<span class="Name">Orbital</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DevComputerCameraMovementMode</span>
+	<span class="Name">CameraToggle</span>
+	<span class="Value">4</span>
 </div>
 
 <div class="Enum">
