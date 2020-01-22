@@ -6394,6 +6394,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">GameSettings</span>
 	<span class="Name">AdditionalCoreIncludeDirs</span>
+	<span class="Security">{✏️RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -6436,6 +6437,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">GameSettings</span>
 	<span class="Name">OverrideStarterScript</span>
+	<span class="Security">{✏️RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property deprecated child">
@@ -9690,6 +9692,19 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">input</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GuiService</span>
+	<span class="Name">ForceTenFootInterface</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isForced</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -14185,6 +14200,18 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">PromptPremiumPurchase</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">PromptProductPurchase</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -14352,6 +14379,14 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">SignalMockPurchasePremium</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">SignalPromptBundlePurchaseFinished</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -14386,6 +14421,19 @@
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName">success</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">SignalPromptPremiumPurchaseFinished</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">didTryPurchasing</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -14623,6 +14671,24 @@
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">gamePassId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PromptPremiumPurchaseFinished</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PromptPremiumPurchaseRequested</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -20474,6 +20540,17 @@
 
 <div class="Event child">
 	<span class="ClassName Event">Players</span>
+	<span class="Name">PlayerMembershipChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Players</span>
 	<span class="Name">PlayerRejoining</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -23467,7 +23544,7 @@
 			<span class="ParamName">name</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -23480,7 +23557,7 @@
 			<span class="ParamName">name</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -23493,7 +23570,7 @@
 			<span class="ParamName">name</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -25521,12 +25598,14 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">OverrideCoreScripts</span>
+	<span class="Security">{✏️RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">QDir</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">OverrideCoreScriptsDir</span>
+	<span class="Security">{✏️RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -25962,7 +26041,7 @@
 			<span class="ParamName">uploadUrl</span>
 		</span>
 	</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -38827,24 +38906,6 @@
 	<span class="EnumName">StudioStyleGuideColor</span>
 	<span class="Name">DialogMainButtonText</span>
 	<span class="Value">88</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">Merge3HighlightOriginal</span>
-	<span class="Value">89</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">Merge3HighlightMine</span>
-	<span class="Value">90</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">Merge3HighlightTheirs</span>
-	<span class="Value">91</span>
 </div>
 
 <div class="Enum">
