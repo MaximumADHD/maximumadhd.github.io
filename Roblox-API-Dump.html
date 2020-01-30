@@ -17115,6 +17115,27 @@
 	</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Terrain</span>
+	<span class="Name">FillWedge</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">cframe</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">size</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">Material</span>
+			<span class="ParamName">material</span>
+		</span>
+	</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">Tuple</span>
 	<span class="ClassName Function">Terrain</span>
@@ -22902,6 +22923,30 @@
 	</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">ScriptContext</span>
+	<span class="Name">ErrorDetailed</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">message</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">stackTrace</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">script</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">details</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">ScriptDebugger</span>
 	<span class="Superclass">Instance</span>
@@ -24332,6 +24377,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">Playing</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -24366,6 +24412,7 @@
 	<span class="Type">double</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">TimePosition</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -26135,6 +26182,20 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">LaunchBulkImport</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">assetTypeToImport</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Function child">
@@ -33068,6 +33129,12 @@
 	<span class="EnumName">DraftStatusCode</span>
 	<span class="Name">ScriptRemoved</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DraftStatusCode</span>
+	<span class="Name">DraftCommitted</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
