@@ -17931,6 +17931,39 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">IkMoveTo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">part</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">target</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName default">translateStiffness</span>
+			<span class="ParamDefault float">1</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName default">rotateStiffness</span>
+			<span class="ParamDefault float">1</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">CollisionsMode</span>
+			<span class="ParamName default">collisionsMode</span>
+			<span class="ParamDefault String">OtherMechanismsAnchored</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">WorldRoot</span>
 	<span class="Name">IsRegion3Empty</span>
@@ -20833,12 +20866,13 @@
 	<span class="Security">{PluginSecurity}</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">int64</span>
 	<span class="ClassName Function">Plugin</span>
 	<span class="Name">GetStudioUserId</span>
 	<span class="Parameters"></span>
 	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -25642,6 +25676,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">QDir</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">LocalAssetsFolder</span>
+	<span class="Security">{✏️RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">OverrideCoreScripts</span>
@@ -25723,14 +25764,16 @@
 	<span class="Name">Theme</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">Enum</span>
 	<span class="InnerType">UITheme</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">UI Theme</span>
 	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -26151,7 +26194,7 @@
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">GetUserId</span>
 	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -26351,6 +26394,14 @@
 			<span class="ParamName">newName</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">ShowBulkImportView</span>
+	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -32116,6 +32167,28 @@
 <div class="EnumItem child">
 	<span class="EnumName">CollisionFidelity</span>
 	<span class="Name">Box</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">CollisionsMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CollisionsMode</span>
+	<span class="Name">NoCollisions</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CollisionsMode</span>
+	<span class="Name">OtherMechanismsAnchored</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CollisionsMode</span>
+	<span class="Name">IncludeContactedMechanisms</span>
 	<span class="Value">2</span>
 </div>
 

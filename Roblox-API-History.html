@@ -2,6 +2,159 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="418"/>
+<h2>Version 0.418.1.380321</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">QDir</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">LocalAssetsFolder</span>
+			<span class="Security">{✏️RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">StudioService</span>
+			<span class="Name">ShowBulkImportView</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">WorldRoot</span>
+			<span class="Name">IkMoveTo</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">part</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">CFrame</span>
+					<span class="ParamName">target</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName default">translateStiffness</span>
+					<span class="ParamDefault float">1</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName default">rotateStiffness</span>
+					<span class="ParamDefault float">1</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">CollisionsMode</span>
+					<span class="ParamName default">collisionsMode</span>
+					<span class="ParamDefault String">OtherMechanismsAnchored</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">CollisionsMode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CollisionsMode</span>
+				<span class="Name">NoCollisions</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CollisionsMode</span>
+				<span class="Name">OtherMechanismsAnchored</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CollisionsMode</span>
+				<span class="Name">IncludeContactedMechanisms</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Plugin</span>
+			<span class="Name">GetStudioUserId</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange to">
+		<span class="Tag">[Hidden]</span>
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">UI Theme</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security</span>
+	<span class="Function">
+		<span class="ClassName Function">StudioService</span>
+		<span class="Name">GetUserId</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+
 <hr id="417"/>
 <h2>Version 0.417.0.376966</h2>
 
