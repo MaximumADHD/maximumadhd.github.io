@@ -13897,30 +13897,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">LuaSettings</span>
-	<span class="Name">GcFrequency</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">LuaSettings</span>
-	<span class="Name">GcLimit</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">LuaSettings</span>
-	<span class="Name">GcPause</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">LuaSettings</span>
-	<span class="Name">GcStepMul</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">double</span>
 	<span class="ClassName Property">LuaSettings</span>
 	<span class="Name">DefaultWaitTime</span>
@@ -15453,14 +15429,6 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
-<div class="Function child">
-	<span class="Type">int</span>
-	<span class="ClassName Function">NetworkServer</span>
-	<span class="Name">GetClientCount</span>
-	<span class="Parameters"></span>
-	<span class="Security">{LocalUserSecurity}</span>
-</div>
-
 <div class="Class">
 	<span class="Name">NetworkReplicator</span>
 	<span class="Superclass">Instance</span>
@@ -15624,27 +15592,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">ArePhysicsRejectionsReported</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">double</span>
 	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">IncommingReplicationLag</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">PrintBits</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">PrintEvents</span>
 </div>
 
 <div class="Property child">
@@ -15669,12 +15619,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">PrintPhysicsErrors</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">PrintProperties</span>
 </div>
 
 <div class="Property child">
@@ -15710,37 +15654,7 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">ClientPhysicsSendRate</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">DataGCRate</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">DataSendRate</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">IsQueueErrorComputed</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">NetworkOwnerRate</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">PhysicsSendRate</span>
 </div>
 
 <div class="Property child">
@@ -15759,12 +15673,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">TouchSendRate</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">UsePhysicsPacketCache</span>
 </div>
 
 <div class="Property child">
@@ -25703,12 +25611,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">QDir</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">RecentSavesDir</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Show Core GUI in Explorer while Playing</span>
@@ -26041,6 +25943,14 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">StudioData</span>
+	<span class="Name">EnableScriptCollabByDefaultOnLoad</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StudioData</span>
 	<span class="Name">EnableScriptCollabOnLoad</span>
 	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -26228,7 +26138,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">int</span>
+	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">LaunchBulkImport</span>
 	<span class="Parameters">
@@ -26238,7 +26148,6 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Function child">
@@ -26449,6 +26358,18 @@
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">UpdatePluginManagement</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
+	<span class="Name">BulkImportFinished</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">state</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
