@@ -3642,6 +3642,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">AngularVelocity</span>
+	<span class="Name">ReactionTorqueEnabled</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Enum</span>
 	<span class="InnerType">ActuatorRelativeTo</span>
 	<span class="ClassName Property">AngularVelocity</span>
@@ -3663,6 +3669,12 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">BallSocketConstraint</span>
 	<span class="Name">LimitsEnabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">BallSocketConstraint</span>
+	<span class="Name">MaxFrictionTorque</span>
 </div>
 
 <div class="Property child">
@@ -10178,18 +10190,6 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">name</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">GuiService</span>
-	<span class="Name">InspectPlayerFromUserIdRequest</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">userId</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -17904,6 +17904,29 @@
 	</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">Raycast</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">origin</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">direction</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">RaycastParams</span>
+			<span class="ParamName default">raycastParams</span>
+			<span class="ClassName Type">RaycastParams</span>
+			<span class="Name">new</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+
 <div class="Class">
 	<span class="Name">Workspace</span>
 	<span class="Superclass">WorldRoot</span>
@@ -18561,6 +18584,43 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PermissionsService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">PermissionsService</span>
+	<span class="Name">GetPermissions</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">assetId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">PermissionsService</span>
+	<span class="Name">SetPermissions</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">assetId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">permissions</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -21131,6 +21191,11 @@
 </div>
 
 <div class="Class">
+	<span class="Name">DebuggablePlugin</span>
+	<span class="Superclass">Plugin</span>
+</div>
+
+<div class="Class">
 	<span class="Name">PluginAction</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -21200,6 +21265,13 @@
 	<span class="Name">Triggered</span>
 	<span class="Parameters"></span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PluginDebugService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
@@ -26108,6 +26180,30 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">GizmoRaycast</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">origin</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">direction</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">RaycastParams</span>
+			<span class="ParamName default">raycastParams</span>
+			<span class="ClassName Type">RaycastParams</span>
+			<span class="Name">new</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">IsPluginInstalled</span>
@@ -30600,7 +30696,9 @@
 		<span class="Parameter">
 			<span class="Type">CFrame</span>
 			<span class="ParamName default">camera</span>
-			<span class="ParamDefault CFrame">Identity</span>
+			<span class="ClassName Type">CFrame</span>
+			<span class="Name">new</span>
+			<span class="Parameters"></span>
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
@@ -30618,7 +30716,9 @@
 		<span class="Parameter">
 			<span class="Type">CFrame</span>
 			<span class="ParamName default">camera</span>
-			<span class="ParamDefault CFrame">Identity</span>
+			<span class="ClassName Type">CFrame</span>
+			<span class="Name">new</span>
+			<span class="Parameters"></span>
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
@@ -30636,7 +30736,9 @@
 		<span class="Parameter">
 			<span class="Type">CFrame</span>
 			<span class="ParamName default">camera</span>
-			<span class="ParamDefault CFrame">Identity</span>
+			<span class="ClassName Type">CFrame</span>
+			<span class="Name">new</span>
+			<span class="Parameters"></span>
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
@@ -30654,7 +30756,9 @@
 		<span class="Parameter">
 			<span class="Type">CFrame</span>
 			<span class="ParamName default">camera</span>
-			<span class="ParamDefault CFrame">Identity</span>
+			<span class="ClassName Type">CFrame</span>
+			<span class="Name">new</span>
+			<span class="Parameters"></span>
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
@@ -30680,7 +30784,9 @@
 		<span class="Parameter">
 			<span class="Type">CFrame</span>
 			<span class="ParamName default">camera</span>
-			<span class="ParamDefault CFrame">Identity</span>
+			<span class="ClassName Type">CFrame</span>
+			<span class="Name">new</span>
+			<span class="Parameters"></span>
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
@@ -30698,7 +30804,9 @@
 		<span class="Parameter">
 			<span class="Type">CFrame</span>
 			<span class="ParamName default">camera</span>
-			<span class="ParamDefault CFrame">Identity</span>
+			<span class="ClassName Type">CFrame</span>
+			<span class="Name">new</span>
+			<span class="Parameters"></span>
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
@@ -30716,7 +30824,9 @@
 		<span class="Parameter">
 			<span class="Type">CFrame</span>
 			<span class="ParamName default">camera</span>
-			<span class="ParamDefault CFrame">Identity</span>
+			<span class="ClassName Type">CFrame</span>
+			<span class="Name">new</span>
+			<span class="Parameters"></span>
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
@@ -37526,6 +37636,22 @@
 <div class="EnumItem child">
 	<span class="EnumName">R15CollisionType</span>
 	<span class="Name">InnerBox</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">RaycastFilterType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RaycastFilterType</span>
+	<span class="Name">Blacklist</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RaycastFilterType</span>
+	<span class="Name">Whitelist</span>
 	<span class="Value">1</span>
 </div>
 

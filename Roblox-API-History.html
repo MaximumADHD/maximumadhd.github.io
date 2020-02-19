@@ -2,6 +2,193 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="420"/>
+<h2>Version 0.420.0.383960</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PermissionsService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Array</span>
+				<span class="ClassName Function">PermissionsService</span>
+				<span class="Name">GetPermissions</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">assetId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">PermissionsService</span>
+				<span class="Name">SetPermissions</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">assetId</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Array</span>
+						<span class="ParamName">permissions</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PluginDebugService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DebuggablePlugin</span>
+			<span class="Superclass">Plugin</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">AngularVelocity</span>
+			<span class="Name">ReactionTorqueEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">BallSocketConstraint</span>
+			<span class="Name">MaxFrictionTorque</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Tuple</span>
+			<span class="ClassName Function">StudioService</span>
+			<span class="Name">GizmoRaycast</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">origin</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">direction</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">RaycastParams</span>
+					<span class="ParamName default">raycastParams</span>
+					<span class="ClassName Type">RaycastParams</span>
+					<span class="Name">new</span>
+					<span class="Parameters"></span>
+				</span>
+			</span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Tuple</span>
+			<span class="ClassName Function">WorldRoot</span>
+			<span class="Name">Raycast</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">origin</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">direction</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">RaycastParams</span>
+					<span class="ParamName default">raycastParams</span>
+					<span class="ClassName Type">RaycastParams</span>
+					<span class="Name">new</span>
+					<span class="Parameters"></span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">RaycastFilterType</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RaycastFilterType</span>
+				<span class="Name">Blacklist</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RaycastFilterType</span>
+				<span class="Name">Whitelist</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">GuiService</span>
+			<span class="Name">InspectPlayerFromUserIdRequest</span>
+		</span>
+	</span>
+</div>
+
 <hr id="419"/>
 <h2>Version 0.419.0.381237</h2>
 
