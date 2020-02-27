@@ -5111,7 +5111,7 @@
 	<span class="InnerType">StudioDataModelType</span>
 	<span class="ClassName Property">DataModelSession</span>
 	<span class="Name">CurrentDataModelType</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5120,7 +5120,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">DataModelSession</span>
 	<span class="Name">SessionId</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5135,14 +5135,14 @@
 			<span class="ParamName">dataModelType</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Event child">
 	<span class="ClassName Event">DataModelSession</span>
 	<span class="Name">CurrentDataModelTypeChanged</span>
 	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -5155,7 +5155,7 @@
 			<span class="ParamName">gameStateType</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -5168,7 +5168,7 @@
 			<span class="ParamName">gameStateType</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
@@ -10586,6 +10586,37 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">HttpRbxApiService</span>
+	<span class="Name">RequestLimitedAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">requestOptions</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">ThrottlingPriority</span>
+			<span class="ParamName default">priority</span>
+			<span class="ParamDefault String">Default</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">HttpContentType</span>
+			<span class="ParamName default">content_type</span>
+			<span class="ParamDefault String">ApplicationJson</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">HttpRequestType</span>
+			<span class="ParamName default">httpRequestType</span>
+			<span class="ParamDefault String">Default</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">HttpRequest</span>
 	<span class="Superclass">Instance</span>
@@ -15291,7 +15322,7 @@
 	<span class="Type">Instance</span>
 	<span class="ClassName Property">MultipleDocumentInterfaceInstance</span>
 	<span class="Name">FocusedDataModelSession</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -15305,7 +15336,7 @@
 			<span class="ParamName">dataModelSession</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -15317,7 +15348,7 @@
 			<span class="ParamName">dataModelSession</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
@@ -17965,6 +17996,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">StreamingEnabled</span>
+	<span class="Security">{✏️PluginSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -20630,7 +20662,7 @@
 	<span class="InnerType">StudioDataModelType</span>
 	<span class="ClassName Property">Plugin</span>
 	<span class="Name">HostDataModelType</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -20639,7 +20671,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Plugin</span>
 	<span class="Name">HostDataModelTypeIsCurrent</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -20649,7 +20681,7 @@
 	<span class="InnerType">MultipleDocumentInterfaceInstance</span>
 	<span class="ClassName Property">Plugin</span>
 	<span class="Name">MultipleDocumentInterfaceInstance</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -20792,7 +20824,7 @@
 			<span class="ParamName">defaultValue</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -20891,7 +20923,7 @@
 			<span class="ParamName">arguments</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -20937,7 +20969,7 @@
 			<span class="ParamName">callback</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -20954,7 +20986,7 @@
 			<span class="ParamName">callback</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21109,7 +21141,7 @@
 			<span class="ParamName">value</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -32803,22 +32835,6 @@
 	<span class="EnumName">DataStoreRequestType</span>
 	<span class="Name">OnUpdate</span>
 	<span class="Value">5</span>
-</div>
-
-<div class="Enum">
-	<span class="Name">DateTimeKind</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">DateTimeKind</span>
-	<span class="Name">Utc</span>
-	<span class="Value">0</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">DateTimeKind</span>
-	<span class="Name">Local</span>
-	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
