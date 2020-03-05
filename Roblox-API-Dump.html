@@ -2545,7 +2545,7 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">float</span>
 	<span class="ClassName Function">Camera</span>
 	<span class="Name">GetLargestCutoffDistance</span>
@@ -2555,6 +2555,7 @@
 			<span class="ParamName">ignoreList</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -2601,7 +2602,7 @@
 	<span class="Parameters"></span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Camera</span>
 	<span class="Name">Interpolate</span>
@@ -2619,9 +2620,10 @@
 			<span class="ParamName">duration</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Camera</span>
 	<span class="Name">PanUnits</span>
@@ -2631,6 +2633,7 @@
 			<span class="ParamName">units</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -2693,7 +2696,7 @@
 	</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">Camera</span>
 	<span class="Name">TiltUnits</span>
@@ -2703,6 +2706,7 @@
 			<span class="ParamName">units</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -5919,6 +5923,113 @@
 </div>
 
 <div class="Class">
+	<span class="Name">EventIngestService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">EventIngestService</span>
+	<span class="Name">SendEventDeferred</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">target</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventContext</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">additionalArgs</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">EventIngestService</span>
+	<span class="Name">SendEventImmediately</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">target</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventContext</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">additionalArgs</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">EventIngestService</span>
+	<span class="Name">SetRBXEvent</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">target</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventContext</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">additionalArgs</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">EventIngestService</span>
+	<span class="Name">SetRBXEventStream</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">target</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventContext</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">additionalArgs</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">Explosion</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -8416,6 +8527,13 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">VideoFrame</span>
 	<span class="Name">Volume</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">VideoFrame</span>
+	<span class="Name">GetInfo</span>
+	<span class="Parameters"></span>
 </div>
 
 <div class="Function child">
@@ -12303,6 +12421,45 @@
 </div>
 
 <div class="Class">
+	<span class="Name">InternalSyncItem</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">InternalSyncItem</span>
+	<span class="Name">Enabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">InternalSyncItem</span>
+	<span class="Name">Path</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">InternalSyncItem</span>
+	<span class="Name">Target</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">InternalSyncService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">JointInstance</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -12817,6 +12974,14 @@
 			<span class="ParamName">keyframeSequence</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">LanguageService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -17936,7 +18101,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Tuple</span>
+	<span class="Type">RaycastResult</span>
 	<span class="ClassName Function">WorldRoot</span>
 	<span class="Name">Raycast</span>
 	<span class="Parameters">
@@ -21223,11 +21388,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">DebuggablePlugin</span>
-	<span class="Superclass">Plugin</span>
-</div>
-
-<div class="Class">
 	<span class="Name">PluginAction</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -21304,6 +21464,7 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -24141,6 +24302,140 @@
 </div>
 
 <div class="Class">
+	<span class="Name">SessionService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int64</span>
+	<span class="ClassName Function">SessionService</span>
+	<span class="Name">GetCreatedTimestampUtcMs</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">sid</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Variant</span>
+	<span class="ClassName Function">SessionService</span>
+	<span class="Name">GetMetadata</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">sid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">SessionService</span>
+	<span class="Name">GetRootSID</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SessionService</span>
+	<span class="Name">RemoveMetadata</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">sid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SessionService</span>
+	<span class="Name">RemoveSession</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">sid</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SessionService</span>
+	<span class="Name">ReplaceSession</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">sid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">tag</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SessionService</span>
+	<span class="Name">SetMetadata</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">sid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">value</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SessionService</span>
+	<span class="Name">SetSession</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">parentSid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">childSid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">tag</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">Sky</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -25798,6 +26093,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">PluginDebuggingEnabled</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">ScriptTimeoutLength</span>
@@ -26087,6 +26388,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StudioService</span>
+	<span class="Name">DraggerSolveConstraints</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">StudioService</span>
 	<span class="Name">GridSize</span>
@@ -26107,6 +26416,14 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">StudioService</span>
 	<span class="Name">RotateIncrement</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StudioService</span>
+	<span class="Name">ShowConstraintDetails</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -26212,7 +26529,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Tuple</span>
+	<span class="Type">RaycastResult</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">GizmoRaycast</span>
 	<span class="Parameters">
@@ -26655,6 +26972,52 @@
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Class deprecated">
+	<span class="Name">SurfaceAppearance</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">AlphaMode</span>
+	<span class="ClassName Property">SurfaceAppearance</span>
+	<span class="Name">AlphaMode</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">SurfaceAppearance</span>
+	<span class="Name">ColorMap</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">SurfaceAppearance</span>
+	<span class="Name">MetalnessMap</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">SurfaceAppearance</span>
+	<span class="Name">NormalMap</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">SurfaceAppearance</span>
+	<span class="Name">RoughnessMap</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class">
@@ -31056,6 +31419,22 @@
 <div class="EnumItem child">
 	<span class="EnumName">AlignType</span>
 	<span class="Name">Perpendicular</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AlphaMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AlphaMode</span>
+	<span class="Name">Overlay</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AlphaMode</span>
+	<span class="Name">Transparency</span>
 	<span class="Value">1</span>
 </div>
 

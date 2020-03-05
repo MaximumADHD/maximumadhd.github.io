@@ -2,6 +2,616 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="422"/>
+<h2>Version 0.422.0.388145</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">EventIngestService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">EventIngestService</span>
+				<span class="Name">SendEventDeferred</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">target</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">eventContext</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">eventName</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Dictionary</span>
+						<span class="ParamName">additionalArgs</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">EventIngestService</span>
+				<span class="Name">SendEventImmediately</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">target</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">eventContext</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">eventName</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Dictionary</span>
+						<span class="ParamName">additionalArgs</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">EventIngestService</span>
+				<span class="Name">SetRBXEvent</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">target</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">eventContext</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">eventName</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Dictionary</span>
+						<span class="ParamName">additionalArgs</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">EventIngestService</span>
+				<span class="Name">SetRBXEventStream</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">target</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">eventContext</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">eventName</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Dictionary</span>
+						<span class="ParamName">additionalArgs</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">InternalSyncItem</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">InternalSyncItem</span>
+				<span class="Name">Enabled</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">InternalSyncItem</span>
+				<span class="Name">Path</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Instance</span>
+				<span class="ClassName Property">InternalSyncItem</span>
+				<span class="Name">Target</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">InternalSyncService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">LanguageService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">SessionService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">int64</span>
+				<span class="ClassName Function">SessionService</span>
+				<span class="Name">GetCreatedTimestampUtcMs</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">sid</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Variant</span>
+				<span class="ClassName Function">SessionService</span>
+				<span class="Name">GetMetadata</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">sid</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">key</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">SessionService</span>
+				<span class="Name">GetRootSID</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">SessionService</span>
+				<span class="Name">RemoveMetadata</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">sid</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">key</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">SessionService</span>
+				<span class="Name">RemoveSession</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">sid</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">SessionService</span>
+				<span class="Name">ReplaceSession</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">sid</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">tag</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">SessionService</span>
+				<span class="Name">SetMetadata</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">sid</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">key</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Variant</span>
+						<span class="ParamName">value</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">SessionService</span>
+				<span class="Name">SetSession</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">parentSid</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">childSid</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">tag</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">SurfaceAppearance</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[Preliminary]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Enum</span>
+				<span class="InnerType">AlphaMode</span>
+				<span class="ClassName Property">SurfaceAppearance</span>
+				<span class="Name">AlphaMode</span>
+				<span class="Tag">[Preliminary]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Content</span>
+				<span class="ClassName Property">SurfaceAppearance</span>
+				<span class="Name">ColorMap</span>
+				<span class="Security">{LocalUserSecurity}</span>
+				<span class="Tag">[Preliminary]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Content</span>
+				<span class="ClassName Property">SurfaceAppearance</span>
+				<span class="Name">MetalnessMap</span>
+				<span class="Security">{LocalUserSecurity}</span>
+				<span class="Tag">[Preliminary]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Content</span>
+				<span class="ClassName Property">SurfaceAppearance</span>
+				<span class="Name">NormalMap</span>
+				<span class="Security">{LocalUserSecurity}</span>
+				<span class="Tag">[Preliminary]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Content</span>
+				<span class="ClassName Property">SurfaceAppearance</span>
+				<span class="Name">RoughnessMap</span>
+				<span class="Security">{LocalUserSecurity}</span>
+				<span class="Tag">[Preliminary]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">PluginDebuggingEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">StudioService</span>
+			<span class="Name">DraggerSolveConstraints</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">StudioService</span>
+			<span class="Name">ShowConstraintDetails</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Dictionary</span>
+			<span class="ClassName Function">VideoFrame</span>
+			<span class="Name">GetInfo</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">AlphaMode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AlphaMode</span>
+				<span class="Name">Overlay</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AlphaMode</span>
+				<span class="Name">Transparency</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Camera</span>
+			<span class="Name">GetLargestCutoffDistance</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Camera</span>
+			<span class="Name">Interpolate</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Camera</span>
+			<span class="Name">PanUnits</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Camera</span>
+			<span class="Name">TiltUnits</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PluginDebugService</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">StudioService</span>
+		<span class="Name">GizmoRaycast</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Type">Tuple</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Type">RaycastResult</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">WorldRoot</span>
+		<span class="Name">Raycast</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Type">Tuple</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Type">RaycastResult</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DebuggablePlugin</span>
+		</span>
+	</span>
+</div>
+
 <hr id="421"/>
 <h2>Version 0.421.0.385673</h2>
 
@@ -141,7 +751,7 @@
 <br/>
 
 <div class="Changed">
-	<span class="WhatChanged">security</span>
+	<span class="WhatChanged">write permissions</span>
 	<span class="Property">
 		<span class="ClassName Property">Workspace</span>
 		<span class="Name">StreamingEnabled</span>
@@ -3797,7 +4407,7 @@
 			<span class="ClassName Property">TextBox</span>
 			<span class="Name">ReturnKeyType</span>
 			<span class="Security">{RobloxScriptSecurity}</span>
-			<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
 	</span>
@@ -4502,7 +5112,7 @@
 			<span class="Type">bool</span>
 			<span class="ClassName Property">StudioService</span>
 			<span class="Name">UseLocalSpace</span>
-			<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
 	</span>
@@ -5143,7 +5753,7 @@
 			<span class="ClassName Property">TextBox</span>
 			<span class="Name">TextInputType</span>
 			<span class="Security">{RobloxScriptSecurity}</span>
-			<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
 	</span>
@@ -5614,13 +6224,13 @@
 	<div class="ChangeFrom">
 		<span class="ChangeList">
 			<span class="Security">{NotAccessibleSecurity}</span>
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
 			<span class="Security">{✏️PluginSecurity}</span>
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 </div>
@@ -5927,12 +6537,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<💾> Save-only]</span>
+			<span class="Serialization">[<💾> SaveOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 </div>
@@ -5947,12 +6557,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<💾> Save-only]</span>
+			<span class="Serialization">[<💾> SaveOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 </div>
@@ -5967,12 +6577,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<💾> Save-only]</span>
+			<span class="Serialization">[<💾> SaveOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 </div>
@@ -5987,12 +6597,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<💾> Save-only]</span>
+			<span class="Serialization">[<💾> SaveOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 </div>
@@ -6049,7 +6659,7 @@
 			<span class="Type">Vector2</span>
 			<span class="ClassName Property">UIGridLayout</span>
 			<span class="Name">AbsoluteCellCount</span>
-			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 			<span class="Tag">[ReadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
@@ -6061,7 +6671,7 @@
 			<span class="Type">Vector2</span>
 			<span class="ClassName Property">UIGridLayout</span>
 			<span class="Name">AbsoluteCellSize</span>
-			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 			<span class="Tag">[ReadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
@@ -7066,7 +7676,7 @@
 			<span class="ClassName Property">PluginAction</span>
 			<span class="Name">Checked</span>
 			<span class="Security">{RobloxScriptSecurity}</span>
-			<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
 	</span>
@@ -7435,7 +8045,7 @@
 			<span class="ClassName Property">PluginAction</span>
 			<span class="Name">DefaultShortcut</span>
 			<span class="Security">{RobloxScriptSecurity}</span>
-			<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
 	</span>
@@ -7639,7 +8249,7 @@
 			<span class="ClassName Property">PluginAction</span>
 			<span class="Name">Enabled</span>
 			<span class="Security">{RobloxScriptSecurity}</span>
-			<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
 	</span>
@@ -8412,7 +9022,7 @@
 	<div class="ChangeFrom">
 		<span class="ChangeList">
 			<span class="Security darken">{✏️None}</span>
-			<span class="Serialization">[<💾> Save-only]</span>
+			<span class="Serialization">[<💾> SaveOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
@@ -8703,7 +9313,7 @@
 			<span class="Type">bool</span>
 			<span class="ClassName Property">Player</span>
 			<span class="Name">GameplayPaused</span>
-			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 			<span class="Tag">[ReadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
@@ -9785,7 +10395,7 @@
 			<span class="ClassName Property">TextBox</span>
 			<span class="Name">IsPassword</span>
 			<span class="Security">{RobloxScriptSecurity}</span>
-			<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
 	</span>
@@ -10122,12 +10732,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<💾> Save-only]</span>
+			<span class="Serialization">[<💾> SaveOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 </div>
@@ -10142,12 +10752,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<💾> Save-only]</span>
+			<span class="Serialization">[<💾> SaveOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 </div>
@@ -11178,13 +11788,13 @@
 	<div class="ChangeFrom">
 		<span class="ChangeList">
 			<span class="Security darken">{✏️None}</span>
-			<span class="Serialization">[<💾> Save-only]</span>
+			<span class="Serialization">[<💾> SaveOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
 			<span class="Security">{✏️NotAccessibleSecurity}</span>
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 </div>
@@ -11662,7 +12272,7 @@
 	<div class="ChangeFrom">
 		<span class="ChangeList">
 			<span class="Security">{✏️NotAccessibleSecurity}</span>
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
@@ -12748,12 +13358,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 </div>
@@ -12768,12 +13378,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 </div>
@@ -12788,12 +13398,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 </div>
@@ -12808,12 +13418,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 </div>
@@ -12828,12 +13438,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 </div>
@@ -12848,12 +13458,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 </div>
@@ -13020,7 +13630,7 @@
 	<div class="ChangeFrom">
 		<span class="ChangeList">
 			<span class="Security">{RobloxScriptSecurity}</span>
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
@@ -13042,7 +13652,7 @@
 	<div class="ChangeFrom">
 		<span class="ChangeList">
 			<span class="Security">{RobloxScriptSecurity}</span>
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
@@ -13964,7 +14574,7 @@
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<💾> Save-only]</span>
+			<span class="Serialization">[<💾> SaveOnly]</span>
 		</span>
 	</div>
 </div>
@@ -13988,7 +14598,7 @@
 				<span class="Type">string</span>
 				<span class="ClassName Property">PluginMenu</span>
 				<span class="Name">Icon</span>
-				<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+				<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 				<span class="Tag">[NotReplicated]</span>
 			</span>
 		</span>
@@ -13999,7 +14609,7 @@
 				<span class="Type">string</span>
 				<span class="ClassName Property">PluginMenu</span>
 				<span class="Name">Title</span>
-				<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+				<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 				<span class="Tag">[NotReplicated]</span>
 			</span>
 		</span>
@@ -14921,7 +15531,7 @@
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 </div>
@@ -15083,7 +15693,7 @@
 			<span class="Type">bool</span>
 			<span class="ClassName Property">Constraint</span>
 			<span class="Name">Active</span>
-			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 			<span class="Tag">[ReadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
@@ -15096,7 +15706,7 @@
 			<span class="Type">bool</span>
 			<span class="ClassName Property">JointInstance</span>
 			<span class="Name">Active</span>
-			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 			<span class="Tag">[ReadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
@@ -15122,7 +15732,7 @@
 			<span class="Type">bool</span>
 			<span class="ClassName Property">WeldConstraint</span>
 			<span class="Name">Active</span>
-			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 			<span class="Tag">[ReadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
@@ -15223,7 +15833,7 @@
 			<span class="ClassName Property">NotificationService</span>
 			<span class="Name">SelectedTheme</span>
 			<span class="Security">{RobloxScriptSecurity}</span>
-			<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
 	</span>
@@ -15520,7 +16130,7 @@
 	<div class="ChangeTo">
 		<span class="ChangeList">
 			<span class="Security">{RobloxScriptSecurity}</span>
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 </div>
@@ -15542,7 +16152,7 @@
 	<div class="ChangeTo">
 		<span class="ChangeList">
 			<span class="Security">{RobloxScriptSecurity}</span>
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 </div>
@@ -15557,12 +16167,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 </div>
@@ -15577,12 +16187,12 @@
 	</span>
 	<div class="ChangeFrom">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 </div>
@@ -16628,7 +17238,7 @@
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 </div>
@@ -16648,7 +17258,7 @@
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<🕒> Runtime-only]</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
 		</span>
 	</div>
 </div>
@@ -16720,7 +17330,7 @@
 			<span class="Type">int64</span>
 			<span class="ClassName Property">PackageLink</span>
 			<span class="Name">VersionNumber</span>
-			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 			<span class="Tag">[ReadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
@@ -16734,7 +17344,7 @@
 			<span class="ClassName Property">Plugin</span>
 			<span class="Name">UsesAssetInsertionDrag</span>
 			<span class="Security">{RobloxScriptSecurity}</span>
-			<span class="Serialization">[&lt;📁&gt; Load-only]</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
 	</span>
@@ -17642,7 +18252,7 @@
 			<span class="Type">string</span>
 			<span class="ClassName Property">DataModel</span>
 			<span class="Name">PrivateServerId</span>
-			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 			<span class="Tag">[ReadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
@@ -17655,7 +18265,7 @@
 			<span class="Type">int64</span>
 			<span class="ClassName Property">DataModel</span>
 			<span class="Name">PrivateServerOwnerId</span>
-			<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+			<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 			<span class="Tag">[ReadOnly]</span>
 			<span class="Tag">[NotReplicated]</span>
 		</span>
@@ -18107,7 +18717,7 @@
 				<span class="Type">int</span>
 				<span class="ClassName Property">PackageLink</span>
 				<span class="Name">PackageId</span>
-				<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+				<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 				<span class="Tag">[ReadOnly]</span>
 				<span class="Tag">[NotReplicated]</span>
 			</span>
@@ -18119,7 +18729,7 @@
 				<span class="Type">int</span>
 				<span class="ClassName Property">PackageLink</span>
 				<span class="Name">VersionId</span>
-				<span class="Serialization">[&lt;💾&gt; Save-only]</span>
+				<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 				<span class="Tag">[ReadOnly]</span>
 				<span class="Tag">[NotReplicated]</span>
 			</span>
@@ -18293,7 +18903,7 @@
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 </div>
@@ -18313,7 +18923,7 @@
 	</div>
 	<div class="ChangeTo">
 		<span class="ChangeList">
-			<span class="Serialization">[<📁> Load-only]</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
 		</span>
 	</div>
 </div>
