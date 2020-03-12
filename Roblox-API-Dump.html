@@ -824,6 +824,18 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Animator</span>
+	<span class="Name">ApplyJointVelocities</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">motors</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Array</span>
 	<span class="ClassName Function">Animator</span>
 	<span class="Name">GetPlayingAnimationTracks</span>
@@ -7508,6 +7520,10 @@
 			<span class="Type">Instance</span>
 			<span class="ParamName">inputObject</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">clickCount</span>
+		</span>
 	</span>
 </div>
 
@@ -12421,45 +12437,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">InternalSyncItem</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">InternalSyncItem</span>
-	<span class="Name">Enabled</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">InternalSyncItem</span>
-	<span class="Name">Path</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Instance</span>
-	<span class="ClassName Property">InternalSyncItem</span>
-	<span class="Name">Target</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">InternalSyncService</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
 	<span class="Name">JointInstance</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -12477,7 +12454,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">JointInstance</span>
 	<span class="Name">Enabled</span>
-	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
@@ -19398,6 +19374,13 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">Player</span>
 	<span class="Name">OsPlatform</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">PlatformName</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -26704,6 +26687,10 @@
 			<span class="Type">int64</span>
 			<span class="ParamName">placeId</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">groupId</span>
+		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -27913,6 +27900,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">ThirdPartyUserService</span>
+	<span class="Name">GetUserPlatformName</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">ThirdPartyUserService</span>
 	<span class="Name">HaveActiveUser</span>
@@ -28463,6 +28458,12 @@
 	<span class="Type">ColorSequence</span>
 	<span class="ClassName Property">UIGradient</span>
 	<span class="Name">Color</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">UIGradient</span>
+	<span class="Name">Enabled</span>
 </div>
 
 <div class="Property child">
@@ -30904,6 +30905,10 @@
 		<span class="Parameter">
 			<span class="Type">Instance</span>
 			<span class="ParamName">pluginGui</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">repeatCount</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
