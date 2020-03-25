@@ -9354,6 +9354,51 @@
 </div>
 
 <div class="Class">
+	<span class="Name">InstanceAdornment</span>
+	<span class="Superclass">GuiBase3d</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">InstanceAdornment</span>
+	<span class="Name">Adornee</span>
+</div>
+
+<div class="Class">
+	<span class="Name">SelectionBox</span>
+	<span class="Superclass">InstanceAdornment</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">SelectionBox</span>
+	<span class="Name">LineThickness</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">BrickColor</span>
+	<span class="ClassName Property">SelectionBox</span>
+	<span class="Name">SurfaceColor</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">SelectionBox</span>
+	<span class="Name">SurfaceColor3</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">SelectionBox</span>
+	<span class="Name">SurfaceTransparency</span>
+</div>
+
+<div class="Class">
 	<span class="Name">PVAdornment</span>
 	<span class="Superclass">GuiBase3d</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -9561,39 +9606,6 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Class">
-	<span class="Name">SelectionBox</span>
-	<span class="Superclass">PVAdornment</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">SelectionBox</span>
-	<span class="Name">LineThickness</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">BrickColor</span>
-	<span class="ClassName Property">SelectionBox</span>
-	<span class="Name">SurfaceColor</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Color3</span>
-	<span class="ClassName Property">SelectionBox</span>
-	<span class="Name">SurfaceColor3</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">SelectionBox</span>
-	<span class="Name">SurfaceTransparency</span>
 </div>
 
 <div class="Class">
@@ -11204,6 +11216,12 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">RequiresNeck</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">AutoRotate</span>
 </div>
 
@@ -11283,6 +11301,12 @@
 	<span class="InnerType">HumanoidDisplayDistanceType</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">DisplayDistanceType</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">DisplayName</span>
 </div>
 
 <div class="Property child">
@@ -16299,6 +16323,37 @@
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">NotificationService</span>
+	<span class="Name">Roblox17sConnectionChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">connectionName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">ConnectionState</span>
+			<span class="ParamName">connectionState</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">namespaceSequenceNumbers</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">NotificationService</span>
+	<span class="Name">Roblox17sEventReceived</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Map</span>
+			<span class="ParamName">eventData</span>
+		</span>
+	</span>
 </div>
 
 <div class="Event child">
@@ -23529,14 +23584,6 @@
 	<span class="Parameters"></span>
 </div>
 
-<div class="Function deprecated child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">ScriptDebugger</span>
-	<span class="Name">Resume</span>
-	<span class="Parameters"></span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
 <div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">ScriptDebugger</span>
@@ -23605,30 +23652,6 @@
 			<span class="ParamDefault int">0</span>
 		</span>
 	</span>
-</div>
-
-<div class="Function deprecated child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">ScriptDebugger</span>
-	<span class="Name">StepIn</span>
-	<span class="Parameters"></span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Function deprecated child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">ScriptDebugger</span>
-	<span class="Name">StepOut</span>
-	<span class="Parameters"></span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Function deprecated child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">ScriptDebugger</span>
-	<span class="Name">StepOver</span>
-	<span class="Parameters"></span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Event child">
@@ -26634,6 +26657,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StudioData</span>
+	<span class="Name">EnableScriptCollabVersionHistoryOnLoad</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">int64</span>
 	<span class="ClassName Property">StudioData</span>
 	<span class="Name">SrcPlaceId</span>
@@ -26663,6 +26694,14 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">StudioService</span>
 	<span class="Name">DraggerSolveConstraints</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StudioService</span>
+	<span class="Name">DrawConstraintsOnTop</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
