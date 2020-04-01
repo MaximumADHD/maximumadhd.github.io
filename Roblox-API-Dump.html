@@ -936,6 +936,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">HasUnpublishedChangesForLinkedSource</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">aliasName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetManagerService</span>
 	<span class="Name">InsertImage</span>
@@ -943,6 +956,45 @@
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">assetId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">InsertLinkedSourceAsLocalScript</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">aliasName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">InsertLinkedSourceAsModuleScript</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">aliasName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">InsertLinkedSourceAsScript</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">aliasName</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -981,11 +1033,55 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">OpenLinkedSource</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">aliasName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
 	<span class="Name">OpenPlace</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">placeId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">PublishLinkedSource</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">assetId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">aliasName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">RefreshLinkedSource</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">aliasName</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -1008,6 +1104,32 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">RenameAlias</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">assetType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">assetId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">oldAliasName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">newAliasName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
 	<span class="Name">RenamePlace</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -1021,6 +1143,19 @@
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">RevertLinkedSourceToLastPublishedVersion</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">aliasName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -1057,6 +1192,18 @@
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">packageId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AssetManagerService</span>
+	<span class="Name">MayBeLinkedSourceModified</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">aliasName</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -27108,6 +27255,10 @@
 			<span class="Type">bool</span>
 			<span class="ParamName">success</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">gameId</span>
+		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -30453,6 +30604,26 @@
 </div>
 
 <div class="Class">
+	<span class="Name">UserService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">UserService</span>
+	<span class="Name">GetUserInfosByUserIdsAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">userIds</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">VRService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -32910,6 +33081,12 @@
 	<span class="EnumName">CollisionFidelity</span>
 	<span class="Name">Box</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CollisionFidelity</span>
+	<span class="Name">PreciseConvexDecomposition</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
