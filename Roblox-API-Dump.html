@@ -14524,6 +14524,15 @@
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">LuaSourceContainer</span>
+	<span class="Name">IsDifferentFromFileSystem</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">BaseScript</span>
 	<span class="Superclass">LuaSourceContainer</span>
@@ -14577,15 +14586,6 @@
 <div class="Class">
 	<span class="Name">ModuleScript</span>
 	<span class="Superclass">LuaSourceContainer</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ModuleScript</span>
-	<span class="Name">CoreScriptModified</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -19827,7 +19827,6 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">Player</span>
 	<span class="Name">DisplayName</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -23736,7 +23735,13 @@
 	<span class="Type">Map</span>
 	<span class="ClassName Function">ScriptDebugger</span>
 	<span class="Name">GetGlobals</span>
-	<span class="Parameters"></span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">stackFrame</span>
+			<span class="ParamDefault int">0</span>
+		</span>
+	</span>
 </div>
 
 <div class="Function child">
@@ -26973,6 +26978,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
+	<span class="Name">AnimationIdSelected</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">id</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
 	<span class="Name">ConvertToPackageUpload</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -27336,6 +27354,13 @@
 			<span class="ParamName">errorMessage</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
+	<span class="Name">OnImportFromRoblox</span>
+	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -28387,14 +28412,6 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">string</span>
-	<span class="ClassName Function">ThirdPartyUserService</span>
-	<span class="Name">GetUserDisplayName</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -37217,6 +37234,12 @@
 	<span class="EnumName">LanguagePreference</span>
 	<span class="Name">SimplifiedChinese</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LanguagePreference</span>
+	<span class="Name">Korean</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
