@@ -1357,6 +1357,47 @@
 </div>
 
 <div class="Class">
+	<span class="Name">Atmosphere</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Atmosphere</span>
+	<span class="Name">Density</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Atmosphere</span>
+	<span class="Name">Offset</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Atmosphere</span>
+	<span class="Name">Color</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Atmosphere</span>
+	<span class="Name">Decay</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Atmosphere</span>
+	<span class="Name">Glare</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Atmosphere</span>
+	<span class="Name">Haze</span>
+</div>
+
+<div class="Class">
 	<span class="Name">Attachment</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -5782,6 +5823,12 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">DebuggerBreakpoint</span>
 	<span class="Name">IsEnabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DebuggerBreakpoint</span>
+	<span class="Name">IsLocal</span>
 </div>
 
 <div class="Property child">
@@ -13661,7 +13708,7 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">bool</span>
-			<span class="ParamName">skyboxChanged</span>
+			<span class="ParamName">skyChanged</span>
 		</span>
 	</span>
 </div>
@@ -20287,6 +20334,24 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Player</span>
+	<span class="Name">RequestStreamAroundAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">position</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">double</span>
+			<span class="ParamName default">timeOut</span>
+			<span class="ParamDefault double">0</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Player</span>
 	<span class="Name">RevokeFriendship</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -23805,6 +23870,10 @@
 			<span class="Type">int</span>
 			<span class="ParamName">line</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isLocalBreakpoint</span>
+		</span>
 	</span>
 </div>
 
@@ -26681,6 +26750,12 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
+	<span class="Name">Show Whitespace</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
 	<span class="Name">Skip Closing Brackets and Quotes</span>
 </div>
 
@@ -26784,6 +26859,12 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Warning Color</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Whitespace Color</span>
 </div>
 
 <div class="Property child">
@@ -39854,200 +39935,206 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DebuggerCurrentLine</span>
+	<span class="Name">ScriptWhitespace</span>
 	<span class="Value">56</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DebuggerErrorLine</span>
+	<span class="Name">DebuggerCurrentLine</span>
 	<span class="Value">57</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffFilePathText</span>
+	<span class="Name">DebuggerErrorLine</span>
 	<span class="Value">58</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextHunkInfo</span>
+	<span class="Name">DiffFilePathText</span>
 	<span class="Value">59</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextNoChange</span>
+	<span class="Name">DiffTextHunkInfo</span>
 	<span class="Value">60</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextAddition</span>
+	<span class="Name">DiffTextNoChange</span>
 	<span class="Value">61</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextDeletion</span>
+	<span class="Name">DiffTextAddition</span>
 	<span class="Value">62</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextSeparatorBackground</span>
+	<span class="Name">DiffTextDeletion</span>
 	<span class="Value">63</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextNoChangeBackground</span>
+	<span class="Name">DiffTextSeparatorBackground</span>
 	<span class="Value">64</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextAdditionBackground</span>
+	<span class="Name">DiffTextNoChangeBackground</span>
 	<span class="Value">65</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextDeletionBackground</span>
+	<span class="Name">DiffTextAdditionBackground</span>
 	<span class="Value">66</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNum</span>
+	<span class="Name">DiffTextDeletionBackground</span>
 	<span class="Value">67</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNumSeparatorBackground</span>
+	<span class="Name">DiffLineNum</span>
 	<span class="Value">68</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNumNoChangeBackground</span>
+	<span class="Name">DiffLineNumSeparatorBackground</span>
 	<span class="Value">69</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNumAdditionBackground</span>
+	<span class="Name">DiffLineNumNoChangeBackground</span>
 	<span class="Value">70</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNumDeletionBackground</span>
+	<span class="Name">DiffLineNumAdditionBackground</span>
 	<span class="Value">71</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffFilePathBackground</span>
+	<span class="Name">DiffLineNumDeletionBackground</span>
 	<span class="Value">72</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffFilePathBorder</span>
+	<span class="Name">DiffFilePathBackground</span>
 	<span class="Value">73</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">Separator</span>
+	<span class="Name">DiffFilePathBorder</span>
 	<span class="Value">74</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ButtonBorder</span>
+	<span class="Name">Separator</span>
 	<span class="Value">75</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ButtonText</span>
+	<span class="Name">ButtonBorder</span>
 	<span class="Value">76</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">InputFieldBorder</span>
+	<span class="Name">ButtonText</span>
 	<span class="Value">77</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">CheckedFieldBackground</span>
+	<span class="Name">InputFieldBorder</span>
 	<span class="Value">78</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">CheckedFieldBorder</span>
+	<span class="Name">CheckedFieldBackground</span>
 	<span class="Value">79</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">CheckedFieldIndicator</span>
+	<span class="Name">CheckedFieldBorder</span>
 	<span class="Value">80</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">HeaderSection</span>
+	<span class="Name">CheckedFieldIndicator</span>
 	<span class="Value">81</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">Midlight</span>
+	<span class="Name">HeaderSection</span>
 	<span class="Value">82</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">StatusBar</span>
+	<span class="Name">Midlight</span>
 	<span class="Value">83</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogButton</span>
+	<span class="Name">StatusBar</span>
 	<span class="Value">84</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogButtonText</span>
+	<span class="Name">DialogButton</span>
 	<span class="Value">85</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogButtonBorder</span>
+	<span class="Name">DialogButtonText</span>
 	<span class="Value">86</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogMainButton</span>
+	<span class="Name">DialogButtonBorder</span>
 	<span class="Value">87</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogMainButtonText</span>
+	<span class="Name">DialogMainButton</span>
 	<span class="Value">88</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">DialogMainButtonText</span>
+	<span class="Value">89</span>
 </div>
 
 <div class="Enum">
