@@ -8948,6 +8948,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Property">VideoFrame</span>
+	<span class="Name">Resolution</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">double</span>
 	<span class="ClassName Property">VideoFrame</span>
 	<span class="Name">TimeLength</span>
@@ -24378,6 +24386,19 @@
 <div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">DataModel</span>
+	<span class="Name">GetEngineFeature</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">DataModel</span>
 	<span class="Name">GetFastFlag</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -26762,6 +26783,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">AutoIndentRule</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Auto Indent Rule</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Enable Autocomplete</span>
@@ -27030,6 +27058,15 @@
 	<span class="ClassName Property">StudioService</span>
 	<span class="Name">GridSize</span>
 	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">StudioService</span>
+	<span class="Name">HoverInstance</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -32489,6 +32526,28 @@
 	<span class="EnumName">AssetType</span>
 	<span class="Name">EmoteAnimation</span>
 	<span class="Value">61</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AutoIndentRule</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AutoIndentRule</span>
+	<span class="Name">Off</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AutoIndentRule</span>
+	<span class="Name">Absolute</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AutoIndentRule</span>
+	<span class="Name">Relative</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
