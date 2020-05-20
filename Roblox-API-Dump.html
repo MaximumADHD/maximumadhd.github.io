@@ -5576,7 +5576,7 @@
 	<span class="InnerType">StudioDataModelType</span>
 	<span class="ClassName Property">DataModelSession</span>
 	<span class="Name">CurrentDataModelType</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5585,7 +5585,7 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">DataModelSession</span>
 	<span class="Name">SessionId</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -5600,14 +5600,14 @@
 			<span class="ParamName">dataModelType</span>
 		</span>
 	</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
 	<span class="ClassName Event">DataModelSession</span>
 	<span class="Name">CurrentDataModelTypeChanged</span>
 	<span class="Parameters"></span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -5620,7 +5620,7 @@
 			<span class="ParamName">gameStateType</span>
 		</span>
 	</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -5633,7 +5633,7 @@
 			<span class="ParamName">gameStateType</span>
 		</span>
 	</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -13615,13 +13615,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Lighting</span>
-	<span class="Name">LegacyOutlines</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Lighting</span>
 	<span class="Name">OutdoorAmbient</span>
@@ -16010,13 +16003,14 @@
 	<span class="Name">MultipleDocumentInterfaceInstance</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Property">MultipleDocumentInterfaceInstance</span>
 	<span class="Name">FocusedDataModelSession</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -16030,7 +16024,7 @@
 			<span class="ParamName">dataModelSession</span>
 		</span>
 	</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -16042,7 +16036,7 @@
 			<span class="ParamName">dataModelSession</span>
 		</span>
 	</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -18825,6 +18819,44 @@
 <div class="Function child">
 	<span class="Type">float</span>
 	<span class="ClassName Function">Workspace</span>
+	<span class="Name">CalculateJumpDistance</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">gravity</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">jumpPower</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">walkSpeed</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">float</span>
+	<span class="ClassName Function">Workspace</span>
+	<span class="Name">CalculateJumpHeight</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">gravity</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">jumpPower</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">float</span>
+	<span class="ClassName Function">Workspace</span>
 	<span class="Name">CalculateJumpPower</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -21447,7 +21479,7 @@
 	<span class="InnerType">StudioDataModelType</span>
 	<span class="ClassName Property">Plugin</span>
 	<span class="Name">HostDataModelType</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -21456,7 +21488,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Plugin</span>
 	<span class="Name">HostDataModelTypeIsCurrent</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -21466,7 +21498,7 @@
 	<span class="InnerType">MultipleDocumentInterfaceInstance</span>
 	<span class="ClassName Property">Plugin</span>
 	<span class="Name">MultipleDocumentInterfaceInstance</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -21609,7 +21641,7 @@
 			<span class="ParamName">defaultValue</span>
 		</span>
 	</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21708,7 +21740,7 @@
 			<span class="ParamName">arguments</span>
 		</span>
 	</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21754,7 +21786,7 @@
 			<span class="ParamName">callback</span>
 		</span>
 	</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21771,7 +21803,7 @@
 			<span class="ParamName">callback</span>
 		</span>
 	</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21926,7 +21958,7 @@
 			<span class="ParamName">value</span>
 		</span>
 	</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -27468,6 +27500,14 @@
 			<span class="ParamName">newName</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">ShowPlaceVersionHistoryDialog</span>
+	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
