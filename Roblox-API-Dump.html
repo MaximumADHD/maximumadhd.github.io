@@ -422,6 +422,32 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">ABTestLoadingStatus</span>
+	<span class="ClassName Function">ABTestService</span>
+	<span class="Name">GetBrowserTrackerABTestLoadingStatus</span>
+	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int64</span>
+	<span class="ClassName Function">ABTestService</span>
+	<span class="Name">GetPendingOrInitializedUserId</span>
+	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">ABTestLoadingStatus</span>
+	<span class="ClassName Function">ABTestService</span>
+	<span class="Name">GetUserABTestLoadingStatus</span>
+	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">string</span>
 	<span class="ClassName Function">ABTestService</span>
 	<span class="Name">GetVariant</span>
@@ -463,6 +489,36 @@
 	<span class="Parameters"></span>
 	<span class="Security">{LocalUserSecurity}</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ABTestService</span>
+	<span class="Name">OnBrowserTrackerABTestLoadingStatusChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">ABTestLoadingStatus</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ABTestService</span>
+	<span class="Name">OnUserABTestLoadingStatusChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">ABTestLoadingStatus</span>
+			<span class="ParamName">status</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Class">
@@ -18465,6 +18521,23 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">ArePartsTouchingOthers</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">partList</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName default">overlapIgnored</span>
+			<span class="ParamDefault float">0.000199999995</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Tuple</span>
 	<span class="ClassName Function">WorldRoot</span>
 	<span class="Name">FindPartOnRay</span>
@@ -22172,12 +22245,13 @@
 	<span class="Tag">[NotCreatable]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">PluginManager</span>
 	<span class="Name">CreatePlugin</span>
 	<span class="Parameters"></span>
 	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
 	<span class="Tag">[CustomLuaState]</span>
 </div>
 
@@ -22198,6 +22272,51 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">PluginManager</span>
+	<span class="Name">ExportSelection</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">filePath</span>
+			<span class="ParamDefault string"></span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PluginManagerInterface</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function deprecated child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">PluginManagerInterface</span>
+	<span class="Name">CreatePlugin</span>
+	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
+	<span class="Tag">[CustomLuaState]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">PluginManagerInterface</span>
+	<span class="Name">ExportPlace</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">filePath</span>
+			<span class="ParamDefault string"></span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">PluginManagerInterface</span>
 	<span class="Name">ExportSelection</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -32116,6 +32235,46 @@
 	<span class="Name">Part1</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ABTestLoadingStatus</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ABTestLoadingStatus</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ABTestLoadingStatus</span>
+	<span class="Name">Pending</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ABTestLoadingStatus</span>
+	<span class="Name">Initialized</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ABTestLoadingStatus</span>
+	<span class="Name">Error</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ABTestLoadingStatus</span>
+	<span class="Name">TimedOut</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ABTestLoadingStatus</span>
+	<span class="Name">ShutOff</span>
+	<span class="Value">5</span>
 </div>
 
 <div class="Enum">
