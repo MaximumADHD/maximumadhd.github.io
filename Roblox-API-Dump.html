@@ -10909,6 +10909,13 @@
 
 <div class="Event child">
 	<span class="ClassName Event">GuiService</span>
+	<span class="Name">NativeClose</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">GuiService</span>
 	<span class="Name">NetworkPausedEnabledChanged</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -18533,6 +18540,28 @@
 			<span class="Type">float</span>
 			<span class="ParamName default">overlapIgnored</span>
 			<span class="ParamDefault float">0.000199999995</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">BulkMoveTo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">partList</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">cframeList</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">BulkMoveMode</span>
+			<span class="ParamName default">eventMode</span>
+			<span class="ParamDefault String">FireAllEvents</span>
 		</span>
 	</span>
 </div>
@@ -26698,13 +26727,31 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
+	<span class="Name">Enable Internal Features</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
 	<span class="Name">Respect Studio shortcuts when game has focus</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
+	<span class="Name">Show CorePackages</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
 	<span class="Name">Show Diagnostics Bar</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Show FileSyncService</span>
 </div>
 
 <div class="Property child">
@@ -29331,6 +29378,17 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">UITextSizeConstraint</span>
 	<span class="Name">MinTextSize</span>
+</div>
+
+<div class="Class">
+	<span class="Name">UICorner</span>
+	<span class="Superclass">UIComponent</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">UDim</span>
+	<span class="ClassName Property">UICorner</span>
+	<span class="Name">CornerRadius</span>
 </div>
 
 <div class="Class">
@@ -33110,6 +33168,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">BulkMoveMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">BulkMoveMode</span>
+	<span class="Name">FireAllEvents</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">BulkMoveMode</span>
+	<span class="Name">FireCFrameChanged</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">BulkMoveMode</span>
+	<span class="Name">FireNoEvents</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">Button</span>
 </div>
 
@@ -35679,8 +35759,14 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">HttpError</span>
-	<span class="Name">Unknown</span>
+	<span class="Name">SslVerificationFail</span>
 	<span class="Value">11</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">HttpError</span>
+	<span class="Name">Unknown</span>
+	<span class="Value">12</span>
 </div>
 
 <div class="Enum">
