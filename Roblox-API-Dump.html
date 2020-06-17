@@ -5905,17 +5905,17 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">DebuggerBreakpoint</span>
-	<span class="Name">IsLocal</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">DebuggerBreakpoint</span>
 	<span class="Name">Line</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DebuggerBreakpoint</span>
+	<span class="Name">isContextDependentBreakpoint</span>
 </div>
 
 <div class="Class">
@@ -18854,6 +18854,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">PhysicsSimulationRate</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">PhysicsSimulationRate</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">StreamingEnabled</span>
@@ -24155,7 +24164,7 @@
 		</span>
 		<span class="Parameter">
 			<span class="Type">bool</span>
-			<span class="ParamName">isLocalBreakpoint</span>
+			<span class="ParamName">isContextDependentBreakpoint</span>
 		</span>
 	</span>
 </div>
@@ -27475,6 +27484,14 @@
 	<span class="Type">string</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">GetStartupPluginId</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">GetTermsOfUseUrl</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -33228,12 +33245,6 @@
 	<span class="Value">1</span>
 </div>
 
-<div class="EnumItem child">
-	<span class="EnumName">BulkMoveMode</span>
-	<span class="Name">FireNoEvents</span>
-	<span class="Value">2</span>
-</div>
-
 <div class="Enum">
 	<span class="Name">Button</span>
 </div>
@@ -38671,6 +38682,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">PhysicsSimulationRate</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PhysicsSimulationRate</span>
+	<span class="Name">Fixed240Hz</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PhysicsSimulationRate</span>
+	<span class="Name">Fixed120Hz</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PhysicsSimulationRate</span>
+	<span class="Name">Fixed60Hz</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">Platform</span>
 </div>
 
@@ -40863,6 +40896,13 @@
 	<span class="EnumName">Technology</span>
 	<span class="Name">ShadowMap</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem deprecated child">
+	<span class="EnumName">Technology</span>
+	<span class="Name">Future</span>
+	<span class="Value">4</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Enum">
