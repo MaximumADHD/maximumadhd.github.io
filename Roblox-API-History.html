@@ -2,6 +2,427 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="438"/>
+<h2>Version 0.438.0.407270</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Instance</span>
+			<span class="ClassName Property">Selection</span>
+			<span class="Name">ActiveInstance</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Active Color</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Active Hover Over Color</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">StudioService</span>
+			<span class="Name">ShowActiveInstanceHighlight</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">TextBox</span>
+			<span class="Name">RichText</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">TextButton</span>
+			<span class="Name">RichText</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">TextLabel</span>
+			<span class="Name">RichText</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Map</span>
+			<span class="ClassName Function">MemStorageService</span>
+			<span class="Name">GetTable</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">VirtualInputManager</span>
+			<span class="Name">sendThemeChangeEvent</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">themeName</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">InfoBarWarningBackground</span>
+			<span class="Value">91</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">InfoBarWarningText</span>
+			<span class="Value">92</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AnalyticsService</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">AnalyticsService</span>
+				<span class="Name">ApiKey</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">AnalyticsService</span>
+				<span class="Name">FireEvent</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">SurfaceAppearance</span>
+			<span class="Name">TexturePack</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security</span>
+	<span class="Property">
+		<span class="ClassName Property">SurfaceAppearance</span>
+		<span class="Name">AlphaMode</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{RobloxSecurity}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{LocalUserSecurity}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security</span>
+	<span class="Property">
+		<span class="ClassName Property">SurfaceAppearance</span>
+		<span class="Name">TexturePack</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{LocalUserSecurity}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{RobloxSecurity}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkClient</span>
+			<span class="Name">Ticket</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkServer</span>
+			<span class="Name">Port</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">DataMtuAdjust</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">DataSendPriority</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">PrintInstances</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">PrintSplitMessage</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">DataSendRate</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">PreferredClientPort</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">ReceiveRate</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">TouchSendRate</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">PhysicsMtuAdjust</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">PhysicsSendPriority</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">NetworkReplicator</span>
+			<span class="Name">CloseConnection</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">NetworkReplicator</span>
+			<span class="Name">GetRakStatsString</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VideoFrame</span>
+			<span class="Name">GetInfo</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">SurfaceAppearance</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="TagChange singular from">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">SurfaceAppearance</span>
+				<span class="Name">AlphaMode</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="TagChange singular from">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">SurfaceAppearance</span>
+				<span class="Name">ColorMap</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="TagChange singular from">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">SurfaceAppearance</span>
+				<span class="Name">MetalnessMap</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="TagChange singular from">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">SurfaceAppearance</span>
+				<span class="Name">NormalMap</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="TagChange singular from">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">SurfaceAppearance</span>
+				<span class="Name">RoughnessMap</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="TagChange singular from">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">SurfaceAppearance</span>
+				<span class="Name">TexturePack</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+
 <hr id="437"/>
 <h2>Version 0.437.0.406875</h2>
 

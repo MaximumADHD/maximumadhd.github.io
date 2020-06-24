@@ -608,21 +608,23 @@
 	<span class="Superclass">Instance</span>
 </div>
 
-<div class="Class">
+<div class="Class deprecated">
 	<span class="Name">AnalyticsService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">AnalyticsService</span>
 	<span class="Name">ApiKey</span>
 	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AnalyticsService</span>
 	<span class="Name">FireEvent</span>
@@ -636,6 +638,7 @@
 			<span class="ParamName">value</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class">
@@ -8232,6 +8235,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TextButton</span>
+	<span class="Name">RichText</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">TextButton</span>
 	<span class="Name">Text</span>
@@ -8458,6 +8467,12 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">TextLabel</span>
 	<span class="Name">LineHeight</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TextLabel</span>
+	<span class="Name">RichText</span>
 </div>
 
 <div class="Property child">
@@ -8828,6 +8843,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TextBox</span>
+	<span class="Name">RichText</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">Text</span>
@@ -9065,13 +9086,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">VideoFrame</span>
 	<span class="Name">Volume</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Dictionary</span>
-	<span class="ClassName Function">VideoFrame</span>
-	<span class="Name">GetInfo</span>
-	<span class="Parameters"></span>
 </div>
 
 <div class="Function child">
@@ -15753,6 +15767,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Map</span>
+	<span class="ClassName Function">MemStorageService</span>
+	<span class="Name">GetTable</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">MemStorageService</span>
 	<span class="Name">HasItem</span>
@@ -16143,12 +16165,6 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">NetworkClient</span>
-	<span class="Name">Ticket</span>
-</div>
-
 <div class="Event child">
 	<span class="ClassName Event">NetworkClient</span>
 	<span class="Name">ConnectionAccepted</span>
@@ -16202,15 +16218,6 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">NetworkServer</span>
-	<span class="Name">Port</span>
-	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
 <div class="Class">
 	<span class="Name">NetworkReplicator</span>
 	<span class="Superclass">Instance</span>
@@ -16219,32 +16226,10 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">NetworkReplicator</span>
-	<span class="Name">CloseConnection</span>
-	<span class="Parameters"></span>
-	<span class="Security">{LocalUserSecurity}</span>
-</div>
-
-<div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">NetworkReplicator</span>
 	<span class="Name">GetPlayer</span>
 	<span class="Parameters"></span>
-</div>
-
-<div class="Function child">
-	<span class="Type">string</span>
-	<span class="ClassName Function">NetworkReplicator</span>
-	<span class="Name">GetRakStatsString</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName default">verbosityLevel</span>
-			<span class="ParamDefault int">0</span>
-		</span>
-	</span>
-	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Class">
@@ -16342,21 +16327,6 @@
 <div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">DataMtuAdjust</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Enum</span>
-	<span class="InnerType">PacketPriority</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">DataSendPriority</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">ExtraMemoryUsed</span>
 	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -16388,12 +16358,6 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">PrintInstances</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">PrintJoinSizeBreakdown</span>
 </div>
 
@@ -16401,12 +16365,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">PrintPhysicsErrors</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">PrintSplitMessage</span>
 </div>
 
 <div class="Property child">
@@ -16431,45 +16389,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">TrackPhysicsDetails</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">DataSendRate</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">PreferredClientPort</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">double</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">ReceiveRate</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">TouchSendRate</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">PhysicsMtuAdjust</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Enum</span>
-	<span class="InnerType">PacketPriority</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">PhysicsSendPriority</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -24307,6 +24226,15 @@
 	<span class="Tag">[Service]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">Selection</span>
+	<span class="Name">ActiveInstance</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">Objects</span>
 	<span class="ClassName Function">Selection</span>
@@ -27210,6 +27138,18 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Active Color</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Active Hover Over Color</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Animate Hover Over</span>
@@ -27372,6 +27312,15 @@
 	<span class="ClassName Property">StudioService</span>
 	<span class="Name">RotateIncrement</span>
 	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StudioService</span>
+	<span class="Name">ShowActiveInstanceHighlight</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -27953,59 +27902,53 @@
 	<span class="Security">{PluginSecurity}</span>
 </div>
 
-<div class="Class deprecated">
+<div class="Class">
 	<span class="Name">SurfaceAppearance</span>
 	<span class="Superclass">Instance</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="Type">Enum</span>
 	<span class="InnerType">AlphaMode</span>
 	<span class="ClassName Property">SurfaceAppearance</span>
 	<span class="Name">AlphaMode</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[Deprecated]</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">SurfaceAppearance</span>
 	<span class="Name">ColorMap</span>
 	<span class="Security">{LocalUserSecurity}</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">SurfaceAppearance</span>
 	<span class="Name">MetalnessMap</span>
 	<span class="Security">{LocalUserSecurity}</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">SurfaceAppearance</span>
 	<span class="Name">NormalMap</span>
 	<span class="Security">{LocalUserSecurity}</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">SurfaceAppearance</span>
 	<span class="Name">RoughnessMap</span>
 	<span class="Security">{LocalUserSecurity}</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">SurfaceAppearance</span>
 	<span class="Name">TexturePack</span>
-	<span class="Security">{LocalUserSecurity}</span>
-	<span class="Tag">[Deprecated]</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class">
@@ -32071,6 +32014,19 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">detailType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">VirtualInputManager</span>
+	<span class="Name">sendThemeChangeEvent</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">themeName</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -40653,6 +40609,18 @@
 	<span class="EnumName">StudioStyleGuideColor</span>
 	<span class="Name">DialogMainButtonText</span>
 	<span class="Value">90</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">InfoBarWarningBackground</span>
+	<span class="Value">91</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">InfoBarWarningText</span>
+	<span class="Value">92</span>
 </div>
 
 <div class="Enum">
