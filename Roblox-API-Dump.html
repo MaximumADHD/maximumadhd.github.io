@@ -18132,6 +18132,14 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">HasJointOffset</span>
+	<span class="Security">{✏️NotAccessibleSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshPart</span>
 	<span class="Name">HasSkinnedMesh</span>
 	<span class="Security">{✏️NotAccessibleSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -18164,6 +18172,14 @@
 	<span class="Type">Content</span>
 	<span class="ClassName Property">MeshPart</span>
 	<span class="Name">TextureID</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">JointOffset</span>
+	<span class="Security">{✏️NotAccessibleSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class">
@@ -18779,6 +18795,14 @@
 	<span class="Name">PhysicsSimulationRate</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">SkinnedMeshAllowType</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">SkinnedMeshEnabled</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -27020,6 +27044,12 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
+	<span class="Name">Highlight Current Line</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
 	<span class="Name">Indent Using Spaces</span>
 </div>
 
@@ -27069,6 +27099,12 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Comment Color</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Current Line Highlight Color</span>
 </div>
 
 <div class="Property child">
@@ -27274,6 +27310,15 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StudioService</span>
+	<span class="Name">AlignDraggedObjects</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -27487,6 +27532,14 @@
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">HasInternalPermission</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -39808,6 +39861,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">SkinnedMeshAllowType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SkinnedMeshAllowType</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SkinnedMeshAllowType</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SkinnedMeshAllowType</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">SortOrder</span>
 </div>
 
@@ -40535,104 +40610,140 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">Separator</span>
+	<span class="Name">ChatIncomingBgColor</span>
 	<span class="Value">76</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ButtonBorder</span>
+	<span class="Name">ChatIncomingTextColor</span>
 	<span class="Value">77</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ButtonText</span>
+	<span class="Name">ChatOutgoingBgColor</span>
 	<span class="Value">78</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">InputFieldBorder</span>
+	<span class="Name">ChatOutgoingTextColor</span>
 	<span class="Value">79</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">CheckedFieldBackground</span>
+	<span class="Name">ChatModeratedMessageColor</span>
 	<span class="Value">80</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">CheckedFieldBorder</span>
+	<span class="Name">Separator</span>
 	<span class="Value">81</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">CheckedFieldIndicator</span>
+	<span class="Name">ButtonBorder</span>
 	<span class="Value">82</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">HeaderSection</span>
+	<span class="Name">ButtonText</span>
 	<span class="Value">83</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">Midlight</span>
+	<span class="Name">InputFieldBorder</span>
 	<span class="Value">84</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">StatusBar</span>
+	<span class="Name">CheckedFieldBackground</span>
 	<span class="Value">85</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogButton</span>
+	<span class="Name">CheckedFieldBorder</span>
 	<span class="Value">86</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogButtonText</span>
+	<span class="Name">CheckedFieldIndicator</span>
 	<span class="Value">87</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogButtonBorder</span>
+	<span class="Name">HeaderSection</span>
 	<span class="Value">88</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogMainButton</span>
+	<span class="Name">Midlight</span>
 	<span class="Value">89</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogMainButtonText</span>
+	<span class="Name">StatusBar</span>
 	<span class="Value">90</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">InfoBarWarningBackground</span>
+	<span class="Name">DialogButton</span>
 	<span class="Value">91</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">InfoBarWarningText</span>
+	<span class="Name">DialogButtonText</span>
 	<span class="Value">92</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">DialogButtonBorder</span>
+	<span class="Value">93</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">DialogMainButton</span>
+	<span class="Value">94</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">DialogMainButtonText</span>
+	<span class="Value">95</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">InfoBarWarningBackground</span>
+	<span class="Value">96</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">InfoBarWarningText</span>
+	<span class="Value">97</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">ScriptEditorCurrentLine</span>
+	<span class="Value">98</span>
 </div>
 
 <div class="Enum">
@@ -40883,6 +40994,34 @@
 	<span class="Name">Future</span>
 	<span class="Value">4</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">TeleportMethod</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TeleportMethod</span>
+	<span class="Name">TeleportToSpawnByName</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TeleportMethod</span>
+	<span class="Name">TeleportToPlaceInstance</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TeleportMethod</span>
+	<span class="Name">TeleportToPrivateServer</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TeleportMethod</span>
+	<span class="Name">TeleportToPartyAsync</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
