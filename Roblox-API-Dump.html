@@ -9805,7 +9805,19 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">CylinderHandleAdornment</span>
+	<span class="Name">Angle</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">CylinderHandleAdornment</span>
 	<span class="Name">Height</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">CylinderHandleAdornment</span>
+	<span class="Name">InnerRadius</span>
 </div>
 
 <div class="Property child">
@@ -23432,6 +23444,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">MeshPartDetailLevel</span>
+	<span class="ClassName Property">RenderSettings</span>
+	<span class="Name">MeshPartDetailLevel</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">RenderSettings</span>
 	<span class="Name">ReloadAssets</span>
@@ -23694,6 +23713,14 @@
 			<span class="ParamName">function</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">RunService</span>
+	<span class="Name">GetCoreScriptVersion</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -27427,6 +27454,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">BaseURLHasChineseHost</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">ConvertToPackageUpload</span>
@@ -27802,6 +27837,13 @@
 
 <div class="Event child">
 	<span class="ClassName Event">StudioService</span>
+	<span class="Name">DEPRECATED_OnPublishPlaceToRoblox</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
 	<span class="Name">GamePublishFinished</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -27905,7 +27947,12 @@
 <div class="Event child">
 	<span class="ClassName Event">StudioService</span>
 	<span class="Name">OnPublishPlaceToRoblox</span>
-	<span class="Parameters"></span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isOverwritePublish</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -38244,6 +38291,40 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">MeshPartDetailLevel</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">MeshPartDetailLevel</span>
+	<span class="Name">DistanceBased</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">MeshPartDetailLevel</span>
+	<span class="Name">Level01</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">MeshPartDetailLevel</span>
+	<span class="Name">Level02</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">MeshPartDetailLevel</span>
+	<span class="Name">Level03</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">MeshPartDetailLevel</span>
+	<span class="Name">Level04</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">MeshType</span>
 </div>
 
@@ -39238,6 +39319,12 @@
 	<span class="EnumName">RenderFidelity</span>
 	<span class="Name">Precise</span>
 	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RenderFidelity</span>
+	<span class="Name">Performance</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
