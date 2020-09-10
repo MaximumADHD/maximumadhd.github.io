@@ -3005,6 +3005,27 @@
 
 <div class="Event child">
 	<span class="ClassName Event">BulkImportService</span>
+	<span class="Name">AssetImported</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">AssetType</span>
+			<span class="ParamName">assetType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">id</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">BulkImportService</span>
 	<span class="Name">BulkImportFinished</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -10373,6 +10394,15 @@
 	<span class="Name">MenuIsOpen</span>
 	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">GuiService</span>
+	<span class="Name">RenderHumanoidBillboards</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -19955,6 +19985,14 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PhysicsSettings</span>
+	<span class="Name">ForceCSGv2</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PhysicsSettings</span>
 	<span class="Name">IsReceiveAgeShown</span>
 </div>
 
@@ -26841,6 +26879,12 @@
 	<span class="Name">Enable CoreScript Debugger</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Enable Http Sandboxing</span>
+</div>
+
 <div class="Property deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
@@ -26848,6 +26892,12 @@
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Enable Internal Beta Features</span>
 </div>
 
 <div class="Property child">
@@ -27614,6 +27664,14 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
+	<span class="Name">DEPRECATED_ShowPlaceVersionHistoryDialog</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
 	<span class="Name">EmitPlacePublishedSignal</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -27916,7 +27974,12 @@
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">ShowPlaceVersionHistoryDialog</span>
-	<span class="Parameters"></span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">placeId</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -30033,6 +30096,76 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">UIScale</span>
 	<span class="Name">Scale</span>
+</div>
+
+<div class="Class">
+	<span class="Name">UnvalidatedAssetService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">UnvalidatedAssetService</span>
+	<span class="Name">AppendTempAsset</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">id</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">lookAt</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">camPos</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">usage</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UnvalidatedAssetService</span>
+	<span class="Name">AppendVantagePoint</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">id</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">lookAt</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">camPos</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UnvalidatedAssetService</span>
+	<span class="Name">RenameTempAsset</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">tempId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">assetId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
