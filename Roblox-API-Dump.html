@@ -1636,6 +1636,72 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AvatarEditorService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">GetAvatarRules</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">GetItemDetails</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">itemId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">ItemType</span>
+			<span class="ParamName">itemType</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">GetRecommendedAssets</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">AvatarAssetType</span>
+			<span class="ParamName">assetType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName default">contextAssetId</span>
+			<span class="ParamDefault int64">0</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">GetRecommendedBundles</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">bundleId</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">Backpack</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -4783,6 +4849,13 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">ContentProvider</span>
+	<span class="Name">ListEncryptedAssets</span>
+	<span class="Parameters"></span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">ContentProvider</span>
@@ -4817,6 +4890,34 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">ContentProvider</span>
+	<span class="Name">RegisterDefaultEncryptionKey</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">encryptionKey</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ContentProvider</span>
+	<span class="Name">RegisterEncryptedAsset</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">assetId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">encryptionKey</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ContentProvider</span>
 	<span class="Name">SetBaseUrl</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -4825,6 +4926,25 @@
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ContentProvider</span>
+	<span class="Name">UnregisterDefaultEncryptionKey</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ContentProvider</span>
+	<span class="Name">UnregisterEncryptedAsset</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">assetId</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -14162,10 +14282,28 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
+<div class="Property deprecated child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">LocalizationTable</span>
+	<span class="Name">DevelopmentLanguage</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
 <div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">LocalizationTable</span>
 	<span class="Name">SourceLocaleId</span>
+</div>
+
+<div class="Function deprecated child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">LocalizationTable</span>
+	<span class="Name">GetContents</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -14248,6 +14386,19 @@
 	</span>
 </div>
 
+<div class="Function deprecated child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">LocalizationTable</span>
+	<span class="Name">RemoveKey</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+	</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">LocalizationTable</span>
@@ -14260,6 +14411,19 @@
 	</span>
 </div>
 
+<div class="Function deprecated child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">LocalizationTable</span>
+	<span class="Name">SetContents</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">contents</span>
+		</span>
+	</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">LocalizationTable</span>
@@ -14270,6 +14434,27 @@
 			<span class="ParamName">entries</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function deprecated child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">LocalizationTable</span>
+	<span class="Name">SetEntry</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">targetLocaleId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">text</span>
+		</span>
+	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -27463,6 +27648,14 @@
 <div class="Function child">
 	<span class="Type">string</span>
 	<span class="ClassName Function">StudioService</span>
+	<span class="Name">GetStartupAssetId</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">StudioService</span>
 	<span class="Name">GetStartupPluginId</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -32943,6 +33136,172 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">AvatarAssetType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">TShirt</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">Hat</span>
+	<span class="Value">8</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">Shirt</span>
+	<span class="Value">11</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">Pants</span>
+	<span class="Value">12</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">Head</span>
+	<span class="Value">17</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">Face</span>
+	<span class="Value">18</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">Gear</span>
+	<span class="Value">19</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">Torso</span>
+	<span class="Value">27</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">RightArm</span>
+	<span class="Value">28</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">LeftArm</span>
+	<span class="Value">29</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">LeftLeg</span>
+	<span class="Value">30</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">RightLeg</span>
+	<span class="Value">31</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">HairAccessory</span>
+	<span class="Value">41</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">FaceAccessory</span>
+	<span class="Value">42</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">NeckAccessory</span>
+	<span class="Value">43</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">ShoulderAccessory</span>
+	<span class="Value">44</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">FrontAccessory</span>
+	<span class="Value">45</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">BackAccessory</span>
+	<span class="Value">46</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">WaistAccessory</span>
+	<span class="Value">47</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">ClimbAnimation</span>
+	<span class="Value">48</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">FallAnimation</span>
+	<span class="Value">50</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">IdleAnimation</span>
+	<span class="Value">51</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">JumpAnimation</span>
+	<span class="Value">52</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">RunAnimation</span>
+	<span class="Value">53</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">SwimAnimation</span>
+	<span class="Value">54</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">WalkAnimation</span>
+	<span class="Value">55</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">EmoteAnimation</span>
+	<span class="Value">61</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">AvatarContextMenuOption</span>
 </div>
 
@@ -35871,13 +36230,13 @@
 <div class="EnumItem child">
 	<span class="EnumName">HttpRequestType</span>
 	<span class="Name">Analytics</span>
-	<span class="Value">22</span>
+	<span class="Value">23</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">HttpRequestType</span>
 	<span class="Name">Localization</span>
-	<span class="Value">24</span>
+	<span class="Value">25</span>
 </div>
 
 <div class="Enum">
@@ -36194,6 +36553,22 @@
 	<span class="EnumName">InputType</span>
 	<span class="Name">Sin</span>
 	<span class="Value">13</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ItemType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ItemType</span>
+	<span class="Name">Asset</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ItemType</span>
+	<span class="Name">Bundle</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
