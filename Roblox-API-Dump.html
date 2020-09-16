@@ -54,6 +54,15 @@
 	<span class="Security">{PluginSecurity}</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">Instance</span>
+	<span class="Name">SourceAssetId</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Instance</span>
@@ -935,6 +944,14 @@
 			<span class="ParamName">animationTrack</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">AssetCounterService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -7182,33 +7199,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">HardwareMouse</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">BubbleChatLifetime</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">BubbleChatMaxBubbles</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">GameSettings</span>
 	<span class="Name">ChatHistory</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">ChatScrollLength</span>
 </div>
 
 <div class="Property child">
@@ -7222,39 +7215,6 @@
 	<span class="ClassName Property">GameSettings</span>
 	<span class="Name">OverrideStarterScript</span>
 	<span class="Security">{✏️RobloxScriptSecurity}</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">CollisionSoundEnabled</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">CollisionSoundVolume</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">MaxCollisionSounds</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">SoftwareSound</span>
 </div>
 
 <div class="Property child">
@@ -10394,15 +10354,6 @@
 	<span class="Name">MenuIsOpen</span>
 	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
 	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">GuiService</span>
-	<span class="Name">RenderHumanoidBillboards</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -18952,6 +18903,14 @@
 
 <div class="Property child">
 	<span class="Type">Enum</span>
+	<span class="InnerType">InterpolationThrottlingMode</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">InterpolationThrottling</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
 	<span class="InnerType">PhysicsSimulationRate</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">PhysicsSimulationRate</span>
@@ -26921,19 +26880,7 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
-	<span class="Name">Show CorePackages</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
 	<span class="Name">Show Diagnostics Bar</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">Show FileSyncService</span>
 </div>
 
 <div class="Property child">
@@ -27047,6 +26994,18 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Show Core GUI in Explorer while Playing</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Show CorePackages</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Show FileSyncService</span>
 </div>
 
 <div class="Property child">
@@ -36689,6 +36648,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">InterpolationThrottlingMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">InterpolationThrottlingMode</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">InterpolationThrottlingMode</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">InterpolationThrottlingMode</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">ItemType</span>
 </div>
 
@@ -41708,6 +41689,18 @@
 	<span class="Value">5</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">TextInputType</span>
+	<span class="Name">PasswordShown</span>
+	<span class="Value">6</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextInputType</span>
+	<span class="Name">Username</span>
+	<span class="Value">7</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">TextTruncate</span>
 </div>
@@ -42139,28 +42132,6 @@
 	<span class="EnumName">UiMessageType</span>
 	<span class="Name">UiMessageInfo</span>
 	<span class="Value">1</span>
-</div>
-
-<div class="Enum">
-	<span class="Name">UploadSetting</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">UploadSetting</span>
-	<span class="Name">Never</span>
-	<span class="Value">0</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">UploadSetting</span>
-	<span class="Name">Ask</span>
-	<span class="Value">1</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">UploadSetting</span>
-	<span class="Name">Always</span>
-	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
