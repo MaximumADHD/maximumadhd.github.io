@@ -2,6 +2,269 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="450"/>
+<h2>Version 0.450.0.411923</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Camera</span>
+			<span class="Name">DiagonalFieldOfView</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Enum</span>
+			<span class="InnerType">FieldOfViewMode</span>
+			<span class="ClassName Property">Camera</span>
+			<span class="Name">FieldOfViewMode</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Camera</span>
+			<span class="Name">MaxAxisFieldOfView</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">MeshPart</span>
+			<span class="Name">DoubleSided</span>
+			<span class="Security">{✏️PluginSecurity}</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">double</span>
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">IncomingReplicationLag</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">FieldOfViewMode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">FieldOfViewMode</span>
+				<span class="Name">Vertical</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">FieldOfViewMode</span>
+				<span class="Name">Diagonal</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">FieldOfViewMode</span>
+				<span class="Name">MaxAxis</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">Camera</span>
+		<span class="Name">FieldOfView</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Data</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Camera</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">ScriptDebugger</span>
+		<span class="Name">SetGlobal</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Variant</span>
+					<span class="ParamName">value</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Variant</span>
+					<span class="ParamName">value</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">stackFrame</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GameSettings</span>
+			<span class="Name">ChatHistory</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GameSettings</span>
+			<span class="Name">ReportAbuseChatHistory</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GameSettings</span>
+			<span class="Name">VideoQuality</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">LuaSettings</span>
+			<span class="Name">AreScriptStartsReported</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">LuaSettings</span>
+			<span class="Name">DefaultWaitTime</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">LuaSettings</span>
+			<span class="Name">WaitingThreadsBudget</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">IncommingReplicationLag</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">PrintFilters</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">PrintTouches</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">VideoQualitySettings</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VideoQualitySettings</span>
+				<span class="Name">LowResolution</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VideoQualitySettings</span>
+				<span class="Name">MediumResolution</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VideoQualitySettings</span>
+				<span class="Name">HighResolution</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+
 <hr id="449"/>
 <h2>Version 0.449.1.411731</h2>
 

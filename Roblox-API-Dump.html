@@ -3112,6 +3112,31 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Camera</span>
+	<span class="Name">DiagonalFieldOfView</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Camera</span>
+	<span class="Name">FieldOfView</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">FieldOfViewMode</span>
+	<span class="ClassName Property">Camera</span>
+	<span class="Name">FieldOfViewMode</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Camera</span>
+	<span class="Name">MaxAxisFieldOfView</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">Camera</span>
 	<span class="Name">CFrame</span>
@@ -3125,12 +3150,6 @@
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">Camera</span>
-	<span class="Name">FieldOfView</span>
 </div>
 
 <div class="Property child">
@@ -7199,18 +7218,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">ChatHistory</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">ReportAbuseChatHistory</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">GameSettings</span>
 	<span class="Name">OverrideStarterScript</span>
@@ -7221,13 +7228,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">GameSettings</span>
 	<span class="Name">VideoCaptureEnabled</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Enum</span>
-	<span class="InnerType">VideoQualitySettings</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">VideoQuality</span>
 </div>
 
 <div class="Property child">
@@ -14775,24 +14775,6 @@
 	<span class="Tag">[Settings]</span>
 </div>
 
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">LuaSettings</span>
-	<span class="Name">AreScriptStartsReported</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">double</span>
-	<span class="ClassName Property">LuaSettings</span>
-	<span class="Name">DefaultWaitTime</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">LuaSettings</span>
-	<span class="Name">WaitingThreadsBudget</span>
-</div>
-
 <div class="Class">
 	<span class="Name">LuaSourceContainer</span>
 	<span class="Superclass">Instance</span>
@@ -16462,13 +16444,7 @@
 <div class="Property child">
 	<span class="Type">double</span>
 	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">IncommingReplicationLag</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">PrintFilters</span>
+	<span class="Name">IncomingReplicationLag</span>
 </div>
 
 <div class="Property child">
@@ -16487,12 +16463,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">PrintStreamInstanceQuota</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">PrintTouches</span>
 </div>
 
 <div class="Property child">
@@ -18243,6 +18213,14 @@
 <div class="Class">
 	<span class="Name">MeshPart</span>
 	<span class="Superclass">TriangleMeshPart</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">DoubleSided</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -24299,6 +24277,10 @@
 		<span class="Parameter">
 			<span class="Type">Variant</span>
 			<span class="ParamName">value</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">stackFrame</span>
 		</span>
 	</span>
 </div>
@@ -35482,6 +35464,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">FieldOfViewMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FieldOfViewMode</span>
+	<span class="Name">Vertical</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FieldOfViewMode</span>
+	<span class="Name">Diagonal</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FieldOfViewMode</span>
+	<span class="Name">MaxAxis</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">FillDirection</span>
 </div>
 
@@ -42839,28 +42843,6 @@
 	<span class="EnumName">VibrationMotor</span>
 	<span class="Name">RightHand</span>
 	<span class="Value">5</span>
-</div>
-
-<div class="Enum">
-	<span class="Name">VideoQualitySettings</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">VideoQualitySettings</span>
-	<span class="Name">LowResolution</span>
-	<span class="Value">0</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">VideoQualitySettings</span>
-	<span class="Name">MediumResolution</span>
-	<span class="Value">1</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">VideoQualitySettings</span>
-	<span class="Name">HighResolution</span>
-	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
