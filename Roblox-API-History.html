@@ -2,6 +2,3266 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="454"/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ILegacyStudioBridge</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ProximityPrompt</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">ProximityPrompt</span>
+				<span class="Name">ActionText</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">ProximityPrompt</span>
+				<span class="Name">ClickablePrompt</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">ProximityPrompt</span>
+				<span class="Name">Enabled</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Enum</span>
+				<span class="InnerType">ProximityPromptExclusivity</span>
+				<span class="ClassName Property">ProximityPrompt</span>
+				<span class="Name">Exclusivity</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Enum</span>
+				<span class="InnerType">KeyCode</span>
+				<span class="ClassName Property">ProximityPrompt</span>
+				<span class="Name">GamepadKeyCode</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">ProximityPrompt</span>
+				<span class="Name">HoldDuration</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Enum</span>
+				<span class="InnerType">KeyCode</span>
+				<span class="ClassName Property">ProximityPrompt</span>
+				<span class="Name">KeyboardKeyCode</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">ProximityPrompt</span>
+				<span class="Name">MaxActivationDistance</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">ProximityPrompt</span>
+				<span class="Name">ObjectText</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">ProximityPrompt</span>
+				<span class="Name">RequiresLineOfSight</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Enum</span>
+				<span class="InnerType">ProximityPromptStyle</span>
+				<span class="ClassName Property">ProximityPrompt</span>
+				<span class="Name">Style</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector2</span>
+				<span class="ClassName Property">ProximityPrompt</span>
+				<span class="Name">UIOffset</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">ProximityPrompt</span>
+				<span class="Name">InputHoldBegin</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">ProximityPrompt</span>
+				<span class="Name">InputHoldEnd</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">ProximityPrompt</span>
+				<span class="Name">PromptButtonHoldBegan</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">ProximityPrompt</span>
+				<span class="Name">PromptButtonHoldEnded</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">ProximityPrompt</span>
+				<span class="Name">PromptHidden</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">ProximityPrompt</span>
+				<span class="Name">PromptShown</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Enum</span>
+						<span class="InnerType">ProximityPromptInputType</span>
+						<span class="ParamName">inputType</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">ProximityPrompt</span>
+				<span class="Name">TriggerEnded</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">playerWhoTriggered</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">ProximityPrompt</span>
+				<span class="Name">Triggered</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">playerWhoTriggered</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ProximityPromptService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotBrowsable]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">ProximityPromptService</span>
+				<span class="Name">Enabled</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int</span>
+				<span class="ClassName Property">ProximityPromptService</span>
+				<span class="Name">MaxPromptsVisible</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">ProximityPromptService</span>
+				<span class="Name">PromptButtonHoldBegan</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">prompt</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">ProximityPromptService</span>
+				<span class="Name">PromptButtonHoldEnded</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">prompt</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">ProximityPromptService</span>
+				<span class="Name">PromptHidden</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">prompt</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">ProximityPromptService</span>
+				<span class="Name">PromptShown</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">prompt</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Enum</span>
+						<span class="InnerType">ProximityPromptInputType</span>
+						<span class="ParamName">inputType</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">ProximityPromptService</span>
+				<span class="Name">PromptTriggerEnded</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">prompt</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">playerWhoTriggered</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">ProximityPromptService</span>
+				<span class="Name">PromptTriggered</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">prompt</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">playerWhoTriggered</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">TracerService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">TracerService</span>
+				<span class="Name">FinishSpan</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">spanId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">TracerService</span>
+				<span class="Name">StartSpan</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">name</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">parentId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">LegacyStudioBridge</span>
+			<span class="Superclass">ILegacyStudioBridge</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">OutfitPages</span>
+			<span class="Superclass">Pages</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Vector3</span>
+			<span class="ClassName Property">MeshPart</span>
+			<span class="Name">MeshSize</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">PhysicsSettings</span>
+			<span class="Name">IsInterpolationThrottleShown</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Luau Keyword Color</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Ruler Color</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">GetFavorite</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">itemId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">AvatarItemType</span>
+					<span class="ParamName">itemType</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">GetInventory</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Array</span>
+					<span class="ParamName">assetTypes</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">GetOutfits</span>
+			<span class="Parameters"></span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">PerformCreateOutfit</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">PerformSaveAvatar</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">PerformSaveAvatarNew</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Array</span>
+					<span class="ParamName">addedAssets</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Array</span>
+					<span class="ParamName">removedAssets</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">PerformSetFavorite</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">PromptAllowInventoryReadAccess</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">PromptCreateOutfit</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">outfit</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">HumanoidRigType</span>
+					<span class="ParamName">rigType</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">PromptSaveAvatar</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">HumanoidRigType</span>
+					<span class="ParamName">rigType</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">PromptSetFavorite</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">itemId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">AvatarItemType</span>
+					<span class="ParamName">itemType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">shouldFavorite</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">SetAllowInventoryReadAccess</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">inventoryReadAccessGranted</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">SignalCreateOutfitPermissionDenied</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">SignalSaveAvatarFailed</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">SignalSaveAvatarPermissionDenied</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">SignalSetFavoriteFailed</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">SignalSetFavoritePermissionDenied</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">InsertService</span>
+			<span class="Name">CreateMeshPartAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Content</span>
+					<span class="ParamName">meshId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">CollisionFidelity</span>
+					<span class="ParamName">collisionFidelity</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">RenderFidelity</span>
+					<span class="ParamName">renderFidelity</span>
+				</span>
+			</span>
+			<span class="Security">{PluginSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">MeshPart</span>
+			<span class="Name">ApplyMesh</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">meshPart</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">UGCValidationService</span>
+			<span class="Name">SetMeshIdBlocking</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">meshPart</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">meshId</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">UnvalidatedAssetService</span>
+			<span class="Name">AppendTempAssetId</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">id</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">lookAt</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">camPos</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">usage</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">UnvalidatedAssetService</span>
+			<span class="Name">UpgradeTempAssetId</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">tempId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">assetId</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">OpenAllowInventoryReadAccess</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">OpenPromptCreateOufit</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">HumanoidRigType</span>
+					<span class="ParamName">rigType</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">OpenPromptSaveAvatar</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">HumanoidRigType</span>
+					<span class="ParamName">rigType</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">OpenPromptSetFavorite</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">itemId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">AvatarItemType</span>
+					<span class="ParamName">itemType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">shouldFavorite</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">PromptAllowInventoryReadAccessCompleted</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">AvatarPromptResult</span>
+					<span class="ParamName">result</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">PromptCreateOutfitCompleted</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">AvatarPromptResult</span>
+					<span class="ParamName">result</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">PromptSaveAvatarCompleted</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">AvatarPromptResult</span>
+					<span class="ParamName">result</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">PromptSetFavoriteCompleted</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">AvatarPromptResult</span>
+					<span class="ParamName">result</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">ContentProvider</span>
+			<span class="Name">AssetFetchFailed</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Content</span>
+					<span class="ParamName">assetId</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">AssetTypeVerification</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AssetTypeVerification</span>
+				<span class="Name">Default</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AssetTypeVerification</span>
+				<span class="Name">ClientOnly</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AssetTypeVerification</span>
+				<span class="Name">Always</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">AvatarPromptResult</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AvatarPromptResult</span>
+				<span class="Name">Success</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AvatarPromptResult</span>
+				<span class="Name">PermissionDenied</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AvatarPromptResult</span>
+				<span class="Name">Failed</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">ProximityPromptExclusivity</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ProximityPromptExclusivity</span>
+				<span class="Name">OnePerButton</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ProximityPromptExclusivity</span>
+				<span class="Name">OneGlobally</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ProximityPromptExclusivity</span>
+				<span class="Name">AlwaysShow</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">ProximityPromptInputType</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ProximityPromptInputType</span>
+				<span class="Name">Keyboard</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ProximityPromptInputType</span>
+				<span class="Name">Gamepad</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ProximityPromptInputType</span>
+				<span class="Name">Touch</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">ProximityPromptStyle</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ProximityPromptStyle</span>
+				<span class="Name">Default</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ProximityPromptStyle</span>
+				<span class="Name">Custom</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">LuauKeyword</span>
+			<span class="Value">14</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">Background</span>
+			<span class="Value">17</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">SelectionText</span>
+			<span class="Value">18</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">SelectionBackground</span>
+			<span class="Value">19</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">FindSelectionBackground</span>
+			<span class="Value">20</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">MatchingWordBackground</span>
+			<span class="Value">21</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">Warning</span>
+			<span class="Value">22</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">Error</span>
+			<span class="Value">23</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">Whitespace</span>
+			<span class="Value">24</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">ActiveLine</span>
+			<span class="Value">25</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">DebuggerCurrentLine</span>
+			<span class="Value">26</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">DebuggerErrorLine</span>
+			<span class="Value">27</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">Ruler</span>
+			<span class="Value">28</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">ScriptLuauKeyword</span>
+			<span class="Value">105</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AnimationController</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">AnimationController</span>
+				<span class="Name">GetPlayingAnimationTracks</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">AnimationController</span>
+				<span class="Name">LoadAnimation</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">AnimationController</span>
+				<span class="Name">AnimationPlayed</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Humanoid</span>
+			<span class="Name">GetPlayingAnimationTracks</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Humanoid</span>
+			<span class="Name">LoadAnimation</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">Humanoid</span>
+			<span class="Name">AnimationPlayed</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">StudioTheme</span>
+			<span class="Name">GetPath</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">Constraint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">NoCollisionConstraint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">WeldConstraint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">AlignOrientation</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">AlignPosition</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">AngularVelocity</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">BallSocketConstraint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">HingeConstraint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">LineForce</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">RodConstraint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">RopeConstraint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">SlidingBallConstraint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">SpringConstraint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">Torque</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">VectorForce</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">VelocityMotor</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">CoreScript</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Script</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">CylindricalConstraint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">PrismaticConstraint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">SpecialMesh</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">Status</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">WorldRoot</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">ScrollingFrame</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Gui</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">TextBox</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Gui</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">Workspace</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">WorldModel</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">FlagStand</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">Platform</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">Seat</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">SkateboardPlatform</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">SpawnLocation</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Humanoid</span>
+		<span class="Name">ApplyDescription</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">AssetTypeVerification</span>
+					<span class="ParamName default">assetTypeVerification</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Players</span>
+		<span class="Name">CreateHumanoidModelFromDescription</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">description</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">HumanoidRigType</span>
+					<span class="ParamName">rigType</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">description</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">HumanoidRigType</span>
+					<span class="ParamName">rigType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">AssetTypeVerification</span>
+					<span class="ParamName default">assetTypeVerification</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">VirtualInputManager</span>
+		<span class="Name">SendKeyEvent</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isPressed</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">KeyCode</span>
+					<span class="ParamName">keyCode</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isRepeatedKey</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginGui</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isPressed</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">KeyCode</span>
+					<span class="ParamName">keyCode</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isRepeatedKey</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">layerCollector</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">VirtualInputManager</span>
+		<span class="Name">SendMouseButtonEvent</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">y</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">mouseButton</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isDown</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginGui</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">repeatCount</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">y</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">mouseButton</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isDown</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">layerCollector</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">repeatCount</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">VirtualInputManager</span>
+		<span class="Name">SendMouseMoveEvent</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">y</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginGui</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">y</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">layerCollector</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">VirtualInputManager</span>
+		<span class="Name">SendMouseWheelEvent</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">y</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isForwardScroll</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginGui</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">x</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">y</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isForwardScroll</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">layerCollector</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">VirtualInputManager</span>
+		<span class="Name">SendTextInputCharacterEvent</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">str</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pluginGui</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">str</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">layerCollector</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioScriptEditorColorCategories</span>
+		<span class="Name">FunctionName</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">16</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">15</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioScriptEditorColorCategories</span>
+		<span class="Name">TODO</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">17</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">16</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptKeyword</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">52</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">51</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptBuiltInFunction</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">53</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">52</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptWarning</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">54</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">53</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptError</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">55</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">54</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptWhitespace</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">56</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">55</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptRuler</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">57</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">56</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DebuggerCurrentLine</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">58</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">57</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DebuggerErrorLine</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">59</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">58</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffFilePathText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">60</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">59</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextHunkInfo</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">61</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">60</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextNoChange</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">62</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">61</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextAddition</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">63</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">62</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextDeletion</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">64</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">63</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextSeparatorBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">65</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">64</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextNoChangeBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">66</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">65</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextAdditionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">67</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">66</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffTextDeletionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">68</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">67</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffLineNum</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">69</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">68</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffLineNumSeparatorBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">70</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">69</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffLineNumNoChangeBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">71</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">70</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffLineNumAdditionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">72</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">71</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffLineNumDeletionBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">73</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">72</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffFilePathBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">74</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">73</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DiffFilePathBorder</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">75</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">74</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ChatIncomingBgColor</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">76</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">75</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ChatIncomingTextColor</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">77</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">76</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ChatOutgoingBgColor</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">78</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">77</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ChatOutgoingTextColor</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">79</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">78</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ChatModeratedMessageColor</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">80</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">79</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">Separator</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">81</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">80</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ButtonBorder</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">82</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">81</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ButtonText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">83</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">82</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">InputFieldBorder</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">84</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">83</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">CheckedFieldBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">85</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">84</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">CheckedFieldBorder</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">86</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">85</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">CheckedFieldIndicator</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">87</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">86</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">HeaderSection</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">88</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">87</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">Midlight</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">89</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">88</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">StatusBar</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">90</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">89</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DialogButton</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">91</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">90</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DialogButtonText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">92</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">91</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DialogButtonBorder</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">93</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">92</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DialogMainButton</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">94</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">93</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">DialogMainButtonText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">95</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">94</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">InfoBarWarningBackground</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">96</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">95</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">InfoBarWarningText</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">97</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">96</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptEditorCurrentLine</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">98</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">97</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptMethod</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">99</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">98</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptProperty</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">100</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">99</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptNil</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">101</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">100</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptBool</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">102</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">101</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptFunction</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">103</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">102</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptLocal</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">104</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">103</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptSelf</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">105</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">104</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptFunctionName</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">108</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">106</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioStyleGuideColor</span>
+		<span class="Name">ScriptTodo</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">109</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">107</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">value-type</span>
+	<span class="Property">
+		<span class="ClassName Property">Players</span>
+		<span class="Name">LocalPlayer</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Type">Instance</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Type">Class</span>
+			<span class="InnerType">Player</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Maximum Table Depth</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">"export" Color</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">"type" Color</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Preprocessor Color</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">DataModel</span>
+			<span class="Name">GetJobIntervalPeakFraction</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">DataModel</span>
+			<span class="Name">GetJobTimePeakFraction</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">DataModel</span>
+			<span class="Name">GetJobsExtendedStats</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">UnvalidatedAssetService</span>
+			<span class="Name">AppendTempAsset</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">UnvalidatedAssetService</span>
+			<span class="Name">RenameTempAsset</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">Export</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">Type</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">ScriptPreprocessor</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">ScriptExport</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioStyleGuideColor</span>
+			<span class="Name">ScriptType</span>
+		</span>
+	</span>
+</div>
+
+<hr id="453"/>
+
+<h2>
+	Version 0.452.2.413165 
+
+	<span style="color:grey; font-size:14px;">
+		<s>(0.453.0.412965)</s>
+	</span>
+</h2>
+
+<div style="color:#ff3f3f; font-weight:bold">
+Version <i>0.453.0.412965</i> had a critical bug which caused data loss, so it was rolled back and never shipped.<br/>
+Instead, a patch was shipped: <i>0.452.2.413165</i>, which added this mitigation function to <br/>
+help developers identify if there were any inconsistencies in their data:
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Variant</span>
+			<span class="ClassName Function">DataStoreService</span>
+			<span class="Name">GetDataFromEmptyScopeDataStoreAsyncTemporary</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">key</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+			<span class="Tag">[Deprecated]</span>
+		</span>
+	</span>
+</div>
+
 <hr id="452"/>
 <h2>Version 0.452.1.412846</h2>
 
