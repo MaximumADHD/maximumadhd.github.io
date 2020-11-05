@@ -167,6 +167,13 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">Instance</span>
+	<span class="Name">GetActor</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Variant</span>
 	<span class="ClassName Function">Instance</span>
 	<span class="Name">GetAttribute</span>
@@ -951,7 +958,45 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AppUpdateService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AppUpdateService</span>
+	<span class="Name">CheckForUpdate</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName default">handler</span>
+			<span class="ParamDefault Function">nil</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AppUpdateService</span>
+	<span class="Name">PerformManagedUpdate</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">AssetCounterService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">AssetDeliveryProxy</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
@@ -15621,7 +15666,6 @@
 			<span class="ParamName">bundleId</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -16099,7 +16143,6 @@
 			<span class="ParamName">wasPurchased</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -17400,6 +17443,47 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">AssemblyAngularVelocity</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">AssemblyCenterOfMass</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">AssemblyLinearVelocity</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">AssemblyMass</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Class</span>
+	<span class="InnerType">BasePart</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">AssemblyRootPart</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Anchored</span>
@@ -17723,6 +17807,46 @@
 	<span class="InnerType">InputType</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">TopSurfaceInput</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">BasePart</span>
+	<span class="Name">ApplyAngularImpulse</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">impulse</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">BasePart</span>
+	<span class="Name">ApplyImpulse</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">impulse</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">BasePart</span>
+	<span class="Name">ApplyImpulseAtPosition</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">impulse</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">position</span>
+		</span>
+	</span>
 </div>
 
 <div class="Function child">
@@ -19205,6 +19329,11 @@
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">Actor</span>
+	<span class="Superclass">Model</span>
 </div>
 
 <div class="Class deprecated">
@@ -21597,16 +21726,39 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PlayerEmulatorService</span>
+	<span class="Name">EmulatedCountryCode</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PlayerEmulatorService</span>
+	<span class="Name">EmulatedGameLocale</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PlayerEmulatorService</span>
 	<span class="Name">PlayerEmulationEnabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PlayerEmulatorService</span>
+	<span class="Name">PlayerEmulationEnabled_deprecated</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PlayerEmulatorService</span>
+	<span class="Name">SerializedEmulatedPolicyInfo</span>
 </div>
 
 <div class="Property child">
@@ -23438,28 +23590,51 @@
 </div>
 
 <div class="Class">
-	<span class="Name">Pose</span>
+	<span class="Name">PoseBase</span>
 	<span class="Superclass">Instance</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">CFrame</span>
-	<span class="ClassName Property">Pose</span>
-	<span class="Name">CFrame</span>
+	<span class="Tag">[NotCreatable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Enum</span>
 	<span class="InnerType">PoseEasingDirection</span>
-	<span class="ClassName Property">Pose</span>
+	<span class="ClassName Property">PoseBase</span>
 	<span class="Name">EasingDirection</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Enum</span>
 	<span class="InnerType">PoseEasingStyle</span>
-	<span class="ClassName Property">Pose</span>
+	<span class="ClassName Property">PoseBase</span>
 	<span class="Name">EasingStyle</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">PoseBase</span>
+	<span class="Name">Weight</span>
+</div>
+
+<div class="Class">
+	<span class="Name">NumberPose</span>
+	<span class="Superclass">PoseBase</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">NumberPose</span>
+	<span class="Name">Value</span>
+</div>
+
+<div class="Class">
+	<span class="Name">Pose</span>
+	<span class="Superclass">PoseBase</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">Pose</span>
+	<span class="Name">CFrame</span>
 </div>
 
 <div class="Property deprecated child">
@@ -23469,12 +23644,6 @@
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">Pose</span>
-	<span class="Name">Weight</span>
 </div>
 
 <div class="Function child">
@@ -28144,6 +28313,12 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Rulers</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Scroll Past Last Line</span>
 </div>
 
 <div class="Property child">
@@ -34060,6 +34235,40 @@
 	<span class="EnumName">AppShellActionType</span>
 	<span class="Name">AvatarEditorPageLoaded</span>
 	<span class="Value">10</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AppUpdateStatus</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AppUpdateStatus</span>
+	<span class="Name">Unknown</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AppUpdateStatus</span>
+	<span class="Name">NotSupported</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AppUpdateStatus</span>
+	<span class="Name">Failed</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AppUpdateStatus</span>
+	<span class="Name">NotAvailable</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AppUpdateStatus</span>
+	<span class="Name">Available</span>
+	<span class="Value">4</span>
 </div>
 
 <div class="Enum">
