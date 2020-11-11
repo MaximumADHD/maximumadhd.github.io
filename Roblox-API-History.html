@@ -2,6 +2,227 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="456"/>
+<h2>Version 0.456.0.414068</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">RollOffMaxDistance</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">RollOffMinDistance</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AssetManagerService</span>
+			<span class="Name">InsertAudio</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">assetId</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">EmitterSize</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">MaxDistance</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">UnvalidatedAssetService</span>
+		<span class="Name">AppendTempAssetId</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">id</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">lookAt</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">camPos</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">usage</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">userId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">id</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">lookAt</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">camPos</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">usage</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">UnvalidatedAssetService</span>
+		<span class="Name">AppendVantagePoint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">id</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">lookAt</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">camPos</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">userId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">id</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">lookAt</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">camPos</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">UnvalidatedAssetService</span>
+		<span class="Name">UpgradeTempAssetId</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">tempId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">assetId</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">userId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">tempId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">assetId</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+
 <hr id="455"/>
 <h2>Version 0.455.0.413788</h2>
 

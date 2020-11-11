@@ -1076,6 +1076,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">InsertAudio</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">assetId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
 	<span class="Name">InsertImage</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -26706,10 +26719,11 @@
 	<span class="Name">PlayOnRemove</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">EmitterSize</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -26742,10 +26756,11 @@
 	<span class="Name">Looped</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">MaxDistance</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property deprecated child">
@@ -26783,6 +26798,20 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">Playing</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">RollOffMaxDistance</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">RollOffMinDistance</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -31386,6 +31415,10 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
 			<span class="ParamName">id</span>
 		</span>
 		<span class="Parameter">
@@ -31411,6 +31444,10 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
 			<span class="ParamName">id</span>
 		</span>
 		<span class="Parameter">
@@ -31430,6 +31467,10 @@
 	<span class="ClassName Function">UnvalidatedAssetService</span>
 	<span class="Name">UpgradeTempAssetId</span>
 	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">tempId</span>
