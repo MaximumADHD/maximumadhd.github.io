@@ -624,12 +624,10 @@
 	<span class="Superclass">Instance</span>
 </div>
 
-<div class="Class deprecated">
+<div class="Class">
 	<span class="Name">AnalyticsService</span>
 	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property deprecated child">
@@ -638,6 +636,26 @@
 	<span class="Name">ApiKey</span>
 	<span class="Security">{LocalUserSecurity}</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AnalyticsService</span>
+	<span class="Name">FireCustomEvent</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">eventCategory</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">customData</span>
+		</span>
+	</span>
 </div>
 
 <div class="Function deprecated child">
@@ -655,6 +673,109 @@
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AnalyticsService</span>
+	<span class="Name">FireInGameEconomyEvent</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">itemName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">AnalyticsEconomyAction</span>
+			<span class="ParamName">economyAction</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">itemCategory</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">amount</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">currency</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">location</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">customData</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AnalyticsService</span>
+	<span class="Name">FireLogEvent</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">AnalyticsLogLevel</span>
+			<span class="ParamName">logLevel</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">message</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">debugInfo</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">customData</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AnalyticsService</span>
+	<span class="Name">FirePlayerProgressionEvent</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">category</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">AnalyticsProgressionStatus</span>
+			<span class="ParamName">progressionStatus</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">location</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">statistics</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">customData</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -4409,6 +4530,23 @@
 			<span class="ParamName">playerWhoClicked</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">Clouds</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Clouds</span>
+	<span class="Name">Cover</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Clouds</span>
+	<span class="Name">Density</span>
 </div>
 
 <div class="Class">
@@ -18452,6 +18590,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Terrain</span>
+	<span class="Name">CancelImportHeightmap</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Function">Terrain</span>
 	<span class="Name">CellCenterToWorld</span>
@@ -18715,6 +18861,33 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Terrain</span>
+	<span class="Name">ImportHeightmap</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Region3</span>
+			<span class="ParamName">region</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">heightmapAssetId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">colormapAssetId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">Material</span>
+			<span class="ParamName">defaultMaterial</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Terrain</span>
 	<span class="Name">PasteRegion</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -18837,6 +19010,19 @@
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Terrain</span>
+	<span class="Name">SetImportHeightmapPaused</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">paused</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -21745,18 +21931,24 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">PlayerEmulatorService</span>
 	<span class="Name">EmulatedCountryCode</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">PlayerEmulatorService</span>
 	<span class="Name">EmulatedGameLocale</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PlayerEmulatorService</span>
 	<span class="Name">PlayerEmulationEnabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
@@ -21772,6 +21964,8 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">PlayerEmulatorService</span>
 	<span class="Name">SerializedEmulatedPolicyInfo</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
@@ -29266,6 +29460,18 @@
 
 <div class="Event child">
 	<span class="ClassName Event">StudioService</span>
+	<span class="Name">GameNameUpdated</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
 	<span class="Name">GamePublishFinished</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -34178,6 +34384,102 @@
 	<span class="EnumName">AlphaMode</span>
 	<span class="Name">Transparency</span>
 	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AnalyticsEconomyAction</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsEconomyAction</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsEconomyAction</span>
+	<span class="Name">Acquire</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsEconomyAction</span>
+	<span class="Name">Spend</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AnalyticsLogLevel</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsLogLevel</span>
+	<span class="Name">Trace</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsLogLevel</span>
+	<span class="Name">Debug</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsLogLevel</span>
+	<span class="Name">Infomation</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsLogLevel</span>
+	<span class="Name">Warning</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsLogLevel</span>
+	<span class="Name">Error</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsLogLevel</span>
+	<span class="Name">Fatal</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AnalyticsProgressionStatus</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsProgressionStatus</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsProgressionStatus</span>
+	<span class="Name">Begin</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsProgressionStatus</span>
+	<span class="Name">Complete</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsProgressionStatus</span>
+	<span class="Name">Abandon</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnalyticsProgressionStatus</span>
+	<span class="Name">Fail</span>
+	<span class="Value">4</span>
 </div>
 
 <div class="Enum">
@@ -43347,6 +43649,12 @@
 	<span class="EnumName">StudioStyleGuideColor</span>
 	<span class="Name">ScriptTodo</span>
 	<span class="Value">107</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">AttributeCog</span>
+	<span class="Value">108</span>
 </div>
 
 <div class="Enum">
