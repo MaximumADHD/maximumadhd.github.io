@@ -1203,6 +1203,10 @@
 			<span class="Type">int64</span>
 			<span class="ParamName">assetId</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">assetName</span>
+		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -2874,6 +2878,156 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">BaseWrap</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">BaseWrap</span>
+	<span class="Name">CageMeshId</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">BaseWrap</span>
+	<span class="Name">CageOrigin</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">BaseWrap</span>
+	<span class="Name">ImportOrigin</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">BaseWrap</span>
+	<span class="Name">CageOriginWorld</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">BaseWrap</span>
+	<span class="Name">ImportOriginWorld</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">WrapLayer</span>
+	<span class="Superclass">BaseWrap</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">WrapLayer</span>
+	<span class="Name">Order</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">WrapLayer</span>
+	<span class="Name">Puffiness</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">WrapLayer</span>
+	<span class="Name">ReferenceMeshId</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">WrapLayer</span>
+	<span class="Name">ReferenceOrigin</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">WrapLayer</span>
+	<span class="Name">Enabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">WrapLayer</span>
+	<span class="Name">ReferenceOriginWorld</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">WrapLayer</span>
+	<span class="Name">Color</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">WrapLayerDebugMode</span>
+	<span class="ClassName Property">WrapLayer</span>
+	<span class="Name">DebugMode</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">WrapLayer</span>
+	<span class="Name">BindOffset</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">WrapLayer</span>
+	<span class="Name">ShrinkFactor</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">WrapTarget</span>
+	<span class="Superclass">BaseWrap</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">WrapTarget</span>
+	<span class="Name">Stiffness</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">WrapTarget</span>
+	<span class="Name">Color</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">WrapTargetDebugMode</span>
+	<span class="ClassName Property">WrapTarget</span>
+	<span class="Name">DebugMode</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Class">
@@ -6213,7 +6367,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">string</span>
+	<span class="Type">Variant</span>
 	<span class="ClassName Function">CoreScriptSyncService</span>
 	<span class="Name">GetScriptFilePath</span>
 	<span class="Parameters">
@@ -11966,6 +12120,39 @@
 	</span>
 </div>
 
+<div class="Class">
+	<span class="Name">HeightmapImporterService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">HeightmapImporterService</span>
+	<span class="Name">IsValidColormap</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">heightmapAssetId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">HeightmapImporterService</span>
+	<span class="Name">IsValidHeightmap</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">heightmapAssetId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class deprecated">
 	<span class="Name">Hopper</span>
 	<span class="Superclass">Instance</span>
@@ -12922,6 +13109,20 @@
 			<span class="ParamName">emoteName</span>
 		</span>
 	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">Humanoid</span>
+	<span class="Name">PlayEmoteAndGetAnimTrackById</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">emoteId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -24086,6 +24287,19 @@
 	<span class="Name">UIOffset</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ProximityPrompt</span>
+	<span class="Name">AutoLocalize</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Class</span>
+	<span class="InnerType">LocalizationTable</span>
+	<span class="ClassName Property">ProximityPrompt</span>
+	<span class="Name">RootLocalizationTable</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">ProximityPrompt</span>
@@ -24103,13 +24317,23 @@
 <div class="Event child">
 	<span class="ClassName Event">ProximityPrompt</span>
 	<span class="Name">PromptButtonHoldBegan</span>
-	<span class="Parameters"></span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">playerWhoTriggered</span>
+		</span>
+	</span>
 </div>
 
 <div class="Event child">
 	<span class="ClassName Event">ProximityPrompt</span>
 	<span class="Name">PromptButtonHoldEnded</span>
-	<span class="Parameters"></span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">playerWhoTriggered</span>
+		</span>
+	</span>
 </div>
 
 <div class="Event child">
@@ -24179,6 +24403,10 @@
 			<span class="Type">Instance</span>
 			<span class="ParamName">prompt</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">playerWhoTriggered</span>
+		</span>
 	</span>
 </div>
 
@@ -24189,6 +24417,10 @@
 		<span class="Parameter">
 			<span class="Type">Instance</span>
 			<span class="ParamName">prompt</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">playerWhoTriggered</span>
 		</span>
 	</span>
 </div>
@@ -28169,15 +28401,6 @@
 	<span class="Name">Enable Http Sandboxing</span>
 </div>
 
-<div class="Property deprecated child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">Enable Intellisense</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
@@ -28497,6 +28720,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Enable Temporary Tabs</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">QFont</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Font</span>
@@ -28572,7 +28801,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">"TODO" Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28580,7 +28808,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">"function" Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28588,7 +28815,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">"local" Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28596,7 +28822,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">"nil" Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28604,7 +28829,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">"self" Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28612,7 +28836,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Background Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28620,7 +28843,13 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Bool Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Bracket Color</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28628,7 +28857,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Built-in Function Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28636,7 +28864,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Comment Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28644,7 +28871,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Current Line Highlight Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28652,7 +28878,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Debugger Current Line Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28660,7 +28885,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Debugger Error Line Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28668,7 +28892,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Error Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28676,7 +28899,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Find Selection Background Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28684,7 +28906,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Function Name Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28692,7 +28913,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Keyword Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28700,7 +28920,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Luau Keyword Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28708,7 +28927,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Matching Word Background Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28716,7 +28934,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Method Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28724,7 +28941,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Number Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28732,7 +28948,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Operator Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28740,7 +28955,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Property Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28748,7 +28962,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Ruler Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28763,7 +28976,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Selection Background Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28771,7 +28983,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Selection Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28779,7 +28990,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">String Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28787,7 +28997,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Text Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28795,7 +29004,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Warning Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -28803,7 +29011,6 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Whitespace Color</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -29226,19 +29433,6 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">url</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">OpenPluginInsertPage</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">assetId</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -29847,6 +30041,72 @@
 </div>
 
 <div class="Class">
+	<span class="Name">TeleportAsyncResult</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TeleportAsyncResult</span>
+	<span class="Name">PrivateServerId</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TeleportAsyncResult</span>
+	<span class="Name">ReservedServerAccessCode</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">TeleportOptions</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TeleportOptions</span>
+	<span class="Name">ReservedServerAccessCode</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TeleportOptions</span>
+	<span class="Name">ServerInstanceId</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TeleportOptions</span>
+	<span class="Name">ShouldReserveServer</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Variant</span>
+	<span class="ClassName Function">TeleportOptions</span>
+	<span class="Name">GetTeleportData</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">TeleportOptions</span>
+	<span class="Name">SetTeleportData</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">teleportData</span>
+		</span>
+	</span>
+</div>
+
+<div class="Class">
 	<span class="Name">TeleportService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -29966,6 +30226,28 @@
 			<span class="ParamDefault Instance">nil</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">TeleportService</span>
+	<span class="Name">TeleportAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">placeId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">players</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName default">teleportOptions</span>
+			<span class="ParamDefault Instance">nil</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Function child">
@@ -42971,6 +43253,12 @@
 	<span class="Value">28</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">StudioScriptEditorColorCategories</span>
+	<span class="Name">Bracket</span>
+	<span class="Value">29</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">StudioScriptEditorColorPresets</span>
 </div>
@@ -43653,8 +43941,14 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">AttributeCog</span>
+	<span class="Name">ScriptBracket</span>
 	<span class="Value">108</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">AttributeCog</span>
+	<span class="Value">109</span>
 </div>
 
 <div class="Enum">
@@ -44968,6 +45262,56 @@
 	<span class="EnumName">WaterForce</span>
 	<span class="Name">Max</span>
 	<span class="Value">4</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">WrapLayerDebugMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WrapLayerDebugMode</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WrapLayerDebugMode</span>
+	<span class="Name">BindedCage</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WrapLayerDebugMode</span>
+	<span class="Name">LayerCage</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WrapLayerDebugMode</span>
+	<span class="Name">BindedCageAndLinks</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WrapLayerDebugMode</span>
+	<span class="Name">Reference</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">WrapTargetDebugMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WrapTargetDebugMode</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WrapTargetDebugMode</span>
+	<span class="Name">TargetCage</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
