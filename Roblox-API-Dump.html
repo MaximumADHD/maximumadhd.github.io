@@ -1857,7 +1857,6 @@
 			<span class="ParamName">humanoidDescription</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -1880,6 +1879,24 @@
 	<span class="ClassName Function">AvatarEditorService</span>
 	<span class="Name">GetAvatarRules</span>
 	<span class="Parameters"></span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">GetBatchItemDetails</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">itemIds</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">AvatarItemType</span>
+			<span class="ParamName">itemType</span>
+		</span>
+	</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -8183,6 +8200,16 @@
 			<span class="ParamName default">delta</span>
 			<span class="ParamDefault int">1</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName default">userids</span>
+			<span class="ParamDefault Array">{}</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName default">options</span>
+			<span class="ParamDefault Instance">nil</span>
+		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
 </div>
@@ -8231,8 +8258,9 @@
 			<span class="ParamName">value</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Variant</span>
-			<span class="ParamName">userids</span>
+			<span class="Type">Array</span>
+			<span class="ParamName default">userids</span>
+			<span class="ParamDefault Array">{}</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">Instance</span>
@@ -12224,7 +12252,7 @@
 <div class="Function child">
 	<span class="Type">Tuple</span>
 	<span class="ClassName Function">HeightmapImporterService</span>
-	<span class="Name">GetGreyscale</span>
+	<span class="Name">GetHeightmapPreviewAsync</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Content</span>
@@ -12232,6 +12260,7 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Function child">
@@ -18061,6 +18090,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">CanTouch</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">CenterOfMass</span>
@@ -20303,6 +20338,13 @@
 	<span class="Name">Terrain</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">TouchesUseCollisionGroups</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -23465,7 +23507,7 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Instance</span>
-			<span class="ParamName">soundChannel</span>
+			<span class="ParamName">sound</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -23478,7 +23520,7 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Instance</span>
-			<span class="ParamName">soundChannel</span>
+			<span class="ParamName">sound</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">double</span>
@@ -23525,7 +23567,7 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Instance</span>
-			<span class="ParamName">soundChannel</span>
+			<span class="ParamName">sound</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>

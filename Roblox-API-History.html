@@ -2,6 +2,308 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="460"/>
+<h2>Version 0.460.0.416222</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">CanTouch</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">TouchesUseCollisionGroups</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Array</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">GetBatchItemDetails</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Array</span>
+					<span class="ParamName">itemIds</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">AvatarItemType</span>
+					<span class="ParamName">itemType</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Tuple</span>
+			<span class="ClassName Function">HeightmapImporterService</span>
+			<span class="Name">GetHeightmapPreviewAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Content</span>
+					<span class="ParamName">heightmapAssetId</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">GlobalDataStore</span>
+		<span class="Name">IncrementAsync</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">key</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName default">delta</span>
+					<span class="ParamDefault int">1</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">key</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName default">delta</span>
+					<span class="ParamDefault int">1</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Array</span>
+					<span class="ParamName default">userids</span>
+					<span class="ParamDefault Array">{}</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName default">options</span>
+					<span class="ParamDefault Instance">nil</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">GlobalDataStore</span>
+		<span class="Name">SetAsync</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">key</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Variant</span>
+					<span class="ParamName">value</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Variant</span>
+					<span class="ParamName">userids</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName default">options</span>
+					<span class="ParamDefault Instance">nil</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">key</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Variant</span>
+					<span class="ParamName">value</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Array</span>
+					<span class="ParamName default">userids</span>
+					<span class="ParamDefault Array">{}</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName default">options</span>
+					<span class="ParamDefault Instance">nil</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Plugin</span>
+		<span class="Name">PauseSound</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">soundChannel</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">sound</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Plugin</span>
+		<span class="Name">PlaySound</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">soundChannel</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">double</span>
+					<span class="ParamName default">normalizedTimePosition</span>
+					<span class="ParamDefault double">0</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">sound</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">double</span>
+					<span class="ParamName default">normalizedTimePosition</span>
+					<span class="ParamDefault double">0</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Plugin</span>
+		<span class="Name">ResumeSound</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">soundChannel</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">sound</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security</span>
+	<span class="Function">
+		<span class="ClassName Function">AvatarEditorService</span>
+		<span class="Name">CheckApplyDefaultClothing</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security darken">{None}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">HeightmapImporterService</span>
+			<span class="Name">GetGreyscale</span>
+		</span>
+	</span>
+</div>
+
 <hr id="459"/>
 <h2>Version 0.459.2.415937</h2>
 
