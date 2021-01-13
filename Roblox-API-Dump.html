@@ -1283,6 +1283,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">InsertMeshesWithLocation</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">aliasNames</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
 	<span class="Name">InsertPackage</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -6726,6 +6739,22 @@
 </div>
 
 <div class="Class">
+	<span class="Name">DataStoreKeyInfo</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">DataStoreKeyInfo</span>
+	<span class="Name">KeyName</span>
+	<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">DataStoreService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -8283,6 +8312,32 @@
 		<span class="Parameter">
 			<span class="Type">Function</span>
 			<span class="ParamName">transformFunction</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">DataStore</span>
+	<span class="Superclass">GlobalDataStore</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">DataStore</span>
+	<span class="Name">ListKeysAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">prefix</span>
+			<span class="ParamDefault string"></span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">pageSize</span>
+			<span class="ParamDefault int">0</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -17873,6 +17928,20 @@
 	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">NotificationService</span>
+	<span class="Name">SwitchedToAppShellFeature</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">AppShellFeature</span>
+			<span class="ParamName">appShellFeature</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Event child">
 	<span class="ClassName Event">NotificationService</span>
 	<span class="Name">Roblox17sConnectionChanged</span>
@@ -18050,6 +18119,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">CanTouch</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">CollisionGroupId</span>
@@ -18087,12 +18162,6 @@
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">CFrame</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">BasePart</span>
-	<span class="Name">CanTouch</span>
 </div>
 
 <div class="Property child">
@@ -20629,6 +20698,13 @@
 
 <div class="Class">
 	<span class="Name">CatalogPages</span>
+	<span class="Superclass">Pages</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">DataStoreKeyPages</span>
 	<span class="Superclass">Pages</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -34935,7 +35011,7 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">AnalyticsLogLevel</span>
-	<span class="Name">Infomation</span>
+	<span class="Name">Information</span>
 	<span class="Value">2</span>
 </div>
 
@@ -35087,6 +35163,52 @@
 	<span class="EnumName">AppShellActionType</span>
 	<span class="Name">AvatarEditorPageLoaded</span>
 	<span class="Value">10</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AppShellFeature</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AppShellFeature</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AppShellFeature</span>
+	<span class="Name">Chat</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AppShellFeature</span>
+	<span class="Name">AvatarEditor</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AppShellFeature</span>
+	<span class="Name">GamePage</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AppShellFeature</span>
+	<span class="Name">HomePage</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AppShellFeature</span>
+	<span class="Name">More</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AppShellFeature</span>
+	<span class="Name">Landing</span>
+	<span class="Value">6</span>
 </div>
 
 <div class="Enum">

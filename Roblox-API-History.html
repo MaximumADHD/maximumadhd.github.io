@@ -2,6 +2,232 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="461"/>
+<h2>Version 0.461.0.416397</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DataStoreKeyInfo</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">DataStoreKeyInfo</span>
+				<span class="Name">KeyName</span>
+				<span class="Serialization">[&lt;💾&gt; SaveOnly]</span>
+				<span class="Tag">[ReadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DataStore</span>
+			<span class="Superclass">GlobalDataStore</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Instance</span>
+				<span class="ClassName Function">DataStore</span>
+				<span class="Name">ListKeysAsync</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName default">prefix</span>
+						<span class="ParamDefault string"></span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName default">pageSize</span>
+						<span class="ParamDefault int">0</span>
+					</span>
+				</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DataStoreKeyPages</span>
+			<span class="Superclass">Pages</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AssetManagerService</span>
+			<span class="Name">InsertMeshesWithLocation</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Array</span>
+					<span class="ParamName">aliasNames</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">NotificationService</span>
+			<span class="Name">SwitchedToAppShellFeature</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">AppShellFeature</span>
+					<span class="ParamName">appShellFeature</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">AppShellFeature</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AppShellFeature</span>
+				<span class="Name">None</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AppShellFeature</span>
+				<span class="Name">Chat</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AppShellFeature</span>
+				<span class="Name">AvatarEditor</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AppShellFeature</span>
+				<span class="Name">GamePage</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AppShellFeature</span>
+				<span class="Name">HomePage</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AppShellFeature</span>
+				<span class="Name">More</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AppShellFeature</span>
+				<span class="Name">Landing</span>
+				<span class="Value">6</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AnalyticsLogLevel</span>
+			<span class="Name">Information</span>
+			<span class="Value">2</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">CanTouch</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Data</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AnalyticsLogLevel</span>
+			<span class="Name">Infomation</span>
+		</span>
+	</span>
+</div>
+
 <hr id="460"/>
 <h2>Version 0.460.0.416222</h2>
 
