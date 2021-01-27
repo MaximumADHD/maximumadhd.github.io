@@ -6741,6 +6741,34 @@
 </div>
 
 <div class="Class">
+	<span class="Name">DataStoreInfo</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">DataStoreInfo</span>
+	<span class="Name">CreatedTime</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">DataStoreInfo</span>
+	<span class="Name">DataStoreName</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">DataStoreInfo</span>
+	<span class="Name">UpdatedTime</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">DataStoreKeyInfo</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -6852,6 +6880,11 @@
 			<span class="ParamName default">scope</span>
 			<span class="ParamDefault string">global</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName default">options</span>
+			<span class="ParamDefault Instance">nil</span>
+		</span>
 	</span>
 </div>
 
@@ -6890,6 +6923,25 @@
 			<span class="ParamName">requestType</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">DataStoreService</span>
+	<span class="Name">ListDataStoresAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">prefix</span>
+			<span class="ParamDefault string"></span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">pageSize</span>
+			<span class="ParamDefault int">0</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Class">
@@ -8407,6 +8459,57 @@
 			<span class="Type">int</span>
 			<span class="ParamName default">pageSize</span>
 			<span class="ParamDefault int">0</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">DataStore</span>
+	<span class="Name">ListVersionsAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">SortDirection</span>
+			<span class="ParamName default">sortDirection</span>
+			<span class="ParamDefault String">Ascending</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName default">minDate</span>
+			<span class="ParamDefault int64">0</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName default">maxDate</span>
+			<span class="ParamDefault int64">0</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">pageSize</span>
+			<span class="ParamDefault int">0</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DataStore</span>
+	<span class="Name">RemoveVersionAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">version</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -13403,24 +13506,6 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">bool</span>
-	<span class="ClassName Function">Humanoid</span>
-	<span class="Name">PlayEmoteById</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">emoteName</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">emoteId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Humanoid</span>
 	<span class="Name">RemoveAccessories</span>
@@ -14120,6 +14205,118 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">IXPService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">IXPService</span>
+	<span class="Name">ClearUserLayers</span>
+	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">IXPLoadingStatus</span>
+	<span class="ClassName Function">IXPService</span>
+	<span class="Name">GetBrowserTrackerLayerLoadingStatus</span>
+	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">IXPService</span>
+	<span class="Name">GetBrowserTrackerLayerVariables</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">layerName</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">IXPLoadingStatus</span>
+	<span class="ClassName Function">IXPService</span>
+	<span class="Name">GetUserLayerLoadingStatus</span>
+	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">IXPService</span>
+	<span class="Name">GetUserLayerVariables</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">layerName</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">IXPService</span>
+	<span class="Name">InitializeUserLayers</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">IXPService</span>
+	<span class="Name">RegisterUserLayers</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">userLayers</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">IXPService</span>
+	<span class="Name">OnBrowserTrackerLayerLoadingStatusChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">IXPLoadingStatus</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">IXPService</span>
+	<span class="Name">OnUserLayerLoadingStatusChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">IXPLoadingStatus</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
 <div class="Class">
@@ -18017,6 +18214,34 @@
 </div>
 
 <div class="Class">
+	<span class="Name">ObjectVersionInfo</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">ObjectVersionInfo</span>
+	<span class="Name">CreatedTime</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ObjectVersionInfo</span>
+	<span class="Name">IsDeleted</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">ObjectVersionInfo</span>
+	<span class="Name">Version</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">PVInstance</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -20673,6 +20898,13 @@
 </div>
 
 <div class="Class">
+	<span class="Name">DataStoreEnumerationPages</span>
+	<span class="Superclass">Pages</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">DataStoreKeyPages</span>
 	<span class="Superclass">Pages</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -20681,6 +20913,13 @@
 
 <div class="Class">
 	<span class="Name">DataStorePages</span>
+	<span class="Superclass">Pages</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">DataStoreVersionPages</span>
 	<span class="Superclass">Pages</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -20747,6 +20986,13 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">ParticleEmitter</span>
 	<span class="Name">LightInfluence</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">ParticleOrientation</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">Orientation</span>
 </div>
 
 <div class="Property child">
@@ -39075,6 +39321,58 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">IXPLoadingStatus</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IXPLoadingStatus</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IXPLoadingStatus</span>
+	<span class="Name">Pending</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IXPLoadingStatus</span>
+	<span class="Name">Initialized</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IXPLoadingStatus</span>
+	<span class="Name">ShutOff</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IXPLoadingStatus</span>
+	<span class="Name">ErrorInvalidUser</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IXPLoadingStatus</span>
+	<span class="Name">ErrorConnection</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IXPLoadingStatus</span>
+	<span class="Name">ErrorJsonParse</span>
+	<span class="Value">6</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IXPLoadingStatus</span>
+	<span class="Name">ErrorTimedOut</span>
+	<span class="Value">7</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">InOut</span>
 </div>
 
@@ -41665,6 +41963,34 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">ParticleOrientation</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleOrientation</span>
+	<span class="Name">FacingCamera</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleOrientation</span>
+	<span class="Name">FacingCameraWorldUp</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleOrientation</span>
+	<span class="Name">VelocityParallel</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleOrientation</span>
+	<span class="Name">VelocityPerpendicular</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">PathStatus</span>
 </div>
 
@@ -42980,6 +43306,22 @@
 	<span class="EnumName">SizeConstraint</span>
 	<span class="Name">RelativeYY</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">SortDirection</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SortDirection</span>
+	<span class="Name">Ascending</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SortDirection</span>
+	<span class="Name">Descending</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">

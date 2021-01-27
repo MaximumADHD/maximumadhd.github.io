@@ -2,6 +2,3178 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="463"/>
+<h2>Version 0.463.0.417004</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DataStoreInfo</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">DataStoreInfo</span>
+				<span class="Name">CreatedTime</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">DataStoreInfo</span>
+				<span class="Name">DataStoreName</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">DataStoreInfo</span>
+				<span class="Name">UpdatedTime</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">IXPService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">IXPService</span>
+				<span class="Name">ClearUserLayers</span>
+				<span class="Parameters"></span>
+				<span class="Security">{LocalUserSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Enum</span>
+				<span class="InnerType">IXPLoadingStatus</span>
+				<span class="ClassName Function">IXPService</span>
+				<span class="Name">GetBrowserTrackerLayerLoadingStatus</span>
+				<span class="Parameters"></span>
+				<span class="Security">{LocalUserSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Dictionary</span>
+				<span class="ClassName Function">IXPService</span>
+				<span class="Name">GetBrowserTrackerLayerVariables</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">layerName</span>
+					</span>
+				</span>
+				<span class="Security">{LocalUserSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Enum</span>
+				<span class="InnerType">IXPLoadingStatus</span>
+				<span class="ClassName Function">IXPService</span>
+				<span class="Name">GetUserLayerLoadingStatus</span>
+				<span class="Parameters"></span>
+				<span class="Security">{LocalUserSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Dictionary</span>
+				<span class="ClassName Function">IXPService</span>
+				<span class="Name">GetUserLayerVariables</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">layerName</span>
+					</span>
+				</span>
+				<span class="Security">{LocalUserSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">IXPService</span>
+				<span class="Name">InitializeUserLayers</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int64</span>
+						<span class="ParamName">userId</span>
+					</span>
+				</span>
+				<span class="Security">{LocalUserSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">IXPService</span>
+				<span class="Name">RegisterUserLayers</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Variant</span>
+						<span class="ParamName">userLayers</span>
+					</span>
+				</span>
+				<span class="Security">{LocalUserSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">IXPService</span>
+				<span class="Name">OnBrowserTrackerLayerLoadingStatusChanged</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Enum</span>
+						<span class="InnerType">IXPLoadingStatus</span>
+						<span class="ParamName">status</span>
+					</span>
+				</span>
+				<span class="Security">{LocalUserSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">IXPService</span>
+				<span class="Name">OnUserLayerLoadingStatusChanged</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Enum</span>
+						<span class="InnerType">IXPLoadingStatus</span>
+						<span class="ParamName">status</span>
+					</span>
+				</span>
+				<span class="Security">{LocalUserSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ObjectVersionInfo</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int64</span>
+				<span class="ClassName Property">ObjectVersionInfo</span>
+				<span class="Name">CreatedTime</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">ObjectVersionInfo</span>
+				<span class="Name">IsDeleted</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">ObjectVersionInfo</span>
+				<span class="Name">Version</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DataStoreEnumerationPages</span>
+			<span class="Superclass">Pages</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DataStoreVersionPages</span>
+			<span class="Superclass">Pages</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Enum</span>
+			<span class="InnerType">ParticleOrientation</span>
+			<span class="ClassName Property">ParticleEmitter</span>
+			<span class="Name">Orientation</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">DataStore</span>
+			<span class="Name">ListVersionsAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">key</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Enum</span>
+					<span class="InnerType">SortDirection</span>
+					<span class="ParamName default">sortDirection</span>
+					<span class="ParamDefault String">Ascending</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName default">minDate</span>
+					<span class="ParamDefault int64">0</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName default">maxDate</span>
+					<span class="ParamDefault int64">0</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName default">pageSize</span>
+					<span class="ParamDefault int">0</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">DataStore</span>
+			<span class="Name">RemoveVersionAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">key</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">version</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">DataStoreService</span>
+			<span class="Name">ListDataStoresAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName default">prefix</span>
+					<span class="ParamDefault string"></span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName default">pageSize</span>
+					<span class="ParamDefault int">0</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">IXPLoadingStatus</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IXPLoadingStatus</span>
+				<span class="Name">None</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IXPLoadingStatus</span>
+				<span class="Name">Pending</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IXPLoadingStatus</span>
+				<span class="Name">Initialized</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IXPLoadingStatus</span>
+				<span class="Name">ShutOff</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IXPLoadingStatus</span>
+				<span class="Name">ErrorInvalidUser</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IXPLoadingStatus</span>
+				<span class="Name">ErrorConnection</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IXPLoadingStatus</span>
+				<span class="Name">ErrorJsonParse</span>
+				<span class="Value">6</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IXPLoadingStatus</span>
+				<span class="Name">ErrorTimedOut</span>
+				<span class="Value">7</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">ParticleOrientation</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ParticleOrientation</span>
+				<span class="Name">FacingCamera</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ParticleOrientation</span>
+				<span class="Name">FacingCameraWorldUp</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ParticleOrientation</span>
+				<span class="Name">VelocityParallel</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ParticleOrientation</span>
+				<span class="Name">VelocityPerpendicular</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">SortDirection</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SortDirection</span>
+				<span class="Name">Ascending</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SortDirection</span>
+				<span class="Name">Descending</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">DataStoreService</span>
+		<span class="Name">GetDataStore</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName default">scope</span>
+					<span class="ParamDefault string">global</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName default">scope</span>
+					<span class="ParamDefault string">global</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName default">options</span>
+					<span class="ParamDefault Instance">nil</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Humanoid</span>
+			<span class="Name">PlayEmoteById</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">AnimationTrack</span>
+			<span class="Name">Animation</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">AnimationTrack</span>
+			<span class="Name">IsPlaying</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">AnimationTrack</span>
+			<span class="Name">Length</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">AnimationTrack</span>
+			<span class="Name">Speed</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">AnimationTrack</span>
+			<span class="Name">WeightCurrent</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">AnimationTrack</span>
+			<span class="Name">WeightTarget</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Attachment</span>
+			<span class="Name">WorldRotation</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">AssemblyCenterOfMass</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">AssemblyMass</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">AssemblyRootPart</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">ResizeIncrement</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">ResizeableFaces</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">CenterOfMass</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">Mass</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">SpecificGravity</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">ReceiveAge</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BaseWrap</span>
+			<span class="Name">CageOriginWorld</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BaseWrap</span>
+			<span class="Name">ImportOriginWorld</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BillboardGui</span>
+			<span class="Name">CurrentDistance</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Bone</span>
+			<span class="Name">TransformedCFrame</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Bone</span>
+			<span class="Name">TransformedWorldCFrame</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Camera</span>
+			<span class="Name">NearPlaneZ</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Camera</span>
+			<span class="Name">ViewportSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Constraint</span>
+			<span class="Name">Active</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ContentProvider</span>
+			<span class="Name">BaseUrl</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ContentProvider</span>
+			<span class="Name">RequestQueueSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">CoreGui</span>
+			<span class="Name">Version</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">CylindricalConstraint</span>
+			<span class="Name">CurrentAngle</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">CylindricalConstraint</span>
+			<span class="Name">WorldRotationAxis</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">IsSFFlagsLoaded</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">PrivateServerId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">PrivateServerOwnerId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">VIPServerId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">VIPServerOwnerId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">Workspace</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">JobId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">CreatorId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">CreatorType</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">GameId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">GearGenreSetting</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">Genre</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">PlaceId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">PlaceVersion</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModel</span>
+			<span class="Name">lighting</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModelSession</span>
+			<span class="Name">CurrentDataModelType</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataModelSession</span>
+			<span class="Name">SessionId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataStoreKeyInfo</span>
+			<span class="Name">KeyName</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataStoreKeyVersionInfo</span>
+			<span class="Name">CreatedTime</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataStoreKeyVersionInfo</span>
+			<span class="Name">UpdatedTime</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DataStoreKeyVersionInfo</span>
+			<span class="Name">Version</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DebugSettings</span>
+			<span class="Name">DataModel</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DebugSettings</span>
+			<span class="Name">InstanceCount</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DebugSettings</span>
+			<span class="Name">JobCount</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DebugSettings</span>
+			<span class="Name">PlayerCount</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DebugSettings</span>
+			<span class="Name">RobloxVersion</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DebuggerBreakpoint</span>
+			<span class="Name">Line</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DebuggerManager</span>
+			<span class="Name">DebuggingEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">DockWidgetPluginGui</span>
+			<span class="Name">HostWidgetWasRestored</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">File</span>
+			<span class="Name">FileName</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">File</span>
+			<span class="Name">FileSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">File</span>
+			<span class="Name">Size</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GuiBase2d</span>
+			<span class="Name">AbsolutePosition</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GuiBase2d</span>
+			<span class="Name">AbsoluteRotation</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GuiBase2d</span>
+			<span class="Name">AbsoluteSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GuiBase2d</span>
+			<span class="Name">ClippedRect</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GuiBase2d</span>
+			<span class="Name">IsNotOccluded</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GuiBase2d</span>
+			<span class="Name">RawRect2D</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GuiBase2d</span>
+			<span class="Name">TotalGroupScale</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GuiService</span>
+			<span class="Name">IsModalDialog</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GuiService</span>
+			<span class="Name">IsWindows</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GuiService</span>
+			<span class="Name">MenuIsOpen</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">HingeConstraint</span>
+			<span class="Name">CurrentAngle</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Humanoid</span>
+			<span class="Name">FloorMaterial</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Humanoid</span>
+			<span class="Name">MoveDirection</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Humanoid</span>
+			<span class="Name">SeatPart</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Humanoid</span>
+			<span class="Name">RootPart</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ImageButton</span>
+			<span class="Name">IsLoaded</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ImageLabel</span>
+			<span class="Name">IsLoaded</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Instance</span>
+			<span class="Name">ClassName</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Instance</span>
+			<span class="Name">DataCost</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">JointInstance</span>
+			<span class="Name">Active</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">LocalizationService</span>
+			<span class="Name">RobloxLocaleId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">LocalizationService</span>
+			<span class="Name">SystemLocaleId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">MeshPart</span>
+			<span class="Name">MeshSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Motor6D</span>
+			<span class="Name">ChildName</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Motor6D</span>
+			<span class="Name">ParentName</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Mouse</span>
+			<span class="Name">Hit</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Mouse</span>
+			<span class="Name">Origin</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Mouse</span>
+			<span class="Name">Target</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Mouse</span>
+			<span class="Name">TargetSurface</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Mouse</span>
+			<span class="Name">UnitRay</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Mouse</span>
+			<span class="Name">ViewSizeX</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Mouse</span>
+			<span class="Name">ViewSizeY</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Mouse</span>
+			<span class="Name">X</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Mouse</span>
+			<span class="Name">Y</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">MultipleDocumentInterfaceInstance</span>
+			<span class="Name">FocusedDataModelSession</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">FreeMemoryMBytes</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NotificationService</span>
+			<span class="Name">IsLuaChatEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">NotificationService</span>
+			<span class="Name">IsLuaGameDetailsEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PackageLink</span>
+			<span class="Name">PackageId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PackageLink</span>
+			<span class="Name">Status</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Pages</span>
+			<span class="Name">IsFinished</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PartOperation</span>
+			<span class="Name">TriangleCount</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Path</span>
+			<span class="Name">Status</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Player</span>
+			<span class="Name">AccountAge</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Player</span>
+			<span class="Name">AppearanceDidLoad</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Player</span>
+			<span class="Name">ChatMode</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Player</span>
+			<span class="Name">DataComplexity</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Player</span>
+			<span class="Name">DataReady</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Player</span>
+			<span class="Name">FollowUserId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Player</span>
+			<span class="Name">Guest</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Player</span>
+			<span class="Name">LocaleId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Player</span>
+			<span class="Name">MembershipType</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Player</span>
+			<span class="Name">Teleported</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PlayerGui</span>
+			<span class="Name">CurrentScreenOrientation</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Players</span>
+			<span class="Name">BubbleChat</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Players</span>
+			<span class="Name">ClassicChat</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Players</span>
+			<span class="Name">LocalPlayer</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Players</span>
+			<span class="Name">MaxPlayers</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Players</span>
+			<span class="Name">NumPlayers</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Players</span>
+			<span class="Name">PreferredPlayers</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Plugin</span>
+			<span class="Name">CollisionEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Plugin</span>
+			<span class="Name">GridSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Plugin</span>
+			<span class="Name">HostDataModelType</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Plugin</span>
+			<span class="Name">HostDataModelTypeIsCurrent</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Plugin</span>
+			<span class="Name">MultipleDocumentInterfaceInstance</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PluginAction</span>
+			<span class="Name">ActionId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PluginAction</span>
+			<span class="Name">AllowBinding</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PluginAction</span>
+			<span class="Name">StatusTip</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PluginAction</span>
+			<span class="Name">Text</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PluginDragEvent</span>
+			<span class="Name">Data</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PluginDragEvent</span>
+			<span class="Name">MimeType</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PluginDragEvent</span>
+			<span class="Name">Position</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PluginDragEvent</span>
+			<span class="Name">Sender</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">RodConstraint</span>
+			<span class="Name">CurrentDistance</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">RopeConstraint</span>
+			<span class="Name">CurrentDistance</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScriptDebugger</span>
+			<span class="Name">CurrentLine</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScriptDebugger</span>
+			<span class="Name">IsDebugging</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScriptDebugger</span>
+			<span class="Name">IsPaused</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScriptDebugger</span>
+			<span class="Name">Script</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScrollingFrame</span>
+			<span class="Name">AbsoluteCanvasSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScrollingFrame</span>
+			<span class="Name">HorizontalBarRect</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScrollingFrame</span>
+			<span class="Name">MaxCanvasPosition</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScrollingFrame</span>
+			<span class="Name">VerticalBarRect</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScrollingFrame</span>
+			<span class="Name">AbsoluteWindowSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Seat</span>
+			<span class="Name">Occupant</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Selection</span>
+			<span class="Name">ActiveInstance</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">SkateboardController</span>
+			<span class="Name">Steer</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">SkateboardController</span>
+			<span class="Name">Throttle</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">SkateboardPlatform</span>
+			<span class="Name">Controller</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">SkateboardPlatform</span>
+			<span class="Name">ControllingHumanoid</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">SlidingBallConstraint</span>
+			<span class="Name">CurrentPosition</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">IsLoaded</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">IsPaused</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">IsPlaying</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">PlaybackLoudness</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">TimeLength</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">SpringConstraint</span>
+			<span class="Name">CurrentLength</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Stats</span>
+			<span class="Name">ContactsCount</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Stats</span>
+			<span class="Name">DataReceiveKbps</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Stats</span>
+			<span class="Name">DataSendKbps</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Stats</span>
+			<span class="Name">HeartbeatTimeMs</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Stats</span>
+			<span class="Name">InstanceCount</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Stats</span>
+			<span class="Name">MovingPrimitivesCount</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Stats</span>
+			<span class="Name">PhysicsReceiveKbps</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Stats</span>
+			<span class="Name">PhysicsSendKbps</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Stats</span>
+			<span class="Name">PhysicsStepTimeMs</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Stats</span>
+			<span class="Name">PrimitivesCount</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">UI Theme</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">LuaDebuggerEnabledAtStartup</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">StudioService</span>
+			<span class="Name">AlignDraggedObjects</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">StudioService</span>
+			<span class="Name">DraggerSolveConstraints</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">StudioService</span>
+			<span class="Name">DrawConstraintsOnTop</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">StudioService</span>
+			<span class="Name">GridSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">StudioService</span>
+			<span class="Name">InstalledPluginData</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">StudioService</span>
+			<span class="Name">RotateIncrement</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">StudioService</span>
+			<span class="Name">ShowConstraintDetails</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">StudioService</span>
+			<span class="Name">ActiveScript</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">StudioService</span>
+			<span class="Name">StudioLocaleId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TaskScheduler</span>
+			<span class="Name">SchedulerDutyCycle</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TaskScheduler</span>
+			<span class="Name">SchedulerRate</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TaskScheduler</span>
+			<span class="Name">ThreadPoolSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TeleportAsyncResult</span>
+			<span class="Name">PrivateServerId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TeleportAsyncResult</span>
+			<span class="Name">ReservedServerAccessCode</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Terrain</span>
+			<span class="Name">IsSmooth</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Terrain</span>
+			<span class="Name">MaxExtents</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TerrainRegion</span>
+			<span class="Name">IsSmooth</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TerrainRegion</span>
+			<span class="Name">SizeInCells</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TestService</span>
+			<span class="Name">ErrorCount</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TestService</span>
+			<span class="Name">TestCount</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TestService</span>
+			<span class="Name">WarnCount</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextBox</span>
+			<span class="Name">TextBounds</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextBox</span>
+			<span class="Name">TextFits</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextButton</span>
+			<span class="Name">LocalizedText</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextButton</span>
+			<span class="Name">TextBounds</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextButton</span>
+			<span class="Name">TextFits</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextLabel</span>
+			<span class="Name">LocalizedText</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextLabel</span>
+			<span class="Name">TextBounds</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextLabel</span>
+			<span class="Name">TextFits</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Translator</span>
+			<span class="Name">LocaleId</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Tween</span>
+			<span class="Name">Instance</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Tween</span>
+			<span class="Name">TweenInfo</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TweenBase</span>
+			<span class="Name">PlaybackState</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UIGridLayout</span>
+			<span class="Name">AbsoluteCellCount</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UIGridLayout</span>
+			<span class="Name">AbsoluteCellSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UIGridStyleLayout</span>
+			<span class="Name">AbsoluteContentSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UIPageLayout</span>
+			<span class="Name">CurrentPage</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserGameSettings</span>
+			<span class="Name">IsUsingCameraYInverted</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserGameSettings</span>
+			<span class="Name">IsUsingGamepadCameraSensitivity</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserGameSettings</span>
+			<span class="Name">MicroProfilerWebServerIP</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserGameSettings</span>
+			<span class="Name">MicroProfilerWebServerPort</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">AccelerometerEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">BottomBarSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">GamepadEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">GyroscopeEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">KeyboardEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">MouseEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">NavBarSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">OnScreenKeyboardAnimationDuration</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">OnScreenKeyboardPosition</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">OnScreenKeyboardSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">OnScreenKeyboardVisible</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">RightBarSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">StatusBarSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">TouchEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">UserHeadCFrame</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">VREnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">VRService</span>
+			<span class="Name">VRDeviceName</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">VRService</span>
+			<span class="Name">VREnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">VehicleSeat</span>
+			<span class="Name">AreHingesDetected</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">VehicleSeat</span>
+			<span class="Name">Occupant</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">VideoFrame</span>
+			<span class="Name">IsLoaded</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">VideoFrame</span>
+			<span class="Name">Resolution</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">VideoFrame</span>
+			<span class="Name">TimeLength</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">WeldConstraint</span>
+			<span class="Name">Active</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">Terrain</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">WrapLayer</span>
+			<span class="Name">ReferenceOriginWorld</span>
+		</span>
+	</span>
+</div>
+
 <hr id="462"/>
 <h2>Version 0.462.0.416719</h2>
 
