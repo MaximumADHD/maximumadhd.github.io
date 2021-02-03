@@ -2,6 +2,308 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="464"/>
+<h2>Version 0.464.0.417415</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DataStoreIncrementOptions</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Dictionary</span>
+				<span class="ClassName Function">DataStoreIncrementOptions</span>
+				<span class="Name">GetMetadata</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">DataStoreIncrementOptions</span>
+				<span class="Name">SetMetadata</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Dictionary</span>
+						<span class="ParamName">attributes</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">GetDataStoreOptions</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">GetDataStoreOptions</span>
+				<span class="Name">AllScopes</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">GetDataStoreOptions</span>
+				<span class="Name">SetExperimentalFeatures</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Dictionary</span>
+						<span class="ParamName">experimentalFeatures</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">NetworkSettings</span>
+			<span class="Name">RandomizeJoinInstanceOrder</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">ParticleEmitter</span>
+			<span class="Name">TimeScale</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">PhysicsSettings</span>
+			<span class="Name">AreTimestepsShown</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">ReflectionMetadataItem</span>
+			<span class="Name">PropertyOrder</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">DisplayLanguage</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Enum</span>
+			<span class="InnerType">PhysicsSteppingMethod</span>
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">PhysicsSteppingMethod</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Vector3</span>
+			<span class="ClassName Function">BasePart</span>
+			<span class="Name">GetVelocityAtPosition</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">position</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">HeightmapImporterService</span>
+			<span class="Name">ColormapHasUnknownPixels</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">PhysicsSteppingMethod</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">PhysicsSteppingMethod</span>
+				<span class="Name">Default</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">PhysicsSteppingMethod</span>
+				<span class="Name">Fixed</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">PhysicsSteppingMethod</span>
+				<span class="Name">Adaptive</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Language</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange to">
+		<span class="Tag">[Hidden]</span>
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">RotVelocity</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange to">
+		<span class="Tag">[Hidden]</span>
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">Velocity</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">HeightmapImporterService</span>
+		<span class="Name">ProgressUpdate</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">progressRatio</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">progressRatio</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">operation</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">StudioService</span>
+			<span class="Name">DEPRECATED_ShowPlaceVersionHistoryDialog</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotCreatable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DataStoreSetOptions</span>
+		</span>
+	</span>
+</div>
+
 <hr id="463"/>
 <h2>Version 0.463.0.417004</h2>
 
