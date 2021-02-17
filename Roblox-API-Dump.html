@@ -1107,6 +1107,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AppUpdateService</span>
+	<span class="Name">DisableDUAR</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">AppUpdateService</span>
 	<span class="Name">PerformManagedUpdate</span>
@@ -3871,6 +3879,73 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">CalloutService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">CalloutService</span>
+	<span class="Name">AttachCallout</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">definitionId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">locationId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">target</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">CalloutService</span>
+	<span class="Name">DefineCallout</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">definitionId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">title</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">description</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">learnMoreURL</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">CalloutService</span>
+	<span class="Name">DetachCalloutsByDefinitionId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">definitionId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -9549,13 +9624,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">TextButton</span>
-	<span class="Name">Content</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">Enum</span>
 	<span class="InnerType">Font</span>
 	<span class="ClassName Property">TextButton</span>
@@ -9782,13 +9850,6 @@
 	<span class="ClassName Property">TextLabel</span>
 	<span class="Name">LocalizedText</span>
 	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">TextLabel</span>
-	<span class="Name">Content</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
@@ -10182,13 +10243,6 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">TextBox</span>
-	<span class="Name">Content</span>
-	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -19351,6 +19405,16 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">TerrainAcquisitionMethod</span>
+	<span class="ClassName Property">Terrain</span>
+	<span class="Name">LastUsedModificationMethod</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Region3int16</span>
 	<span class="ClassName Property">Terrain</span>
 	<span class="Name">MaxExtents</span>
@@ -20658,9 +20722,9 @@
 
 <div class="Property child">
 	<span class="Type">Enum</span>
-	<span class="InnerType">MeshPartHeads</span>
+	<span class="InnerType">MeshPartHeadsAndAccessories</span>
 	<span class="ClassName Property">Workspace</span>
-	<span class="Name">MeshPartHeads</span>
+	<span class="Name">MeshPartHeadsAndAccessories</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -20876,11 +20940,11 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Workspace</span>
-	<span class="Name">SetMeshPartHeads</span>
+	<span class="Name">SetMeshPartHeadsAndAccessories</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Enum</span>
-			<span class="InnerType">MeshPartHeads</span>
+			<span class="InnerType">MeshPartHeadsAndAccessories</span>
 			<span class="ParamName">value</span>
 		</span>
 	</span>
@@ -26127,29 +26191,75 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
-<div class="Event child">
+<div class="Event deprecated child">
 	<span class="ClassName Event">RunService</span>
 	<span class="Name">Heartbeat</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">double</span>
-			<span class="ParamName">step</span>
+			<span class="ParamName">deltaTime</span>
+		</span>
+	</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">RunService</span>
+	<span class="Name">PostSimulation</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">double</span>
+			<span class="ParamName">deltaTime</span>
 		</span>
 	</span>
 </div>
 
 <div class="Event child">
 	<span class="ClassName Event">RunService</span>
-	<span class="Name">RenderStepped</span>
+	<span class="Name">PreAnimation</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">double</span>
-			<span class="ParamName">step</span>
+			<span class="ParamName">deltaTime</span>
 		</span>
 	</span>
 </div>
 
 <div class="Event child">
+	<span class="ClassName Event">RunService</span>
+	<span class="Name">PreRender</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">double</span>
+			<span class="ParamName">deltaTime</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">RunService</span>
+	<span class="Name">PreSimulation</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">double</span>
+			<span class="ParamName">deltaTime</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event deprecated child">
+	<span class="ClassName Event">RunService</span>
+	<span class="Name">RenderStepped</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">double</span>
+			<span class="ParamName">deltaTime</span>
+		</span>
+	</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Event deprecated child">
 	<span class="ClassName Event">RunService</span>
 	<span class="Name">Stepped</span>
 	<span class="Parameters">
@@ -26159,9 +26269,10 @@
 		</span>
 		<span class="Parameter">
 			<span class="Type">double</span>
-			<span class="ParamName">step</span>
+			<span class="ParamName">deltaTime</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class">
@@ -29635,6 +29746,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Physical Draggers Select Scope By Default</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Select Color</span>
@@ -32425,6 +32543,49 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">UIScale</span>
 	<span class="Name">Scale</span>
+</div>
+
+<div class="Class">
+	<span class="Name">UIStroke</span>
+	<span class="Superclass">UIComponent</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">ApplyStrokeMode</span>
+	<span class="ClassName Property">UIStroke</span>
+	<span class="Name">ApplyStrokeMode</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">UIStroke</span>
+	<span class="Name">Color</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">LineJoinMode</span>
+	<span class="ClassName Property">UIStroke</span>
+	<span class="Name">LineJoinMode</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">UIStroke</span>
+	<span class="Name">Thickness</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">UIStroke</span>
+	<span class="Name">Transparency</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">UIStroke</span>
+	<span class="Name">Enabled</span>
 </div>
 
 <div class="Class">
@@ -35442,6 +35603,22 @@
 	<span class="EnumName">AppUpdateStatus</span>
 	<span class="Name">Available</span>
 	<span class="Value">4</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ApplyStrokeMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ApplyStrokeMode</span>
+	<span class="Name">Contextual</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ApplyStrokeMode</span>
+	<span class="Name">Border</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
@@ -41330,6 +41507,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">LineJoinMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LineJoinMode</span>
+	<span class="Name">Round</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LineJoinMode</span>
+	<span class="Name">Bevel</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LineJoinMode</span>
+	<span class="Name">Miter</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">ListDisplayMode</span>
 </div>
 
@@ -41683,23 +41882,23 @@
 </div>
 
 <div class="Enum">
-	<span class="Name">MeshPartHeads</span>
+	<span class="Name">MeshPartHeadsAndAccessories</span>
 </div>
 
 <div class="EnumItem child">
-	<span class="EnumName">MeshPartHeads</span>
+	<span class="EnumName">MeshPartHeadsAndAccessories</span>
 	<span class="Name">Default</span>
 	<span class="Value">0</span>
 </div>
 
 <div class="EnumItem child">
-	<span class="EnumName">MeshPartHeads</span>
+	<span class="EnumName">MeshPartHeadsAndAccessories</span>
 	<span class="Name">Disabled</span>
 	<span class="Value">1</span>
 </div>
 
 <div class="EnumItem child">
-	<span class="EnumName">MeshPartHeads</span>
+	<span class="EnumName">MeshPartHeadsAndAccessories</span>
 	<span class="Name">Enabled</span>
 	<span class="Value">2</span>
 </div>
@@ -45007,6 +45206,82 @@
 	<span class="EnumName">TeleportType</span>
 	<span class="Name">ToReservedServer</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">TerrainAcquisitionMethod</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainAcquisitionMethod</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainAcquisitionMethod</span>
+	<span class="Name">Legacy</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainAcquisitionMethod</span>
+	<span class="Name">Template</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainAcquisitionMethod</span>
+	<span class="Name">Generate</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainAcquisitionMethod</span>
+	<span class="Name">Import</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainAcquisitionMethod</span>
+	<span class="Name">Convert</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainAcquisitionMethod</span>
+	<span class="Name">EditAddTool</span>
+	<span class="Value">6</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainAcquisitionMethod</span>
+	<span class="Name">EditSeaLevelTool</span>
+	<span class="Value">7</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainAcquisitionMethod</span>
+	<span class="Name">EditReplaceTool</span>
+	<span class="Value">8</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainAcquisitionMethod</span>
+	<span class="Name">RegionFillTool</span>
+	<span class="Value">9</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainAcquisitionMethod</span>
+	<span class="Name">RegionPasteTool</span>
+	<span class="Value">10</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainAcquisitionMethod</span>
+	<span class="Name">Other</span>
+	<span class="Value">11</span>
 </div>
 
 <div class="Enum">
