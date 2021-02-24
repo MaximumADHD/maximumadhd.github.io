@@ -5392,7 +5392,25 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">RodConstraint</span>
+	<span class="Name">LimitAngle0</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">RodConstraint</span>
+	<span class="Name">LimitAngle1</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">RodConstraint</span>
 	<span class="Name">Length</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RodConstraint</span>
+	<span class="Name">LimitsEnabled</span>
 </div>
 
 <div class="Class">
@@ -28401,6 +28419,22 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">SoundService</span>
+	<span class="Name">GetOutputDevice</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">SoundService</span>
+	<span class="Name">GetOutputDevices</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">SoundService</span>
 	<span class="Name">GetRecordingDevices</span>
@@ -28458,6 +28492,23 @@
 			<span class="ParamName">listener</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SoundService</span>
+	<span class="Name">SetOutputDevice</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">guid</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -31984,6 +32035,24 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">FetchAssetWithFormat</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">url</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">assetFormat</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Function child">
