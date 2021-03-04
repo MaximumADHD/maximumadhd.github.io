@@ -2,6 +2,153 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="468"/>
+<h2>Version 0.468.0.418570</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">IncrementalPatchBuilder</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScriptContext</span>
+			<span class="Name">ScriptsDisabled</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">WeldConstraint</span>
+			<span class="Name">Enabled</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">ScriptContext</span>
+		<span class="Name">ScriptsDisabled</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">WeldConstraint</span>
+		<span class="Name">Enabled</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves|Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Language</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">LanguagePreference</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LanguagePreference</span>
+				<span class="Name">SystemDefault</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LanguagePreference</span>
+				<span class="Name">English</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LanguagePreference</span>
+				<span class="Name">SimplifiedChinese</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LanguagePreference</span>
+				<span class="Name">Korean</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScriptContext</span>
+			<span class="Name">ScriptsDisabled</span>
+		</span>
+	</span>
+</div>
+
 <hr id="467"/>
 <h2>Version 0.467.0.418297</h2>
 
