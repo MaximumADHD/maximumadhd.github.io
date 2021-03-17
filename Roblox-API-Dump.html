@@ -5323,6 +5323,12 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">HingeConstraint</span>
+	<span class="Name">AngularResponsiveness</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">HingeConstraint</span>
 	<span class="Name">AngularSpeed</span>
 </div>
 
@@ -5503,6 +5509,12 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">SlidingBallConstraint</span>
+	<span class="Name">LinearResponsiveness</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">SlidingBallConstraint</span>
 	<span class="Name">ServoMaxForce</span>
 </div>
 
@@ -5570,6 +5582,12 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">CylindricalConstraint</span>
 	<span class="Name">MotorMaxTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">CylindricalConstraint</span>
+	<span class="Name">AngularResponsiveness</span>
 </div>
 
 <div class="Property child">
@@ -5722,6 +5740,66 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Torque</span>
 	<span class="Name">Torque</span>
+</div>
+
+<div class="Class">
+	<span class="Name">TorsionSpringConstraint</span>
+	<span class="Superclass">Constraint</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">TorsionSpringConstraint</span>
+	<span class="Name">Coils</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">TorsionSpringConstraint</span>
+	<span class="Name">Radius</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">TorsionSpringConstraint</span>
+	<span class="Name">CurrentAngle</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">TorsionSpringConstraint</span>
+	<span class="Name">MaxAngle</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">TorsionSpringConstraint</span>
+	<span class="Name">Restitution</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">TorsionSpringConstraint</span>
+	<span class="Name">Damping</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TorsionSpringConstraint</span>
+	<span class="Name">LimitEnabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">TorsionSpringConstraint</span>
+	<span class="Name">MaxTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">TorsionSpringConstraint</span>
+	<span class="Name">Stiffness</span>
 </div>
 
 <div class="Class">
@@ -18437,6 +18515,57 @@
 	<span class="Tag">[NotBrowsable]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">PVInstance</span>
+	<span class="Name">Pivot Offset Orientation</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">PVInstance</span>
+	<span class="Name">Pivot Offset Position</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">PVInstance</span>
+	<span class="Name">Origin Orientation</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">PVInstance</span>
+	<span class="Name">Origin Position</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Function">PVInstance</span>
+	<span class="Name">GetPivot</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">PVInstance</span>
+	<span class="Name">PivotTo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">targetCFrame</span>
+		</span>
+	</span>
+</div>
+
 <div class="Class">
 	<span class="Name">BasePart</span>
 	<span class="Superclass">PVInstance</span>
@@ -18851,6 +18980,12 @@
 	<span class="InnerType">InputType</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">TopSurfaceInput</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">PivotOffset</span>
 </div>
 
 <div class="Function child">
@@ -20304,6 +20439,28 @@
 	<span class="Name">PrimaryPart</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Model</span>
+	<span class="Name">World Pivot Orientation</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Model</span>
+	<span class="Name">World Pivot Position</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">Model</span>
+	<span class="Name">WorldPivot</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Model</span>
@@ -20615,6 +20772,71 @@
 			<span class="Type">int</span>
 			<span class="ParamName default">maxParts</span>
 			<span class="ParamDefault int">20</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">GetPartBoundsInBox</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">cframe</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">size</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">OverlapParams</span>
+			<span class="ParamName default">overlapParams</span>
+			<span class="ClassName Type">OverlapParams</span>
+			<span class="Name">new</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">GetPartBoundsInRadius</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">position</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">radius</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">OverlapParams</span>
+			<span class="ParamName default">overlapParams</span>
+			<span class="ClassName Type">OverlapParams</span>
+			<span class="Name">new</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">GetPartsInPart</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">part</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">OverlapParams</span>
+			<span class="ParamName default">overlapParams</span>
+			<span class="ClassName Type">OverlapParams</span>
+			<span class="Name">new</span>
+			<span class="Parameters"></span>
 		</span>
 	</span>
 </div>
@@ -21043,6 +21265,31 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PackageLink</span>
+	<span class="Name">Creator</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PackageLink</span>
+	<span class="Name">PackageAssetName</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">PackagePermission</span>
+	<span class="ClassName Property">PackageLink</span>
+	<span class="Name">PermissionLevel</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -24529,6 +24776,27 @@
 </div>
 
 <div class="Class">
+	<span class="Name">PluginPolicyService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">PluginPolicyService</span>
+	<span class="Name">GetPluginPolicy</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pluginName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">PluginToolbar</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -27481,6 +27749,26 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">DataModel</span>
+	<span class="Name">ScreenshotSavedToAlbum</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">filename</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">success</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">message</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Callback deprecated child">
 	<span class="Type">Tuple</span>
 	<span class="ClassName Callback">DataModel</span>
@@ -29976,6 +30264,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StudioService</span>
+	<span class="Name">PivotSnapToGeometry</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">StudioService</span>
 	<span class="Name">RotateIncrement</span>
@@ -30411,13 +30708,6 @@
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">UpdatePluginManagement</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">StudioService</span>
-	<span class="Name">DEPRECATED_OnPublishPlaceToRoblox</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -42301,6 +42591,46 @@
 	<span class="EnumName">OverrideMouseIconBehavior</span>
 	<span class="Name">ForceHide</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">PackagePermission</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PackagePermission</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PackagePermission</span>
+	<span class="Name">NoAccess</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PackagePermission</span>
+	<span class="Name">Revoked</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PackagePermission</span>
+	<span class="Name">UseView</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PackagePermission</span>
+	<span class="Name">Edit</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PackagePermission</span>
+	<span class="Name">Own</span>
+	<span class="Value">5</span>
 </div>
 
 <div class="Enum">
