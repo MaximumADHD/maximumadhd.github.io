@@ -2,6 +2,320 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="471"/>
+<h2>Version 0.471.1.419833</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StudioDeviceEmulatorService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">StudioDeviceEmulatorService</span>
+				<span class="Name">EmulatePCDeviceWithResolution</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">deviceId</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Vector2</span>
+						<span class="ParamName">resolution</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">StudioDeviceEmulatorService</span>
+				<span class="Name">GetCurrentDeviceId</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Enum</span>
+				<span class="InnerType">ScreenOrientation</span>
+				<span class="ClassName Function">StudioDeviceEmulatorService</span>
+				<span class="Name">GetCurrentOrientation</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">StudioDeviceEmulatorService</span>
+				<span class="Name">HasDeviceWithId</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">deviceId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">StudioDeviceEmulatorService</span>
+				<span class="Name">SetCurrentDeviceId</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">deviceId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">StudioDeviceEmulatorService</span>
+				<span class="Name">SetCurrentOrientation</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Enum</span>
+						<span class="InnerType">ScreenOrientation</span>
+						<span class="ParamName">orientation</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">StudioDeviceEmulatorService</span>
+				<span class="Name">CurrentDeviceIdChanged</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">StudioDeviceEmulatorService</span>
+				<span class="Name">OrientationChanged</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Show Deployment Warnings</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Menu Item Background Color</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Primary Text Color</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Script Editor Scrollbar Background Color</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Script Editor Scrollbar Handle Color</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Secondary Text Color</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Selected Menu Item Background Color</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Selected Text Color</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">StudioService</span>
+			<span class="Name">OnSaveOrPublishPlaceToRoblox</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">showGameSelect</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isPublish</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">MenuPrimaryText</span>
+			<span class="Value">30</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">MenuSecondaryText</span>
+			<span class="Value">31</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">MenuSelectedText</span>
+			<span class="Value">32</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">MenuBackground</span>
+			<span class="Value">33</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">MenuSelectedBackground</span>
+			<span class="Value">34</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">MenuScrollbarBackground</span>
+			<span class="Value">35</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">MenuScrollbarHandle</span>
+			<span class="Value">36</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">MemStorageService</span>
+			<span class="Name">GetTable</span>
+		</span>
+	</span>
+</div>
+
 <hr id="470"/>
 <h2>Version 0.470.0.419147</h2>
 
