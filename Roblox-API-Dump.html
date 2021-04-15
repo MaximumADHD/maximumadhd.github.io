@@ -17685,6 +17685,95 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Class">
+	<span class="Name">MemoryStoreQueue</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MemoryStoreQueue</span>
+	<span class="Name">AddAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">value</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">priority</span>
+			<span class="ParamDefault int">0</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">expiration</span>
+			<span class="ParamDefault int">-1</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">MemoryStoreQueue</span>
+	<span class="Name">ReadAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">count</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName default">allOrNothing</span>
+			<span class="ParamDefault bool">false</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">waitTimeout</span>
+			<span class="ParamDefault int">-1</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MemoryStoreQueue</span>
+	<span class="Name">RemoveAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">id</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">MemoryStoreService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">MemoryStoreService</span>
+	<span class="Name">GetQueue</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">invisibilityTimeout</span>
+			<span class="ParamDefault int">30</span>
+		</span>
+	</span>
+</div>
+
 <div class="Class deprecated">
 	<span class="Name">Message</span>
 	<span class="Superclass">Instance</span>
@@ -31144,26 +31233,6 @@
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
-</div>
-
-<div class="Function deprecated child">
-	<span class="Type">string</span>
-	<span class="ClassName Function">StudioTheme</span>
-	<span class="Name">GetPath</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">assetid</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Enum</span>
-			<span class="InnerType">StudioStyleGuideModifier</span>
-			<span class="ParamName default">modifier</span>
-			<span class="ParamDefault String">Default</span>
-		</span>
-	</span>
-	<span class="Security">{PluginSecurity}</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class">
