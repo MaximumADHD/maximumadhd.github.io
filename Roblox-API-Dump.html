@@ -3038,6 +3038,52 @@
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">BaseWrap</span>
+	<span class="Name">GetFaces</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">CageType</span>
+			<span class="ParamName">cageType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">BaseWrap</span>
+	<span class="Name">GetVertices</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">CageType</span>
+			<span class="ParamName">cageType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">BaseWrap</span>
+	<span class="Name">ModifyVertices</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">CageType</span>
+			<span class="ParamName">cageType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">vertices</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">WrapLayer</span>
 	<span class="Superclass">BaseWrap</span>
@@ -17732,7 +17778,7 @@
 		<span class="Parameter">
 			<span class="Type">int</span>
 			<span class="ParamName default">waitTimeout</span>
-			<span class="ParamDefault int">-1</span>
+			<span class="ParamDefault int">0</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -17769,9 +17815,126 @@
 		<span class="Parameter">
 			<span class="Type">int</span>
 			<span class="ParamName default">invisibilityTimeout</span>
-			<span class="ParamDefault int">30</span>
+			<span class="ParamDefault int">30000</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">MemoryStoreService</span>
+	<span class="Name">GetSortedMap</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">MemoryStoreSortedMap</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Variant</span>
+	<span class="ClassName Function">MemoryStoreSortedMap</span>
+	<span class="Name">GetAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">MemoryStoreSortedMap</span>
+	<span class="Name">GetRangeAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">SortDirection</span>
+			<span class="ParamName">direction</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">count</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">exclusiveLowerBound</span>
+			<span class="ParamDefault string"></span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">exclusiveUpperBound</span>
+			<span class="ParamDefault string"></span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MemoryStoreSortedMap</span>
+	<span class="Name">RemoveAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">MemoryStoreSortedMap</span>
+	<span class="Name">SetAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">value</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">expiration</span>
+			<span class="ParamDefault int">-1</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MemoryStoreSortedMap</span>
+	<span class="Name">UpdateAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">transformFunction</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">expiration</span>
+			<span class="ParamDefault int">-1</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Class deprecated">
@@ -18271,6 +18434,15 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">ShowActiveAnimationAsset</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">NetworkSettings</span>
+	<span class="Name">EmulatedTotalMemoryInMB</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -21060,6 +21232,13 @@
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">AllowThirdPartySales</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">ClientAnimatorThrottlingMode</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">ClientAnimatorThrottling</span>
 </div>
 
 <div class="Property child">
@@ -25596,6 +25775,33 @@
 </div>
 
 <div class="Class">
+	<span class="Name">PublishService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Content</span>
+	<span class="ClassName Function">PublishService</span>
+	<span class="Name">PublishCageMeshAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">wrap</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">CageType</span>
+			<span class="ParamName">cageType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">RbxAnalyticsService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -28948,6 +29154,18 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">SoundService</span>
+	<span class="Name">DeviceListChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">newDevices</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">Sparkles</span>
 	<span class="Superclass">Instance</span>
@@ -30920,6 +31138,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">RequestCloseStudio</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">string</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">SerializeInstances</span>
@@ -31184,6 +31410,10 @@
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName">isPublish</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">closeAfterSave</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -36690,6 +36920,60 @@
 	<span class="Value">62</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">AssetType</span>
+	<span class="Name">TeeShirtAccessory</span>
+	<span class="Value">63</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AssetType</span>
+	<span class="Name">ShirtAccessory</span>
+	<span class="Value">64</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AssetType</span>
+	<span class="Name">PantsAccessory</span>
+	<span class="Value">65</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AssetType</span>
+	<span class="Name">JacketAccessory</span>
+	<span class="Value">66</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AssetType</span>
+	<span class="Name">SweaterAccessory</span>
+	<span class="Value">67</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AssetType</span>
+	<span class="Name">ShortsAccessory</span>
+	<span class="Value">68</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AssetType</span>
+	<span class="Name">LeftShoeAccessory</span>
+	<span class="Value">69</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AssetType</span>
+	<span class="Name">RightShoeAccessory</span>
+	<span class="Value">70</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AssetType</span>
+	<span class="Name">DressSkirtAccessory</span>
+	<span class="Value">71</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">AssetTypeVerification</span>
 </div>
@@ -36926,6 +37210,60 @@
 	<span class="EnumName">AvatarAssetType</span>
 	<span class="Name">EmoteAnimation</span>
 	<span class="Value">61</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">TeeShirtAccessory</span>
+	<span class="Value">63</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">ShirtAccessory</span>
+	<span class="Value">64</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">PantsAccessory</span>
+	<span class="Value">65</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">JacketAccessory</span>
+	<span class="Value">66</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">SweaterAccessory</span>
+	<span class="Value">67</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">ShortsAccessory</span>
+	<span class="Value">68</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">LeftShoeAccessory</span>
+	<span class="Value">69</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">RightShoeAccessory</span>
+	<span class="Value">70</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">DressSkirtAccessory</span>
+	<span class="Value">71</span>
 </div>
 
 <div class="Enum">
@@ -37348,6 +37686,22 @@
 	<span class="EnumName">ButtonStyle</span>
 	<span class="Name">RobloxRoundDropdownButton</span>
 	<span class="Value">5</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">CageType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CageType</span>
+	<span class="Name">Inner</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CageType</span>
+	<span class="Name">Outer</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
@@ -37817,6 +38171,28 @@
 <div class="EnumItem child">
 	<span class="EnumName">ChatStyle</span>
 	<span class="Name">ClassicAndBubble</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ClientAnimatorThrottlingMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ClientAnimatorThrottlingMode</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ClientAnimatorThrottlingMode</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ClientAnimatorThrottlingMode</span>
+	<span class="Name">Enabled</span>
 	<span class="Value">2</span>
 </div>
 
