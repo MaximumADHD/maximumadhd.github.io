@@ -175,6 +175,19 @@
 <div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">Instance</span>
+	<span class="Name">FindFirstDescendant</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">Instance</span>
 	<span class="Name">GetActor</span>
 	<span class="Parameters"></span>
 </div>
@@ -14182,6 +14195,13 @@
 <div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">HumanoidDescription</span>
+	<span class="Name">AccessoryBlob</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">HumanoidDescription</span>
 	<span class="Name">BackAccessory</span>
 </div>
 
@@ -14426,6 +14446,18 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">HumanoidDescription</span>
+	<span class="Name">GetAccessories</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">includeRigidAccessories</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">HumanoidDescription</span>
 	<span class="Name">GetEmotes</span>
@@ -14447,6 +14479,22 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">name</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">HumanoidDescription</span>
+	<span class="Name">SetAccessories</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">accessories</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">includeRigidAccessories</span>
 		</span>
 	</span>
 </div>
@@ -17748,14 +17796,14 @@
 			<span class="ParamName">value</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">int</span>
+			<span class="Type">double</span>
 			<span class="ParamName default">priority</span>
-			<span class="ParamDefault int">0</span>
+			<span class="ParamDefault double">0</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">int</span>
+			<span class="Type">int64</span>
 			<span class="ParamName default">expiration</span>
-			<span class="ParamDefault int">-1</span>
+			<span class="ParamDefault int64">-1</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -17776,9 +17824,9 @@
 			<span class="ParamDefault bool">false</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">int</span>
+			<span class="Type">double</span>
 			<span class="ParamName default">waitTimeout</span>
-			<span class="ParamDefault int">0</span>
+			<span class="ParamDefault double">0</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -17815,7 +17863,7 @@
 		<span class="Parameter">
 			<span class="Type">int</span>
 			<span class="ParamName default">invisibilityTimeout</span>
-			<span class="ParamDefault int">30000</span>
+			<span class="ParamDefault int">30</span>
 		</span>
 	</span>
 </div>
@@ -17907,16 +17955,16 @@
 			<span class="ParamName">value</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">int</span>
+			<span class="Type">int64</span>
 			<span class="ParamName default">expiration</span>
-			<span class="ParamDefault int">-1</span>
+			<span class="ParamDefault int64">-1</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Function child">
-	<span class="Type">void</span>
+	<span class="Type">Variant</span>
 	<span class="ClassName Function">MemoryStoreSortedMap</span>
 	<span class="Name">UpdateAsync</span>
 	<span class="Parameters">
@@ -17929,9 +17977,9 @@
 			<span class="ParamName">transformFunction</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">int</span>
+			<span class="Type">int64</span>
 			<span class="ParamName default">expiration</span>
-			<span class="ParamDefault int">-1</span>
+			<span class="ParamDefault int64">-1</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -29513,6 +29561,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">LoadCharacterLayeredClothing</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">LoadCharacterLayeredClothing</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">UserEmotesEnabled</span>
@@ -29726,6 +29782,15 @@
 	<span class="Name">StatsItem</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">StatsItem</span>
+	<span class="Name">DisplayName</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Function child">
@@ -31055,6 +31120,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">PromptForLocalSave</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">PromptImportFile</span>
@@ -31266,6 +31339,22 @@
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">UpdatePluginManagement</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
+	<span class="Name">FirstPublishOfCloudPlace</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">universeId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">placeId</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -36204,6 +36293,112 @@
 	<span class="EnumName">ABTestLoadingStatus</span>
 	<span class="Name">ShutOff</span>
 	<span class="Value">5</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AccessoryType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Hat</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Hair</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Face</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Neck</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Shoulder</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Front</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Back</span>
+	<span class="Value">6</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Waist</span>
+	<span class="Value">7</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">TeeShirt</span>
+	<span class="Value">8</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Shirt</span>
+	<span class="Value">9</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Pants</span>
+	<span class="Value">10</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Jacket</span>
+	<span class="Value">11</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Sweater</span>
+	<span class="Value">12</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">Shorts</span>
+	<span class="Value">13</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">LeftShoe</span>
+	<span class="Value">14</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">RightShoe</span>
+	<span class="Value">15</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">DressSkirt</span>
+	<span class="Value">16</span>
 </div>
 
 <div class="Enum">
@@ -42664,6 +42859,28 @@
 	<span class="EnumName">ListenerType</span>
 	<span class="Name">ObjectCFrame</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">LoadCharacterLayeredClothing</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LoadCharacterLayeredClothing</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LoadCharacterLayeredClothing</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LoadCharacterLayeredClothing</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
