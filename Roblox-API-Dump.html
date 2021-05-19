@@ -2880,6 +2880,14 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">VirtualCursorMode</span>
+	<span class="ClassName Property">StarterGui</span>
+	<span class="Name">VirtualCursorMode</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Property deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">StarterGui</span>
@@ -18476,15 +18484,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">ExtraMemoryUsed</span>
-	<span class="Security">{PluginSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">FreeMemoryMBytes</span>
@@ -23304,6 +23303,19 @@
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Player</span>
+	<span class="Name">SetCharacterAppearanceJson</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">jsonBlob</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30154,6 +30166,16 @@
 	<span class="Name">Theme</span>
 </div>
 
+<div class="Property deprecated child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">UITheme</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">UI Theme</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
@@ -31238,8 +31260,14 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
-	<span class="Name">RequestCloseStudio</span>
-	<span class="Parameters"></span>
+	<span class="Name">RequestClose</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">StudioCloseMode</span>
+			<span class="ParamName">closeMode</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -31334,8 +31362,9 @@
 			<span class="ParamName">isPublish</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">closeAfterSave</span>
+			<span class="Type">Enum</span>
+			<span class="InnerType">StudioCloseMode</span>
+			<span class="ParamName">closeMode</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -31547,8 +31576,9 @@
 			<span class="ParamName">isPublish</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">closeAfterSave</span>
+			<span class="Type">Enum</span>
+			<span class="InnerType">StudioCloseMode</span>
+			<span class="ParamName">closeMode</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -35964,6 +35994,32 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">VirtualInputManager</span>
+	<span class="Name">SetInputTypesToIgnore</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">inputTypesToIgnore</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">VirtualInputManager</span>
+	<span class="Name">SetViewportSize</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector2</span>
+			<span class="ParamName">sizePx</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">VirtualInputManager</span>
 	<span class="Name">StartPlaying</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -35977,7 +36033,28 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">VirtualInputManager</span>
+	<span class="Name">StartPlayingJSON</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">string</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">VirtualInputManager</span>
 	<span class="Name">StartRecording</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">VirtualInputManager</span>
+	<span class="Name">StopPlaying</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -36265,6 +36342,21 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class deprecated">
+	<span class="Name">VoiceSource</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">VoiceSource</span>
+	<span class="Name">UserId</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class">
@@ -44196,6 +44288,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">ProductLocationRestriction</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ProductLocationRestriction</span>
+	<span class="Name">AvatarShop</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ProductLocationRestriction</span>
+	<span class="Name">AllowedGames</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ProductLocationRestriction</span>
+	<span class="Name">AllGames</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">ProductPurchaseDecision</span>
 </div>
 
@@ -45342,6 +45456,28 @@
 <div class="EnumItem child">
 	<span class="EnumName">StreamingPauseMode</span>
 	<span class="Name">ClientPhysicsPause</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">StudioCloseMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioCloseMode</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioCloseMode</span>
+	<span class="Name">CloseStudio</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioCloseMode</span>
+	<span class="Name">CloseDoc</span>
 	<span class="Value">2</span>
 </div>
 
@@ -47295,6 +47431,25 @@
 	<span class="Value">1</span>
 </div>
 
+<div class="Enum deprecated">
+	<span class="Name">UITheme</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="EnumItem deprecated child">
+	<span class="EnumName">UITheme</span>
+	<span class="Name">Light</span>
+	<span class="Value">0</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="EnumItem deprecated child">
+	<span class="EnumName">UITheme</span>
+	<span class="Name">Dark</span>
+	<span class="Value">1</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">UiMessageType</span>
 </div>
@@ -47611,6 +47766,28 @@
 	<span class="EnumName">VibrationMotor</span>
 	<span class="Name">RightHand</span>
 	<span class="Value">5</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">VirtualCursorMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VirtualCursorMode</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VirtualCursorMode</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VirtualCursorMode</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
