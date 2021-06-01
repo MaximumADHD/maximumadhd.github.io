@@ -1992,7 +1992,14 @@
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">AvatarEditorService</span>
 	<span class="Name">GetOutfits</span>
-	<span class="Parameters"></span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">OutfitSource</span>
+			<span class="ParamName default">outfitSource</span>
+			<span class="ParamDefault String">All</span>
+		</span>
+	</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -2026,6 +2033,50 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">NoPromptCreateOutfit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">humanoidDescription</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">HumanoidRigType</span>
+			<span class="ParamName">rigType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">NoPromptSetFavorite</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">itemId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Enum</span>
+			<span class="InnerType">AvatarItemType</span>
+			<span class="ParamName">itemType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">shouldFavorite</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -7914,6 +7965,129 @@
 </div>
 
 <div class="Class">
+	<span class="Name">DraggerService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">AlignDraggedObjects</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">AngleSnapEnabled</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">AngleSnapIncrement</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">AnimateHover</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">CollisionsEnabled</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">DraggerCoordinateSpace</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">DraggerCoordinateSpace</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Enum</span>
+	<span class="InnerType">DraggerMovementMode</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">DraggerMovementMode</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">GeometrySnapColor</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">HoverAnimateFrequency</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">HoverThickness</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">JointsEnabled</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">LinearSnapEnabled</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">LinearSnapIncrement</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">PivotSnapToGeometry</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">ShowHover</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">ShowPivotIndicator</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">EventIngestService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -10889,12 +11063,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">BillboardGui</span>
-	<span class="Name">Brightness</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">BillboardGui</span>
 	<span class="Name">ClipsDescendants</span>
@@ -10916,6 +11084,12 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">BillboardGui</span>
 	<span class="Name">AlwaysOnTop</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">BillboardGui</span>
+	<span class="Name">Brightness</span>
 </div>
 
 <div class="Property child">
@@ -11153,12 +11327,6 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">SurfaceGui</span>
-	<span class="Name">Brightness</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">SurfaceGui</span>
 	<span class="Name">ZOffset</span>
 </div>
 
@@ -11184,6 +11352,12 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">SurfaceGui</span>
 	<span class="Name">AlwaysOnTop</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">SurfaceGui</span>
+	<span class="Name">Brightness</span>
 </div>
 
 <div class="Property child">
@@ -17865,7 +18039,7 @@
 		<span class="Parameter">
 			<span class="Type">double</span>
 			<span class="ParamName default">waitTimeout</span>
-			<span class="ParamDefault double">0</span>
+			<span class="ParamDefault double">-1</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -22992,6 +23166,13 @@
 <div class="Function child">
 	<span class="Type">int</span>
 	<span class="ClassName Function">Player</span>
+	<span class="Name">GetNetworkPing</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">Player</span>
 	<span class="Name">GetRankInGroup</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -23913,7 +24094,7 @@
 	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">Players</span>
 	<span class="Name">GetCharacterAppearanceAsync</span>
@@ -23924,6 +24105,7 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -30382,6 +30564,15 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
+	<span class="Name">ScriptEditorShouldShowPluginMethods</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
 	<span class="Name">Scroll Past Last Line</span>
 </div>
 
@@ -30701,6 +30892,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Hover Box Thickness</span>
+	<span class="Security">{RobloxSecurity}</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Hover Over Color</span>
@@ -30711,6 +30909,13 @@
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Physical Draggers Select Scope By Default</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Pivot Snap To Geometry Color</span>
+	<span class="Security">{RobloxSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -38216,6 +38421,12 @@
 	<span class="Value">5</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">CatalogCategoryFilter</span>
+	<span class="Name">Recommended</span>
+	<span class="Value">6</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">CatalogSortType</span>
 </div>
@@ -39618,6 +39829,38 @@
 	<span class="EnumName">DraftStatusCode</span>
 	<span class="Name">DraftCommitted</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">DraggerCoordinateSpace</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DraggerCoordinateSpace</span>
+	<span class="Name">Object</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DraggerCoordinateSpace</span>
+	<span class="Name">Constant</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">DraggerMovementMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DraggerMovementMode</span>
+	<span class="Name">Geometric</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DraggerMovementMode</span>
+	<span class="Name">Physical</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
@@ -43724,6 +43967,28 @@
 	<span class="EnumName">NormalId</span>
 	<span class="Name">Front</span>
 	<span class="Value">5</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">OutfitSource</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">OutfitSource</span>
+	<span class="Name">All</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">OutfitSource</span>
+	<span class="Name">Created</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">OutfitSource</span>
+	<span class="Name">Purchased</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
