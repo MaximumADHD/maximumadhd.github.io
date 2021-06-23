@@ -1153,6 +1153,36 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AssetImportService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">ImportMesh</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">fileName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">ImportMeshWithPrompt</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">AssetManagerService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -2059,6 +2089,33 @@
 <div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">NoPromptSaveAvatar</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">HumanoidDescription</span>
+			<span class="ParamName">humanoidDescription</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">HumanoidRigType</span>
+			<span class="ParamName">rigType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">saveDict</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName default">gearAssetId</span>
+			<span class="ParamDefault int64">0</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AvatarEditorService</span>
 	<span class="Name">NoPromptSetFavorite</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -2396,6 +2453,10 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">AvatarPromptResult</span>
 			<span class="ParamName">result</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">HumanoidDescription</span>
+			<span class="ParamName">humanoidDescription</span>
 		</span>
 	</span>
 </div>
@@ -4824,11 +4885,11 @@
 			<span class="ParamName">stringToFilter</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">playerFrom</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">playerTo</span>
 		</span>
 	</span>
@@ -4845,7 +4906,7 @@
 			<span class="ParamName">stringToFilter</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">playerFrom</span>
 		</span>
 	</span>
@@ -4862,7 +4923,7 @@
 			<span class="ParamName">stringToFilter</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">playerToFilterFor</span>
 		</span>
 	</span>
@@ -5183,6 +5244,159 @@
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">CommandInstance</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">CommandInstance</span>
+	<span class="Name">AllowGUIAccessPoints</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">CommandInstance</span>
+	<span class="Name">Checked</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">CommandInstance</span>
+	<span class="Name">DefaultShortcut</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">CommandInstance</span>
+	<span class="Name">Enabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">CommandInstance</span>
+	<span class="Name">Group</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">CommandInstance</span>
+	<span class="Name">Icon</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">CommandInstance</span>
+	<span class="Name">Name</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">CommandInstance</span>
+	<span class="Name">StatusTip</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">CommandInstance</span>
+	<span class="Name">Text</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">CommandInstance</span>
+	<span class="Name">RegisterExecutionCallback</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callbackFunction</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">CommandService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Variant</span>
+	<span class="ClassName Function">CommandService</span>
+	<span class="Name">Execute</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">params</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">CommandInstance</span>
+	<span class="ClassName Function">CommandService</span>
+	<span class="Name">RegisterCommand</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">description</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">CommandService</span>
+	<span class="Name">CommandExecuting</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">params</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -8658,7 +8872,7 @@
 	<span class="Name">PlayerHasPass</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">player</span>
 		</span>
 		<span class="Parameter">
@@ -14975,7 +15189,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Instance</span>
+	<span class="Type">MeshPart</span>
 	<span class="ClassName Function">InsertService</span>
 	<span class="Name">CreateMeshPartAsync</span>
 	<span class="Parameters">
@@ -19198,6 +19412,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">CanQuery</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">CFrame</span>
@@ -20168,14 +20388,6 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">Terrain</span>
-	<span class="Name">CancelImportHeightmap</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Function">Terrain</span>
 	<span class="Name">CellCenterToWorld</span>
@@ -20417,33 +20629,6 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Terrain</span>
-	<span class="Name">ImportHeightmap</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Region3</span>
-			<span class="ParamName">region</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Content</span>
-			<span class="ParamName">heightmapAssetId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Content</span>
-			<span class="ParamName">colormapAssetId</span>
-		</span>
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">Material</span>
-			<span class="ParamName">defaultMaterial</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">Terrain</span>
 	<span class="Name">PasteRegion</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -20572,19 +20757,6 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Terrain</span>
-	<span class="Name">SetImportHeightmapPaused</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">paused</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">Terrain</span>
 	<span class="Name">SetMaterialColor</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -20689,18 +20861,6 @@
 		</span>
 	</span>
 	<span class="Tag">[CustomLuaState]</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">Terrain</span>
-	<span class="Name">TerrainProgressUpdate</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">float</span>
-			<span class="ParamName">progressRatio</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -30485,6 +30645,20 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
+	<span class="Name">Enable Linting</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Enable Signature Help</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
 	<span class="Name">Enable Temporary Tabs</span>
 </div>
 
@@ -30492,6 +30666,13 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Enable Temporary Tabs In Explorer</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Enable Type Hover</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -47315,6 +47496,12 @@
 	<span class="EnumName">TextInputType</span>
 	<span class="Name">Username</span>
 	<span class="Value">7</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextInputType</span>
+	<span class="Name">OneTimePassword</span>
+	<span class="Value">8</span>
 </div>
 
 <div class="Enum">

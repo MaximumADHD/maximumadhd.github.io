@@ -2,6 +2,694 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="484"/>
+<h2>Version 0.484.0.425477</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AssetImportService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Dictionary</span>
+				<span class="ClassName Function">AssetImportService</span>
+				<span class="Name">ImportMesh</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">fileName</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Dictionary</span>
+				<span class="ClassName Function">AssetImportService</span>
+				<span class="Name">ImportMeshWithPrompt</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">CommandInstance</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">CommandInstance</span>
+				<span class="Name">AllowGUIAccessPoints</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">CommandInstance</span>
+				<span class="Name">Checked</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">CommandInstance</span>
+				<span class="Name">DefaultShortcut</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">CommandInstance</span>
+				<span class="Name">Enabled</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">CommandInstance</span>
+				<span class="Name">Group</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">CommandInstance</span>
+				<span class="Name">Icon</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">CommandInstance</span>
+				<span class="Name">Name</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">CommandInstance</span>
+				<span class="Name">StatusTip</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">CommandInstance</span>
+				<span class="Name">Text</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">CommandInstance</span>
+				<span class="Name">RegisterExecutionCallback</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Function</span>
+						<span class="ParamName">callbackFunction</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">CommandService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Variant</span>
+				<span class="ClassName Function">CommandService</span>
+				<span class="Name">Execute</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">name</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Variant</span>
+						<span class="ParamName">params</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">CommandInstance</span>
+				<span class="ClassName Function">CommandService</span>
+				<span class="Name">RegisterCommand</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">name</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">description</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">CommandService</span>
+				<span class="Name">CommandExecuting</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">name</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Variant</span>
+						<span class="ParamName">params</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">CanQuery</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Enable Linting</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Enable Signature Help</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Enable Type Hover</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">NoPromptSaveAvatar</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">HumanoidDescription</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">HumanoidRigType</span>
+					<span class="ParamName">rigType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">saveDict</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName default">gearAssetId</span>
+					<span class="ParamDefault int64">0</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">TextInputType</span>
+			<span class="Name">OneTimePassword</span>
+			<span class="Value">8</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">AssemblyAngularVelocity</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Assembly </span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Assembly</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">AssemblyCenterOfMass</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Assembly </span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Assembly</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">AssemblyLinearVelocity</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Assembly </span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Assembly</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">AssemblyMass</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Assembly </span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Assembly</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">AssemblyRootPart</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Assembly </span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Assembly</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Chat</span>
+		<span class="Name">FilterStringAsync</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">stringToFilter</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">playerFrom</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">playerTo</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">stringToFilter</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Player</span>
+					<span class="ParamName">playerFrom</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Player</span>
+					<span class="ParamName">playerTo</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Chat</span>
+		<span class="Name">FilterStringForBroadcast</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">stringToFilter</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">playerFrom</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">stringToFilter</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Player</span>
+					<span class="ParamName">playerFrom</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Chat</span>
+		<span class="Name">FilterStringForPlayerAsync</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">stringToFilter</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">playerToFilterFor</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">stringToFilter</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Player</span>
+					<span class="ParamName">playerToFilterFor</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">GamePassService</span>
+		<span class="Name">PlayerHasPass</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">player</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">gamePassId</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Player</span>
+					<span class="ParamName">player</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">gamePassId</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">InsertService</span>
+		<span class="Name">CreateMeshPartAsync</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Type">Instance</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Type">MeshPart</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">AvatarEditorService</span>
+		<span class="Name">PromptSaveAvatarCompleted</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">AvatarPromptResult</span>
+					<span class="ParamName">result</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">AvatarPromptResult</span>
+					<span class="ParamName">result</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">HumanoidDescription</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Terrain</span>
+			<span class="Name">CancelImportHeightmap</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Terrain</span>
+			<span class="Name">ImportHeightmap</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Terrain</span>
+			<span class="Name">SetImportHeightmapPaused</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">Terrain</span>
+			<span class="Name">TerrainProgressUpdate</span>
+		</span>
+	</span>
+</div>
+
 <hr id="483"/>
 <h2>Version 0.483.0.424880</h2>
 
