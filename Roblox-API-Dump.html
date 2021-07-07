@@ -1153,6 +1153,33 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AssetImportItemSettings</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">AssetImportItemSettings</span>
+	<span class="Name">ShouldImport</span>
+</div>
+
+<div class="Class">
+	<span class="Name">AssetImportMeshSettings</span>
+	<span class="Superclass">AssetImportItemSettings</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">AssetImportTextureSettings</span>
+	<span class="Superclass">AssetImportItemSettings</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">AssetImportService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -1161,7 +1188,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Dictionary</span>
+	<span class="Type">AssetImportSettings</span>
 	<span class="ClassName Function">AssetImportService</span>
 	<span class="Name">ImportMesh</span>
 	<span class="Parameters">
@@ -1174,12 +1201,34 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Dictionary</span>
+	<span class="Type">AssetImportSettings</span>
 	<span class="ClassName Function">AssetImportService</span>
 	<span class="Name">ImportMeshWithPrompt</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">AssetImportSettings</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">AssetImportItemSettings</span>
+	<span class="ClassName Property">AssetImportSettings</span>
+	<span class="Name">Hierarchy</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">AssetImportSettings</span>
+	<span class="Name">Import</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -2026,7 +2075,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">OutfitSource</span>
 			<span class="ParamName default">outfitSource</span>
-			<span class="ParamDefault OutfitSource">All</span>
+			<span class="ParamDefault String">All</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -3830,6 +3879,122 @@
 </div>
 
 <div class="Class">
+	<span class="Name">Breakpoint</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Expression</span>
+	<span class="ClassName Property">Breakpoint</span>
+	<span class="Name">Condition</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Breakpoint</span>
+	<span class="Name">Line</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">ScriptRef</span>
+	<span class="ClassName Property">Breakpoint</span>
+	<span class="Name">Script</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Breakpoint</span>
+	<span class="Name">Enabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Breakpoint</span>
+	<span class="Name">Valid</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">Breakpoint</span>
+	<span class="Name">Remove</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">Breakpoint</span>
+	<span class="Name">SetCondition</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">condition</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">Breakpoint</span>
+	<span class="Name">SetEnabled</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">enabled</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">Breakpoint</span>
+	<span class="Name">SetLine</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">line</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">BrowserService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -4380,7 +4545,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">CameraPanMode</span>
 			<span class="ParamName default">mode</span>
-			<span class="ParamDefault CameraPanMode">Classic</span>
+			<span class="ParamDefault String">Classic</span>
 		</span>
 	</span>
 </div>
@@ -4847,7 +5012,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">ChatColor</span>
 			<span class="ParamName default">color</span>
-			<span class="ParamDefault ChatColor">Blue</span>
+			<span class="ParamDefault String">Blue</span>
 		</span>
 	</span>
 </div>
@@ -4869,7 +5034,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">ChatColor</span>
 			<span class="ParamName default">color</span>
-			<span class="ParamDefault ChatColor">Blue</span>
+			<span class="ParamDefault String">Blue</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -5095,6 +5260,18 @@
 	<span class="Name">Density</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Clouds</span>
+	<span class="Name">Color</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Clouds</span>
+	<span class="Name">Enabled</span>
+</div>
+
 <div class="Class">
 	<span class="Name">ClusterPacketCache</span>
 	<span class="Superclass">Instance</span>
@@ -5307,6 +5484,15 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">CommandInstance</span>
 	<span class="Name">Name</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">CommandPermission</span>
+	<span class="ClassName Property">CommandInstance</span>
+	<span class="Name">Permission</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
@@ -6513,7 +6699,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">KeyCode</span>
 			<span class="ParamName default">keyCodeForActivation</span>
-			<span class="ParamDefault KeyCode">Unknown</span>
+			<span class="ParamDefault String">Unknown</span>
 		</span>
 	</span>
 </div>
@@ -6761,7 +6947,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">KeyCode</span>
 			<span class="ParamName default">keyCodeForActivation</span>
-			<span class="ParamDefault KeyCode">Unknown</span>
+			<span class="ParamDefault String">Unknown</span>
 		</span>
 	</span>
 </div>
@@ -7656,6 +7842,266 @@
 </div>
 
 <div class="Class">
+	<span class="Name">DebuggerConnection</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">DebuggerConnection</span>
+	<span class="Name">Id</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DebuggerConnection</span>
+	<span class="Name">IsPaused</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DebuggerConnection</span>
+	<span class="Name">AddBreakpoint</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">script</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">line</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">conditon</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DebuggerConnection</span>
+	<span class="Name">Pause</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DebuggerConnection</span>
+	<span class="Name">Resume</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DebuggerConnection</span>
+	<span class="Name">Terminate</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">DebuggerConnection</span>
+	<span class="Name">BreakpointAdded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">breakpoint</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">DebuggerConnection</span>
+	<span class="Name">BreakpointChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">breakpoint</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">DebuggerConnection</span>
+	<span class="Name">BreakpointRemoved</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">breakpoint</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">BreakpointRemoveReason</span>
+			<span class="ParamName">reason</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">DebuggerConnection</span>
+	<span class="Name">Paused</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">pausedState</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">DebuggerPauseReason</span>
+			<span class="ParamName">reason</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">DebuggerConnection</span>
+	<span class="Name">Resumed</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">pausedState</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">DebuggerConnectionManager</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">DebuggerConnectionManager</span>
+	<span class="Name">Timeout</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DebuggerConnectionManager</span>
+	<span class="Name">ConnectLocal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">dataModel</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DebuggerConnectionManager</span>
+	<span class="Name">ConnectRemote</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">host</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">port</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DebuggerConnectionManager</span>
+	<span class="Name">FocusConnection</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">connection</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">DebuggerConnectionManager</span>
+	<span class="Name">ConnectionEnded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">connection</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">DebuggerEndReason</span>
+			<span class="ParamName">reason</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">DebuggerConnectionManager</span>
+	<span class="Name">ConnectionStarted</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">connection</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">DebuggerConnectionManager</span>
+	<span class="Name">FocusChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">connection</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">DebuggerManager</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -8131,7 +8577,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">Axis</span>
 			<span class="ParamName default">axis</span>
-			<span class="ParamDefault Axis">X</span>
+			<span class="ParamDefault String">X</span>
 		</span>
 	</span>
 </div>
@@ -8460,6 +8906,38 @@
 			<span class="ParamName">distance</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">Expression</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Expression</span>
+	<span class="Name">Expression</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">Expression</span>
+	<span class="Name">Evaluate</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">frame</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -9179,7 +9657,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">SortDirection</span>
 			<span class="ParamName default">sortDirection</span>
-			<span class="ParamDefault SortDirection">Ascending</span>
+			<span class="ParamDefault String">Ascending</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">int64</span>
@@ -9602,13 +10080,13 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">EasingDirection</span>
 			<span class="ParamName default">easingDirection</span>
-			<span class="ParamDefault EasingDirection">Out</span>
+			<span class="ParamDefault String">Out</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">EasingStyle</span>
 			<span class="ParamName default">easingStyle</span>
-			<span class="ParamDefault EasingStyle">Quad</span>
+			<span class="ParamDefault String">Quad</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">float</span>
@@ -9641,13 +10119,13 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">EasingDirection</span>
 			<span class="ParamName default">easingDirection</span>
-			<span class="ParamDefault EasingDirection">Out</span>
+			<span class="ParamDefault String">Out</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">EasingStyle</span>
 			<span class="ParamName default">easingStyle</span>
-			<span class="ParamDefault EasingStyle">Quad</span>
+			<span class="ParamDefault String">Quad</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">float</span>
@@ -9684,13 +10162,13 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">EasingDirection</span>
 			<span class="ParamName default">easingDirection</span>
-			<span class="ParamDefault EasingDirection">Out</span>
+			<span class="ParamDefault String">Out</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">EasingStyle</span>
 			<span class="ParamName default">easingStyle</span>
-			<span class="ParamDefault EasingStyle">Quad</span>
+			<span class="ParamDefault String">Quad</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">float</span>
@@ -13296,13 +13774,13 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">ThrottlingPriority</span>
 			<span class="ParamName default">priority</span>
-			<span class="ParamDefault ThrottlingPriority">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpRequestType</span>
 			<span class="ParamName default">httpRequestType</span>
-			<span class="ParamDefault HttpRequestType">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -13322,13 +13800,13 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">ThrottlingPriority</span>
 			<span class="ParamName default">priority</span>
-			<span class="ParamDefault ThrottlingPriority">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpRequestType</span>
 			<span class="ParamName default">httpRequestType</span>
-			<span class="ParamDefault HttpRequestType">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -13365,19 +13843,19 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">ThrottlingPriority</span>
 			<span class="ParamName default">priority</span>
-			<span class="ParamDefault ThrottlingPriority">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpContentType</span>
 			<span class="ParamName default">content_type</span>
-			<span class="ParamDefault HttpContentType">ApplicationJson</span>
+			<span class="ParamDefault String">ApplicationJson</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpRequestType</span>
 			<span class="ParamName default">httpRequestType</span>
-			<span class="ParamDefault HttpRequestType">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -13401,19 +13879,19 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">ThrottlingPriority</span>
 			<span class="ParamName default">priority</span>
-			<span class="ParamDefault ThrottlingPriority">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpContentType</span>
 			<span class="ParamName default">content_type</span>
-			<span class="ParamDefault HttpContentType">ApplicationJson</span>
+			<span class="ParamDefault String">ApplicationJson</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpRequestType</span>
 			<span class="ParamName default">httpRequestType</span>
-			<span class="ParamDefault HttpRequestType">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -13433,19 +13911,19 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">ThrottlingPriority</span>
 			<span class="ParamName default">priority</span>
-			<span class="ParamDefault ThrottlingPriority">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpContentType</span>
 			<span class="ParamName default">content_type</span>
-			<span class="ParamDefault HttpContentType">ApplicationJson</span>
+			<span class="ParamDefault String">ApplicationJson</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpRequestType</span>
 			<span class="ParamName default">httpRequestType</span>
-			<span class="ParamDefault HttpRequestType">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -13465,19 +13943,19 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">ThrottlingPriority</span>
 			<span class="ParamName default">priority</span>
-			<span class="ParamDefault ThrottlingPriority">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpContentType</span>
 			<span class="ParamName default">content_type</span>
-			<span class="ParamDefault HttpContentType">ApplicationJson</span>
+			<span class="ParamDefault String">ApplicationJson</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpRequestType</span>
 			<span class="ParamName default">httpRequestType</span>
-			<span class="ParamDefault HttpRequestType">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -13616,7 +14094,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpContentType</span>
 			<span class="ParamName default">content_type</span>
-			<span class="ParamDefault HttpContentType">ApplicationJson</span>
+			<span class="ParamDefault String">ApplicationJson</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">bool</span>
@@ -13958,7 +14436,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">Status</span>
 			<span class="ParamName default">status</span>
-			<span class="ParamDefault Status">Poison</span>
+			<span class="ParamDefault String">Poison</span>
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
@@ -13977,7 +14455,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">AssetTypeVerification</span>
 			<span class="ParamName default">assetTypeVerification</span>
-			<span class="ParamDefault AssetTypeVerification">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -14034,7 +14512,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HumanoidStateType</span>
 			<span class="ParamName default">state</span>
-			<span class="ParamDefault HumanoidStateType">None</span>
+			<span class="ParamDefault String">None</span>
 		</span>
 	</span>
 </div>
@@ -14150,7 +14628,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">Status</span>
 			<span class="ParamName default">status</span>
-			<span class="ParamDefault Status">Poison</span>
+			<span class="ParamDefault String">Poison</span>
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
@@ -14259,7 +14737,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">Status</span>
 			<span class="ParamName default">status</span>
-			<span class="ParamDefault Status">Poison</span>
+			<span class="ParamDefault String">Poison</span>
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
@@ -14352,6 +14830,13 @@
 			<span class="ParamName">speed</span>
 		</span>
 	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Humanoid</span>
+	<span class="Name">ClusterCompositionFinished</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event deprecated child">
@@ -16115,6 +16600,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Lighting</span>
+	<span class="Name">TempUseNewSkyRemovalBehaviour</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Lighting</span>
 	<span class="Name">ClockTime</span>
@@ -17150,7 +17644,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">InfoType</span>
 			<span class="ParamName default">infoType</span>
-			<span class="ParamDefault InfoType">Asset</span>
+			<span class="ParamDefault String">Asset</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -17326,7 +17820,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">CurrencyType</span>
 			<span class="ParamName default">currencyType</span>
-			<span class="ParamDefault CurrencyType">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 </div>
@@ -17353,7 +17847,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">CurrencyType</span>
 			<span class="ParamName default">currencyType</span>
-			<span class="ParamDefault CurrencyType">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 </div>
@@ -19922,9 +20416,9 @@
 	<span class="Name">SetNetworkOwner</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName default">playerInstance</span>
-			<span class="ParamDefault Instance">nil</span>
+			<span class="ParamDefault Player">nil</span>
 		</span>
 	</span>
 </div>
@@ -19949,13 +20443,13 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">CollisionFidelity</span>
 			<span class="ParamName default">collisionfidelity</span>
-			<span class="ParamDefault CollisionFidelity">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">RenderFidelity</span>
 			<span class="ParamName default">renderFidelity</span>
-			<span class="ParamDefault RenderFidelity">Automatic</span>
+			<span class="ParamDefault String">Automatic</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -19974,13 +20468,13 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">CollisionFidelity</span>
 			<span class="ParamName default">collisionfidelity</span>
-			<span class="ParamDefault CollisionFidelity">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">RenderFidelity</span>
 			<span class="ParamName default">renderFidelity</span>
-			<span class="ParamDefault RenderFidelity">Automatic</span>
+			<span class="ParamDefault String">Automatic</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -21316,7 +21810,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">BulkMoveMode</span>
 			<span class="ParamName default">eventMode</span>
-			<span class="ParamDefault BulkMoveMode">FireAllEvents</span>
+			<span class="ParamDefault String">FireAllEvents</span>
 		</span>
 	</span>
 </div>
@@ -21555,7 +22049,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">IKCollisionsMode</span>
 			<span class="ParamName default">collisionsMode</span>
-			<span class="ParamDefault IKCollisionsMode">OtherMechanismsAnchored</span>
+			<span class="ParamDefault String">OtherMechanismsAnchored</span>
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
@@ -21686,6 +22180,14 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">Gravity</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">HumanoidOnlySetCollisionsOnStateChange</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">HumanoidOnlySetCollisionsOnStateChange</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -22469,6 +22971,104 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PausedState</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PausedState</span>
+	<span class="Name">IsValid</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">DebuggerPauseReason</span>
+	<span class="ClassName Property">PausedState</span>
+	<span class="Name">Reason</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">PausedState</span>
+	<span class="Name">ThreadCount</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">PausedState</span>
+	<span class="Name">GetThread</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">index</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PausedStateBreakpoint</span>
+	<span class="Superclass">PausedState</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Breakpoint</span>
+	<span class="ClassName Property">PausedStateBreakpoint</span>
+	<span class="Name">Breakpoint</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">ThreadState</span>
+	<span class="ClassName Property">PausedStateBreakpoint</span>
+	<span class="Name">BreakpointThread</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PausedStateException</span>
+	<span class="Superclass">PausedState</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PausedStateException</span>
+	<span class="Name">ExceptionText</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">ThreadState</span>
+	<span class="ClassName Property">PausedStateException</span>
+	<span class="Name">ExceptionThread</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Class">
@@ -24192,7 +24792,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">AssetTypeVerification</span>
 			<span class="ParamName default">assetTypeVerification</span>
-			<span class="ParamDefault AssetTypeVerification">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -24395,7 +24995,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">ChatStyle</span>
 			<span class="ParamName default">style</span>
-			<span class="ParamDefault ChatStyle">Classic</span>
+			<span class="ParamDefault String">Classic</span>
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
@@ -26713,6 +27313,14 @@
 </div>
 
 <div class="Class">
+	<span class="Name">RemoteDebuggerServer</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">RemoteEvent</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -27751,6 +28359,39 @@
 </div>
 
 <div class="Class">
+	<span class="Name">ScriptRef</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">ScriptRef</span>
+	<span class="Name">Find</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">dataModel</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">ScriptRef</span>
+	<span class="Name">FindAll</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">dataModel</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ScriptService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -28243,7 +28884,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpRequestType</span>
 			<span class="ParamName default">httpRequestType</span>
-			<span class="ParamDefault HttpRequestType">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -28272,7 +28913,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HttpRequestType</span>
 			<span class="ParamName default">httpRequestType</span>
-			<span class="ParamDefault HttpRequestType">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -28380,7 +29021,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">SaveFilter</span>
 			<span class="ParamName default">saveFilter</span>
-			<span class="ParamDefault SaveFilter">SaveAll</span>
+			<span class="ParamDefault String">SaveAll</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -32046,7 +32687,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">StudioStyleGuideModifier</span>
 			<span class="ParamName default">modifier</span>
-			<span class="ParamDefault StudioStyleGuideModifier">Default</span>
+			<span class="ParamDefault String">Default</span>
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
@@ -33016,7 +33657,7 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">TextFilterContext</span>
 			<span class="ParamName default">textContext</span>
-			<span class="ParamDefault TextFilterContext">PrivateChat</span>
+			<span class="ParamDefault String">PrivateChat</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -33144,6 +33785,43 @@
 		<span class="Parameter">
 			<span class="Type">int</span>
 			<span class="ParamName">signOutStatus</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ThreadState</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">ThreadState</span>
+	<span class="Name">ThreadId</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">ThreadState</span>
+	<span class="Name">GetCallstack</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">ThreadState</span>
+	<span class="Name">RequestCallstack</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -36896,7 +37574,7 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">TeeShirt</span>
+	<span class="Name">TShirt</span>
 	<span class="Value">8</span>
 </div>
 
@@ -37408,7 +38086,7 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">AssetType</span>
-	<span class="Name">TeeShirt</span>
+	<span class="Name">TShirt</span>
 	<span class="Value">2</span>
 </div>
 
@@ -37672,7 +38350,7 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">AssetType</span>
-	<span class="Name">TeeShirtAccessory</span>
+	<span class="Name">TShirtAccessory</span>
 	<span class="Value">64</span>
 </div>
 
@@ -37964,7 +38642,7 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">AvatarAssetType</span>
-	<span class="Name">TeeShirtAccessory</span>
+	<span class="Name">TShirtAccessory</span>
 	<span class="Value">64</span>
 </div>
 
@@ -38058,22 +38736,6 @@
 	<span class="EnumName">AvatarItemType</span>
 	<span class="Name">Bundle</span>
 	<span class="Value">2</span>
-</div>
-
-<div class="Enum">
-	<span class="Name">AvatarJointPositionType</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">AvatarJointPositionType</span>
-	<span class="Name">Fixed</span>
-	<span class="Value">0</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">AvatarJointPositionType</span>
-	<span class="Name">ArtistIntent</span>
-	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
@@ -38348,6 +39010,28 @@
 	<span class="EnumName">BreakReason</span>
 	<span class="Name">UserBreakpoint</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">BreakpointRemoveReason</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">BreakpointRemoveReason</span>
+	<span class="Name">Requested</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">BreakpointRemoveReason</span>
+	<span class="Name">ScriptChanged</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">BreakpointRemoveReason</span>
+	<span class="Name">ScriptRemoved</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
@@ -38981,6 +39665,22 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">CommandPermission</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CommandPermission</span>
+	<span class="Name">Plugin</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CommandPermission</span>
+	<span class="Name">LocalUser</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">ComputerCameraMovementMode</span>
 </div>
 
@@ -39582,6 +40282,160 @@
 	<span class="EnumName">DataStoreRequestType</span>
 	<span class="Name">OnUpdate</span>
 	<span class="Value">5</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">DebuggerEndReason</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerEndReason</span>
+	<span class="Name">ClientRequest</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerEndReason</span>
+	<span class="Name">Timeout</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerEndReason</span>
+	<span class="Name">InvalidHost</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerEndReason</span>
+	<span class="Name">Disconnected</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerEndReason</span>
+	<span class="Name">ServerShutdown</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerEndReason</span>
+	<span class="Name">ServerProtocolMismatch</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerEndReason</span>
+	<span class="Name">ConfigurationFailed</span>
+	<span class="Value">6</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerEndReason</span>
+	<span class="Name">RpcError</span>
+	<span class="Value">7</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">DebuggerFrameType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerFrameType</span>
+	<span class="Name">C</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerFrameType</span>
+	<span class="Name">Lua</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">DebuggerPauseReason</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerPauseReason</span>
+	<span class="Name">Unknown</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerPauseReason</span>
+	<span class="Name">Requested</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerPauseReason</span>
+	<span class="Name">Breakpoint</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerPauseReason</span>
+	<span class="Name">Exception</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerPauseReason</span>
+	<span class="Name">SingleStep</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerPauseReason</span>
+	<span class="Name">Entrypoint</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">DebuggerStatus</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerStatus</span>
+	<span class="Name">Success</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerStatus</span>
+	<span class="Name">Timeout</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerStatus</span>
+	<span class="Name">ConnectionLost</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerStatus</span>
+	<span class="Name">InvalidResponse</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerStatus</span>
+	<span class="Name">InternalError</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerStatus</span>
+	<span class="Name">InvalidState</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerStatus</span>
+	<span class="Name">RpcError</span>
+	<span class="Value">6</span>
 </div>
 
 <div class="Enum">
@@ -41403,6 +42257,28 @@
 <div class="EnumItem child">
 	<span class="EnumName">HumanoidHealthDisplayType</span>
 	<span class="Name">AlwaysOff</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">HumanoidOnlySetCollisionsOnStateChange</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">HumanoidOnlySetCollisionsOnStateChange</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">HumanoidOnlySetCollisionsOnStateChange</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">HumanoidOnlySetCollisionsOnStateChange</span>
+	<span class="Name">Enabled</span>
 	<span class="Value">2</span>
 </div>
 
