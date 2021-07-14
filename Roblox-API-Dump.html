@@ -612,6 +612,14 @@
 	<span class="Superclass">Accoutrement</span>
 </div>
 
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">AccessoryType</span>
+	<span class="ClassName Property">Accessory</span>
+	<span class="Name">AccessoryType</span>
+	<span class="Security">{✏️NotAccessibleSecurity}</span>
+</div>
+
 <div class="Class deprecated">
 	<span class="Name">Hat</span>
 	<span class="Superclass">Accoutrement</span>
@@ -831,12 +839,12 @@
 </div>
 
 <div class="Function deprecated child">
-	<span class="Type">Instance</span>
+	<span class="Type">AnimationTrack</span>
 	<span class="ClassName Function">AnimationController</span>
 	<span class="Name">LoadAnimation</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Animation</span>
 			<span class="ParamName">animation</span>
 		</span>
 	</span>
@@ -848,7 +856,7 @@
 	<span class="Name">AnimationPlayed</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">AnimationTrack</span>
 			<span class="ParamName">animationTrack</span>
 		</span>
 	</span>
@@ -1063,12 +1071,12 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Instance</span>
+	<span class="Type">AnimationTrack</span>
 	<span class="ClassName Function">Animator</span>
 	<span class="Name">LoadAnimation</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Animation</span>
 			<span class="ParamName">animation</span>
 		</span>
 	</span>
@@ -1092,7 +1100,7 @@
 	<span class="Name">AnimationPlayed</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">AnimationTrack</span>
 			<span class="ParamName">animationTrack</span>
 		</span>
 	</span>
@@ -4534,6 +4542,7 @@
 			<span class="ParamDefault float">0</span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -4607,6 +4616,7 @@
 			<span class="ParamDefault float">0</span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -4619,6 +4629,7 @@
 			<span class="ParamName">worldPoint</span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -4631,6 +4642,7 @@
 			<span class="ParamName">worldPoint</span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -6003,6 +6015,36 @@
 	<span class="Name">Restitution</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RopeConstraint</span>
+	<span class="Name">WinchEnabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">RopeConstraint</span>
+	<span class="Name">WinchForce</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">RopeConstraint</span>
+	<span class="Name">WinchResponsiveness</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">RopeConstraint</span>
+	<span class="Name">WinchSpeed</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">RopeConstraint</span>
+	<span class="Name">WinchTarget</span>
+</div>
+
 <div class="Class">
 	<span class="Name">SlidingBallConstraint</span>
 	<span class="Superclass">Constraint</span>
@@ -6336,10 +6378,18 @@
 	<span class="Name">Damping</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">TorsionSpringConstraint</span>
 	<span class="Name">LimitEnabled</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TorsionSpringConstraint</span>
+	<span class="Name">LimitsEnabled</span>
 </div>
 
 <div class="Property child">
@@ -14448,7 +14498,7 @@
 	<span class="Name">ApplyDescription</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">HumanoidDescription</span>
 			<span class="ParamName">humanoidDescription</span>
 		</span>
 		<span class="Parameter">
@@ -14467,7 +14517,7 @@
 	<span class="Name">ApplyDescriptionBlocking</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">HumanoidDescription</span>
 			<span class="ParamName">humanoidDescription</span>
 		</span>
 	</span>
@@ -14480,7 +14530,7 @@
 	<span class="Name">ApplyDescriptionClientServer</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">HumanoidDescription</span>
 			<span class="ParamName">humanoidDescription</span>
 		</span>
 	</span>
@@ -14537,7 +14587,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Instance</span>
+	<span class="Type">HumanoidDescription</span>
 	<span class="ClassName Function">Humanoid</span>
 	<span class="Name">GetAppliedDescription</span>
 	<span class="Parameters"></span>
@@ -14635,12 +14685,12 @@
 </div>
 
 <div class="Function deprecated child">
-	<span class="Type">Instance</span>
+	<span class="Type">AnimationTrack</span>
 	<span class="ClassName Function">Humanoid</span>
 	<span class="Name">LoadAnimation</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Animation</span>
 			<span class="ParamName">animation</span>
 		</span>
 	</span>
@@ -14754,7 +14804,7 @@
 			<span class="ParamName">bodyPart</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">BasePart</span>
 			<span class="ParamName">part</span>
 		</span>
 	</span>
@@ -14814,7 +14864,7 @@
 	<span class="Name">AnimationPlayed</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">AnimationTrack</span>
 			<span class="ParamName">animationTrack</span>
 		</span>
 	</span>
@@ -14977,7 +15027,7 @@
 			<span class="ParamName">active</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">BasePart</span>
 			<span class="ParamName">currentSeatPart</span>
 		</span>
 	</span>
@@ -15069,11 +15119,11 @@
 	<span class="Name">Touched</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">BasePart</span>
 			<span class="ParamName">touchingPart</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">BasePart</span>
 			<span class="ParamName">humanoidPart</span>
 		</span>
 	</span>
@@ -27252,12 +27302,6 @@
 	<span class="Name">UINumTicks</span>
 </div>
 
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">ReflectionMetadataItem</span>
-	<span class="Name">summary</span>
-</div>
-
 <div class="Class">
 	<span class="Name">ReflectionMetadataClass</span>
 	<span class="Superclass">ReflectionMetadataItem</span>
@@ -28508,6 +28552,7 @@
 			<span class="ParamName">className</span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -28520,6 +28565,7 @@
 			<span class="ParamName">className</span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function deprecated child">
@@ -33512,6 +33558,13 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">TestService</span>
+	<span class="Name">ScopeTime</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">TestService</span>
 	<span class="Name">Warn</span>
@@ -34257,6 +34310,20 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">GetMeshVertColors</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Function child">
@@ -37526,104 +37593,110 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Hat</span>
+	<span class="Name">Unknown</span>
 	<span class="Value">0</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Hair</span>
+	<span class="Name">Hat</span>
 	<span class="Value">1</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Face</span>
+	<span class="Name">Hair</span>
 	<span class="Value">2</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Neck</span>
+	<span class="Name">Face</span>
 	<span class="Value">3</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Shoulder</span>
+	<span class="Name">Neck</span>
 	<span class="Value">4</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Front</span>
+	<span class="Name">Shoulder</span>
 	<span class="Value">5</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Back</span>
+	<span class="Name">Front</span>
 	<span class="Value">6</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Waist</span>
+	<span class="Name">Back</span>
 	<span class="Value">7</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">TShirt</span>
+	<span class="Name">Waist</span>
 	<span class="Value">8</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Shirt</span>
+	<span class="Name">TShirt</span>
 	<span class="Value">9</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Pants</span>
+	<span class="Name">Shirt</span>
 	<span class="Value">10</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Jacket</span>
+	<span class="Name">Pants</span>
 	<span class="Value">11</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Sweater</span>
+	<span class="Name">Jacket</span>
 	<span class="Value">12</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">Shorts</span>
+	<span class="Name">Sweater</span>
 	<span class="Value">13</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">LeftShoe</span>
+	<span class="Name">Shorts</span>
 	<span class="Value">14</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">RightShoe</span>
+	<span class="Name">LeftShoe</span>
 	<span class="Value">15</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AccessoryType</span>
-	<span class="Name">DressSkirt</span>
+	<span class="Name">RightShoe</span>
 	<span class="Value">16</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AccessoryType</span>
+	<span class="Name">DressSkirt</span>
+	<span class="Value">17</span>
 </div>
 
 <div class="Enum">

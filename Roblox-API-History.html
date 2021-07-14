@@ -2,6 +2,951 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="486"/>
+<h2>Version 0.486.0.426194</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AccessoryType</span>
+			<span class="ClassName Property">Accessory</span>
+			<span class="Name">AccessoryType</span>
+			<span class="Security">{✏️NotAccessibleSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">RopeConstraint</span>
+			<span class="Name">WinchEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">RopeConstraint</span>
+			<span class="Name">WinchForce</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">RopeConstraint</span>
+			<span class="Name">WinchResponsiveness</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">RopeConstraint</span>
+			<span class="Name">WinchSpeed</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">RopeConstraint</span>
+			<span class="Name">WinchTarget</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">TorsionSpringConstraint</span>
+			<span class="Name">LimitsEnabled</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Dictionary</span>
+			<span class="ClassName Function">TestService</span>
+			<span class="Name">ScopeTime</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Array</span>
+			<span class="ClassName Function">UGCValidationService</span>
+			<span class="Name">GetMeshVertColors</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">meshId</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AccessoryType</span>
+			<span class="Name">Unknown</span>
+			<span class="Value">0</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange to">
+		<span class="Tag">[Hidden]</span>
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TorsionSpringConstraint</span>
+			<span class="Name">LimitEnabled</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">TorsionSpringConstraint</span>
+		<span class="Name">MaxAngle</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Limit</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Limits</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">TorsionSpringConstraint</span>
+		<span class="Name">Restitution</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Limit</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Limits</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Humanoid</span>
+		<span class="Name">ApplyDescription</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">AssetTypeVerification</span>
+					<span class="ParamName default">assetTypeVerification</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">HumanoidDescription</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">AssetTypeVerification</span>
+					<span class="ParamName default">assetTypeVerification</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Humanoid</span>
+		<span class="Name">ApplyDescriptionBlocking</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">HumanoidDescription</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Humanoid</span>
+		<span class="Name">ApplyDescriptionClientServer</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">HumanoidDescription</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">Humanoid</span>
+		<span class="Name">ReplaceBodyPartR15</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">BodyPartR15</span>
+					<span class="ParamName">bodyPart</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">part</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">BodyPartR15</span>
+					<span class="ParamName">bodyPart</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">BasePart</span>
+					<span class="ParamName">part</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters and return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">AnimationController</span>
+		<span class="Name">LoadAnimation</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">animation</span>
+				</span>
+			</span>
+			<span class="Type WithReturn">Instance</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Animation</span>
+					<span class="ParamName">animation</span>
+				</span>
+			</span>
+			<span class="Type WithReturn">AnimationTrack</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters and return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">Animator</span>
+		<span class="Name">LoadAnimation</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">animation</span>
+				</span>
+			</span>
+			<span class="Type WithReturn">Instance</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Animation</span>
+					<span class="ParamName">animation</span>
+				</span>
+			</span>
+			<span class="Type WithReturn">AnimationTrack</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters and return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">Humanoid</span>
+		<span class="Name">LoadAnimation</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">animation</span>
+				</span>
+			</span>
+			<span class="Type WithReturn">Instance</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Animation</span>
+					<span class="ParamName">animation</span>
+				</span>
+			</span>
+			<span class="Type WithReturn">AnimationTrack</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">Humanoid</span>
+		<span class="Name">GetAppliedDescription</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Type">Instance</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Type">HumanoidDescription</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">Camera</span>
+		<span class="Name">ScreenPointToRay</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">Camera</span>
+		<span class="Name">ViewportPointToRay</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">Camera</span>
+		<span class="Name">WorldToScreenPoint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">Camera</span>
+		<span class="Name">WorldToViewportPoint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">ServiceProvider</span>
+		<span class="Name">FindService</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">ServiceProvider</span>
+		<span class="Name">GetService</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">AnimationController</span>
+		<span class="Name">AnimationPlayed</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">animationTrack</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">AnimationTrack</span>
+					<span class="ParamName">animationTrack</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">Animator</span>
+		<span class="Name">AnimationPlayed</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">animationTrack</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">AnimationTrack</span>
+					<span class="ParamName">animationTrack</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">Humanoid</span>
+		<span class="Name">AnimationPlayed</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">animationTrack</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">AnimationTrack</span>
+					<span class="ParamName">animationTrack</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">Humanoid</span>
+		<span class="Name">Seated</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">active</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">currentSeatPart</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">active</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">BasePart</span>
+					<span class="ParamName">currentSeatPart</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">Humanoid</span>
+		<span class="Name">Touched</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">touchingPart</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">humanoidPart</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">BasePart</span>
+					<span class="ParamName">touchingPart</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">BasePart</span>
+					<span class="ParamName">humanoidPart</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Hat</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">0</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">1</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Hair</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">1</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">2</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Face</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">2</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">3</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Neck</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">3</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">4</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Shoulder</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">4</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">5</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Front</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">5</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">6</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Back</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">6</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">7</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Waist</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">7</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">8</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">TShirt</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">8</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">9</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Shirt</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">9</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">10</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Pants</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">10</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">11</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Jacket</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">11</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">12</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Sweater</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">12</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">13</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">Shorts</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">13</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">14</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">LeftShoe</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">14</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">15</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">RightShoe</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">15</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">16</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">AccessoryType</span>
+		<span class="Name">DressSkirt</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">16</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">17</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ReflectionMetadataItem</span>
+			<span class="Name">summary</span>
+		</span>
+	</span>
+</div>
+
 <hr id="485"/>
 <h2>Version 0.485.0.425755</h2>
 
