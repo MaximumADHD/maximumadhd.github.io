@@ -1,3 +1,5 @@
+/* API Dump CSS (Version 1.10) */
+
 body
 {
 	background-color: #151515;
@@ -241,6 +243,7 @@ span.ThreadSafety
 	color: #007FFF !important;
 }
 
+
 span.WithReturn::before
 {
 	content: " -> ";
@@ -300,7 +303,7 @@ span.Superclass::before,
 span.ChangeList::before,
 span.WithReturn::before,
 span.ParamDefault.Array,
-span.ParamName.Default::after
+span.ParamName.Default::after 
 {
 	color: #FFAA50;
 	font-weight: normal;
@@ -356,8 +359,8 @@ span.String::before,
 span.ParamDefault.String::after,
 span.ParamDefault.String::before
 {
+	font-weight: normal;
 	content: '"' !important;
-	font-weight: normal !important;
 }
 
 span.Int32,
