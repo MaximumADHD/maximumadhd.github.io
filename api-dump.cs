@@ -4,9 +4,25 @@ body
 	color: white;
 	font-family: Courier New;
 	white-space: nowrap;
-	padding: 10px;
+	padding: 20px;
+	padding-top: unset;
+	padding-bottom: unset;
+	margin-top: -20px;
 	transform: scale(1.5);
 	transform-origin: 0 0;
+}
+
+h2
+{
+	margin-left: -12px;
+}
+
+hr
+{
+	margin-left: -30px;
+	margin-right: -50px;
+	margin-top: 20px;
+	background-color: #555;
 }
 
 ::before
@@ -77,8 +93,38 @@ div.Removed::before
 	color: #FF7F7F;
 }
 
+div.Renamed::before
+{
+	content: "Renamed";
+	color: #7F7FFF;
+}
+
+div.Merged::before
+{
+	content: "Merged";
+}
+
+div.Moved::before
+{
+	content: "Moved";
+	color: #FF7FFF;
+}
+
+span.MergeListInto::before
+{
+	content: "Into";
+	margin-left: 19px;
+}
+
+div.Merged::before,
+span.MergeListInto::before
+{
+	color: #FF7F3F;
+}
+
 .ChangeTo::before,
 .ChangeFrom::before,
+.MergedInto::before,
 .TagChange.To::before,
 .TagChange.From::before
 {
@@ -95,6 +141,12 @@ div.Removed::before
 .TagChange.To::after
 {
 	content: "to";
+}
+
+.MergedInto::before
+{
+	content: "into";
+	margin-left: 48px;
 }
 
 div.ChangeFrom::before
@@ -171,6 +223,12 @@ span.Security
 	color: #FF0000 !important;
 }
 
+span.Security.Darken
+{
+	background-color: #051525;
+	color: #6F7F8F !important;
+}
+
 span.Serialization
 {
 	background-color: #3F3F6F;
@@ -181,6 +239,13 @@ span.ThreadSafety
 {
 	background-color: #001F3F;
 	color: #007FFF !important;
+}
+
+span.WithReturn::before
+{
+	content: " -> ";
+	font-style: normal;
+	font-weight: normal;
 }
 
 span.Type,
@@ -233,6 +298,7 @@ span.Parameters::after,
 span.Parameters::before,
 span.Superclass::before,
 span.ChangeList::before,
+span.WithReturn::before,
 span.ParamDefault.Array,
 span.ParamName.Default::after
 {
@@ -285,11 +351,13 @@ span.ParamDefault.String
 	font-weight: normal;
 }
 
+span.String::after,
+span.String::before,
 span.ParamDefault.String::after,
 span.ParamDefault.String::before
 {
 	content: '"' !important;
-	font-weight: normal;
+	font-weight: normal !important;
 }
 
 span.Int32,
@@ -307,6 +375,11 @@ span.ClassName::before,
 span.ParamDefault::before
 {
 	content: "" !important;
+}
+
+span.ChangeList li
+{
+	margin-left: 40px;
 }
 
 .deprecated *,
