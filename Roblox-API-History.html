@@ -2,6 +2,280 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="488"/>
+<h2>Version 0.488.0.427318</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ScriptRefId</span>
+			<span class="Superclass">ScriptRef</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ScriptRefPath</span>
+			<span class="Superclass">ScriptRef</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Bone</span>
+			<span class="Name">IsCFrameDriven</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Selection</span>
+			<span class="Name">SelectionThickness</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Enable Script Analysis</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Color3</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">ScriptEditorMenuBorderColor</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Selection Highlight Thickness</span>
+			<span class="Security">{RobloxSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Dictionary</span>
+			<span class="ClassName Function">AssetImportService</span>
+			<span class="Name">GetInstanceMap</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">fileName</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">AvatarImportService</span>
+			<span class="Name">ImportFBXAnimationUserMayChooseModel</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">selectedRig</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">userChooseModelThenImportCB</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">AvatarImportService</span>
+			<span class="Name">ImportLoadedFBXAnimation</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">useFBXModel</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">int</span>
+			<span class="ClassName Function">DebuggerConnection</span>
+			<span class="Name">GetSource</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">scriptRef</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">status</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">double</span>
+			<span class="ClassName Function">Workspace</span>
+			<span class="Name">GetServerTimeNow</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">GuiService</span>
+			<span class="Name">CoreGuiRenderOverflowed</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ConnectionError</span>
+			<span class="Name">DisconnectClientFailure</span>
+			<span class="Value">284</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">DebuggerStatus</span>
+			<span class="Name">InvalidArgument</span>
+			<span class="Value">7</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioScriptEditorColorCategories</span>
+			<span class="Name">MenuBorder</span>
+			<span class="Value">37</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">WrapLayerDebugMode</span>
+			<span class="Name">OuterCage</span>
+			<span class="Value">6</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">Player</span>
+		<span class="Name">GetNetworkPing</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Type">int</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Type">float</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Enable Linting</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">AssetImportSettings</span>
+			<span class="Name">Import</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">ScriptRef</span>
+			<span class="Name">Find</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">ScriptRef</span>
+			<span class="Name">FindAll</span>
+		</span>
+	</span>
+</div>
+
 <hr id="487"/>
 <h2>Version 0.487.1.426995</h2>
 

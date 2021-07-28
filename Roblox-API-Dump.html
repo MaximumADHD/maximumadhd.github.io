@@ -1196,6 +1196,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">GetInstanceMap</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">fileName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">AssetImportSettings</span>
 	<span class="ClassName Function">AssetImportService</span>
 	<span class="Name">ImportMesh</span>
@@ -1229,14 +1242,6 @@
 	<span class="ClassName Property">AssetImportSettings</span>
 	<span class="Name">Hierarchy</span>
 	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Instance</span>
-	<span class="ClassName Function">AssetImportSettings</span>
-	<span class="Name">Import</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -1943,6 +1948,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Bone</span>
+	<span class="Name">IsCFrameDriven</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">Bone</span>
 	<span class="Name">Transform</span>
@@ -2541,12 +2555,44 @@
 <div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">AvatarImportService</span>
+	<span class="Name">ImportFBXAnimationUserMayChooseModel</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">selectedRig</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">userChooseModelThenImportCB</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">AvatarImportService</span>
 	<span class="Name">ImportFbxRigWithoutSceneLoad</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName default">isR15</span>
 			<span class="ParamDefault bool">true</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">AvatarImportService</span>
+	<span class="Name">ImportLoadedFBXAnimation</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">useFBXModel</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -7944,6 +7990,23 @@
 		<span class="Parameter">
 			<span class="Type">Instance</span>
 			<span class="ParamName">conditon</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DebuggerConnection</span>
+	<span class="Name">GetSource</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">scriptRef</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">Function</span>
@@ -13824,6 +13887,13 @@
 <div class="Event child">
 	<span class="ClassName Event">GuiService</span>
 	<span class="Name">CloseInspectMenuRequest</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">GuiService</span>
+	<span class="Name">CoreGuiRenderOverflowed</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -22862,6 +22932,13 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">double</span>
+	<span class="ClassName Function">Workspace</span>
+	<span class="Name">GetServerTimeNow</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Workspace</span>
 	<span class="Name">JoinToOutsiders</span>
@@ -24366,7 +24443,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">int</span>
+	<span class="Type">float</span>
 	<span class="ClassName Function">Player</span>
 	<span class="Name">GetNetworkPing</span>
 	<span class="Parameters"></span>
@@ -28871,30 +28948,18 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
-<div class="Function child">
-	<span class="Type">Instance</span>
-	<span class="ClassName Function">ScriptRef</span>
-	<span class="Name">Find</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">dataModel</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+<div class="Class">
+	<span class="Name">ScriptRefId</span>
+	<span class="Superclass">ScriptRef</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
-<div class="Function child">
-	<span class="Type">Objects</span>
-	<span class="ClassName Function">ScriptRef</span>
-	<span class="Name">FindAll</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">dataModel</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
+<div class="Class">
+	<span class="Name">ScriptRefPath</span>
+	<span class="Superclass">ScriptRef</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -28909,6 +28974,13 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Selection</span>
+	<span class="Name">SelectionThickness</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -31794,7 +31866,7 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
-	<span class="Name">Enable Linting</span>
+	<span class="Name">Enable Script Analysis</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -32111,6 +32183,15 @@
 <div class="Property child">
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
+	<span class="Name">ScriptEditorMenuBorderColor</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Studio</span>
 	<span class="Name">Secondary Text Color</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -32227,6 +32308,13 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Select Color</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Selection Highlight Thickness</span>
+	<span class="Security">{RobloxSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -40452,6 +40540,12 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">ConnectionError</span>
+	<span class="Name">DisconnectClientFailure</span>
+	<span class="Value">284</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ConnectionError</span>
 	<span class="Name">PlacelaunchErrors</span>
 	<span class="Value">512</span>
 </div>
@@ -40978,6 +41072,12 @@
 	<span class="EnumName">DebuggerStatus</span>
 	<span class="Name">RpcError</span>
 	<span class="Value">6</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerStatus</span>
+	<span class="Name">InvalidArgument</span>
+	<span class="Value">7</span>
 </div>
 
 <div class="Enum">
@@ -47652,6 +47752,12 @@
 	<span class="Value">36</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">StudioScriptEditorColorCategories</span>
+	<span class="Name">MenuBorder</span>
+	<span class="Value">37</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">StudioScriptEditorColorPresets</span>
 </div>
@@ -49835,6 +49941,12 @@
 	<span class="EnumName">WrapLayerDebugMode</span>
 	<span class="Name">Rbf</span>
 	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WrapLayerDebugMode</span>
+	<span class="Name">OuterCage</span>
+	<span class="Value">6</span>
 </div>
 
 <div class="Enum">
