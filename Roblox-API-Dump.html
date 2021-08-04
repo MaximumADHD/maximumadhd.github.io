@@ -7617,6 +7617,20 @@
 </div>
 
 <div class="Class">
+	<span class="Name">DataStoreKey</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">DataStoreKey</span>
+	<span class="Name">KeyName</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">DataStoreKeyInfo</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -7624,14 +7638,42 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">string</span>
+	<span class="Type">int64</span>
 	<span class="ClassName Property">DataStoreKeyInfo</span>
-	<span class="Name">KeyName</span>
+	<span class="Name">CreatedTime</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">DataStoreKeyInfo</span>
+	<span class="Name">UpdatedTime</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">DataStoreKeyInfo</span>
+	<span class="Name">Version</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">DataStoreKeyInfo</span>
+	<span class="Name">GetMetadata</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">DataStoreKeyInfo</span>
+	<span class="Name">GetUserIds</span>
+	<span class="Parameters"></span>
+</div>
+
 <div class="Class">
-	<span class="Name">DataStoreKeyVersionInfo</span>
+	<span class="Name">DataStoreObjectVersionInfo</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -7639,37 +7681,47 @@
 
 <div class="Property child">
 	<span class="Type">int64</span>
-	<span class="ClassName Property">DataStoreKeyVersionInfo</span>
+	<span class="ClassName Property">DataStoreObjectVersionInfo</span>
 	<span class="Name">CreatedTime</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
-	<span class="Type">int64</span>
-	<span class="ClassName Property">DataStoreKeyVersionInfo</span>
-	<span class="Name">UpdatedTime</span>
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DataStoreObjectVersionInfo</span>
+	<span class="Name">IsDeleted</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">string</span>
-	<span class="ClassName Property">DataStoreKeyVersionInfo</span>
+	<span class="ClassName Property">DataStoreObjectVersionInfo</span>
 	<span class="Name">Version</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
-<div class="Function child">
-	<span class="Type">Dictionary</span>
-	<span class="ClassName Function">DataStoreKeyVersionInfo</span>
-	<span class="Name">GetMetadata</span>
-	<span class="Parameters"></span>
+<div class="Class">
+	<span class="Name">DataStoreOptions</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DataStoreOptions</span>
+	<span class="Name">AllScopes</span>
 </div>
 
 <div class="Function child">
-	<span class="Type">Array</span>
-	<span class="ClassName Function">DataStoreKeyVersionInfo</span>
-	<span class="Name">GetUserIds</span>
-	<span class="Parameters"></span>
+	<span class="Type">void</span>
+	<span class="ClassName Function">DataStoreOptions</span>
+	<span class="Name">SetExperimentalFeatures</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">experimentalFeatures</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -7757,7 +7809,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">DataStoreEnumerationPages</span>
+	<span class="Type">DataStoreListingPages</span>
 	<span class="ClassName Function">DataStoreService</span>
 	<span class="Name">ListDataStoresAsync</span>
 	<span class="Parameters">
@@ -9068,28 +9120,77 @@
 <div class="Class">
 	<span class="Name">FaceControls</span>
 	<span class="Superclass">Instance</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">ChinRaiser</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">ChinRaiserUpperLip</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">FaceControls</span>
 	<span class="Name">Corrugator</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">LeftBrowLowerer</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">LeftInnerBrowRaiser</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">LeftNoseWrinkler</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">LeftOuterBrowRaiser</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">RightBrowLowerer</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">RightInnerBrowRaiser</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">RightNoseWrinkler</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">RightOuterBrowRaiser</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -9129,7 +9230,7 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">FlatPucker</span>
+	<span class="Name">LeftCheekRaiser</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -9137,7 +9238,39 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">Funneler</span>
+	<span class="Name">LeftEyeClosed</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">LeftEyeUpperLidRaiser</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">RightCheekRaiser</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">RightEyeClosed</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">RightEyeUpperLidRaiser</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -9169,7 +9302,31 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">LeftBrowLowerer</span>
+	<span class="Name">ChinRaiser</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">ChinRaiserUpperLip</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">FlatPucker</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">Funneler</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -9185,39 +9342,7 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">LeftCheekRaiser</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
 	<span class="Name">LeftDimpler</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">LeftEyeClosed</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">LeftEyeUpperLidRaiser</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">LeftInnerBrowRaiser</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -9250,22 +9375,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">FaceControls</span>
 	<span class="Name">LeftLowerLipDepressor</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">LeftNoseWrinkler</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">LeftOuterBrowRaiser</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -9329,14 +9438,6 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">RightBrowLowerer</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
 	<span class="Name">RightCheekPuff</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
@@ -9345,39 +9446,7 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">RightCheekRaiser</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
 	<span class="Name">RightDimpler</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">RightEyeClosed</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">RightEyeUpperLidRaiser</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">RightInnerBrowRaiser</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -9417,23 +9486,15 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">RightNoseWrinkler</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">RightOuterBrowRaiser</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
 	<span class="Name">RightUpperLipRaiser</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">FaceControls</span>
+	<span class="Name">UpperLipSuck</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -9458,14 +9519,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">FaceControls</span>
 	<span class="Name">TongueUp</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">FaceControls</span>
-	<span class="Name">UpperLipSuck</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -9983,30 +10036,6 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">GetDataStoreOptions</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">GetDataStoreOptions</span>
-	<span class="Name">AllScopes</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">GetDataStoreOptions</span>
-	<span class="Name">SetExperimentalFeatures</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Dictionary</span>
-			<span class="ParamName">experimentalFeatures</span>
-		</span>
-	</span>
 </div>
 
 <div class="Class">
@@ -20231,34 +20260,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">ObjectVersionInfo</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int64</span>
-	<span class="ClassName Property">ObjectVersionInfo</span>
-	<span class="Name">CreatedTime</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ObjectVersionInfo</span>
-	<span class="Name">IsDeleted</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">ObjectVersionInfo</span>
-	<span class="Name">Version</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Class">
 	<span class="Name">PVInstance</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -23135,14 +23136,14 @@
 </div>
 
 <div class="Class">
-	<span class="Name">DataStoreEnumerationPages</span>
+	<span class="Name">DataStoreKeyPages</span>
 	<span class="Superclass">Pages</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
-	<span class="Name">DataStoreKeyPages</span>
+	<span class="Name">DataStoreListingPages</span>
 	<span class="Superclass">Pages</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -23433,6 +23434,17 @@
 			<span class="ParamName">blockedWaypointIdx</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PathfindingModifier</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PathfindingModifier</span>
+	<span class="Name">ModifierId</span>
 </div>
 
 <div class="Class">
@@ -31520,7 +31532,8 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
-	<span class="Name">Disable Accurate Play Solo</span>
+	<span class="Name">DEPRECATED_DisableAccuratePlaySolo</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -32334,6 +32347,13 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Show Light Guides</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Show Navigation Areas</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
