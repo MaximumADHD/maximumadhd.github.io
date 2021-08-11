@@ -2,6 +2,1479 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="490"/>
+<h2>Version 0.490.0.4900359</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ImporterBaseSettings</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">ImporterBaseSettings</span>
+				<span class="Name">Id</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">ImporterBaseSettings</span>
+				<span class="Name">ImportName</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">ImporterBaseSettings</span>
+				<span class="Name">ShouldImport</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">VoiceChatService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">VoiceChatState</span>
+				<span class="ClassName Property">VoiceChatService</span>
+				<span class="Name">VoiceChatState</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">GetAndClearCallFailureMessage</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Tuple</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">GetAudioProcessingSettings</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">GetGroupId</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Tuple</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">GetMicDevices</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Array</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">GetParticipants</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Tuple</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">GetSpeakerDevices</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">int</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">GetVoiceChatApiVersion</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">int</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">GetVoiceChatAvailable</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">IsPublishPaused</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">IsSubscribePaused</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int64</span>
+						<span class="ParamName">userId</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">JoinByGroupId</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">groupId</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">bool</span>
+						<span class="ParamName default">isMicMuted</span>
+						<span class="ParamDefault bool">false</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">JoinByGroupIdToken</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">groupId</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">bool</span>
+						<span class="ParamName default">isMicMuted</span>
+						<span class="ParamDefault bool">false</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">Leave</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">PublishPause</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">bool</span>
+						<span class="ParamName">paused</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">SetMicDevice</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">micDeviceName</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">micDeviceGuid</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">SetSpeakerDevice</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">speakerDeviceName</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">speakerDeviceGuid</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">VoiceChatService</span>
+				<span class="Name">SubscribePause</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int64</span>
+						<span class="ParamName">userId</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">bool</span>
+						<span class="ParamName">paused</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">VoiceChatService</span>
+				<span class="Name">ParticipantsStateChanged</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Array</span>
+						<span class="ParamName">participantsLeft</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Array</span>
+						<span class="ParamName">participantsJoined</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Array</span>
+						<span class="ParamName">updatedStates</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">VoiceChatService</span>
+				<span class="Name">PlayerMicActivitySignalChange</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Dictionary</span>
+						<span class="ParamName">activityInfo</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">VoiceChatService</span>
+				<span class="Name">StateChanged</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="EnumName Type">Enum</span>
+						<span class="Type">VoiceChatState</span>
+						<span class="ParamName">old</span>
+					</span>
+					<span class="Parameter">
+						<span class="EnumName Type">Enum</span>
+						<span class="Type">VoiceChatState</span>
+						<span class="ParamName">new</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ImporterGroupSettings</span>
+			<span class="Superclass">ImporterBaseSettings</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ImporterMeshSettings</span>
+			<span class="Superclass">ImporterBaseSettings</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">ImporterMeshSettings</span>
+				<span class="Name">DoubleSided</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ImporterRootSettings</span>
+			<span class="Superclass">ImporterBaseSettings</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector3</span>
+				<span class="ClassName Property">ImporterRootSettings</span>
+				<span class="Name">FileDimensions</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">ImporterRootSettings</span>
+				<span class="Name">FlattenAll</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">ImporterRootSettings</span>
+				<span class="Name">PolygonCount</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">MeshScaleUnit</span>
+				<span class="ClassName Property">ImporterRootSettings</span>
+				<span class="Name">ScaleUnit</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">NormalId</span>
+				<span class="ClassName Property">ImporterRootSettings</span>
+				<span class="Name">WorldForward</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">NormalId</span>
+				<span class="ClassName Property">ImporterRootSettings</span>
+				<span class="Name">WorldUp</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">ImporterRootSettings</span>
+				<span class="Name">ZeroOrigin</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ImporterTextureSettings</span>
+			<span class="Superclass">ImporterBaseSettings</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">LinearVelocityConstraint</span>
+			<span class="Superclass">Constraint</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">LinearVelocityConstraint</span>
+				<span class="Name">MaxForce</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector3</span>
+				<span class="ClassName Property">LinearVelocityConstraint</span>
+				<span class="Name">LineDirection</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">LinearVelocityConstraint</span>
+				<span class="Name">LineVelocity</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">ActuatorRelativeTo</span>
+				<span class="ClassName Property">LinearVelocityConstraint</span>
+				<span class="Name">RelativeTo</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">VelocityConstraintMode</span>
+				<span class="ClassName Property">LinearVelocityConstraint</span>
+				<span class="Name">VelocityConstraintMode</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector2</span>
+				<span class="ClassName Property">LinearVelocityConstraint</span>
+				<span class="Name">PlaneVelocity</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector3</span>
+				<span class="ClassName Property">LinearVelocityConstraint</span>
+				<span class="Name">PrimaryTangentAxis</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector3</span>
+				<span class="ClassName Property">LinearVelocityConstraint</span>
+				<span class="Name">SecondaryTangentAxis</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector3</span>
+				<span class="ClassName Property">LinearVelocityConstraint</span>
+				<span class="Name">VectorVelocity</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">ResamplerMode</span>
+			<span class="ClassName Property">ImageButton</span>
+			<span class="Name">ResampleMode</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">ResamplerMode</span>
+			<span class="ClassName Property">ImageLabel</span>
+			<span class="Name">ResampleMode</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Variant</span>
+			<span class="ClassName Function">BillboardGui</span>
+			<span class="Name">GetScreenSpaceBounds</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">RbxAnalyticsService</span>
+			<span class="Name">AddGlobalPointsTag</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">key</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">value</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">RbxAnalyticsService</span>
+			<span class="Name">RemoveGlobalPointsTag</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">key</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">MeshScaleUnit</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">MeshScaleUnit</span>
+				<span class="Name">Stud</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">MeshScaleUnit</span>
+				<span class="Name">Meter</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">MeshScaleUnit</span>
+				<span class="Name">CM</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">MeshScaleUnit</span>
+				<span class="Name">MM</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">MeshScaleUnit</span>
+				<span class="Name">Foot</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">MeshScaleUnit</span>
+				<span class="Name">Inch</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">ResamplerMode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ResamplerMode</span>
+				<span class="Name">Default</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ResamplerMode</span>
+				<span class="Name">Pixelated</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">VelocityConstraintMode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VelocityConstraintMode</span>
+				<span class="Name">Line</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VelocityConstraintMode</span>
+				<span class="Name">Plane</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VelocityConstraintMode</span>
+				<span class="Name">Vector</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">VoiceChatState</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VoiceChatState</span>
+				<span class="Name">Idle</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VoiceChatState</span>
+				<span class="Name">Joining</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VoiceChatState</span>
+				<span class="Name">JoiningRetry</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VoiceChatState</span>
+				<span class="Name">Joined</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VoiceChatState</span>
+				<span class="Name">Leaving</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VoiceChatState</span>
+				<span class="Name">Ended</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VoiceChatState</span>
+				<span class="Name">Failed</span>
+				<span class="Value">6</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security</span>
+	<span class="Class">
+		<span class="Name">FaceControls</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security darken">{None}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">CommandService</span>
+		<span class="Name">RegisterCommand</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">description</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Plugin</span>
+					<span class="ParamName">pluginname</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">description</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName"></span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">CommandInstance</span>
+			<span class="Name">Group</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">Corrugator</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftBrowLowerer</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftInnerBrowRaiser</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftNoseWrinkler</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftOuterBrowRaiser</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightBrowLowerer</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightInnerBrowRaiser</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightNoseWrinkler</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightOuterBrowRaiser</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">EyesLookDown</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">EyesLookLeft</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">EyesLookRight</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">EyesLookUp</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftCheekRaiser</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftEyeClosed</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftEyeUpperLidRaiser</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightCheekRaiser</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightEyeClosed</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightEyeUpperLidRaiser</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">JawDrop</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">JawLeft</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">JawRight</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">ChinRaiser</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">ChinRaiserUpperLip</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">FlatPucker</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">Funneler</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftCheekPuff</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftDimpler</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftLipCornerDown</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftLipCornerPuller</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftLipStretcher</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftLowerLipDepressor</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LeftUpperLipRaiser</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LipPresser</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LipsTogether</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">LowerLipSuck</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">MouthLeft</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">MouthRight</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">Pucker</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightCheekPuff</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightDimpler</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightLipCornerDown</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightLipCornerPuller</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightLipStretcher</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightLowerLipDepressor</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">RightUpperLipRaiser</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">UpperLipSuck</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">TongueDown</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">TongueOut</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotScriptable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceControls</span>
+			<span class="Name">TongueUp</span>
+		</span>
+	</span>
+</div>
+
 <hr id="489"/>
 <h2>Version 0.489.0.4890336</h2>
 
