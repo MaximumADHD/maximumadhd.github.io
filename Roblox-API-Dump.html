@@ -1161,33 +1161,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">AssetImportItemSettings</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">AssetImportItemSettings</span>
-	<span class="Name">ShouldImport</span>
-</div>
-
-<div class="Class">
-	<span class="Name">AssetImportMeshSettings</span>
-	<span class="Superclass">AssetImportItemSettings</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">AssetImportTextureSettings</span>
-	<span class="Superclass">AssetImportItemSettings</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
 	<span class="Name">AssetImportService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -1198,18 +1171,13 @@
 <div class="Function child">
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">AssetImportService</span>
-	<span class="Name">GetInstanceMap</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">fileName</span>
-		</span>
-	</span>
+	<span class="Name">GetCurrentImportMap</span>
+	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
-	<span class="Type">AssetImportSettings</span>
+	<span class="Type">Tuple</span>
 	<span class="ClassName Function">AssetImportService</span>
 	<span class="Name">ImportMesh</span>
 	<span class="Parameters">
@@ -1222,26 +1190,12 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">AssetImportSettings</span>
+	<span class="Type">Tuple</span>
 	<span class="ClassName Function">AssetImportService</span>
 	<span class="Name">ImportMeshWithPrompt</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">AssetImportSettings</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">AssetImportItemSettings</span>
-	<span class="ClassName Property">AssetImportSettings</span>
-	<span class="Name">Hierarchy</span>
-	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Class">
@@ -1416,6 +1370,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">InsertModel</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">modelId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
 	<span class="Name">InsertPackage</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -1517,6 +1484,24 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">newAliasName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">RenameModel</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">modelId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">newName</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -3935,14 +3920,22 @@
 <div class="Class">
 	<span class="Name">Breakpoint</span>
 	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
-	<span class="Type">Expression</span>
+	<span class="Type">string</span>
 	<span class="ClassName Property">Breakpoint</span>
 	<span class="Name">Condition</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Breakpoint</span>
+	<span class="Name">Id</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
@@ -3955,6 +3948,15 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Breakpoint</span>
+	<span class="Name">LogMessage</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -3972,80 +3974,16 @@
 	<span class="Name">Enabled</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Breakpoint</span>
-	<span class="Name">Valid</span>
+	<span class="Name">Verified</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">int</span>
-	<span class="ClassName Function">Breakpoint</span>
-	<span class="Name">Remove</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">status</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">int</span>
-	<span class="ClassName Function">Breakpoint</span>
-	<span class="Name">SetCondition</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">condition</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">status</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">int</span>
-	<span class="ClassName Function">Breakpoint</span>
-	<span class="Name">SetEnabled</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">enabled</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">status</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">int</span>
-	<span class="ClassName Function">Breakpoint</span>
-	<span class="Name">SetLine</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName">line</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">status</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -8085,7 +8023,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">int</span>
+	<span class="Type">void</span>
 	<span class="ClassName Function">DebuggerConnection</span>
 	<span class="Name">AddBreakpoint</span>
 	<span class="Parameters">
@@ -8099,11 +8037,7 @@
 		</span>
 		<span class="Parameter">
 			<span class="Type">Instance</span>
-			<span class="ParamName">conditon</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">status</span>
+			<span class="ParamName">breakpoint</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -8134,6 +8068,19 @@
 		<span class="Parameter">
 			<span class="Type">Function</span>
 			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DebuggerConnection</span>
+	<span class="Name">RemoveBreakpoint</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">breakpoint</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -9141,38 +9088,6 @@
 			<span class="ParamName">distance</span>
 		</span>
 	</span>
-</div>
-
-<div class="Class">
-	<span class="Name">Expression</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">Expression</span>
-	<span class="Name">Expression</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">int</span>
-	<span class="ClassName Function">Expression</span>
-	<span class="Name">Evaluate</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">frame</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">status</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -16256,6 +16171,13 @@
 </div>
 
 <div class="Class">
+	<span class="Name">ImporterJointSettings</span>
+	<span class="Superclass">ImporterBaseSettings</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ImporterMeshSettings</span>
 	<span class="Superclass">ImporterBaseSettings</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -19665,6 +19587,118 @@
 </div>
 
 <div class="Class">
+	<span class="Name">MessageBusConnection</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MessageBusConnection</span>
+	<span class="Name">Disconnect</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">MessageBusService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Variant</span>
+	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">Call</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">input</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Variant</span>
+	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">GetLast</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">mid</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">GetMessageId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">domainName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">messageName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">Publish</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">mid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">params</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">Subscribe</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">mid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">once</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">sticky</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">MessagingService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -22966,6 +23000,42 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Terrain</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">Terrain</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">TouchesUseCollisionGroups</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Camera</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">CurrentCamera</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">DistributedGameTime</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">StreamOutBehavior</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">StreamOutBehavior</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">StreamingEnabled</span>
@@ -22992,34 +23062,6 @@
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">StreamingTargetRadius</span>
 	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Terrain</span>
-	<span class="ClassName Property">Workspace</span>
-	<span class="Name">Terrain</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Workspace</span>
-	<span class="Name">TouchesUseCollisionGroups</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Camera</span>
-	<span class="ClassName Property">Workspace</span>
-	<span class="Name">CurrentCamera</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">double</span>
-	<span class="ClassName Property">Workspace</span>
-	<span class="Name">DistributedGameTime</span>
-	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Function child">
@@ -23619,6 +23661,17 @@
 		<span class="Parameter">
 			<span class="Type">int</span>
 			<span class="ParamName">blockedWaypointIdx</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Path</span>
+	<span class="Name">Unblocked</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">unblockedWaypointIdx</span>
 		</span>
 	</span>
 </div>
@@ -27091,6 +27144,15 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">PolicyService</span>
+	<span class="Name">GetPolicyInfoForServerRobloxOnlyAsync</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">PoseBase</span>
 	<span class="Superclass">Instance</span>
@@ -30423,6 +30485,15 @@
 	<span class="Name">PlayOnRemove</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">ChannelCount</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
 <div class="Property deprecated child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Sound</span>
@@ -31113,6 +31184,15 @@
 <div class="Class deprecated">
 	<span class="Name">Speaker</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Speaker</span>
+	<span class="Name">ChannelCount</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotBrowsable]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -37945,19 +38025,6 @@
 		<span class="Parameter">
 			<span class="Type">Variant</span>
 			<span class="ParamName">inputTypesToIgnore</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">VirtualInputManager</span>
-	<span class="Name">SetViewportSize</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Vector2</span>
-			<span class="ParamName">sizePx</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -47972,6 +48039,28 @@
 	<span class="Name">Confusion</span>
 	<span class="Value">1</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">StreamOutBehavior</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StreamOutBehavior</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StreamOutBehavior</span>
+	<span class="Name">LowMemory</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StreamOutBehavior</span>
+	<span class="Name">Opportunistic</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
