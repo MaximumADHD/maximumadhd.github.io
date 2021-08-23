@@ -1137,6 +1137,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AppUpdateService</span>
+	<span class="Name">DisableDUARAndOpenSurvey</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">surveyUrl</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">AppUpdateService</span>
 	<span class="Name">PerformManagedUpdate</span>
@@ -2145,6 +2158,19 @@
 <div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">NoPromptDeleteOutfit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">outfitId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AvatarEditorService</span>
 	<span class="Name">NoPromptSaveAvatar</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -2224,6 +2250,14 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">PerformDeleteOutfit</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AvatarEditorService</span>
 	<span class="Name">PerformSaveAvatar</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -2295,6 +2329,18 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HumanoidRigType</span>
 			<span class="ParamName">rigType</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">PromptDeleteOutfit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">outfitId</span>
 		</span>
 	</span>
 </div>
@@ -2382,6 +2428,22 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">SignalDeleteOutfitFailed</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">SignalDeleteOutfitPermissionDenied</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AvatarEditorService</span>
 	<span class="Name">SignalSaveAvatarFailed</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -2430,6 +2492,18 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">HumanoidRigType</span>
 			<span class="ParamName">rigType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AvatarEditorService</span>
+	<span class="Name">OpenPromptDeleteOutfit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">outfitId</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -2497,6 +2571,18 @@
 		<span class="Parameter">
 			<span class="Type">Variant</span>
 			<span class="ParamName">failureType</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AvatarEditorService</span>
+	<span class="Name">PromptDeleteOutfitCompleted</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AvatarPromptResult</span>
+			<span class="ParamName">result</span>
 		</span>
 	</span>
 </div>
@@ -5547,15 +5633,15 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Plugin</span>
-			<span class="ParamName">pluginname</span>
+			<span class="ParamName">plugin</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">description</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName"></span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -9647,26 +9733,6 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
-<div class="Property deprecated child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">File</span>
-	<span class="Name">FileName</span>
-	<span class="Security">{PluginSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">int64</span>
-	<span class="ClassName Property">File</span>
-	<span class="Name">FileSize</span>
-	<span class="Security">{PluginSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
 <div class="Property child">
 	<span class="Type">int64</span>
 	<span class="ClassName Property">File</span>
@@ -9682,15 +9748,6 @@
 	<span class="Name">GetBinaryContents</span>
 	<span class="Parameters"></span>
 	<span class="Security">{PluginSecurity}</span>
-</div>
-
-<div class="Function deprecated child">
-	<span class="Type">string</span>
-	<span class="ClassName Function">File</span>
-	<span class="Name">GetFileContentsBinary</span>
-	<span class="Parameters"></span>
-	<span class="Security">{PluginSecurity}</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -14744,12 +14801,13 @@
 	<span class="Name">BreakJointsOnDeath</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">HumanoidCollisionType</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">CollisionType</span>
 	<span class="Security">{✏️PluginSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -22777,7 +22835,7 @@
 	<span class="Name">GetPartsInPart</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">BasePart</span>
 			<span class="ParamName">part</span>
 		</span>
 		<span class="Parameter">
@@ -23954,7 +24012,7 @@
 			<span class="ParamName">name</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">BasePart</span>
 			<span class="ParamName">part</span>
 		</span>
 	</span>
@@ -24130,7 +24188,7 @@
 	<span class="Name">SetPartCollisionGroup</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">BasePart</span>
 			<span class="ParamName">part</span>
 		</span>
 		<span class="Parameter">
@@ -26380,7 +26438,7 @@
 	<span class="Name">OpenScript</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">LuaSourceContainer</span>
 			<span class="ParamName">script</span>
 		</span>
 		<span class="Parameter">
@@ -30753,6 +30811,18 @@
 </div>
 
 <div class="Class">
+	<span class="Name">ChannelSelectorSoundEffect</span>
+	<span class="Superclass">SoundEffect</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">ChannelSelectorSoundEffect</span>
+	<span class="Name">Channel</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ChorusSoundEffect</span>
 	<span class="Superclass">SoundEffect</span>
 </div>
@@ -31824,13 +31894,6 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">DEPRECATED_DisableAccuratePlaySolo</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -33165,46 +33228,6 @@
 	</span>
 	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function deprecated child">
-	<span class="Type">Instance</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">PromptImportLocalAsset</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">prompt</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Array</span>
-			<span class="ParamName default">fileTypeFilter</span>
-			<span class="ParamDefault Array">{}</span>
-		</span>
-	</span>
-	<span class="Security">{PluginSecurity}</span>
-	<span class="Tag">[Yields]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Function deprecated child">
-	<span class="Type">Objects</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">PromptImportLocalAssets</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">prompt</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Array</span>
-			<span class="ParamName default">fileTypeFilter</span>
-			<span class="ParamDefault Array">{}</span>
-		</span>
-	</span>
-	<span class="Security">{PluginSecurity}</span>
-	<span class="Tag">[Yields]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -48120,31 +48143,31 @@
 <div class="EnumItem child">
 	<span class="EnumName">StudioDataModelType</span>
 	<span class="Name">PlayClient</span>
-	<span class="Value">2</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioDataModelType</span>
 	<span class="Name">PlayServer</span>
-	<span class="Value">3</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioDataModelType</span>
 	<span class="Name">RobloxPlugin</span>
-	<span class="Value">4</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioDataModelType</span>
 	<span class="Name">UserPlugin</span>
-	<span class="Value">5</span>
+	<span class="Value">4</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioDataModelType</span>
 	<span class="Name">None</span>
-	<span class="Value">6</span>
+	<span class="Value">5</span>
 </div>
 
 <div class="Enum">
