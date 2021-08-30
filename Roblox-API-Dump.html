@@ -1211,6 +1211,14 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">UploadCurrentMesh</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">AssetManagerService</span>
 	<span class="Superclass">Instance</span>
@@ -13409,6 +13417,12 @@
 	<span class="Name">SelectedObject</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">GuiService</span>
+	<span class="Name">TouchControlsEnabled</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">GuiService</span>
@@ -23745,6 +23759,12 @@
 	<span class="Name">ModifierId</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PathfindingModifier</span>
+	<span class="Name">PassThrough</span>
+</div>
+
 <div class="Class">
 	<span class="Name">PathfindingService</span>
 	<span class="Superclass">Instance</span>
@@ -25320,6 +25340,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PlayerEmulatorService</span>
+	<span class="Name">CustomPoliciesEnabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">PlayerEmulatorService</span>
 	<span class="Name">DEPRECATED_SerializedEmulatedPolicyInfo</span>
@@ -26595,6 +26623,14 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Plugin</span>
+	<span class="Name">SetReady</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Plugin</span>
 	<span class="Name">SetSetting</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -26661,6 +26697,13 @@
 	<span class="Name">Deactivation</span>
 	<span class="Parameters"></span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Plugin</span>
+	<span class="Name">Ready</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -29355,6 +29398,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Selection</span>
+	<span class="Name">ClearTerrainSelectionHack</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Objects</span>
 	<span class="ClassName Function">Selection</span>
 	<span class="Name">Get</span>
@@ -29386,6 +29437,23 @@
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Selection</span>
+	<span class="Name">SetTerrainSelectionHack</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">center</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">size</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -31941,6 +32009,12 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
+	<span class="Name">Set Pivot of Imported Parts</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
 	<span class="Name">Show Deployment Warnings</span>
 </div>
 
@@ -32267,6 +32341,15 @@
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Enable Type Hover</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">EnableOnTypeAutocomplete</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -32993,14 +33076,6 @@
 			<span class="ParamName">id</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">bool</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">BaseURLHasChineseHost</span>
-	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -36316,10 +36391,11 @@
 	<span class="Tag">[Hidden]</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">ModalEnabled</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
