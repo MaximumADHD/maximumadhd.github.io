@@ -864,6 +864,24 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AnimationRigData</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AnimationRigData</span>
+	<span class="Name">LoadFromHumanoid</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">humanoid</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">AnimationTrack</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -1209,6 +1227,19 @@
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">UpdateSettings</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">settings</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -5727,6 +5758,13 @@
 
 <div class="Property child">
 	<span class="EnumName Type">Enum</span>
+	<span class="Type">OrientationAlignmentMode</span>
+	<span class="ClassName Property">AlignOrientation</span>
+	<span class="Name">Mode</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
 	<span class="Type">AlignType</span>
 	<span class="ClassName Property">AlignOrientation</span>
 	<span class="Name">AlignType</span>
@@ -5768,15 +5806,46 @@
 	<span class="Name">Responsiveness</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">AlignOrientation</span>
+	<span class="Name">CoordindateFrame</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">AlignOrientation</span>
+	<span class="Name">PrimaryAxis</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">AlignOrientation</span>
+	<span class="Name">SecondaryAxis</span>
+</div>
+
 <div class="Class">
 	<span class="Name">AlignPosition</span>
 	<span class="Superclass">Constraint</span>
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">PositionAlignmentMode</span>
+	<span class="ClassName Property">AlignPosition</span>
+	<span class="Name">Mode</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">AlignPosition</span>
 	<span class="Name">ApplyAtCenterOfMass</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">AlignPosition</span>
+	<span class="Name">Position</span>
 </div>
 
 <div class="Property child">
@@ -6019,63 +6088,63 @@
 </div>
 
 <div class="Class">
-	<span class="Name">LinearVelocityConstraint</span>
+	<span class="Name">LinearVelocity</span>
 	<span class="Superclass">Constraint</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
-	<span class="ClassName Property">LinearVelocityConstraint</span>
+	<span class="ClassName Property">LinearVelocity</span>
 	<span class="Name">MaxForce</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Vector3</span>
-	<span class="ClassName Property">LinearVelocityConstraint</span>
+	<span class="ClassName Property">LinearVelocity</span>
 	<span class="Name">LineDirection</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
-	<span class="ClassName Property">LinearVelocityConstraint</span>
+	<span class="ClassName Property">LinearVelocity</span>
 	<span class="Name">LineVelocity</span>
 </div>
 
 <div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">ActuatorRelativeTo</span>
-	<span class="ClassName Property">LinearVelocityConstraint</span>
+	<span class="ClassName Property">LinearVelocity</span>
 	<span class="Name">RelativeTo</span>
 </div>
 
 <div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">VelocityConstraintMode</span>
-	<span class="ClassName Property">LinearVelocityConstraint</span>
+	<span class="ClassName Property">LinearVelocity</span>
 	<span class="Name">VelocityConstraintMode</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Vector2</span>
-	<span class="ClassName Property">LinearVelocityConstraint</span>
+	<span class="ClassName Property">LinearVelocity</span>
 	<span class="Name">PlaneVelocity</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Vector3</span>
-	<span class="ClassName Property">LinearVelocityConstraint</span>
+	<span class="ClassName Property">LinearVelocity</span>
 	<span class="Name">PrimaryTangentAxis</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Vector3</span>
-	<span class="ClassName Property">LinearVelocityConstraint</span>
+	<span class="ClassName Property">LinearVelocity</span>
 	<span class="Name">SecondaryTangentAxis</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Vector3</span>
-	<span class="ClassName Property">LinearVelocityConstraint</span>
+	<span class="ClassName Property">LinearVelocity</span>
 	<span class="Name">VectorVelocity</span>
 </div>
 
@@ -8160,6 +8229,10 @@
 	<span class="Name">Pause</span>
 	<span class="Parameters">
 		<span class="Parameter">
+			<span class="Type">ThreadState</span>
+			<span class="ParamName">thread</span>
+		</span>
+		<span class="Parameter">
 			<span class="Type">Function</span>
 			<span class="ParamName">status</span>
 		</span>
@@ -8185,6 +8258,10 @@
 	<span class="ClassName Function">DebuggerConnection</span>
 	<span class="Name">Resume</span>
 	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">ThreadState</span>
+			<span class="ParamName">thread</span>
+		</span>
 		<span class="Parameter">
 			<span class="Type">Function</span>
 			<span class="ParamName">status</span>
@@ -11046,6 +11123,23 @@
 			<span class="ParamName">touchPositions</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">CanvasGroup</span>
+	<span class="Superclass">GuiObject</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">CanvasGroup</span>
+	<span class="Name">GroupColor</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">CanvasGroup</span>
+	<span class="Name">Transparency</span>
 </div>
 
 <div class="Class">
@@ -15182,6 +15276,24 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Function">Humanoid</span>
+	<span class="Name">GetAccessoryHandleScale</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">instance</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">BodyPartR15</span>
+			<span class="ParamName">partType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">HumanoidDescription</span>
 	<span class="ClassName Function">Humanoid</span>
 	<span class="Name">GetAppliedDescription</span>
@@ -16280,6 +16392,12 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ImporterRootSettings</span>
 	<span class="Name">FlattenAll</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterRootSettings</span>
+	<span class="Name">InvertNegativeFaces</span>
 </div>
 
 <div class="Property child">
@@ -19283,6 +19401,176 @@
 </div>
 
 <div class="Class">
+	<span class="Name">MaterialService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Brick</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Cobblestone</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Concrete</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">CorrodedMetal</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">DiamondPlate</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Fabric</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Foil</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Granite</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Grass</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Ice</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Marble</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Metal</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Pebble</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Plastic</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Sand</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Slate</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">SmoothPlastic</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Wood</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">WoodPlanks</span>
+</div>
+
+<div class="Class">
+	<span class="Name">MaterialVariant</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">Material</span>
+	<span class="ClassName Property">MaterialVariant</span>
+	<span class="Name">BaseMaterial</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">MaterialVariant</span>
+	<span class="Name">ColorMap</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">MaterialVariant</span>
+	<span class="Name">MetalnessMap</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">MaterialVariant</span>
+	<span class="Name">NormalMap</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">MaterialVariant</span>
+	<span class="Name">RoughnessMap</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">MaterialVariant</span>
+	<span class="Name">StudsPerTile</span>
+</div>
+
+<div class="Class">
 	<span class="Name">MemStorageConnection</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -20644,6 +20932,12 @@
 	<span class="Type">Material</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Material</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">MaterialVariant</span>
 </div>
 
 <div class="Property child">
@@ -23065,6 +23359,13 @@
 
 <div class="Property child">
 	<span class="EnumName Type">Enum</span>
+	<span class="Type">AnimatorRetargetingMode</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">Retargeting</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
 	<span class="Type">SignalBehavior</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">SignalBehavior</span>
@@ -23864,15 +24165,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">PausedState</span>
-	<span class="Name">IsValid</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">DebuggerPauseReason</span>
 	<span class="ClassName Property">PausedState</span>
@@ -23885,23 +24177,19 @@
 <div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">PausedState</span>
-	<span class="Name">ThreadCount</span>
+	<span class="Name">ThreadId</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
-<div class="Function child">
-	<span class="Type">Instance</span>
-	<span class="ClassName Function">PausedState</span>
-	<span class="Name">GetThread</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName">index</span>
-		</span>
-	</span>
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PausedState</span>
+	<span class="Name">AllThreadsPaused</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Class">
@@ -23920,15 +24208,6 @@
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
-<div class="Property child">
-	<span class="Type">ThreadState</span>
-	<span class="ClassName Property">PausedStateBreakpoint</span>
-	<span class="Name">BreakpointThread</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
 <div class="Class">
 	<span class="Name">PausedStateException</span>
 	<span class="Superclass">PausedState</span>
@@ -23940,15 +24219,6 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">PausedStateException</span>
 	<span class="Name">ExceptionText</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">ThreadState</span>
-	<span class="ClassName Property">PausedStateException</span>
-	<span class="Name">ExceptionThread</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
@@ -25410,6 +25680,19 @@
 	<span class="ClassName Function">PlayerEmulatorService</span>
 	<span class="Name">GetEmulatedPolicyInfo</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">PlayerEmulatorService</span>
+	<span class="Name">RegionCodeWillHaveAutomaticNonCustomPolicies</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">regionCode</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -29503,7 +29786,6 @@
 			<span class="ParamName">className</span>
 		</span>
 	</span>
-	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -29516,7 +29798,6 @@
 			<span class="ParamName">className</span>
 		</span>
 	</span>
-	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function deprecated child">
@@ -30952,6 +31233,12 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">CompressorSoundEffect</span>
 	<span class="Name">Threshold</span>
+</div>
+
+<div class="Class">
+	<span class="Name">CustomDspSoundEffect</span>
+	<span class="Superclass">SoundEffect</span>
+	<span class="Tag">[NotCreatable]</span>
 </div>
 
 <div class="Class">
@@ -38531,6 +38818,14 @@
 <div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">VoiceChatService</span>
+	<span class="Name">IsContextVoiceEnabled</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">VoiceChatService</span>
 	<span class="Name">IsPublishPaused</span>
 	<span class="Parameters"></span>
 </div>
@@ -38641,6 +38936,18 @@
 			<span class="Type">int64</span>
 			<span class="ParamName">userId</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">paused</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">VoiceChatService</span>
+	<span class="Name">SubscribePauseAll</span>
+	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName">paused</span>
@@ -39146,6 +39453,28 @@
 	<span class="EnumName">AnimationPriority</span>
 	<span class="Name">Core</span>
 	<span class="Value">1000</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AnimatorRetargetingMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnimatorRetargetingMode</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnimatorRetargetingMode</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnimatorRetargetingMode</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
@@ -46343,6 +46672,22 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">OrientationAlignmentMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">OrientationAlignmentMode</span>
+	<span class="Name">OneAttachment</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">OrientationAlignmentMode</span>
+	<span class="Name">TwoAttachment</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">OutfitSource</span>
 </div>
 
@@ -46932,6 +47277,22 @@
 	<span class="EnumName">PoseEasingStyle</span>
 	<span class="Name">Bounce</span>
 	<span class="Value">4</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">PositionAlignmentMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PositionAlignmentMode</span>
+	<span class="Name">OneAttachment</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PositionAlignmentMode</span>
+	<span class="Name">TwoAttachment</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum deprecated">
