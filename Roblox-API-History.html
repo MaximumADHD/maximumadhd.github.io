@@ -2,6 +2,516 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="495"/>
+<h2>Version 0.495.0.4950267</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DebuggerVariable</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">DebuggerVariable</span>
+				<span class="Name">Name</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">DebuggerVariable</span>
+				<span class="Name">Type</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">DebuggerVariable</span>
+				<span class="Name">Value</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int</span>
+				<span class="ClassName Property">DebuggerVariable</span>
+				<span class="Name">VariableId</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int</span>
+				<span class="ClassName Property">DebuggerVariable</span>
+				<span class="Name">VariablesCount</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">DebuggerVariable</span>
+				<span class="Name">Populated</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Instance</span>
+				<span class="ClassName Function">DebuggerVariable</span>
+				<span class="Name">GetVariableByIndex</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">index</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Instance</span>
+				<span class="ClassName Function">DebuggerVariable</span>
+				<span class="Name">GetVariableByName</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">name</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StackFrame</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int</span>
+				<span class="ClassName Property">StackFrame</span>
+				<span class="Name">FrameId</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">StackFrame</span>
+				<span class="Name">FrameName</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">DebuggerFrameType</span>
+				<span class="ClassName Property">StackFrame</span>
+				<span class="Name">FrameType</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">DebuggerVariable</span>
+				<span class="ClassName Property">StackFrame</span>
+				<span class="Name">Globals</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int</span>
+				<span class="ClassName Property">StackFrame</span>
+				<span class="Name">Line</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">DebuggerVariable</span>
+				<span class="ClassName Property">StackFrame</span>
+				<span class="Name">Locals</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">ScriptRef</span>
+				<span class="ClassName Property">StackFrame</span>
+				<span class="Name">Script</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">DebuggerVariable</span>
+				<span class="ClassName Property">StackFrame</span>
+				<span class="Name">Upvalues</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">StackFrame</span>
+				<span class="Name">Populated</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">CFrame</span>
+			<span class="ClassName Property">AlignOrientation</span>
+			<span class="Name">CFrame</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">ThreadState</span>
+			<span class="Name">FrameCount</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">ThreadState</span>
+			<span class="Name">ThreadName</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ThreadState</span>
+			<span class="Name">Populated</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AssetImportService</span>
+			<span class="Name">Upload</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">StackFrame</span>
+			<span class="ClassName Function">DebuggerConnection</span>
+			<span class="Name">GetFrameById</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">id</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">ThreadState</span>
+			<span class="ClassName Function">DebuggerConnection</span>
+			<span class="Name">GetThreadById</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">id</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">int</span>
+			<span class="ClassName Function">DebuggerConnection</span>
+			<span class="Name">GetThreads</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">callback</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">DebuggerVariable</span>
+			<span class="ClassName Function">DebuggerConnection</span>
+			<span class="Name">GetVariableById</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">id</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">int</span>
+			<span class="ClassName Function">DebuggerConnection</span>
+			<span class="Name">Populate</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">instance</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">callback</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">int</span>
+			<span class="ClassName Function">DebuggerConnection</span>
+			<span class="Name">SetVariable</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">DebuggerVariable</span>
+					<span class="ParamName">variable</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">value</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">callback</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">DebuggerConnection</span>
+			<span class="ClassName Function">DebuggerConnectionManager</span>
+			<span class="Name">GetConnectionById</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">id</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Dictionary</span>
+			<span class="ClassName Function">ImporterBaseSettings</span>
+			<span class="Name">GetStatuses</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">ThreadState</span>
+			<span class="Name">GetFrame</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">index</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">superclass</span>
+	<span class="Class">
+		<span class="Name">ChannelSelectorSoundEffect</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">SoundEffect</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">CustomDspSoundEffect</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">AlignOrientation</span>
+			<span class="Name">CoordindateFrame</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">AssetImportService</span>
+			<span class="Name">UploadCurrentMesh</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">ThreadState</span>
+			<span class="Name">GetCallstack</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">ThreadState</span>
+			<span class="Name">RequestCallstack</span>
+		</span>
+	</span>
+</div>
+
 <hr id="494"/>
 <h2>Version 0.494.0.4940339</h2>
 
