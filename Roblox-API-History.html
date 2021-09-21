@@ -2,6 +2,1301 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="496"/>
+<h2>Version 0.496.0.4960343</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">EulerRotationCurve</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">RotationOrder</span>
+				<span class="ClassName Property">EulerRotationCurve</span>
+				<span class="Name">RotationOrder</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Array</span>
+				<span class="ClassName Function">EulerRotationCurve</span>
+				<span class="Name">GetAnglesAtTime</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">float</span>
+						<span class="ParamName">time</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">CFrame</span>
+				<span class="ClassName Function">EulerRotationCurve</span>
+				<span class="Name">GetRotationAtTime</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">float</span>
+						<span class="ParamName">time</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">FloatCurve</span>
+				<span class="ClassName Function">EulerRotationCurve</span>
+				<span class="Name">X</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">FloatCurve</span>
+				<span class="ClassName Function">EulerRotationCurve</span>
+				<span class="Name">Y</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">FloatCurve</span>
+				<span class="ClassName Function">EulerRotationCurve</span>
+				<span class="Name">Z</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">FloatCurve</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int</span>
+				<span class="ClassName Property">FloatCurve</span>
+				<span class="Name">Length</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">FloatCurveKey</span>
+				<span class="ClassName Function">FloatCurve</span>
+				<span class="Name">GetKeyAtIndex</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">index</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Array</span>
+				<span class="ClassName Function">FloatCurve</span>
+				<span class="Name">GetKeyIndicesAtTime</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">float</span>
+						<span class="ParamName">time</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Array</span>
+				<span class="ClassName Function">FloatCurve</span>
+				<span class="Name">GetKeys</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">float?</span>
+				<span class="ClassName Function">FloatCurve</span>
+				<span class="Name">GetValueAtTime</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">float</span>
+						<span class="ParamName">time</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Array</span>
+				<span class="ClassName Function">FloatCurve</span>
+				<span class="Name">InsertKey</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">FloatCurveKey</span>
+						<span class="ParamName">key</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">int</span>
+				<span class="ClassName Function">FloatCurve</span>
+				<span class="Name">RemoveKeyAtIndex</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">startingIndex</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName default">count</span>
+						<span class="ParamDefault int">1</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">int</span>
+				<span class="ClassName Function">FloatCurve</span>
+				<span class="Name">SetKeys</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Array</span>
+						<span class="ParamName">keys</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">TextChannel</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">TextChatService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">TextSource</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">Vector3Curve</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Array</span>
+				<span class="ClassName Function">Vector3Curve</span>
+				<span class="Name">GetValueAtTime</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">float</span>
+						<span class="ParamName">time</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">FloatCurve</span>
+				<span class="ClassName Function">Vector3Curve</span>
+				<span class="Name">X</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">FloatCurve</span>
+				<span class="ClassName Function">Vector3Curve</span>
+				<span class="Name">Y</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">FloatCurve</span>
+				<span class="ClassName Function">Vector3Curve</span>
+				<span class="Name">Z</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">CommandInstance</span>
+			<span class="Name">DisplayName</span>
+			<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Vector2</span>
+			<span class="ClassName Property">ImageButton</span>
+			<span class="Name">ContentImageSize</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Vector2</span>
+			<span class="ClassName Property">ImageLabel</span>
+			<span class="Name">ContentImageSize</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ImporterRootSettings</span>
+			<span class="Name">MergeMeshes</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AssetManagerService</span>
+			<span class="Name">CreateAlias</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">assetType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">assetId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">aliasName</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">NoPromptRenameOutfit</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">outfitId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">PerformRenameOutfit</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">PromptRenameOutfit</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">outfitId</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">SignalRenameOutfitFailed</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">SignalRenameOutfitPermissionDenied</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">CommandInstance</span>
+			<span class="Name">EnableGuiAccess</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">displayName</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">statusTip</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">defaultShortcut</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">ImageButton</span>
+			<span class="Name">SetEnableContentImageSizeChangedEvents</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">enabled</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">ImageLabel</span>
+			<span class="Name">SetEnableContentImageSizeChangedEvents</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">enabled</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AssetManagerService</span>
+			<span class="Name">AssetImportedSignal</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">assetType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">assetId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">assetName</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">OpenPromptRenameOutfit</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">outfitId</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">PromptRenameOutfitCompleted</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">AvatarPromptResult</span>
+					<span class="ParamName">result</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">KeyInterpolationMode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">KeyInterpolationMode</span>
+				<span class="Name">Constant</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">KeyInterpolationMode</span>
+				<span class="Name">Linear</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">KeyInterpolationMode</span>
+				<span class="Name">Cubic</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">RotationOrder</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RotationOrder</span>
+				<span class="Name">XYZ</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RotationOrder</span>
+				<span class="Name">XZY</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RotationOrder</span>
+				<span class="Name">YZX</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RotationOrder</span>
+				<span class="Name">YXZ</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RotationOrder</span>
+				<span class="Name">ZXY</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RotationOrder</span>
+				<span class="Name">ZYX</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[ReadOnly]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">CommandInstance</span>
+			<span class="Name">DefaultShortcut</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">CommandInstance</span>
+		<span class="Name">DefaultShortcut</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety, security, serialization and category</span>
+	<span class="Property">
+		<span class="ClassName Property">ScrollingFrame</span>
+		<span class="Name">AbsoluteCanvasSize</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+			<span class="String">Debugging</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+			<span class="Security darken">{None}</span>
+			<span class="Serialization">[<💾> SaveOnly]</span>
+			<span class="String">Scrolling</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">CommandService</span>
+		<span class="Name">RegisterCommand</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Plugin</span>
+					<span class="ParamName">plugin</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">description</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Plugin</span>
+					<span class="ParamName">plugin</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">context</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">CommandPermission</span>
+					<span class="ParamName default">permission</span>
+					<span class="ParamDefault String">LocalUser</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">DebuggerConnection</span>
+		<span class="Name">AddBreakpoint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">script</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">line</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">breakpoint</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">ScriptRef</span>
+					<span class="ParamName">script</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">line</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Breakpoint</span>
+					<span class="ParamName">breakpoint</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">DebuggerConnection</span>
+		<span class="Name">GetSource</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">scriptRef</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">status</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">ScriptRef</span>
+					<span class="ParamName">scriptRef</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">status</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">DebuggerConnection</span>
+		<span class="Name">RemoveBreakpoint</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">breakpoint</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Breakpoint</span>
+					<span class="ParamName">breakpoint</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">DebuggerConnectionManager</span>
+		<span class="Name">ConnectLocal</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">dataModel</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">DataModel</span>
+					<span class="ParamName">dataModel</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">DebuggerConnectionManager</span>
+		<span class="Name">FocusConnection</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">connection</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">DebuggerConnection</span>
+					<span class="ParamName">connection</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">DebuggerVariable</span>
+		<span class="Name">GetVariableByIndex</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Type">Instance</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Type">DebuggerVariable</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">DebuggerVariable</span>
+		<span class="Name">GetVariableByName</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Type">Instance</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Type">DebuggerVariable</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">DebuggerConnection</span>
+		<span class="Name">BreakpointAdded</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">breakpoint</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Breakpoint</span>
+					<span class="ParamName">breakpoint</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">DebuggerConnection</span>
+		<span class="Name">BreakpointChanged</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">breakpoint</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Breakpoint</span>
+					<span class="ParamName">breakpoint</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">DebuggerConnection</span>
+		<span class="Name">BreakpointRemoved</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">breakpoint</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">BreakpointRemoveReason</span>
+					<span class="ParamName">reason</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Breakpoint</span>
+					<span class="ParamName">breakpoint</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">BreakpointRemoveReason</span>
+					<span class="ParamName">reason</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">DebuggerConnection</span>
+		<span class="Name">Paused</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pausedState</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">DebuggerPauseReason</span>
+					<span class="ParamName">reason</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">PausedState</span>
+					<span class="ParamName">pausedState</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">DebuggerPauseReason</span>
+					<span class="ParamName">reason</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">DebuggerConnection</span>
+		<span class="Name">Resumed</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">pausedState</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">PausedState</span>
+					<span class="ParamName">pausedState</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">DebuggerConnectionManager</span>
+		<span class="Name">ConnectionEnded</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">connection</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">DebuggerEndReason</span>
+					<span class="ParamName">reason</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">DebuggerConnection</span>
+					<span class="ParamName">connection</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">DebuggerEndReason</span>
+					<span class="ParamName">reason</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">DebuggerConnectionManager</span>
+		<span class="Name">ConnectionStarted</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">connection</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">DebuggerConnection</span>
+					<span class="ParamName">connection</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">DebuggerConnectionManager</span>
+		<span class="Name">FocusChanged</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">connection</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">DebuggerConnection</span>
+					<span class="ParamName">connection</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">CommandInstance</span>
+			<span class="Name">Text</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ImporterRootSettings</span>
+			<span class="Name">FlattenAll</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScrollingFrame</span>
+			<span class="Name">AbsoluteCanvasSize</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">CommandInstance</span>
+			<span class="Name">DefaultShortcut</span>
+		</span>
+	</span>
+</div>
+
 <hr id="495"/>
 <h2>Version 0.495.0.4950267</h2>
 
