@@ -844,6 +844,11 @@
 </div>
 
 <div class="Class">
+	<span class="Name">CurveAnimation</span>
+	<span class="Superclass">AnimationClip</span>
+</div>
+
+<div class="Class">
 	<span class="Name">KeyframeSequence</span>
 	<span class="Superclass">AnimationClip</span>
 </div>
@@ -3764,6 +3769,12 @@
 <div class="Class">
 	<span class="Name">Beam</span>
 	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Beam</span>
+	<span class="Name">Brightness</span>
 </div>
 
 <div class="Property child">
@@ -8446,6 +8457,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DebuggerConnection</span>
+	<span class="Name">Close</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">StackFrame</span>
 	<span class="ClassName Function">DebuggerConnection</span>
 	<span class="Name">GetFrameById</span>
@@ -8594,19 +8613,6 @@
 		<span class="Parameter">
 			<span class="Type">Function</span>
 			<span class="ParamName">callback</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">int</span>
-	<span class="ClassName Function">DebuggerConnection</span>
-	<span class="Name">Terminate</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">status</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -17048,6 +17054,12 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterGroupSettings</span>
+	<span class="Name">ImportAsModelAsset</span>
+</div>
+
 <div class="Class">
 	<span class="Name">ImporterJointSettings</span>
 	<span class="Superclass">ImporterBaseSettings</span>
@@ -17063,6 +17075,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">Dimensions</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ImporterMeshSettings</span>
 	<span class="Name">DoubleSided</span>
@@ -17072,6 +17091,13 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ImporterMeshSettings</span>
 	<span class="Name">IgnoreVertexColors</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">PolygonCount</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Class">
@@ -17086,6 +17112,12 @@
 	<span class="ClassName Property">ImporterRootSettings</span>
 	<span class="Name">FileDimensions</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterRootSettings</span>
+	<span class="Name">ImportAsModelAsset</span>
 </div>
 
 <div class="Property child">
@@ -20660,6 +20692,40 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">GetProtocolMethodRequestMessageId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">protocolName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">methodName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">GetProtocolMethodResponseMessageId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">protocolName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">methodName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MessageBusService</span>
 	<span class="Name">Publish</span>
@@ -20677,6 +20743,60 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">PublishProtocolMethodRequest</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">protocolName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">methodName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">message</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">customTelemetryData</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">PublishProtocolMethodResponse</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">protocolName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">methodName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">message</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">responseCode</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">customTelemetryData</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">MessageBusService</span>
 	<span class="Name">Subscribe</span>
@@ -20684,6 +20804,64 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">mid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">once</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">sticky</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">SubscribeToProtocolMethodRequest</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">protocolName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">methodName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">once</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">sticky</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">SubscribeToProtocolMethodResponse</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">protocolName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">methodName</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">Function</span>
@@ -21246,6 +21424,12 @@
 	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">HttpProxyURL</span>
 	<span class="Security">{✏️RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">NewVoiceChatService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
@@ -22715,7 +22899,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Instance</span>
+	<span class="Type">TerrainRegion</span>
 	<span class="ClassName Function">Terrain</span>
 	<span class="Name">CopyRegion</span>
 	<span class="Parameters">
@@ -22903,7 +23087,7 @@
 	<span class="Name">PasteRegion</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">TerrainRegion</span>
 			<span class="ParamName">region</span>
 		</span>
 		<span class="Parameter">
@@ -24454,6 +24638,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">Brightness</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">ColorSequence</span>
 	<span class="ClassName Property">ParticleEmitter</span>
 	<span class="Name">Color</span>
@@ -24482,6 +24672,12 @@
 	<span class="Type">NumberSequence</span>
 	<span class="ClassName Property">ParticleEmitter</span>
 	<span class="Name">Size</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">NumberSequence</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">Squash</span>
 </div>
 
 <div class="Property child">
@@ -24558,6 +24754,33 @@
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ParticleEmitterShape</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">Shape</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ParticleEmitterShapeInOut</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">ShapeInOut</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">ShapePartial</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ParticleEmitterShapeStyle</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">ShapeStyle</span>
 </div>
 
 <div class="Property child">
@@ -26589,12 +26812,12 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Instance</span>
+	<span class="Type">Model</span>
 	<span class="ClassName Function">Players</span>
 	<span class="Name">CreateHumanoidModelFromDescription</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">HumanoidDescription</span>
 			<span class="ParamName">description</span>
 		</span>
 		<span class="Parameter">
@@ -26613,7 +26836,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Instance</span>
+	<span class="Type">Model</span>
 	<span class="ClassName Function">Players</span>
 	<span class="Name">CreateHumanoidModelFromUserId</span>
 	<span class="Parameters">
@@ -26626,7 +26849,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Instance</span>
+	<span class="Type">Player</span>
 	<span class="ClassName Function">Players</span>
 	<span class="Name">CreateLocalPlayer</span>
 	<span class="Parameters"></span>
@@ -26634,7 +26857,7 @@
 </div>
 
 <div class="Function deprecated child">
-	<span class="Type">Instance</span>
+	<span class="Type">Model</span>
 	<span class="ClassName Function">Players</span>
 	<span class="Name">GetCharacterAppearanceAsync</span>
 	<span class="Parameters">
@@ -26661,7 +26884,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Instance</span>
+	<span class="Type">FriendPages</span>
 	<span class="ClassName Function">Players</span>
 	<span class="Name">GetFriendsAsync</span>
 	<span class="Parameters">
@@ -26674,7 +26897,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Instance</span>
+	<span class="Type">HumanoidDescription</span>
 	<span class="ClassName Function">Players</span>
 	<span class="Name">GetHumanoidDescriptionFromOutfitId</span>
 	<span class="Parameters">
@@ -26687,7 +26910,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Instance</span>
+	<span class="Type">HumanoidDescription</span>
 	<span class="ClassName Function">Players</span>
 	<span class="Name">GetHumanoidDescriptionFromUserId</span>
 	<span class="Parameters">
@@ -26785,7 +27008,7 @@
 	<span class="Name">ReportAbuse</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">player</span>
 		</span>
 		<span class="Parameter">
@@ -26950,7 +27173,7 @@
 			<span class="ParamName">chatType</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">player</span>
 		</span>
 		<span class="Parameter">
@@ -26958,7 +27181,7 @@
 			<span class="ParamName">message</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">targetPlayer</span>
 		</span>
 	</span>
@@ -26970,7 +27193,7 @@
 	<span class="Name">PlayerConnecting</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">player</span>
 		</span>
 	</span>
@@ -26982,7 +27205,7 @@
 	<span class="Name">PlayerDisconnecting</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">player</span>
 		</span>
 	</span>
@@ -26994,7 +27217,7 @@
 	<span class="Name">PlayerMembershipChanged</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">player</span>
 		</span>
 	</span>
@@ -27005,7 +27228,7 @@
 	<span class="Name">PlayerRejoining</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">player</span>
 		</span>
 	</span>
@@ -28384,6 +28607,13 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">SunRaysEffect</span>
 	<span class="Name">Spread</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ProcessInstancePhysicsService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
@@ -34950,7 +35180,7 @@
 	<span class="Name">PlayerAdded</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">player</span>
 		</span>
 	</span>
@@ -34961,7 +35191,7 @@
 	<span class="Name">PlayerRemoved</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">Player</span>
 			<span class="ParamName">player</span>
 		</span>
 	</span>
@@ -36092,6 +36322,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Trail</span>
+	<span class="Name">Brightness</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">ColorSequence</span>
 	<span class="ClassName Property">Trail</span>
 	<span class="Name">Color</span>
@@ -36327,7 +36563,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Instance</span>
+	<span class="Type">Tween</span>
 	<span class="ClassName Function">TweenService</span>
 	<span class="Name">Create</span>
 	<span class="Parameters">
@@ -39643,6 +39879,7 @@
 	<span class="Type">VoiceChatState</span>
 	<span class="ClassName Property">VoiceChatService</span>
 	<span class="Name">VoiceChatState</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -39653,6 +39890,7 @@
 	<span class="ClassName Function">VoiceChatService</span>
 	<span class="Name">GetAndClearCallFailureMessage</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -39892,6 +40130,7 @@
 			<span class="ParamName">updatedStates</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -39904,6 +40143,7 @@
 			<span class="ParamName">activityInfo</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -39922,6 +40162,7 @@
 			<span class="ParamName">new</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -44440,12 +44681,6 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">GraphicsMode</span>
-	<span class="Name">Direct3D9</span>
-	<span class="Value">3</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">GraphicsMode</span>
 	<span class="Name">OpenGL</span>
 	<span class="Value">4</span>
 </div>
@@ -47780,6 +48015,72 @@
 	<span class="EnumName">PartType</span>
 	<span class="Name">Cylinder</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ParticleEmitterShape</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleEmitterShape</span>
+	<span class="Name">Box</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleEmitterShape</span>
+	<span class="Name">Sphere</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleEmitterShape</span>
+	<span class="Name">Cylinder</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleEmitterShape</span>
+	<span class="Name">Disc</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ParticleEmitterShapeInOut</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleEmitterShapeInOut</span>
+	<span class="Name">Outward</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleEmitterShapeInOut</span>
+	<span class="Name">Inward</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleEmitterShapeInOut</span>
+	<span class="Name">InAndOut</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ParticleEmitterShapeStyle</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleEmitterShapeStyle</span>
+	<span class="Name">Volume</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleEmitterShapeStyle</span>
+	<span class="Name">Surface</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
