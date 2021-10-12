@@ -1387,11 +1387,63 @@
 <div class="Function child">
 	<span class="Type">int64</span>
 	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">GetMeshIdFromAliasName</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">aliasName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int64</span>
+	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">GetMeshIdFromAssetId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">assetId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int64</span>
+	<span class="ClassName Function">AssetManagerService</span>
 	<span class="Name">GetTextureId</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">aliasName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int64</span>
+	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">GetTextureIdFromAliasName</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">aliasName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int64</span>
+	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">GetTextureIdFromAssetId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">assetId</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -3639,6 +3691,14 @@
 			<span class="ParamName">cageType</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">BaseWrap</span>
+	<span class="Name">IsHSRReady</span>
+	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -8465,6 +8525,27 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DebuggerConnection</span>
+	<span class="Name">EvaluateWatch</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">expression</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">StackFrame</span>
+			<span class="ParamName">frame</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">StackFrame</span>
 	<span class="ClassName Function">DebuggerConnection</span>
 	<span class="Name">GetFrameById</span>
@@ -10790,6 +10871,18 @@
 		<span class="Parameter">
 			<span class="Type">Vector2</span>
 			<span class="ParamName">position</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">GamepadService</span>
+	<span class="Name">GamepadThumbstick1Changed</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector2</span>
+			<span class="ParamName">event</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -13374,6 +13467,14 @@
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DockWidgetPluginGui</span>
+	<span class="Name">RequestRaise</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">QWidgetPluginGui</span>
 	<span class="Superclass">PluginGui</span>
@@ -15174,6 +15275,48 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">Highlight</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">HighlightDepthMode</span>
+	<span class="ClassName Property">Highlight</span>
+	<span class="Name">DepthMode</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Highlight</span>
+	<span class="Name">Enabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Highlight</span>
+	<span class="Name">FillColor</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Highlight</span>
+	<span class="Name">FillTransparency</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Highlight</span>
+	<span class="Name">OutlineColor</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Highlight</span>
+	<span class="Name">OutlineTransparency</span>
 </div>
 
 <div class="Class deprecated">
@@ -21427,12 +21570,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">NewVoiceChatService</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[Service]</span>
-</div>
-
-<div class="Class">
 	<span class="Name">NoCollisionConstraint</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -21759,12 +21896,6 @@
 	<span class="Type">Material</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Material</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">BasePart</span>
-	<span class="Name">MaterialVariant</span>
 </div>
 
 <div class="Property child">
@@ -22247,7 +22378,7 @@
 	<span class="Name">CanCollideWith</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">BasePart</span>
 			<span class="ParamName">part</span>
 		</span>
 	</span>
@@ -32959,6 +33090,7 @@
 	<span class="Type">LoadCharacterLayeredClothing</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">LoadCharacterLayeredClothing</span>
+	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -33636,6 +33768,13 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Enable Script Analysis</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Enable Scrollbar Markers</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -35591,6 +35730,14 @@
 			<span class="ParamName">errorMessage</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">TemporaryCageMeshProvider</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -39593,6 +39740,15 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">VirtualInputManager</span>
+	<span class="Name">WaitForInputEventsProcessed</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">VirtualInputManager</span>
 	<span class="Name">sendRobloxEvent</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -39868,7 +40024,7 @@
 </div>
 
 <div class="Class">
-	<span class="Name">VoiceChatService</span>
+	<span class="Name">VoiceChatInternal</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
@@ -39877,9 +40033,8 @@
 <div class="Property deprecated child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">VoiceChatState</span>
-	<span class="ClassName Property">VoiceChatService</span>
+	<span class="ClassName Property">VoiceChatInternal</span>
 	<span class="Name">VoiceChatState</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[Deprecated]</span>
@@ -39887,7 +40042,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">string</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">GetAndClearCallFailureMessage</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -39896,7 +40051,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">Tuple</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">GetAudioProcessingSettings</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[Deprecated]</span>
@@ -39904,7 +40059,7 @@
 
 <div class="Function child">
 	<span class="Type">string</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">GetGroupId</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -39912,7 +40067,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">Tuple</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">GetMicDevices</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[Deprecated]</span>
@@ -39920,7 +40075,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">Array</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">GetParticipants</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[Deprecated]</span>
@@ -39928,7 +40083,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">Tuple</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">GetSpeakerDevices</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[Deprecated]</span>
@@ -39936,7 +40091,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">int</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">GetVoiceChatApiVersion</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[Deprecated]</span>
@@ -39944,7 +40099,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">int</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">GetVoiceChatAvailable</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[Deprecated]</span>
@@ -39952,7 +40107,7 @@
 
 <div class="Function child">
 	<span class="Type">bool</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">IsContextVoiceEnabled</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -39960,7 +40115,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">IsPublishPaused</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[Deprecated]</span>
@@ -39968,7 +40123,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">IsSubscribePaused</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -39981,7 +40136,7 @@
 
 <div class="Function child">
 	<span class="Type">bool</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">IsVoiceEnabledForUserIdAsync</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -39994,7 +40149,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">JoinByGroupId</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -40012,7 +40167,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">JoinByGroupIdToken</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -40030,7 +40185,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">void</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">Leave</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[Deprecated]</span>
@@ -40038,7 +40193,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">PublishPause</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -40051,7 +40206,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">void</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">SetMicDevice</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -40068,7 +40223,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">void</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">SetSpeakerDevice</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -40085,7 +40240,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">SubscribePause</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -40102,7 +40257,7 @@
 
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
-	<span class="ClassName Function">VoiceChatService</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
 	<span class="Name">SubscribePauseAll</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -40114,7 +40269,7 @@
 </div>
 
 <div class="Event deprecated child">
-	<span class="ClassName Event">VoiceChatService</span>
+	<span class="ClassName Event">VoiceChatInternal</span>
 	<span class="Name">ParticipantsStateChanged</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -40135,7 +40290,7 @@
 </div>
 
 <div class="Event deprecated child">
-	<span class="ClassName Event">VoiceChatService</span>
+	<span class="ClassName Event">VoiceChatInternal</span>
 	<span class="Name">PlayerMicActivitySignalChange</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -40148,7 +40303,7 @@
 </div>
 
 <div class="Event deprecated child">
-	<span class="ClassName Event">VoiceChatService</span>
+	<span class="ClassName Event">VoiceChatInternal</span>
 	<span class="Name">StateChanged</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -40164,6 +40319,25 @@
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">VoiceChatService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">VoiceChatService</span>
+	<span class="Name">IsVoiceEnabledForUserIdAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Class deprecated">
@@ -44716,6 +44890,22 @@
 <div class="EnumItem child">
 	<span class="EnumName">HandlesStyle</span>
 	<span class="Name">Movement</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">HighlightDepthMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">HighlightDepthMode</span>
+	<span class="Name">AlwaysOnTop</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">HighlightDepthMode</span>
+	<span class="Name">Default</span>
 	<span class="Value">1</span>
 </div>
 
