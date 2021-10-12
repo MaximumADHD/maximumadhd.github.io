@@ -112,6 +112,12 @@ div.Moved::before
 	color: #FF7FFF;
 }
 
+div.Forking::before
+{
+	content: "Forking";
+	color: #FF7FFF;
+}
+
 span.MergeListInto::before
 {
 	content: "Into";
@@ -397,7 +403,8 @@ span.ChangeList li
 	color: #AFAFAF !important;
 }
 
-.child
+.child,
+div.Forking
 {
 	margin-left: 40px;
 }

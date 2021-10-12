@@ -2,6 +2,521 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="499"/>
+<h2>Version 0.499.0.4990382</h2>
+
+<div class="Added">
+	<span class="Class">
+		<span class="Name">VoiceChatInternal</span>
+		<span class="Superclass">Instance</span>
+		<span class="Tag">[NotCreatable]</span>
+		<span class="Tag">[Service]</span>
+	</span>
+	<div class="Forking">
+		<span class="ChangeFrom">
+			<span class="Class">
+				<span class="Name">VoiceChatService</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">Highlight</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">HighlightDepthMode</span>
+				<span class="ClassName Property">Highlight</span>
+				<span class="Name">DepthMode</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">Highlight</span>
+				<span class="Name">Enabled</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Color3</span>
+				<span class="ClassName Property">Highlight</span>
+				<span class="Name">FillColor</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">Highlight</span>
+				<span class="Name">FillTransparency</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Color3</span>
+				<span class="ClassName Property">Highlight</span>
+				<span class="Name">OutlineColor</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">Highlight</span>
+				<span class="Name">OutlineTransparency</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">TemporaryCageMeshProvider</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Enable Scrollbar Markers</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">int64</span>
+			<span class="ClassName Function">AssetManagerService</span>
+			<span class="Name">GetMeshIdFromAliasName</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">aliasName</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">int64</span>
+			<span class="ClassName Function">AssetManagerService</span>
+			<span class="Name">GetMeshIdFromAssetId</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">assetId</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">int64</span>
+			<span class="ClassName Function">AssetManagerService</span>
+			<span class="Name">GetTextureIdFromAliasName</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">aliasName</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">int64</span>
+			<span class="ClassName Function">AssetManagerService</span>
+			<span class="Name">GetTextureIdFromAssetId</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">assetId</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">BaseWrap</span>
+			<span class="Name">IsHSRReady</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">int</span>
+			<span class="ClassName Function">DebuggerConnection</span>
+			<span class="Name">EvaluateWatch</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">expression</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">StackFrame</span>
+					<span class="ParamName">frame</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">callback</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">DockWidgetPluginGui</span>
+			<span class="Name">RequestRaise</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">VirtualInputManager</span>
+			<span class="Name">WaitForInputEventsProcessed</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">GamepadService</span>
+			<span class="Name">GamepadThumbstick1Changed</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Vector2</span>
+					<span class="ParamName">event</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">HighlightDepthMode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HighlightDepthMode</span>
+				<span class="Name">AlwaysOnTop</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HighlightDepthMode</span>
+				<span class="Name">Default</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">BasePart</span>
+		<span class="Name">CanCollideWith</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">part</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">BasePart</span>
+					<span class="ParamName">part</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">NewVoiceChatService</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">MaterialVariant</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">VoiceChatService</span>
+			<span class="Name">VoiceChatState</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">GetAndClearCallFailureMessage</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">GetAudioProcessingSettings</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">GetMicDevices</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">GetParticipants</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">GetSpeakerDevices</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">GetVoiceChatApiVersion</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">GetVoiceChatAvailable</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">IsPublishPaused</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">IsSubscribePaused</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">JoinByGroupId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">Leave</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">PublishPause</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">SetMicDevice</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">SetSpeakerDevice</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">SubscribePause</span>
+		</span>
+	</span>
+</div>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">VoiceChatService</span>
+			<span class="Name">SubscribePauseAll</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">VoiceChatService</span>
+			<span class="Name">ParticipantsStateChanged</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotCreatable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">VoiceChatService</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
 <hr id="498"/>
 <h2>Version 0.498.0.4980398</h2>
 
