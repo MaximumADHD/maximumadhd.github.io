@@ -448,6 +448,12 @@
 	</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">Instance</span>
+	<span class="Name">Destroying</span>
+	<span class="Parameters"></span>
+</div>
+
 <div class="Class">
 	<span class="Name">ABTestService</span>
 	<span class="Superclass">Instance</span>
@@ -1295,6 +1301,14 @@
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">IsAvatar</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -4370,6 +4384,97 @@
 </div>
 
 <div class="Class">
+	<span class="Name">BreakpointManager</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">BreakpointManager</span>
+	<span class="Name">AddBreakpoint</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">script</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">line</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">condition</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">MetaBreakpoint</span>
+	<span class="ClassName Function">BreakpointManager</span>
+	<span class="Name">GetBreakpointById</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">metaBreakpointId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">BreakpointManager</span>
+	<span class="Name">RemoveBreakpointById</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">metaBreakpointId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">BreakpointManager</span>
+	<span class="Name">MetaBreakpointAdded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">MetaBreakpoint</span>
+			<span class="ParamName">breakpoint</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">BreakpointManager</span>
+	<span class="Name">MetaBreakpointChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">MetaBreakpoint</span>
+			<span class="ParamName">breakpoint</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">BreakpointManager</span>
+	<span class="Name">MetaBreakpointRemoved</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">MetaBreakpoint</span>
+			<span class="ParamName">breakpoint</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">BrowserService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -6438,6 +6543,11 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">LinearVelocity</span>
 	<span class="Name">VectorVelocity</span>
+</div>
+
+<div class="Class">
+	<span class="Name">Plane</span>
+	<span class="Superclass">Constraint</span>
 </div>
 
 <div class="Class">
@@ -9037,6 +9147,14 @@
 </div>
 
 <div class="Class">
+	<span class="Name">DebuggerUIService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">DebuggerVariable</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -9885,7 +10003,7 @@
 	<span class="Name">Hit</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
+			<span class="Type">BasePart</span>
 			<span class="ParamName">part</span>
 		</span>
 		<span class="Parameter">
@@ -17218,6 +17336,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">Anchored</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">ImporterMeshSettings</span>
 	<span class="Name">Dimensions</span>
@@ -17280,6 +17404,13 @@
 	<span class="ClassName Property">ImporterRootSettings</span>
 	<span class="Name">PolygonCount</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">RigType</span>
+	<span class="ClassName Property">ImporterRootSettings</span>
+	<span class="Name">RigType</span>
 </div>
 
 <div class="Property child">
@@ -21062,6 +21193,138 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">MetaBreakpoint</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">MetaBreakpoint</span>
+	<span class="Name">Condition</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">MetaBreakpoint</span>
+	<span class="Name">Id</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">MetaBreakpoint</span>
+	<span class="Name">Line</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">MetaBreakpoint</span>
+	<span class="Name">Script</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MetaBreakpoint</span>
+	<span class="Name">Enabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MetaBreakpoint</span>
+	<span class="Name">Valid</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">MetaBreakpoint</span>
+	<span class="Name">Remove</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">MetaBreakpoint</span>
+	<span class="Name">SetCondition</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">condition</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">MetaBreakpoint</span>
+	<span class="Name">SetEnabled</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">enabled</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">MetaBreakpoint</span>
+	<span class="Name">SetLine</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">line</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">MetaBreakpointContext</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -30351,6 +30614,14 @@
 </div>
 
 <div class="Class">
+	<span class="Name">ScriptChangeService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ScriptContext</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -34283,6 +34554,28 @@
 </div>
 
 <div class="Class">
+	<span class="Name">StudioAssetService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">StudioAssetService</span>
+	<span class="Name">SerializeInstances</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">instances</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">StudioData</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -34423,6 +34716,14 @@
 	<span class="Name">OrientationChanged</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">StudioScriptDebugEventListener</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -36219,6 +36520,20 @@
 <div class="Class">
 	<span class="Name">TextSource</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TextSource</span>
+	<span class="Name">CanSend</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">TextSource</span>
+	<span class="Name">UserId</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Class">
@@ -36409,6 +36724,36 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ToolboxService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Callback child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Callback">ToolboxService</span>
+	<span class="Name">ProcessAssetInsertionDrag</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">assetId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">assetTypeId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">instances</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[NoYield]</span>
 </div>
 
 <div class="Class">
@@ -49378,6 +49723,52 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">RigType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RigType</span>
+	<span class="Name">R6</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RigType</span>
+	<span class="Name">R15</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RigType</span>
+	<span class="Name">Rthro</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RigType</span>
+	<span class="Name">RthroNarrow</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RigType</span>
+	<span class="Name">S15</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RigType</span>
+	<span class="Name">Custom</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RigType</span>
+	<span class="Name">None</span>
+	<span class="Value">6</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">RollOffMode</span>
 </div>
 
@@ -51509,6 +51900,40 @@
 	<span class="EnumName">TerrainAcquisitionMethod</span>
 	<span class="Name">Other</span>
 	<span class="Value">11</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">TextChatMessageStatus</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextChatMessageStatus</span>
+	<span class="Name">Success</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextChatMessageStatus</span>
+	<span class="Name">TextFilterFailed</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextChatMessageStatus</span>
+	<span class="Name">Floodchecked</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextChatMessageStatus</span>
+	<span class="Name">InvalidPrivacySettings</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextChatMessageStatus</span>
+	<span class="Name">InvalidTextChannelPermissions</span>
+	<span class="Value">5</span>
 </div>
 
 <div class="Enum">
