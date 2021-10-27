@@ -2,6 +2,397 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="501"/>
+<h2>Version 0.501.0.5010363</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ConfigureServerService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">VoiceChannel</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ImporterGroupSettings</span>
+			<span class="Name">InsertInWorkspace</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ImporterRootSettings</span>
+			<span class="Name">InsertInWorkspace</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">MetaBreakpoint</span>
+			<span class="Name">ContinueExecution</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Vector2</span>
+			<span class="ClassName Property">ScrollingFrame</span>
+			<span class="Name">ScrollVelocity</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">TextBox</span>
+			<span class="Name">ContentText</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">TextButton</span>
+			<span class="Name">ContentText</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">TextLabel</span>
+			<span class="Name">ContentText</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">VRService</span>
+			<span class="Name">VRDeviceAvailable</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">NoPromptUpdateOutfit</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">outfitId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">HumanoidDescription</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">HumanoidRigType</span>
+					<span class="ParamName">rigType</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">PerformUpdateOutfit</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">HumanoidDescription</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">PromptUpdateOutfit</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">outfitId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">HumanoidDescription</span>
+					<span class="ParamName">updatedOutfit</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">HumanoidRigType</span>
+					<span class="ParamName">rigType</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">SignalUpdateOutfitFailed</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">SignalUpdateOutfitPermissionDenied</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">MetaBreakpoint</span>
+			<span class="Name">SetContinueExecution</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">enabled</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">OpenPromptUpdateOutfit</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">outfitId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">HumanoidDescription</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">HumanoidRigType</span>
+					<span class="ParamName">rigType</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">PromptUpdateOutfitCompleted</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">AvatarPromptResult</span>
+					<span class="ParamName">result</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters and return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">MetaBreakpoint</span>
+		<span class="Name">SetEnabled</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">enabled</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">status</span>
+				</span>
+			</span>
+			<span class="Type WithReturn">int</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">enabled</span>
+				</span>
+			</span>
+			<span class="Type WithReturn">void</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">RigType</span>
+		<span class="Name">R15</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">1</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">0</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">RigType</span>
+		<span class="Name">Rthro</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">2</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">1</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">RigType</span>
+		<span class="Name">RthroNarrow</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">3</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">2</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">RigType</span>
+		<span class="Name">Custom</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">5</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">3</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">RigType</span>
+		<span class="Name">None</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">6</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">4</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ImporterRootSettings</span>
+			<span class="Name">ZeroOrigin</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">RigType</span>
+			<span class="Name">R6</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">RigType</span>
+			<span class="Name">S15</span>
+		</span>
+	</span>
+</div>
+
 <hr id="500"/>
 <h2>Version 0.500.0.5000375</h2>
 

@@ -2450,6 +2450,28 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">NoPromptUpdateOutfit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">outfitId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">HumanoidDescription</span>
+			<span class="ParamName">humanoidDescription</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">HumanoidRigType</span>
+			<span class="ParamName">rigType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AvatarEditorService</span>
 	<span class="Name">PerformCreateOutfit</span>
@@ -2557,6 +2579,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">PerformUpdateOutfit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">HumanoidDescription</span>
+			<span class="ParamName">humanoidDescription</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AvatarEditorService</span>
 	<span class="Name">PromptAllowInventoryReadAccess</span>
 	<span class="Parameters"></span>
 </div>
@@ -2636,6 +2671,27 @@
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName">shouldFavorite</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">PromptUpdateOutfit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">outfitId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">HumanoidDescription</span>
+			<span class="ParamName">updatedOutfit</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">HumanoidRigType</span>
+			<span class="ParamName">rigType</span>
 		</span>
 	</span>
 </div>
@@ -2746,6 +2802,22 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">SignalUpdateOutfitFailed</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">SignalUpdateOutfitPermissionDenied</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Event child">
 	<span class="ClassName Event">AvatarEditorService</span>
 	<span class="Name">OpenAllowInventoryReadAccess</span>
@@ -2834,6 +2906,27 @@
 
 <div class="Event child">
 	<span class="ClassName Event">AvatarEditorService</span>
+	<span class="Name">OpenPromptUpdateOutfit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">outfitId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">HumanoidDescription</span>
+			<span class="ParamName">humanoidDescription</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">HumanoidRigType</span>
+			<span class="ParamName">rigType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AvatarEditorService</span>
 	<span class="Name">PromptAllowInventoryReadAccessCompleted</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -2903,6 +2996,18 @@
 <div class="Event child">
 	<span class="ClassName Event">AvatarEditorService</span>
 	<span class="Name">PromptSetFavoriteCompleted</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AvatarPromptResult</span>
+			<span class="ParamName">result</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AvatarEditorService</span>
+	<span class="Name">PromptUpdateOutfitCompleted</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
@@ -6103,6 +6208,13 @@
 <div class="Class">
 	<span class="Name">Configuration</span>
 	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ConfigureServerService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
@@ -12255,6 +12367,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TextButton</span>
+	<span class="Name">ContentText</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">Font</span>
 	<span class="ClassName Property">TextButton</span>
@@ -12520,6 +12639,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TextLabel</span>
+	<span class="Name">ContentText</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">Font</span>
 	<span class="ClassName Property">TextLabel</span>
@@ -12781,6 +12907,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Property">ScrollingFrame</span>
+	<span class="Name">ScrollVelocity</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">ScrollingDirection</span>
 	<span class="ClassName Property">ScrollingFrame</span>
@@ -12914,6 +13049,13 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TextBox</span>
+	<span class="Name">ContentText</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -17321,6 +17463,12 @@
 	<span class="Name">ImportAsModelAsset</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterGroupSettings</span>
+	<span class="Name">InsertInWorkspace</span>
+</div>
+
 <div class="Class">
 	<span class="Name">ImporterJointSettings</span>
 	<span class="Superclass">ImporterBaseSettings</span>
@@ -17390,6 +17538,12 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ImporterRootSettings</span>
+	<span class="Name">InsertInWorkspace</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterRootSettings</span>
 	<span class="Name">InvertNegativeFaces</span>
 </div>
 
@@ -17432,12 +17586,6 @@
 	<span class="Type">NormalId</span>
 	<span class="ClassName Property">ImporterRootSettings</span>
 	<span class="Name">WorldUp</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">ZeroOrigin</span>
 </div>
 
 <div class="Class">
@@ -21241,6 +21389,15 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">MetaBreakpoint</span>
+	<span class="Name">ContinueExecution</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MetaBreakpoint</span>
 	<span class="Name">Enabled</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -21287,17 +21444,26 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">int</span>
+	<span class="Type">void</span>
+	<span class="ClassName Function">MetaBreakpoint</span>
+	<span class="Name">SetContinueExecution</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">enabled</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
 	<span class="ClassName Function">MetaBreakpoint</span>
 	<span class="Name">SetEnabled</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName">enabled</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">status</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -39153,6 +39319,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VRService</span>
+	<span class="Name">VRDeviceAvailable</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">VRService</span>
 	<span class="Name">VRDeviceName</span>
@@ -40366,6 +40541,11 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">VoiceChannel</span>
+	<span class="Superclass">Instance</span>
 </div>
 
 <div class="Class">
@@ -49728,44 +49908,32 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">RigType</span>
-	<span class="Name">R6</span>
+	<span class="Name">R15</span>
 	<span class="Value">0</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">RigType</span>
-	<span class="Name">R15</span>
+	<span class="Name">Rthro</span>
 	<span class="Value">1</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">RigType</span>
-	<span class="Name">Rthro</span>
+	<span class="Name">RthroNarrow</span>
 	<span class="Value">2</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">RigType</span>
-	<span class="Name">RthroNarrow</span>
+	<span class="Name">Custom</span>
 	<span class="Value">3</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">RigType</span>
-	<span class="Name">S15</span>
-	<span class="Value">4</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">RigType</span>
-	<span class="Name">Custom</span>
-	<span class="Value">5</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">RigType</span>
 	<span class="Name">None</span>
-	<span class="Value">6</span>
+	<span class="Value">4</span>
 </div>
 
 <div class="Enum">
