@@ -898,6 +898,104 @@
 	</span>
 </div>
 
+<div class="Class">
+	<span class="Name">AnimationClipProvider</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function deprecated child">
+	<span class="Type">AnimationClip</span>
+	<span class="ClassName Function">AnimationClipProvider</span>
+	<span class="Name">GetAnimationClip</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">assetId</span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">AnimationClip</span>
+	<span class="ClassName Function">AnimationClipProvider</span>
+	<span class="Name">GetAnimationClipAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">assetId</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function deprecated child">
+	<span class="Type">AnimationClip</span>
+	<span class="ClassName Function">AnimationClipProvider</span>
+	<span class="Name">GetAnimationClipById</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">assetId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">useCache</span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">AnimationClipProvider</span>
+	<span class="Name">GetAnimations</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">AnimationClipProvider</span>
+	<span class="Name">GetMemStats</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Content</span>
+	<span class="ClassName Function">AnimationClipProvider</span>
+	<span class="Name">RegisterActiveAnimationClip</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">AnimationClip</span>
+			<span class="ParamName">animationClip</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Content</span>
+	<span class="ClassName Function">AnimationClipProvider</span>
+	<span class="Name">RegisterAnimationClip</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">AnimationClip</span>
+			<span class="ParamName">animationClip</span>
+		</span>
+	</span>
+</div>
+
 <div class="Class deprecated">
 	<span class="Name">AnimationController</span>
 	<span class="Superclass">Instance</span>
@@ -1314,22 +1412,20 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetImportService</span>
-	<span class="Name">UpdateSettings</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">settings</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AssetImportService</span>
 	<span class="Name">Upload</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AssetImportService</span>
+	<span class="Name">SettingsChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">property</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -8166,6 +8262,73 @@
 </div>
 
 <div class="Class">
+	<span class="Name">DataModelPatchService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">DataModelPatchService</span>
+	<span class="Name">GetPatch</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">patchName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DataModelPatchService</span>
+	<span class="Name">RegisterPatch</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">patchName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">behaviorName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">localConfigPath</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DataModelPatchService</span>
+	<span class="Name">UpdatePatch</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">patchName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callbackFunction</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">DataModelSession</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -9264,6 +9427,19 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DebuggerUIService</span>
+	<span class="Name">EditBreakpoint</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">metaBreakpointId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -19591,6 +19767,14 @@
 </div>
 
 <div class="Class">
+	<span class="Name">LuauScriptAnalyzerService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">MarketplaceService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -21380,6 +21564,15 @@
 <div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">MetaBreakpoint</span>
+	<span class="Name">LogMessage</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">MetaBreakpoint</span>
 	<span class="Name">Script</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -21399,6 +21592,15 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">MetaBreakpoint</span>
 	<span class="Name">Enabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MetaBreakpoint</span>
+	<span class="Name">IsLogpoint</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
@@ -25086,6 +25288,71 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PackageUIService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">PackageUIService</span>
+	<span class="Name">ConvertToPackageUpload</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">uploadUrl</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">cloneInstances</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">originalInstances</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">PackageUIService</span>
+	<span class="Name">OnConvertToPackageResult</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isSuccessful</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">errorMessage</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">PackageUIService</span>
+	<span class="Name">OnOpenConvertToPackagePlugin</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">instances</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">cloneInstances</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -30787,6 +31054,70 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">ScriptChangeService</span>
+	<span class="Name">ScriptAdded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ScriptChangeService</span>
+	<span class="Name">ScriptBeingRemoved</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ScriptChangeService</span>
+	<span class="Name">ScriptChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">property</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ScriptChangeService</span>
+	<span class="Name">ScriptFullNameChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ScriptChangeService</span>
+	<span class="Name">ScriptSourceChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">ScriptContext</span>
 	<span class="Superclass">Instance</span>
@@ -36208,6 +36539,14 @@
 </div>
 
 <div class="Class">
+	<span class="Name">TemporaryScriptService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">TerrainRegion</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -40849,6 +41188,7 @@
 <div class="Class">
 	<span class="Name">VoiceChatService</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 </div>
 
