@@ -1419,11 +1419,33 @@
 
 <div class="Event child">
 	<span class="ClassName Event">AssetImportService</span>
+	<span class="Name">ProgressUpdate</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">progressRatio</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AssetImportService</span>
 	<span class="Name">SettingsChanged</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">property</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AssetImportService</span>
+	<span class="Name">UploadFinished</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">succeeded</span>
 		</span>
 	</span>
 </div>
@@ -6775,6 +6797,40 @@
 </div>
 
 <div class="Class">
+	<span class="Name">RigidConstraint</span>
+	<span class="Superclass">Constraint</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RigidConstraint</span>
+	<span class="Name">Broken</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RigidConstraint</span>
+	<span class="Name">DestructionEnabled</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">RigidConstraint</span>
+	<span class="Name">DestructionForce</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">RigidConstraint</span>
+	<span class="Name">DestructionTorque</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">RodConstraint</span>
 	<span class="Superclass">Constraint</span>
 </div>
@@ -9509,6 +9565,22 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DebuggerUIService</span>
+	<span class="Name">Pause</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DebuggerUIService</span>
+	<span class="Name">Resume</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">DebuggerVariable</span>
 	<span class="Superclass">Instance</span>
@@ -11317,6 +11389,7 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -19883,6 +19956,70 @@
 </div>
 
 <div class="Class">
+	<span class="Name">MarkerCurve</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">MarkerCurve</span>
+	<span class="Name">Length</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">MarkerCurve</span>
+	<span class="Name">GetMarkerAtIndex</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">index</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">MarkerCurve</span>
+	<span class="Name">GetMarkers</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">MarkerCurve</span>
+	<span class="Name">InsertMarkerAtTime</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">time</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">marker</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">MarkerCurve</span>
+	<span class="Name">RemoveMarkerAtIndex</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">startingIndex</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName default">count</span>
+			<span class="ParamDefault int">1</span>
+		</span>
+	</span>
+</div>
+
+<div class="Class">
 	<span class="Name">MarketplaceService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -20801,114 +20938,190 @@
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Brick</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Cobblestone</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Concrete</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">CorrodedMetal</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">DiamondPlate</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Fabric</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Foil</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Granite</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Grass</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Ice</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Marble</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Metal</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Pebble</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Plastic</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Sand</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Slate</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">SmoothPlastic</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Wood</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">WoodPlanks</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MaterialService</span>
+	<span class="Name">ClearOverridePartMaterial</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">Material</span>
+			<span class="ParamName">material</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Function">MaterialService</span>
+	<span class="Name">GetOverridePartMaterial</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">Material</span>
+			<span class="ParamName">material</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MaterialService</span>
+	<span class="Name">SetOverridePartMaterial</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">MaterialVariant</span>
+			<span class="ParamName">materialVariant</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -21709,15 +21922,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">MetaBreakpoint</span>
 	<span class="Name">IsLogpoint</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">MetaBreakpoint</span>
-	<span class="Name">Valid</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
@@ -25871,6 +26075,12 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PathfindingLink</span>
 	<span class="Name">IsBidirectional</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PathfindingLink</span>
+	<span class="Name">ModifierId</span>
 </div>
 
 <div class="Class">
@@ -31590,6 +31800,27 @@
 </div>
 
 <div class="Class">
+	<span class="Name">ScriptRegistrationService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">LuaSourceContainer</span>
+	<span class="ClassName Function">ScriptRegistrationService</span>
+	<span class="Name">GetSourceContainerByScriptGuid</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">guid</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ScriptService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -34643,6 +34874,13 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
+	<span class="Name">Enable Autocomplete Doc View</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
 	<span class="Name">Enable Script Analysis</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -34658,6 +34896,13 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Enable Signature Help</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Enable Signature Help Doc View</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -34858,6 +35103,15 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Debugger Error Line Color</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Doc View Code Background Color</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -37010,6 +37264,47 @@
 <div class="Class">
 	<span class="Name">TextChannel</span>
 	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">TextChannel</span>
+	<span class="Name">AddUserAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">TextChatMessage</span>
+	<span class="ClassName Function">TextChannel</span>
+	<span class="Name">DisplaySystemMessage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">systemMessage</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">metadata</span>
+			<span class="ParamDefault string"></span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TextChannel</span>
+	<span class="Name">MessageReceived</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">TextChatMessage</span>
+			<span class="ParamName">textChatMessage</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -40326,6 +40621,14 @@
 	<span class="Tag">[Service]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VersionControlService</span>
+	<span class="Name">ScriptCollabEnabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">VirtualInputManager</span>
 	<span class="Superclass">Instance</span>
@@ -41293,14 +41596,15 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Class">
+<div class="Class deprecated">
 	<span class="Name">VoiceChatService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">VoiceChatService</span>
 	<span class="Name">IsVoiceEnabledForUserIdAsync</span>
@@ -41311,6 +41615,7 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class deprecated">
@@ -51322,6 +51627,12 @@
 	<span class="Value">37</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">StudioScriptEditorColorCategories</span>
+	<span class="Name">DocViewCodeBackground</span>
+	<span class="Value">38</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">StudioScriptEditorColorPresets</span>
 </div>
@@ -51734,320 +52045,326 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DebuggerCurrentLine</span>
+	<span class="Name">DocViewCodeBackground</span>
 	<span class="Value">63</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DebuggerErrorLine</span>
+	<span class="Name">DebuggerCurrentLine</span>
 	<span class="Value">64</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffFilePathText</span>
+	<span class="Name">DebuggerErrorLine</span>
 	<span class="Value">65</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextHunkInfo</span>
+	<span class="Name">DiffFilePathText</span>
 	<span class="Value">66</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextNoChange</span>
+	<span class="Name">DiffTextHunkInfo</span>
 	<span class="Value">67</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextAddition</span>
+	<span class="Name">DiffTextNoChange</span>
 	<span class="Value">68</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextDeletion</span>
+	<span class="Name">DiffTextAddition</span>
 	<span class="Value">69</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextSeparatorBackground</span>
+	<span class="Name">DiffTextDeletion</span>
 	<span class="Value">70</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextNoChangeBackground</span>
+	<span class="Name">DiffTextSeparatorBackground</span>
 	<span class="Value">71</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextAdditionBackground</span>
+	<span class="Name">DiffTextNoChangeBackground</span>
 	<span class="Value">72</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextDeletionBackground</span>
+	<span class="Name">DiffTextAdditionBackground</span>
 	<span class="Value">73</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNum</span>
+	<span class="Name">DiffTextDeletionBackground</span>
 	<span class="Value">74</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNumSeparatorBackground</span>
+	<span class="Name">DiffLineNum</span>
 	<span class="Value">75</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNumNoChangeBackground</span>
+	<span class="Name">DiffLineNumSeparatorBackground</span>
 	<span class="Value">76</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNumAdditionBackground</span>
+	<span class="Name">DiffLineNumNoChangeBackground</span>
 	<span class="Value">77</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNumDeletionBackground</span>
+	<span class="Name">DiffLineNumAdditionBackground</span>
 	<span class="Value">78</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffFilePathBackground</span>
+	<span class="Name">DiffLineNumDeletionBackground</span>
 	<span class="Value">79</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffFilePathBorder</span>
+	<span class="Name">DiffFilePathBackground</span>
 	<span class="Value">80</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ChatIncomingBgColor</span>
+	<span class="Name">DiffFilePathBorder</span>
 	<span class="Value">81</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ChatIncomingTextColor</span>
+	<span class="Name">ChatIncomingBgColor</span>
 	<span class="Value">82</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ChatOutgoingBgColor</span>
+	<span class="Name">ChatIncomingTextColor</span>
 	<span class="Value">83</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ChatOutgoingTextColor</span>
+	<span class="Name">ChatOutgoingBgColor</span>
 	<span class="Value">84</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ChatModeratedMessageColor</span>
+	<span class="Name">ChatOutgoingTextColor</span>
 	<span class="Value">85</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">Separator</span>
+	<span class="Name">ChatModeratedMessageColor</span>
 	<span class="Value">86</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ButtonBorder</span>
+	<span class="Name">Separator</span>
 	<span class="Value">87</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ButtonText</span>
+	<span class="Name">ButtonBorder</span>
 	<span class="Value">88</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">InputFieldBorder</span>
+	<span class="Name">ButtonText</span>
 	<span class="Value">89</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">CheckedFieldBackground</span>
+	<span class="Name">InputFieldBorder</span>
 	<span class="Value">90</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">CheckedFieldBorder</span>
+	<span class="Name">CheckedFieldBackground</span>
 	<span class="Value">91</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">CheckedFieldIndicator</span>
+	<span class="Name">CheckedFieldBorder</span>
 	<span class="Value">92</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">HeaderSection</span>
+	<span class="Name">CheckedFieldIndicator</span>
 	<span class="Value">93</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">Midlight</span>
+	<span class="Name">HeaderSection</span>
 	<span class="Value">94</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">StatusBar</span>
+	<span class="Name">Midlight</span>
 	<span class="Value">95</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogButton</span>
+	<span class="Name">StatusBar</span>
 	<span class="Value">96</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogButtonText</span>
+	<span class="Name">DialogButton</span>
 	<span class="Value">97</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogButtonBorder</span>
+	<span class="Name">DialogButtonText</span>
 	<span class="Value">98</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogMainButton</span>
+	<span class="Name">DialogButtonBorder</span>
 	<span class="Value">99</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogMainButtonText</span>
+	<span class="Name">DialogMainButton</span>
 	<span class="Value">100</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">InfoBarWarningBackground</span>
+	<span class="Name">DialogMainButtonText</span>
 	<span class="Value">101</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">InfoBarWarningText</span>
+	<span class="Name">InfoBarWarningBackground</span>
 	<span class="Value">102</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptEditorCurrentLine</span>
+	<span class="Name">InfoBarWarningText</span>
 	<span class="Value">103</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptMethod</span>
+	<span class="Name">ScriptEditorCurrentLine</span>
 	<span class="Value">104</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptProperty</span>
+	<span class="Name">ScriptMethod</span>
 	<span class="Value">105</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptNil</span>
+	<span class="Name">ScriptProperty</span>
 	<span class="Value">106</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptBool</span>
+	<span class="Name">ScriptNil</span>
 	<span class="Value">107</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptFunction</span>
+	<span class="Name">ScriptBool</span>
 	<span class="Value">108</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptLocal</span>
+	<span class="Name">ScriptFunction</span>
 	<span class="Value">109</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptSelf</span>
+	<span class="Name">ScriptLocal</span>
 	<span class="Value">110</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptLuauKeyword</span>
+	<span class="Name">ScriptSelf</span>
 	<span class="Value">111</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptFunctionName</span>
+	<span class="Name">ScriptLuauKeyword</span>
 	<span class="Value">112</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptTodo</span>
+	<span class="Name">ScriptFunctionName</span>
 	<span class="Value">113</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptBracket</span>
+	<span class="Name">ScriptTodo</span>
 	<span class="Value">114</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">AttributeCog</span>
+	<span class="Name">ScriptBracket</span>
 	<span class="Value">115</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">AttributeCog</span>
+	<span class="Value">116</span>
 </div>
 
 <div class="Enum">
