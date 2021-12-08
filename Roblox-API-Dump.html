@@ -3908,6 +3908,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">BaseWrap</span>
+	<span class="Name">HSRAssetId</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">BaseWrap</span>
 	<span class="Name">ImportOriginWorld</span>
@@ -4964,6 +4972,14 @@
 <div class="Class">
 	<span class="Name">CacheableContentProvider</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">HSRDataContentProvider</span>
+	<span class="Superclass">CacheableContentProvider</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -6803,7 +6819,6 @@
 <div class="Class">
 	<span class="Name">RigidConstraint</span>
 	<span class="Superclass">Constraint</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -7395,6 +7410,14 @@
 			<span class="ParamName">meshId</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">ContentProvider</span>
+	<span class="Name">GetDetailedFailedRequests</span>
+	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -9565,6 +9588,27 @@
 		<span class="Parameter">
 			<span class="Type">int</span>
 			<span class="ParamName">metaBreakpointId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DebuggerUIService</span>
+	<span class="Name">OpenScriptAtLine</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">guid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">debuggerConnectionId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">line</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -15860,6 +15904,11 @@
 </div>
 
 <div class="Class">
+	<span class="Name">HiddenSurfaceRemovalAsset</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Class">
 	<span class="Name">Highlight</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -22140,6 +22189,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">MetaBreakpoint</span>
+	<span class="Name">GetContexts</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">int</span>
 	<span class="ClassName Function">MetaBreakpoint</span>
 	<span class="Name">Remove</span>
@@ -26132,6 +26189,38 @@
 	<span class="Type">ParticleEmitterShapeStyle</span>
 	<span class="ClassName Property">ParticleEmitter</span>
 	<span class="Name">ShapeStyle</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">NumberRange</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">FlipbookFramerate</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">FlipbookIncompatible</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ParticleFlipbookLayout</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">FlipbookLayout</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ParticleFlipbookMode</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">FlipbookMode</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">FlipbookStartRandom</span>
 </div>
 
 <div class="Property child">
@@ -35609,6 +35698,13 @@
 	<span class="Name">Show Navigation Mesh</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Show Pathfinding Links</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">Array</span>
 	<span class="ClassName Function">Studio</span>
@@ -36002,6 +36098,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">GetPlaceIsPersistedToCloud</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">GetResourceByCategory</span>
@@ -36044,6 +36148,14 @@
 	<span class="Name">GetUserId</span>
 	<span class="Parameters"></span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">GetUserIsInTeamCreateToggleRamp</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -36175,6 +36287,14 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
+	<span class="Name">RefreshDocumentDisplayName</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
 	<span class="Name">RequestClose</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -36211,6 +36331,19 @@
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName">state</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">SetTurnOnTeamCreateOnPublish</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">turnOn</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -37447,6 +37580,13 @@
 			<span class="ParamName">line</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">TextBoxService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
@@ -41701,6 +41841,19 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
+	<span class="Name">SubscribeBlock</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">VoiceChatInternal</span>
@@ -41729,6 +41882,19 @@
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
+	<span class="Name">SubscribeUnblock</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event deprecated child">
@@ -41784,24 +41950,22 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Class deprecated">
+<div class="Class">
 	<span class="Name">VoiceChatService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">VoiceChatService</span>
 	<span class="Name">GenerateDefaultChannel</span>
 	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[NotBrowsable]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function deprecated child">
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">VoiceChatService</span>
 	<span class="Name">IsVoiceEnabledForUserIdAsync</span>
@@ -41812,7 +41976,6 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class deprecated">
@@ -44330,6 +44493,12 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">ConnectionError</span>
+	<span class="Name">DisconnectClientRequest</span>
+	<span class="Value">285</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ConnectionError</span>
 	<span class="Name">PlacelaunchErrors</span>
 	<span class="Value">512</span>
 </div>
@@ -44864,6 +45033,12 @@
 	<span class="Value">7</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerStatus</span>
+	<span class="Name">ConnectionClosed</span>
+	<span class="Value">8</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">DevCameraOcclusionMode</span>
 </div>
@@ -45077,79 +45252,79 @@
 <div class="EnumItem child">
 	<span class="EnumName">DeveloperMemoryTag</span>
 	<span class="Name">GraphicsMeshParts</span>
-	<span class="Value">9</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">DeveloperMemoryTag</span>
-	<span class="Name">GraphicsParticles</span>
 	<span class="Value">10</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">DeveloperMemoryTag</span>
-	<span class="Name">GraphicsParts</span>
+	<span class="Name">GraphicsParticles</span>
 	<span class="Value">11</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">DeveloperMemoryTag</span>
-	<span class="Name">GraphicsSpatialHash</span>
+	<span class="Name">GraphicsParts</span>
 	<span class="Value">12</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">DeveloperMemoryTag</span>
-	<span class="Name">GraphicsTerrain</span>
+	<span class="Name">GraphicsSpatialHash</span>
 	<span class="Value">13</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">DeveloperMemoryTag</span>
-	<span class="Name">GraphicsTexture</span>
+	<span class="Name">GraphicsTerrain</span>
 	<span class="Value">14</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">DeveloperMemoryTag</span>
-	<span class="Name">GraphicsTextureCharacter</span>
+	<span class="Name">GraphicsTexture</span>
 	<span class="Value">15</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">DeveloperMemoryTag</span>
-	<span class="Name">Sounds</span>
+	<span class="Name">GraphicsTextureCharacter</span>
 	<span class="Value">16</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">DeveloperMemoryTag</span>
-	<span class="Name">StreamingSounds</span>
+	<span class="Name">Sounds</span>
 	<span class="Value">17</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">DeveloperMemoryTag</span>
-	<span class="Name">TerrainVoxels</span>
+	<span class="Name">StreamingSounds</span>
 	<span class="Value">18</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">DeveloperMemoryTag</span>
-	<span class="Name">Gui</span>
-	<span class="Value">20</span>
+	<span class="Name">TerrainVoxels</span>
+	<span class="Value">19</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">DeveloperMemoryTag</span>
-	<span class="Name">Animation</span>
+	<span class="Name">Gui</span>
 	<span class="Value">21</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">DeveloperMemoryTag</span>
-	<span class="Name">Navigation</span>
+	<span class="Name">Animation</span>
 	<span class="Value">22</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DeveloperMemoryTag</span>
+	<span class="Name">Navigation</span>
+	<span class="Value">23</span>
 </div>
 
 <div class="Enum">
@@ -49762,6 +49937,62 @@
 	<span class="EnumName">ParticleEmitterShapeStyle</span>
 	<span class="Name">Surface</span>
 	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ParticleFlipbookLayout</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleFlipbookLayout</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleFlipbookLayout</span>
+	<span class="Name">TwoByTwo</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleFlipbookLayout</span>
+	<span class="Name">FourByFour</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleFlipbookLayout</span>
+	<span class="Name">EightByEight</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ParticleFlipbookMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleFlipbookMode</span>
+	<span class="Name">Loop</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleFlipbookMode</span>
+	<span class="Name">OneShot</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleFlipbookMode</span>
+	<span class="Name">PingPong</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleFlipbookMode</span>
+	<span class="Name">Random</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
