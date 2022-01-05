@@ -1036,6 +1036,108 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AnimationFromVideoCreatorService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">AnimationFromVideoCreatorService</span>
+	<span class="Name">CreateJob</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">filePath</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">AnimationFromVideoCreatorService</span>
+	<span class="Name">DownloadJobResult</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">jobId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">outputFilePath</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">AnimationFromVideoCreatorService</span>
+	<span class="Name">FullProcess</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">videoFilePath</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">progressCallback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">AnimationFromVideoCreatorService</span>
+	<span class="Name">GetJobStatus</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">jobId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">AnimationFromVideoCreatorStudioService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">AnimationFromVideoCreatorStudioService</span>
+	<span class="Name">CreateAnimationByUploadingVideo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">progressCallback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">AnimationFromVideoCreatorStudioService</span>
+	<span class="Name">ImportVideoWithPrompt</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">AnimationRigData</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -3157,6 +3259,28 @@
 <div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">AvatarImportService</span>
+	<span class="Name">ImportFBXAnimationFromFilePathUserMayChooseModel</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">fbxFilePath</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">selectedRig</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">userChooseModelThenImportCB</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">AvatarImportService</span>
 	<span class="Name">ImportFBXAnimationUserMayChooseModel</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -4596,6 +4720,15 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Breakpoint</span>
+	<span class="Name">MetaBreakpointId</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -10469,6 +10602,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Explosion</span>
+	<span class="Name">TimeScale</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Explosion</span>
 	<span class="Name">Visible</span>
@@ -11108,6 +11247,12 @@
 	<span class="Name">Size</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Fire</span>
+	<span class="Name">TimeScale</span>
 </div>
 
 <div class="Class">
@@ -15911,6 +16056,12 @@
 <div class="Class">
 	<span class="Name">Highlight</span>
 	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">Highlight</span>
+	<span class="Name">Adornee</span>
 </div>
 
 <div class="Property child">
@@ -33289,6 +33440,12 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Smoke</span>
+	<span class="Name">TimeScale</span>
+</div>
+
 <div class="Class">
 	<span class="Name">SocialService</span>
 	<span class="Superclass">Instance</span>
@@ -34082,6 +34239,12 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Sparkles</span>
 	<span class="Name">SparkleColor</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Sparkles</span>
+	<span class="Name">TimeScale</span>
 </div>
 
 <div class="Class">
@@ -39338,6 +39501,15 @@
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">VRRotationIntensity</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">VignetteEnabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Function child">
@@ -46555,7 +46727,7 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">HighlightDepthMode</span>
-	<span class="Name">Default</span>
+	<span class="Name">Occluded</span>
 	<span class="Value">1</span>
 </div>
 

@@ -2,6 +2,262 @@
 	<link rel="stylesheet" href="api-history.css">
 </head>
 
+<hr id="508"/>
+<h2>Version 0.508.0.5080185</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AnimationFromVideoCreatorService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">AnimationFromVideoCreatorService</span>
+				<span class="Name">CreateJob</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">filePath</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">AnimationFromVideoCreatorService</span>
+				<span class="Name">DownloadJobResult</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">jobId</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">outputFilePath</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">AnimationFromVideoCreatorService</span>
+				<span class="Name">FullProcess</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">videoFilePath</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Function</span>
+						<span class="ParamName">progressCallback</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">AnimationFromVideoCreatorService</span>
+				<span class="Name">GetJobStatus</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">jobId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AnimationFromVideoCreatorStudioService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">AnimationFromVideoCreatorStudioService</span>
+				<span class="Name">CreateAnimationByUploadingVideo</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Function</span>
+						<span class="ParamName">progressCallback</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">AnimationFromVideoCreatorStudioService</span>
+				<span class="Name">ImportVideoWithPrompt</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">Breakpoint</span>
+			<span class="Name">MetaBreakpointId</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Explosion</span>
+			<span class="Name">TimeScale</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Fire</span>
+			<span class="Name">TimeScale</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Instance</span>
+			<span class="ClassName Property">Highlight</span>
+			<span class="Name">Adornee</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Smoke</span>
+			<span class="Name">TimeScale</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Sparkles</span>
+			<span class="Name">TimeScale</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">UserGameSettings</span>
+			<span class="Name">VignetteEnabled</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">AvatarImportService</span>
+			<span class="Name">ImportFBXAnimationFromFilePathUserMayChooseModel</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">fbxFilePath</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">selectedRig</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">userChooseModelThenImportCB</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">HighlightDepthMode</span>
+			<span class="Name">Occluded</span>
+			<span class="Value">1</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">HighlightDepthMode</span>
+			<span class="Name">Default</span>
+		</span>
+	</span>
+</div>
+
 <hr id="506"/>
 <h2>Version 0.506.0.5060606</h2>
 
