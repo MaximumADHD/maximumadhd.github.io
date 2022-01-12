@@ -1107,37 +1107,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">AnimationFromVideoCreatorStudioService</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">string</span>
-	<span class="ClassName Function">AnimationFromVideoCreatorStudioService</span>
-	<span class="Name">CreateAnimationByUploadingVideo</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">progressCallback</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">string</span>
-	<span class="ClassName Function">AnimationFromVideoCreatorStudioService</span>
-	<span class="Name">ImportVideoWithPrompt</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Class">
 	<span class="Name">AnimationRigData</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -1612,19 +1581,6 @@
 <div class="Function child">
 	<span class="Type">int64</span>
 	<span class="ClassName Function">AssetManagerService</span>
-	<span class="Name">GetMeshId</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">aliasName</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">int64</span>
-	<span class="ClassName Function">AssetManagerService</span>
 	<span class="Name">GetMeshIdFromAliasName</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -1643,19 +1599,6 @@
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">assetId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">int64</span>
-	<span class="ClassName Function">AssetManagerService</span>
-	<span class="Name">GetTextureId</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">aliasName</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -26532,7 +26475,7 @@
 <div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">PathfindingLink</span>
-	<span class="Name">ModifierId</span>
+	<span class="Name">Label</span>
 </div>
 
 <div class="Class">
@@ -26543,7 +26486,7 @@
 <div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">PathfindingModifier</span>
-	<span class="Name">ModifierId</span>
+	<span class="Name">Label</span>
 </div>
 
 <div class="Property child">
@@ -36045,6 +35988,43 @@
 	<span class="ClassName Event">StudioDeviceEmulatorService</span>
 	<span class="Name">OrientationChanged</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">StudioPublishService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioPublishService</span>
+	<span class="Name">PublishAs</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">universeId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">placeId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">groupId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isPublish</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">publishParameters</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
