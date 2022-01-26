@@ -8256,6 +8256,47 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Class">
+	<span class="Name">CrossDMScriptChangeListener</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">CrossDMScriptChangeListener</span>
+	<span class="Name">StartWatchingScript</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">scriptRef</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">debuggerConnectionId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">CrossDMScriptChangeListener</span>
+	<span class="Name">GuidNameChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">guid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">fullName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class deprecated">
 	<span class="Name">CustomEvent</span>
 	<span class="Superclass">Instance</span>
@@ -9382,6 +9423,13 @@
 </div>
 
 <div class="Class">
+	<span class="Name">LocalDebuggerConnection</span>
+	<span class="Superclass">DebuggerConnection</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">DebuggerConnectionManager</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -9664,6 +9712,19 @@
 		<span class="Parameter">
 			<span class="Type">int</span>
 			<span class="ParamName">metaBreakpointId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">DebuggerUIService</span>
+	<span class="Name">IsConnectionForPlayDataModel</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">debuggerConnectionId</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -37353,6 +37414,14 @@
 			<span class="Type">string</span>
 			<span class="ParamName">errorMessage</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">placeId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">teleportOptions</span>
+		</span>
 	</span>
 </div>
 
@@ -39487,9 +39556,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">VignetteEnabled</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
+	<span class="Security">{✏️RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
