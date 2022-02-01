@@ -2656,19 +2656,6 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AvatarEditorService</span>
-	<span class="Name">PerformCreateOutfit</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">name</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AvatarEditorService</span>
 	<span class="Name">PerformCreateOutfitWithDescription</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -2699,23 +2686,6 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">name</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">AvatarEditorService</span>
-	<span class="Name">PerformSaveAvatarNew</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Array</span>
-			<span class="ParamName">addedAssets</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Array</span>
-			<span class="ParamName">removedAssets</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -5036,13 +5006,6 @@
 	<span class="Name">BulkImportStarted</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Class">
-	<span class="Name">CSGCacheService</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
@@ -11594,9 +11557,26 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">GamepadService</span>
 	<span class="Name">GamepadCursorEnabled</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
+	<span class="Security">{✏️RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GamepadService</span>
+	<span class="Name">DisableGamepadCursor</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GamepadService</span>
+	<span class="Name">EnableGamepadCursor</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">guiObject</span>
+		</span>
+	</span>
 </div>
 
 <div class="Function child">
@@ -18937,6 +18917,13 @@
 </div>
 
 <div class="Class">
+	<span class="Name">LSPService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">LanguageService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -20007,7 +19994,7 @@
 			<span class="ParamName">messageType</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">int</span>
+			<span class="Type">double</span>
 			<span class="ParamName">timestamp</span>
 		</span>
 	</span>
@@ -21443,7 +21430,23 @@
 <div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">TerrainSlate</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">TerrainSnow</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">MaterialVariant</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">TerrainWoodPlanks</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -22277,7 +22280,7 @@
 	<span class="Name">Condition</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -22356,23 +22359,6 @@
 	<span class="ClassName Function">MetaBreakpoint</span>
 	<span class="Name">Remove</span>
 	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">status</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">int</span>
-	<span class="ClassName Function">MetaBreakpoint</span>
-	<span class="Name">SetCondition</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">condition</span>
-		</span>
 		<span class="Parameter">
 			<span class="Type">Function</span>
 			<span class="ParamName">status</span>
@@ -25351,7 +25337,7 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">Objects</span>
 	<span class="ClassName Function">WorldRoot</span>
 	<span class="Name">FindPartsInRegion3</span>
@@ -25371,10 +25357,10 @@
 			<span class="ParamDefault int">20</span>
 		</span>
 	</span>
-	<span class="ThreadSafety">{🧬Safe}</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">Objects</span>
 	<span class="ClassName Function">WorldRoot</span>
 	<span class="Name">FindPartsInRegion3WithIgnoreList</span>
@@ -25393,9 +25379,10 @@
 			<span class="ParamDefault int">20</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">Objects</span>
 	<span class="ClassName Function">WorldRoot</span>
 	<span class="Name">FindPartsInRegion3WithWhiteList</span>
@@ -25414,6 +25401,7 @@
 			<span class="ParamDefault int">20</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -25437,6 +25425,7 @@
 			<span class="Parameters"></span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -25460,6 +25449,7 @@
 			<span class="Parameters"></span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -25479,6 +25469,7 @@
 			<span class="Parameters"></span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -25514,7 +25505,7 @@
 	<span class="Security">{PluginSecurity}</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">WorldRoot</span>
 	<span class="Name">IsRegion3Empty</span>
@@ -25529,9 +25520,10 @@
 			<span class="ParamDefault Instance">nil</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">WorldRoot</span>
 	<span class="Name">IsRegion3EmptyWithIgnoreList</span>
@@ -25545,6 +25537,7 @@
 			<span class="ParamName">ignoreDescendentsTable</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -25633,6 +25626,12 @@
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">GlobalWind</span>
 </div>
 
 <div class="Property child">
@@ -31887,6 +31886,22 @@
 		<span class="Parameter">
 			<span class="Type">LuaSourceContainer</span>
 			<span class="ParamName">script</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ScriptChangeService</span>
+	<span class="Name">ScriptSourceEdited</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">edits</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -42101,6 +42116,19 @@
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
+	<span class="Name">SubscribeRetry</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
