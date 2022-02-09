@@ -1107,6 +1107,37 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AnimationFromVideoCreatorStudioService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">AnimationFromVideoCreatorStudioService</span>
+	<span class="Name">CreateAnimationByUploadingVideo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">progressCallback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">AnimationFromVideoCreatorStudioService</span>
+	<span class="Name">ImportVideoWithPrompt</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">AnimationRigData</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -9725,8 +9756,50 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">DebuggerUIService</span>
+	<span class="Name">RemoveScriptLineMarkers</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">debuggerConnectionId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">allMarkers</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DebuggerUIService</span>
 	<span class="Name">Resume</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DebuggerUIService</span>
+	<span class="Name">SetScriptLineMarker</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">guid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">debuggerConnectionId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">line</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">lineMarkerType</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -21284,6 +21357,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Use2022Materials</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">MaterialVariant</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">TerrainAsphalt</span>
@@ -25678,6 +25758,14 @@
 	<span class="Type">PhysicsSteppingMethod</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">PhysicsSteppingMethod</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ReplicateInstanceDestroySetting</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">ReplicateInstanceDestroySetting</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -31908,6 +31996,22 @@
 </div>
 
 <div class="Class">
+	<span class="Name">ScriptCloneWatcher</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ScriptCloneWatcherHelper</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ScriptContext</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -36068,6 +36172,22 @@
 </div>
 
 <div class="Class">
+	<span class="Name">StudioHighDpiService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">StudioHighDpiService</span>
+	<span class="Name">IsNotHighDPIAwareBuild</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">StudioPublishService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -36099,6 +36219,23 @@
 		<span class="Parameter">
 			<span class="Type">Variant</span>
 			<span class="ParamName">publishParameters</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioPublishService</span>
+	<span class="Name">SetTeamCreateOnPublishInfo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">shouldTurnOnTcOnPublish</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">newPlaceName</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -36269,6 +36406,19 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">newName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">DEPRECATED_SetTurnOnTeamCreateOnPublish</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">turnOn</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -36550,19 +36700,6 @@
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName">state</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">SetTurnOnTeamCreateOnPublish</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">turnOn</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -37860,6 +37997,72 @@
 			<span class="ParamName">textChatMessage</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">TextChatMessage</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TextChatMessage</span>
+	<span class="Name">Metadata</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TextChatMessage</span>
+	<span class="Name">PrefixText</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">TextChatMessageStatus</span>
+	<span class="ClassName Property">TextChatMessage</span>
+	<span class="Name">Status</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TextChatMessage</span>
+	<span class="Name">Text</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">TextChannel</span>
+	<span class="ClassName Property">TextChatMessage</span>
+	<span class="Name">TextChannel</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">TextSource</span>
+	<span class="ClassName Property">TextChatMessage</span>
+	<span class="Name">TextSource</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">DateTime</span>
+	<span class="ClassName Property">TextChatMessage</span>
+	<span class="Name">Timestamp</span>
+</div>
+
+<div class="Class">
+	<span class="Name">TextChatMessageProperties</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TextChatMessageProperties</span>
+	<span class="Name">PrefixText</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TextChatMessageProperties</span>
+	<span class="Name">Text</span>
 </div>
 
 <div class="Class">
@@ -41845,6 +42048,13 @@
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">VisibilityService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
@@ -49290,7 +49500,6 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Basalt</span>
 	<span class="Value">788</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49303,7 +49512,6 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">CrackedLava</span>
 	<span class="Value">804</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49316,7 +49524,6 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Limestone</span>
 	<span class="Value">820</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49329,7 +49536,6 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Pavement</span>
 	<span class="Value">836</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49354,14 +49560,12 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Rock</span>
 	<span class="Value">896</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">Material</span>
 	<span class="Name">Sandstone</span>
 	<span class="Value">912</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49398,7 +49602,6 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">LeafyGrass</span>
 	<span class="Value">1284</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49417,35 +49620,30 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Snow</span>
 	<span class="Value">1328</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">Material</span>
 	<span class="Name">Mud</span>
 	<span class="Value">1344</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">Material</span>
 	<span class="Name">Ground</span>
 	<span class="Value">1360</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">Material</span>
 	<span class="Name">Asphalt</span>
 	<span class="Value">1376</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">Material</span>
 	<span class="Name">Salt</span>
 	<span class="Value">1392</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49458,7 +49656,6 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Glacier</span>
 	<span class="Value">1552</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -51082,6 +51279,28 @@
 	<span class="EnumName">RenderingTestComparisonMethod</span>
 	<span class="Name">diff</span>
 	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ReplicateInstanceDestroySetting</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReplicateInstanceDestroySetting</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReplicateInstanceDestroySetting</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReplicateInstanceDestroySetting</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
@@ -53544,32 +53763,44 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">TextChatMessageStatus</span>
-	<span class="Name">Success</span>
+	<span class="Name">Unknown</span>
 	<span class="Value">1</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">TextChatMessageStatus</span>
-	<span class="Name">TextFilterFailed</span>
+	<span class="Name">Success</span>
 	<span class="Value">2</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">TextChatMessageStatus</span>
-	<span class="Name">Floodchecked</span>
+	<span class="Name">Sending</span>
 	<span class="Value">3</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">TextChatMessageStatus</span>
-	<span class="Name">InvalidPrivacySettings</span>
+	<span class="Name">TextFilterFailed</span>
 	<span class="Value">4</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">TextChatMessageStatus</span>
-	<span class="Name">InvalidTextChannelPermissions</span>
+	<span class="Name">Floodchecked</span>
 	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextChatMessageStatus</span>
+	<span class="Name">InvalidPrivacySettings</span>
+	<span class="Value">6</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextChatMessageStatus</span>
+	<span class="Name">InvalidTextChannelPermissions</span>
+	<span class="Value">7</span>
 </div>
 
 <div class="Enum">
