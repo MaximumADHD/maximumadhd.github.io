@@ -9712,6 +9712,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DebuggerUIService</span>
+	<span class="Name">EditWatch</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">expression</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">DebuggerUIService</span>
 	<span class="Name">IsConnectionForPlayDataModel</span>
@@ -18062,6 +18075,41 @@
 </div>
 
 <div class="Class">
+	<span class="Name">ImporterMaterialSettings</span>
+	<span class="Superclass">ImporterBaseSettings</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">ImporterMaterialSettings</span>
+	<span class="Name">DiffuseFilePath</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">ImporterMaterialSettings</span>
+	<span class="Name">MetalnessFilePath</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">ImporterMaterialSettings</span>
+	<span class="Name">NormalFilePath</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">ImporterMaterialSettings</span>
+	<span class="Name">RoughnessFilePath</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ImporterMeshSettings</span>
 	<span class="Superclass">ImporterBaseSettings</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -22974,18 +23022,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">PrintStreamInstanceQuota</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">TrackDataTypes</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">NetworkSettings</span>
-	<span class="Name">TrackPhysicsDetails</span>
 </div>
 
 <div class="Property child">
@@ -30606,6 +30642,19 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">PublishService</span>
+	<span class="Name">PublishDescendantAssets</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">instance</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">RbxAnalyticsService</span>
 	<span class="Superclass">Instance</span>
@@ -36241,6 +36290,23 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioPublishService</span>
+	<span class="Name">SetUploadNames</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">placeName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">universeName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">StudioScriptDebugEventListener</span>
 	<span class="Superclass">Instance</span>
@@ -37956,6 +38022,7 @@
 <div class="Class">
 	<span class="Name">TextChannel</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Function child">
@@ -37988,21 +38055,134 @@
 	</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">TextChatMessage</span>
+	<span class="ClassName Function">TextChannel</span>
+	<span class="Name">SendAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">message</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">metadata</span>
+			<span class="ParamDefault string"></span>
+		</span>
+	</span>
+</div>
+
 <div class="Event child">
 	<span class="ClassName Event">TextChannel</span>
 	<span class="Name">MessageReceived</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">TextChatMessage</span>
-			<span class="ParamName">textChatMessage</span>
+			<span class="ParamName">incomingMessage</span>
 		</span>
 	</span>
+</div>
+
+<div class="Callback child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Callback">TextChannel</span>
+	<span class="Name">OnIncomingMessage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">TextChatMessage</span>
+			<span class="ParamName">message</span>
+		</span>
+	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">TextChatCommand</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TextChatCommand</span>
+	<span class="Name">Enabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TextChatCommand</span>
+	<span class="Name">PrimaryAlias</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TextChatCommand</span>
+	<span class="Name">SecondaryAlias</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TextChatCommand</span>
+	<span class="Name">Triggered</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">TextSource</span>
+			<span class="ParamName">originTextSource</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">unfilteredText</span>
+		</span>
+	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">TextChatConfigurations</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ChatInputBarConfiguration</span>
+	<span class="Superclass">TextChatConfigurations</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">Enabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">TextChannel</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">TargetTextChannel</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ChatWindowConfiguration</span>
+	<span class="Superclass">TextChatConfigurations</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ChatWindowConfiguration</span>
+	<span class="Name">Enabled</span>
 </div>
 
 <div class="Class">
 	<span class="Name">TextChatMessage</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">TextChatMessage</span>
+	<span class="Name">MessageId</span>
 </div>
 
 <div class="Property child">
@@ -38070,7 +38250,63 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ChatVersion</span>
+	<span class="ClassName Property">TextChatService</span>
+	<span class="Name">ChatVersion</span>
+	<span class="Security">{✏️NotAccessibleSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TextChatService</span>
+	<span class="Name">CreateDefaultCommands</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TextChatService</span>
+	<span class="Name">CreateDefaultTextChannels</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TextChatService</span>
+	<span class="Name">MessageReceived</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">TextChatMessage</span>
+			<span class="ParamName">textChatMessage</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TextChatService</span>
+	<span class="Name">SendingMessage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">TextChatMessage</span>
+			<span class="ParamName">textChatMessage</span>
+		</span>
+	</span>
+</div>
+
+<div class="Callback child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Callback">TextChatService</span>
+	<span class="Name">OnIncomingMessage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">TextChatMessage</span>
+			<span class="ParamName">message</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -38187,6 +38423,7 @@
 	<span class="Name">TextSource</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -38418,6 +38655,15 @@
 			<span class="ParamName">instances</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[NoYield]</span>
+</div>
+
+<div class="Callback child">
+	<span class="Type">void</span>
+	<span class="ClassName Callback">ToolboxService</span>
+	<span class="Name">ProcessAssetInsertionDrop</span>
+	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[NoYield]</span>
 </div>
@@ -42070,6 +42316,21 @@
 	<span class="Superclass">Instance</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">VoiceChannel</span>
+	<span class="Name">AddUserAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName default">userId</span>
+			<span class="ParamDefault int64">-1</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">VoiceChatInternal</span>
 	<span class="Superclass">Instance</span>
@@ -42880,6 +43141,24 @@
 	<span class="EnumName">AnimationPriority</span>
 	<span class="Name">Action</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnimationPriority</span>
+	<span class="Name">Action2</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnimationPriority</span>
+	<span class="Name">Action3</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AnimationPriority</span>
+	<span class="Name">Action4</span>
+	<span class="Value">5</span>
 </div>
 
 <div class="EnumItem child">
@@ -44646,6 +44925,22 @@
 	<span class="EnumName">ChatStyle</span>
 	<span class="Name">ClassicAndBubble</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ChatVersion</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ChatVersion</span>
+	<span class="Name">LegacyChatService</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ChatVersion</span>
+	<span class="Name">TextChatService</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
@@ -46550,6 +46845,80 @@
 	<span class="EnumName">FontSize</span>
 	<span class="Name">Size96</span>
 	<span class="Value">14</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">FontStyle</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FontStyle</span>
+	<span class="Name">Normal</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FontStyle</span>
+	<span class="Name">Italic</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">FontWeight</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FontWeight</span>
+	<span class="Name">Thin</span>
+	<span class="Value">100</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FontWeight</span>
+	<span class="Name">ExtraLight</span>
+	<span class="Value">200</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FontWeight</span>
+	<span class="Name">Light</span>
+	<span class="Value">300</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FontWeight</span>
+	<span class="Name">Regular</span>
+	<span class="Value">400</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FontWeight</span>
+	<span class="Name">Medium</span>
+	<span class="Value">500</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FontWeight</span>
+	<span class="Name">SemiBold</span>
+	<span class="Value">600</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FontWeight</span>
+	<span class="Name">Bold</span>
+	<span class="Value">700</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FontWeight</span>
+	<span class="Name">ExtraBold</span>
+	<span class="Value">800</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FontWeight</span>
+	<span class="Name">Heavy</span>
+	<span class="Value">900</span>
 </div>
 
 <div class="Enum">
@@ -49500,6 +49869,7 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Basalt</span>
 	<span class="Value">788</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49512,6 +49882,7 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">CrackedLava</span>
 	<span class="Value">804</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49524,6 +49895,7 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Limestone</span>
 	<span class="Value">820</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49536,6 +49908,7 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Pavement</span>
 	<span class="Value">836</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49560,12 +49933,14 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Rock</span>
 	<span class="Value">896</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">Material</span>
 	<span class="Name">Sandstone</span>
 	<span class="Value">912</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49602,6 +49977,7 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">LeafyGrass</span>
 	<span class="Value">1284</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49620,30 +49996,35 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Snow</span>
 	<span class="Value">1328</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">Material</span>
 	<span class="Name">Mud</span>
 	<span class="Value">1344</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">Material</span>
 	<span class="Name">Ground</span>
 	<span class="Value">1360</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">Material</span>
 	<span class="Name">Asphalt</span>
 	<span class="Value">1376</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">Material</span>
 	<span class="Name">Salt</span>
 	<span class="Value">1392</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
@@ -49656,6 +50037,7 @@
 	<span class="EnumName">Material</span>
 	<span class="Name">Glacier</span>
 	<span class="Value">1552</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="EnumItem child">
