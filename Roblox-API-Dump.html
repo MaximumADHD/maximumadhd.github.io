@@ -8259,6 +8259,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">CrossDMScriptChangeListener</span>
+	<span class="Name">IsWatchingScript</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">scriptRef</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">CrossDMScriptChangeListener</span>
 	<span class="Name">StartWatchingScript</span>
@@ -9277,6 +9290,24 @@
 <div class="Function child">
 	<span class="Type">int</span>
 	<span class="ClassName Function">DebuggerConnection</span>
+	<span class="Name">SetExceptionBreakMode</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">DebuggerExceptionBreakMode</span>
+			<span class="ParamName">breakMode</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DebuggerConnection</span>
 	<span class="Name">SetVariable</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -9788,6 +9819,19 @@
 	<span class="ClassName Function">DebuggerUIService</span>
 	<span class="Name">Resume</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DebuggerUIService</span>
+	<span class="Name">SetCurrentThreadId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">debuggerThreadId</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -17972,6 +18016,32 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">IXPService</span>
+	<span class="Name">LogBrowserTrackerLayerExposure</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">layerName</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">IXPService</span>
+	<span class="Name">LogUserLayerExposure</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">layerName</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">IXPService</span>
 	<span class="Name">RegisterUserLayers</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -22435,7 +22505,7 @@
 	<span class="Name">LogMessage</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -22475,9 +22545,9 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Array</span>
+	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">MetaBreakpoint</span>
-	<span class="Name">GetContexts</span>
+	<span class="Name">GetContextBreakpoints</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -42317,7 +42387,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Tuple</span>
+	<span class="Type">VoiceSource</span>
 	<span class="ClassName Function">VoiceChannel</span>
 	<span class="Name">AddUserAsync</span>
 	<span class="Parameters">
@@ -45675,6 +45745,28 @@
 	<span class="EnumName">DebuggerEndReason</span>
 	<span class="Name">RpcError</span>
 	<span class="Value">7</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">DebuggerExceptionBreakMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerExceptionBreakMode</span>
+	<span class="Name">Never</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerExceptionBreakMode</span>
+	<span class="Name">Unhandled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DebuggerExceptionBreakMode</span>
+	<span class="Name">Always</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
@@ -49669,26 +49761,30 @@
 	<span class="Value">2</span>
 </div>
 
-<div class="Enum">
+<div class="Enum deprecated">
 	<span class="Name">LevelOfDetailSetting</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">LevelOfDetailSetting</span>
 	<span class="Name">Low</span>
 	<span class="Value">0</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">LevelOfDetailSetting</span>
 	<span class="Name">Medium</span>
 	<span class="Value">1</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">LevelOfDetailSetting</span>
 	<span class="Name">High</span>
 	<span class="Value">2</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Enum">
@@ -52343,6 +52439,12 @@
 	<span class="EnumName">SignalBehavior</span>
 	<span class="Name">Deferred</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SignalBehavior</span>
+	<span class="Name">AncestryDeferred</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
