@@ -11,6 +11,388 @@
 	</ul>
 </head>
 
+<hr id="517"/>
+<h2>Version 0.517.0.5170357</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">MaterialVariant</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Font</span>
+			<span class="ClassName Property">TextBox</span>
+			<span class="Name">FontFace</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Font</span>
+			<span class="ClassName Property">TextButton</span>
+			<span class="Name">FontFace</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Font</span>
+			<span class="ClassName Property">TextLabel</span>
+			<span class="Name">FontFace</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">LSPService</span>
+			<span class="Name">RegisterLSPCallback</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">LSPMethodType</span>
+					<span class="ParamName">methodToOverride</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">callbackFunction</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Dictionary</span>
+			<span class="ClassName Function">TextService</span>
+			<span class="Name">GetFamilyInfoAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Content</span>
+					<span class="ParamName">assetId</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">LSPMethodType</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Initialize</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Initialized</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">CancelRequest</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_didOpen</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_didChange</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_didClose</span>
+				<span class="Value">6</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_foldingRange</span>
+				<span class="Value">7</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_onTypeFormatting</span>
+				<span class="Value">8</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_formatting</span>
+				<span class="Value">9</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_rangeFormatting</span>
+				<span class="Value">10</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_hover</span>
+				<span class="Value">11</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_signatureHelp</span>
+				<span class="Value">12</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Workspace_DidChangeConfiguration</span>
+				<span class="Value">13</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">ShutdownRequest</span>
+				<span class="Value">14</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Completion</span>
+				<span class="Value">15</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Declaration</span>
+				<span class="Value">16</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">DocumentSymbols</span>
+				<span class="Value">17</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_publishDiagnostics</span>
+				<span class="Value">18</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Window_showMessage</span>
+				<span class="Value">19</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Window_showMessageRequest</span>
+				<span class="Value">20</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_registerSyntaxCategories</span>
+				<span class="Value">21</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_signalQuiescence</span>
+				<span class="Value">22</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_syntaxHighlight</span>
+				<span class="Value">23</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_suggestExtraSelections</span>
+				<span class="Value">24</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_findExecutablePosition</span>
+				<span class="Value">25</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_findColor3</span>
+				<span class="Value">26</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Font</span>
+			<span class="Name">Unknown</span>
+			<span class="Value">100</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">PacketPriority</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">PacketPriority</span>
+				<span class="Name">IMMEDIATE_PRIORITY</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">PacketPriority</span>
+				<span class="Name">HIGH_PRIORITY</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">PacketPriority</span>
+				<span class="Name">MEDIUM_PRIORITY</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">PacketPriority</span>
+				<span class="Name">LOW_PRIORITY</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+
 <hr id="516"/>
 <h2>Version 0.516.0.5160305</h2>
 
