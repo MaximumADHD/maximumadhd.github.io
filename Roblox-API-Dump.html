@@ -8304,11 +8304,15 @@
 <div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">CrossDMScriptChangeListener</span>
-	<span class="Name">IsWatchingScript</span>
+	<span class="Name">IsWatchingScriptLine</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">scriptRef</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">lineNumber</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -8317,7 +8321,7 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">CrossDMScriptChangeListener</span>
-	<span class="Name">StartWatchingScript</span>
+	<span class="Name">StartWatchingScriptLine</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -8326,6 +8330,30 @@
 		<span class="Parameter">
 			<span class="Type">int</span>
 			<span class="ParamName">debuggerConnectionId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">lineNumber</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">CrossDMScriptChangeListener</span>
+	<span class="Name">GuidLineContentsChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">guid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">lineNumber</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">contents</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -9059,6 +9087,14 @@
 	<span class="ClassName Property">DebugSettings</span>
 	<span class="Name">RobloxVersion</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">DebuggablePluginWatcher</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -15663,6 +15699,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">GuiService</span>
+	<span class="Name">Select</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">selectionParent</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GuiService</span>
 	<span class="Name">SetEmotesMenuOpen</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -18227,6 +18276,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMaterialSettings</span>
+	<span class="Name">IsPbr</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">ImporterMaterialSettings</span>
 	<span class="Name">MetalnessFilePath</span>
@@ -18696,14 +18752,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">InternalContainer</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
 	<span class="Name">JointInstance</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -18930,10 +18978,9 @@
 	<span class="Name">MaxVelocity</span>
 </div>
 
-<div class="Class deprecated">
+<div class="Class">
 	<span class="Name">Weld</span>
 	<span class="Superclass">JointInstance</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class deprecated">
@@ -22037,7 +22084,7 @@
 <div class="Function child">
 	<span class="Type">string</span>
 	<span class="ClassName Function">MaterialService</span>
-	<span class="Name">GetMaterialOverride</span>
+	<span class="Name">GetBaseMaterialOverride</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
@@ -22076,7 +22123,7 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MaterialService</span>
-	<span class="Name">SetMaterialOverride</span>
+	<span class="Name">SetBaseMaterialOverride</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="EnumName Type">Enum</span>
@@ -22876,7 +22923,7 @@
 	<span class="Name">Line</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -22894,7 +22941,7 @@
 	<span class="Name">Script</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -22903,7 +22950,7 @@
 	<span class="Name">ContinueExecution</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -22912,7 +22959,7 @@
 	<span class="Name">Enabled</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -36474,6 +36521,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Use Bounding Box Move Handles</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">RuntimeUndoBehavior</span>
 	<span class="ClassName Property">Studio</span>
@@ -36918,19 +36972,6 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">stringToCopy</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">DEPRECATED_SetDocumentDisplayName</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">newName</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -38754,7 +38795,6 @@
 			<span class="ParamName">textChatMessage</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Callback child">
@@ -43152,7 +43192,7 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">VoiceChatService</span>
-	<span class="Name">GenerateDefaultChannel</span>
+	<span class="Name">EnableDefaultVoice</span>
 	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
@@ -54739,6 +54779,12 @@
 	<span class="EnumName">TextChatMessageStatus</span>
 	<span class="Name">InvalidTextChannelPermissions</span>
 	<span class="Value">7</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextChatMessageStatus</span>
+	<span class="Name">MessageTooLong</span>
+	<span class="Value">8</span>
 </div>
 
 <div class="Enum">
