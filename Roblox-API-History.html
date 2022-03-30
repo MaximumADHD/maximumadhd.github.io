@@ -11,6 +11,578 @@
 	</ul>
 </head>
 
+<hr id="520"/>
+<h2>Version 0.520.0.5200400</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">TerrainDetail</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Content</span>
+				<span class="ClassName Property">TerrainDetail</span>
+				<span class="Name">ColorMap</span>
+				<span class="Security">{PluginSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">TerrainFace</span>
+				<span class="ClassName Property">TerrainDetail</span>
+				<span class="Name">Face</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">MaterialPattern</span>
+				<span class="ClassName Property">TerrainDetail</span>
+				<span class="Name">MaterialPattern</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Content</span>
+				<span class="ClassName Property">TerrainDetail</span>
+				<span class="Name">MetalnessMap</span>
+				<span class="Security">{PluginSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Content</span>
+				<span class="ClassName Property">TerrainDetail</span>
+				<span class="Name">NormalMap</span>
+				<span class="Security">{PluginSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Content</span>
+				<span class="ClassName Property">TerrainDetail</span>
+				<span class="Name">RoughnessMap</span>
+				<span class="Security">{PluginSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">TerrainDetail</span>
+				<span class="Name">StudsPerTile</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">VRService</span>
+			<span class="Name">DidPointerHit</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">CFrame</span>
+			<span class="ClassName Property">VRService</span>
+			<span class="Name">PointerHitCFrame</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">VoiceChatService</span>
+			<span class="Name">VoiceChatEnabledForPlaceOnRcc</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">VoiceChatService</span>
+			<span class="Name">VoiceChatEnabledForUniverseOnRcc</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Objects</span>
+			<span class="ClassName Function">DataModel</span>
+			<span class="Name">GetObjectsAllOrNone</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Content</span>
+					<span class="ParamName">url</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">TerrainFace</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TerrainFace</span>
+				<span class="Name">Top</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TerrainFace</span>
+				<span class="Name">Side</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TerrainFace</span>
+				<span class="Name">Bottom</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioDataModelType</span>
+			<span class="Name">Standalone</span>
+			<span class="Value">3</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">CanCollide</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Collision</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">CanTouch</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Collision</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">CollisionGroupId</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Collision</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">Locked</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Data</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">ResizeIncrement</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Data</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">ResizeableFaces</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Data</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">Anchored</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Part</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">CenterOfMass</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="String">Data</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="String">Part</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">Mass</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="String">Data</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="String">Part</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">Massless</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Part</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">TriangleMeshPart</span>
+		<span class="Name">CollisionFidelity</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Collision</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security</span>
+	<span class="Property">
+		<span class="ClassName Property">SurfaceAppearance</span>
+		<span class="Name">AlphaMode</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{LocalUserSecurity}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security</span>
+	<span class="Property">
+		<span class="ClassName Property">SurfaceAppearance</span>
+		<span class="Name">ColorMap</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{LocalUserSecurity}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security</span>
+	<span class="Property">
+		<span class="ClassName Property">SurfaceAppearance</span>
+		<span class="Name">MetalnessMap</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{LocalUserSecurity}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security</span>
+	<span class="Property">
+		<span class="ClassName Property">SurfaceAppearance</span>
+		<span class="Name">NormalMap</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{LocalUserSecurity}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security</span>
+	<span class="Property">
+		<span class="ClassName Property">SurfaceAppearance</span>
+		<span class="Name">RoughnessMap</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{LocalUserSecurity}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">StudioDataModelType</span>
+		<span class="Name">None</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">5</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">4</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">StudioService</span>
+			<span class="Name">ConvertToPackageUpload</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">StudioService</span>
+			<span class="Name">OnConvertToPackageResult</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">StudioService</span>
+			<span class="Name">OnOpenConvertToPackagePlugin</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioDataModelType</span>
+			<span class="Name">RobloxPlugin</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">StudioDataModelType</span>
+			<span class="Name">UserPlugin</span>
+		</span>
+	</span>
+</div>
+
 <hr id="519"/>
 <h2>Version 0.519.0.5190432</h2>
 

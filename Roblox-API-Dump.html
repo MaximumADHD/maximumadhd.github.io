@@ -23923,13 +23923,13 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">BasePart</span>
-	<span class="Name">Anchored</span>
+	<span class="Name">CanCollide</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">BasePart</span>
-	<span class="Name">CanCollide</span>
+	<span class="Name">CanQuery</span>
 </div>
 
 <div class="Property child">
@@ -23945,48 +23945,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">BasePart</span>
-	<span class="Name">Locked</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">BasePart</span>
-	<span class="Name">Massless</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">BasePart</span>
-	<span class="Name">ResizeIncrement</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Faces</span>
-	<span class="ClassName Property">BasePart</span>
-	<span class="Name">ResizeableFaces</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">BasePart</span>
-	<span class="Name">CanQuery</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">CFrame</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">BasePart</span>
-	<span class="Name">CenterOfMass</span>
-	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -23998,10 +23959,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">float</span>
+	<span class="Type">bool</span>
 	<span class="ClassName Property">BasePart</span>
-	<span class="Name">Mass</span>
-	<span class="Tag">[ReadOnly]</span>
+	<span class="Name">Locked</span>
 </div>
 
 <div class="Property child">
@@ -24018,6 +23978,20 @@
 	<span class="Name">Position</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">ResizeIncrement</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Faces</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">ResizeableFaces</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property deprecated child">
@@ -24053,6 +24027,19 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">Anchored</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">CenterOfMass</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">PhysicalProperties</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">CustomPhysicalProperties</span>
@@ -24076,6 +24063,19 @@
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">Mass</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">Massless</span>
 </div>
 
 <div class="Property child">
@@ -33429,6 +33429,19 @@
 <div class="Function child">
 	<span class="Type">Objects</span>
 	<span class="ClassName Function">DataModel</span>
+	<span class="Name">GetObjectsAllOrNone</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">url</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">DataModel</span>
 	<span class="Name">GetObjectsAsync</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -36954,19 +36967,6 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
-	<span class="Name">ConvertToPackageUpload</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">uploadUrl</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
 	<span class="Name">CopyToClipboard</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -37396,40 +37396,8 @@
 
 <div class="Event child">
 	<span class="ClassName Event">StudioService</span>
-	<span class="Name">OnConvertToPackageResult</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">isSuccessful</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">errorMessage</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">StudioService</span>
 	<span class="Name">OnImportFromRoblox</span>
 	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">StudioService</span>
-	<span class="Name">OnOpenConvertToPackagePlugin</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Objects</span>
-			<span class="ParamName">instances</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">name</span>
-		</span>
-	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -37593,35 +37561,35 @@
 	<span class="Type">AlphaMode</span>
 	<span class="ClassName Property">SurfaceAppearance</span>
 	<span class="Name">AlphaMode</span>
-	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">SurfaceAppearance</span>
 	<span class="Name">ColorMap</span>
-	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">SurfaceAppearance</span>
 	<span class="Name">MetalnessMap</span>
-	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">SurfaceAppearance</span>
 	<span class="Name">NormalMap</span>
-	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">SurfaceAppearance</span>
 	<span class="Name">RoughnessMap</span>
-	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -38157,6 +38125,59 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">TerrainDetail</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">TerrainDetail</span>
+	<span class="Name">ColorMap</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">TerrainFace</span>
+	<span class="ClassName Property">TerrainDetail</span>
+	<span class="Name">Face</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">MaterialPattern</span>
+	<span class="ClassName Property">TerrainDetail</span>
+	<span class="Name">MaterialPattern</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">TerrainDetail</span>
+	<span class="Name">MetalnessMap</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">TerrainDetail</span>
+	<span class="Name">NormalMap</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">TerrainDetail</span>
+	<span class="Name">RoughnessMap</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">TerrainDetail</span>
+	<span class="Name">StudsPerTile</span>
 </div>
 
 <div class="Class">
@@ -41578,10 +41599,28 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VRService</span>
+	<span class="Name">DidPointerHit</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">UserCFrame</span>
 	<span class="ClassName Property">VRService</span>
 	<span class="Name">GuiInputUserCFrame</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">VRService</span>
+	<span class="Name">PointerHitCFrame</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -43195,6 +43234,22 @@
 	<span class="Name">EnableDefaultVoice</span>
 	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VoiceChatService</span>
+	<span class="Name">VoiceChatEnabledForPlaceOnRcc</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VoiceChatService</span>
+	<span class="Name">VoiceChatEnabledForUniverseOnRcc</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Function child">
@@ -53273,20 +53328,14 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioDataModelType</span>
-	<span class="Name">RobloxPlugin</span>
+	<span class="Name">Standalone</span>
 	<span class="Value">3</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioDataModelType</span>
-	<span class="Name">UserPlugin</span>
-	<span class="Value">4</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">StudioDataModelType</span>
 	<span class="Name">None</span>
-	<span class="Value">5</span>
+	<span class="Value">4</span>
 </div>
 
 <div class="Enum">
@@ -54733,6 +54782,28 @@
 	<span class="EnumName">TerrainAcquisitionMethod</span>
 	<span class="Name">Other</span>
 	<span class="Value">11</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">TerrainFace</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainFace</span>
+	<span class="Name">Top</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainFace</span>
+	<span class="Name">Side</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TerrainFace</span>
+	<span class="Name">Bottom</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
