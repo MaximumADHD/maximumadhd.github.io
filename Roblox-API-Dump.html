@@ -47,6 +47,16 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">PropertyStatus</span>
+	<span class="ClassName Property">Instance</span>
+	<span class="Name">PropertyStatusStudio</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Instance</span>
 	<span class="Name">RobloxLocked</span>
@@ -12238,6 +12248,60 @@
 	<span class="Name">RootLocalizationTable</span>
 </div>
 
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">SelectionBehavior</span>
+	<span class="ClassName Property">GuiBase2d</span>
+	<span class="Name">SelectionBehaviorDown</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">SelectionBehavior</span>
+	<span class="ClassName Property">GuiBase2d</span>
+	<span class="Name">SelectionBehaviorLeft</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">SelectionBehavior</span>
+	<span class="ClassName Property">GuiBase2d</span>
+	<span class="Name">SelectionBehaviorRight</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">SelectionBehavior</span>
+	<span class="ClassName Property">GuiBase2d</span>
+	<span class="Name">SelectionBehaviorUp</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">GuiBase2d</span>
+	<span class="Name">SelectionGroup</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">GuiObject</span>
 	<span class="Superclass">GuiBase2d</span>
@@ -22200,6 +22264,13 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">MaterialPattern</span>
+	<span class="ClassName Property">MaterialVariant</span>
+	<span class="Name">MaterialPattern</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">MaterialVariant</span>
 	<span class="Name">MetalnessMap</span>
@@ -22224,13 +22295,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">MaterialVariant</span>
 	<span class="Name">StudsPerTile</span>
-</div>
-
-<div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">MaterialPattern</span>
-	<span class="ClassName Property">MaterialVariant</span>
-	<span class="Name">MaterialPattern</span>
 </div>
 
 <div class="Class">
@@ -27157,6 +27221,7 @@
 <div class="Class">
 	<span class="Name">PathfindingLink</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -40365,6 +40430,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">DefaultCameraID</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">Fullscreen</span>
@@ -42195,6 +42268,39 @@
 	<span class="Name">ScriptCollabEnabled</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">VideoCaptureService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VideoCaptureService</span>
+	<span class="Name">Active</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">VideoCaptureService</span>
+	<span class="Name">CameraID</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Map</span>
+	<span class="ClassName Function">VideoCaptureService</span>
+	<span class="Name">GetCameraDevices</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -52114,6 +52220,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">PropertyStatus</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PropertyStatus</span>
+	<span class="Name">Ok</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PropertyStatus</span>
+	<span class="Name">Warning</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PropertyStatus</span>
+	<span class="Name">Error</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">ProximityPromptExclusivity</span>
 </div>
 
@@ -53049,6 +53177,22 @@
 	<span class="EnumName">ScrollingDirection</span>
 	<span class="Name">XY</span>
 	<span class="Value">4</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">SelectionBehavior</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SelectionBehavior</span>
+	<span class="Name">Escape</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SelectionBehavior</span>
+	<span class="Name">Stop</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
