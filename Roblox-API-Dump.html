@@ -1542,17 +1542,6 @@
 
 <div class="Event child">
 	<span class="ClassName Event">AssetImportService</span>
-	<span class="Name">SettingsChanged</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">property</span>
-		</span>
-	</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">AssetImportService</span>
 	<span class="Name">UploadFinished</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -1804,6 +1793,23 @@
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">packageId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetManagerService</span>
+	<span class="Name">InsertVideo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">assetId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">assetName</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -12253,9 +12259,6 @@
 	<span class="Type">SelectionBehavior</span>
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">SelectionBehaviorDown</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
 
@@ -12264,9 +12267,6 @@
 	<span class="Type">SelectionBehavior</span>
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">SelectionBehaviorLeft</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
 
@@ -12275,9 +12275,6 @@
 	<span class="Type">SelectionBehavior</span>
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">SelectionBehaviorRight</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
 
@@ -12286,9 +12283,6 @@
 	<span class="Type">SelectionBehavior</span>
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">SelectionBehaviorUp</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
 
@@ -12296,9 +12290,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">SelectionGroup</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
 
@@ -15770,7 +15761,6 @@
 			<span class="ParamName">selectionParent</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -22156,6 +22146,20 @@
 			<span class="ParamName">material</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">RBXScriptSignal</span>
+	<span class="ClassName Function">MaterialService</span>
+	<span class="Name">GetMaterialOverrideChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">Material</span>
+			<span class="ParamName">material</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
