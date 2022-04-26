@@ -11,6 +11,366 @@
 	</ul>
 </head>
 
+<hr id="524"/>
+<h2>Version 0.524.0.5240408</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">GuiObject</span>
+			<span class="Name">SelectionOrder</span>
+			<span class="Tag">[NotBrowsable]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ImporterMeshSettings</span>
+			<span class="Name">Manifold</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Humanoid</span>
+			<span class="Name">ApplyDescriptionReset</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">HumanoidDescription</span>
+					<span class="ParamName">humanoidDescription</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">AssetTypeVerification</span>
+					<span class="ParamName default">assetTypeVerification</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">PropertyStatus</span>
+			<span class="ClassName Function">MaterialService</span>
+			<span class="Name">GetOverrideStatus</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">Material</span>
+					<span class="ParamName">material</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">MaterialService</span>
+			<span class="Name">OverrideStatusChanged</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">Material</span>
+					<span class="ParamName">material</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AccessoryType</span>
+			<span class="Name">Eyebrow</span>
+			<span class="Value">18</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AccessoryType</span>
+			<span class="Name">Eyelash</span>
+			<span class="Value">19</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AssetType</span>
+			<span class="Name">EyebrowAccessory</span>
+			<span class="Value">76</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AssetType</span>
+			<span class="Name">EyelashAccessory</span>
+			<span class="Value">77</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AvatarAssetType</span>
+			<span class="Name">EyebrowAccessory</span>
+			<span class="Value">76</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AvatarAssetType</span>
+			<span class="Name">EyelashAccessory</span>
+			<span class="Value">77</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">BundleType</span>
+			<span class="Name">Shoes</span>
+			<span class="Value">3</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">MaterialService</span>
+			<span class="Name">Use2022Materials</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">GuiObject</span>
+		<span class="Name">NextSelectionDown</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Selection</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">GuiObject</span>
+		<span class="Name">NextSelectionLeft</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Selection</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">GuiObject</span>
+		<span class="Name">NextSelectionRight</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Selection</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">GuiObject</span>
+		<span class="Name">NextSelectionUp</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Behavior</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Selection</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">category</span>
+	<span class="Property">
+		<span class="ClassName Property">GuiObject</span>
+		<span class="Name">Selectable</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Data</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Selection</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">MaterialService</span>
+		<span class="Name">Use2022Materials</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves|Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Callback">
+		<span class="ClassName Callback">RemoteFunction</span>
+		<span class="Name">OnServerInvoke</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">player</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Tuple</span>
+					<span class="ParamName">arguments</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Player</span>
+					<span class="ParamName">player</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Tuple</span>
+					<span class="ParamName">arguments</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">StudioService</span>
+			<span class="Name">SerializeInstances</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Technology</span>
+			<span class="Name">Future</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">VoiceChatService</span>
+			<span class="Name">EnableDefaultVoice</span>
+		</span>
+	</span>
+</div>
+
 <hr id="523"/>
 <h2>Version 0.523.0.5230387</h2>
 
