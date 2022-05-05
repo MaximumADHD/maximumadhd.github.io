@@ -1,60 +1,32 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/4e6c5b166b38e1d720f3ccc4695779f7da8f5d97
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/2886e94aff212265d69f1f299c66b250d23d817d
 
 ## API Changes
 
 ```plain
-Added Property int GuiObject.SelectionOrder [NotBrowsable]
-Added Property bool ImporterMeshSettings.Manifold [ReadOnly]
+Added Class FaceAnimatorService : Instance [NotCreatable] [Service] [NotReplicated]
+	Added Property bool FaceAnimatorService.AudioAnimationEnabled {RobloxScriptSecurity} [Hidden] [NotReplicated]
+	Added Property bool FaceAnimatorService.FlipHeadOrientation {RobloxScriptSecurity} [Hidden] [NotReplicated]
+	Added Property bool FaceAnimatorService.VideoAnimationEnabled {RobloxScriptSecurity} [Hidden] [NotReplicated]
 
-Added Function void Humanoid:ApplyDescriptionReset(HumanoidDescription humanoidDescription, Enum.AssetTypeVerification assetTypeVerification = "Default") [Yields]
-Added Function Enum.PropertyStatus MaterialService:GetOverrideStatus(Enum.Material material) {RobloxScriptSecurity}
+Added Class ScriptCloneWatcherHelperV2 : Instance [NotCreatable] [Service] [NotReplicated]
 
-Added Event MaterialService.OverrideStatusChanged(Enum.Material material) {RobloxScriptSecurity}
+Added Property string ReflectionMetadataItem.SliderScaling
 
-Added EnumItem AccessoryType.Eyebrow : 18
-Added EnumItem AccessoryType.Eyelash : 19
-Added EnumItem AssetType.EyebrowAccessory : 76
-Added EnumItem AssetType.EyelashAccessory : 77
-Added EnumItem AvatarAssetType.EyebrowAccessory : 76
-Added EnumItem AvatarAssetType.EyelashAccessory : 77
-Added EnumItem BundleType.Shoes : 3
+Added Function Array CollectionService:GetAllTags() {🧬Safe}
 
-Added Tag [NotReplicated] to Property MaterialService.Use2022Materials
+Added Event CollectionService.TagAdded(string tag)
+Added Event CollectionService.TagRemoved(string tag)
+Added Event GuiBase2d.SelectionChanged(bool amISelected, GuiObject previousSelection, GuiObject newSelection)
 
-Changed the category of Property GuiObject.NextSelectionDown 
-	from: "Behavior"
-	  to: "Selection"
-
-Changed the category of Property GuiObject.NextSelectionLeft 
-	from: "Behavior"
-	  to: "Selection"
-
-Changed the category of Property GuiObject.NextSelectionRight 
-	from: "Behavior"
-	  to: "Selection"
-
-Changed the category of Property GuiObject.NextSelectionUp 
-	from: "Behavior"
-	  to: "Selection"
-
-Changed the category of Property GuiObject.Selectable 
-	from: "Data"
-	  to: "Selection"
+Added EnumItem DeveloperMemoryTag.GeometryCSG : 24
 
 Changed the serialization of Property MaterialService.Use2022Materials 
-	from: [<💾|📁> Saves|Loads]
-	  to: [<📁> LoadOnly]
+	from: [<📁> LoadOnly]
+	  to: [<🕒> RuntimeOnly]
 
-Changed the parameters of Callback RemoteFunction.OnServerInvoke 
-	from: (Instance player, Tuple arguments)
-	  to: (Player player, Tuple arguments)
-
-Removed Function StudioService:SerializeInstances
-
-Removed Tag [Deprecated] from EnumItem Technology.Future
-Removed Tag [NotBrowsable] from Property VoiceChatService.EnableDefaultVoice
+Removed Property Instance.PropertyStatusStudio
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#524) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#525) for a syntax highlighted version!)

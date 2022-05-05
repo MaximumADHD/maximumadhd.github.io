@@ -47,16 +47,6 @@
 </div>
 
 <div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">PropertyStatus</span>
-	<span class="ClassName Property">Instance</span>
-	<span class="Name">PropertyStatusStudio</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Instance</span>
 	<span class="Name">RobloxLocked</span>
@@ -6182,6 +6172,14 @@
 	</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">CollectionService</span>
+	<span class="Name">GetAllTags</span>
+	<span class="Parameters"></span>
+	<span class="ThreadSafety">{🧬Safe}</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">Objects</span>
 	<span class="ClassName Function">CollectionService</span>
@@ -6300,6 +6298,28 @@
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">CollectionService</span>
+	<span class="Name">TagAdded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">tag</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">CollectionService</span>
+	<span class="Name">TagRemoved</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">tag</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -10821,6 +10841,41 @@
 </div>
 
 <div class="Class">
+	<span class="Name">FaceAnimatorService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">FaceAnimatorService</span>
+	<span class="Name">AudioAnimationEnabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">FaceAnimatorService</span>
+	<span class="Name">FlipHeadOrientation</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">FaceAnimatorService</span>
+	<span class="Name">VideoAnimationEnabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">FaceControls</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotBrowsable]</span>
@@ -12291,6 +12346,25 @@
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">SelectionGroup</span>
 	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">GuiBase2d</span>
+	<span class="Name">SelectionChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">amISelected</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">GuiObject</span>
+			<span class="ParamName">previousSelection</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">GuiObject</span>
+			<span class="ParamName">newSelection</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -21963,7 +22037,6 @@
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">Use2022Materials</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -31759,6 +31832,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">ReflectionMetadataItem</span>
+	<span class="Name">SliderScaling</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">double</span>
 	<span class="ClassName Property">ReflectionMetadataItem</span>
 	<span class="Name">UIMaximum</span>
@@ -32707,6 +32786,14 @@
 
 <div class="Class">
 	<span class="Name">ScriptCloneWatcherHelper</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ScriptCloneWatcherHelperV2</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
@@ -46886,6 +46973,12 @@
 	<span class="EnumName">DeveloperMemoryTag</span>
 	<span class="Name">Navigation</span>
 	<span class="Value">23</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DeveloperMemoryTag</span>
+	<span class="Name">GeometryCSG</span>
+	<span class="Value">24</span>
 </div>
 
 <div class="Enum">
