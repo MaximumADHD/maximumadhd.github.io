@@ -1,32 +1,34 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/2886e94aff212265d69f1f299c66b250d23d817d
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/fc71cb4c4bdb43ce7d6864864eee32f28b5b8921
 
 ## API Changes
 
 ```plain
-Added Class FaceAnimatorService : Instance [NotCreatable] [Service] [NotReplicated]
-	Added Property bool FaceAnimatorService.AudioAnimationEnabled {RobloxScriptSecurity} [Hidden] [NotReplicated]
-	Added Property bool FaceAnimatorService.FlipHeadOrientation {RobloxScriptSecurity} [Hidden] [NotReplicated]
-	Added Property bool FaceAnimatorService.VideoAnimationEnabled {RobloxScriptSecurity} [Hidden] [NotReplicated]
+Added Property float Studio.Main Volume {RobloxScriptSecurity}
+Added Property bool Studio.Show Navigation Labels {RobloxScriptSecurity}
+Added Property Enum.WrapLayerAutoSkin WrapLayer.AutoSkin
 
-Added Class ScriptCloneWatcherHelperV2 : Instance [NotCreatable] [Service] [NotReplicated]
+Added Function void AssetImportService:Cancel() {RobloxScriptSecurity}
+Added Function void MetaBreakpoint:SetContextEnabled(int context, bool enabled) {RobloxScriptSecurity}
+Added Function void SessionService:RemoveSessionsWithMetadataKey(string key) {RobloxScriptSecurity}
 
-Added Property string ReflectionMetadataItem.SliderScaling
+Added Enum WrapLayerAutoSkin
+	Added EnumItem WrapLayerAutoSkin.Disabled : 0
+	Added EnumItem WrapLayerAutoSkin.EnabledPreserve : 1
+	Added EnumItem WrapLayerAutoSkin.EnabledOverride : 2
 
-Added Function Array CollectionService:GetAllTags() {🧬Safe}
+Changed the security of Property UserGameSettings.MasterVolume 
+	from: {None}
+	  to: {RobloxScriptSecurity}
 
-Added Event CollectionService.TagAdded(string tag)
-Added Event CollectionService.TagRemoved(string tag)
-Added Event GuiBase2d.SelectionChanged(bool amISelected, GuiObject previousSelection, GuiObject newSelection)
+Removed Class ReplicatedScriptService
 
-Added EnumItem DeveloperMemoryTag.GeometryCSG : 24
-
-Changed the serialization of Property MaterialService.Use2022Materials 
-	from: [<📁> LoadOnly]
-	  to: [<🕒> RuntimeOnly]
-
-Removed Property Instance.PropertyStatusStudio
+Removed Property GameSettings.AdditionalCoreIncludeDirs
+Removed Property GameSettings.OverrideStarterScript
+Removed Property Studio.OverrideCoreScripts
+Removed Property Studio.OverrideCoreScriptsDir
+Removed Property Studio.Show Navigation Areas
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#525) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#526) for a syntax highlighted version!)

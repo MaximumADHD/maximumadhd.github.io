@@ -1474,6 +1474,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">Cancel</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">AssetImportService</span>
 	<span class="Name">GetCurrentImportMap</span>
@@ -4081,6 +4089,13 @@
 	<span class="ClassName Property">WrapLayer</span>
 	<span class="Name">ReferenceOrigin</span>
 	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">WrapLayerAutoSkin</span>
+	<span class="ClassName Property">WrapLayer</span>
+	<span class="Name">AutoSkin</span>
 </div>
 
 <div class="Property child">
@@ -11782,20 +11797,6 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Settings]</span>
 	<span class="Tag">[NotBrowsable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">AdditionalCoreIncludeDirs</span>
-	<span class="Security">{✏️RobloxScriptSecurity}</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">GameSettings</span>
-	<span class="Name">OverrideStarterScript</span>
-	<span class="Security">{✏️RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -23216,6 +23217,23 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MetaBreakpoint</span>
+	<span class="Name">SetContextEnabled</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">context</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">enabled</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MetaBreakpoint</span>
 	<span class="Name">SetContinueExecution</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -32295,13 +32313,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">ReplicatedScriptService</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-</div>
-
-<div class="Class">
 	<span class="Name">ReplicatedStorage</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -34178,6 +34189,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">SessionService</span>
+	<span class="Name">RemoveSessionsWithMetadataKey</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SessionService</span>
 	<span class="Name">ReplaceSession</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -35991,6 +36015,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Main Volume</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Only Play Audio from Window in Focus</span>
@@ -36068,20 +36099,6 @@
 	<span class="Type">QDir</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">LocalAssetsFolder</span>
-	<span class="Security">{✏️RobloxScriptSecurity}</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">OverrideCoreScripts</span>
-	<span class="Security">{✏️RobloxScriptSecurity}</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">QDir</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">OverrideCoreScriptsDir</span>
 	<span class="Security">{✏️RobloxScriptSecurity}</span>
 </div>
 
@@ -36793,7 +36810,7 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
-	<span class="Name">Show Navigation Areas</span>
+	<span class="Name">Show Navigation Labels</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -40620,6 +40637,7 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">MasterVolume</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -56231,6 +56249,28 @@
 	<span class="EnumName">WaterForce</span>
 	<span class="Name">Max</span>
 	<span class="Value">4</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">WrapLayerAutoSkin</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WrapLayerAutoSkin</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WrapLayerAutoSkin</span>
+	<span class="Name">EnabledPreserve</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WrapLayerAutoSkin</span>
+	<span class="Name">EnabledOverride</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
