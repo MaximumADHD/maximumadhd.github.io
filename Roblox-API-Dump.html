@@ -6976,8 +6976,14 @@
 </div>
 
 <div class="Class">
-	<span class="Name">Plane</span>
+	<span class="Name">PlaneConstraint</span>
 	<span class="Superclass">Constraint</span>
+</div>
+
+<div class="Class deprecated">
+	<span class="Name">Plane</span>
+	<span class="Superclass">PlaneConstraint</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class">
@@ -12315,7 +12321,6 @@
 	<span class="Type">SelectionBehavior</span>
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">SelectionBehaviorDown</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -12323,7 +12328,6 @@
 	<span class="Type">SelectionBehavior</span>
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">SelectionBehaviorLeft</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -12331,7 +12335,6 @@
 	<span class="Type">SelectionBehavior</span>
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">SelectionBehaviorRight</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -12339,14 +12342,12 @@
 	<span class="Type">SelectionBehavior</span>
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">SelectionBehaviorUp</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">GuiBase2d</span>
 	<span class="Name">SelectionGroup</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Event child">
@@ -12550,7 +12551,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">GuiObject</span>
 	<span class="Name">SelectionOrder</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Function child">
@@ -18584,20 +18584,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">ImporterTextureSettings</span>
-	<span class="Superclass">ImporterBaseSettings</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">ImporterTextureSettings</span>
-	<span class="Name">FilePath</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Class">
 	<span class="Name">IncrementalPatchBuilder</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -19390,6 +19376,14 @@
 			<span class="ParamName">keyframeSequence</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">LSPFileSyncService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -26525,6 +26519,14 @@
 
 <div class="Property child">
 	<span class="EnumName Type">Enum</span>
+	<span class="Type">PhysicsInertiaAndVolumeFix</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">PhysicsInertiaAndVolumeFix</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
 	<span class="Type">PhysicsSimulationRate</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">PhysicsSimulationRate</span>
@@ -32478,6 +32480,14 @@
 <div class="Function child">
 	<span class="Type">string</span>
 	<span class="ClassName Function">RunService</span>
+	<span class="Name">GetRobloxClientChannel</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">RunService</span>
 	<span class="Name">GetRobloxVersion</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -32797,14 +32807,6 @@
 
 <div class="Class">
 	<span class="Name">ScriptCloneWatcherHelper</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">ScriptCloneWatcherHelperV2</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
@@ -34393,6 +34395,14 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Smoke</span>
 	<span class="Name">TimeScale</span>
+</div>
+
+<div class="Class">
+	<span class="Name">SnippetService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -50723,6 +50733,12 @@
 	<span class="Value">26</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">LSPMethodType</span>
+	<span class="Name">Roblox_patchSnippetData</span>
+	<span class="Value">27</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">Language</span>
 </div>
@@ -52009,6 +52025,28 @@
 	<span class="EnumName">PermissionLevelShown</span>
 	<span class="Name">Roblox</span>
 	<span class="Value">4</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">PhysicsInertiaAndVolumeFix</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PhysicsInertiaAndVolumeFix</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PhysicsInertiaAndVolumeFix</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PhysicsInertiaAndVolumeFix</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
