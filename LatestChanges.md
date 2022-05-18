@@ -1,34 +1,42 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/fc71cb4c4bdb43ce7d6864864eee32f28b5b8921
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/2535e037a377dd68d73d0b8938807bbd58b966cc
 
 ## API Changes
 
 ```plain
-Added Property float Studio.Main Volume {RobloxScriptSecurity}
-Added Property bool Studio.Show Navigation Labels {RobloxScriptSecurity}
-Added Property Enum.WrapLayerAutoSkin WrapLayer.AutoSkin
+Added Class LSPFileSyncService : Instance [NotCreatable] [Service] [NotReplicated]
+Added Class SnippetService : Instance [NotCreatable] [Service] [NotReplicated]
+Added Class PlaneConstraint : Constraint
 
-Added Function void AssetImportService:Cancel() {RobloxScriptSecurity}
-Added Function void MetaBreakpoint:SetContextEnabled(int context, bool enabled) {RobloxScriptSecurity}
-Added Function void SessionService:RemoveSessionsWithMetadataKey(string key) {RobloxScriptSecurity}
+Added Property Enum.PhysicsInertiaAndVolumeFix Workspace.PhysicsInertiaAndVolumeFix [NotScriptable]
 
-Added Enum WrapLayerAutoSkin
-	Added EnumItem WrapLayerAutoSkin.Disabled : 0
-	Added EnumItem WrapLayerAutoSkin.EnabledPreserve : 1
-	Added EnumItem WrapLayerAutoSkin.EnabledOverride : 2
+Added Function string RunService:GetRobloxClientChannel() {RobloxScriptSecurity}
 
-Changed the security of Property UserGameSettings.MasterVolume 
-	from: {None}
-	  to: {RobloxScriptSecurity}
+Added Enum PhysicsInertiaAndVolumeFix
+	Added EnumItem PhysicsInertiaAndVolumeFix.Default : 0
+	Added EnumItem PhysicsInertiaAndVolumeFix.Disabled : 1
+	Added EnumItem PhysicsInertiaAndVolumeFix.Enabled : 2
 
-Removed Class ReplicatedScriptService
+Added EnumItem LSPMethodType.Roblox_patchSnippetData : 27
 
-Removed Property GameSettings.AdditionalCoreIncludeDirs
-Removed Property GameSettings.OverrideStarterScript
-Removed Property Studio.OverrideCoreScripts
-Removed Property Studio.OverrideCoreScriptsDir
-Removed Property Studio.Show Navigation Areas
+Added Tag [Deprecated] to Class Plane
+
+Changed the superclass of Class Plane 
+	from: "Constraint"
+	  to: "PlaneConstraint"
+
+Removed Class ScriptCloneWatcherHelperV2
+
+Removed Class ImporterTextureSettings
+	Removed Property ImporterTextureSettings.FilePath
+
+Removed Tag [NotBrowsable] from Property GuiBase2d.SelectionBehaviorDown
+Removed Tag [NotBrowsable] from Property GuiBase2d.SelectionBehaviorLeft
+Removed Tag [NotBrowsable] from Property GuiBase2d.SelectionBehaviorRight
+Removed Tag [NotBrowsable] from Property GuiBase2d.SelectionBehaviorUp
+Removed Tag [NotBrowsable] from Property GuiBase2d.SelectionGroup
+Removed Tag [NotBrowsable] from Property GuiObject.SelectionOrder
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#526) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#527) for a syntax highlighted version!)
