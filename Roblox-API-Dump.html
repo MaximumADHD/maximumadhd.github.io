@@ -1156,6 +1156,105 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AnimationStreamTrack</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">AnimationStreamTrack</span>
+	<span class="Name">IsPlaying</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">AnimationPriority</span>
+	<span class="ClassName Property">AnimationStreamTrack</span>
+	<span class="Name">Priority</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">AnimationStreamTrack</span>
+	<span class="Name">WeightCurrent</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">AnimationStreamTrack</span>
+	<span class="Name">WeightTarget</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AnimationStreamTrack</span>
+	<span class="Name">AdjustWeight</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName default">weight</span>
+			<span class="ParamDefault float">1</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName default">fadeTime</span>
+			<span class="ParamDefault float">0.100000001</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AnimationStreamTrack</span>
+	<span class="Name">Play</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName default">fadeTime</span>
+			<span class="ParamDefault float">0.100000001</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName default">weight</span>
+			<span class="ParamDefault float">1</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AnimationStreamTrack</span>
+	<span class="Name">Stop</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName default">fadeTime</span>
+			<span class="ParamDefault float">0.100000001</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AnimationStreamTrack</span>
+	<span class="Name">Stopped</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">AnimationTrack</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -1372,6 +1471,19 @@
 			<span class="ParamName">animation</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">AnimationStreamTrack</span>
+	<span class="ClassName Function">Animator</span>
+	<span class="Name">LoadStreamAnimation</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">TrackerStreamAnimation</span>
+			<span class="ParamName">animation</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -11401,6 +11513,21 @@
 </div>
 
 <div class="Class">
+	<span class="Name">FacialAnimationStreamingService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">FacialAnimationStreamingService</span>
+	<span class="Name">Enabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">Feature</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -12946,7 +13073,7 @@
 <div class="Property child">
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">CanvasGroup</span>
-	<span class="Name">GroupColor</span>
+	<span class="Name">GroupColor3</span>
 </div>
 
 <div class="Property child">
@@ -18539,6 +18666,12 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ImporterRootSettings</span>
+	<span class="Name">InsertWithScenePosition</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterRootSettings</span>
 	<span class="Name">InvertNegativeFaces</span>
 </div>
 
@@ -19384,31 +19517,6 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">LSPService</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">LSPService</span>
-	<span class="Name">RegisterLSPCallback</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">LSPMethodType</span>
-			<span class="ParamName">methodToOverride</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Function</span>
-			<span class="ParamName">callbackFunction</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -23203,6 +23311,27 @@
 		<span class="Parameter">
 			<span class="Type">Function</span>
 			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MetaBreakpoint</span>
+	<span class="Name">SetChildBreakpointEnabledByScriptAndContext</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">script</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">contextGST</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">enabled</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -32434,6 +32563,14 @@
 </div>
 
 <div class="Class">
+	<span class="Name">RtMessagingService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">RunService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -33174,6 +33311,103 @@
 			<span class="ParamName">watch</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ScriptDocument</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">ScriptDocument</span>
+	<span class="Name">GetNumLines</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">LuaSourceContainer</span>
+	<span class="ClassName Function">ScriptDocument</span>
+	<span class="Name">GetScript</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">ScriptDocument</span>
+	<span class="Name">GetText</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ScriptEditorService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ScriptEditorService</span>
+	<span class="Name">RegisterLSPCallback</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">LSPMethodType</span>
+			<span class="ParamName">methodToOverride</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callbackFunction</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ScriptEditorService</span>
+	<span class="Name">TextDocumentDidChange</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">ScriptDocument</span>
+			<span class="ParamName">document</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">changesArray</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ScriptEditorService</span>
+	<span class="Name">TextDocumentDidClose</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">ScriptDocument</span>
+			<span class="ParamName">oldDocument</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ScriptEditorService</span>
+	<span class="Name">TextDocumentDidOpen</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">ScriptDocument</span>
+			<span class="ParamName">newDocument</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -37336,14 +37570,6 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">bool</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">GetUserIsInTeamCreateToggleRamp</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
 	<span class="Type">RaycastResult</span>
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">GizmoRaycast</span>
@@ -38829,6 +39055,7 @@
 			<span class="ParamDefault string"></span>
 		</span>
 	</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Event child">
@@ -39490,6 +39717,12 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">TrackerStreamAnimation</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -40603,6 +40836,7 @@
 	<span class="Name">DefaultCameraID</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -46149,6 +46383,12 @@
 	<span class="EnumName">ConnectionError</span>
 	<span class="Name">DisconnectModeratedGame</span>
 	<span class="Value">287</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ConnectionError</span>
+	<span class="Name">DisconnectOutOfMemoryExitContinue</span>
+	<span class="Value">288</span>
 </div>
 
 <div class="EnumItem child">
