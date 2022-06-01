@@ -4179,14 +4179,12 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">WrapLayer</span>
 	<span class="Name">Order</span>
-	<span class="Security">{✏️PluginSecurity}</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">WrapLayer</span>
 	<span class="Name">Puffiness</span>
-	<span class="Security">{✏️PluginSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -10033,6 +10031,10 @@
 			<span class="Type">int</span>
 			<span class="ParamName">line</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">showErrorOnFail</span>
+		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -12031,6 +12033,36 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">GetTextBoundsParams</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Font</span>
+	<span class="ClassName Property">GetTextBoundsParams</span>
+	<span class="Name">Font</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GetTextBoundsParams</span>
+	<span class="Name">Size</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">GetTextBoundsParams</span>
+	<span class="Name">Text</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GetTextBoundsParams</span>
+	<span class="Name">Width</span>
 </div>
 
 <div class="Class">
@@ -18372,6 +18404,20 @@
 
 <div class="Function child">
 	<span class="EnumName Type">Enum</span>
+	<span class="Type">IXPLoadingStatus?</span>
+	<span class="ClassName Function">IXPService</span>
+	<span class="Name">GetBrowserTrackerStatusForLayer</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">layerName</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="EnumName Type">Enum</span>
 	<span class="Type">IXPLoadingStatus</span>
 	<span class="ClassName Function">IXPService</span>
 	<span class="Name">GetUserLayerLoadingStatus</span>
@@ -18383,6 +18429,20 @@
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">IXPService</span>
 	<span class="Name">GetUserLayerVariables</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">layerName</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">IXPLoadingStatus?</span>
+	<span class="ClassName Function">IXPService</span>
+	<span class="Name">GetUserStatusForLayer</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -18599,6 +18659,32 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">CageManifold</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">CageManifoldPreview</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">CageNoOverlappingVertices</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">CageNoOverlappingVerticesPreview</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">ImporterMeshSettings</span>
 	<span class="Name">Dimensions</span>
@@ -18615,13 +18701,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ImporterMeshSettings</span>
 	<span class="Name">IgnoreVertexColors</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">Manifold</span>
-	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -18700,6 +18779,12 @@
 	<span class="Type">MeshScaleUnit</span>
 	<span class="ClassName Property">ImporterRootSettings</span>
 	<span class="Name">ScaleUnit</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterRootSettings</span>
+	<span class="Name">UseSceneOriginAsPivot</span>
 </div>
 
 <div class="Property child">
@@ -20934,6 +21019,23 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">PlayerOwnsBundle</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">bundleId</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">PromptBundlePurchase</span>
@@ -21744,25 +21846,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Brick</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">BrickName</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Cobblestone</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -21776,25 +21862,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Concrete</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">ConcreteName</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">CorrodedMetal</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -21816,14 +21886,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">DiamondPlate</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">DiamondPlateName</span>
@@ -21832,25 +21894,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Fabric</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">FabricName</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Foil</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -21872,25 +21918,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Granite</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">GraniteName</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Grass</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -21907,14 +21937,6 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">GroundName</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Ice</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -21944,25 +21966,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Marble</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">MarbleName</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Metal</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -21992,25 +21998,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Pebble</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">PebbleName</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Plastic</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -22040,14 +22030,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Sand</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">SandName</span>
@@ -22064,25 +22046,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Slate</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">SlateName</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">SmoothPlastic</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -22104,25 +22070,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">Wood</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">WoodName</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">WoodPlanks</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -22144,206 +22094,12 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainAsphalt</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainBasalt</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainBrick</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainCobblestone</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainConcrete</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainCrackedLava</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainGlacier</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainGrass</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainGround</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainIce</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainLeafyGrass</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainLimestone</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainMud</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainPavement</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainRock</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainSalt</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainSand</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainSandstone</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainSlate</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainSnow</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Property">MaterialService</span>
-	<span class="Name">TerrainWoodPlanks</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">MaterialService</span>
 	<span class="Name">hasPropertyWarningInStudio</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">MaterialService</span>
-	<span class="Name">ClearOverridePartMaterial</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">Material</span>
-			<span class="ParamName">material</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">MaterialService</span>
-	<span class="Name">ClearOverrideTerrainMaterial</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">Material</span>
-			<span class="ParamName">material</span>
-		</span>
-	</span>
 </div>
 
 <div class="Function child">
@@ -22391,19 +22147,6 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Function">MaterialService</span>
-	<span class="Name">GetOverridePartMaterial</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">Material</span>
-			<span class="ParamName">material</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">PropertyStatus</span>
 	<span class="ClassName Function">MaterialService</span>
@@ -22419,19 +22162,6 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">MaterialVariant</span>
-	<span class="ClassName Function">MaterialService</span>
-	<span class="Name">GetOverrideTerrainMaterial</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">Material</span>
-			<span class="ParamName">material</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MaterialService</span>
 	<span class="Name">SetBaseMaterialOverride</span>
@@ -22444,30 +22174,6 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">name</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">MaterialService</span>
-	<span class="Name">SetOverridePartMaterial</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">MaterialVariant</span>
-			<span class="ParamName">materialVariant</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">MaterialService</span>
-	<span class="Name">SetOverrideTerrainMaterial</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">MaterialVariant</span>
-			<span class="ParamName">materialVariant</span>
 		</span>
 	</span>
 </div>
@@ -33353,6 +33059,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">ScriptDocument</span>
+	<span class="ClassName Function">ScriptEditorService</span>
+	<span class="Name">FindScriptDocument</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">ScriptEditorService</span>
 	<span class="Name">RegisterLSPCallback</span>
@@ -39375,6 +39094,19 @@
 		<span class="Parameter">
 			<span class="Type">Content</span>
 			<span class="ParamName">assetId</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Function">TextService</span>
+	<span class="Name">GetTextBoundsAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">GetTextBoundsParams</span>
+			<span class="ParamName">params</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -47757,7 +47489,7 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">Font</span>
-	<span class="Name">GothamSemibold</span>
+	<span class="Name">GothamMedium</span>
 	<span class="Value">18</span>
 </div>
 
@@ -50922,61 +50654,61 @@
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
 	<span class="Name">TextDocument_publishDiagnostics</span>
-	<span class="Value">18</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Window_showMessage</span>
 	<span class="Value">19</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Window_showMessageRequest</span>
+	<span class="Name">Window_showMessage</span>
 	<span class="Value">20</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_registerSyntaxCategories</span>
+	<span class="Name">Window_showMessageRequest</span>
 	<span class="Value">21</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_signalQuiescence</span>
+	<span class="Name">Roblox_registerSyntaxCategories</span>
 	<span class="Value">22</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_syntaxHighlight</span>
+	<span class="Name">Roblox_signalQuiescence</span>
 	<span class="Value">23</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_suggestExtraSelections</span>
+	<span class="Name">Roblox_syntaxHighlight</span>
 	<span class="Value">24</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_findExecutablePosition</span>
+	<span class="Name">Roblox_suggestExtraSelections</span>
 	<span class="Value">25</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_findColor3</span>
+	<span class="Name">Roblox_findExecutablePosition</span>
 	<span class="Value">26</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_patchSnippetData</span>
+	<span class="Name">Roblox_findColor3</span>
 	<span class="Value">27</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LSPMethodType</span>
+	<span class="Name">Roblox_patchSnippetData</span>
+	<span class="Value">28</span>
 </div>
 
 <div class="Enum">

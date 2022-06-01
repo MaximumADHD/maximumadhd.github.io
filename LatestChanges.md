@@ -1,63 +1,103 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/581236f68b6325497867f5dea0d057ba1e2e8871
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/8dab716d4560e7519459a50e9231bcab717f3685
 
 ## API Changes
 
 ```plain
-Added Class AnimationStreamTrack : Instance [NotCreatable] [NotReplicated]
-	Added Property bool AnimationStreamTrack.IsPlaying [Hidden] [ReadOnly]
-	Added Property Enum.AnimationPriority AnimationStreamTrack.Priority [Hidden] [NotReplicated]
-	Added Property float AnimationStreamTrack.WeightCurrent [Hidden] [ReadOnly]
-	Added Property float AnimationStreamTrack.WeightTarget [Hidden] [ReadOnly]
-	Added Function void AnimationStreamTrack:AdjustWeight(float weight = 1, float fadeTime = 0.100000001) {RobloxScriptSecurity}
-	Added Function void AnimationStreamTrack:Play(float fadeTime = 0.100000001, float weight = 1) {RobloxScriptSecurity}
-	Added Function void AnimationStreamTrack:Stop(float fadeTime = 0.100000001) {RobloxScriptSecurity}
-	Added Event AnimationStreamTrack.Stopped() {RobloxScriptSecurity}
+Added Class GetTextBoundsParams : Instance [NotReplicated]
+	Added Property Font GetTextBoundsParams.Font
+	Added Property float GetTextBoundsParams.Size
+	Added Property string GetTextBoundsParams.Text
+	Added Property float GetTextBoundsParams.Width
 
-Added Class FacialAnimationStreamingService : Instance [NotCreatable] [Service]
-	Added Property bool FacialAnimationStreamingService.Enabled {RobloxScriptSecurity} [Hidden]
+Added Property bool ImporterMeshSettings.CageManifold [ReadOnly]
+Added Property bool ImporterMeshSettings.CageManifoldPreview
+Added Property bool ImporterMeshSettings.CageNoOverlappingVertices [ReadOnly]
+Added Property bool ImporterMeshSettings.CageNoOverlappingVerticesPreview
+Added Property bool ImporterRootSettings.UseSceneOriginAsPivot
 
-Added Class RtMessagingService : Instance [NotCreatable] [Service] [NotReplicated]
+Added Function Enum.IXPLoadingStatus? IXPService:GetBrowserTrackerStatusForLayer(string layerName) {LocalUserSecurity}
+Added Function Enum.IXPLoadingStatus? IXPService:GetUserStatusForLayer(string layerName) {LocalUserSecurity}
+Added Function bool MarketplaceService:PlayerOwnsBundle(Player player, int64 bundleId) [Yields]
+Added Function ScriptDocument ScriptEditorService:FindScriptDocument(LuaSourceContainer script) {RobloxScriptSecurity}
+Added Function Vector2 TextService:GetTextBoundsAsync(GetTextBoundsParams params) [Yields]
 
-Added Class ScriptDocument : Instance [NotCreatable] [NotReplicated]
-	Added Function int ScriptDocument:GetNumLines() {RobloxScriptSecurity}
-	Added Function LuaSourceContainer ScriptDocument:GetScript() {RobloxScriptSecurity}
-	Added Function string ScriptDocument:GetText() {RobloxScriptSecurity}
+Added EnumItem Font.GothamMedium : 18
 
-Added Class ScriptEditorService : Instance [NotCreatable] [Service] [NotReplicated]
-	Added Function void ScriptEditorService:RegisterLSPCallback(Enum.LSPMethodType methodToOverride, Function callbackFunction) {RobloxScriptSecurity}
-	Added Event ScriptEditorService.TextDocumentDidChange(ScriptDocument document, Variant changesArray) {RobloxScriptSecurity}
-	Added Event ScriptEditorService.TextDocumentDidClose(ScriptDocument oldDocument) {RobloxScriptSecurity}
-	Added Event ScriptEditorService.TextDocumentDidOpen(ScriptDocument newDocument) {RobloxScriptSecurity}
+Changed the write permissions of Property WrapLayer.Order 
+	from: {✏️PluginSecurity}
+	  to: {✏️None}
 
-Added Class TrackerStreamAnimation : Instance [NotReplicated]
+Changed the write permissions of Property WrapLayer.Puffiness 
+	from: {✏️PluginSecurity}
+	  to: {✏️None}
 
-Added Property Color3 CanvasGroup.GroupColor3
-Added Property bool ImporterRootSettings.InsertWithScenePosition
+Changed the parameters of Function DebuggerUIService:OpenScriptAtLine 
+	from: (string guid, int debuggerConnectionId, int line)
+	  to: (string guid, int debuggerConnectionId, int line, bool showErrorOnFail)
 
-Added Function AnimationStreamTrack Animator:LoadStreamAnimation(TrackerStreamAnimation animation) {RobloxScriptSecurity}
-Added Function void MetaBreakpoint:SetChildBreakpointEnabledByScriptAndContext(string script, int contextGST, bool enabled) {RobloxScriptSecurity}
+Changed the value of EnumItem LSPMethodType.TextDocument_publishDiagnostics from 18 to 19
+Changed the value of EnumItem LSPMethodType.Window_showMessage from 19 to 20
+Changed the value of EnumItem LSPMethodType.Window_showMessageRequest from 20 to 21
+Changed the value of EnumItem LSPMethodType.Roblox_registerSyntaxCategories from 21 to 22
+Changed the value of EnumItem LSPMethodType.Roblox_signalQuiescence from 22 to 23
+Changed the value of EnumItem LSPMethodType.Roblox_syntaxHighlight from 23 to 24
+Changed the value of EnumItem LSPMethodType.Roblox_suggestExtraSelections from 24 to 25
+Changed the value of EnumItem LSPMethodType.Roblox_findExecutablePosition from 25 to 26
+Changed the value of EnumItem LSPMethodType.Roblox_findColor3 from 26 to 27
+Changed the value of EnumItem LSPMethodType.Roblox_patchSnippetData from 27 to 28
 
-Added EnumItem ConnectionError.DisconnectOutOfMemoryExitContinue : 288
+Removed Property ImporterMeshSettings.Manifold
+Removed Property MaterialService.Brick
+Removed Property MaterialService.Cobblestone
+Removed Property MaterialService.Concrete
+Removed Property MaterialService.CorrodedMetal
+Removed Property MaterialService.DiamondPlate
+Removed Property MaterialService.Fabric
+Removed Property MaterialService.Foil
+Removed Property MaterialService.Granite
+Removed Property MaterialService.Grass
+Removed Property MaterialService.Ice
+Removed Property MaterialService.Marble
+Removed Property MaterialService.Metal
+Removed Property MaterialService.Pebble
+Removed Property MaterialService.Plastic
+Removed Property MaterialService.Sand
+Removed Property MaterialService.Slate
+Removed Property MaterialService.SmoothPlastic
+Removed Property MaterialService.Wood
+Removed Property MaterialService.WoodPlanks
+Removed Property MaterialService.TerrainAsphalt
+Removed Property MaterialService.TerrainBasalt
+Removed Property MaterialService.TerrainBrick
+Removed Property MaterialService.TerrainCobblestone
+Removed Property MaterialService.TerrainConcrete
+Removed Property MaterialService.TerrainCrackedLava
+Removed Property MaterialService.TerrainGlacier
+Removed Property MaterialService.TerrainGrass
+Removed Property MaterialService.TerrainGround
+Removed Property MaterialService.TerrainIce
+Removed Property MaterialService.TerrainLeafyGrass
+Removed Property MaterialService.TerrainLimestone
+Removed Property MaterialService.TerrainMud
+Removed Property MaterialService.TerrainPavement
+Removed Property MaterialService.TerrainRock
+Removed Property MaterialService.TerrainSalt
+Removed Property MaterialService.TerrainSand
+Removed Property MaterialService.TerrainSandstone
+Removed Property MaterialService.TerrainSlate
+Removed Property MaterialService.TerrainSnow
+Removed Property MaterialService.TerrainWoodPlanks
 
-Added Tag [NotReplicated] to Property UserGameSettings.DefaultCameraID
-Added Tag [Yields] to Function TextChannel:SendAsync
+Removed Function MaterialService:ClearOverridePartMaterial
+Removed Function MaterialService:ClearOverrideTerrainMaterial
+Removed Function MaterialService:GetOverridePartMaterial
+Removed Function MaterialService:GetOverrideTerrainMaterial
+Removed Function MaterialService:SetOverridePartMaterial
+Removed Function MaterialService:SetOverrideTerrainMaterial
 
-Changed the serialization of Property VideoCaptureService.Active 
-	from: [<💾|📁> Saves|Loads]
-	  to: [<🕒> RuntimeOnly]
-
-Changed the serialization of Property VideoCaptureService.CameraID 
-	from: [<💾|📁> Saves|Loads]
-	  to: [<🕒> RuntimeOnly]
-
-Removed Class LSPService
-	Removed Function LSPService:RegisterLSPCallback
-
-Removed Property CanvasGroup.GroupColor
-
-Removed Function StudioService:GetUserIsInTeamCreateToggleRamp
+Removed EnumItem Font.GothamSemibold
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#528) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#529) for a syntax highlighted version!)
