@@ -33027,6 +33027,36 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">ScriptDocument</span>
+	<span class="Name">EditTextAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">newText</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">startLine</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">startCharacter</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">endLine</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">endCharacter</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">int</span>
 	<span class="ClassName Function">ScriptDocument</span>
 	<span class="Name">GetNumLines</span>
@@ -37018,6 +37048,14 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioPublishService</span>
+	<span class="Name">RefreshDocumentDisplayName</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioPublishService</span>
 	<span class="Name">SetTeamCreateOnPublishInfo</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -37035,6 +37073,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioPublishService</span>
+	<span class="Name">SetUniverseDisplayName</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">newName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioPublishService</span>
 	<span class="Name">SetUploadNames</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -37044,6 +37095,77 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">universeName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioPublishService</span>
+	<span class="Name">ShowSaveOrPublishPlaceToRoblox</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">showGameSelect</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isPublish</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">StudioCloseMode</span>
+			<span class="ParamName">closeMode</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioPublishService</span>
+	<span class="Name">GameNameUpdated</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioPublishService</span>
+	<span class="Name">GamePublishFinished</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">success</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">gameId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioPublishService</span>
+	<span class="Name">OnSaveOrPublishPlaceToRoblox</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">showGameSelect</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isPublish</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">StudioCloseMode</span>
+			<span class="ParamName">closeMode</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -37196,8 +37318,72 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
-	<span class="Name">EmitPlacePublishedSignal</span>
+	<span class="Name">DEPRECATED_EmitPlacePublishedSignal</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">DEPRECATED_RefreshDocumentDisplayName</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">DEPRECATED_SetUniverseDisplayName</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">newName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">DEPRECATED_ShowSaveOrPublishPlaceToRoblox</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">showGameSelect</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isPublish</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">StudioCloseMode</span>
+			<span class="ParamName">closeMode</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioService</span>
+	<span class="Name">DEPRECATED_publishAs</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">universeId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">placeId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">groupId</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -37396,35 +37582,6 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
-	<span class="Name">PublishAs</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">universeId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">placeId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">groupId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">RefreshDocumentDisplayName</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
 	<span class="Name">RequestClose</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -37456,19 +37613,6 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioService</span>
-	<span class="Name">SetUniverseDisplayName</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">newName</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
 	<span class="Name">ShowPlaceVersionHistoryDialog</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -37484,28 +37628,6 @@
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">ShowPublishToRoblox</span>
 	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">ShowSaveOrPublishPlaceToRoblox</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">showGameSelect</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">isPublish</span>
-		</span>
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">StudioCloseMode</span>
-			<span class="ParamName">closeMode</span>
-		</span>
-	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -37550,7 +37672,7 @@
 
 <div class="Event child">
 	<span class="ClassName Event">StudioService</span>
-	<span class="Name">GameNameUpdated</span>
+	<span class="Name">DEPRECATED_GameNameUpdated</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -37562,7 +37684,7 @@
 
 <div class="Event child">
 	<span class="ClassName Event">StudioService</span>
-	<span class="Name">GamePublishFinished</span>
+	<span class="Name">DEPRECATED_GamePublishFinished</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">bool</span>
@@ -37571,6 +37693,39 @@
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">gameId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
+	<span class="Name">DEPRECATED_OnPublishPlaceToRoblox</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isOverwritePublish</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioService</span>
+	<span class="Name">DEPRECATED_OnSaveOrPublishPlaceToRoblox</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">showGameSelect</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isPublish</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">StudioCloseMode</span>
+			<span class="ParamName">closeMode</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -37637,39 +37792,6 @@
 		<span class="Parameter">
 			<span class="Type">Objects</span>
 			<span class="ParamName">instances</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">StudioService</span>
-	<span class="Name">OnPublishPlaceToRoblox</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">isOverwritePublish</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">StudioService</span>
-	<span class="Name">OnSaveOrPublishPlaceToRoblox</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">showGameSelect</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">isPublish</span>
-		</span>
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">StudioCloseMode</span>
-			<span class="ParamName">closeMode</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -37779,7 +37901,6 @@
 	<span class="ClassName Property">SurfaceAppearance</span>
 	<span class="Name">TexturePack</span>
 	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class">
