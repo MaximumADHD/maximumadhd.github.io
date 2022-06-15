@@ -1,52 +1,34 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/b59ca4152f1ceaedfd998eb1f7bc54002f6da63f
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/97d100426f1c7ae7b0d2e70aece2e2cc0abd7a0d
 
 ## API Changes
 
 ```plain
-Added Function bool ScriptDocument:EditTextAsync(string newText, int startLine, int startCharacter, int endLine, int endCharacter) {RobloxScriptSecurity} [Yields]
-Added Function void StudioService:DEPRECATED_EmitPlacePublishedSignal() {RobloxScriptSecurity}
-Added Function void StudioService:DEPRECATED_RefreshDocumentDisplayName() {RobloxScriptSecurity}
-Added Function void StudioService:DEPRECATED_SetUniverseDisplayName(string newName) {RobloxScriptSecurity}
-Added Function void StudioService:DEPRECATED_ShowSaveOrPublishPlaceToRoblox(bool showGameSelect, bool isPublish, Enum.StudioCloseMode closeMode) {RobloxScriptSecurity}
-Added Function void StudioService:DEPRECATED_publishAs(int64 universeId, int64 placeId, int64 groupId) {RobloxScriptSecurity}
+Added Class CustomSoundEffect : SoundEffect [NotCreatable]
 
-Added Event StudioService.DEPRECATED_GameNameUpdated(string name) {RobloxScriptSecurity}
-Added Event StudioService.DEPRECATED_GamePublishFinished(bool success, int64 gameId) {RobloxScriptSecurity}
-Added Event StudioService.DEPRECATED_OnPublishPlaceToRoblox(bool isOverwritePublish) {RobloxScriptSecurity}
-Added Event StudioService.DEPRECATED_OnSaveOrPublishPlaceToRoblox(bool showGameSelect, bool isPublish, Enum.StudioCloseMode closeMode) {RobloxScriptSecurity}
+Added Property bool Breakpoint.Valid {RobloxScriptSecurity} [Hidden] [ReadOnly]
+Added Property bool ImporterMeshSettings.CageUVMatched [ReadOnly]
+Added Property bool ImporterMeshSettings.CageUVMatchedPreview
+Added Property bool ImporterMeshSettings.UseImportedPivot
+Added Property bool MetaBreakpoint.Valid {RobloxScriptSecurity} [Hidden] [ReadOnly]
 
-Moved Function RefreshDocumentDisplayName
-	from: Class StudioService
-	  to: Class StudioPublishService
+Added Function string ScriptDocument:GetInternalUri() {RobloxScriptSecurity}
+Added Function bool ScriptDocument:IsCommandBar() {RobloxScriptSecurity}
 
-Moved Function SetUniverseDisplayName
-	from: Class StudioService
-	  to: Class StudioPublishService
+Added Event DebuggerUIService.ExpressionAdded(string expression) {RobloxScriptSecurity}
 
-Moved Function ShowSaveOrPublishPlaceToRoblox
-	from: Class StudioService
-	  to: Class StudioPublishService
+Added EnumItem ConnectionError.Unknown : 1
 
-Moved Event GameNameUpdated
-	from: Class StudioService
-	  to: Class StudioPublishService
+Changed the superclass of Class ChannelSelectorSoundEffect 
+	from: "CustomDspSoundEffect"
+	  to: "CustomSoundEffect"
 
-Moved Event GamePublishFinished
-	from: Class StudioService
-	  to: Class StudioPublishService
+Changed the parameters and return-type of Function ScriptDocument:EditTextAsync 
+	from: (string newText, int startLine, int startCharacter, int endLine, int endCharacter) -> bool
+	  to: (string newText, int startLine, int startCharacter, int endLine = -1, int endCharacter = -1) -> Tuple
 
-Moved Event OnSaveOrPublishPlaceToRoblox
-	from: Class StudioService
-	  to: Class StudioPublishService
-
-Removed Function StudioService:EmitPlacePublishedSignal
-Removed Function StudioService:PublishAs
-
-Removed Event StudioService.OnPublishPlaceToRoblox
-
-Removed Tag [Hidden] from Property SurfaceAppearance.TexturePack
+Removed Class CustomDspSoundEffect
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#530) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#531) for a syntax highlighted version!)

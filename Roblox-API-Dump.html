@@ -4879,6 +4879,15 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Breakpoint</span>
+	<span class="Name">Valid</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Breakpoint</span>
 	<span class="Name">Verified</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -10105,6 +10114,18 @@
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName">lineMarkerType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">DebuggerUIService</span>
+	<span class="Name">ExpressionAdded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">expression</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -18685,6 +18706,19 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">CageUVMatched</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">CageUVMatchedPreview</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">ImporterMeshSettings</span>
 	<span class="Name">Dimensions</span>
@@ -18708,6 +18742,12 @@
 	<span class="ClassName Property">ImporterMeshSettings</span>
 	<span class="Name">PolygonCount</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">UseImportedPivot</span>
 </div>
 
 <div class="Class">
@@ -22996,6 +23036,15 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">MetaBreakpoint</span>
 	<span class="Name">IsLogpoint</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MetaBreakpoint</span>
+	<span class="Name">Valid</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
@@ -33027,7 +33076,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">bool</span>
+	<span class="Type">Tuple</span>
 	<span class="ClassName Function">ScriptDocument</span>
 	<span class="Name">EditTextAsync</span>
 	<span class="Parameters">
@@ -33045,15 +33094,25 @@
 		</span>
 		<span class="Parameter">
 			<span class="Type">int</span>
-			<span class="ParamName">endLine</span>
+			<span class="ParamName default">endLine</span>
+			<span class="ParamDefault int">-1</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">int</span>
-			<span class="ParamName">endCharacter</span>
+			<span class="ParamName default">endCharacter</span>
+			<span class="ParamDefault int">-1</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">ScriptDocument</span>
+	<span class="Name">GetInternalUri</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -33076,6 +33135,14 @@
 	<span class="Type">string</span>
 	<span class="ClassName Function">ScriptDocument</span>
 	<span class="Name">GetText</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">ScriptDocument</span>
+	<span class="Name">IsCommandBar</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -34818,14 +34885,14 @@
 </div>
 
 <div class="Class">
-	<span class="Name">CustomDspSoundEffect</span>
+	<span class="Name">CustomSoundEffect</span>
 	<span class="Superclass">SoundEffect</span>
 	<span class="Tag">[NotCreatable]</span>
 </div>
 
 <div class="Class">
 	<span class="Name">ChannelSelectorSoundEffect</span>
-	<span class="Superclass">CustomDspSoundEffect</span>
+	<span class="Superclass">CustomSoundEffect</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
 
@@ -46050,6 +46117,12 @@
 	<span class="EnumName">ConnectionError</span>
 	<span class="Name">OK</span>
 	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ConnectionError</span>
+	<span class="Name">Unknown</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="EnumItem child">
