@@ -1,34 +1,74 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/97d100426f1c7ae7b0d2e70aece2e2cc0abd7a0d
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/b98eb484bcb0bec939ea97d8a018ad4ba1af912f
 
 ## API Changes
 
 ```plain
-Added Class CustomSoundEffect : SoundEffect [NotCreatable]
+Added Class DeviceIdService : Instance [NotCreatable] [Service] [NotReplicated]
+	Added Function string DeviceIdService:GetDeviceId() {RobloxScriptSecurity}
 
-Added Property bool Breakpoint.Valid {RobloxScriptSecurity} [Hidden] [ReadOnly]
-Added Property bool ImporterMeshSettings.CageUVMatched [ReadOnly]
-Added Property bool ImporterMeshSettings.CageUVMatchedPreview
-Added Property bool ImporterMeshSettings.UseImportedPivot
-Added Property bool MetaBreakpoint.Valid {RobloxScriptSecurity} [Hidden] [ReadOnly]
+Added Class ScreenshotHud : Instance [NotCreatable] [NotReplicated]
+	Added Property Content ScreenshotHud.CameraButtonIcon
+	Added Property UDim2 ScreenshotHud.CameraButtonPosition
+	Added Property UDim2 ScreenshotHud.CloseButtonPosition
+	Added Property bool ScreenshotHud.ExperienceNameOverlayEnabled
+	Added Property Enum.Font ScreenshotHud.OverlayFont
+	Added Property bool ScreenshotHud.UsernameOverlayEnabled
+	Added Property bool ScreenshotHud.CloseWhenScreenshotTaken
+	Added Property bool ScreenshotHud.Visible
 
-Added Function string ScriptDocument:GetInternalUri() {RobloxScriptSecurity}
-Added Function bool ScriptDocument:IsCommandBar() {RobloxScriptSecurity}
+Added Property string BasePart.CollisionGroup {RobloxScriptSecurity} [<📁> LoadOnly] [Hidden] [NotReplicated]
+Added Property Content PackageLink.Package Id [ReadOnly] [NotScriptable]
+Added Property int64 PackageLink.Version Number [NotReplicated] [NotScriptable]
+Added Property QDir Studio.IconOverrideDir {RobloxScriptSecurity}
 
-Added Event DebuggerUIService.ExpressionAdded(string expression) {RobloxScriptSecurity}
+Added Function string ScriptDocument:GetLine(int lineIndex = -1234567) {PluginSecurity}
+Added Function int ScriptDocument:GetLineCount() {PluginSecurity}
 
-Added EnumItem ConnectionError.Unknown : 1
+Added Callback Objects Plugin.ProcessAssetInsertionDrag(string assetId, int assetTypeId, Objects instances) {RobloxScriptSecurity} [NoYield]
+Added Callback void Plugin.ProcessAssetInsertionDrop() {RobloxScriptSecurity} [NoYield]
 
-Changed the superclass of Class ChannelSelectorSoundEffect 
-	from: "CustomDspSoundEffect"
-	  to: "CustomSoundEffect"
+Added Tag [Hidden] to Property PackageLink.PackageId
+Added Tag [Hidden] to Property PackageLink.VersionNumber
 
-Changed the parameters and return-type of Function ScriptDocument:EditTextAsync 
-	from: (string newText, int startLine, int startCharacter, int endLine, int endCharacter) -> bool
-	  to: (string newText, int startLine, int startCharacter, int endLine = -1, int endCharacter = -1) -> Tuple
+Changed the serialization of Property PackageLink.VersionNumber 
+	from: [<📁> LoadOnly]
+	  to: [<🕒> RuntimeOnly]
 
-Removed Class CustomDspSoundEffect
+Changed the security of Function ScriptDocument:EditTextAsync 
+	from: {RobloxScriptSecurity}
+	  to: {PluginSecurity}
+
+Changed the security of Function ScriptDocument:GetScript 
+	from: {RobloxScriptSecurity}
+	  to: {PluginSecurity}
+
+Changed the security of Function ScriptDocument:IsCommandBar 
+	from: {RobloxScriptSecurity}
+	  to: {PluginSecurity}
+
+Changed the security of Function ScriptEditorService:FindScriptDocument 
+	from: {RobloxScriptSecurity}
+	  to: {PluginSecurity}
+
+Changed the security and parameters of Function ScriptDocument:GetText 
+	from: {RobloxScriptSecurity} ()
+	  to: {PluginSecurity} (int startLine = -1234567, int startCharacter = -1234567, int endLine = -1234567, int endCharacter = -1234567)
+
+Changed the security of Event ScriptEditorService.TextDocumentDidChange 
+	from: {RobloxScriptSecurity}
+	  to: {PluginSecurity}
+
+Changed the security of Event ScriptEditorService.TextDocumentDidClose 
+	from: {RobloxScriptSecurity}
+	  to: {PluginSecurity}
+
+Changed the security of Event ScriptEditorService.TextDocumentDidOpen 
+	from: {RobloxScriptSecurity}
+	  to: {PluginSecurity}
+
+Removed Function ScriptDocument:GetNumLines
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#531) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#532) for a syntax highlighted version!)
