@@ -147,7 +147,7 @@ span.MergeListInto::before
 }
 
 .ChangeTo::before,
-.TagChange.To::after
+.TagChange.To::after,
 .LegacyName.To::after
 {
 	content: "to";
