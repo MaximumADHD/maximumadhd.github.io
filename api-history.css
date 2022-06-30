@@ -140,13 +140,15 @@ span.MergeListInto::before
 }
 
 .ChangeFrom::before,
-.TagChange.From::after
+.TagChange.From::after,
+.LegacyName.From::after
 {
 	content: "from";
 }
 
 .ChangeTo::before,
 .TagChange.To::after
+.LegacyName.To::after
 {
 	content: "to";
 }
@@ -182,6 +184,12 @@ span.TagChange::before
 span.TagChange.Singular::before
 {
 	content: "Tag";
+}
+
+span.LegacyName::before
+{
+	content: "LegacyName";
+	color: #7F7FFF;
 }
 
 span.WhatChanged
