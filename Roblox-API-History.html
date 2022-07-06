@@ -11,6 +11,490 @@
 	</ul>
 </head>
 
+<hr id="534"/>
+<h2>Version 0.534.0.5340446</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AssetImportSession</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">AssetImportSession</span>
+				<span class="Name">Cancel</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Dictionary</span>
+				<span class="ClassName Function">AssetImportSession</span>
+				<span class="Name">GetCurrentImportMap</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Dictionary</span>
+				<span class="ClassName Function">AssetImportSession</span>
+				<span class="Name">GetCurrentStatusTable</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">string</span>
+				<span class="ClassName Function">AssetImportSession</span>
+				<span class="Name">GetFilename</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Instance</span>
+				<span class="ClassName Function">AssetImportSession</span>
+				<span class="Name">GetSettingsRoot</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">AssetImportSession</span>
+				<span class="Name">IsAvatar</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">AssetImportSession</span>
+				<span class="Name">Upload</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">AssetImportSession</span>
+				<span class="Name">UploadComplete</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">bool</span>
+						<span class="ParamName">succeeded</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Dictionary</span>
+						<span class="ParamName">errorMap</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">AssetImportSession</span>
+				<span class="Name">UploadProgress</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">float</span>
+						<span class="ParamName">progressRatio</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">RunContext</span>
+			<span class="ClassName Property">BaseScript</span>
+			<span class="Name">RunContext</span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">AssetImportSession</span>
+			<span class="ClassName Function">AssetImportService</span>
+			<span class="Name">StartSessionWithPrompt</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">LocalizationService</span>
+			<span class="Name">SetExperienceSettingsLocaleId</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">locale</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Tuple</span>
+			<span class="ClassName Function">ScriptDocument</span>
+			<span class="Name">GetSelection</span>
+			<span class="Parameters"></span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">StudioPublishService</span>
+			<span class="Name">ClearUploadNames</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">ScriptDocument</span>
+			<span class="Name">SelectionChanged</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">positionLine</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">positionCharacter</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">anchorLine</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">anchorCharacter</span>
+				</span>
+			</span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">StudioPublishService</span>
+			<span class="Name">GamePublishCancelled</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">RunContext</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RunContext</span>
+				<span class="Name">Legacy</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RunContext</span>
+				<span class="Name">Server</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RunContext</span>
+				<span class="Name">Client</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RunContext</span>
+				<span class="Name">Plugin</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">WrapLayerDebugMode</span>
+			<span class="Name">LayerCageFittedToBase</span>
+			<span class="Value">12</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">WrapLayerDebugMode</span>
+			<span class="Name">LayerCageFittedToPrev</span>
+			<span class="Value">13</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ContextActionPriority</span>
+			<span class="Name">Default</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">MaterialService</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">MaterialVariant</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">TerrainDetail</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">Basalt</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">CrackedLava</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">Limestone</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">Pavement</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">Rock</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">Sandstone</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">LeafyGrass</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">Snow</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">Mud</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">Ground</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">Asphalt</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">Salt</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">Material</span>
+			<span class="Name">Glacier</span>
+		</span>
+	</span>
+</div>
+
 <hr id="533"/>
 <h2>Version 0.533.0.5330256</h2>
 
