@@ -25668,6 +25668,13 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">TriangleMeshPart</span>
+	<span class="Name">MeshSize</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">MeshPart</span>
 	<span class="Superclass">TriangleMeshPart</span>
@@ -25732,13 +25739,6 @@
 	<span class="Name">JointOffset</span>
 	<span class="Security">{✏️NotAccessibleSecurity}</span>
 	<span class="Tag">[Hidden]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">MeshPart</span>
-	<span class="Name">MeshSize</span>
-	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Function child">
@@ -26573,6 +26573,14 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">TouchesUseCollisionGroups</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">UnionsScaleNonuniformly</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">UnionsScaleNonuniformly</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -28500,14 +28508,6 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function deprecated child">
-	<span class="Type">bool</span>
-	<span class="ClassName Function">Player</span>
-	<span class="Name">IsUserAvailableForExperiment</span>
-	<span class="Parameters"></span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -37419,6 +37419,14 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioPublishService</span>
+	<span class="Name">PublishThenTurnOnTeamCreate</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioPublishService</span>
 	<span class="Name">RefreshDocumentDisplayName</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -37688,78 +37696,6 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">stringToCopy</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">DEPRECATED_EmitPlacePublishedSignal</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">DEPRECATED_RefreshDocumentDisplayName</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">DEPRECATED_SetUniverseDisplayName</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">newName</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">DEPRECATED_ShowSaveOrPublishPlaceToRoblox</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">showGameSelect</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">isPublish</span>
-		</span>
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">StudioCloseMode</span>
-			<span class="ParamName">closeMode</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioService</span>
-	<span class="Name">DEPRECATED_publishAs</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">universeId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">placeId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">groupId</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -38045,67 +37981,6 @@
 	<span class="ClassName Function">StudioService</span>
 	<span class="Name">UpdatePluginManagement</span>
 	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">StudioService</span>
-	<span class="Name">DEPRECATED_GameNameUpdated</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">name</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">StudioService</span>
-	<span class="Name">DEPRECATED_GamePublishFinished</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">success</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">gameId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">StudioService</span>
-	<span class="Name">DEPRECATED_OnPublishPlaceToRoblox</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">isOverwritePublish</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">StudioService</span>
-	<span class="Name">DEPRECATED_OnSaveOrPublishPlaceToRoblox</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">showGameSelect</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">isPublish</span>
-		</span>
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">StudioCloseMode</span>
-			<span class="ParamName">closeMode</span>
-		</span>
-	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -40389,6 +40264,62 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateMeshTriangles</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateMeshVertColors</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateTextureSize</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">textureId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateUVSpace</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Class">
@@ -56278,6 +56209,28 @@
 	<span class="EnumName">UiMessageType</span>
 	<span class="Name">UiMessageInfo</span>
 	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">UnionsScaleNonuniformly</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">UnionsScaleNonuniformly</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">UnionsScaleNonuniformly</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">UnionsScaleNonuniformly</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
