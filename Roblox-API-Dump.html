@@ -1137,6 +1137,14 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AnimationFromVideoCreatorStudioService</span>
+	<span class="Name">IsAgeRestricted</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">AnimationRigData</span>
 	<span class="Superclass">Instance</span>
@@ -1710,6 +1718,19 @@
 	<span class="ClassName Function">AssetImportSession</span>
 	<span class="Name">GetFilename</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">AssetImportSession</span>
+	<span class="Name">GetInstance</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">nodeId</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -15641,6 +15662,8 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">GuiService</span>
 	<span class="Name">CoreGuiNavigationEnabled</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -18773,7 +18796,14 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">CageManifoldPreview</span>
+	<span class="Name">CageMeshIntersectedPreview</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">CageMeshNotIntersected</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -18786,7 +18816,13 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">CageNoOverlappingVerticesPreview</span>
+	<span class="Name">CageNonManifoldPreview</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">CageOverlappingVerticesPreview</span>
 </div>
 
 <div class="Property child">
@@ -18799,7 +18835,7 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">CageUVMatchedPreview</span>
+	<span class="Name">CageUVMisMatchedPreview</span>
 </div>
 
 <div class="Property child">
@@ -18819,6 +18855,32 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ImporterMeshSettings</span>
 	<span class="Name">IgnoreVertexColors</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">IrrelevantCageModifiedPreview</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">MeshHoleDetectedPreview</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">MeshNoHoleDetected</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterMeshSettings</span>
+	<span class="Name">NoIrrelevantCageModified</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -24172,6 +24234,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">CollisionGroupId</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -25701,14 +25764,6 @@
 	<span class="Name">HasSkinnedMesh</span>
 	<span class="Security">{✏️NotAccessibleSecurity}</span>
 	<span class="Tag">[Hidden]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">Content</span>
-	<span class="ClassName Property">MeshPart</span>
-	<span class="Name">MeshID</span>
-	<span class="Tag">[NotScriptable]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -27316,6 +27371,31 @@
 			<span class="ParamDefault int">16</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PatchMapping</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PatchMapping</span>
+	<span class="Name">FlattenTree</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PatchMapping</span>
+	<span class="Name">PatchId</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PatchMapping</span>
+	<span class="Name">TargetPath</span>
 </div>
 
 <div class="Class">
@@ -33336,9 +33416,9 @@
 	<span class="Name">GetLine</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">int</span>
+			<span class="Type">int?</span>
 			<span class="ParamName default">lineIndex</span>
-			<span class="ParamDefault int">-1234567</span>
+			<span class="ParamDefault int?">nil</span>
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
@@ -33374,24 +33454,24 @@
 	<span class="Name">GetText</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">int</span>
+			<span class="Type">int?</span>
 			<span class="ParamName default">startLine</span>
-			<span class="ParamDefault int">-1234567</span>
+			<span class="ParamDefault int?">nil</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">int</span>
+			<span class="Type">int?</span>
 			<span class="ParamName default">startCharacter</span>
-			<span class="ParamDefault int">-1234567</span>
+			<span class="ParamDefault int?">nil</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">int</span>
+			<span class="Type">int?</span>
 			<span class="ParamName default">endLine</span>
-			<span class="ParamDefault int">-1234567</span>
+			<span class="ParamDefault int?">nil</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">int</span>
+			<span class="Type">int?</span>
 			<span class="ParamName default">endCharacter</span>
-			<span class="ParamDefault int">-1234567</span>
+			<span class="ParamDefault int?">nil</span>
 		</span>
 	</span>
 	<span class="Security">{PluginSecurity}</span>
@@ -35317,6 +35397,12 @@
 </div>
 
 <div class="Class">
+	<span class="Name">RomarkSoundEffect</span>
+	<span class="Superclass">SoundEffect</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">TremoloSoundEffect</span>
 	<span class="Superclass">SoundEffect</span>
 </div>
@@ -35386,6 +35472,15 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">SoundService</span>
 	<span class="Name">RolloffScale</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">VolumetricAudio</span>
+	<span class="ClassName Property">SoundService</span>
+	<span class="Name">VolumetricAudio</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Function child">
@@ -43902,7 +43997,6 @@
 			<span class="ParamName">new</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -51632,26 +51726,32 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">MeshPartDetailLevel</span>
-	<span class="Name">Level01</span>
+	<span class="Name">Level00</span>
 	<span class="Value">1</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">MeshPartDetailLevel</span>
-	<span class="Name">Level02</span>
+	<span class="Name">Level01</span>
 	<span class="Value">2</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">MeshPartDetailLevel</span>
-	<span class="Name">Level03</span>
+	<span class="Name">Level02</span>
 	<span class="Value">3</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">MeshPartDetailLevel</span>
-	<span class="Name">Level04</span>
+	<span class="Name">Level03</span>
 	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">MeshPartDetailLevel</span>
+	<span class="Name">Level04</span>
+	<span class="Value">5</span>
 </div>
 
 <div class="Enum">
@@ -56661,6 +56761,28 @@
 	<span class="EnumName">VoiceChatState</span>
 	<span class="Name">Failed</span>
 	<span class="Value">6</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">VolumetricAudio</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VolumetricAudio</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VolumetricAudio</span>
+	<span class="Name">Automatic</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VolumetricAudio</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
