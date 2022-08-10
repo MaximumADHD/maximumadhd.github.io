@@ -1532,6 +1532,15 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">PickFileWithPrompt</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">AssetImportSession</span>
 	<span class="ClassName Function">AssetImportService</span>
 	<span class="Name">StartSessionWithPrompt</span>
@@ -2661,6 +2670,12 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">OutfitSource</span>
 			<span class="ParamName default">outfitSource</span>
+			<span class="ParamDefault String">All</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">OutfitType</span>
+			<span class="ParamName default">outfitType</span>
 			<span class="ParamDefault String">All</span>
 		</span>
 	</span>
@@ -5046,6 +5061,22 @@
 		<span class="Parameter">
 			<span class="Type">MetaBreakpoint</span>
 			<span class="ParamName">breakpoint</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">BreakpointManager</span>
+	<span class="Name">MetaBreakpointSetChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">MetaBreakpoint</span>
+			<span class="ParamName">breakpoint</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">detail</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -8463,6 +8494,214 @@
 </div>
 
 <div class="Class">
+	<span class="Name">ControllerBase</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ControllerBase</span>
+	<span class="Name">RigidityEnabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ControllerBase</span>
+	<span class="Name">MoveSpeedFactor</span>
+</div>
+
+<div class="Class">
+	<span class="Name">AirController</span>
+	<span class="Superclass">ControllerBase</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">OrientationMaxTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">OrientationSpeed</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">VectorForce</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">CancelAirMomentum</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">MoveMaxForce</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ClimbController</span>
+	<span class="Superclass">ControllerBase</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ClimbController</span>
+	<span class="Name">OrientationMaxTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ClimbController</span>
+	<span class="Name">OrientationSpeed</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ClimbController</span>
+	<span class="Name">AccelerationTime</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ClimbController</span>
+	<span class="Name">MoveMaxForce</span>
+</div>
+
+<div class="Class">
+	<span class="Name">GroundController</span>
+	<span class="Superclass">ControllerBase</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">AccelerationLean</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">AlignSpeed</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">AlignTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">MaxSlopeAngle</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">AccelerationTime</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">DecelerationTime</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">Friction</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">FrictionWeight</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">StandForce</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">StandSpeed</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">TurningFactor</span>
+</div>
+
+<div class="Class">
+	<span class="Name">SwimController</span>
+	<span class="Superclass">ControllerBase</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">SwimController</span>
+	<span class="Name">OrientationMaxTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">SwimController</span>
+	<span class="Name">OrientationSpeed</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">SwimController</span>
+	<span class="Name">AccelerationTime</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ControllerManager</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">ControllerBase</span>
+	<span class="ClassName Property">ControllerManager</span>
+	<span class="Name">ActiveController</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ControllerManager</span>
+	<span class="Name">BaseMoveSpeed</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ControllerManager</span>
+	<span class="Name">HipHeight</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">ControllerManager</span>
+	<span class="Name">GetControllers</span>
+	<span class="Parameters"></span>
+	<span class="ThreadSafety">{🧬Safe}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ControllerService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -11608,6 +11847,15 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">FacialAnimationRecordingService</span>
+	<span class="Name">CheckOrRequestCameraPermission</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">FacialAnimationRecordingService</span>
 	<span class="Name">IsAgeRestricted</span>
@@ -14169,15 +14417,6 @@
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">ContentText</span>
 	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">TextBox</span>
-	<span class="Name">EnableRealtimeFilteringHints</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -17992,6 +18231,18 @@
 
 <div class="Event child">
 	<span class="ClassName Event">Humanoid</span>
+	<span class="Name">EmoteTriggered</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">successAndTrackTuple</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Humanoid</span>
 	<span class="Name">FallingDown</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -18282,6 +18533,12 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">HumanoidDescription</span>
 	<span class="Name">JumpAnimation</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">HumanoidDescription</span>
+	<span class="Name">MoodAnimation</span>
 </div>
 
 <div class="Property child">
@@ -26660,14 +26917,6 @@
 
 <div class="Property child">
 	<span class="EnumName Type">Enum</span>
-	<span class="Type">PhysicsInertiaAndVolumeFix</span>
-	<span class="ClassName Property">Workspace</span>
-	<span class="Name">PhysicsInertiaAndVolumeFix</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="EnumName Type">Enum</span>
 	<span class="Type">PhysicsSteppingMethod</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">PhysicsSteppingMethod</span>
@@ -33789,6 +34038,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">ScriptEditorService</span>
+	<span class="Name">GetScriptDocuments</span>
+	<span class="Parameters"></span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">ScriptEditorService</span>
 	<span class="Name">RegisterLSPCallback</span>
@@ -37625,6 +37882,15 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">StudioDeviceEmulatorService</span>
+	<span class="Name">IsMultiTouchEmulationOn</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StudioDeviceEmulatorService</span>
 	<span class="Name">IsMultiTouchEnabled</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -40148,45 +40414,6 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Class">
-	<span class="Name">ToolboxService</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Callback child">
-	<span class="Type">Objects</span>
-	<span class="ClassName Callback">ToolboxService</span>
-	<span class="Name">ProcessAssetInsertionDrag</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">assetId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName">assetTypeId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Objects</span>
-			<span class="ParamName">instances</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[NoYield]</span>
-</div>
-
-<div class="Callback child">
-	<span class="Type">void</span>
-	<span class="ClassName Callback">ToolboxService</span>
-	<span class="Name">ProcessAssetInsertionDrop</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[NoYield]</span>
 </div>
 
 <div class="Class">
@@ -44609,6 +44836,26 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">AdFormat</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AdFormat</span>
+	<span class="Name">Image</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AdShape</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AdShape</span>
+	<span class="Name">HorizontalRectangle</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">AdornCullingMode</span>
 </div>
 
@@ -45358,6 +45605,12 @@
 	<span class="Value">77</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">AssetType</span>
+	<span class="Name">MoodAnimation</span>
+	<span class="Value">78</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">AssetTypeVerification</span>
 </div>
@@ -45660,6 +45913,12 @@
 	<span class="EnumName">AvatarAssetType</span>
 	<span class="Name">EyelashAccessory</span>
 	<span class="Value">77</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarAssetType</span>
+	<span class="Name">MoodAnimation</span>
+	<span class="Value">78</span>
 </div>
 
 <div class="Enum">
@@ -46038,6 +46297,18 @@
 	<span class="EnumName">BundleType</span>
 	<span class="Name">Shoes</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">BundleType</span>
+	<span class="Name">DynamicHead</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">BundleType</span>
+	<span class="Name">DynamicHeadAvatar</span>
+	<span class="Value">5</span>
 </div>
 
 <div class="Enum">
@@ -52488,6 +52759,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">OutfitType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">OutfitType</span>
+	<span class="Name">All</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">OutfitType</span>
+	<span class="Name">Avatar</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">OutfitType</span>
+	<span class="Name">DynamicHead</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">OutputLayoutMode</span>
 </div>
 
@@ -52835,28 +53128,6 @@
 	<span class="EnumName">PermissionLevelShown</span>
 	<span class="Name">Roblox</span>
 	<span class="Value">4</span>
-</div>
-
-<div class="Enum">
-	<span class="Name">PhysicsInertiaAndVolumeFix</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">PhysicsInertiaAndVolumeFix</span>
-	<span class="Name">Default</span>
-	<span class="Value">0</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">PhysicsInertiaAndVolumeFix</span>
-	<span class="Name">Disabled</span>
-	<span class="Value">1</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">PhysicsInertiaAndVolumeFix</span>
-	<span class="Name">Enabled</span>
-	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
