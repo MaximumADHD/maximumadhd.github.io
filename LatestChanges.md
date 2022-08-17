@@ -1,92 +1,128 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/365ae797e251ac52f04873f094a0976e307a5509
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/5001a4705903174088514895945c8081dae20f51
 
 ## API Changes
 
 ```plain
-Added Class ControllerBase : Instance [NotCreatable]
-	Added Property bool ControllerBase.RigidityEnabled
-	Added Property float ControllerBase.MoveSpeedFactor
+Added Class SurfaceGuiBase : LayerCollector [NotCreatable]
 
-Added Class ControllerManager : Instance
-	Added Property ControllerBase ControllerManager.ActiveController [ReadOnly]
-	Added Property float ControllerManager.BaseMoveSpeed
-	Added Property float ControllerManager.HipHeight
-	Added Function Objects ControllerManager:GetControllers() {🧬Safe}
+Added Class AdGui : SurfaceGuiBase [NotCreatable]
+	Added Property Enum.AdShape AdGui.AdShape
 
-Added Class AirController : ControllerBase
-	Added Property float AirController.OrientationMaxTorque
-	Added Property float AirController.OrientationSpeed
-	Added Property Vector3 AirController.VectorForce
-	Added Property bool AirController.CancelAirMomentum
-	Added Property float AirController.MoveMaxForce
+Added Property Vector2 ChatInputBarConfiguration.AbsolutePosition [ReadOnly] {🧬Unsafe}
+Added Property Vector2 ChatInputBarConfiguration.AbsolutePositionWrite {RobloxScriptSecurity} [Hidden]
+Added Property Vector2 ChatInputBarConfiguration.AbsoluteSize [ReadOnly] {🧬Unsafe}
+Added Property Vector2 ChatInputBarConfiguration.AbsoluteSizeWrite {RobloxScriptSecurity} [Hidden]
+Added Property Vector2 ChatWindowConfiguration.AbsolutePosition [ReadOnly] {🧬Unsafe}
+Added Property Vector2 ChatWindowConfiguration.AbsolutePositionWrite {RobloxScriptSecurity} [Hidden]
+Added Property Vector2 ChatWindowConfiguration.AbsoluteSize [ReadOnly] {🧬Unsafe}
+Added Property Vector2 ChatWindowConfiguration.AbsoluteSizeWrite {RobloxScriptSecurity} [Hidden]
+Added Property bool ImporterMeshSettings.NoOuterCageFarExtendedFromMesh [ReadOnly]
+Added Property bool ImporterMeshSettings.OuterCageFarExtendedFromMeshPreview
+Added Property Enum.LoadDynamicHeads StarterPlayer.EnableDynamicHeads [NotScriptable]
+Added Property bool ViewportFrame.IsMirrored {RobloxScriptSecurity} [Hidden] [NotReplicated]
 
-Added Class ClimbController : ControllerBase
-	Added Property float ClimbController.OrientationMaxTorque
-	Added Property float ClimbController.OrientationSpeed
-	Added Property float ClimbController.AccelerationTime
-	Added Property float ClimbController.MoveMaxForce
+Added Function Array Animator:GetPlayingAnimationTracksCoreScript() {RobloxScriptSecurity}
+Added Function AnimationTrack Animator:LoadAnimationCoreScript(Animation animation) {RobloxScriptSecurity}
+Added Function void Players:ReportAbuseV3(Player player, string jsonTags) {RobloxScriptSecurity}
+Added Function Tuple ScriptDocument:ForceSetSelectionAsync(int cursorLine, int cursorCharacter, int? anchorLine = nil, int? anchorCharacter = nil) {PluginSecurity} [Yields]
+Added Function Tuple ScriptDocument:RequestSetSelectionAsync(int cursorLine, int cursorCharacter, int? anchorLine = nil, int? anchorCharacter = nil) {PluginSecurity} [Yields]
+Added Function void StudioAssetService:ConvertToPackageUpload(string uploadUrl, Objects cloneInstances, Objects originalInstances) {RobloxScriptSecurity}
+Added Function bool StudioDeviceEmulatorService:GetTouchInBounds(int index) {RobloxScriptSecurity}
 
-Added Class GroundController : ControllerBase
-	Added Property float GroundController.AccelerationLean
-	Added Property float GroundController.AlignSpeed
-	Added Property float GroundController.AlignTorque
-	Added Property float GroundController.MaxSlopeAngle
-	Added Property float GroundController.AccelerationTime
-	Added Property float GroundController.DecelerationTime
-	Added Property float GroundController.Friction
-	Added Property float GroundController.FrictionWeight
-	Added Property float GroundController.StandForce
-	Added Property float GroundController.StandSpeed
-	Added Property float GroundController.TurningFactor
+Added Event Animator.AnimationPlayedCoreScript(AnimationTrack animationTrack) {RobloxScriptSecurity}
+Added Event FaceAnimatorService.TrackerError(Enum.TrackerError error) {RobloxScriptSecurity}
+Added Event StudioAssetService.OnConvertToPackageResult(bool isSuccessful, string errorMessage) {RobloxScriptSecurity}
+Added Event StudioDeviceEmulatorService.TouchInBoundsChanged() {RobloxScriptSecurity}
+Added Event VideoCaptureService.DevicesChanged() {RobloxScriptSecurity}
+Added Event VideoCaptureService.Error(string cameraid, string errorcode) {RobloxScriptSecurity}
+Added Event VideoCaptureService.Started(string cameraid) {RobloxScriptSecurity}
+Added Event VideoCaptureService.Stopped(string cameraid) {RobloxScriptSecurity}
 
-Added Class SwimController : ControllerBase
-	Added Property float SwimController.OrientationMaxTorque
-	Added Property float SwimController.OrientationSpeed
-	Added Property float SwimController.AccelerationTime
+Added Enum LoadDynamicHeads
+	Added EnumItem LoadDynamicHeads.Default : 0
+	Added EnumItem LoadDynamicHeads.Disabled : 1
+	Added EnumItem LoadDynamicHeads.Enabled : 2
 
-Added Property int64 HumanoidDescription.MoodAnimation
-Added Property bool StudioDeviceEmulatorService.IsMultiTouchEmulationOn {RobloxScriptSecurity} [Hidden] [NotReplicated]
+Added Enum TrackerError
+	Added EnumItem TrackerError.Ok : 0
+	Added EnumItem TrackerError.NoService : 1
+	Added EnumItem TrackerError.InitFailed : 2
+	Added EnumItem TrackerError.NoVideo : 3
+	Added EnumItem TrackerError.VideoError : 4
+	Added EnumItem TrackerError.CameraPermission : 5
+	Added EnumItem TrackerError.NoAudio : 6
+	Added EnumItem TrackerError.AudioError : 7
+	Added EnumItem TrackerError.MicPermission : 8
 
-Added Function string AssetImportService:PickFileWithPrompt() {RobloxScriptSecurity} [Yields]
-Added Function string FacialAnimationRecordingService:CheckOrRequestCameraPermission() {RobloxScriptSecurity} [Yields]
-Added Function Objects ScriptEditorService:GetScriptDocuments() {PluginSecurity}
+Added LegacyName "Exclude" to EnumItem RaycastFilterType.Blacklist
+Added LegacyName "Include" to EnumItem RaycastFilterType.Whitelist
 
-Added Event BreakpointManager.MetaBreakpointSetChanged(MetaBreakpoint breakpoint, Dictionary detail) {RobloxScriptSecurity}
-Added Event Humanoid.EmoteTriggered(Tuple successAndTrackTuple) {RobloxScriptSecurity}
+Added Tag [NotReplicated] to Class PlayerEmulatorService
+	Added Tag [NotReplicated] to Property PlayerEmulatorService.CustomPoliciesEnabled
+	Added Tag [NotReplicated] to Property PlayerEmulatorService.EmulatedCountryCode
+	Added Tag [NotReplicated] to Property PlayerEmulatorService.EmulatedGameLocale
+	Added Tag [NotReplicated] to Property PlayerEmulatorService.PlayerEmulationEnabled
+	Added Tag [NotReplicated] to Property PlayerEmulatorService.SerializedEmulatedPolicyInfo
 
-Added Enum AdFormat
-	Added EnumItem AdFormat.Image : 1
+Changed the superclass of Class SurfaceGui 
+	from: "LayerCollector"
+	  to: "SurfaceGuiBase"
 
-Added Enum AdShape
-	Added EnumItem AdShape.HorizontalRectangle : 1
+Changed the serialization of Property ImporterMaterialSettings.DiffuseFilePath 
+	from: [<💾> SaveOnly]
+	  to: [<💾|📁> Saves|Loads]
 
-Added Enum OutfitType
-	Added EnumItem OutfitType.All : 1
-	Added EnumItem OutfitType.Avatar : 2
-	Added EnumItem OutfitType.DynamicHead : 3
+Changed the serialization of Property ImporterMaterialSettings.MetalnessFilePath 
+	from: [<💾> SaveOnly]
+	  to: [<💾|📁> Saves|Loads]
 
-Added EnumItem AssetType.MoodAnimation : 78
-Added EnumItem AvatarAssetType.MoodAnimation : 78
-Added EnumItem BundleType.DynamicHead : 4
-Added EnumItem BundleType.DynamicHeadAvatar : 5
+Changed the serialization of Property ImporterMaterialSettings.NormalFilePath 
+	from: [<💾> SaveOnly]
+	  to: [<💾|📁> Saves|Loads]
 
-Changed the parameters of Function AvatarEditorService:GetOutfits 
-	from: (Enum.OutfitSource outfitSource = "All")
-	  to: (Enum.OutfitSource outfitSource = "All", Enum.OutfitType outfitType = "All")
+Changed the serialization of Property ImporterMaterialSettings.RoughnessFilePath 
+	from: [<💾> SaveOnly]
+	  to: [<💾|📁> Saves|Loads]
 
-Removed Class ToolboxService
-	Removed Callback ToolboxService.ProcessAssetInsertionDrag
-	Removed Callback ToolboxService.ProcessAssetInsertionDrop
+Changed the value of EnumItem LSPMethodType.TextDocument_publishDiagnostics from 19 to 20
+Changed the value of EnumItem LSPMethodType.Window_showMessage from 20 to 21
+Changed the value of EnumItem LSPMethodType.Window_showMessageRequest from 21 to 22
+Changed the value of EnumItem LSPMethodType.Roblox_registerSyntaxCategories from 22 to 23
+Changed the value of EnumItem LSPMethodType.Roblox_signalQuiescence from 23 to 24
+Changed the value of EnumItem LSPMethodType.Roblox_syntaxHighlight from 24 to 25
+Changed the value of EnumItem LSPMethodType.Roblox_suggestExtraSelections from 25 to 26
+Changed the value of EnumItem LSPMethodType.Roblox_findExecutablePosition from 26 to 27
+Changed the value of EnumItem LSPMethodType.Roblox_findColor3 from 27 to 28
+Changed the value of EnumItem LSPMethodType.Roblox_patchSnippetData from 28 to 29
 
-Removed Property TextBox.EnableRealtimeFilteringHints
-Removed Property Workspace.PhysicsInertiaAndVolumeFix
+Moved Property Active
+	from: Class SurfaceGui
+	  to: Class SurfaceGuiBase
 
-Removed Enum PhysicsInertiaAndVolumeFix
-	Removed EnumItem PhysicsInertiaAndVolumeFix.Default
-	Removed EnumItem PhysicsInertiaAndVolumeFix.Disabled
-	Removed EnumItem PhysicsInertiaAndVolumeFix.Enabled
+Moved Property Adornee
+	from: Class SurfaceGui
+	  to: Class SurfaceGuiBase
+
+Moved Property Face
+	from: Class SurfaceGui
+	  to: Class SurfaceGuiBase
+
+Removed Function AssetImportService:Cancel
+Removed Function AssetImportService:GetCurrentImportMap
+Removed Function AssetImportService:ImportMesh
+Removed Function AssetImportService:ImportMeshWithPrompt
+Removed Function AssetImportService:IsAvatar
+Removed Function AssetImportService:Upload
+
+Removed Event AssetImportService.ProgressUpdate
+Removed Event AssetImportService.UploadFinished
+
+Removed Tag [ReadOnly] from Property ImporterMaterialSettings.DiffuseFilePath
+Removed Tag [ReadOnly] from Property ImporterMaterialSettings.MetalnessFilePath
+Removed Tag [ReadOnly] from Property ImporterMaterialSettings.NormalFilePath
+Removed Tag [ReadOnly] from Property ImporterMaterialSettings.RoughnessFilePath
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#539) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#540) for a syntax highlighted version!)
