@@ -11,6 +11,466 @@
 	</ul>
 </head>
 
+<hr id="541"/>
+<h2>Version 0.541.0.5410422</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">MetaBreakpointManager</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Instance</span>
+				<span class="ClassName Function">MetaBreakpointManager</span>
+				<span class="Name">AddBreakpoint</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">script</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">line</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">condition</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">MetaBreakpoint</span>
+				<span class="ClassName Function">MetaBreakpointManager</span>
+				<span class="Name">GetBreakpointById</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">metaBreakpointId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">MetaBreakpointManager</span>
+				<span class="Name">RemoveBreakpointById</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">metaBreakpointId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">MetaBreakpointManager</span>
+				<span class="Name">MetaBreakpointAdded</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">MetaBreakpoint</span>
+						<span class="ParamName">breakpoint</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">MetaBreakpointManager</span>
+				<span class="Name">MetaBreakpointChanged</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">MetaBreakpoint</span>
+						<span class="ParamName">breakpoint</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">MetaBreakpointManager</span>
+				<span class="Name">MetaBreakpointRemoved</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">MetaBreakpoint</span>
+						<span class="ParamName">breakpoint</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">MetaBreakpointManager</span>
+				<span class="Name">MetaBreakpointSetChanged</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">MetaBreakpoint</span>
+						<span class="ParamName">breakpoint</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Dictionary</span>
+						<span class="ParamName">detail</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AdPortal</span>
+			<span class="Superclass">BasePart</span>
+			<span class="Tag">[NotCreatable]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">StreamingIntegrityMode</span>
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">StreamingIntegrityMode</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Tuple</span>
+			<span class="ClassName Function">ScriptDocument</span>
+			<span class="Name">GetViewport</span>
+			<span class="Parameters"></span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">string</span>
+			<span class="ClassName Function">VoiceChatInternal</span>
+			<span class="Name">GetChannelId</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">ScriptDocument</span>
+			<span class="Name">ViewportChanged</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">startLine</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">endLine</span>
+				</span>
+			</span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">StudioAssetService</span>
+			<span class="Name">OnSaveToRoblox</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Objects</span>
+					<span class="ParamName">instances</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">StreamingIntegrityMode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">StreamingIntegrityMode</span>
+				<span class="Name">Default</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">StreamingIntegrityMode</span>
+				<span class="Name">Disabled</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">StreamingIntegrityMode</span>
+				<span class="Name">MinimumRadiusPause</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AssetType</span>
+			<span class="Name">DynamicHead</span>
+			<span class="Value">79</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AvatarAssetType</span>
+			<span class="Name">DynamicHead</span>
+			<span class="Value">79</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">TrackerError</span>
+			<span class="Name">VideoNoPermission</span>
+			<span class="Value">5</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">TrackerError</span>
+			<span class="Name">AudioNoPermission</span>
+			<span class="Value">8</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AdGui</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">Humanoid</span>
+		<span class="Name">EmoteTriggered</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Tuple</span>
+					<span class="ParamName">successAndTrackTuple</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">success</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">AnimationTrack</span>
+					<span class="ParamName">animationTrack</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">BreakpointManager</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">BreakpointManager</span>
+				<span class="Name">AddBreakpoint</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">BreakpointManager</span>
+				<span class="Name">GetBreakpointById</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">BreakpointManager</span>
+				<span class="Name">RemoveBreakpointById</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">BreakpointManager</span>
+				<span class="Name">MetaBreakpointAdded</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">BreakpointManager</span>
+				<span class="Name">MetaBreakpointChanged</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">BreakpointManager</span>
+				<span class="Name">MetaBreakpointRemoved</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">BreakpointManager</span>
+				<span class="Name">MetaBreakpointSetChanged</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">MaterialService</span>
+			<span class="Name">hasPropertyWarningInStudio</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">AdFormat</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AdFormat</span>
+				<span class="Name">Image</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">TrackerError</span>
+			<span class="Name">CameraPermission</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">TrackerError</span>
+			<span class="Name">MicPermission</span>
+		</span>
+	</span>
+</div>
+
 <hr id="540"/>
 <h2>Version 0.540.0.5400503</h2>
 
