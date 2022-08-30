@@ -2535,7 +2535,6 @@
 			<span class="ParamName">humanoidDescription</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -8360,6 +8359,7 @@
 <div class="Class">
 	<span class="Name">AirController</span>
 	<span class="Superclass">ControllerBase</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -8395,6 +8395,7 @@
 <div class="Class">
 	<span class="Name">ClimbController</span>
 	<span class="Superclass">ControllerBase</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -8424,6 +8425,7 @@
 <div class="Class">
 	<span class="Name">GroundController</span>
 	<span class="Superclass">ControllerBase</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -8495,6 +8497,7 @@
 <div class="Class">
 	<span class="Name">SwimController</span>
 	<span class="Superclass">ControllerBase</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -8518,6 +8521,7 @@
 <div class="Class">
 	<span class="Name">ControllerManager</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -18708,6 +18712,61 @@
 </div>
 
 <div class="Class">
+	<span class="Name">IKControl</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">IKControl</span>
+	<span class="Name">ChainRoot</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">IKControl</span>
+	<span class="Name">Enabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">IKControl</span>
+	<span class="Name">EndEffector</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">IKControl</span>
+	<span class="Name">Pole</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">IKControl</span>
+	<span class="Name">Priority</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">IKControl</span>
+	<span class="Name">Target</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">IKControlType</span>
+	<span class="ClassName Property">IKControl</span>
+	<span class="Name">Type</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">IKControl</span>
+	<span class="Name">Weight</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ILegacyStudioBridge</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -18924,6 +18983,13 @@
 
 <div class="Class">
 	<span class="Name">ImporterAnimationSettings</span>
+	<span class="Superclass">ImporterBaseSettings</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ImporterFacsSettings</span>
 	<span class="Superclass">ImporterBaseSettings</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -21198,6 +21264,13 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">BaseScript</span>
 	<span class="Name">Disabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BaseScript</span>
+	<span class="Name">Enabled</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -24567,9 +24640,6 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">CollisionGroup</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -34159,6 +34229,20 @@
 	<span class="Name">GetScriptDocuments</span>
 	<span class="Parameters"></span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">ScriptEditorService</span>
+	<span class="Name">OpenScriptDocumentAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Function child">
@@ -50202,6 +50286,46 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">IKControlType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IKControlType</span>
+	<span class="Name">Null</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IKControlType</span>
+	<span class="Name">Position</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IKControlType</span>
+	<span class="Name">Rotation</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IKControlType</span>
+	<span class="Name">Transform</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IKControlType</span>
+	<span class="Name">LookAt</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IKControlType</span>
+	<span class="Name">Length</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">IXPLoadingStatus</span>
 </div>
 
@@ -52084,61 +52208,61 @@
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
 	<span class="Name">TextDocument_publishDiagnostics</span>
-	<span class="Value">20</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Window_showMessage</span>
 	<span class="Value">21</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Window_showMessageRequest</span>
+	<span class="Name">Window_showMessage</span>
 	<span class="Value">22</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_registerSyntaxCategories</span>
+	<span class="Name">Window_showMessageRequest</span>
 	<span class="Value">23</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_signalQuiescence</span>
+	<span class="Name">Roblox_registerSyntaxCategories</span>
 	<span class="Value">24</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_syntaxHighlight</span>
+	<span class="Name">Roblox_signalQuiescence</span>
 	<span class="Value">25</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_suggestExtraSelections</span>
+	<span class="Name">Roblox_syntaxHighlight</span>
 	<span class="Value">26</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_findExecutablePosition</span>
+	<span class="Name">Roblox_suggestExtraSelections</span>
 	<span class="Value">27</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_findColor3</span>
+	<span class="Name">Roblox_findExecutablePosition</span>
 	<span class="Value">28</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">LSPMethodType</span>
-	<span class="Name">Roblox_patchSnippetData</span>
+	<span class="Name">Roblox_findColor3</span>
 	<span class="Value">29</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LSPMethodType</span>
+	<span class="Name">Roblox_patchSnippetData</span>
+	<span class="Value">30</span>
 </div>
 
 <div class="Enum">

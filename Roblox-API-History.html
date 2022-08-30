@@ -11,6 +11,483 @@
 	</ul>
 </head>
 
+<hr id="542"/>
+<h2>Version 0.542.0.5420509</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">IKControl</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotBrowsable]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Instance</span>
+				<span class="ClassName Property">IKControl</span>
+				<span class="Name">ChainRoot</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">IKControl</span>
+				<span class="Name">Enabled</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Instance</span>
+				<span class="ClassName Property">IKControl</span>
+				<span class="Name">EndEffector</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Instance</span>
+				<span class="ClassName Property">IKControl</span>
+				<span class="Name">Pole</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int</span>
+				<span class="ClassName Property">IKControl</span>
+				<span class="Name">Priority</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Instance</span>
+				<span class="ClassName Property">IKControl</span>
+				<span class="Name">Target</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">IKControlType</span>
+				<span class="ClassName Property">IKControl</span>
+				<span class="Name">Type</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">IKControl</span>
+				<span class="Name">Weight</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ImporterFacsSettings</span>
+			<span class="Superclass">ImporterBaseSettings</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">BaseScript</span>
+			<span class="Name">Enabled</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Tuple</span>
+			<span class="ClassName Function">ScriptEditorService</span>
+			<span class="Name">OpenScriptDocumentAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">LuaSourceContainer</span>
+					<span class="ParamName">script</span>
+				</span>
+			</span>
+			<span class="Security">{PluginSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">IKControlType</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IKControlType</span>
+				<span class="Name">Null</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IKControlType</span>
+				<span class="Name">Position</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IKControlType</span>
+				<span class="Name">Rotation</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IKControlType</span>
+				<span class="Name">Transform</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IKControlType</span>
+				<span class="Name">LookAt</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IKControlType</span>
+				<span class="Name">Length</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ControllerManager</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AirController</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ClimbController</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">GroundController</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">SwimController</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security and serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">CollisionGroup</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security darken">{None}</span>
+			<span class="Serialization">[<💾|📁> Saves|Loads]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">AlignOrientation</span>
+		<span class="Name">PrimaryAxis</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves|Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">AlignOrientation</span>
+		<span class="Name">SecondaryAxis</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves|Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">security</span>
+	<span class="Function">
+		<span class="ClassName Function">AvatarEditorService</span>
+		<span class="Name">ConformToAvatarRules</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security darken">{None}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">LSPMethodType</span>
+		<span class="Name">TextDocument_publishDiagnostics</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">20</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">21</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">LSPMethodType</span>
+		<span class="Name">Window_showMessage</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">21</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">22</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">LSPMethodType</span>
+		<span class="Name">Window_showMessageRequest</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">22</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">23</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">LSPMethodType</span>
+		<span class="Name">Roblox_registerSyntaxCategories</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">23</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">24</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">LSPMethodType</span>
+		<span class="Name">Roblox_signalQuiescence</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">24</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">25</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">LSPMethodType</span>
+		<span class="Name">Roblox_syntaxHighlight</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">25</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">26</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">LSPMethodType</span>
+		<span class="Name">Roblox_suggestExtraSelections</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">26</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">27</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">LSPMethodType</span>
+		<span class="Name">Roblox_findExecutablePosition</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">27</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">28</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">LSPMethodType</span>
+		<span class="Name">Roblox_findColor3</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">28</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">29</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">LSPMethodType</span>
+		<span class="Name">Roblox_patchSnippetData</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">29</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">30</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">CollisionGroup</span>
+		</span>
+	</span>
+</div>
 <hr id="541"/>
 <h2>Version 0.541.0.5410422</h2>
 

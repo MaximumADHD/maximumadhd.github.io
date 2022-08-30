@@ -1,61 +1,68 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/32df8cc94be4147028de811f644028839c94293a
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/7286fee38712dfe5d9161a7e14f236f31397ca3a
 
 ## API Changes
 
 ```plain
-Added Class MetaBreakpointManager : Instance [NotCreatable] [Service] [NotReplicated]
-	Added Function Instance MetaBreakpointManager:AddBreakpoint(Instance script, int line, Instance condition) {RobloxScriptSecurity}
-	Added Function MetaBreakpoint MetaBreakpointManager:GetBreakpointById(int metaBreakpointId) {RobloxScriptSecurity}
-	Added Function void MetaBreakpointManager:RemoveBreakpointById(int metaBreakpointId) {RobloxScriptSecurity}
-	Added Event MetaBreakpointManager.MetaBreakpointAdded(MetaBreakpoint breakpoint) {RobloxScriptSecurity}
-	Added Event MetaBreakpointManager.MetaBreakpointChanged(MetaBreakpoint breakpoint) {RobloxScriptSecurity}
-	Added Event MetaBreakpointManager.MetaBreakpointRemoved(MetaBreakpoint breakpoint) {RobloxScriptSecurity}
-	Added Event MetaBreakpointManager.MetaBreakpointSetChanged(MetaBreakpoint breakpoint, Dictionary detail) {RobloxScriptSecurity}
+Added Class IKControl : Instance [NotBrowsable]
+	Added Property Instance IKControl.ChainRoot
+	Added Property bool IKControl.Enabled
+	Added Property Instance IKControl.EndEffector
+	Added Property Instance IKControl.Pole
+	Added Property int IKControl.Priority
+	Added Property Instance IKControl.Target
+	Added Property Enum.IKControlType IKControl.Type
+	Added Property float IKControl.Weight
 
-Added Class AdPortal : BasePart [NotCreatable]
+Added Class ImporterFacsSettings : ImporterBaseSettings [NotCreatable] [NotReplicated]
 
-Added Property Enum.StreamingIntegrityMode Workspace.StreamingIntegrityMode [NotScriptable]
+Added Property bool BaseScript.Enabled [NotReplicated]
 
-Added Function Tuple ScriptDocument:GetViewport() {PluginSecurity}
-Added Function string VoiceChatInternal:GetChannelId() {RobloxScriptSecurity}
+Added Function Tuple ScriptEditorService:OpenScriptDocumentAsync(LuaSourceContainer script) {PluginSecurity} [Yields]
 
-Added Event ScriptDocument.ViewportChanged(int64 startLine, int64 endLine) {PluginSecurity}
-Added Event StudioAssetService.OnSaveToRoblox(Objects instances) {RobloxScriptSecurity}
+Added Enum IKControlType
+	Added EnumItem IKControlType.Null : 0
+	Added EnumItem IKControlType.Position : 1
+	Added EnumItem IKControlType.Rotation : 2
+	Added EnumItem IKControlType.Transform : 3
+	Added EnumItem IKControlType.LookAt : 4
+	Added EnumItem IKControlType.Length : 5
 
-Added Enum StreamingIntegrityMode
-	Added EnumItem StreamingIntegrityMode.Default : 0
-	Added EnumItem StreamingIntegrityMode.Disabled : 1
-	Added EnumItem StreamingIntegrityMode.MinimumRadiusPause : 2
+Added Tag [NotBrowsable] to Class ControllerManager
+Added Tag [NotBrowsable] to Class AirController
+Added Tag [NotBrowsable] to Class ClimbController
+Added Tag [NotBrowsable] to Class GroundController
+Added Tag [NotBrowsable] to Class SwimController
 
-Added EnumItem AssetType.DynamicHead : 79
-Added EnumItem AvatarAssetType.DynamicHead : 79
-Added EnumItem TrackerError.VideoNoPermission : 5
-Added EnumItem TrackerError.AudioNoPermission : 8
+Changed the security and serialization of Property BasePart.CollisionGroup 
+	from: {RobloxScriptSecurity} [<📁> LoadOnly]
+	  to: {None} [<💾|📁> Saves|Loads]
 
-Added Tag [NotBrowsable] to Class AdGui
+Changed the serialization of Property AlignOrientation.PrimaryAxis 
+	from: [<💾|📁> Saves|Loads]
+	  to: [<🕒> RuntimeOnly]
 
-Changed the parameters of Event Humanoid.EmoteTriggered 
-	from: (Tuple successAndTrackTuple)
-	  to: (bool success, AnimationTrack animationTrack)
+Changed the serialization of Property AlignOrientation.SecondaryAxis 
+	from: [<💾|📁> Saves|Loads]
+	  to: [<🕒> RuntimeOnly]
 
-Removed Class BreakpointManager
-	Removed Function BreakpointManager:AddBreakpoint
-	Removed Function BreakpointManager:GetBreakpointById
-	Removed Function BreakpointManager:RemoveBreakpointById
-	Removed Event BreakpointManager.MetaBreakpointAdded
-	Removed Event BreakpointManager.MetaBreakpointChanged
-	Removed Event BreakpointManager.MetaBreakpointRemoved
-	Removed Event BreakpointManager.MetaBreakpointSetChanged
+Changed the security of Function AvatarEditorService:ConformToAvatarRules 
+	from: {RobloxScriptSecurity}
+	  to: {None}
 
-Removed Property MaterialService.hasPropertyWarningInStudio
+Changed the value of EnumItem LSPMethodType.TextDocument_publishDiagnostics from 20 to 21
+Changed the value of EnumItem LSPMethodType.Window_showMessage from 21 to 22
+Changed the value of EnumItem LSPMethodType.Window_showMessageRequest from 22 to 23
+Changed the value of EnumItem LSPMethodType.Roblox_registerSyntaxCategories from 23 to 24
+Changed the value of EnumItem LSPMethodType.Roblox_signalQuiescence from 24 to 25
+Changed the value of EnumItem LSPMethodType.Roblox_syntaxHighlight from 25 to 26
+Changed the value of EnumItem LSPMethodType.Roblox_suggestExtraSelections from 26 to 27
+Changed the value of EnumItem LSPMethodType.Roblox_findExecutablePosition from 27 to 28
+Changed the value of EnumItem LSPMethodType.Roblox_findColor3 from 28 to 29
+Changed the value of EnumItem LSPMethodType.Roblox_patchSnippetData from 29 to 30
 
-Removed Enum AdFormat
-	Removed EnumItem AdFormat.Image
-
-Removed EnumItem TrackerError.CameraPermission
-Removed EnumItem TrackerError.MicPermission
+Removed Tag [Hidden] from Property BasePart.CollisionGroup
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#541) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#542) for a syntax highlighted version!)
