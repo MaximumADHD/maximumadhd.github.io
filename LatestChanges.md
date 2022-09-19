@@ -1,68 +1,42 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/7286fee38712dfe5d9161a7e14f236f31397ca3a
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/c81e2760b725dacc0a31335f0ec42cc35780f1a6
 
 ## API Changes
 
 ```plain
-Added Class IKControl : Instance [NotBrowsable]
-	Added Property Instance IKControl.ChainRoot
-	Added Property bool IKControl.Enabled
-	Added Property Instance IKControl.EndEffector
-	Added Property Instance IKControl.Pole
-	Added Property int IKControl.Priority
-	Added Property Instance IKControl.Target
-	Added Property Enum.IKControlType IKControl.Type
-	Added Property float IKControl.Weight
+Added Property Enum.AdPortalStatus AdPortal.PortalStatus [ReadOnly] [NotScriptable]
 
-Added Class ImporterFacsSettings : ImporterBaseSettings [NotCreatable] [NotReplicated]
+Added Function Enum.AccessoryType AvatarEditorService:GetAccessoryType(Enum.AvatarAssetType avatarAssetType)
 
-Added Property bool BaseScript.Enabled [NotReplicated]
+Added Event VoiceChatInternal.LocalPlayerModerated() {RobloxScriptSecurity}
 
-Added Function Tuple ScriptEditorService:OpenScriptDocumentAsync(LuaSourceContainer script) {PluginSecurity} [Yields]
+Added Enum AdPortalStatus
+	Added EnumItem AdPortalStatus.Invalid : 0
+	Added EnumItem AdPortalStatus.Inactive : 1
+	Added EnumItem AdPortalStatus.Active : 2
 
-Added Enum IKControlType
-	Added EnumItem IKControlType.Null : 0
-	Added EnumItem IKControlType.Position : 1
-	Added EnumItem IKControlType.Rotation : 2
-	Added EnumItem IKControlType.Transform : 3
-	Added EnumItem IKControlType.LookAt : 4
-	Added EnumItem IKControlType.Length : 5
+Added Enum AdPortalType
+	Added EnumItem AdPortalType.Forward : 0
+	Added EnumItem AdPortalType.Return : 1
 
-Added Tag [NotBrowsable] to Class ControllerManager
-Added Tag [NotBrowsable] to Class AirController
-Added Tag [NotBrowsable] to Class ClimbController
-Added Tag [NotBrowsable] to Class GroundController
-Added Tag [NotBrowsable] to Class SwimController
+Changed the serialization of Property PackageLink.VersionNumber 
+	from: [<🕒> RuntimeOnly]
+	  to: [<📁> LoadOnly]
 
-Changed the security and serialization of Property BasePart.CollisionGroup 
-	from: {RobloxScriptSecurity} [<📁> LoadOnly]
-	  to: {None} [<💾|📁> Saves|Loads]
+Changed the value-type of Property AdPortal.PortalType 
+	from: Enum.PortalType
+	  to: Enum.AdPortalType
 
-Changed the serialization of Property AlignOrientation.PrimaryAxis 
-	from: [<💾|📁> Saves|Loads]
-	  to: [<🕒> RuntimeOnly]
+Removed Property PackageLink.Package Id
+Removed Property PackageLink.Version Number
 
-Changed the serialization of Property AlignOrientation.SecondaryAxis 
-	from: [<💾|📁> Saves|Loads]
-	  to: [<🕒> RuntimeOnly]
+Removed Enum PortalType
+	Removed EnumItem PortalType.Forward
+	Removed EnumItem PortalType.Return
 
-Changed the security of Function AvatarEditorService:ConformToAvatarRules 
-	from: {RobloxScriptSecurity}
-	  to: {None}
-
-Changed the value of EnumItem LSPMethodType.TextDocument_publishDiagnostics from 20 to 21
-Changed the value of EnumItem LSPMethodType.Window_showMessage from 21 to 22
-Changed the value of EnumItem LSPMethodType.Window_showMessageRequest from 22 to 23
-Changed the value of EnumItem LSPMethodType.Roblox_registerSyntaxCategories from 23 to 24
-Changed the value of EnumItem LSPMethodType.Roblox_signalQuiescence from 24 to 25
-Changed the value of EnumItem LSPMethodType.Roblox_syntaxHighlight from 25 to 26
-Changed the value of EnumItem LSPMethodType.Roblox_suggestExtraSelections from 26 to 27
-Changed the value of EnumItem LSPMethodType.Roblox_findExecutablePosition from 27 to 28
-Changed the value of EnumItem LSPMethodType.Roblox_findColor3 from 28 to 29
-Changed the value of EnumItem LSPMethodType.Roblox_patchSnippetData from 29 to 30
-
-Removed Tag [Hidden] from Property BasePart.CollisionGroup
+Removed Tag [Hidden] from Property PackageLink.PackageId
+Removed Tag [Hidden] from Property PackageLink.VersionNumber
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#542) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#544) for a syntax highlighted version!)
