@@ -11,6 +11,954 @@
 	</ul>
 </head>
 
+<hr id="545"/>
+<h2>Version 0.545.1.5450434</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">TrackerLodController</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">TrackerLodFlagMode</span>
+				<span class="ClassName Property">TrackerLodController</span>
+				<span class="Name">AudioMode</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">TrackerLodValueMode</span>
+				<span class="ClassName Property">TrackerLodController</span>
+				<span class="Name">VideoLodMode</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">TrackerLodFlagMode</span>
+				<span class="ClassName Property">TrackerLodController</span>
+				<span class="Name">VideoMode</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">int</span>
+				<span class="ClassName Function">TrackerLodController</span>
+				<span class="Name">getVideoLod</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">TrackerLodController</span>
+				<span class="Name">isAudioEnabled</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">TrackerLodController</span>
+				<span class="Name">isVideoEnabled</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">TrackerLodController</span>
+				<span class="Name">UpdateState</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int64</span>
+			<span class="ClassName Property">AdPortal</span>
+			<span class="Name">PortalVersion</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">PhysicalProperties</span>
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">CurrentPhysicalProperties</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">FacialAnimationFlags</span>
+			<span class="ClassName Property">FacialAnimationStreamingService</span>
+			<span class="Name">EnableFlags</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">NotificationService</span>
+			<span class="Name">IsConnected</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">TrackerLodController</span>
+			<span class="ClassName Function">FaceAnimatorService</span>
+			<span class="Name">GetTrackerLodController</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">FaceAnimatorService</span>
+			<span class="Name">Step</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">ScriptEditorService</span>
+			<span class="Name">RegisterAutocompleteCallback</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Function</span>
+					<span class="ParamName">callbackFunction</span>
+				</span>
+			</span>
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">CompletionItemKind</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Text</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Method</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Function</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Constructor</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Field</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Variable</span>
+				<span class="Value">6</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Class</span>
+				<span class="Value">7</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Interface</span>
+				<span class="Value">8</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Module</span>
+				<span class="Value">9</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Property</span>
+				<span class="Value">10</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Unit</span>
+				<span class="Value">11</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Value</span>
+				<span class="Value">12</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Enum</span>
+				<span class="Value">13</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Keyword</span>
+				<span class="Value">14</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Snippet</span>
+				<span class="Value">15</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Color</span>
+				<span class="Value">16</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">File</span>
+				<span class="Value">17</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Reference</span>
+				<span class="Value">18</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Folder</span>
+				<span class="Value">19</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">EnumMember</span>
+				<span class="Value">20</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Constant</span>
+				<span class="Value">21</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Struct</span>
+				<span class="Value">22</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Event</span>
+				<span class="Value">23</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">Operator</span>
+				<span class="Value">24</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemKind</span>
+				<span class="Name">TypeParameter</span>
+				<span class="Value">25</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">CompletionItemTag</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemTag</span>
+				<span class="Name">Deprecated</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemTag</span>
+				<span class="Name">IncorrectIndexType</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemTag</span>
+				<span class="Name">PluginPermissions</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemTag</span>
+				<span class="Name">CommandLinePermissions</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemTag</span>
+				<span class="Name">RobloxPermissions</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemTag</span>
+				<span class="Name">AddParens</span>
+				<span class="Value">6</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemTag</span>
+				<span class="Name">PutCursorInParens</span>
+				<span class="Value">7</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemTag</span>
+				<span class="Name">TypeCorrect</span>
+				<span class="Value">8</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionItemTag</span>
+				<span class="Name">ClientServerBoundaryViolation</span>
+				<span class="Value">9</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">CompletionTriggerKind</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionTriggerKind</span>
+				<span class="Name">Invoked</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionTriggerKind</span>
+				<span class="Name">TriggerCharacter</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompletionTriggerKind</span>
+				<span class="Name">TriggerForIncompleteCompletions</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">FacialAnimationFlags</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">FacialAnimationFlags</span>
+				<span class="Name">None</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">FacialAnimationFlags</span>
+				<span class="Name">Place</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">FacialAnimationFlags</span>
+				<span class="Name">Server</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">FacialAnimationFlags</span>
+				<span class="Name">PlaceServer</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">MarkupKind</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">MarkupKind</span>
+				<span class="Name">PlainText</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">MarkupKind</span>
+				<span class="Name">Markdown</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">TrackerLodFlagMode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TrackerLodFlagMode</span>
+				<span class="Name">ForceFalse</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TrackerLodFlagMode</span>
+				<span class="Name">ForceTrue</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TrackerLodFlagMode</span>
+				<span class="Name">Auto</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">TrackerLodValueMode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TrackerLodValueMode</span>
+				<span class="Name">Force0</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TrackerLodValueMode</span>
+				<span class="Name">Force1</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TrackerLodValueMode</span>
+				<span class="Name">Auto</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">FaceAnimatorService</span>
+			<span class="Name">TrackerMode</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">ScriptEditorService</span>
+			<span class="Name">RegisterLSPCallback</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">LSPMethodType</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Initialize</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Initialized</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">CancelRequest</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_didOpen</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_didChange</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_didClose</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_foldingRange</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_onTypeFormatting</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_formatting</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_rangeFormatting</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_hover</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_signatureHelp</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Workspace_DidChangeConfiguration</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">ShutdownRequest</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Completion</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Declaration</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">DocumentSymbols</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">TextDocument_publishDiagnostics</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Window_showMessage</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Window_showMessageRequest</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_registerSyntaxCategories</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_signalQuiescence</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_syntaxHighlight</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_suggestExtraSelections</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_findExecutablePosition</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_findColor3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">LSPMethodType</span>
+				<span class="Name">Roblox_patchSnippetData</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotCreatable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AdGui</span>
+		</span>
+	</span>
+</div>
 <hr id="544"/>
 <h2>Version 0.544.0.5440300</h2>
 
@@ -236,6 +1184,7 @@
 		</span>
 	</span>
 </div>
+
 <hr id="543"/>
 <h2>Version 0.543.0.5430566</h2>
 
