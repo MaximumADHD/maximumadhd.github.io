@@ -8512,6 +8512,8 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">GroundController</span>
 	<span class="Name">MaxSlopeAngle</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -8536,6 +8538,12 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">GroundController</span>
 	<span class="Name">FrictionWeight</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">GroundOffset</span>
 </div>
 
 <div class="Property child">
@@ -8621,6 +8629,8 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">ControllerManager</span>
 	<span class="Name">HipHeight</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -13452,7 +13462,6 @@
 <div class="Class">
 	<span class="Name">CanvasGroup</span>
 	<span class="Superclass">GuiObject</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -16501,6 +16510,31 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">GuiService</span>
+	<span class="Name">SetHardwareSafeAreaInsets</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">left</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">top</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">right</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">bottom</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GuiService</span>
 	<span class="Name">SetInspectMenuEnabled</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -18879,12 +18913,6 @@
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">IKControl</span>
 	<span class="Name">Offset</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Instance</span>
-	<span class="ClassName Property">IKControl</span>
-	<span class="Name">Pole</span>
 </div>
 
 <div class="Property child">
@@ -21752,6 +21780,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">PromptNativePurchaseWithLocalPlayer</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">productId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">PromptPremiumPurchase</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -22162,6 +22203,22 @@
 			<span class="Type">Instance</span>
 			<span class="ParamName">player</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">productId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">wasPurchased</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">NativePurchaseFinishedWithLocalPlayer</span>
+	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">productId</span>
@@ -28498,6 +28555,18 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">PhysicsService</span>
+	<span class="Name">IsCollisionGroupRegistered</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">PhysicsService</span>
 	<span class="Name">LocalIkSolve</span>
@@ -29516,6 +29585,19 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">jsonBlob</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Player</span>
+	<span class="Name">SetExperienceSettingsLocaleId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">locale</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -34372,6 +34454,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ScriptEditorService</span>
+	<span class="Name">DeregisterAutocompleteCallback</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">ScriptDocument</span>
 	<span class="ClassName Function">ScriptEditorService</span>
 	<span class="Name">FindScriptDocument</span>
@@ -34411,6 +34506,14 @@
 	<span class="ClassName Function">ScriptEditorService</span>
 	<span class="Name">RegisterAutocompleteCallback</span>
 	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">priority</span>
+		</span>
 		<span class="Parameter">
 			<span class="Type">Function</span>
 			<span class="ParamName">callbackFunction</span>
@@ -39759,6 +39862,13 @@
 			<span class="ParamName">dataTable</span>
 		</span>
 	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TeleportService</span>
+	<span class="Name">MenuTeleportAttempt</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -50921,7 +51031,7 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">IKControlType</span>
-	<span class="Name">Null</span>
+	<span class="Name">Transform</span>
 	<span class="Value">0</span>
 </div>
 
@@ -50939,20 +51049,8 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">IKControlType</span>
-	<span class="Name">Transform</span>
-	<span class="Value">3</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">IKControlType</span>
 	<span class="Name">LookAt</span>
-	<span class="Value">4</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">IKControlType</span>
-	<span class="Name">Length</span>
-	<span class="Value">5</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
