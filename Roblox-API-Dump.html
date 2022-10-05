@@ -519,7 +519,6 @@
 <div class="Class">
 	<span class="Name">AdPortal</span>
 	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
 
@@ -529,7 +528,6 @@
 	<span class="ClassName Property">AdPortal</span>
 	<span class="Name">PortalStatus</span>
 	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -556,12 +554,11 @@
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
-<div class="Class deprecated">
+<div class="Class">
 	<span class="Name">AdService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function deprecated child">
@@ -570,6 +567,20 @@
 	<span class="Name">ShowVideoAd</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AdService</span>
+	<span class="Name">AdTeleportEnded</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AdService</span>
+	<span class="Name">AdTeleportInitiated</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event deprecated child">
@@ -1388,6 +1399,12 @@
 <div class="Class">
 	<span class="Name">Animator</span>
 	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Animator</span>
+	<span class="Name">PreferLodEnabled</span>
 </div>
 
 <div class="Function child">
@@ -10967,6 +10984,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">DraggerService</span>
+	<span class="Name">HoverLineThickness</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">DraggerService</span>
 	<span class="Name">HoverThickness</span>
@@ -11178,6 +11204,36 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ExperienceInviteOptions</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">ExperienceInviteOptions</span>
+	<span class="Name">InviteMessageId</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">ExperienceInviteOptions</span>
+	<span class="Name">InviteUser</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">ExperienceInviteOptions</span>
+	<span class="Name">LaunchData</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">ExperienceInviteOptions</span>
+	<span class="Name">PromptMessage</span>
 </div>
 
 <div class="Class">
@@ -15570,7 +15626,6 @@
 <div class="Class">
 	<span class="Name">WireframeHandleAdornment</span>
 	<span class="Superclass">HandleAdornment</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Function child">
@@ -17119,6 +17174,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Highlight</span>
+	<span class="Name">LineThickness</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Highlight</span>
 	<span class="Name">OutlineColor</span>
@@ -17128,6 +17191,15 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Highlight</span>
 	<span class="Name">OutlineTransparency</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ReservedHighlightId</span>
+	<span class="ClassName Property">Highlight</span>
+	<span class="Name">ReservedId</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class deprecated">
@@ -17566,6 +17638,13 @@
 	<span class="Name">CollisionType</span>
 	<span class="Security">{✏️PluginSecurity}</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">EvaluateStateMachine</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -19474,6 +19553,18 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">IncrementalPatchBuilder</span>
+	<span class="Name">HighCompression</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">IncrementalPatchBuilder</span>
+	<span class="Name">ZstdCompression</span>
+</div>
+
 <div class="Class">
 	<span class="Name">InputObject</span>
 	<span class="Superclass">Instance</span>
@@ -20834,19 +20925,6 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">LocalizationService</span>
-	<span class="Name">SetExperienceSettingsLocaleId</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">locale</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">LocalizationService</span>
 	<span class="Name">SetRobloxLocaleId</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -21204,6 +21282,13 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">CloudLocalizationTable</span>
+	<span class="Superclass">LocalizationTable</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -24301,6 +24386,19 @@
 		<span class="Parameter">
 			<span class="Type">int</span>
 			<span class="ParamName">timeFrame</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ClientReplicator</span>
+	<span class="Name">RequestServerScriptProfiling</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">start</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -29099,6 +29197,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">UnfilteredChat</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">int64</span>
 	<span class="ClassName Property">Player</span>
 	<span class="Name">UserId</span>
@@ -32353,6 +32460,62 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">DEPRECATED_TrackEvent</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">category</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">action</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">label</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName default">value</span>
+			<span class="ParamDefault int64">0</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RbxAnalyticsService</span>
+	<span class="Name">DEPRECATED_TrackEventWithArgs</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">category</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">action</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">label</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">args</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName default">value</span>
+			<span class="ParamDefault int64">0</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">string</span>
 	<span class="ClassName Function">RbxAnalyticsService</span>
 	<span class="Name">GetClientId</span>
@@ -33834,10 +33997,37 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">ScriptContext</span>
+	<span class="Name">DeserializeScriptProfilerString</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">jsonString</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[CustomLuaState]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Array</span>
 	<span class="ClassName Function">ScriptContext</span>
 	<span class="Name">GetCoverageStats</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ScriptContext</span>
+	<span class="Name">SaveScriptProfilingData</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">filename</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -33863,7 +34053,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">string</span>
+	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">ScriptContext</span>
 	<span class="Name">StopScriptProfiling</span>
 	<span class="Parameters"></span>
@@ -34595,6 +34785,14 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Selection</span>
+	<span class="Name">SelectionLineThickness</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -38180,6 +38378,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Hover Line Thickness</span>
+	<span class="Security">{RobloxSecurity}</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Hover Over Color</span>
@@ -38209,6 +38414,13 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Selection Highlight Thickness</span>
+	<span class="Security">{RobloxSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Selection Line Thickness</span>
 	<span class="Security">{RobloxSecurity}</span>
 </div>
 
@@ -39589,6 +39801,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">TeleportService</span>
+	<span class="Name">Block</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">TeleportService</span>
 	<span class="Name">GetArrivingTeleportGui</span>
@@ -39847,6 +40067,15 @@
 			<span class="ParamDefault Instance">nil</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">TeleportService</span>
+	<span class="Name">UnblockAsync</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Event child">
@@ -40622,6 +40851,26 @@
 	<span class="Tag">[Hidden]</span>
 </div>
 
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">HorizontalAlignment</span>
+	<span class="ClassName Property">ChatWindowConfiguration</span>
+	<span class="Name">HorizontalAlignment</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="ThreadSafety">{🧬Unsafe}</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">VerticalAlignment</span>
+	<span class="ClassName Property">ChatWindowConfiguration</span>
+	<span class="Name">VerticalAlignment</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="ThreadSafety">{🧬Unsafe}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">TextChatMessage</span>
 	<span class="Superclass">Instance</span>
@@ -41170,6 +41419,13 @@
 
 <div class="Property child">
 	<span class="EnumName Type">Enum</span>
+	<span class="Type">TrackerExtrapolationFlagMode</span>
+	<span class="ClassName Property">TrackerLodController</span>
+	<span class="Name">VideoExtrapolationMode</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
 	<span class="Type">TrackerLodValueMode</span>
 	<span class="ClassName Property">TrackerLodController</span>
 	<span class="Name">VideoLodMode</span>
@@ -41180,6 +41436,14 @@
 	<span class="Type">TrackerLodFlagMode</span>
 	<span class="ClassName Property">TrackerLodController</span>
 	<span class="Name">VideoMode</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">TrackerLodController</span>
+	<span class="Name">getExtrapolation</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -41704,6 +41968,88 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Function">UGCValidationService</span>
 	<span class="Name">ValidateUVSpace</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">validateCageMeshIntersection</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">innerCageMeshId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">outerCageMeshId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">refMeshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">validateCageNonManifoldAndHoles</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">validateFullBodyCageDeletion</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">validateMisMatchUV</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">innerCageMeshId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">outerCageMeshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">validateOverlappingVertices</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -48761,13 +49107,13 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">DebuggerExceptionBreakMode</span>
-	<span class="Name">Unhandled</span>
+	<span class="Name">Always</span>
 	<span class="Value">1</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">DebuggerExceptionBreakMode</span>
-	<span class="Name">Always</span>
+	<span class="Name">Unhandled</span>
 	<span class="Value">2</span>
 </div>
 
@@ -54035,6 +54381,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">ParticleFlipbookTextureCompatible</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleFlipbookTextureCompatible</span>
+	<span class="Name">NotCompatible</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleFlipbookTextureCompatible</span>
+	<span class="Name">Compatible</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ParticleFlipbookTextureCompatible</span>
+	<span class="Name">Unknown</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">ParticleOrientation</span>
 </div>
 
@@ -54934,6 +55302,34 @@
 	<span class="EnumName">ResamplerMode</span>
 	<span class="Name">Pixelated</span>
 	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ReservedHighlightId</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReservedHighlightId</span>
+	<span class="Name">Standard</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReservedHighlightId</span>
+	<span class="Name">Selection</span>
+	<span class="Value">32</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReservedHighlightId</span>
+	<span class="Name">Hover</span>
+	<span class="Value">64</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ReservedHighlightId</span>
+	<span class="Name">Active</span>
+	<span class="Value">128</span>
 </div>
 
 <div class="Enum">
@@ -57931,6 +58327,34 @@
 	<span class="EnumName">TrackerError</span>
 	<span class="Name">AudioNoPermission</span>
 	<span class="Value">8</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">TrackerExtrapolationFlagMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TrackerExtrapolationFlagMode</span>
+	<span class="Name">ForceDisabled</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TrackerExtrapolationFlagMode</span>
+	<span class="Name">ExtrapolateFacsAndPose</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TrackerExtrapolationFlagMode</span>
+	<span class="Name">ExtrapolateFacsOnly</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TrackerExtrapolationFlagMode</span>
+	<span class="Name">Auto</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
