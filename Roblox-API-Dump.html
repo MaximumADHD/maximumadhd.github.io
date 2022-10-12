@@ -9375,6 +9375,11 @@
 			<span class="ParamName default">pageSize</span>
 			<span class="ParamDefault int">0</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">cursor</span>
+			<span class="ParamDefault string"></span>
+		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
 </div>
@@ -10326,6 +10331,23 @@
 	<span class="ClassName Function">DebuggerUIService</span>
 	<span class="Name">Resume</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DebuggerUIService</span>
+	<span class="Name">SetCurrentFrameId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">debuggerThreadId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">debuggerFrameId</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -12071,6 +12093,19 @@
 	<span class="Name">TimeScale</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Fire</span>
+	<span class="Name">FastForward</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">numFrames</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">FlagStandService</span>
 	<span class="Superclass">Instance</span>
@@ -12644,6 +12679,11 @@
 			<span class="Type">int</span>
 			<span class="ParamName default">pageSize</span>
 			<span class="ParamDefault int">0</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">cursor</span>
+			<span class="ParamDefault string"></span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -18971,6 +19011,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">IKControl</span>
+	<span class="Name">AlignmentOffset</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Property">IKControl</span>
 	<span class="Name">ChainRoot</span>
@@ -18992,6 +19038,12 @@
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">IKControl</span>
 	<span class="Name">Offset</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">IKControl</span>
+	<span class="Name">Pole</span>
 </div>
 
 <div class="Property child">
@@ -19083,6 +19135,14 @@
 			<span class="ParamName">layerName</span>
 		</span>
 	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">IXPService</span>
+	<span class="Name">GetRegisteredUserLayersToStatus</span>
+	<span class="Parameters"></span>
 	<span class="Security">{LocalUserSecurity}</span>
 </div>
 
@@ -26694,6 +26754,13 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ModelStreamingMode</span>
+	<span class="ClassName Property">Model</span>
+	<span class="Name">ModelStreamingMode</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">BasePart</span>
 	<span class="ClassName Property">Model</span>
 	<span class="Name">PrimaryPart</span>
@@ -27399,14 +27466,6 @@
 </div>
 
 <div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">StreamingPauseMode</span>
-	<span class="ClassName Property">Workspace</span>
-	<span class="Name">StreamingPauseMode</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">StreamingTargetRadius</span>
@@ -27600,6 +27659,17 @@
 	<span class="Name">ZoomToExtents</span>
 	<span class="Parameters"></span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Workspace</span>
+	<span class="Name">PersistentLoaded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName">player</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -27832,11 +27902,25 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">DataStoreKeyPages</span>
+	<span class="Name">Cursor</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">DataStoreListingPages</span>
 	<span class="Superclass">Pages</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">DataStoreListingPages</span>
+	<span class="Name">Cursor</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Class">
@@ -33723,7 +33807,7 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">double</span>
-			<span class="ParamName">deltaTime</span>
+			<span class="ParamName">deltaTimeSim</span>
 		</span>
 	</span>
 </div>
@@ -33734,7 +33818,7 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">double</span>
-			<span class="ParamName">deltaTime</span>
+			<span class="ParamName">deltaTimeSim</span>
 		</span>
 	</span>
 </div>
@@ -33745,7 +33829,7 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">double</span>
-			<span class="ParamName">deltaTime</span>
+			<span class="ParamName">deltaTimeRender</span>
 		</span>
 	</span>
 </div>
@@ -33756,7 +33840,7 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">double</span>
-			<span class="ParamName">deltaTime</span>
+			<span class="ParamName">deltaTimeSim</span>
 		</span>
 	</span>
 </div>
@@ -35981,6 +36065,19 @@
 	<span class="Name">TimeScale</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Smoke</span>
+	<span class="Name">FastForward</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">numFrames</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">SnippetService</span>
 	<span class="Superclass">Instance</span>
@@ -36814,6 +36911,19 @@
 	<span class="Name">TimeScale</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Sparkles</span>
+	<span class="Name">FastForward</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">numFrames</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">SpawnerService</span>
 	<span class="Superclass">Instance</span>
@@ -37592,6 +37702,12 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Enable Internal Features</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">File &gt; New creates a place with Team Create off</span>
 </div>
 
 <div class="Property child">
@@ -39691,6 +39807,19 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">TeamCreateService</span>
+	<span class="Name">SendUnarchiveUniverseAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">universeId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -41923,6 +42052,56 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateCageMeshIntersection</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">innerCageMeshId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">outerCageMeshId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">refMeshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateCageNonManifoldAndHoles</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateFullBodyCageDeletion</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">UGCValidationService</span>
 	<span class="Name">ValidateMeshTriangles</span>
@@ -41953,6 +42132,38 @@
 <div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateMisMatchUV</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">innerCageMeshId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">outerCageMeshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateOverlappingVertices</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
 	<span class="Name">ValidateTextureSize</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -41968,88 +42179,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Function">UGCValidationService</span>
 	<span class="Name">ValidateUVSpace</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">meshId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Array</span>
-	<span class="ClassName Function">UGCValidationService</span>
-	<span class="Name">validateCageMeshIntersection</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">innerCageMeshId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">outerCageMeshId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">refMeshId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Array</span>
-	<span class="ClassName Function">UGCValidationService</span>
-	<span class="Name">validateCageNonManifoldAndHoles</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">meshId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">bool</span>
-	<span class="ClassName Function">UGCValidationService</span>
-	<span class="Name">validateFullBodyCageDeletion</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">meshId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">bool</span>
-	<span class="ClassName Function">UGCValidationService</span>
-	<span class="Name">validateMisMatchUV</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">innerCageMeshId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">outerCageMeshId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">bool</span>
-	<span class="ClassName Function">UGCValidationService</span>
-	<span class="Name">validateOverlappingVertices</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -44092,6 +44221,22 @@
 			<span class="ParamName">type</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">VRService</span>
+	<span class="Name">IsMaquettes</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">VRService</span>
+	<span class="Name">IsVRAppBuild</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -48919,6 +49064,12 @@
 	<span class="EnumName">CoreGuiType</span>
 	<span class="Name">EmotesMenu</span>
 	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CoreGuiType</span>
+	<span class="Name">SelfView</span>
+	<span class="Value">6</span>
 </div>
 
 <div class="Enum">
@@ -53909,6 +54060,22 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">ModelStreamingMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ModelStreamingMode</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ModelStreamingMode</span>
+	<span class="Name">Atomic</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">ModifierKey</span>
 </div>
 
@@ -56218,26 +56385,36 @@
 	<span class="Value">2</span>
 </div>
 
-<div class="Enum">
-	<span class="Name">StreamingPauseMode</span>
+<div class="EnumItem child">
+	<span class="EnumName">StreamingIntegrityMode</span>
+	<span class="Name">PauseOutsideLoadedArea</span>
+	<span class="Value">3</span>
 </div>
 
-<div class="EnumItem child">
+<div class="Enum deprecated">
+	<span class="Name">StreamingPauseMode</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="EnumItem deprecated child">
 	<span class="EnumName">StreamingPauseMode</span>
 	<span class="Name">Default</span>
 	<span class="Value">0</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">StreamingPauseMode</span>
 	<span class="Name">Disabled</span>
 	<span class="Value">1</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="EnumItem child">
+<div class="EnumItem deprecated child">
 	<span class="EnumName">StreamingPauseMode</span>
 	<span class="Name">ClientPhysicsPause</span>
 	<span class="Value">2</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Enum">

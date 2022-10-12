@@ -1,80 +1,76 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/92bddc972532ffcafaba8ae309b695a7d3b8a9a3
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/d26723719589058955bc492c8c5a57fb07b57193
 
 ## API Changes
 
 ```plain
-Added Class ExperienceInviteOptions : Instance [NotReplicated]
-	Added Property int ExperienceInviteOptions.InviteMessageId
-	Added Property int ExperienceInviteOptions.InviteUser
-	Added Property string ExperienceInviteOptions.LaunchData
-	Added Property string ExperienceInviteOptions.PromptMessage
+Added Property string DataStoreKeyPages.Cursor [ReadOnly]
+Added Property string DataStoreListingPages.Cursor [ReadOnly]
+Added Property CFrame IKControl.AlignmentOffset
+Added Property Instance IKControl.Pole
+Added Property Enum.ModelStreamingMode Model.ModelStreamingMode
+Added Property bool Studio.File > New creates a place with Team Create off
 
-Added Class CloudLocalizationTable : LocalizationTable [NotCreatable] [NotReplicated]
+Added Function void DebuggerUIService:SetCurrentFrameId(int debuggerThreadId, int debuggerFrameId) {RobloxScriptSecurity}
+Added Function void Fire:FastForward(int numFrames) {RobloxScriptSecurity}
+Added Function Dictionary IXPService:GetRegisteredUserLayersToStatus() {LocalUserSecurity}
+Added Function void Smoke:FastForward(int numFrames) {RobloxScriptSecurity}
+Added Function void Sparkles:FastForward(int numFrames) {RobloxScriptSecurity}
+Added Function void TeamCreateService:SendUnarchiveUniverseAsync(int64 universeId) {RobloxScriptSecurity}
+Added Function Tuple UGCValidationService:ValidateCageMeshIntersection(string innerCageMeshId, string outerCageMeshId, string refMeshId) {RobloxScriptSecurity} [Yields]
+Added Function Tuple UGCValidationService:ValidateCageNonManifoldAndHoles(string meshId) {RobloxScriptSecurity} [Yields]
+Added Function bool UGCValidationService:ValidateFullBodyCageDeletion(string meshId) {RobloxScriptSecurity} [Yields]
+Added Function bool UGCValidationService:ValidateMisMatchUV(string innerCageMeshId, string outerCageMeshId) {RobloxScriptSecurity} [Yields]
+Added Function bool UGCValidationService:ValidateOverlappingVertices(string meshId) {RobloxScriptSecurity} [Yields]
+Added Function bool VRService:IsMaquettes() {RobloxScriptSecurity}
+Added Function bool VRService:IsVRAppBuild() {RobloxScriptSecurity}
 
-Added Property bool Animator.PreferLodEnabled
-Added Property Enum.HorizontalAlignment ChatWindowConfiguration.HorizontalAlignment [<📁> LoadOnly] [NotReplicated] {🧬Unsafe}
-Added Property Enum.VerticalAlignment ChatWindowConfiguration.VerticalAlignment [<📁> LoadOnly] [NotReplicated] {🧬Unsafe}
-Added Property int DraggerService.HoverLineThickness {RobloxScriptSecurity} [Hidden] [ReadOnly]
-Added Property int Highlight.LineThickness {RobloxScriptSecurity} [Hidden]
-Added Property Enum.ReservedHighlightId Highlight.ReservedId {RobloxScriptSecurity} [Hidden]
-Added Property bool Humanoid.EvaluateStateMachine [NotBrowsable]
-Added Property bool IncrementalPatchBuilder.HighCompression
-Added Property bool IncrementalPatchBuilder.ZstdCompression
-Added Property bool Player.UnfilteredChat {RobloxScriptSecurity} [Hidden] [ReadOnly]
-Added Property int Selection.SelectionLineThickness [Hidden] [ReadOnly]
-Added Property int Studio.Hover Line Thickness {RobloxSecurity}
-Added Property int Studio.Selection Line Thickness {RobloxSecurity}
-Added Property Enum.TrackerExtrapolationFlagMode TrackerLodController.VideoExtrapolationMode
+Added Event Workspace.PersistentLoaded(Player player)
 
-Added Function void ClientReplicator:RequestServerScriptProfiling(bool start) {RobloxScriptSecurity}
-Added Function void RbxAnalyticsService:DEPRECATED_TrackEvent(string category, string action, string label, int64 value = 0) {RobloxScriptSecurity}
-Added Function void RbxAnalyticsService:DEPRECATED_TrackEventWithArgs(string category, string action, string label, Dictionary args, int64 value = 0) {RobloxScriptSecurity}
-Added Function Dictionary ScriptContext:DeserializeScriptProfilerString(string jsonString) {RobloxScriptSecurity} [CustomLuaState]
-Added Function void ScriptContext:SaveScriptProfilingData(string filename) {RobloxScriptSecurity}
-Added Function void TeleportService:Block() {RobloxScriptSecurity}
-Added Function Tuple TeleportService:UnblockAsync() {RobloxScriptSecurity} [Yields]
-Added Function int TrackerLodController:getExtrapolation() {RobloxScriptSecurity}
-Added Function Array UGCValidationService:validateCageMeshIntersection(string innerCageMeshId, string outerCageMeshId, string refMeshId) {RobloxScriptSecurity} [Yields]
-Added Function Array UGCValidationService:validateCageNonManifoldAndHoles(string meshId) {RobloxScriptSecurity} [Yields]
-Added Function bool UGCValidationService:validateFullBodyCageDeletion(string meshId) {RobloxScriptSecurity} [Yields]
-Added Function bool UGCValidationService:validateMisMatchUV(string innerCageMeshId, string outerCageMeshId) {RobloxScriptSecurity} [Yields]
-Added Function bool UGCValidationService:validateOverlappingVertices(string meshId) {RobloxScriptSecurity} [Yields]
+Added Enum ModelStreamingMode
+	Added EnumItem ModelStreamingMode.Default : 0
+	Added EnumItem ModelStreamingMode.Atomic : 1
 
-Added Event AdService.AdTeleportEnded() {RobloxScriptSecurity}
-Added Event AdService.AdTeleportInitiated() {RobloxScriptSecurity}
+Added EnumItem CoreGuiType.SelfView : 6
+Added EnumItem StreamingIntegrityMode.PauseOutsideLoadedArea : 3
 
-Added Enum ParticleFlipbookTextureCompatible
-	Added EnumItem ParticleFlipbookTextureCompatible.NotCompatible : 0
-	Added EnumItem ParticleFlipbookTextureCompatible.Compatible : 1
-	Added EnumItem ParticleFlipbookTextureCompatible.Unknown : 2
+Added Tag [Deprecated] to Enum StreamingPauseMode
+	Added Tag [Deprecated] to EnumItem StreamingPauseMode.Default
+	Added Tag [Deprecated] to EnumItem StreamingPauseMode.Disabled
+	Added Tag [Deprecated] to EnumItem StreamingPauseMode.ClientPhysicsPause
 
-Added Enum ReservedHighlightId
-	Added EnumItem ReservedHighlightId.Standard : 0
-	Added EnumItem ReservedHighlightId.Selection : 32
-	Added EnumItem ReservedHighlightId.Hover : 64
-	Added EnumItem ReservedHighlightId.Active : 128
+Changed the parameters of Function DataStore:ListKeysAsync 
+	from: (string prefix = "", int pageSize = 0)
+	  to: (string prefix = "", int pageSize = 0, string cursor = "")
 
-Added Enum TrackerExtrapolationFlagMode
-	Added EnumItem TrackerExtrapolationFlagMode.ForceDisabled : 0
-	Added EnumItem TrackerExtrapolationFlagMode.ExtrapolateFacsAndPose : 1
-	Added EnumItem TrackerExtrapolationFlagMode.ExtrapolateFacsOnly : 2
-	Added EnumItem TrackerExtrapolationFlagMode.Auto : 3
+Changed the parameters of Function DataStoreService:ListDataStoresAsync 
+	from: (string prefix = "", int pageSize = 0)
+	  to: (string prefix = "", int pageSize = 0, string cursor = "")
 
-Changed the return-type of Function ScriptContext:StopScriptProfiling 
-	from: string
-	  to: Dictionary
+Changed the parameters of Event RunService.PostSimulation 
+	from: (double deltaTime)
+	  to: (double deltaTimeSim)
 
-Changed the value of EnumItem DebuggerExceptionBreakMode.Always from 2 to 1
-Changed the value of EnumItem DebuggerExceptionBreakMode.Unhandled from 1 to 2
+Changed the parameters of Event RunService.PreAnimation 
+	from: (double deltaTime)
+	  to: (double deltaTimeSim)
 
-Removed Function LocalizationService:SetExperienceSettingsLocaleId
+Changed the parameters of Event RunService.PreRender 
+	from: (double deltaTime)
+	  to: (double deltaTimeRender)
 
-Removed Tag [Deprecated] from Class AdService
-Removed Tag [NotBrowsable] from Class WireframeHandleAdornment
-Removed Tag [NotCreatable] from Class AdPortal
-Removed Tag [NotScriptable] from Property AdPortal.PortalStatus
+Changed the parameters of Event RunService.PreSimulation 
+	from: (double deltaTime)
+	  to: (double deltaTimeSim)
+
+Removed Property Workspace.StreamingPauseMode
+
+Removed Function UGCValidationService:validateCageMeshIntersection
+Removed Function UGCValidationService:validateCageNonManifoldAndHoles
+Removed Function UGCValidationService:validateFullBodyCageDeletion
+Removed Function UGCValidationService:validateMisMatchUV
+Removed Function UGCValidationService:validateOverlappingVertices
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#547) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#548) for a syntax highlighted version!)
