@@ -11,6 +11,862 @@
 	</ul>
 </head>
 
+<hr id="549"/>
+<h2>Version 0.549.0.5490632</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AssetPatchSettings</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">AssetPatchSettings</span>
+				<span class="Name">ContentId</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">AssetPatchSettings</span>
+				<span class="Name">OutputPath</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">AssetPatchSettings</span>
+				<span class="Name">PatchId</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">FacialAnimationStreamingServiceV2</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">int</span>
+				<span class="ClassName Property">FacialAnimationStreamingServiceV2</span>
+				<span class="Name">ServiceState</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">FacialAnimationStreamingServiceV2</span>
+				<span class="Name">IsAudioEnabled</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">mask</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">FacialAnimationStreamingServiceV2</span>
+				<span class="Name">IsPlaceEnabled</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">mask</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">FacialAnimationStreamingServiceV2</span>
+				<span class="Name">IsServerEnabled</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">mask</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">bool</span>
+				<span class="ClassName Function">FacialAnimationStreamingServiceV2</span>
+				<span class="Name">IsVideoEnabled</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">mask</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">int</span>
+				<span class="ClassName Function">FacialAnimationStreamingServiceV2</span>
+				<span class="Name">ResolveStateForUser</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int64</span>
+						<span class="ParamName">userId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ScriptBuilder</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AnimationConstraint</span>
+			<span class="Superclass">Constraint</span>
+			<span class="Tag">[NotBrowsable]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">AnimationConstraint</span>
+				<span class="Name">MaxForce</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">AnimationConstraint</span>
+				<span class="Name">MaxTorque</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">CFrame</span>
+				<span class="ClassName Property">AnimationConstraint</span>
+				<span class="Name">Transform</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">CoreScriptBuilder</span>
+			<span class="Superclass">ScriptBuilder</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">AssetDeliveryProxy</span>
+			<span class="Name">Interface</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">AssetDeliveryProxy</span>
+			<span class="Name">Port</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">AssetDeliveryProxy</span>
+			<span class="Name">StartServer</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ScreenGui</span>
+			<span class="Name">ClipToDeviceSafeArea</span>
+			<span class="Tag">[NotBrowsable]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">SafeAreaCompatibility</span>
+			<span class="ClassName Property">ScreenGui</span>
+			<span class="Name">SafeAreaCompatibility</span>
+			<span class="Tag">[NotBrowsable]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">PlaybackRegionsEnabled</span>
+			<span class="Tag">[NotBrowsable]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">NumberRange</span>
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">LoopRegion</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">NumberRange</span>
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">PlaybackRegion</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">HumanoidStateMachineMode</span>
+			<span class="ClassName Property">StarterPlayer</span>
+			<span class="Name">HumanoidStateMachineMode</span>
+			<span class="Tag">[NotBrowsable]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">DebuggerConnection</span>
+			<span class="Name">UpdateSelectedFrame</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">threadId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">frameNumber</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">FaceAnimatorService</span>
+			<span class="Name">Init</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">videoEnabled</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">audioEnabled</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Terrain</span>
+			<span class="Name">HideTerrainRegion</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Terrain</span>
+			<span class="Name">SetTerrainRegion</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">CFrame</span>
+					<span class="ParamName">cframe</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">size</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Terrain</span>
+			<span class="Name">SetWireframeRegion</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">CFrame</span>
+					<span class="ParamName">cframe</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">size</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Terrain</span>
+			<span class="Name">ShowTerrainRegion</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Callback">
+			<span class="Type">Tuple</span>
+			<span class="ClassName Callback">TextChannel</span>
+			<span class="Name">ShouldDeliverCallback</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">TextChatMessage</span>
+					<span class="ParamName">message</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">TextSource</span>
+					<span class="ParamName">textSource</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">FacialAnimationStreamingState</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">FacialAnimationStreamingState</span>
+				<span class="Name">None</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">FacialAnimationStreamingState</span>
+				<span class="Name">Audio</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">FacialAnimationStreamingState</span>
+				<span class="Name">Video</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">FacialAnimationStreamingState</span>
+				<span class="Name">Place</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">FacialAnimationStreamingState</span>
+				<span class="Name">Server</span>
+				<span class="Value">8</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">HumanoidStateMachineMode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HumanoidStateMachineMode</span>
+				<span class="Name">Default</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HumanoidStateMachineMode</span>
+				<span class="Name">Legacy</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HumanoidStateMachineMode</span>
+				<span class="Name">NoStateMachine</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">HumanoidStateMachineMode</span>
+				<span class="Name">LuaStateMachine</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">SafeAreaCompatibility</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SafeAreaCompatibility</span>
+				<span class="Name">None</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SafeAreaCompatibility</span>
+				<span class="Name">FullscreenExtension</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ConnectionError</span>
+			<span class="Name">PlacelaunchUserPrivacyUnauthorized</span>
+			<span class="Value">533</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ParticleFlipbookLayout</span>
+			<span class="Name">Grid2x2</span>
+			<span class="Value">1</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ParticleFlipbookLayout</span>
+			<span class="Name">Grid4x4</span>
+			<span class="Value">2</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ParticleFlipbookLayout</span>
+			<span class="Name">Grid8x8</span>
+			<span class="Value">3</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">AnalyticsService</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">AnalyticsService</span>
+				<span class="Name">FireCustomEvent</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">AnalyticsService</span>
+				<span class="Name">FireInGameEconomyEvent</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">AnalyticsService</span>
+				<span class="Name">FireLogEvent</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="TagChange singular to">
+			<span class="Tag">[Deprecated]</span>
+		</span>
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">AnalyticsService</span>
+				<span class="Name">FirePlayerProgressionEvent</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextBox</span>
+			<span class="Name">Font</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextButton</span>
+			<span class="Name">Font</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextLabel</span>
+			<span class="Name">Font</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">AdGui</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Internal</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">ContextActionService</span>
+		<span class="Name">BindActivate</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">UserInputType</span>
+					<span class="ParamName">userInputTypeForActivation</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">KeyCode</span>
+					<span class="ParamName default">keyCodeForActivation</span>
+					<span class="ParamDefault String">Unknown</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">UserInputType</span>
+					<span class="ParamName">userInputTypeForActivation</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Tuple</span>
+					<span class="ParamName">keyCodesForActivation</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">SocialService</span>
+		<span class="Name">CanSendGameInviteAsync</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">player</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">player</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName default">recipientId</span>
+					<span class="ParamDefault int64">0</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PatchMapping</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">PatchMapping</span>
+				<span class="Name">FlattenTree</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">PatchMapping</span>
+				<span class="Name">PatchId</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">PatchMapping</span>
+				<span class="Name">TargetPath</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">AssetImportSession</span>
+			<span class="Name">GetCurrentImportMap</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ParticleFlipbookLayout</span>
+			<span class="Name">TwoByTwo</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ParticleFlipbookLayout</span>
+			<span class="Name">FourByFour</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ParticleFlipbookLayout</span>
+			<span class="Name">EightByEight</span>
+		</span>
+	</span>
+</div>
 <hr id="548"/>
 <h2>Version 0.548.0.5480523</h2>
 
