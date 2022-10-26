@@ -1,105 +1,145 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/c3310782fd219d1f7ce60960371cf68579adbee9
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/ffc8198ee7fa33063e174501552c01d9896220f1
 
 ## API Changes
 
 ```plain
-Added Class AssetPatchSettings : Instance [NotCreatable] [NotReplicated]
-	Added Property string AssetPatchSettings.ContentId
-	Added Property string AssetPatchSettings.OutputPath
-	Added Property string AssetPatchSettings.PatchId
+Added Class DynamicTextureAlpha : Instance [NotCreatable] [NotReplicated]
+Added Class ExperienceAuthService : Instance [NotCreatable] [Service]
+Added Class VisibilityCheckDispatcher : Instance [NotCreatable] [Service]
 
-Added Class FacialAnimationStreamingServiceV2 : Instance [NotCreatable] [Service]
-	Added Property int FacialAnimationStreamingServiceV2.ServiceState {RobloxScriptSecurity} [Hidden]
-	Added Function bool FacialAnimationStreamingServiceV2:IsAudioEnabled(int mask) {RobloxScriptSecurity}
-	Added Function bool FacialAnimationStreamingServiceV2:IsPlaceEnabled(int mask) {RobloxScriptSecurity}
-	Added Function bool FacialAnimationStreamingServiceV2:IsServerEnabled(int mask) {RobloxScriptSecurity}
-	Added Function bool FacialAnimationStreamingServiceV2:IsVideoEnabled(int mask) {RobloxScriptSecurity}
-	Added Function int FacialAnimationStreamingServiceV2:ResolveStateForUser(int64 userId) {RobloxScriptSecurity} [Yields]
+Added Property CFrame BasePart.ExtentsCFrame [ReadOnly]
+Added Property Vector3 BasePart.ExtentsSize [ReadOnly]
+Added Property CFrame PVInstance.Pivot Offset [NotReplicated] [NotScriptable]
+Added Property CFrame PVInstance.Origin [NotReplicated] [NotScriptable]
+Added Property Enum.VRSessionState VRService.VRSessionState {RobloxScriptSecurity} [Hidden] [ReadOnly]
 
-Added Class ScriptBuilder : Instance [NotCreatable] [NotReplicated]
+Added Function Tuple SoundService:GetInputDevice() {RobloxScriptSecurity}
+Added Function Tuple SoundService:GetInputDevices() {RobloxScriptSecurity}
+Added Function void SoundService:SetInputDevice(string name, string guid) {RobloxScriptSecurity}
 
-Added Class AnimationConstraint : Constraint [NotBrowsable]
-	Added Property float AnimationConstraint.MaxForce
-	Added Property float AnimationConstraint.MaxTorque
-	Added Property CFrame AnimationConstraint.Transform
+Added Event AnimationTrack.Ended()
 
-Added Class CoreScriptBuilder : ScriptBuilder [NotCreatable] [NotReplicated]
+Added Enum ExperienceAuthScope
+Added Enum ScopeCheckResult
 
-Added Property string AssetDeliveryProxy.Interface
-Added Property int AssetDeliveryProxy.Port
-Added Property bool AssetDeliveryProxy.StartServer
-Added Property bool ScreenGui.ClipToDeviceSafeArea [NotBrowsable]
-Added Property Enum.SafeAreaCompatibility ScreenGui.SafeAreaCompatibility [NotBrowsable]
-Added Property bool Sound.PlaybackRegionsEnabled [NotBrowsable]
-Added Property NumberRange Sound.LoopRegion
-Added Property NumberRange Sound.PlaybackRegion
-Added Property Enum.HumanoidStateMachineMode StarterPlayer.HumanoidStateMachineMode [NotBrowsable]
+Added Enum VRSessionState
+	Added EnumItem VRSessionState.Idle : 0
+	Added EnumItem VRSessionState.Visible : 1
+	Added EnumItem VRSessionState.Focused : 2
+	Added EnumItem VRSessionState.Undefined : 3
 
-Added Function void DebuggerConnection:UpdateSelectedFrame(int threadId, int frameNumber) {RobloxScriptSecurity}
-Added Function void FaceAnimatorService:Init(bool videoEnabled, bool audioEnabled) {RobloxScriptSecurity}
-Added Function void Terrain:HideTerrainRegion() {RobloxScriptSecurity}
-Added Function void Terrain:SetTerrainRegion(CFrame cframe, Vector3 size) {RobloxScriptSecurity}
-Added Function void Terrain:SetWireframeRegion(CFrame cframe, Vector3 size) {RobloxScriptSecurity}
-Added Function void Terrain:ShowTerrainRegion() {RobloxScriptSecurity}
+Added EnumItem ConnectionError.ReplicatorTimeout : 290
 
-Added Callback Tuple TextChannel.ShouldDeliverCallback(TextChatMessage message, TextSource textSource)
+Added Tag [Hidden] to Property Bone.TransformedCFrame
+Added Tag [NotReplicated] to Property RenderingTest.CFrame
 
-Added Enum FacialAnimationStreamingState
-	Added EnumItem FacialAnimationStreamingState.None : 0
-	Added EnumItem FacialAnimationStreamingState.Audio : 1
-	Added EnumItem FacialAnimationStreamingState.Video : 2
-	Added EnumItem FacialAnimationStreamingState.Place : 4
-	Added EnumItem FacialAnimationStreamingState.Server : 8
+Changed the category of Property Accoutrement.AttachmentForward 
+	from: "Appearance"
+	  to: "Transform"
 
-Added Enum HumanoidStateMachineMode
-	Added EnumItem HumanoidStateMachineMode.Default : 0
-	Added EnumItem HumanoidStateMachineMode.Legacy : 1
-	Added EnumItem HumanoidStateMachineMode.NoStateMachine : 2
-	Added EnumItem HumanoidStateMachineMode.LuaStateMachine : 3
+Changed the category of Property Accoutrement.AttachmentPoint 
+	from: "Appearance"
+	  to: "Transform"
 
-Added Enum SafeAreaCompatibility
-	Added EnumItem SafeAreaCompatibility.None : 0
-	Added EnumItem SafeAreaCompatibility.FullscreenExtension : 1
+Changed the category of Property Accoutrement.AttachmentPos 
+	from: "Appearance"
+	  to: "Transform"
 
-Added EnumItem ConnectionError.PlacelaunchUserPrivacyUnauthorized : 533
-Added EnumItem ParticleFlipbookLayout.Grid2x2 : 1
-Added EnumItem ParticleFlipbookLayout.Grid4x4 : 2
-Added EnumItem ParticleFlipbookLayout.Grid8x8 : 3
+Changed the category of Property Accoutrement.AttachmentRight 
+	from: "Appearance"
+	  to: "Transform"
 
-Added Tag [Deprecated] to Class AnalyticsService
-	Added Tag [Deprecated] to Function AnalyticsService:FireCustomEvent
-	Added Tag [Deprecated] to Function AnalyticsService:FireInGameEconomyEvent
-	Added Tag [Deprecated] to Function AnalyticsService:FireLogEvent
-	Added Tag [Deprecated] to Function AnalyticsService:FirePlayerProgressionEvent
+Changed the category of Property Accoutrement.AttachmentUp 
+	from: "Appearance"
+	  to: "Transform"
 
-Added Tag [Hidden] to Property TextBox.Font
-Added Tag [Hidden] to Property TextButton.Font
-Added Tag [Hidden] to Property TextLabel.Font
+Changed the category of Property Attachment.WorldRotation 
+	from: "Derived Data"
+	  to: "Derived World Data"
 
-Changed the memory category of Class AdGui 
-	from: "Instances"
-	  to: "Internal"
+Changed the category of Property Attachment.CFrame 
+	from: "Data"
+	  to: "Transform"
 
-Changed the parameters of Function ContextActionService:BindActivate 
-	from: (Enum.UserInputType userInputTypeForActivation, Enum.KeyCode keyCodeForActivation = "Unknown")
-	  to: (Enum.UserInputType userInputTypeForActivation, Tuple keyCodesForActivation)
+Changed the category of Property Attachment.Orientation 
+	from: "Data"
+	  to: "Transform"
 
-Changed the parameters of Function SocialService:CanSendGameInviteAsync 
+Changed the category of Property Attachment.Position 
+	from: "Data"
+	  to: "Transform"
+
+Changed the category of Property Attachment.Rotation 
+	from: "Data"
+	  to: "Transform"
+
+Changed the category of Property BasePart.PivotOffset 
+	from: "Transform"
+	  to: "Pivot"
+
+Changed the category of Property Bone.TransformedCFrame 
+	from: "Data"
+	  to: "Derived Data"
+
+Changed the category of Property Bone.TransformedWorldCFrame 
+	from: "Data"
+	  to: "Derived World Data"
+
+Changed the category of Property Bone.Transform 
+	from: "Data"
+	  to: "Transform"
+
+Changed the category of Property Tool.Grip 
+	from: "Appearance"
+	  to: "Transform"
+
+Changed the category of Property Tool.GripForward 
+	from: "Appearance"
+	  to: "Transform"
+
+Changed the category of Property Tool.GripPos 
+	from: "Appearance"
+	  to: "Transform"
+
+Changed the category of Property Tool.GripRight 
+	from: "Appearance"
+	  to: "Transform"
+
+Changed the category of Property Tool.GripUp 
+	from: "Appearance"
+	  to: "Transform"
+
+Changed the serialization of Property RenderingTest.CFrame 
+	from: [<💾|📁> Saves|Loads]
+	  to: [<📁> LoadOnly]
+
+Changed the value-type of Property ExperienceInviteOptions.InviteMessageId from int to int64
+Changed the value-type of Property ExperienceInviteOptions.InviteUser from int to int64
+
+Changed the parameters of Function SocialService:PromptGameInvite 
 	from: (Instance player)
-	  to: (Instance player, int64 recipientId = 0)
+	  to: (Instance player, Instance experienceInviteOptions = nil)
 
-Removed Class PatchMapping
-	Removed Property PatchMapping.FlattenTree
-	Removed Property PatchMapping.PatchId
-	Removed Property PatchMapping.TargetPath
+Changed the parameters of Event SocialService.PromptInviteRequested 
+	from: (Instance player)
+	  to: (Instance player, Instance experienceInviteOptions)
 
-Removed Function AssetImportSession:GetCurrentImportMap
+Changed the value of EnumItem ReservedHighlightId.Active 
+	from: 128
+	  to: 131072
 
-Removed EnumItem ParticleFlipbookLayout.TwoByTwo
-Removed EnumItem ParticleFlipbookLayout.FourByFour
-Removed EnumItem ParticleFlipbookLayout.EightByEight
+Changed the value of EnumItem ReservedHighlightId.Hover from 64 to 262144
+Changed the value of EnumItem ReservedHighlightId.Selection from 32 to 524288
+
+Removed Function AvatarEditorService:GetRecommendedAssetsV2
+Removed Function AvatarEditorService:GetRecommendedBundlesV2
+
+Removed Event AnimationStreamTrack.Stopped
+
+Removed Tag [Deprecated] from Function AvatarEditorService:GetRecommendedAssets
+Removed Tag [Deprecated] from Function AvatarEditorService:GetRecommendedBundles
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#549) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#550) for a syntax highlighted version!)

@@ -1211,13 +1211,6 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
-<div class="Event child">
-	<span class="ClassName Event">AnimationStreamTrack</span>
-	<span class="Name">Stopped</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
 <div class="Class">
 	<span class="Name">AnimationTrack</span>
 	<span class="Superclass">Instance</span>
@@ -1381,6 +1374,12 @@
 <div class="Event child">
 	<span class="ClassName Event">AnimationTrack</span>
 	<span class="Name">DidLoop</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AnimationTrack</span>
+	<span class="Name">Ended</span>
 	<span class="Parameters"></span>
 </div>
 
@@ -2435,37 +2434,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">CFrame</span>
-	<span class="ClassName Property">Attachment</span>
-	<span class="Name">CFrame</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">Attachment</span>
-	<span class="Name">Orientation</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">Attachment</span>
-	<span class="Name">Position</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">Attachment</span>
-	<span class="Name">Rotation</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">Axis</span>
@@ -2479,15 +2447,6 @@
 	<span class="Name">SecondaryAxis</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">Attachment</span>
-	<span class="Name">WorldRotation</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -2522,12 +2481,52 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Property deprecated child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Attachment</span>
+	<span class="Name">WorldRotation</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
 <div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">WorldSecondaryAxis</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">Attachment</span>
+	<span class="Name">CFrame</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Attachment</span>
+	<span class="Name">Orientation</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Attachment</span>
+	<span class="Name">Position</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Attachment</span>
+	<span class="Name">Rotation</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function deprecated child">
@@ -2589,15 +2588,8 @@
 <div class="Property child">
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">Bone</span>
-	<span class="Name">Transform</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">CFrame</span>
-	<span class="ClassName Property">Bone</span>
 	<span class="Name">TransformedCFrame</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
@@ -2607,6 +2599,14 @@
 	<span class="Name">TransformedWorldCFrame</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="ThreadSafety">{🧬Unsafe}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">Bone</span>
+	<span class="Name">Transform</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -2753,7 +2753,7 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
-<div class="Function deprecated child">
+<div class="Function child">
 	<span class="Type">Array</span>
 	<span class="ClassName Function">AvatarEditorService</span>
 	<span class="Name">GetRecommendedAssets</span>
@@ -2770,36 +2770,9 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
-	<span class="Type">Array</span>
-	<span class="ClassName Function">AvatarEditorService</span>
-	<span class="Name">GetRecommendedAssetsV2</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">AvatarAssetType</span>
-			<span class="ParamName">assetType</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">assetId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName">numItems</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">includeDetails</span>
-		</span>
-	</span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function deprecated child">
 	<span class="Type">Array</span>
 	<span class="ClassName Function">AvatarEditorService</span>
 	<span class="Name">GetRecommendedBundles</span>
@@ -2807,33 +2780,6 @@
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">bundleId</span>
-		</span>
-	</span>
-	<span class="Tag">[Yields]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Array</span>
-	<span class="ClassName Function">AvatarEditorService</span>
-	<span class="Name">GetRecommendedBundlesV2</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">BundleType</span>
-			<span class="ParamName">bundleType</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">bundleId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName">numItems</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">includeDetails</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -3642,6 +3588,36 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">ToolTip</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">CanBeDropped</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">ManualActivationOnly</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">RequiresHandle</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Tool</span>
+	<span class="Name">Enabled</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">Tool</span>
 	<span class="Name">Grip</span>
@@ -3677,36 +3653,6 @@
 	<span class="Name">GripUp</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">ToolTip</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">CanBeDropped</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">ManualActivationOnly</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">RequiresHandle</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Tool</span>
-	<span class="Name">Enabled</span>
 </div>
 
 <div class="Function child">
@@ -11144,6 +11090,13 @@
 </div>
 
 <div class="Class">
+	<span class="Name">DynamicTextureAlpha</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">EulerRotationCurve</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -11308,19 +11261,26 @@
 </div>
 
 <div class="Class">
+	<span class="Name">ExperienceAuthService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ExperienceInviteOptions</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
-	<span class="Type">int</span>
+	<span class="Type">int64</span>
 	<span class="ClassName Property">ExperienceInviteOptions</span>
 	<span class="Name">InviteMessageId</span>
 </div>
 
 <div class="Property child">
-	<span class="Type">int</span>
+	<span class="Type">int64</span>
 	<span class="ClassName Property">ExperienceInviteOptions</span>
 	<span class="Name">InviteUser</span>
 </div>
@@ -25041,6 +25001,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">PVInstance</span>
+	<span class="Name">Pivot Offset</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">PVInstance</span>
 	<span class="Name">Pivot Offset Orientation</span>
@@ -25052,6 +25020,14 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">PVInstance</span>
 	<span class="Name">Pivot Offset Position</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">PVInstance</span>
+	<span class="Name">Origin</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -25349,6 +25325,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">PivotOffset</span>
+</div>
+
+<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">SurfaceType</span>
 	<span class="ClassName Property">BasePart</span>
@@ -25547,17 +25529,25 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">ExtentsCFrame</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">ExtentsSize</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Orientation</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">CFrame</span>
-	<span class="ClassName Property">BasePart</span>
-	<span class="Name">PivotOffset</span>
 </div>
 
 <div class="Property child">
@@ -33558,6 +33548,8 @@
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">RenderingTest</span>
 	<span class="Name">CFrame</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -36372,6 +36364,11 @@
 			<span class="Type">Instance</span>
 			<span class="ParamName">player</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName default">experienceInviteOptions</span>
+			<span class="ParamDefault Instance">nil</span>
+		</span>
 	</span>
 </div>
 
@@ -36397,6 +36394,10 @@
 		<span class="Parameter">
 			<span class="Type">Instance</span>
 			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">experienceInviteOptions</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -37029,6 +37030,22 @@
 <div class="Function child">
 	<span class="Type">Tuple</span>
 	<span class="ClassName Function">SoundService</span>
+	<span class="Name">GetInputDevice</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">SoundService</span>
+	<span class="Name">GetInputDevices</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">SoundService</span>
 	<span class="Name">GetListener</span>
 	<span class="Parameters"></span>
 </div>
@@ -37076,6 +37093,23 @@
 			<span class="ParamName">sound</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SoundService</span>
+	<span class="Name">SetInputDevice</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">guid</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -44465,6 +44499,16 @@
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">VRSessionState</span>
+	<span class="ClassName Property">VRService</span>
+	<span class="Name">VRSessionState</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
 <div class="Function child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">VRTouchpadMode</span>
@@ -45759,6 +45803,13 @@
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">VisibilityCheckDispatcher</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
@@ -49102,6 +49153,12 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">ConnectionError</span>
+	<span class="Name">ReplicatorTimeout</span>
+	<span class="Value">290</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ConnectionError</span>
 	<span class="Name">PlacelaunchErrors</span>
 	<span class="Value">512</span>
 </div>
@@ -50286,6 +50343,10 @@
 	<span class="EnumName">EnviromentalPhysicsThrottle</span>
 	<span class="Name">Skip16</span>
 	<span class="Value">6</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ExperienceAuthScope</span>
 </div>
 
 <div class="Enum">
@@ -55833,20 +55894,20 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">ReservedHighlightId</span>
-	<span class="Name">Selection</span>
-	<span class="Value">32</span>
+	<span class="Name">Active</span>
+	<span class="Value">131072</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">ReservedHighlightId</span>
 	<span class="Name">Hover</span>
-	<span class="Value">64</span>
+	<span class="Value">262144</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">ReservedHighlightId</span>
-	<span class="Name">Active</span>
-	<span class="Value">128</span>
+	<span class="Name">Selection</span>
+	<span class="Value">524288</span>
 </div>
 
 <div class="Enum">
@@ -56413,6 +56474,10 @@
 	<span class="EnumName">ScaleType</span>
 	<span class="Name">Crop</span>
 	<span class="Value">4</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ScopeCheckResult</span>
 </div>
 
 <div class="Enum">
@@ -59267,6 +59332,34 @@
 	<span class="EnumName">UserInputType</span>
 	<span class="Name">None</span>
 	<span class="Value">22</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">VRSessionState</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VRSessionState</span>
+	<span class="Name">Idle</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VRSessionState</span>
+	<span class="Name">Visible</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VRSessionState</span>
+	<span class="Name">Focused</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VRSessionState</span>
+	<span class="Name">Undefined</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
