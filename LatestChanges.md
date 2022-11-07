@@ -1,6 +1,6 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/c2e898a47e90e47324d99a13a5504fb03be643c9
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/4163dfa201b6d7e9b7d4b8432fc67b9f752cc8ef
 
 ## API Changes
 
