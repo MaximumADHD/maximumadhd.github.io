@@ -519,7 +519,6 @@
 <div class="Class">
 	<span class="Name">AdPortal</span>
 	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -2593,15 +2592,6 @@
 <div class="Class">
 	<span class="Name">Bone</span>
 	<span class="Superclass">Attachment</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Bone</span>
-	<span class="Name">IsCFrameDriven</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -6788,12 +6778,14 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">AlignOrientation</span>
 	<span class="Name">PrimaryAxis</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">AlignOrientation</span>
 	<span class="Name">SecondaryAxis</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -15418,7 +15410,6 @@
 <div class="Class">
 	<span class="Name">AdGui</span>
 	<span class="Superclass">SurfaceGuiBase</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -27185,6 +27176,40 @@
 	</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">CacheCurrentTerrain</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">id</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">center</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">radius</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">ClearCachedTerrain</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">id</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">Tuple</span>
 	<span class="ClassName Function">WorldRoot</span>
@@ -27487,6 +27512,31 @@
 		</span>
 	</span>
 	<span class="ThreadSafety">{🧬Safe}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">RaycastResult</span>
+	<span class="ClassName Function">WorldRoot</span>
+	<span class="Name">RaycastCachedTerrain</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">id</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">origin</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">direction</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">ignoreWater</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -41328,8 +41378,6 @@
 	<span class="Type">HorizontalAlignment</span>
 	<span class="ClassName Property">ChatWindowConfiguration</span>
 	<span class="Name">HorizontalAlignment</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
 	<span class="ThreadSafety">{🧬Unsafe}</span>
 </div>
 
@@ -41338,8 +41386,6 @@
 	<span class="Type">VerticalAlignment</span>
 	<span class="ClassName Property">ChatWindowConfiguration</span>
 	<span class="Name">VerticalAlignment</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[NotReplicated]</span>
 	<span class="ThreadSafety">{🧬Unsafe}</span>
 </div>
 
@@ -41561,6 +41607,14 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">TextService</span>
+	<span class="Name">GetFontMemoryData</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -45958,6 +46012,14 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
+	<span class="Name">GetSessionId</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">Tuple</span>
 	<span class="ClassName Function">VoiceChatInternal</span>
@@ -45980,6 +46042,14 @@
 	<span class="Name">GetVoiceChatAvailable</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
+	<span class="Name">GetVoiceExperienceId</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -49205,6 +49275,12 @@
 	<span class="EnumName">ConnectionError</span>
 	<span class="Name">ReplicatorTimeout</span>
 	<span class="Value">290</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ConnectionError</span>
+	<span class="Name">PlayerRemoved</span>
+	<span class="Value">291</span>
 </div>
 
 <div class="EnumItem child">

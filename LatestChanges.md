@@ -1,47 +1,34 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/c2e898a47e90e47324d99a13a5504fb03be643c9
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/181c8fd8e8f61d3a81486c649a17c913dbdb056f
 
 ## API Changes
 
 ```plain
-Added Property Font BubbleChatConfiguration.FontFace
-Added Property Color3 ChatWindowConfiguration.BackgroundColor3
-Added Property double ChatWindowConfiguration.BackgroundTransparency
-Added Property Font ChatWindowConfiguration.FontFace
-Added Property Color3 ChatWindowConfiguration.TextColor3
-Added Property int64 ChatWindowConfiguration.TextSize
-Added Property Color3 ChatWindowConfiguration.TextStrokeColor3
-Added Property double ChatWindowConfiguration.TextStrokeTransparency
-Added Property float ChatWindowConfiguration.HeightScale
-Added Property float ChatWindowConfiguration.WidthScale
+Added Function Dictionary TextService:GetFontMemoryData() {RobloxScriptSecurity}
+Added Function string VoiceChatInternal:GetSessionId() {RobloxScriptSecurity}
+Added Function string VoiceChatInternal:GetVoiceExperienceId() {RobloxScriptSecurity}
+Added Function string WorldRoot:CacheCurrentTerrain(string id, Vector3 center, float radius) {RobloxScriptSecurity}
+Added Function bool WorldRoot:ClearCachedTerrain(string id) {RobloxScriptSecurity}
+Added Function RaycastResult WorldRoot:RaycastCachedTerrain(string id, Vector3 origin, Vector3 direction, bool ignoreWater) {RobloxScriptSecurity}
 
-Added Function Variant UGCValidationService:GetPropertyValue(Instance instance, string property) {RobloxScriptSecurity}
+Added EnumItem ConnectionError.PlayerRemoved : 291
 
-Added Event AnimationStreamTrack.Stopped() {RobloxScriptSecurity}
-Added Event Animator.AnimationStreamTrackPlayed(AnimationStreamTrack animationTrack) {RobloxScriptSecurity}
+Added Tag [NotReplicated] to Property AlignOrientation.PrimaryAxis
+Added Tag [NotReplicated] to Property AlignOrientation.SecondaryAxis
 
-Added EnumItem AssetType.FontFamily : 73
-Added EnumItem ModelStreamingMode.Persistent : 2
-
-Added Tag [Hidden] to Property BubbleChatConfiguration.Font
-
-Changed the serialization of Property RenderingTest.CFrame 
+Changed the serialization of Property ChatWindowConfiguration.HorizontalAlignment 
 	from: [<📁> LoadOnly]
 	  to: [<💾|📁> Saves|Loads]
 
-Changed the value-type of Property ExperienceInviteOptions.InviteMessageId 
-	from: int64
-	  to: string
+Changed the serialization of Property ChatWindowConfiguration.VerticalAlignment 
+	from: [<📁> LoadOnly]
+	  to: [<💾|📁> Saves|Loads]
 
-Removed Property ControllerManager.HipHeight
-Removed Property GroundController.MaxSlopeAngle
-Removed Property StudioData.SrcPlaceId
-Removed Property StudioData.SrcUniverseId
+Removed Property Bone.IsCFrameDriven
 
-Removed Function DebuggerUIService:SetCurrentFrameId
-
-Removed Tag [NotReplicated] from Property RenderingTest.CFrame
+Removed Tag [NotReplicated] from Property ChatWindowConfiguration.HorizontalAlignment
+Removed Tag [NotReplicated] from Property ChatWindowConfiguration.VerticalAlignment
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#551) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#552) for a syntax highlighted version!)
