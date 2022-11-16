@@ -8485,6 +8485,18 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">MaintainAngularMomentum</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">MaintainLinearMomentum</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">AirController</span>
 	<span class="Name">MoveMaxForce</span>
@@ -11072,6 +11084,26 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">DynamicTextureLayerAlpha</span>
+	<span class="ClassName Function">DynamicTextureAlpha</span>
+	<span class="Name">CreateLayer</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Class">
+	<span class="Name">DynamicTextureLayerAlpha</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">DynamicTextureLayerAlpha</span>
+	<span class="Name">ZIndex</span>
 </div>
 
 <div class="Class">
@@ -15353,6 +15385,15 @@
 	<span class="Type">SafeAreaCompatibility</span>
 	<span class="ClassName Property">ScreenGui</span>
 	<span class="Name">SafeAreaCompatibility</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ScreenInsets</span>
+	<span class="ClassName Property">ScreenGui</span>
+	<span class="Name">ScreenInsets</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
 
@@ -30479,6 +30520,14 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Players</span>
+	<span class="Name">UseStrafingAnimations</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Players</span>
 	<span class="Name">BubbleChat</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
@@ -36443,6 +36492,35 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">ChannelCount</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">IsLoaded</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">SoundId</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">TimeLength</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">PlayOnRemove</span>
@@ -36458,47 +36536,11 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
-<div class="Property child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">Sound</span>
-	<span class="Name">ChannelCount</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotBrowsable]</span>
-</div>
-
 <div class="Property deprecated child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">EmitterSize</span>
 	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Sound</span>
-	<span class="Name">IsLoaded</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Sound</span>
-	<span class="Name">IsPaused</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Sound</span>
-	<span class="Name">IsPlaying</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Sound</span>
-	<span class="Name">Looped</span>
 </div>
 
 <div class="Property deprecated child">
@@ -36525,27 +36567,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">double</span>
-	<span class="ClassName Property">Sound</span>
-	<span class="Name">PlaybackLoudness</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">Sound</span>
-	<span class="Name">PlaybackSpeed</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Sound</span>
-	<span class="Name">Playing</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">RollOffMaxDistance</span>
@@ -36567,22 +36588,53 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">SoundGroup</span>
+	<span class="Type">bool</span>
 	<span class="ClassName Property">Sound</span>
-	<span class="Name">SoundGroup</span>
+	<span class="Name">IsPaused</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
-	<span class="Type">Content</span>
+	<span class="Type">bool</span>
 	<span class="ClassName Property">Sound</span>
-	<span class="Name">SoundId</span>
+	<span class="Name">IsPlaying</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">Looped</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">double</span>
 	<span class="ClassName Property">Sound</span>
-	<span class="Name">TimeLength</span>
+	<span class="Name">PlaybackLoudness</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">PlaybackRegionsEnabled</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">PlaybackSpeed</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">Playing</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -36599,13 +36651,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Sound</span>
-	<span class="Name">PlaybackRegionsEnabled</span>
-	<span class="Tag">[NotBrowsable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">NumberRange</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">LoopRegion</span>
@@ -36615,6 +36660,12 @@
 	<span class="Type">NumberRange</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">PlaybackRegion</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">SoundGroup</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">SoundGroup</span>
 </div>
 
 <div class="Function child">
@@ -37273,10 +37324,9 @@
 </div>
 
 <div class="Property deprecated child">
-	<span class="Type">double</span>
+	<span class="Type">Instance</span>
 	<span class="ClassName Property">Speaker</span>
-	<span class="Name">PlaybackLoudness</span>
-	<span class="Tag">[ReadOnly]</span>
+	<span class="Name">Source</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -37305,16 +37355,10 @@
 </div>
 
 <div class="Property deprecated child">
-	<span class="Type">SoundGroup</span>
+	<span class="Type">double</span>
 	<span class="ClassName Property">Speaker</span>
-	<span class="Name">SoundGroup</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">Instance</span>
-	<span class="ClassName Property">Speaker</span>
-	<span class="Name">Source</span>
+	<span class="Name">PlaybackLoudness</span>
+	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -37322,6 +37366,13 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Speaker</span>
 	<span class="Name">Volume</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">SoundGroup</span>
+	<span class="ClassName Property">Speaker</span>
+	<span class="Name">SoundGroup</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -38006,6 +38057,12 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Display Team Create toggle when creating a new experience</span>
 </div>
 
 <div class="Property child">
@@ -40138,6 +40195,23 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">TeamCreateService</span>
+	<span class="Name">SendUnarchiveUniverseWithReasonAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">universeId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">reason</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Event child">
 	<span class="ClassName Event">TeamCreateService</span>
 	<span class="Name">ToggleManageCollaborators</span>
@@ -41149,6 +41223,12 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">BubbleChatConfiguration</span>
 	<span class="Name">BackgroundColor3</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">BubbleChatConfiguration</span>
+	<span class="Name">BackgroundTransparency</span>
 </div>
 
 <div class="Property child">
@@ -42509,6 +42589,36 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateMeshBounds</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">meshScale</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">boundsOffset</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">attachmentCF</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">handleCF</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -56610,6 +56720,28 @@
 
 <div class="Enum">
 	<span class="Name">ScopeCheckResult</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ScreenInsets</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ScreenInsets</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ScreenInsets</span>
+	<span class="Name">DeviceSafeInsets</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ScreenInsets</span>
+	<span class="Name">CoreUISafeInsets</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
