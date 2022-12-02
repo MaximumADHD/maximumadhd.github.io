@@ -15393,7 +15393,6 @@
 	<span class="Type">ScreenInsets</span>
 	<span class="ClassName Property">ScreenGui</span>
 	<span class="Name">ScreenInsets</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
 
@@ -15415,6 +15414,7 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ScreenGui</span>
 	<span class="Name">IgnoreGuiInset</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 </div>
 
 <div class="Class deprecated">
@@ -17746,6 +17746,7 @@
 			<span class="ParamName">input</span>
 		</span>
 	</span>
+	<span class="Tag">[CustomLuaState]</span>
 	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
@@ -19184,12 +19185,6 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">CFrame</span>
-	<span class="ClassName Property">IKControl</span>
-	<span class="Name">AlignmentOffset</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Property">IKControl</span>
 	<span class="Name">ChainRoot</span>
@@ -19205,6 +19200,12 @@
 	<span class="Type">Instance</span>
 	<span class="ClassName Property">IKControl</span>
 	<span class="Name">EndEffector</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">IKControl</span>
+	<span class="Name">EndEffectorOffset</span>
 </div>
 
 <div class="Property child">
@@ -19242,6 +19243,20 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">IKControl</span>
 	<span class="Name">Weight</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">IKControl</span>
+	<span class="Name">GetChainCount</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">float</span>
+	<span class="ClassName Function">IKControl</span>
+	<span class="Name">GetChainLength</span>
+	<span class="Parameters"></span>
 </div>
 
 <div class="Class">
@@ -26144,6 +26159,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Terrain</span>
+	<span class="Name">ShorelinesUpgraded</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Terrain</span>
 	<span class="Name">WaterColor</span>
@@ -26230,6 +26253,14 @@
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">Terrain</span>
+	<span class="Name">CanShorelinesBeUpgraded</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -29486,6 +29517,12 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">HasVerifiedBadge</span>
 </div>
 
 <div class="Property child">
@@ -36251,6 +36288,42 @@
 </div>
 
 <div class="Class">
+	<span class="Name">ShorelineUpgraderService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ShorelineUpgraderService</span>
+	<span class="Name">Cancel</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ShorelineUpgraderService</span>
+	<span class="Name">Start</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ShorelineUpgraderService</span>
+	<span class="Name">Status</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">progressRatio</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">Sky</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -39023,6 +39096,23 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioAssetService</span>
+	<span class="Name">PublishPackage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">instance</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">publishInfo</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">string</span>
 	<span class="ClassName Function">StudioAssetService</span>
 	<span class="Name">SerializeInstances</span>
@@ -39043,6 +39133,22 @@
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName">isSuccessful</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">errorMessage</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StudioAssetService</span>
+	<span class="Name">OnPublishPackageResult</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">result</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -41309,6 +41415,54 @@
 	<span class="Name">ChatInputBarConfiguration</span>
 	<span class="Superclass">TextChatConfigurations</span>
 	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">BackgroundColor3</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">BackgroundTransparency</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Font</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">FontFace</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">PlaceholderColor3</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">TextColor3</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">TextSize</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">TextStrokeColor3</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">TextStrokeTransparency</span>
 </div>
 
 <div class="Property child">
@@ -59604,25 +59758,25 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">VRSessionState</span>
-	<span class="Name">Idle</span>
+	<span class="Name">Undefined</span>
 	<span class="Value">0</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">VRSessionState</span>
-	<span class="Name">Visible</span>
+	<span class="Name">Idle</span>
 	<span class="Value">1</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">VRSessionState</span>
-	<span class="Name">Focused</span>
+	<span class="Name">Visible</span>
 	<span class="Value">2</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">VRSessionState</span>
-	<span class="Name">Undefined</span>
+	<span class="Name">Focused</span>
 	<span class="Value">3</span>
 </div>
 

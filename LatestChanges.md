@@ -1,119 +1,50 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/f25885d2c5159138f5714e279c56efec5a69caec
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/facca6d4dd60f3aa42b7fb1606b7638c0e59a43f
 
 ## API Changes
 
 ```plain
-Added Class DynamicTextureLayerAlpha : Instance [NotCreatable] [NotReplicated]
-	Added Property int DynamicTextureLayerAlpha.ZIndex
+Added Class ShorelineUpgraderService : Instance [NotCreatable] [Service] [NotReplicated]
+	Added Function void ShorelineUpgraderService:Cancel() {RobloxScriptSecurity}
+	Added Function void ShorelineUpgraderService:Start() {RobloxScriptSecurity}
+	Added Event ShorelineUpgraderService.Status(float progressRatio) {RobloxScriptSecurity}
 
-Added Property bool AirController.MaintainAngularMomentum
-Added Property bool AirController.MaintainLinearMomentum
-Added Property double BubbleChatConfiguration.BackgroundTransparency
-Added Property bool Players.UseStrafingAnimations [NotReplicated] [NotScriptable]
-Added Property Enum.ScreenInsets ScreenGui.ScreenInsets [<📁> LoadOnly] [NotBrowsable]
-Added Property bool Studio.Display Team Create toggle when creating a new experience
+Added Property Color3 ChatInputBarConfiguration.BackgroundColor3
+Added Property double ChatInputBarConfiguration.BackgroundTransparency
+Added Property Font ChatInputBarConfiguration.FontFace
+Added Property Color3 ChatInputBarConfiguration.PlaceholderColor3
+Added Property Color3 ChatInputBarConfiguration.TextColor3
+Added Property int64 ChatInputBarConfiguration.TextSize
+Added Property Color3 ChatInputBarConfiguration.TextStrokeColor3
+Added Property double ChatInputBarConfiguration.TextStrokeTransparency
+Added Property CFrame IKControl.EndEffectorOffset
+Added Property bool Player.HasVerifiedBadge
+Added Property bool Terrain.ShorelinesUpgraded {RobloxScriptSecurity} [Hidden]
 
-Added Function DynamicTextureLayerAlpha DynamicTextureAlpha:CreateLayer()
-Added Function void TeamCreateService:SendUnarchiveUniverseWithReasonAsync(int64 universeId, string reason) {RobloxScriptSecurity}
-Added Function bool UGCValidationService:ValidateMeshBounds(string meshId, Vector3 meshScale, Vector3 boundsOffset, CFrame attachmentCF, CFrame handleCF) {RobloxScriptSecurity} [Yields]
+Added Function int IKControl:GetChainCount()
+Added Function float IKControl:GetChainLength()
+Added Function void StudioAssetService:PublishPackage(Instance instance, Dictionary publishInfo) {RobloxScriptSecurity}
+Added Function bool Terrain:CanShorelinesBeUpgraded() {RobloxScriptSecurity}
 
-Added Enum ScreenInsets
-	Added EnumItem ScreenInsets.None : 0
-	Added EnumItem ScreenInsets.DeviceSafeInsets : 1
-	Added EnumItem ScreenInsets.CoreUISafeInsets : 2
+Added Event StudioAssetService.OnPublishPackageResult(Dictionary result, string errorMessage) {RobloxScriptSecurity}
 
-Added Tag [Hidden] to Property Sound.IsPaused
-Added Tag [Hidden] to Property Sound.IsPlaying
+Added Tag [CustomLuaState] to Function HttpService:JSONEncode
 
-Changed the category of Property Sound.ChannelCount 
-	from: "Data"
-	  to: "Asset"
+Changed the serialization of Property ScreenGui.ScreenInsets 
+	from: [<📁> LoadOnly]
+	  to: [<💾|📁> Saves|Loads]
 
-Changed the category of Property Sound.IsLoaded 
-	from: "Data"
-	  to: "Asset"
+Changed the serialization of Property ScreenGui.IgnoreGuiInset 
+	from: [<💾|📁> Saves|Loads]
+	  to: [<📁> LoadOnly]
 
-Changed the category of Property Sound.SoundId 
-	from: "Data"
-	  to: "Asset"
+Changed the value of EnumItem VRSessionState.Undefined from 3 to 0
+Changed the value of EnumItem VRSessionState.Idle from 0 to 1
+Changed the value of EnumItem VRSessionState.Visible from 1 to 2
+Changed the value of EnumItem VRSessionState.Focused from 2 to 3
 
-Changed the category of Property Sound.TimeLength 
-	from: "Data"
-	  to: "Asset"
-
-Changed the category of Property Sound.RollOffMaxDistance 
-	from: "Data"
-	  to: "Emitter"
-
-Changed the category of Property Sound.RollOffMinDistance 
-	from: "Data"
-	  to: "Emitter"
-
-Changed the category of Property Sound.RollOffMode 
-	from: "Data"
-	  to: "Emitter"
-
-Changed the category of Property Sound.IsPaused 
-	from: "Data"
-	  to: "Playback"
-
-Changed the category of Property Sound.IsPlaying 
-	from: "Data"
-	  to: "Playback"
-
-Changed the category of Property Sound.Looped 
-	from: "Data"
-	  to: "Playback"
-
-Changed the category of Property Sound.PlaybackLoudness 
-	from: "Data"
-	  to: "Playback"
-
-Changed the category of Property Sound.PlaybackSpeed 
-	from: "Data"
-	  to: "Playback"
-
-Changed the category of Property Sound.Playing 
-	from: "Data"
-	  to: "Playback"
-
-Changed the category of Property Sound.TimePosition 
-	from: "Data"
-	  to: "Playback"
-
-Changed the category of Property Sound.Volume 
-	from: "Data"
-	  to: "Playback"
-
-Changed the category of Property Sound.SoundGroup 
-	from: "Data"
-	  to: "Routing"
-
-Changed the category of Property Speaker.RollOffMaxDistance 
-	from: "Data"
-	  to: "Emitter"
-
-Changed the category of Property Speaker.RollOffMinDistance 
-	from: "Data"
-	  to: "Emitter"
-
-Changed the category of Property Speaker.RollOffMode 
-	from: "Data"
-	  to: "Emitter"
-
-Changed the category of Property Speaker.PlaybackLoudness 
-	from: "Data"
-	  to: "Playback"
-
-Changed the category of Property Speaker.Volume 
-	from: "Data"
-	  to: "Playback"
-
-Changed the category of Property Speaker.SoundGroup 
-	from: "Data"
-	  to: "Routing"
+Removed Property IKControl.AlignmentOffset
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#553) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#554) for a syntax highlighted version!)
