@@ -11,6 +11,335 @@
 	</ul>
 </head>
 
+<hr id="555"/>
+<h2>Version 0.555.0.5550872</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ImporterRootSettings</span>
+			<span class="Name">AddModelToInventory</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">IncrementalPatchBuilder</span>
+			<span class="Name">AddPathsToBundle</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">RejectCharacterDeletions</span>
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">RejectCharacterDeletions</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">string</span>
+			<span class="ClassName Function">DataModel</span>
+			<span class="Name">GetPlaySessionId</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Model</span>
+			<span class="Name">AddPersistentPlayer</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Player</span>
+					<span class="ParamName default">playerInstance</span>
+					<span class="ParamDefault Player">nil</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Model</span>
+			<span class="Name">RemovePersistentPlayer</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Player</span>
+					<span class="ParamName default">playerInstance</span>
+					<span class="ParamDefault Player">nil</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">TerrainRegion</span>
+			<span class="Name">ApplyTransform</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">CFrame</span>
+					<span class="ParamName">rotation</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">size</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">RejectCharacterDeletions</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RejectCharacterDeletions</span>
+				<span class="Name">Default</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RejectCharacterDeletions</span>
+				<span class="Name">Disabled</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RejectCharacterDeletions</span>
+				<span class="Name">Enabled</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ModelStreamingMode</span>
+			<span class="Name">PersistentPerPlayer</span>
+			<span class="Value">3</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[CustomLuaState]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">HttpService</span>
+			<span class="Name">JSONDecode</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">PhysicsService</span>
+			<span class="Name">CollisionGroupContainsPart</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">PhysicsService</span>
+			<span class="Name">CreateCollisionGroup</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">PhysicsService</span>
+			<span class="Name">GetCollisionGroupId</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">PhysicsService</span>
+			<span class="Name">GetCollisionGroupName</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">PhysicsService</span>
+			<span class="Name">GetCollisionGroups</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">PhysicsService</span>
+			<span class="Name">RemoveCollisionGroup</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">PhysicsService</span>
+			<span class="Name">SetPartCollisionGroup</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotCreatable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">Speaker</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotCreatable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ChannelSelectorSoundEffect</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">GraphicsMode</span>
+		<span class="Name">NoGraphics</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">7</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">9</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">Platform</span>
+		<span class="Name">None</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">19</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">20</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">VoiceChannel</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">VoiceChannel</span>
+				<span class="Name">AddUserAsync</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">ScriptChangeService</span>
+			<span class="Name">ScriptSourceEdited</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Preliminary]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">Speaker</span>
+		</span>
+	</span>
+</div>
 <hr id="554"/>
 <h2>Version 0.554.0.5540504</h2>
 

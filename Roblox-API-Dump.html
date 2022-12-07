@@ -17733,6 +17733,7 @@
 			<span class="ParamName">input</span>
 		</span>
 	</span>
+	<span class="Tag">[CustomLuaState]</span>
 	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
@@ -19712,6 +19713,12 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ImporterRootSettings</span>
+	<span class="Name">AddModelToInventory</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterRootSettings</span>
 	<span class="Name">Anchored</span>
 </div>
 
@@ -19799,6 +19806,12 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">IncrementalPatchBuilder</span>
+	<span class="Name">AddPathsToBundle</span>
 </div>
 
 <div class="Property child">
@@ -27076,6 +27089,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Model</span>
+	<span class="Name">AddPersistentPlayer</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName default">playerInstance</span>
+			<span class="ParamDefault Player">nil</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Model</span>
 	<span class="Name">BreakJoints</span>
 	<span class="Parameters"></span>
 </div>
@@ -27133,6 +27159,19 @@
 		<span class="Parameter">
 			<span class="Type">Vector3</span>
 			<span class="ParamName">position</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Model</span>
+	<span class="Name">RemovePersistentPlayer</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName default">playerInstance</span>
+			<span class="ParamDefault Player">nil</span>
 		</span>
 	</span>
 </div>
@@ -27776,6 +27815,14 @@
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">DistributedGameTime</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">RejectCharacterDeletions</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">RejectCharacterDeletions</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -28920,7 +28967,7 @@
 	<span class="Tag">[Service]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">PhysicsService</span>
 	<span class="Name">CollisionGroupContainsPart</span>
@@ -28934,6 +28981,7 @@
 			<span class="ParamName">part</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -28972,7 +29020,7 @@
 	</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">int</span>
 	<span class="ClassName Function">PhysicsService</span>
 	<span class="Name">CreateCollisionGroup</span>
@@ -28982,9 +29030,10 @@
 			<span class="ParamName">name</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">int</span>
 	<span class="ClassName Function">PhysicsService</span>
 	<span class="Name">GetCollisionGroupId</span>
@@ -28994,9 +29043,10 @@
 			<span class="ParamName">name</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">string</span>
 	<span class="ClassName Function">PhysicsService</span>
 	<span class="Name">GetCollisionGroupName</span>
@@ -29006,13 +29056,15 @@
 			<span class="ParamName">name</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">Array</span>
 	<span class="ClassName Function">PhysicsService</span>
 	<span class="Name">GetCollisionGroups</span>
 	<span class="Parameters"></span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -29103,7 +29155,7 @@
 	</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">PhysicsService</span>
 	<span class="Name">RemoveCollisionGroup</span>
@@ -29113,6 +29165,7 @@
 			<span class="ParamName">name</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -29131,7 +29184,7 @@
 	</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">PhysicsService</span>
 	<span class="Name">SetPartCollisionGroup</span>
@@ -29145,6 +29198,7 @@
 			<span class="ParamName">name</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -34353,22 +34407,6 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
-<div class="Event child">
-	<span class="ClassName Event">ScriptChangeService</span>
-	<span class="Name">ScriptSourceEdited</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">LuaSourceContainer</span>
-			<span class="ParamName">script</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Array</span>
-			<span class="ParamName">edits</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
 <div class="Class">
 	<span class="Name">ScriptCloneWatcher</span>
 	<span class="Superclass">Instance</span>
@@ -35729,6 +35767,14 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">GetPlaySessionId</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">DataModel</span>
@@ -36947,6 +36993,7 @@
 <div class="Class">
 	<span class="Name">ChannelSelectorSoundEffect</span>
 	<span class="Superclass">CustomSoundEffect</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotBrowsable]</span>
 </div>
 
@@ -37384,6 +37431,7 @@
 <div class="Class deprecated">
 	<span class="Name">Speaker</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -40840,6 +40888,23 @@
 	<span class="ClassName Property">TerrainRegion</span>
 	<span class="Name">SizeInCells</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">TerrainRegion</span>
+	<span class="Name">ApplyTransform</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">rotation</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">size</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function deprecated child">
@@ -46187,26 +46252,6 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">VoiceChannel</span>
-	<span class="Superclass">Instance</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">VoiceSource</span>
-	<span class="ClassName Function">VoiceChannel</span>
-	<span class="Name">AddUserAsync</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName default">userId</span>
-			<span class="ParamDefault int64">-1</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Class">
@@ -51754,7 +51799,7 @@
 <div class="EnumItem child">
 	<span class="EnumName">GraphicsMode</span>
 	<span class="Name">NoGraphics</span>
-	<span class="Value">7</span>
+	<span class="Value">9</span>
 </div>
 
 <div class="Enum">
@@ -54882,6 +54927,12 @@
 	<span class="Value">2</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">ModelStreamingMode</span>
+	<span class="Name">PersistentPerPlayer</span>
+	<span class="Value">3</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">ModifierKey</span>
 </div>
@@ -55669,7 +55720,7 @@
 <div class="EnumItem child">
 	<span class="EnumName">Platform</span>
 	<span class="Name">None</span>
-	<span class="Value">19</span>
+	<span class="Value">20</span>
 </div>
 
 <div class="Enum">
@@ -56166,6 +56217,28 @@
 	<span class="EnumName">RaycastFilterType</span>
 	<span class="Name">Whitelist</span>
 	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">RejectCharacterDeletions</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RejectCharacterDeletions</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RejectCharacterDeletions</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RejectCharacterDeletions</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">

@@ -1,50 +1,46 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/facca6d4dd60f3aa42b7fb1606b7638c0e59a43f
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/bb9eaaec2cf900cd1304d83cbce1e4012fdc2e12
 
 ## API Changes
 
 ```plain
-Added Class ShorelineUpgraderService : Instance [NotCreatable] [Service] [NotReplicated]
-	Added Function void ShorelineUpgraderService:Cancel() {RobloxScriptSecurity}
-	Added Function void ShorelineUpgraderService:Start() {RobloxScriptSecurity}
-	Added Event ShorelineUpgraderService.Status(float progressRatio) {RobloxScriptSecurity}
+Added Property bool ImporterRootSettings.AddModelToInventory
+Added Property bool IncrementalPatchBuilder.AddPathsToBundle
+Added Property Enum.RejectCharacterDeletions Workspace.RejectCharacterDeletions [NotScriptable]
 
-Added Property Color3 ChatInputBarConfiguration.BackgroundColor3
-Added Property double ChatInputBarConfiguration.BackgroundTransparency
-Added Property Font ChatInputBarConfiguration.FontFace
-Added Property Color3 ChatInputBarConfiguration.PlaceholderColor3
-Added Property Color3 ChatInputBarConfiguration.TextColor3
-Added Property int64 ChatInputBarConfiguration.TextSize
-Added Property Color3 ChatInputBarConfiguration.TextStrokeColor3
-Added Property double ChatInputBarConfiguration.TextStrokeTransparency
-Added Property CFrame IKControl.EndEffectorOffset
-Added Property bool Player.HasVerifiedBadge
-Added Property bool Terrain.ShorelinesUpgraded {RobloxScriptSecurity} [Hidden]
+Added Function string DataModel:GetPlaySessionId() {RobloxScriptSecurity}
+Added Function void Model:AddPersistentPlayer(Player playerInstance = nil)
+Added Function void Model:RemovePersistentPlayer(Player playerInstance = nil)
+Added Function void TerrainRegion:ApplyTransform(CFrame rotation, Vector3 size) {RobloxScriptSecurity}
 
-Added Function int IKControl:GetChainCount()
-Added Function float IKControl:GetChainLength()
-Added Function void StudioAssetService:PublishPackage(Instance instance, Dictionary publishInfo) {RobloxScriptSecurity}
-Added Function bool Terrain:CanShorelinesBeUpgraded() {RobloxScriptSecurity}
+Added Enum RejectCharacterDeletions
+	Added EnumItem RejectCharacterDeletions.Default : 0
+	Added EnumItem RejectCharacterDeletions.Disabled : 1
+	Added EnumItem RejectCharacterDeletions.Enabled : 2
 
-Added Event StudioAssetService.OnPublishPackageResult(Dictionary result, string errorMessage) {RobloxScriptSecurity}
+Added EnumItem ModelStreamingMode.PersistentPerPlayer : 3
 
-Added Tag [CustomLuaState] to Function HttpService:JSONEncode
+Added Tag [CustomLuaState] to Function HttpService:JSONDecode
+Added Tag [Deprecated] to Function PhysicsService:CollisionGroupContainsPart
+Added Tag [Deprecated] to Function PhysicsService:CreateCollisionGroup
+Added Tag [Deprecated] to Function PhysicsService:GetCollisionGroupId
+Added Tag [Deprecated] to Function PhysicsService:GetCollisionGroupName
+Added Tag [Deprecated] to Function PhysicsService:GetCollisionGroups
+Added Tag [Deprecated] to Function PhysicsService:RemoveCollisionGroup
+Added Tag [Deprecated] to Function PhysicsService:SetPartCollisionGroup
+Added Tag [NotCreatable] to Class Speaker
+Added Tag [NotCreatable] to Class ChannelSelectorSoundEffect
 
-Changed the serialization of Property ScreenGui.ScreenInsets 
-	from: [<📁> LoadOnly]
-	  to: [<💾|📁> Saves|Loads]
+Changed the value of EnumItem GraphicsMode.NoGraphics from 7 to 9
+Changed the value of EnumItem Platform.None from 19 to 20
 
-Changed the serialization of Property ScreenGui.IgnoreGuiInset 
-	from: [<💾|📁> Saves|Loads]
-	  to: [<📁> LoadOnly]
+Removed Class VoiceChannel
+	Removed Function VoiceChannel:AddUserAsync
 
-Changed the value of EnumItem VRSessionState.Undefined from 3 to 0
-Changed the value of EnumItem VRSessionState.Idle from 0 to 1
-Changed the value of EnumItem VRSessionState.Visible from 1 to 2
-Changed the value of EnumItem VRSessionState.Focused from 2 to 3
+Removed Event ScriptChangeService.ScriptSourceEdited
 
-Removed Property IKControl.AlignmentOffset
+Removed Tag [Preliminary] from Class Speaker
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#554) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#555) for a syntax highlighted version!)
