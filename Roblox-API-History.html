@@ -11,6 +11,1099 @@
 	</ul>
 </head>
 
+<hr id="558"/>
+<h2>Version 0.558.1.5580230</h2>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextBox</span>
+			<span class="Name">Font</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextButton</span>
+			<span class="Name">Font</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">TextLabel</span>
+			<span class="Name">Font</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">TextBox</span>
+		<span class="Name">Font</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves|Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">TextButton</span>
+		<span class="Name">Font</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves|Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">TextLabel</span>
+		<span class="Name">Font</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<💾|📁> Saves|Loads]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">AssetService</span>
+			<span class="Name">GetAssetThumbnailAsync</span>
+		</span>
+	</span>
+</div>
+<hr id="557"/>
+<h2>Version 0.557.0.5570255</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ImporterRootSettings</span>
+			<span class="Name">UsesCages</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Player</span>
+			<span class="Name">VREnabled</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Automatically commit locked scripts when you save or publish to Roblox</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">SurfaceGui</span>
+			<span class="Name">HorizontalCurvature</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">SurfaceGuiShape</span>
+			<span class="ClassName Property">SurfaceGui</span>
+			<span class="Name">Shape</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">AvatarEditorService</span>
+			<span class="Name">NoPromptSaveAvatarThumbnailCustomization</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">thumbnailType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">emoteAssetId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">cameraDistanceScale</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">yRotDeg</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName default">fieldOfViewDeg</span>
+					<span class="ParamDefault float">0</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Objects</span>
+			<span class="ClassName Function">BasePart</span>
+			<span class="Name">subtractAsync2_INTERNAL</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Objects</span>
+					<span class="ParamName">parts</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">CollisionFidelity</span>
+					<span class="ParamName default">collisionfidelity</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">RenderFidelity</span>
+					<span class="ParamName default">renderFidelity</span>
+					<span class="ParamDefault String">Automatic</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Objects</span>
+			<span class="ClassName Function">BasePart</span>
+			<span class="Name">unionAsync2_INTERNAL</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Objects</span>
+					<span class="ParamName">parts</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">CollisionFidelity</span>
+					<span class="ParamName default">collisionfidelity</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">RenderFidelity</span>
+					<span class="ParamName default">renderFidelity</span>
+					<span class="ParamDefault String">Automatic</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AvatarEditorService</span>
+			<span class="Name">PromptSaveAvatarThumbnailCustomizationCompleted</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">AvatarPromptResult</span>
+					<span class="ParamName">result</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Variant</span>
+					<span class="ParamName">failureType</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">SaveAvatarThumbnailCustomizationFailure</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SaveAvatarThumbnailCustomizationFailure</span>
+				<span class="Name">BadThumbnailType</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SaveAvatarThumbnailCustomizationFailure</span>
+				<span class="Name">BadYRotDeg</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SaveAvatarThumbnailCustomizationFailure</span>
+				<span class="Name">BadFieldOfViewDeg</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SaveAvatarThumbnailCustomizationFailure</span>
+				<span class="Name">BadDistanceScale</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SaveAvatarThumbnailCustomizationFailure</span>
+				<span class="Name">Other</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">SurfaceGuiShape</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SurfaceGuiShape</span>
+				<span class="Name">Flat</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SurfaceGuiShape</span>
+				<span class="Name">CurvedHorizontally</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Accoutrement</span>
+			<span class="Name">AttachmentForward</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Accoutrement</span>
+			<span class="Name">AttachmentPos</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Accoutrement</span>
+			<span class="Name">AttachmentRight</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Accoutrement</span>
+			<span class="Name">AttachmentUp</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Attachment</span>
+			<span class="Name">WorldOrientation</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Attachment</span>
+			<span class="Name">WorldPosition</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Attachment</span>
+			<span class="Name">Orientation</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Attachment</span>
+			<span class="Name">Position</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">Orientation</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">Position</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">RenderingTest</span>
+			<span class="Name">Orientation</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">RenderingTest</span>
+			<span class="Name">Position</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Tool</span>
+			<span class="Name">GripForward</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Tool</span>
+			<span class="Name">GripPos</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Tool</span>
+			<span class="Name">GripRight</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Hidden]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Tool</span>
+			<span class="Name">GripUp</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Accoutrement</span>
+		<span class="Name">AttachmentForward</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Accoutrement</span>
+		<span class="Name">AttachmentPos</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Accoutrement</span>
+		<span class="Name">AttachmentRight</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Accoutrement</span>
+		<span class="Name">AttachmentUp</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Attachment</span>
+		<span class="Name">WorldOrientation</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Attachment</span>
+		<span class="Name">WorldPosition</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Attachment</span>
+		<span class="Name">Orientation</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Attachment</span>
+		<span class="Name">Position</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">Orientation</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">BasePart</span>
+		<span class="Name">Position</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">RenderingTest</span>
+		<span class="Name">Orientation</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">RenderingTest</span>
+		<span class="Name">Position</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Tool</span>
+		<span class="Name">GripForward</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Tool</span>
+		<span class="Name">GripPos</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Tool</span>
+		<span class="Name">GripRight</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">serialization</span>
+	<span class="Property">
+		<span class="ClassName Property">Tool</span>
+		<span class="Name">GripUp</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Serialization">[<📁> LoadOnly]</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Serialization">[<🕒> RuntimeOnly]</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">CoreGui</span>
+		<span class="Name">SetUserGuiRendering</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">enabled</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">guiAdornee</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">NormalId</span>
+					<span class="ParamName">faceId</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">enabled</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">guiAdornee</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">NormalId</span>
+					<span class="ParamName">faceId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName default">horizontalCurvature</span>
+					<span class="ParamDefault float">0</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">DataModel</span>
+		<span class="Name">GetObjectsAllOrNone</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Content</span>
+					<span class="ParamName">url</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Content</span>
+					<span class="ParamName">url</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName default">binaryFormatOnly</span>
+					<span class="ParamDefault bool">false</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">BasePart</span>
+		<span class="Name">CanCollideWith</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">BasePart</span>
+		<span class="Name">GetVelocityAtPosition</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StopWatchReporter</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">StopWatchReporter</span>
+				<span class="Name">FinishTask</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">StopWatchReporter</span>
+				<span class="Name">SendReport</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">StopWatchReporter</span>
+				<span class="Name">StartTask</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Model</span>
+			<span class="Name">World Pivot Orientation</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Model</span>
+			<span class="Name">World Pivot Position</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PVInstance</span>
+			<span class="Name">Pivot Offset Orientation</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PVInstance</span>
+			<span class="Name">Pivot Offset Position</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PVInstance</span>
+			<span class="Name">Origin Orientation</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">PVInstance</span>
+			<span class="Name">Origin Position</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">MarketplaceService</span>
+			<span class="Name">PromptProductPurchaseFinished</span>
+		</span>
+	</span>
+</div>
+
+<hr id="556"/>
+<h2>Version 0.556.0.5560493</h2>
+<i>*This version was never released, its changes were deferred to 557*</i>
+
 <hr id="555"/>
 <h2>Version 0.555.0.5550872</h2>
 

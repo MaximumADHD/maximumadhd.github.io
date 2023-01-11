@@ -463,7 +463,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Accoutrement</span>
 	<span class="Name">AttachmentForward</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -477,7 +477,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Accoutrement</span>
 	<span class="Name">AttachmentPos</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -485,7 +485,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Accoutrement</span>
 	<span class="Name">AttachmentRight</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -493,7 +493,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Accoutrement</span>
 	<span class="Name">AttachmentUp</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -2321,29 +2321,6 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Tuple</span>
-	<span class="ClassName Function">AssetService</span>
-	<span class="Name">GetAssetThumbnailAsync</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">assetId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Vector2</span>
-			<span class="ParamName">thumbnailSize</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName default">assetType</span>
-			<span class="ParamDefault int">0</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function child">
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">AssetService</span>
 	<span class="Name">GetBundleDetailsAsync</span>
@@ -2487,7 +2464,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">WorldOrientation</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -2495,7 +2472,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">WorldPosition</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -2526,7 +2503,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">Orientation</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -2534,7 +2511,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Attachment</span>
 	<span class="Name">Position</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -2868,6 +2845,36 @@
 			<span class="Type">int64</span>
 			<span class="ParamName default">gearAssetId</span>
 			<span class="ParamDefault int64">0</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">NoPromptSaveAvatarThumbnailCustomization</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">thumbnailType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">emoteAssetId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">cameraDistanceScale</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">yRotDeg</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName default">fieldOfViewDeg</span>
+			<span class="ParamDefault float">0</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -3403,6 +3410,23 @@
 
 <div class="Event child">
 	<span class="ClassName Event">AvatarEditorService</span>
+	<span class="Name">PromptSaveAvatarThumbnailCustomizationCompleted</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AvatarPromptResult</span>
+			<span class="ParamName">result</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">failureType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AvatarEditorService</span>
 	<span class="Name">PromptSetFavoriteCompleted</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -3636,7 +3660,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Tool</span>
 	<span class="Name">GripForward</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -3644,7 +3668,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Tool</span>
 	<span class="Name">GripPos</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -3652,7 +3676,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Tool</span>
 	<span class="Name">GripRight</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -3660,7 +3684,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Tool</span>
 	<span class="Name">GripUp</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -3938,6 +3962,11 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">NormalId</span>
 			<span class="ParamName">faceId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName default">horizontalCurvature</span>
+			<span class="ParamDefault float">0</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -13983,7 +14012,9 @@
 	<span class="Type">Font</span>
 	<span class="ClassName Property">TextButton</span>
 	<span class="Name">Font</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -14262,7 +14293,9 @@
 	<span class="Type">Font</span>
 	<span class="ClassName Property">TextLabel</span>
 	<span class="Name">Font</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -14682,7 +14715,9 @@
 	<span class="Type">Font</span>
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">Font</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -15463,6 +15498,23 @@
 <div class="Class">
 	<span class="Name">SurfaceGui</span>
 	<span class="Superclass">SurfaceGuiBase</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">SurfaceGui</span>
+	<span class="Name">HorizontalCurvature</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">SurfaceGuiShape</span>
+	<span class="ClassName Property">SurfaceGui</span>
+	<span class="Name">Shape</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
@@ -19787,6 +19839,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ImporterRootSettings</span>
+	<span class="Name">UsesCages</span>
+</div>
+
+<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">NormalId</span>
 	<span class="ClassName Property">ImporterRootSettings</span>
@@ -22665,7 +22723,7 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
-<div class="Event deprecated child">
+<div class="Event child">
 	<span class="ClassName Event">MarketplaceService</span>
 	<span class="Name">PromptProductPurchaseFinished</span>
 	<span class="Parameters">
@@ -22682,7 +22740,6 @@
 			<span class="ParamName">isPurchased</span>
 		</span>
 	</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Event child">
@@ -25055,41 +25112,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">PVInstance</span>
-	<span class="Name">Pivot Offset Orientation</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">PVInstance</span>
-	<span class="Name">Pivot Offset Position</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">PVInstance</span>
 	<span class="Name">Origin</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">PVInstance</span>
-	<span class="Name">Origin Orientation</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">PVInstance</span>
-	<span class="Name">Origin Position</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -25592,7 +25617,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Orientation</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -25600,7 +25625,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Position</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -25669,6 +25694,7 @@
 			<span class="ParamName">part</span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -25755,6 +25781,7 @@
 			<span class="ParamName">position</span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -25838,6 +25865,56 @@
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">BasePart</span>
 	<span class="Name">UnionAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">parts</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">CollisionFidelity</span>
+			<span class="ParamName default">collisionfidelity</span>
+			<span class="ParamDefault String">Default</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">RenderFidelity</span>
+			<span class="ParamName default">renderFidelity</span>
+			<span class="ParamDefault String">Automatic</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">BasePart</span>
+	<span class="Name">subtractAsync2_INTERNAL</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">parts</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">CollisionFidelity</span>
+			<span class="ParamName default">collisionfidelity</span>
+			<span class="ParamDefault String">Default</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">RenderFidelity</span>
+			<span class="ParamName default">renderFidelity</span>
+			<span class="ParamDefault String">Automatic</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">BasePart</span>
+	<span class="Name">unionAsync2_INTERNAL</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Objects</span>
@@ -27061,22 +27138,6 @@
 	<span class="Type">BasePart</span>
 	<span class="ClassName Property">Model</span>
 	<span class="Name">PrimaryPart</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">Model</span>
-	<span class="Name">World Pivot Orientation</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">Model</span>
-	<span class="Name">World Pivot Position</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -29679,6 +29740,15 @@
 	<span class="Name">VRDevice</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">VREnabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -33761,7 +33831,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">RenderingTest</span>
 	<span class="Name">Orientation</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -33769,7 +33839,7 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">RenderingTest</span>
 	<span class="Name">Position</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -35735,6 +35805,11 @@
 		<span class="Parameter">
 			<span class="Type">Content</span>
 			<span class="ParamName">url</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName default">binaryFormatOnly</span>
+			<span class="ParamDefault bool">false</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -38122,57 +38197,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">StopWatchReporter</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StopWatchReporter</span>
-	<span class="Name">FinishTask</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int</span>
-			<span class="ParamName">taskId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StopWatchReporter</span>
-	<span class="Name">SendReport</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">reportName</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">int</span>
-	<span class="ClassName Function">StopWatchReporter</span>
-	<span class="Name">StartTask</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">reportName</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">taskName</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Class">
 	<span class="Name">Studio</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -38537,6 +38561,13 @@
 	<span class="Type">AutoIndentRule</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Auto Indent Rule</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Automatically commit locked scripts when you save or publish to Roblox</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -56815,6 +56846,40 @@
 	<span class="Value">1</span>
 </div>
 
+<div class="Enum">
+	<span class="Name">SaveAvatarThumbnailCustomizationFailure</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SaveAvatarThumbnailCustomizationFailure</span>
+	<span class="Name">BadThumbnailType</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SaveAvatarThumbnailCustomizationFailure</span>
+	<span class="Name">BadYRotDeg</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SaveAvatarThumbnailCustomizationFailure</span>
+	<span class="Name">BadFieldOfViewDeg</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SaveAvatarThumbnailCustomizationFailure</span>
+	<span class="Name">BadDistanceScale</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SaveAvatarThumbnailCustomizationFailure</span>
+	<span class="Name">Other</span>
+	<span class="Value">5</span>
+</div>
+
 <div class="Enum deprecated">
 	<span class="Name">SaveFilter</span>
 	<span class="Tag">[Deprecated]</span>
@@ -58455,6 +58520,22 @@
 	<span class="EnumName">SurfaceConstraint</span>
 	<span class="Name">Motor</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">SurfaceGuiShape</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SurfaceGuiShape</span>
+	<span class="Name">Flat</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SurfaceGuiShape</span>
+	<span class="Name">CurvedHorizontally</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
