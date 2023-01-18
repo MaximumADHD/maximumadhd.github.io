@@ -1,27 +1,16 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/ba1e963c828e96016f6f7f4720ac2392d4f9a183
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/eb94649bfd5d6ad826a0a6b61e85cb17d4596897
 
 ## API Changes
 
 ```plain
-Added Tag [NotReplicated] to Property TextBox.Font
-Added Tag [NotReplicated] to Property TextButton.Font
-Added Tag [NotReplicated] to Property TextLabel.Font
+Added Property TextBox ChatInputBarConfiguration.TextBox
+Added Property float IKControl.SmoothTime
+Added Property bool VRService.FadeOutViewOnCollision
 
-Changed the serialization of Property TextBox.Font 
-	from: [<💾|📁> Saves|Loads]
-	  to: [<📁> LoadOnly]
-
-Changed the serialization of Property TextButton.Font 
-	from: [<💾|📁> Saves|Loads]
-	  to: [<📁> LoadOnly]
-
-Changed the serialization of Property TextLabel.Font 
-	from: [<💾|📁> Saves|Loads]
-	  to: [<📁> LoadOnly]
-
-Removed Function AssetService:GetAssetThumbnailAsync
+Added EnumItem ConnectionError.DisconnectOutOfMemoryKeepPlayingLeave : 292
+Added EnumItem ModelStreamingMode.Nonatomic : 4
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#558) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#559) for a syntax highlighted version!)
