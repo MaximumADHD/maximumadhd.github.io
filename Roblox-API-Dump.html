@@ -19234,7 +19234,6 @@
 <div class="Class">
 	<span class="Name">IKControl</span>
 	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -20969,6 +20968,13 @@
 			<span class="ParamName">skyChanged</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">LiveScriptingService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
@@ -26263,6 +26269,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Terrain</span>
+	<span class="Name">SmoothVoxelsUpgraded</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Terrain</span>
 	<span class="Name">WaterColor</span>
@@ -26355,6 +26369,14 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Function">Terrain</span>
 	<span class="Name">CanShorelinesBeUpgraded</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">Terrain</span>
+	<span class="Name">CanSmoothVoxelsBeUpgraded</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -27859,14 +27881,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">TouchesUseCollisionGroups</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">UnionsScaleNonuniformly</span>
-	<span class="ClassName Property">Workspace</span>
-	<span class="Name">UnionsScaleNonuniformly</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -36588,6 +36602,42 @@
 </div>
 
 <div class="Class">
+	<span class="Name">SmoothVoxelsUpgraderService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SmoothVoxelsUpgraderService</span>
+	<span class="Name">Cancel</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SmoothVoxelsUpgraderService</span>
+	<span class="Name">Start</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">SmoothVoxelsUpgraderService</span>
+	<span class="Name">Status</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">progressRatio</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">SnippetService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -39664,6 +39714,35 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">StudioSdkService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">StudioSdkService</span>
+	<span class="Name">GetSdk</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioSdkService</span>
+	<span class="Name">SetSdk</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">sdk</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -48709,14 +48788,14 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">CatalogSortType</span>
-	<span class="Name">RecentlyUpdated</span>
-	<span class="Value">4</span>
+	<span class="Name">MostFavorited</span>
+	<span class="Value">5</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">CatalogSortType</span>
-	<span class="Name">MostFavorited</span>
-	<span class="Value">5</span>
+	<span class="Name">RecentlyCreated</span>
+	<span class="Value">6</span>
 </div>
 
 <div class="Enum">
@@ -59710,28 +59789,6 @@
 	<span class="EnumName">UiMessageType</span>
 	<span class="Name">UiMessageInfo</span>
 	<span class="Value">1</span>
-</div>
-
-<div class="Enum">
-	<span class="Name">UnionsScaleNonuniformly</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">UnionsScaleNonuniformly</span>
-	<span class="Name">Default</span>
-	<span class="Value">0</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">UnionsScaleNonuniformly</span>
-	<span class="Name">Disabled</span>
-	<span class="Value">1</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">UnionsScaleNonuniformly</span>
-	<span class="Name">Enabled</span>
-	<span class="Value">2</span>
 </div>
 
 <div class="Enum">

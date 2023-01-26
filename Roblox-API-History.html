@@ -11,6 +11,220 @@
 	</ul>
 </head>
 
+<hr id="560"/>
+<h2>Version 0.560.0.5600365</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">LiveScriptingService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">SmoothVoxelsUpgraderService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">SmoothVoxelsUpgraderService</span>
+				<span class="Name">Cancel</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">SmoothVoxelsUpgraderService</span>
+				<span class="Name">Start</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">SmoothVoxelsUpgraderService</span>
+				<span class="Name">Status</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">float</span>
+						<span class="ParamName">progressRatio</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StudioSdkService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Instance</span>
+				<span class="ClassName Function">StudioSdkService</span>
+				<span class="Name">GetSdk</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">StudioSdkService</span>
+				<span class="Name">SetSdk</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">sdk</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Terrain</span>
+			<span class="Name">SmoothVoxelsUpgraded</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">Terrain</span>
+			<span class="Name">CanSmoothVoxelsBeUpgraded</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">CatalogSortType</span>
+			<span class="Name">RecentlyCreated</span>
+			<span class="Value">6</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">UnionsScaleNonuniformly</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">UnionsScaleNonuniformly</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">UnionsScaleNonuniformly</span>
+				<span class="Name">Default</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">UnionsScaleNonuniformly</span>
+				<span class="Name">Disabled</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">UnionsScaleNonuniformly</span>
+				<span class="Name">Enabled</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">CatalogSortType</span>
+			<span class="Name">RecentlyUpdated</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">IKControl</span>
+		</span>
+	</span>
+</div>
 <hr id="559"/>
 <h2>Version 0.559.0.5590375</h2>
 
