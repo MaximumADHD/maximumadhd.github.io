@@ -3988,6 +3988,31 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">CoreGui</span>
+	<span class="Name">UserGuiRenderingChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">enabled</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">guiAdornee</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">NormalId</span>
+			<span class="ParamName">faceId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">horizontalCurvature</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">PlayerGui</span>
 	<span class="Superclass">BasePlayerGui</span>
@@ -8738,6 +8763,13 @@
 </div>
 
 <div class="Class">
+	<span class="Name">CoreScriptDebuggingManagerHelper</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">CoreScriptSyncService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -11304,6 +11336,52 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ExperienceAuthService</span>
+	<span class="Name">scopeCheckUIComplete</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">guid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">scopes</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">ScopeCheckResult</span>
+			<span class="ParamName">result</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">metadata</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ExperienceAuthService</span>
+	<span class="Name">OpenAuthPrompt</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">guid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">scopes</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">metadata</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -16885,6 +16963,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">GuiService</span>
+	<span class="Name">SetPurchasePromptIsShown</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isShown</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GuiService</span>
 	<span class="Name">SetSafeZoneOffsets</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -17125,6 +17216,13 @@
 			<span class="ParamName">selectedImageObject</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">GuiService</span>
+	<span class="Name">PurchasePromptShown</span>
+	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -35445,6 +35543,13 @@
 	<span class="ClassName Event">Selection</span>
 	<span class="Name">SelectionChanged</span>
 	<span class="Parameters"></span>
+</div>
+
+<div class="Class">
+	<span class="Name">SelectionHighlightManager</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
