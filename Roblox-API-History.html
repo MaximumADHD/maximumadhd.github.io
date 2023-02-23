@@ -11,6 +11,812 @@
 	</ul>
 </head>
 
+<hr id="564"/>
+<h2>Version 0.564.1.5640444</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ImageDataExperimental</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector2</span>
+				<span class="ClassName Property">ImageDataExperimental</span>
+				<span class="Name">Size</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Content</span>
+				<span class="ClassName Property">ImageDataExperimental</span>
+				<span class="Name">TemporaryId</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">ImageDataExperimental</span>
+				<span class="Name">PopulateFromImageAsync</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Content</span>
+						<span class="ParamName">textureId</span>
+					</span>
+				</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PatchBundlerFileWatch</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">SharedTableRegistry</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">SharedTable</span>
+				<span class="ClassName Function">SharedTableRegistry</span>
+				<span class="Name">GetSharedTable</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">name</span>
+					</span>
+				</span>
+				<span class="ThreadSafety">{🧬Safe}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">SharedTableRegistry</span>
+				<span class="Name">SetSharedTable</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">name</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">SharedTable?</span>
+						<span class="ParamName">st</span>
+					</span>
+				</span>
+				<span class="ThreadSafety">{🧬Safe}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">SyncScriptBuilder</span>
+			<span class="Superclass">ScriptBuilder</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">SyncScriptBuilder</span>
+				<span class="Name">CoverageInfo</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">SyncScriptBuilder</span>
+				<span class="Name">DebugInfo</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">SyncScriptBuilder</span>
+				<span class="Name">PackAsSource</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">SyncScriptBuilder</span>
+				<span class="Name">RawBytecode</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">TextureGuiExperimental</span>
+			<span class="Superclass">LayerCollector</span>
+			<span class="Tag">[NotCreatable]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector2</span>
+				<span class="ClassName Property">TextureGuiExperimental</span>
+				<span class="Name">Size</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Content</span>
+				<span class="ClassName Property">TextureGuiExperimental</span>
+				<span class="Name">TemporaryId</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">IntersectOperation</span>
+			<span class="Superclass">PartOperation</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">RigScale</span>
+			<span class="ClassName Property">ImporterRootSettings</span>
+			<span class="Name">RigScale</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ImporterRootSettings</span>
+			<span class="Name">UseSceneOriginAsCFrame</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">ServiceVisibility</span>
+			<span class="ClassName Property">ReflectionMetadataClass</span>
+			<span class="Name">ServiceVisibility</span>
+			<span class="Security">{RobloxSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">RtlTextSupport</span>
+			<span class="ClassName Property">StarterGui</span>
+			<span class="Name">RtlTextSupport</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">AssetImportSession</span>
+			<span class="Name">IsR15</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">BasePart</span>
+			<span class="Name">IntersectAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Objects</span>
+					<span class="ParamName">parts</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">CollisionFidelity</span>
+					<span class="ParamName default">collisionfidelity</span>
+					<span class="ParamDefault String">Default</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">RenderFidelity</span>
+					<span class="ParamName default">renderFidelity</span>
+					<span class="ParamDefault String">Automatic</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AssetFetchStatus</span>
+			<span class="ClassName Function">ContentProvider</span>
+			<span class="Name">GetAssetFetchStatus</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Content</span>
+					<span class="ParamName">contentId</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">RBXScriptSignal</span>
+			<span class="ClassName Function">ContentProvider</span>
+			<span class="Name">GetAssetFetchStatusChangedSignal</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Content</span>
+					<span class="ParamName">contentId</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">AvatarThumbnailCustomizationType</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AvatarThumbnailCustomizationType</span>
+				<span class="Name">Closeup</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AvatarThumbnailCustomizationType</span>
+				<span class="Name">FullBody</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">RigScale</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RigScale</span>
+				<span class="Name">Default</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RigScale</span>
+				<span class="Name">Rthro</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RigScale</span>
+				<span class="Name">RthroNarrow</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">RtlTextSupport</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RtlTextSupport</span>
+				<span class="Name">Default</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RtlTextSupport</span>
+				<span class="Name">Disabled</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">RtlTextSupport</span>
+				<span class="Name">Enabled</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">ServiceVisibility</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ServiceVisibility</span>
+				<span class="Name">Always</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ServiceVisibility</span>
+				<span class="Name">Off</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">ServiceVisibility</span>
+				<span class="Name">WithChildren</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AssetFetchStatus</span>
+			<span class="Name">None</span>
+			<span class="Value">2</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AssetFetchStatus</span>
+			<span class="Name">Loading</span>
+			<span class="Value">3</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">AssetFetchStatus</span>
+			<span class="Name">TimedOut</span>
+			<span class="Value">4</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">BasePart</span>
+			<span class="Name">BreakJoints</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">BasePart</span>
+			<span class="Name">MakeJoints</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Model</span>
+			<span class="Name">BreakJoints</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Model</span>
+			<span class="Name">MakeJoints</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Workspace</span>
+			<span class="Name">BreakJoints</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">Workspace</span>
+			<span class="Name">MakeJoints</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">HopperBin</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">Tool</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">memory category</span>
+	<span class="Class">
+		<span class="Name">Flag</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">superclass and memory category</span>
+	<span class="Class">
+		<span class="Name">BackpackItem</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">Instance</span>
+			<span class="String">Instances</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">Model</span>
+			<span class="String">PhysicsParts</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">AvatarEditorService</span>
+		<span class="Name">NoPromptSaveAvatarThumbnailCustomization</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">thumbnailType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">emoteAssetId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">cameraDistanceScale</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">yRotDeg</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName default">fieldOfViewDeg</span>
+					<span class="ParamDefault float">0</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">AvatarThumbnailCustomizationType</span>
+					<span class="ParamName">thumbnailType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">emoteAssetId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">cameraDistanceScale</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">yRotDeg</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName default">fieldOfViewDeg</span>
+					<span class="ParamDefault float">0</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">DataStore</span>
+		<span class="Name">ListKeysAsync</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName default">prefix</span>
+					<span class="ParamDefault string"></span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName default">pageSize</span>
+					<span class="ParamDefault int">0</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName default">cursor</span>
+					<span class="ParamDefault string"></span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName default">prefix</span>
+					<span class="ParamDefault string"></span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName default">pageSize</span>
+					<span class="ParamDefault int">0</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName default">cursor</span>
+					<span class="ParamDefault string"></span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName default">excludeDeleted</span>
+					<span class="ParamDefault bool">false</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DynamicTextureAlpha</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Function">
+				<span class="ClassName Function">DynamicTextureAlpha</span>
+				<span class="Name">CreateLayer</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DynamicTextureLayerAlpha</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="Property">
+				<span class="ClassName Property">DynamicTextureLayerAlpha</span>
+				<span class="Name">ZIndex</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">AirController</span>
+			<span class="Name">CancelAirMomentum</span>
+		</span>
+	</span>
+</div>
 <hr id="563"/>
 <h2>Version 0.563.0.5630392</h2>
 
