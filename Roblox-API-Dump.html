@@ -18,6 +18,35 @@
 <div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">Instance</span>
+	<span class="Name">Attributes</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Instance</span>
+	<span class="Name">AttributesReplicate</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">Instance</span>
+	<span class="Name">AttributesSerialize</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Instance</span>
 	<span class="Name">ClassName</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
@@ -30,6 +59,16 @@
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">UniqueId</span>
+	<span class="ClassName Property">Instance</span>
+	<span class="Name">HistoryId</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -47,6 +86,17 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">PropertyStatus</span>
+	<span class="ClassName Property">Instance</span>
+	<span class="Name">PropertyStatusStudio</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Instance</span>
 	<span class="Name">RobloxLocked</span>
@@ -61,6 +111,33 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">Instance</span>
+	<span class="Name">Tags</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">UniqueId</span>
+	<span class="ClassName Property">Instance</span>
+	<span class="Name">UniqueId</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Instance</span>
+	<span class="Name">numExpectedDirectChildren</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Function child">
@@ -190,6 +267,7 @@
 	<span class="ClassName Function">Instance</span>
 	<span class="Name">GetActor</span>
 	<span class="Parameters"></span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -460,6 +538,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Accoutrement</span>
+	<span class="Name">BackendAccoutrementState</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Accoutrement</span>
 	<span class="Name">AttachmentForward</span>
@@ -495,6 +581,32 @@
 	<span class="Name">AttachmentUp</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Accoutrement</span>
+	<span class="Name">ServerEquipAccoutrement</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">character</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Accoutrement</span>
+	<span class="Name">ServerUnequipAccoutrement</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">oldCharacter</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class">
@@ -580,6 +692,102 @@
 	<span class="Name">AdTeleportInitiated</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AdService</span>
+	<span class="Name">ReportImpressionSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">ad_instance_name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">encrypted_ad_tracking_data</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">encryption_metadata</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AdService</span>
+	<span class="Name">ReportTeleportSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">ad_instance_name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">encrypted_ad_tracking_data</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">encryption_metadata</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">teleport_type</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">teleport_source_universe_id</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">teleport_source_place_id</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">teleport_dest_place_id</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AdService</span>
+	<span class="Name">ServeAdResponseSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">uuid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">response</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isError</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AdService</span>
+	<span class="Name">ServeAdSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">uuid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">request</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Event deprecated child">
@@ -1089,6 +1297,94 @@
 	<span class="Superclass">Instance</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationRigData</span>
+	<span class="Name">articulatedJoint</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationRigData</span>
+	<span class="Name">endEffectorRotationConstraint</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationRigData</span>
+	<span class="Name">endEffectorTranslationConstraint</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationRigData</span>
+	<span class="Name">facsControl</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationRigData</span>
+	<span class="Name">label</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationRigData</span>
+	<span class="Name">name</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationRigData</span>
+	<span class="Name">parent</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationRigData</span>
+	<span class="Name">postTransform</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationRigData</span>
+	<span class="Name">preTransform</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationRigData</span>
+	<span class="Name">transform</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationRigData</span>
+	<span class="Name">weight</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">AnimationRigData</span>
@@ -1530,6 +1826,61 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">Animator</span>
+	<span class="Name">OnCombinedUpdate2</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">animation</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">playState</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">fadeTime</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">weight</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">speed</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">timePosition</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AnimationPriority</span>
+			<span class="ParamName">priority</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">valuesUpdated</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Animator</span>
+	<span class="Name">StreamSyncRequest</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName">player</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">AppUpdateService</span>
 	<span class="Superclass">Instance</span>
@@ -1630,6 +1981,28 @@
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">PickMultipleFilesWithPrompt</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">AssetImportSession</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">StartSessionWithPath</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">filePath</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -3578,6 +3951,30 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
+<div class="Property deprecated child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">HopperBin</span>
+	<span class="Name">Command</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[WriteOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">HopperBin</span>
+	<span class="Name">TextureName</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[WriteOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">HopperBin</span>
@@ -3600,6 +3997,14 @@
 	<span class="ClassName Event">HopperBin</span>
 	<span class="Name">Deselected</span>
 	<span class="Parameters"></span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Event deprecated child">
+	<span class="ClassName Event">HopperBin</span>
+	<span class="Name">ReplicatedSelected</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -3729,6 +4134,19 @@
 	<span class="ClassName Event">Tool</span>
 	<span class="Name">Unequipped</span>
 	<span class="Parameters"></span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Tool</span>
+	<span class="Name">VRLaserPointerClicked</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName">player</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class deprecated">
@@ -4256,6 +4674,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">BaseWrap</span>
+	<span class="Name">TemporaryCageMeshId</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">BaseWrap</span>
 	<span class="Name">CageOriginWorld</span>
@@ -4267,6 +4694,33 @@
 	<span class="ClassName Property">BaseWrap</span>
 	<span class="Name">HSRAssetId</span>
 	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">SharedString</span>
+	<span class="ClassName Property">BaseWrap</span>
+	<span class="Name">HSRData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">SharedString</span>
+	<span class="ClassName Property">BaseWrap</span>
+	<span class="Name">HSRMeshIdData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BaseWrap</span>
+	<span class="Name">ImportInProcess</span>
+	<span class="Security">{✏️RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -4360,6 +4814,15 @@
 	<span class="ClassName Property">WrapLayer</span>
 	<span class="Name">ReferenceOrigin</span>
 	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">WrapLayer</span>
+	<span class="Name">TemporaryReferenceId</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -4884,6 +5347,15 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">RocketPropulsion</span>
 	<span class="Name">TargetRadius</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RocketPropulsion</span>
+	<span class="Name">Active</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -5719,6 +6191,22 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Camera</span>
+	<span class="Name">ZoomToExtents</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">boundingBoxCFrame</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">boundingBoxSize</span>
+		</span>
+	</span>
+</div>
+
 <div class="Event child">
 	<span class="ClassName Event">Camera</span>
 	<span class="Name">FirstPersonTransition</span>
@@ -5963,6 +6451,26 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Clothing</span>
 	<span class="Name">Color3</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">Clothing</span>
+	<span class="Name">Outfit1</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">Clothing</span>
+	<span class="Name">Outfit2</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Class">
@@ -6255,6 +6763,85 @@
 	</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">Chat</span>
+	<span class="Name">ClientToServerFilterMessageSignalV2</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">sender</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">receiver</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">unfilteredMessage</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Chat</span>
+	<span class="Name">ClientToServerReportUnfilteredSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">unfilteredText</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">match</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">instancePath</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">instanceType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Chat</span>
+	<span class="Name">ServerToClientUnderOver13FilteredResponseSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">sender</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">unfilteredMessage</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isError</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">errorStr</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">under13</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">over13</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">ClickDetector</span>
 	<span class="Superclass">Instance</span>
@@ -6270,6 +6857,23 @@
 	<span class="Type">Content</span>
 	<span class="ClassName Property">ClickDetector</span>
 	<span class="Name">CursorIcon</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ClickDetector</span>
+	<span class="Name">MouseActionReplicated</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">actionType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Event child">
@@ -6971,6 +7575,15 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">BallSocketConstraint</span>
 	<span class="Name">MaxFrictionTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">BallSocketConstraint</span>
+	<span class="Name">MaxFrictionTorqueXml</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -8878,6 +9491,15 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
+<div class="Property deprecated child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">CustomEvent</span>
+	<span class="Name">PersistedCurrentValue</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">Objects</span>
 	<span class="ClassName Function">CustomEvent</span>
@@ -8988,6 +9610,24 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">LevelOfDetailSetting</span>
+	<span class="ClassName Property">DataModelMesh</span>
+	<span class="Name">LODX</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">LevelOfDetailSetting</span>
+	<span class="ClassName Property">DataModelMesh</span>
+	<span class="Name">LODY</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">DataModelMesh</span>
 	<span class="Name">Offset</span>
@@ -9010,6 +9650,33 @@
 	<span class="Superclass">DataModelMesh</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotBrowsable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">BevelMesh</span>
+	<span class="Name">Bevel</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">BevelMesh</span>
+	<span class="Name">Bevel Roundness</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">BevelMesh</span>
+	<span class="Name">Bulge</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -11384,6 +12051,36 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">ExperienceAuthService</span>
+	<span class="Name">ScopeCheckResult</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">guid</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">ScopeCheckResult</span>
+			<span class="ParamName">result</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">token</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">scopes</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">metadata</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">ExperienceInviteOptions</span>
 	<span class="Superclass">Instance</span>
@@ -12347,6 +13044,22 @@
 	<span class="Name">TimeScale</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Fire</span>
+	<span class="Name">heat_xml</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Fire</span>
+	<span class="Name">size_xml</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Fire</span>
@@ -12377,6 +13090,14 @@
 	<span class="ClassName Property">FloatCurve</span>
 	<span class="Name">Length</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">FloatCurve</span>
+	<span class="Name">ValuesAndTimes</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Function child">
@@ -12486,6 +13207,15 @@
 	<span class="Superclass">Instance</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Folder</span>
+	<span class="Name">ReplicatedGuiInsertionOrder</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">ForceField</span>
 	<span class="Superclass">Instance</span>
@@ -12525,6 +13255,50 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">FriendService</span>
+	<span class="Name">RemoteFriendEventSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">FriendRequestEvent</span>
+			<span class="ParamName">event</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">FriendService</span>
+	<span class="Name">RemoteFriendStatusSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">FriendStatus</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Class deprecated">
 	<span class="Name">FunctionalTest</span>
 	<span class="Superclass">Instance</span>
@@ -12535,6 +13309,59 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">FunctionalTest</span>
 	<span class="Name">Description</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">FunctionalTest</span>
+	<span class="Name">AllowSleep</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">FunctionalTest</span>
+	<span class="Name">Is30FpsThrottleEnabled</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">FunctionalTest</span>
+	<span class="Name">PhysicsEnvironmentalThrottle</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">FunctionalTest</span>
+	<span class="Name">HasMigratedSettingsToTestService</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">FunctionalTest</span>
+	<span class="Name">Timeout</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -13033,6 +13860,16 @@
 	<span class="Tag">[Service]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">GoogleAnalyticsConfiguration</span>
+	<span class="Name">gaID</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">GroupService</span>
 	<span class="Superclass">Instance</span>
@@ -13128,6 +13965,15 @@
 	<span class="Name">AbsoluteSize</span>
 	<span class="Tag">[ReadOnly]</span>
 	<span class="ThreadSafety">{🧬Unsafe}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiBase2d</span>
+	<span class="Name">ReplicatedInsertionOrder</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -13387,6 +14233,62 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">GuiObject</span>
 	<span class="Name">ZIndex</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiObject</span>
+	<span class="Name">DragBeginConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiObject</span>
+	<span class="Name">DragStoppedConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiObject</span>
+	<span class="Name">MouseEnterConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiObject</span>
+	<span class="Name">MouseLeaveConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiObject</span>
+	<span class="Name">MouseMovedConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiObject</span>
+	<span class="Name">MouseWheelBackwardConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiObject</span>
+	<span class="Name">MouseWheelForwardConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -13870,6 +14772,54 @@
 	<span class="Name">Style</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiButton</span>
+	<span class="Name">MouseButton1ClickConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiButton</span>
+	<span class="Name">MouseButton1DownConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiButton</span>
+	<span class="Name">MouseButton1UpConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiButton</span>
+	<span class="Name">MouseButton2ClickConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiButton</span>
+	<span class="Name">MouseButton2DownConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">GuiButton</span>
+	<span class="Name">MouseButton2UpConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Event child">
 	<span class="ClassName Event">GuiButton</span>
 	<span class="Name">Activated</span>
@@ -14068,6 +15018,16 @@
 <div class="Class">
 	<span class="Name">TextButton</span>
 	<span class="Superclass">GuiButton</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TextButton</span>
+	<span class="Name">Confidential</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -14349,6 +15309,16 @@
 <div class="Class">
 	<span class="Name">TextLabel</span>
 	<span class="Superclass">GuiLabel</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TextLabel</span>
+	<span class="Name">Confidential</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -14714,6 +15684,16 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TextBox</span>
+	<span class="Name">Confidential</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">CursorPosition</span>
@@ -15047,6 +16027,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VideoFrame</span>
+	<span class="Name">PlayingReplicating</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector2</span>
 	<span class="ClassName Property">VideoFrame</span>
 	<span class="Name">Resolution</span>
@@ -15065,6 +16053,14 @@
 	<span class="ClassName Property">VideoFrame</span>
 	<span class="Name">TimePosition</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">VideoFrame</span>
+	<span class="Name">TimePositionReplicating</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -15148,6 +16144,32 @@
 	</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">VideoFrame</span>
+	<span class="Name">PlayingUpdatedFromServer</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">value</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VideoFrame</span>
+	<span class="Name">TimePositionUpdatedFromServer</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">double</span>
+			<span class="ParamName">value</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">ViewportFrame</span>
 	<span class="Superclass">GuiObject</span>
@@ -15178,6 +16200,22 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">ViewportFrame</span>
 	<span class="Name">LightDirection</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">ViewportFrame</span>
+	<span class="Name">CameraCFrame</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ViewportFrame</span>
+	<span class="Name">CameraFieldOfView</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -16136,6 +17174,46 @@
 	<span class="Name">Axes</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">ArcHandles</span>
+	<span class="Name">MouseButton1DownConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">ArcHandles</span>
+	<span class="Name">MouseButton1UpConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">ArcHandles</span>
+	<span class="Name">MouseDragConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">ArcHandles</span>
+	<span class="Name">MouseEnterConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">ArcHandles</span>
+	<span class="Name">MouseLeaveConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Event child">
 	<span class="ClassName Event">ArcHandles</span>
 	<span class="Name">MouseButton1Down</span>
@@ -16220,6 +17298,46 @@
 	<span class="Type">Faces</span>
 	<span class="ClassName Property">Handles</span>
 	<span class="Name">Faces</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Handles</span>
+	<span class="Name">MouseButton1DownConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Handles</span>
+	<span class="Name">MouseButton1UpConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Handles</span>
+	<span class="Name">MouseDragConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Handles</span>
+	<span class="Name">MouseEnterConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Handles</span>
+	<span class="Name">MouseLeaveConnectionCount</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Event child">
@@ -17500,6 +18618,26 @@
 	<span class="Superclass">Instance</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">HiddenSurfaceRemovalAsset</span>
+	<span class="Name">HSRData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">HiddenSurfaceRemovalAsset</span>
+	<span class="Name">HSRMeshIdData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">Highlight</span>
 	<span class="Superclass">Instance</span>
@@ -18041,10 +19179,26 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">JumpReplicate</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">MoveDirection</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">MoveDirectionInternal</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -18067,9 +19221,33 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">Strafe</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">TargetPoint</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">WalkAngleError</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">WalkDirection</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -18082,6 +19260,31 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">WalkToPoint</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">CameraMaxDistance</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">CameraMinDistance</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">CameraMode</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">CameraMode</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -18116,6 +19319,32 @@
 	<span class="Name">HealthDisplayType</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">InternalBodyScale</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">InternalHeadScale</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">InternalOriginalHipHeight</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Property deprecated child">
 	<span class="Type">BasePart</span>
 	<span class="ClassName Property">Humanoid</span>
@@ -18137,6 +19366,15 @@
 	<span class="Type">NameOcclusion</span>
 	<span class="ClassName Property">Humanoid</span>
 	<span class="Name">NameOcclusion</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">HumanoidStateType</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">NetworkHumanoidState</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -18185,6 +19423,14 @@
 	<span class="Name">Health</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Humanoid</span>
+	<span class="Name">Health_XML</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -18871,6 +20117,40 @@
 
 <div class="Event child">
 	<span class="ClassName Event">Humanoid</span>
+	<span class="Name">ServerApplyDescription</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Humanoid</span>
+	<span class="Name">ServerBreakJoints</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Humanoid</span>
+	<span class="Name">ServerEquipTool</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Tool</span>
+			<span class="ParamName">tool</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Humanoid</span>
 	<span class="Name">StateChanged</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -19175,6 +20455,22 @@
 	<span class="Type">int64</span>
 	<span class="ClassName Property">HumanoidDescription</span>
 	<span class="Name">Shirt</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">HumanoidDescription</span>
+	<span class="Name">EmotesDataInternal</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">HumanoidDescription</span>
+	<span class="Name">EquippedEmotesDataInternal</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -20295,6 +21591,65 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">InsertService</span>
+	<span class="Name">InternalDelete</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">instance</span>
+		</span>
+	</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">InternalSyncItem</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">InternalSyncItem</span>
+	<span class="Name">AutoSync</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">InternalSyncItem</span>
+	<span class="Name">Enabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">InternalSyncItem</span>
+	<span class="Name">Path</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">InternalSyncItem</span>
+	<span class="Name">Target</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">InternalSyncService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">JointInstance</span>
 	<span class="Superclass">Instance</span>
@@ -21075,6 +22430,66 @@
 	<span class="Tag">[Service]</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">LiveScriptingService</span>
+	<span class="Name">BeginEdit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LiveScriptingService</span>
+	<span class="Name">EndEdit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LiveScriptingService</span>
+	<span class="Name">OpenedWithSource</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">source</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LiveScriptingService</span>
+	<span class="Name">SendOperation</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">op</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">LocalStorageService</span>
 	<span class="Superclass">Instance</span>
@@ -21218,6 +22633,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">LocalizationService</span>
+	<span class="Name">GameSourceLanguageId</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">LocalizationService</span>
 	<span class="Name">IsTextScraperRunning</span>
@@ -21228,8 +22651,25 @@
 <div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">LocalizationService</span>
+	<span class="Name">LocaleManifest</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">LocalizationService</span>
 	<span class="Name">RobloxLocaleId</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">LocalizationService</span>
+	<span class="Name">ShouldUseCloudTable</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -21387,9 +22827,38 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">LocalizationService</span>
+	<span class="Name">TextScraperClientMessageWithPlayerSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">version</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">message</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">LocalizationTable</span>
 	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">LocalizationTable</span>
+	<span class="Name">Contents</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property deprecated child">
@@ -21409,6 +22878,14 @@
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">LocalizationTable</span>
+	<span class="Name">IsExemptFromUGCAnalytics</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -21727,11 +23204,43 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">SharedString</span>
+	<span class="ClassName Property">LodDataEntity</span>
+	<span class="Name">EntityData</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">LodDataEntity</span>
 	<span class="Name">EntityLodEnabled</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">LodDataEntity</span>
+	<span class="Name">EntityPosition</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">LodDataEntity</span>
+	<span class="Name">EntityScale</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">LodDataEntity</span>
+	<span class="Name">EntitySource</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Class">
@@ -21843,6 +23352,79 @@
 
 <div class="Event child">
 	<span class="ClassName Event">LogService</span>
+	<span class="Name">RequestHttpResultApprovedSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">requestingPlayer</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LogService</span>
+	<span class="Name">RequestScriptExecutionSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">requestingPlayer</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">source</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LogService</span>
+	<span class="Name">RequestServerHttpResultSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">requestingPlayer</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LogService</span>
+	<span class="Name">RequestServerOutputSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">requestingPlayer</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LogService</span>
+	<span class="Name">RequestSettingsChange</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">requestingPlayer</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">expressivePrinting</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LogService</span>
 	<span class="Name">ServerHttpResultOut</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -21872,6 +23454,19 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LogService</span>
+	<span class="Name">ServerVariantMessageOut</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">data</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class">
@@ -21936,10 +23531,129 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">ProtectedString</span>
+	<span class="ClassName Property">LuaSourceContainer</span>
+	<span class="Name">CachedRemoteSource</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">LuaSourceContainer</span>
+	<span class="Name">CachedRemoteSourceLoadState</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Property">LuaSourceContainer</span>
 	<span class="Name">CurrentEditor</span>
 	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">LuaSourceContainer</span>
+	<span class="Name">HasAssociatedDrafts</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">LuaSourceContainer</span>
+	<span class="Name">IsDifferentFromFileSystem</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">LuaSourceContainer</span>
+	<span class="Name">OriginalScriptGuid</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">ProtectedString</span>
+	<span class="ClassName Property">LuaSourceContainer</span>
+	<span class="Name">SandboxedSource</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">LuaSourceContainer</span>
+	<span class="Name">ScriptGuid</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">LuaSourceContainer</span>
+	<span class="Name">SyncingEditorText</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LuaSourceContainer</span>
+	<span class="Name">LockGrantedOrNot</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">granted</span>
+		</span>
+	</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LuaSourceContainer</span>
+	<span class="Name">LostLock</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LuaSourceContainer</span>
+	<span class="Name">RequestLock</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LuaSourceContainer</span>
+	<span class="Name">RequestScriptHash</span>
+	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LuaSourceContainer</span>
+	<span class="Name">VerifyScriptHash</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">hash</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class">
@@ -22013,6 +23727,16 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ModuleScript</span>
+	<span class="Name">Confidential</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">ModuleScript</span>
 	<span class="Name">LinkedSource</span>
@@ -22050,6 +23774,14 @@
 	<span class="ClassName Property">MarkerCurve</span>
 	<span class="Name">Length</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">MarkerCurve</span>
+	<span class="Name">ValuesAndTimes</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Function child">
@@ -22679,6 +24411,24 @@
 
 <div class="Event child">
 	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">AssetTypePurchased</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AssetType</span>
+			<span class="ParamName">assetType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
 	<span class="Name">ClientLuaDialogRequested</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -22707,6 +24457,56 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">ConfirmPlayerMembership</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">LuaDialogCallbackSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">value</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">MockPurchasePremium</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">MockPurchaseSubscription</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Event child">
@@ -22813,6 +24613,40 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PromptNativePurchaseRequested</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">productId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PromptNativePurchaseRequestedWithLocalPlayer</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">productId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Event child">
@@ -23005,6 +24839,23 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PromptThirdPartyPurchaseRequested</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">productId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Event child">
@@ -23327,6 +25178,14 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MaterialService</span>
+	<span class="Name">Use2022MaterialsXml</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">string</span>
 	<span class="ClassName Function">MaterialService</span>
@@ -23468,6 +25327,32 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">MaterialVariant</span>
 	<span class="Name">StudsPerTile</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">MaterialVariant</span>
+	<span class="Name">AvgMetalness</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">MaterialVariant</span>
+	<span class="Name">AvgRoughness</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">MaterialVariant</span>
+	<span class="Name">TexturePack</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -24349,6 +26234,14 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">MetaBreakpointContext</span>
+	<span class="Name">ContextDataInternal</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">MetaBreakpointManager</span>
 	<span class="Superclass">Instance</span>
@@ -24828,6 +26721,10 @@
 			<span class="Type">bool</span>
 			<span class="ParamName">start</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">int?</span>
+			<span class="ParamName">frequency</span>
+		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -24960,6 +26857,16 @@
 	<span class="ClassName Property">NetworkSettings</span>
 	<span class="Name">HttpProxyURL</span>
 	<span class="Security">{✏️RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">NetworkSettings</span>
+	<span class="Name">OpenCertManagerDialog</span>
+	<span class="Security">{NotAccessibleSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Class">
@@ -25278,6 +27185,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Color3uint8</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">Color3uint8</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">Material</span>
 	<span class="ClassName Property">BasePart</span>
@@ -25289,6 +27204,14 @@
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">MaterialVariant</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">MaterialVariantSerialized</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -25343,6 +27266,23 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">BasePart</span>
+	<span class="Name">DraggingV1</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">NetworkOwnership</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">NetworkOwnershipRule</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BasePart</span>
 	<span class="Name">CanCollide</span>
 </div>
 
@@ -25373,6 +27313,23 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">CollisionGroupReplicate</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">LocalSimulationValidation</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">LocalTransparencyModifier</span>
@@ -25384,6 +27341,22 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">Locked</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">NetworkIsSleeping</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">SystemAddress</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">NetworkOwnerV3</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -25747,6 +27720,17 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">siz</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[WriteOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">BasePart</span>
@@ -26058,6 +28042,19 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">BasePart</span>
+	<span class="Name">NetworkOwnerChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">SystemAddress</span>
+			<span class="ParamName">systemAddress</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Event deprecated child">
 	<span class="ClassName Event">BasePart</span>
 	<span class="Name">OutfitChanged</span>
@@ -26104,11 +28101,10 @@
 	<span class="Superclass">BasePart</span>
 </div>
 
-<div class="Class deprecated">
+<div class="Class">
 	<span class="Name">FormFactorPart</span>
 	<span class="Superclass">BasePart</span>
 	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property deprecated child">
@@ -26119,6 +28115,15 @@
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">FormFactor</span>
+	<span class="ClassName Property">FormFactorPart</span>
+	<span class="Name">formFactorRaw</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Class">
@@ -26133,6 +28138,18 @@
 	<span class="Name">Shape</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">PartType</span>
+	<span class="ClassName Property">Part</span>
+	<span class="Name">shap</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[WriteOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Class deprecated">
@@ -26166,6 +28183,25 @@
 	<span class="Tag">[NotCreatable]</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">Platform</span>
+	<span class="Name">RemoteCreateMotor6D</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">humanoid</span>
+		</span>
+	</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Platform</span>
+	<span class="Name">RemoteDestroyMotor6D</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">Seat</span>
 	<span class="Superclass">Part</span>
@@ -26196,6 +28232,25 @@
 	</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">Seat</span>
+	<span class="Name">RemoteCreateSeatWeld</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">humanoid</span>
+		</span>
+	</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Seat</span>
+	<span class="Name">RemoteDestroySeatWeld</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Class deprecated">
 	<span class="Name">SkateboardPlatform</span>
 	<span class="Superclass">Part</span>
@@ -26215,6 +28270,16 @@
 	<span class="ClassName Property">SkateboardPlatform</span>
 	<span class="Name">ControllingHumanoid</span>
 	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">MoveState</span>
+	<span class="ClassName Property">SkateboardPlatform</span>
+	<span class="Name">MoveState</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -26283,6 +28348,27 @@
 			<span class="ParamName">oldState</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Event deprecated child">
+	<span class="ClassName Event">SkateboardPlatform</span>
+	<span class="Name">RemoteCreateMotor6D</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">humanoid</span>
+		</span>
+	</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Event deprecated child">
+	<span class="ClassName Event">SkateboardPlatform</span>
+	<span class="Name">RemoteDestroyMotor6D</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[Deprecated]</span>
 </div>
 
@@ -26404,6 +28490,49 @@
 	<span class="Name">WaterWaveSpeed</span>
 </div>
 
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">TerrainAcquisitionMethod</span>
+	<span class="ClassName Property">Terrain</span>
+	<span class="Name">AcquisitionMethod</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Terrain</span>
+	<span class="Name">ClusterGrid</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[WriteOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Terrain</span>
+	<span class="Name">ClusterGridV2</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[WriteOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">Terrain</span>
+	<span class="Name">ClusterGridV3</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[WriteOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Property deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Terrain</span>
@@ -26427,6 +28556,24 @@
 	<span class="ClassName Property">Terrain</span>
 	<span class="Name">MaxExtents</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">Terrain</span>
+	<span class="Name">PhysicsGrid</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">Terrain</span>
+	<span class="Name">SmoothGrid</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Function deprecated child">
@@ -27028,6 +29175,15 @@
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">SharedString</span>
+	<span class="ClassName Property">TriangleMeshPart</span>
+	<span class="Name">PhysicalConfigData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">MeshPart</span>
 	<span class="Superclass">TriangleMeshPart</span>
@@ -27056,6 +29212,17 @@
 	<span class="Tag">[Hidden]</span>
 </div>
 
+<div class="Property deprecated child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">MeshID</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
 <div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">MeshPart</span>
@@ -27073,9 +29240,37 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">RenderFidelity</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">RenderFidelityReplicate</span>
+	<span class="Security">{✏️PluginSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">MeshPart</span>
 	<span class="Name">TextureID</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">VertexCount</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">InitialSize</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -27084,6 +29279,25 @@
 	<span class="Name">JointOffset</span>
 	<span class="Security">{✏️NotAccessibleSecurity}</span>
 	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">PhysicsData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">MeshPart</span>
+	<span class="Name">AlternateMeshHash</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Function child">
@@ -27116,6 +29330,90 @@
 	<span class="ClassName Property">PartOperation</span>
 	<span class="Name">SmoothingAngle</span>
 	<span class="Security">{✏️PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">AssetId</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CSGPropertyData</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">CSGPropertyData</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">ChildData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">SharedString</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">ChildData2</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">FormFactor</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">FormFactor</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">InitialSize</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">MeshData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">SharedString</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">MeshData2</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">PhysicsData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -27240,6 +29538,25 @@
 	</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">VehicleSeat</span>
+	<span class="Name">RemoteCreateSeatWeld</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">humanoid</span>
+		</span>
+	</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VehicleSeat</span>
+	<span class="Name">RemoteDestroySeatWeld</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">Model</span>
 	<span class="Superclass">PVInstance</span>
@@ -27261,9 +29578,66 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">LodDataEntity</span>
+	<span class="ClassName Property">Model</span>
+	<span class="Name">LodEntity</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">Model</span>
+	<span class="Name">ModelMeshCFrame</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">SharedString</span>
+	<span class="ClassName Property">Model</span>
+	<span class="Name">ModelMeshData</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Model</span>
+	<span class="Name">ModelMeshSize</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Model</span>
+	<span class="Name">NeedsPivotMigration</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">BasePart</span>
 	<span class="ClassName Property">Model</span>
 	<span class="Name">PrimaryPart</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Model</span>
+	<span class="Name">Scale</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Model</span>
+	<span class="Name">ScaleFactor</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -27271,6 +29645,14 @@
 	<span class="ClassName Property">Model</span>
 	<span class="Name">WorldPivot</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">OptionalCoordinateFrame</span>
+	<span class="ClassName Property">Model</span>
+	<span class="Name">WorldPivotData</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Function child">
@@ -27332,6 +29714,13 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">float</span>
+	<span class="ClassName Function">Model</span>
+	<span class="Name">GetScale</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Model</span>
 	<span class="Name">MakeJoints</span>
@@ -27369,6 +29758,18 @@
 	<span class="Name">ResetOrientationToIdentity</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Model</span>
+	<span class="Name">ScaleTo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">newScaleFactor</span>
+		</span>
+	</span>
 </div>
 
 <div class="Function deprecated child">
@@ -27885,6 +30286,42 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">CollisionGroupData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">CollisionGroups</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[WriteOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">DataModelPlaceVersion</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">ExplicitAutoJoints</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">FallenPartsDestroyHeight</span>
@@ -27978,6 +30415,14 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Workspace</span>
+	<span class="Name">TerrainWeldsFixed</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Workspace</span>
 	<span class="Name">TouchesUseCollisionGroups</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
@@ -28031,6 +30476,18 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">StreamingMinRadius</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">StreamingPauseMode</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">StreamingPauseMode</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[WriteOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -28286,10 +30743,34 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">PackageLink</span>
+	<span class="Name">ModifiedState</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">PackageLink</span>
+	<span class="Name">PackageGuid</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Content</span>
 	<span class="ClassName Property">PackageLink</span>
 	<span class="Name">PackageId</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">PackageLink</span>
+	<span class="Name">PackageIdSerialize</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -28303,10 +30784,28 @@
 <div class="Property child">
 	<span class="Type">int64</span>
 	<span class="ClassName Property">PackageLink</span>
+	<span class="Name">VersionIdSerialize</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">PackageLink</span>
 	<span class="Name">VersionNumber</span>
 	<span class="Security">{✏️NotAccessibleSecurity}</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PackageLink</span>
+	<span class="Name">CanAutoUpdate</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Class">
@@ -28546,6 +31045,25 @@
 	<span class="Superclass">Instance</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">PartOperationAsset</span>
+	<span class="Name">ChildData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">PartOperationAsset</span>
+	<span class="Name">MeshData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">ParticleEmitter</span>
 	<span class="Superclass">Instance</span>
@@ -28730,6 +31248,17 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ParticleFlipbookTextureCompatible</span>
+	<span class="ClassName Property">ParticleEmitter</span>
+	<span class="Name">FlipbookTextureCompatible</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">ParticleEmitter</span>
 	<span class="Name">Acceleration</span>
@@ -28790,6 +31319,50 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ParticleEmitter</span>
+	<span class="Name">OnClearRequested</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ParticleEmitter</span>
+	<span class="Name">OnEmitRequested</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">particleCount</span>
+		</span>
+	</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">PatchMapping</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PatchMapping</span>
+	<span class="Name">FlattenTree</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PatchMapping</span>
+	<span class="Name">PatchId</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PatchMapping</span>
+	<span class="Name">TargetPath</span>
 </div>
 
 <div class="Class">
@@ -29656,6 +32229,14 @@
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">AccountAgeReplicate</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Property deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Player</span>
@@ -29693,6 +32274,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">ChararacterRegionId</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">ChatMode</span>
 	<span class="ClassName Property">Player</span>
@@ -29700,6 +32290,40 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ChatPrivacyMode</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">ChatPrivacyMode</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">CloudEditCameraCoordinateFrame</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">CloudEditPlayerActive</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">CountryRegionCodeReplicate</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property deprecated child">
@@ -29744,6 +32368,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">FollowUserIdReplicated</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Player</span>
 	<span class="Name">Guest</span>
@@ -29759,11 +32391,28 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">InternalCharacterAppearanceLoaded</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">Player</span>
 	<span class="Name">LocaleId</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">MaxSimulationRadius</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -29784,6 +32433,15 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">MembershipType</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">MembershipTypeReplicate</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">Player</span>
 	<span class="Name">OsPlatform</span>
@@ -29798,6 +32456,34 @@
 	<span class="Name">PlatformName</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">RawJoinData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">ReplicatedLocaleId</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">ReplicatedLocaleIdInternal</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -29818,6 +32504,15 @@
 	<span class="Name">SimulationRadius</span>
 	<span class="Security">{LocalUserSecurity}</span>
 	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Player</span>
+	<span class="Name">SuperSafeChatReplicate</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -29975,6 +32670,7 @@
 	<span class="ClassName Function">Player</span>
 	<span class="Name">GetNetworkPing</span>
 	<span class="Parameters"></span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -30490,6 +33186,27 @@
 
 <div class="Event child">
 	<span class="ClassName Event">Player</span>
+	<span class="Name">CloudEditSelectionChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">newSelection</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
+	<span class="Name">ConnectDiedSignalBackend</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
 	<span class="Name">FriendStatusChanged</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -30518,6 +33235,14 @@
 
 <div class="Event child">
 	<span class="ClassName Event">Player</span>
+	<span class="Name">Kill</span>
+	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
 	<span class="Name">OnTeleport</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -30538,6 +33263,157 @@
 
 <div class="Event child">
 	<span class="ClassName Event">Player</span>
+	<span class="Name">OnTeleportInternal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">TeleportState</span>
+			<span class="ParamName">teleportState</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">teleportInfo</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">customLoadingScreen</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
+	<span class="Name">PlayerExperienceSettingsLocaleSetFromLua</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">newLocaleId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
+	<span class="Name">ReceivedJoinTelemetry</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">details</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
+	<span class="Name">RemoteFriendRequestSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">otherUserId</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">FriendRequestEvent</span>
+			<span class="ParamName">eventType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
+	<span class="Name">RemoteInsert</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">url</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">position</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
+	<span class="Name">ScopeCheckInitiated</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">guid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">serializedScopes</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">metadata</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
+	<span class="Name">ScriptSecurityError</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">hash</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">error</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">stack</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
+	<span class="Name">ServerToClientUnfilteredChatReplicate</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">value</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
+	<span class="Name">SetShutdownMessage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">message</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
 	<span class="Name">SimulationRadiusChanged</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -30546,6 +33422,19 @@
 		</span>
 	</span>
 	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
+	<span class="Name">StatsAvailable</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">info</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class">
@@ -30867,6 +33756,24 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">Players</span>
 	<span class="Name">RespawnTime</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Players</span>
+	<span class="Name">ServerGitHash</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Players</span>
+	<span class="Name">ServerLogPrefix</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Function child">
@@ -31210,6 +34117,23 @@
 
 <div class="Event child">
 	<span class="ClassName Event">Players</span>
+	<span class="Name">CloudEditApplyEditsMessage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">playerName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">scriptName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Players</span>
 	<span class="Name">FriendRequestEvent</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -31239,6 +34163,14 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Players</span>
+	<span class="Name">OnLinkedScriptsUpdated</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Event child">
@@ -31333,6 +34265,114 @@
 			<span class="ParamName">player</span>
 		</span>
 	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Players</span>
+	<span class="Name">PromptGameServerReportEnrichment</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">reportId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Players</span>
+	<span class="Name">RequestCloudEditImmediatePublishWithContext</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">spanContext</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Players</span>
+	<span class="Name">RequestCloudEditKick</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">playerId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Players</span>
+	<span class="Name">RequestCloudEditShutdown</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Players</span>
+	<span class="Name">RequestTeamCreateImmediateSaveWithContext</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">spanContext</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Players</span>
+	<span class="Name">TeamCreatePublishFinished</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">publishSuccessful</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Players</span>
+	<span class="Name">TeamCreateSaveFinished</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">saveSuccessful</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Players</span>
+	<span class="Name">TeamCreateServerMessage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">MessageType</span>
+			<span class="ParamName">messageType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">message</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">printToStatusBar</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class">
@@ -32870,6 +35910,32 @@
 
 <div class="Event child">
 	<span class="ClassName Event">ProximityPrompt</span>
+	<span class="Name">ButtonHoldBeganActionReplicated</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName">player</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ProximityPrompt</span>
+	<span class="Name">ButtonHoldEndedActionReplicated</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName">player</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ProximityPrompt</span>
 	<span class="Name">PromptButtonHoldBegan</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -32921,6 +35987,19 @@
 
 <div class="Event child">
 	<span class="ClassName Event">ProximityPrompt</span>
+	<span class="Name">TriggerEndedActionReplicated</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName">player</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ProximityPrompt</span>
 	<span class="Name">Triggered</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -32928,6 +36007,19 @@
 			<span class="ParamName">playerWhoTriggered</span>
 		</span>
 	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">ProximityPrompt</span>
+	<span class="Name">TriggeredActionReplicated</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class">
@@ -33774,6 +36866,74 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">RemoteFunction</span>
+	<span class="Name">RemoteOnInvokeClient</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">id</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">arguments</span>
+		</span>
+	</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">RemoteFunction</span>
+	<span class="Name">RemoteOnInvokeError</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">id</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">arguments</span>
+		</span>
+	</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">RemoteFunction</span>
+	<span class="Name">RemoteOnInvokeServer</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">id</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">arguments</span>
+		</span>
+	</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">RemoteFunction</span>
+	<span class="Name">RemoteOnInvokeSuccess</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">id</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">arguments</span>
+		</span>
+	</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Callback child">
 	<span class="Type">Tuple</span>
 	<span class="ClassName Callback">RemoteFunction</span>
@@ -34078,6 +37238,14 @@
 	<span class="ClassName Property">RotationCurve</span>
 	<span class="Name">Length</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">RotationCurve</span>
+	<span class="Name">ValuesAndTimes</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Function child">
@@ -34454,6 +37622,42 @@
 </div>
 
 <div class="Class">
+	<span class="Name">SafetyService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int64</span>
+	<span class="ClassName Function">SafetyService</span>
+	<span class="Name">TakeScreenshot</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">screenshotOptions</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">SafetyService</span>
+	<span class="Name">ScreenshotContentReady</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">screenshotJobId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">contentId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ScreenshotHud</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -34704,17 +37908,21 @@
 	<span class="Type">void</span>
 	<span class="ClassName Function">ScriptContext</span>
 	<span class="Name">StartScriptProfiling</span>
-	<span class="Parameters"></span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int?</span>
+			<span class="ParamName">frequency</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
-	<span class="Type">Dictionary</span>
+	<span class="Type">string</span>
 	<span class="ClassName Function">ScriptContext</span>
 	<span class="Name">StopScriptProfiling</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[CustomLuaState]</span>
 </div>
 
 <div class="Event child">
@@ -34771,6 +37979,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">ScriptDebugger</span>
+	<span class="Name">CoreScriptIdentifier</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">ScriptDebugger</span>
 	<span class="Name">CurrentLine</span>
@@ -34796,6 +38012,14 @@
 	<span class="ClassName Property">ScriptDebugger</span>
 	<span class="Name">Script</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">ScriptDebugger</span>
+	<span class="Name">ScriptGuid</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Function child">
@@ -35733,6 +38957,26 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DataModel</span>
+	<span class="Name">ForceR15</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">GameAvatarType</span>
+	<span class="ClassName Property">DataModel</span>
+	<span class="Name">GameAvatarType</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">int64</span>
 	<span class="ClassName Property">DataModel</span>
 	<span class="Name">GameId</span>
@@ -35768,6 +39012,17 @@
 	<span class="ClassName Property">DataModel</span>
 	<span class="Name">PlaceVersion</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">R15CollisionType</span>
+	<span class="ClassName Property">DataModel</span>
+	<span class="Name">R15CollisionType</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property deprecated child">
@@ -36693,6 +39948,30 @@
 	<span class="Name">TimeScale</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Smoke</span>
+	<span class="Name">opacity_xml</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Smoke</span>
+	<span class="Name">riseVelocity_xml</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Smoke</span>
+	<span class="Name">size_xml</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Smoke</span>
@@ -36878,6 +40157,15 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Sound</span>
+	<span class="Name">IsSpatial</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Sound</span>
 	<span class="Name">PlayOnRemove</span>
 </div>
 
@@ -36919,6 +40207,22 @@
 	<span class="Name">Pitch</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">PlayingReplicator</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">TimePositionReplicator</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -36993,6 +40297,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">RollOffGain</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">double</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">TimePosition</span>
@@ -37021,6 +40334,25 @@
 	<span class="Type">SoundGroup</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">SoundGroup</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">xmlRead_MaxDistance_3</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Sound</span>
+	<span class="Name">xmlRead_MinDistance_3</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Function child">
@@ -37112,6 +40444,32 @@
 
 <div class="Event child">
 	<span class="ClassName Event">Sound</span>
+	<span class="Name">PlayingUpdatedFromClient</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">value</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Sound</span>
+	<span class="Name">PlayingUpdatedFromServer</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">value</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Sound</span>
 	<span class="Name">Resumed</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -37132,6 +40490,53 @@
 	</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">Sound</span>
+	<span class="Name">TimePositionUpdatedFromClient</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">double</span>
+			<span class="ParamName">newPositionSeconds</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">double</span>
+			<span class="ParamName">lastLuaSetTimePosition</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Sound</span>
+	<span class="Name">TimePositionUpdatedFromServer</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">double</span>
+			<span class="ParamName">newPositionSeconds</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">double</span>
+			<span class="ParamName">lastLuaSetTimePosition</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Sound</span>
+	<span class="Name">playbackActionSync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">action</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">SoundEffect</span>
 	<span class="Superclass">Instance</span>
@@ -37148,12 +40553,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">SoundEffect</span>
 	<span class="Name">Priority</span>
-</div>
-
-<div class="Class">
-	<span class="Name">AssetSoundEffect</span>
-	<span class="Superclass">SoundEffect</span>
-	<span class="Tag">[NotCreatable]</span>
 </div>
 
 <div class="Class">
@@ -37223,6 +40622,12 @@
 <div class="Class">
 	<span class="Name">CustomSoundEffect</span>
 	<span class="Superclass">SoundEffect</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">AssetSoundEffect</span>
+	<span class="Superclass">CustomSoundEffect</span>
 	<span class="Tag">[NotCreatable]</span>
 </div>
 
@@ -37598,6 +41003,19 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">SoundService</span>
+	<span class="Name">ClientLoggedEvent</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">sessionIdRaw</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Event child">
@@ -38073,6 +41491,15 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">LoadCharacterAppearance</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">LoadCharacterLayeredClothing</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">LoadCharacterLayeredClothing</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -38715,6 +42142,12 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Auto Closing Quotes</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Auto Delete Closing Brackets and Quotes</span>
 </div>
 
 <div class="Property child">
@@ -40550,6 +43983,113 @@
 </div>
 
 <div class="Class">
+	<span class="Name">TeamCreateData</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">TeamCreateData</span>
+	<span class="Name">InitialCameraCFrame</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">TeamCreatePublishService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TeamCreatePublishService</span>
+	<span class="Name">TeamCreatePublishResult</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">publishSuccessful</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">statusCode</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">errMessage</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">rawMessage</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TeamCreatePublishService</span>
+	<span class="Name">TeamCreateReplicatedMessage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">MessageType</span>
+			<span class="ParamName">messageType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">message</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">printToStatusBar</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">statusCode</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isPublish</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">authorName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TeamCreatePublishService</span>
+	<span class="Name">TeamCreateSaveResult</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">saveSuccessful</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">statusCode</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">errMessage</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">rawMessage</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">TeamCreateService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -40996,6 +44536,23 @@
 
 <div class="Event child">
 	<span class="ClassName Event">TeleportService</span>
+	<span class="Name">TeleportInProgress</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">teleportInfo</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TeleportService</span>
 	<span class="Name">TeleportInitFailed</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -41020,6 +44577,32 @@
 			<span class="ParamName">teleportOptions</span>
 		</span>
 	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TeleportService</span>
+	<span class="Name">TeleportInitFailedInternal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">TeleportResult</span>
+			<span class="ParamName">teleportResult</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">errorMessage</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">guid</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class">
@@ -41091,9 +44674,44 @@
 	<span class="Name">StudsPerTile</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">TerrainDetail</span>
+	<span class="Name">TexturePack</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">TerrainRegion</span>
 	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3int16</span>
+	<span class="ClassName Property">TerrainRegion</span>
+	<span class="Name">ExtentsMax</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3int16</span>
+	<span class="ClassName Property">TerrainRegion</span>
+	<span class="Name">ExtentsMin</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">TerrainRegion</span>
+	<span class="Name">GridV3</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[WriteOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property deprecated child">
@@ -41109,6 +44727,15 @@
 	<span class="ClassName Property">TerrainRegion</span>
 	<span class="Name">SizeInCells</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">TerrainRegion</span>
+	<span class="Name">SmoothGrid</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Function child">
@@ -42018,6 +45645,73 @@
 
 <div class="Event child">
 	<span class="ClassName Event">TextChatService</span>
+	<span class="Name">ClientToServerMessageReplicateSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">text</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">prefixText</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">metadata</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">messageId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">TextSource</span>
+			<span class="ParamName">textSource</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">TextChannel</span>
+			<span class="ParamName">textChannel</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">TextChatMessageStatus</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TextChatService</span>
+	<span class="Name">ClientToServerMessageReplicateSignalV2</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">text</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">metadata</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">messageId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">TextSource</span>
+			<span class="ParamName">textSource</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">TextChannel</span>
+			<span class="ParamName">textChannel</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TextChatService</span>
 	<span class="Name">MessageReceived</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -42036,6 +45730,48 @@
 			<span class="ParamName">textChatMessage</span>
 		</span>
 	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">TextChatService</span>
+	<span class="Name">ServerToClientMessageReplicateSignal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">text</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">prefixText</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">metadata</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">messageId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">TextSource</span>
+			<span class="ParamName">textSource</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">TextChannel</span>
+			<span class="ParamName">textChannel</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">timestamp</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">TextChatMessageStatus</span>
+			<span class="ParamName">status</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Callback child">
@@ -42211,6 +45947,14 @@
 	<span class="ClassName Property">TextSource</span>
 	<span class="Name">UserId</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">TextSource</span>
+	<span class="Name">UserIdReplicated</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Class">
@@ -42642,6 +46386,13 @@
 	<span class="ClassName Function">Trail</span>
 	<span class="Name">Clear</span>
 	<span class="Parameters"></span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Trail</span>
+	<span class="Name">OnClearRequested</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Class">
@@ -43669,6 +47420,15 @@
 	<span class="Tag">[Service]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">UnvalidatedAssetService</span>
+	<span class="Name">CachedData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">UnvalidatedAssetService</span>
@@ -43841,6 +47601,35 @@
 <div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">CompletedTutorials</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">ComputerCameraMovementChanged</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">ComputerMovementChanged</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">DefaultCameraID</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -44007,6 +47796,26 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">TouchCameraMovementChanged</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">TouchMovementChanged</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">UsedCoreGuiIsVisibleToggle</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -44051,6 +47860,16 @@
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">VignetteEnabled</span>
 	<span class="Security">{✏️RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">gaID</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Function child">
@@ -44278,6 +48097,12 @@
 	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">MouseEnabled</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">UserInputService</span>
+	<span class="Name">MouseIcon</span>
 </div>
 
 <div class="Property child">
@@ -45343,6 +49168,14 @@
 	<span class="Superclass">ValueBase</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">BinaryStringValue</span>
+	<span class="Name">Value</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Event child">
 	<span class="ClassName Event">BinaryStringValue</span>
 	<span class="Name">Changed</span>
@@ -45726,6 +49559,159 @@
 	<span class="ClassName Property">VersionControlService</span>
 	<span class="Name">ScriptCollabEnabled</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VersionControlService</span>
+	<span class="Name">ScriptCollabVersionHistoryEnabled</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VersionControlService</span>
+	<span class="Name">CommitRejectedInfo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">reason</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VersionControlService</span>
+	<span class="Name">LockedScriptBatchCommit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">scriptGuidTuple</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">scriptTextTuple</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">commitMessage</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VersionControlService</span>
+	<span class="Name">RequestAllEditorsSignal</span>
+	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VersionControlService</span>
+	<span class="Name">ScriptBatchCommit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">scriptGuidTuple</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">scriptHashBaseTuple</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">scriptTextTuple</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">commitMessage</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VersionControlService</span>
+	<span class="Name">ScriptChangesSubmitted</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">scriptGuid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">submitted</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VersionControlService</span>
+	<span class="Name">ScriptEditorAdded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">scriptGuid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">editor</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VersionControlService</span>
+	<span class="Name">ScriptEditorRemoved</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">scriptGuid</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">editor</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VersionControlService</span>
+	<span class="Name">ScriptStartEdit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">scriptGuid</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VersionControlService</span>
+	<span class="Name">ScriptStopEdit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">scriptGuid</span>
+		</span>
+	</span>
+	<span class="Security">{LocalUserSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 </div>
 
@@ -46934,6 +50920,32 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">WeldConstraint</span>
+	<span class="Name">State</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">WeldConstraint</span>
+	<span class="Name">CFrame0</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">WeldConstraint</span>
+	<span class="Name">CFrame1</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">BasePart</span>
 	<span class="ClassName Property">WeldConstraint</span>
 	<span class="Name">Part0</span>
@@ -46944,9 +50956,25 @@
 <div class="Property child">
 	<span class="Type">BasePart</span>
 	<span class="ClassName Property">WeldConstraint</span>
+	<span class="Name">Part0Internal</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BasePart</span>
+	<span class="ClassName Property">WeldConstraint</span>
 	<span class="Name">Part1</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BasePart</span>
+	<span class="ClassName Property">WeldConstraint</span>
+	<span class="Name">Part1Internal</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Enum">
@@ -48870,6 +52898,46 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">CatalogSortAggregation</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CatalogSortAggregation</span>
+	<span class="Name">Past12Hours</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CatalogSortAggregation</span>
+	<span class="Name">PastDay</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CatalogSortAggregation</span>
+	<span class="Name">Past3Days</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CatalogSortAggregation</span>
+	<span class="Name">PastWeek</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CatalogSortAggregation</span>
+	<span class="Name">PastMonth</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CatalogSortAggregation</span>
+	<span class="Name">AllTime</span>
+	<span class="Value">6</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">CatalogSortType</span>
 </div>
 
@@ -48901,6 +52969,12 @@
 	<span class="EnumName">CatalogSortType</span>
 	<span class="Name">RecentlyCreated</span>
 	<span class="Value">6</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CatalogSortType</span>
+	<span class="Name">Bestselling</span>
+	<span class="Value">7</span>
 </div>
 
 <div class="Enum">
@@ -51021,6 +55095,18 @@
 
 <div class="Enum">
 	<span class="Name">ExperienceAuthScope</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ExperienceAuthScope</span>
+	<span class="Name">DefaultScope</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ExperienceAuthScope</span>
+	<span class="Name">CreatorAssetsCreate</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
@@ -56454,13 +60540,13 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">RaycastFilterType</span>
-	<span class="Name">Blacklist</span>
+	<span class="Name">Exclude</span>
 	<span class="Value">0</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">RaycastFilterType</span>
-	<span class="Name">Whitelist</span>
+	<span class="Name">Include</span>
 	<span class="Value">1</span>
 </div>
 
@@ -57061,6 +61147,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">SalesTypeFilter</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SalesTypeFilter</span>
+	<span class="Name">All</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SalesTypeFilter</span>
+	<span class="Name">Collectibles</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SalesTypeFilter</span>
+	<span class="Name">Premium</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">SaveAvatarThumbnailCustomizationFailure</span>
 </div>
 
@@ -57226,6 +61334,48 @@
 
 <div class="Enum">
 	<span class="Name">ScopeCheckResult</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ScopeCheckResult</span>
+	<span class="Name">ConsentAccepted</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ScopeCheckResult</span>
+	<span class="Name">InvalidScopes</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ScopeCheckResult</span>
+	<span class="Name">Timeout</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ScopeCheckResult</span>
+	<span class="Name">NoUserInput</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ScopeCheckResult</span>
+	<span class="Name">BackendError</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ScopeCheckResult</span>
+	<span class="Name">UnexpectedError</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ScopeCheckResult</span>
+	<span class="Name">InvalidArgument</span>
+	<span class="Value">6</span>
 </div>
 
 <div class="Enum">

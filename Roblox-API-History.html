@@ -11,6 +11,838 @@
 	</ul>
 </head>
 
+<hr id="563"/>
+<h2>Version 0.563.0.5630392</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">PatchMapping</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">PatchMapping</span>
+				<span class="Name">FlattenTree</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">PatchMapping</span>
+				<span class="Name">PatchId</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">PatchMapping</span>
+				<span class="Name">TargetPath</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">SafetyService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">int64</span>
+				<span class="ClassName Function">SafetyService</span>
+				<span class="Name">TakeScreenshot</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Dictionary</span>
+						<span class="ParamName">screenshotOptions</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">SafetyService</span>
+				<span class="Name">ScreenshotContentReady</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">int64</span>
+						<span class="ParamName">screenshotJobId</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Content</span>
+						<span class="ParamName">contentId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">TeamCreatePublishService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">TeamCreatePublishService</span>
+				<span class="Name">TeamCreatePublishResult</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">bool</span>
+						<span class="ParamName">publishSuccessful</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">statusCode</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">errMessage</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">rawMessage</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">TeamCreatePublishService</span>
+				<span class="Name">TeamCreateReplicatedMessage</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="EnumName Type">Enum</span>
+						<span class="Type">MessageType</span>
+						<span class="ParamName">messageType</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">message</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">bool</span>
+						<span class="ParamName">printToStatusBar</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">statusCode</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">bool</span>
+						<span class="ParamName">isPublish</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">authorName</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">TeamCreatePublishService</span>
+				<span class="Name">TeamCreateSaveResult</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">bool</span>
+						<span class="ParamName">saveSuccessful</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">statusCode</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">errMessage</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">rawMessage</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Auto Delete Closing Brackets and Quotes</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">Content</span>
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">MouseIcon</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Array</span>
+			<span class="ClassName Function">AssetImportService</span>
+			<span class="Name">PickMultipleFilesWithPrompt</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">AssetImportSession</span>
+			<span class="ClassName Function">AssetImportService</span>
+			<span class="Name">StartSessionWithPath</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">filePath</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">CatalogSortAggregation</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CatalogSortAggregation</span>
+				<span class="Name">Past12Hours</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CatalogSortAggregation</span>
+				<span class="Name">PastDay</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CatalogSortAggregation</span>
+				<span class="Name">Past3Days</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CatalogSortAggregation</span>
+				<span class="Name">PastWeek</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CatalogSortAggregation</span>
+				<span class="Name">PastMonth</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CatalogSortAggregation</span>
+				<span class="Name">AllTime</span>
+				<span class="Value">6</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">SalesTypeFilter</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SalesTypeFilter</span>
+				<span class="Name">All</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SalesTypeFilter</span>
+				<span class="Name">Collectibles</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">SalesTypeFilter</span>
+				<span class="Name">Premium</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">CatalogSortType</span>
+			<span class="Name">Bestselling</span>
+			<span class="Value">7</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ExperienceAuthScope</span>
+			<span class="Name">DefaultScope</span>
+			<span class="Value">0</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ExperienceAuthScope</span>
+			<span class="Name">CreatorAssetsCreate</span>
+			<span class="Value">1</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">RaycastFilterType</span>
+			<span class="Name">Exclude</span>
+			<span class="Value">0</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">RaycastFilterType</span>
+			<span class="Name">Include</span>
+			<span class="Value">1</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ScopeCheckResult</span>
+			<span class="Name">ConsentAccepted</span>
+			<span class="Value">0</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ScopeCheckResult</span>
+			<span class="Name">InvalidScopes</span>
+			<span class="Value">1</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ScopeCheckResult</span>
+			<span class="Name">Timeout</span>
+			<span class="Value">2</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ScopeCheckResult</span>
+			<span class="Name">NoUserInput</span>
+			<span class="Value">3</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ScopeCheckResult</span>
+			<span class="Name">BackendError</span>
+			<span class="Value">4</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ScopeCheckResult</span>
+			<span class="Name">UnexpectedError</span>
+			<span class="Value">5</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ScopeCheckResult</span>
+			<span class="Name">InvalidArgument</span>
+			<span class="Value">6</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">superclass</span>
+	<span class="Class">
+		<span class="Name">AssetSoundEffect</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="String">SoundEffect</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="String">CustomSoundEffect</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">Instance</span>
+		<span class="Name">GetActor</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">LiveScriptingService</span>
+		<span class="Name">SendOperation</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">LuaSourceContainer</span>
+					<span class="ParamName">script</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">op</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">LuaSourceContainer</span>
+					<span class="ParamName">script</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">op</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ReflectionMetadataClass</span>
+			<span class="Name">InsertableService</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">RaycastFilterType</span>
+			<span class="Name">Blacklist</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">RaycastFilterType</span>
+			<span class="Name">Whitelist</span>
+		</span>
+	</span>
+</div>
+<hr id="562"/>
+<h2>Version 0.562.0.5620360</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">TeamCreateData</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">CFrame</span>
+				<span class="ClassName Property">TeamCreateData</span>
+				<span class="Name">InitialCameraCFrame</span>
+				<span class="Security">{RobloxSecurity}</span>
+				<span class="Tag">[Hidden]</span>
+				<span class="Tag">[NotScriptable]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Model</span>
+			<span class="Name">Scale</span>
+			<span class="Tag">[NotReplicated]</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Model</span>
+			<span class="Name">ScaleFactor</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ReflectionMetadataClass</span>
+			<span class="Name">InsertableService</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">IsSpatial</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Sound</span>
+			<span class="Name">RollOffGain</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[ReadOnly]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Camera</span>
+			<span class="Name">ZoomToExtents</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">CFrame</span>
+					<span class="ParamName">boundingBoxCFrame</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">boundingBoxSize</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">float</span>
+			<span class="ClassName Function">Model</span>
+			<span class="Name">GetScale</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Model</span>
+			<span class="Name">ScaleTo</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">newScaleFactor</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">LiveScriptingService</span>
+			<span class="Name">OpenedWithSource</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">LuaSourceContainer</span>
+					<span class="ParamName">script</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">source</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">ClientReplicator</span>
+		<span class="Name">RequestServerScriptProfiling</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">start</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">start</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int?</span>
+					<span class="ParamName">frequency</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Function">
+		<span class="ClassName Function">ScriptContext</span>
+		<span class="Name">StartScriptProfiling</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change"></span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">int?</span>
+					<span class="ParamName">frequency</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">return-type</span>
+	<span class="Function">
+		<span class="ClassName Function">ScriptContext</span>
+		<span class="Name">StopScriptProfiling</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Type">Dictionary</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Type">string</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">Player</span>
+		<span class="Name">GetNetworkPing</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="TagChange singular from">
+		<span class="Tag">[CustomLuaState]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">ScriptContext</span>
+			<span class="Name">StopScriptProfiling</span>
+		</span>
+	</span>
+</div>
+
 <hr id="561"/>
 <h2>Version 0.561.0.5610360</h2>
 
