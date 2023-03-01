@@ -672,6 +672,28 @@
 	<span class="Tag">[Service]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">AdService</span>
+	<span class="Name">GetAdTeleportInfo</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AdService</span>
+	<span class="Name">ReturnToPublisherExperience</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AdTeleportMethod</span>
+			<span class="ParamName">adTeleportMethod</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AdService</span>
@@ -981,6 +1003,24 @@
 	<span class="Name">AnimationClip</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">AnimationClip</span>
+	<span class="Name">Guid</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationClip</span>
+	<span class="Name">GuidBinaryString</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -9125,6 +9165,18 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">ControllerSensor</span>
+	<span class="ClassName Property">ControllerManager</span>
+	<span class="Name">ClimbSensor</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">ControllerSensor</span>
+	<span class="ClassName Property">ControllerManager</span>
+	<span class="Name">GroundSensor</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">ControllerManager</span>
 	<span class="Name">FacingDirection</span>
@@ -9399,24 +9451,6 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotBrowsable]</span>
-</div>
-
-<div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">LevelOfDetailSetting</span>
-	<span class="ClassName Property">DataModelMesh</span>
-	<span class="Name">LODX</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">LevelOfDetailSetting</span>
-	<span class="ClassName Property">DataModelMesh</span>
-	<span class="Name">LODY</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -16298,7 +16332,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ScreenGui</span>
 	<span class="Name">ClipToDeviceSafeArea</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -16306,7 +16339,6 @@
 	<span class="Type">SafeAreaCompatibility</span>
 	<span class="ClassName Property">ScreenGui</span>
 	<span class="Name">SafeAreaCompatibility</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -16796,6 +16828,12 @@
 <div class="Class">
 	<span class="Name">WireframeHandleAdornment</span>
 	<span class="Superclass">HandleAdornment</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">WireframeHandleAdornment</span>
+	<span class="Name">Scale</span>
 </div>
 
 <div class="Function child">
@@ -25678,6 +25716,31 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">MakeRequest</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">protocolName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">methodName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">message</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MessageBusService</span>
 	<span class="Name">Publish</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -25741,6 +25804,27 @@
 		<span class="Parameter">
 			<span class="Type">Variant</span>
 			<span class="ParamName">customTelemetryData</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MessageBusService</span>
+	<span class="Name">SetRequestHandler</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">protocolName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">methodName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -28705,6 +28789,23 @@
 	</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">Terrain</span>
+	<span class="Name">GetTerrainWireframe</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">cframe</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">size</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">Tuple</span>
 	<span class="ClassName Function">Terrain</span>
@@ -28724,14 +28825,6 @@
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">Terrain</span>
-	<span class="Name">HideTerrainRegion</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -28879,23 +28972,6 @@
 	</span>
 </div>
 
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">Terrain</span>
-	<span class="Name">SetTerrainRegion</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">CFrame</span>
-			<span class="ParamName">cframe</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Vector3</span>
-			<span class="ParamName">size</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
 <div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Terrain</span>
@@ -28925,31 +29001,6 @@
 		</span>
 	</span>
 	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">Terrain</span>
-	<span class="Name">SetWireframeRegion</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">CFrame</span>
-			<span class="ParamName">cframe</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Vector3</span>
-			<span class="ParamName">size</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">Terrain</span>
-	<span class="Name">ShowTerrainRegion</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -30380,14 +30431,6 @@
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">AllowThirdPartySales</span>
 	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">NewAnimationRuntimeSetting</span>
-	<span class="ClassName Property">Workspace</span>
-	<span class="Name">AnimationWeightedBlendFix</span>
-	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -34144,6 +34187,14 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Players</span>
+	<span class="Name">ResetLocalPlayer</span>
+	<span class="Parameters"></span>
+	<span class="Security">{LocalUserSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Players</span>
 	<span class="Name">SetChatStyle</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -37789,6 +37840,22 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">SafetyService</span>
+	<span class="Name">ScreenshotUploaded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">screenshotJobId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">screenshotId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">ScreenshotHud</span>
 	<span class="Superclass">Instance</span>
@@ -38937,6 +39004,93 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">SensorBase</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">SensorUpdateType</span>
+	<span class="ClassName Property">SensorBase</span>
+	<span class="Name">UpdateType</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SensorBase</span>
+	<span class="Name">Sense</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">SensorBase</span>
+	<span class="Name">OnSensorOutputChanged</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Class">
+	<span class="Name">BuoyancySensor</span>
+	<span class="Superclass">SensorBase</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BuoyancySensor</span>
+	<span class="Name">FullySubmerged</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BuoyancySensor</span>
+	<span class="Name">TouchingSurface</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ControllerSensor</span>
+	<span class="Superclass">SensorBase</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ControllerPartSensor</span>
+	<span class="Superclass">ControllerSensor</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ControllerPartSensor</span>
+	<span class="Name">SearchDistance</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">SensorMode</span>
+	<span class="ClassName Property">ControllerPartSensor</span>
+	<span class="Name">SensorMode</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">ControllerPartSensor</span>
+	<span class="Name">HitFrame</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">ControllerPartSensor</span>
+	<span class="Name">HitNormal</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BasePart</span>
+	<span class="ClassName Property">ControllerPartSensor</span>
+	<span class="Name">SensedPart</span>
 </div>
 
 <div class="Class">
@@ -46191,6 +46345,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">ThirdPartyUserService</span>
+	<span class="Name">IsOver13</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">int</span>
 	<span class="ClassName Function">ThirdPartyUserService</span>
 	<span class="Name">RegisterActiveUser</span>
@@ -47774,6 +47936,16 @@
 	<span class="Type">TouchMovementMode</span>
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">TouchMovementMode</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">VRPlayMode</span>
+	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">VRPlayMode</span>
+	<span class="Security">{✏️RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -51429,6 +51601,40 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">AdTeleportMethod</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AdTeleportMethod</span>
+	<span class="Name">Undefined</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AdTeleportMethod</span>
+	<span class="Name">PortalForward</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AdTeleportMethod</span>
+	<span class="Name">PortalReturn</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AdTeleportMethod</span>
+	<span class="Name">InGameMenuBackButton</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AdTeleportMethod</span>
+	<span class="Name">UIBackButton</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">AdornCullingMode</span>
 </div>
 
@@ -54436,6 +54642,28 @@
 	<span class="EnumName">CreatorType</span>
 	<span class="Name">Group</span>
 	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">CreatorTypeFilter</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CreatorTypeFilter</span>
+	<span class="Name">User</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CreatorTypeFilter</span>
+	<span class="Name">Group</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CreatorTypeFilter</span>
+	<span class="Name">All</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
@@ -58756,32 +58984,6 @@
 	<span class="Value">2</span>
 </div>
 
-<div class="Enum deprecated">
-	<span class="Name">LevelOfDetailSetting</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="EnumItem deprecated child">
-	<span class="EnumName">LevelOfDetailSetting</span>
-	<span class="Name">Low</span>
-	<span class="Value">0</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="EnumItem deprecated child">
-	<span class="EnumName">LevelOfDetailSetting</span>
-	<span class="Name">Medium</span>
-	<span class="Value">1</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="EnumItem deprecated child">
-	<span class="EnumName">LevelOfDetailSetting</span>
-	<span class="Name">High</span>
-	<span class="Value">2</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
 <div class="Enum">
 	<span class="Name">Limb</span>
 </div>
@@ -59624,28 +59826,6 @@
 <div class="EnumItem child">
 	<span class="EnumName">NetworkOwnership</span>
 	<span class="Name">OnContact</span>
-	<span class="Value">2</span>
-</div>
-
-<div class="Enum">
-	<span class="Name">NewAnimationRuntimeSetting</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">NewAnimationRuntimeSetting</span>
-	<span class="Name">Default</span>
-	<span class="Value">0</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">NewAnimationRuntimeSetting</span>
-	<span class="Name">Disabled</span>
-	<span class="Value">1</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">NewAnimationRuntimeSetting</span>
-	<span class="Name">Enabled</span>
 	<span class="Value">2</span>
 </div>
 
@@ -61770,6 +61950,38 @@
 <div class="EnumItem child">
 	<span class="EnumName">SelectionBehavior</span>
 	<span class="Name">Stop</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">SensorMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SensorMode</span>
+	<span class="Name">Floor</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SensorMode</span>
+	<span class="Name">Ladder</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">SensorUpdateType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SensorUpdateType</span>
+	<span class="Name">OnRead</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SensorUpdateType</span>
+	<span class="Name">Manual</span>
 	<span class="Value">1</span>
 </div>
 
@@ -64385,6 +64597,12 @@
 	<span class="Value">2</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">UserCFrame</span>
+	<span class="Name">Floor</span>
+	<span class="Value">3</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">UserInputState</span>
 </div>
@@ -64547,6 +64765,22 @@
 	<span class="EnumName">UserInputType</span>
 	<span class="Name">None</span>
 	<span class="Value">22</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">VRPlayMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VRPlayMode</span>
+	<span class="Name">Seated</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VRPlayMode</span>
+	<span class="Name">Standing</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">

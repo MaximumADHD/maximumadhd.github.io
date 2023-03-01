@@ -1,104 +1,92 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/68e83985f9fcd6fa0a9b4088ea0733fb382de615
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/4533d4033c50b9e46b6ff0998de07f26930e8053
 
 ## API Changes
 
 ```plain
-Added Class ImageDataExperimental : Instance [NotCreatable]
-	Added Property Vector2 ImageDataExperimental.Size
-	Added Property Content ImageDataExperimental.TemporaryId [ReadOnly]
-	Added Function void ImageDataExperimental:PopulateFromImageAsync(Content textureId) [Yields]
+Added Class SensorBase : Instance [NotCreatable]
+	Added Property Enum.SensorUpdateType SensorBase.UpdateType
+	Added Function void SensorBase:Sense()
+	Added Event SensorBase.OnSensorOutputChanged()
 
-Added Class PatchBundlerFileWatch : Instance [NotCreatable] [Service] [NotReplicated]
+Added Class BuoyancySensor : SensorBase [NotBrowsable]
+	Added Property bool BuoyancySensor.FullySubmerged
+	Added Property bool BuoyancySensor.TouchingSurface
 
-Added Class SharedTableRegistry : Instance [NotCreatable] [Service] [NotReplicated]
-	Added Function SharedTable SharedTableRegistry:GetSharedTable(string name) {🧬Safe}
-	Added Function void SharedTableRegistry:SetSharedTable(string name, SharedTable? st) {🧬Safe}
+Added Class ControllerSensor : SensorBase [NotCreatable]
 
-Added Class SyncScriptBuilder : ScriptBuilder [NotCreatable] [NotReplicated]
-	Added Property bool SyncScriptBuilder.CoverageInfo
-	Added Property bool SyncScriptBuilder.DebugInfo
-	Added Property bool SyncScriptBuilder.PackAsSource
-	Added Property bool SyncScriptBuilder.RawBytecode
+Added Class ControllerPartSensor : ControllerSensor [NotBrowsable]
+	Added Property float ControllerPartSensor.SearchDistance
+	Added Property Enum.SensorMode ControllerPartSensor.SensorMode
+	Added Property CFrame ControllerPartSensor.HitFrame
+	Added Property Vector3 ControllerPartSensor.HitNormal
+	Added Property BasePart ControllerPartSensor.SensedPart
 
-Added Class TextureGuiExperimental : LayerCollector [NotCreatable]
-	Added Property Vector2 TextureGuiExperimental.Size
-	Added Property Content TextureGuiExperimental.TemporaryId [ReadOnly]
+Added Property string AnimationClip.Guid {RobloxScriptSecurity} [Hidden] [NotReplicated]
+Added Property BinaryString AnimationClip.GuidBinaryString {RobloxScriptSecurity} [Hidden] [NotScriptable]
+Added Property ControllerSensor ControllerManager.ClimbSensor
+Added Property ControllerSensor ControllerManager.GroundSensor
+Added Property Enum.VRPlayMode UserGameSettings.VRPlayMode {✏️RobloxScriptSecurity} [Hidden] [NotReplicated]
+Added Property Vector3 WireframeHandleAdornment.Scale
 
-Added Class IntersectOperation : PartOperation
+Added Function Tuple AdService:GetAdTeleportInfo() {RobloxScriptSecurity}
+Added Function void AdService:ReturnToPublisherExperience(Enum.AdTeleportMethod adTeleportMethod) {RobloxScriptSecurity}
+Added Function void MessageBusService:MakeRequest(string protocolName, string methodName, Variant message, Function callback) {RobloxScriptSecurity}
+Added Function void MessageBusService:SetRequestHandler(string protocolName, string methodName, Function callback) {RobloxScriptSecurity}
+Added Function void Players:ResetLocalPlayer() {LocalUserSecurity}
+Added Function Array Terrain:GetTerrainWireframe(CFrame cframe, Vector3 size) {RobloxScriptSecurity}
+Added Function bool ThirdPartyUserService:IsOver13() {RobloxScriptSecurity}
 
-Added Property Enum.RigScale ImporterRootSettings.RigScale
-Added Property bool ImporterRootSettings.UseSceneOriginAsCFrame
-Added Property Enum.ServiceVisibility ReflectionMetadataClass.ServiceVisibility {RobloxSecurity} [Hidden] [NotReplicated]
-Added Property Enum.RtlTextSupport StarterGui.RtlTextSupport [NotScriptable]
+Added Event SafetyService.ScreenshotUploaded(int64 screenshotJobId, string screenshotId) {RobloxScriptSecurity}
 
-Added Function bool AssetImportSession:IsR15() {RobloxScriptSecurity}
-Added Function Instance BasePart:IntersectAsync(Objects parts, Enum.CollisionFidelity collisionfidelity = "Default", Enum.RenderFidelity renderFidelity = "Automatic") [Yields]
-Added Function Enum.AssetFetchStatus ContentProvider:GetAssetFetchStatus(Content contentId)
-Added Function RBXScriptSignal ContentProvider:GetAssetFetchStatusChangedSignal(Content contentId)
+Added Enum AdTeleportMethod
+	Added EnumItem AdTeleportMethod.Undefined : 0
+	Added EnumItem AdTeleportMethod.PortalForward : 1
+	Added EnumItem AdTeleportMethod.PortalReturn : 2
+	Added EnumItem AdTeleportMethod.InGameMenuBackButton : 3
+	Added EnumItem AdTeleportMethod.UIBackButton : 4
 
-Added Enum AvatarThumbnailCustomizationType
-	Added EnumItem AvatarThumbnailCustomizationType.Closeup : 1
-	Added EnumItem AvatarThumbnailCustomizationType.FullBody : 2
+Added Enum CreatorTypeFilter
+	Added EnumItem CreatorTypeFilter.User : 0
+	Added EnumItem CreatorTypeFilter.Group : 1
+	Added EnumItem CreatorTypeFilter.All : 2
 
-Added Enum RigScale
-	Added EnumItem RigScale.Default : 0
-	Added EnumItem RigScale.Rthro : 1
-	Added EnumItem RigScale.RthroNarrow : 2
+Added Enum SensorMode
+	Added EnumItem SensorMode.Floor : 0
+	Added EnumItem SensorMode.Ladder : 1
 
-Added Enum RtlTextSupport
-	Added EnumItem RtlTextSupport.Default : 0
-	Added EnumItem RtlTextSupport.Disabled : 1
-	Added EnumItem RtlTextSupport.Enabled : 2
+Added Enum SensorUpdateType
+	Added EnumItem SensorUpdateType.OnRead : 0
+	Added EnumItem SensorUpdateType.Manual : 1
 
-Added Enum ServiceVisibility
-	Added EnumItem ServiceVisibility.Always : 0
-	Added EnumItem ServiceVisibility.Off : 1
-	Added EnumItem ServiceVisibility.WithChildren : 2
+Added Enum VRPlayMode
+	Added EnumItem VRPlayMode.Seated : 0
+	Added EnumItem VRPlayMode.Standing : 1
 
-Added EnumItem AssetFetchStatus.None : 2
-Added EnumItem AssetFetchStatus.Loading : 3
-Added EnumItem AssetFetchStatus.TimedOut : 4
+Added EnumItem UserCFrame.Floor : 3
 
-Added Tag [Deprecated] to Function BasePart:BreakJoints
-Added Tag [Deprecated] to Function BasePart:MakeJoints
-Added Tag [Deprecated] to Function Model:BreakJoints
-Added Tag [Deprecated] to Function Model:MakeJoints
-Added Tag [Deprecated] to Function Workspace:BreakJoints
-Added Tag [Deprecated] to Function Workspace:MakeJoints
+Removed Property DataModelMesh.LODX
+Removed Property DataModelMesh.LODY
+Removed Property Workspace.AnimationWeightedBlendFix
 
-Changed the memory category of Class HopperBin 
-	from: "Instances"
-	  to: "PhysicsParts"
+Removed Function Terrain:HideTerrainRegion
+Removed Function Terrain:SetTerrainRegion
+Removed Function Terrain:SetWireframeRegion
+Removed Function Terrain:ShowTerrainRegion
 
-Changed the memory category of Class Tool 
-	from: "Instances"
-	  to: "PhysicsParts"
+Removed Enum LevelOfDetailSetting
+	Removed EnumItem LevelOfDetailSetting.Low
+	Removed EnumItem LevelOfDetailSetting.Medium
+	Removed EnumItem LevelOfDetailSetting.High
 
-Changed the memory category of Class Flag 
-	from: "Instances"
-	  to: "PhysicsParts"
+Removed Enum NewAnimationRuntimeSetting
+	Removed EnumItem NewAnimationRuntimeSetting.Default
+	Removed EnumItem NewAnimationRuntimeSetting.Disabled
+	Removed EnumItem NewAnimationRuntimeSetting.Enabled
 
-Changed the superclass and memory category of Class BackpackItem 
-	from: "Instance" "Instances"
-	  to: "Model" "PhysicsParts"
-
-Changed the parameters of Function AvatarEditorService:NoPromptSaveAvatarThumbnailCustomization 
-	from: (int thumbnailType, int64 emoteAssetId, float cameraDistanceScale, float yRotDeg, float fieldOfViewDeg = 0)
-	  to: (Enum.AvatarThumbnailCustomizationType thumbnailType, int64 emoteAssetId, float cameraDistanceScale, float yRotDeg, float fieldOfViewDeg = 0)
-
-Changed the parameters of Function DataStore:ListKeysAsync 
-	from: (string prefix = "", int pageSize = 0, string cursor = "")
-	  to: (string prefix = "", int pageSize = 0, string cursor = "", bool excludeDeleted = false)
-
-Removed Class DynamicTextureAlpha
-	Removed Function DynamicTextureAlpha:CreateLayer
-
-Removed Class DynamicTextureLayerAlpha
-	Removed Property DynamicTextureLayerAlpha.ZIndex
-
-Removed Property AirController.CancelAirMomentum
+Removed Tag [NotBrowsable] from Property ScreenGui.ClipToDeviceSafeArea
+Removed Tag [NotBrowsable] from Property ScreenGui.SafeAreaCompatibility
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#564) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#565) for a syntax highlighted version!)
