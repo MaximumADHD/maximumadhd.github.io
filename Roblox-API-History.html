@@ -11,6 +11,566 @@
 	</ul>
 </head>
 
+<hr id="566"/>
+<h2>Version 0.566.0.5660545</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">FacialAnimationStreamingServiceStats</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">int64</span>
+				<span class="ClassName Function">FacialAnimationStreamingServiceStats</span>
+				<span class="Name">Get</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">label</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">int64</span>
+				<span class="ClassName Function">FacialAnimationStreamingServiceStats</span>
+				<span class="Name">GetWithPlayerId</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">label</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">int64</span>
+						<span class="ParamName">playerId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">MaterialGenerationService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">MaterialGenerationSession</span>
+				<span class="ClassName Function">MaterialGenerationService</span>
+				<span class="Name">StartSession</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">MaterialGenerationSession</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Array</span>
+				<span class="ClassName Function">MaterialGenerationSession</span>
+				<span class="Name">GenerateImagesAsync</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">prompt</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Dictionary</span>
+						<span class="ParamName">options</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Dictionary</span>
+				<span class="ClassName Function">MaterialGenerationSession</span>
+				<span class="Name">GenerateMaterialAsync</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">imageId</span>
+					</span>
+				</span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Animator</span>
+			<span class="Name">EvaluationThrottled</span>
+			<span class="Tag">[ReadOnly]</span>
+			<span class="Tag">[NotBrowsable]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">ImporterRootSettings</span>
+			<span class="Name">ExistingPackageId</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ImporterRootSettings</span>
+			<span class="Name">ImportAsPackage</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Selection</span>
+			<span class="Name">ShowBoundingBox</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">FacialAnimationStreamingServiceStats</span>
+			<span class="ClassName Function">FacialAnimationStreamingServiceV2</span>
+			<span class="Name">GetStats</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">string</span>
+			<span class="ClassName Function">RbxAnalyticsService</span>
+			<span class="Name">GetPlaySessionId</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Terrain</span>
+			<span class="Name">ReplaceMaterialInTransform</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">CFrame</span>
+					<span class="ParamName">cframe</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">size</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">Material</span>
+					<span class="ParamName">sourceMaterial</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">Material</span>
+					<span class="ParamName">targetMaterial</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Terrain</span>
+			<span class="Name">SetMaterialInTransform</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">CFrame</span>
+					<span class="ParamName">cframe</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">size</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">Material</span>
+					<span class="ParamName">targetMaterial</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">AssetImportSession</span>
+			<span class="Name">UploadCompleteDeprecated</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">succeeded</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">errorMap</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">FaceAnimatorService</span>
+			<span class="Name">TrackerPrompt</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">TrackerPromptEvent</span>
+					<span class="ParamName">prompt</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">VoiceChatService</span>
+			<span class="Name">VoiceChatPlayerMuteStateChangedClientToServer</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">MuteState</span>
+					<span class="ParamName">muteState</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">VoiceChatService</span>
+			<span class="Name">VoiceChatPlayerMuteStateChangedServerToClient</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">MuteState</span>
+					<span class="ParamName">muteState</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">MuteState</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">MuteState</span>
+				<span class="Name">Unmuted</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">MuteState</span>
+				<span class="Name">Muted</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">TrackerPromptEvent</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TrackerPromptEvent</span>
+				<span class="Name">LODCameraRecommendDisable</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">ScopeCheckResult</span>
+			<span class="Name">ConsentDenied</span>
+			<span class="Value">7</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScreenGui</span>
+			<span class="Name">ClipToDeviceSafeArea</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotBrowsable]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ScreenGui</span>
+			<span class="Name">SafeAreaCompatibility</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">read permissions</span>
+	<span class="Property">
+		<span class="ClassName Property">BaseScript</span>
+		<span class="Name">RunContext</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Security">{PluginSecurity}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Security darken">{None}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">Humanoid</span>
+		<span class="Name">GetState</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">Humanoid</span>
+		<span class="Name">GetStateEnabled</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">Workspace</span>
+		<span class="Name">GetNumAwakeParts</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">Workspace</span>
+		<span class="Name">GetPhysicsThrottling</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">Workspace</span>
+		<span class="Name">GetServerTimeNow</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">parameters</span>
+	<span class="Event">
+		<span class="ClassName Event">AssetImportSession</span>
+		<span class="Name">UploadComplete</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">succeeded</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">errorMap</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Parameters change">
+				<span class="Parameter">
+					<span class="Type">Dictionary</span>
+					<span class="ParamName">results</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
 <hr id="565"/>
 <h2>Version 0.565.0.5650363</h2>
 

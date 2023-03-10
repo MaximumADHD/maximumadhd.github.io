@@ -1,92 +1,75 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/4533d4033c50b9e46b6ff0998de07f26930e8053
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/4188f76163cf609235c4b21d79720cda49bfc8a4
 
 ## API Changes
 
 ```plain
-Added Class SensorBase : Instance [NotCreatable]
-	Added Property Enum.SensorUpdateType SensorBase.UpdateType
-	Added Function void SensorBase:Sense()
-	Added Event SensorBase.OnSensorOutputChanged()
+Added Class FacialAnimationStreamingServiceStats : Instance [NotCreatable] [NotReplicated]
+	Added Function int64 FacialAnimationStreamingServiceStats:Get(string label) {RobloxScriptSecurity}
+	Added Function int64 FacialAnimationStreamingServiceStats:GetWithPlayerId(string label, int64 playerId) {RobloxScriptSecurity}
 
-Added Class BuoyancySensor : SensorBase [NotBrowsable]
-	Added Property bool BuoyancySensor.FullySubmerged
-	Added Property bool BuoyancySensor.TouchingSurface
+Added Class MaterialGenerationService : Instance [NotCreatable] [Service] [NotReplicated]
+	Added Function MaterialGenerationSession MaterialGenerationService:StartSession() {RobloxScriptSecurity}
 
-Added Class ControllerSensor : SensorBase [NotCreatable]
+Added Class MaterialGenerationSession : Instance [NotCreatable] [NotReplicated]
+	Added Function Array MaterialGenerationSession:GenerateImagesAsync(string prompt, Dictionary options) {RobloxScriptSecurity} [Yields]
+	Added Function Dictionary MaterialGenerationSession:GenerateMaterialAsync(string imageId) {RobloxScriptSecurity} [Yields]
 
-Added Class ControllerPartSensor : ControllerSensor [NotBrowsable]
-	Added Property float ControllerPartSensor.SearchDistance
-	Added Property Enum.SensorMode ControllerPartSensor.SensorMode
-	Added Property CFrame ControllerPartSensor.HitFrame
-	Added Property Vector3 ControllerPartSensor.HitNormal
-	Added Property BasePart ControllerPartSensor.SensedPart
+Added Property bool Animator.EvaluationThrottled [ReadOnly] [NotBrowsable]
+Added Property string ImporterRootSettings.ExistingPackageId
+Added Property bool ImporterRootSettings.ImportAsPackage
+Added Property bool Selection.ShowBoundingBox {RobloxScriptSecurity} [Hidden]
 
-Added Property string AnimationClip.Guid {RobloxScriptSecurity} [Hidden] [NotReplicated]
-Added Property BinaryString AnimationClip.GuidBinaryString {RobloxScriptSecurity} [Hidden] [NotScriptable]
-Added Property ControllerSensor ControllerManager.ClimbSensor
-Added Property ControllerSensor ControllerManager.GroundSensor
-Added Property Enum.VRPlayMode UserGameSettings.VRPlayMode {✏️RobloxScriptSecurity} [Hidden] [NotReplicated]
-Added Property Vector3 WireframeHandleAdornment.Scale
+Added Function FacialAnimationStreamingServiceStats FacialAnimationStreamingServiceV2:GetStats() {RobloxScriptSecurity}
+Added Function string RbxAnalyticsService:GetPlaySessionId() {RobloxScriptSecurity}
+Added Function void Terrain:ReplaceMaterialInTransform(CFrame cframe, Vector3 size, Enum.Material sourceMaterial, Enum.Material targetMaterial) {RobloxScriptSecurity}
+Added Function void Terrain:SetMaterialInTransform(CFrame cframe, Vector3 size, Enum.Material targetMaterial) {RobloxScriptSecurity}
 
-Added Function Tuple AdService:GetAdTeleportInfo() {RobloxScriptSecurity}
-Added Function void AdService:ReturnToPublisherExperience(Enum.AdTeleportMethod adTeleportMethod) {RobloxScriptSecurity}
-Added Function void MessageBusService:MakeRequest(string protocolName, string methodName, Variant message, Function callback) {RobloxScriptSecurity}
-Added Function void MessageBusService:SetRequestHandler(string protocolName, string methodName, Function callback) {RobloxScriptSecurity}
-Added Function void Players:ResetLocalPlayer() {LocalUserSecurity}
-Added Function Array Terrain:GetTerrainWireframe(CFrame cframe, Vector3 size) {RobloxScriptSecurity}
-Added Function bool ThirdPartyUserService:IsOver13() {RobloxScriptSecurity}
+Added Event AssetImportSession.UploadCompleteDeprecated(bool succeeded, Dictionary errorMap)
+Added Event FaceAnimatorService.TrackerPrompt(Enum.TrackerPromptEvent prompt) {RobloxScriptSecurity}
+Added Event VoiceChatService.VoiceChatPlayerMuteStateChangedClientToServer(Enum.MuteState muteState) {RobloxSecurity} [Hidden]
+Added Event VoiceChatService.VoiceChatPlayerMuteStateChangedServerToClient(Enum.MuteState muteState) {RobloxSecurity} [Hidden]
 
-Added Event SafetyService.ScreenshotUploaded(int64 screenshotJobId, string screenshotId) {RobloxScriptSecurity}
+Added Enum MuteState
+	Added EnumItem MuteState.Unmuted : 0
+	Added EnumItem MuteState.Muted : 1
 
-Added Enum AdTeleportMethod
-	Added EnumItem AdTeleportMethod.Undefined : 0
-	Added EnumItem AdTeleportMethod.PortalForward : 1
-	Added EnumItem AdTeleportMethod.PortalReturn : 2
-	Added EnumItem AdTeleportMethod.InGameMenuBackButton : 3
-	Added EnumItem AdTeleportMethod.UIBackButton : 4
+Added Enum TrackerPromptEvent
+	Added EnumItem TrackerPromptEvent.LODCameraRecommendDisable : 0
 
-Added Enum CreatorTypeFilter
-	Added EnumItem CreatorTypeFilter.User : 0
-	Added EnumItem CreatorTypeFilter.Group : 1
-	Added EnumItem CreatorTypeFilter.All : 2
+Added EnumItem ScopeCheckResult.ConsentDenied : 7
 
-Added Enum SensorMode
-	Added EnumItem SensorMode.Floor : 0
-	Added EnumItem SensorMode.Ladder : 1
+Added Tag [NotBrowsable] to Property ScreenGui.ClipToDeviceSafeArea
+Added Tag [NotBrowsable] to Property ScreenGui.SafeAreaCompatibility
 
-Added Enum SensorUpdateType
-	Added EnumItem SensorUpdateType.OnRead : 0
-	Added EnumItem SensorUpdateType.Manual : 1
+Changed the read permissions of Property BaseScript.RunContext 
+	from: {PluginSecurity}
+	  to: {None}
 
-Added Enum VRPlayMode
-	Added EnumItem VRPlayMode.Seated : 0
-	Added EnumItem VRPlayMode.Standing : 1
+Changed the thread safety of Function Humanoid:GetState 
+	from: {🧬Unsafe}
+	  to: {🧬Safe}
 
-Added EnumItem UserCFrame.Floor : 3
+Changed the thread safety of Function Humanoid:GetStateEnabled 
+	from: {🧬Unsafe}
+	  to: {🧬Safe}
 
-Removed Property DataModelMesh.LODX
-Removed Property DataModelMesh.LODY
-Removed Property Workspace.AnimationWeightedBlendFix
+Changed the thread safety of Function Workspace:GetNumAwakeParts 
+	from: {🧬Unsafe}
+	  to: {🧬Safe}
 
-Removed Function Terrain:HideTerrainRegion
-Removed Function Terrain:SetTerrainRegion
-Removed Function Terrain:SetWireframeRegion
-Removed Function Terrain:ShowTerrainRegion
+Changed the thread safety of Function Workspace:GetPhysicsThrottling 
+	from: {🧬Unsafe}
+	  to: {🧬Safe}
 
-Removed Enum LevelOfDetailSetting
-	Removed EnumItem LevelOfDetailSetting.Low
-	Removed EnumItem LevelOfDetailSetting.Medium
-	Removed EnumItem LevelOfDetailSetting.High
+Changed the thread safety of Function Workspace:GetServerTimeNow 
+	from: {🧬Unsafe}
+	  to: {🧬Safe}
 
-Removed Enum NewAnimationRuntimeSetting
-	Removed EnumItem NewAnimationRuntimeSetting.Default
-	Removed EnumItem NewAnimationRuntimeSetting.Disabled
-	Removed EnumItem NewAnimationRuntimeSetting.Enabled
-
-Removed Tag [NotBrowsable] from Property ScreenGui.ClipToDeviceSafeArea
-Removed Tag [NotBrowsable] from Property ScreenGui.SafeAreaCompatibility
+Changed the parameters of Event AssetImportSession.UploadComplete 
+	from: (bool succeeded, Dictionary errorMap)
+	  to: (Dictionary results)
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#565) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#566) for a syntax highlighted version!)
