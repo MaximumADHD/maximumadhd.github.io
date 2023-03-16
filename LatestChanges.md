@@ -1,75 +1,81 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/4188f76163cf609235c4b21d79720cda49bfc8a4
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/70b8bf0fba8cac6ea88161f40e8bed312af6c901
 
 ## API Changes
 
 ```plain
-Added Class FacialAnimationStreamingServiceStats : Instance [NotCreatable] [NotReplicated]
-	Added Function int64 FacialAnimationStreamingServiceStats:Get(string label) {RobloxScriptSecurity}
-	Added Function int64 FacialAnimationStreamingServiceStats:GetWithPlayerId(string label, int64 playerId) {RobloxScriptSecurity}
+Added Class MeshDataExperimental : Instance [NotCreatable]
+	Added Property Vector3 MeshDataExperimental.Size [ReadOnly]
+	Added Function void MeshDataExperimental:PopulateFromMeshAsync(Content meshId) [Yields]
 
-Added Class MaterialGenerationService : Instance [NotCreatable] [Service] [NotReplicated]
-	Added Function MaterialGenerationSession MaterialGenerationService:StartSession() {RobloxScriptSecurity}
+Added Property bool IncrementalPatchBuilder.SerializePatch
+Added Property float Selection.SelectionBoxThickness {RobloxScriptSecurity} [Hidden] [ReadOnly]
+Added Property bool SelectionBox.StudioSelectionBox {RobloxScriptSecurity} [Hidden]
+Added Property float Studio.Selection Box Thickness {RobloxSecurity}
 
-Added Class MaterialGenerationSession : Instance [NotCreatable] [NotReplicated]
-	Added Function Array MaterialGenerationSession:GenerateImagesAsync(string prompt, Dictionary options) {RobloxScriptSecurity} [Yields]
-	Added Function Dictionary MaterialGenerationSession:GenerateMaterialAsync(string imageId) {RobloxScriptSecurity} [Yields]
+Added Function Tuple AssetService:PromptPublishAssetAsync(Player player, Instance instance, Enum.AssetType assetType) [Yields]
+Added Function void ContextActionService:BindCoreActivate(Enum.UserInputType userInputTypeForActivation, Tuple keyCodesForActivation) {RobloxScriptSecurity}
+Added Function void ContextActionService:UnbindCoreActivate(Enum.UserInputType userInputTypeForActivation, Enum.KeyCode keyCodeForActivation = "Unknown") {RobloxScriptSecurity}
+Added Function void ImageDataExperimental:Clear()
+Added Function void ImageDataExperimental:DrawCircle(Vector2 center, int radius, Color3 color, float alpha)
+Added Function void ImageDataExperimental:Resize(Vector2 newSize)
+Added Function void ImageDataExperimental:Rotate(float degrees, bool resizeCanvas = true)
+Added Function string InsertService:GetLocalFileContents(string contentId) {RobloxScriptSecurity}
+Added Function double MaterialGenerationService:GetAccountingBalanceAsync() {RobloxScriptSecurity} [Yields]
+Added Function double MaterialGenerationService:RefillAccountingBalanceAsync() {RobloxScriptSecurity} [Yields]
+Added Function Dictionary MaterialGenerationSession:GenerateMaterialMapsAsync(string imageId) {RobloxScriptSecurity} [Yields]
+Added Function Dictionary MaterialGenerationSession:UploadMaterialAsync(string imageId) {RobloxScriptSecurity} [Yields]
+Added Function void ScriptEditorService:DeregisterScriptAnalysisCallback(string name) {PluginSecurity}
+Added Function void ScriptEditorService:RegisterScriptAnalysisCallback(string name, int priority, Function callbackFunction) {PluginSecurity}
+Added Function bool UGCValidationService:CanLoadAsset(string assetId) {RobloxScriptSecurity} [Yields]
 
-Added Property bool Animator.EvaluationThrottled [ReadOnly] [NotBrowsable]
-Added Property string ImporterRootSettings.ExistingPackageId
-Added Property bool ImporterRootSettings.ImportAsPackage
-Added Property bool Selection.ShowBoundingBox {RobloxScriptSecurity} [Hidden]
+Added Event Animator.OnStreamingUpdated(float fadeTime, float weight, Enum.AnimationPriority priority, int valuesUpdated) {RobloxSecurity} [Hidden]
+Added Event AssetService.OpenPublishResultModal(Enum.PromptPublishAssetResult resultType) {RobloxScriptSecurity}
+Added Event Players.PromptReportServerEnrichmentAndScan(string v1comment, int64 submitterId, int64 abuserId, string reportId) {RobloxSecurity} [Hidden]
 
-Added Function FacialAnimationStreamingServiceStats FacialAnimationStreamingServiceV2:GetStats() {RobloxScriptSecurity}
-Added Function string RbxAnalyticsService:GetPlaySessionId() {RobloxScriptSecurity}
-Added Function void Terrain:ReplaceMaterialInTransform(CFrame cframe, Vector3 size, Enum.Material sourceMaterial, Enum.Material targetMaterial) {RobloxScriptSecurity}
-Added Function void Terrain:SetMaterialInTransform(CFrame cframe, Vector3 size, Enum.Material targetMaterial) {RobloxScriptSecurity}
+Added Enum PromptPublishAssetResult
+	Added EnumItem PromptPublishAssetResult.Success : 1
+	Added EnumItem PromptPublishAssetResult.PermissionDenied : 2
+	Added EnumItem PromptPublishAssetResult.Timeout : 3
+	Added EnumItem PromptPublishAssetResult.UploadFailed : 4
+	Added EnumItem PromptPublishAssetResult.NoUserInput : 5
 
-Added Event AssetImportSession.UploadCompleteDeprecated(bool succeeded, Dictionary errorMap)
-Added Event FaceAnimatorService.TrackerPrompt(Enum.TrackerPromptEvent prompt) {RobloxScriptSecurity}
-Added Event VoiceChatService.VoiceChatPlayerMuteStateChangedClientToServer(Enum.MuteState muteState) {RobloxSecurity} [Hidden]
-Added Event VoiceChatService.VoiceChatPlayerMuteStateChangedServerToClient(Enum.MuteState muteState) {RobloxSecurity} [Hidden]
+Added Enum Severity
+	Added EnumItem Severity.Error : 1
+	Added EnumItem Severity.Warning : 2
 
-Added Enum MuteState
-	Added EnumItem MuteState.Unmuted : 0
-	Added EnumItem MuteState.Muted : 1
+Added Tags [Hidden] [NotScriptable] [Deprecated] to Property AdPortal.PortalType
 
-Added Enum TrackerPromptEvent
-	Added EnumItem TrackerPromptEvent.LODCameraRecommendDisable : 0
+Changed the security of Property Selection.SelectionLineThickness 
+	from: {None}
+	  to: {RobloxScriptSecurity}
 
-Added EnumItem ScopeCheckResult.ConsentDenied : 7
+Changed the return-type of Function MaterialGenerationSession:GenerateImagesAsync 
+	from: Array
+	  to: Tuple
 
-Added Tag [NotBrowsable] to Property ScreenGui.ClipToDeviceSafeArea
-Added Tag [NotBrowsable] to Property ScreenGui.SafeAreaCompatibility
-
-Changed the read permissions of Property BaseScript.RunContext 
-	from: {PluginSecurity}
-	  to: {None}
-
-Changed the thread safety of Function Humanoid:GetState 
+Changed the thread safety of Function BasePart:GetNetworkOwner 
 	from: {🧬Unsafe}
 	  to: {🧬Safe}
 
-Changed the thread safety of Function Humanoid:GetStateEnabled 
+Changed the thread safety of Function BasePart:GetNetworkOwnershipAuto 
 	from: {🧬Unsafe}
 	  to: {🧬Safe}
 
-Changed the thread safety of Function Workspace:GetNumAwakeParts 
+Changed the thread safety of Function Players:GetPlayerByUserId 
 	from: {🧬Unsafe}
 	  to: {🧬Safe}
 
-Changed the thread safety of Function Workspace:GetPhysicsThrottling 
+Changed the thread safety of Function Terrain:GetMaterialColor 
 	from: {🧬Unsafe}
 	  to: {🧬Safe}
 
-Changed the thread safety of Function Workspace:GetServerTimeNow 
-	from: {🧬Unsafe}
-	  to: {🧬Safe}
+Changed the parameters of Event TeamCreatePublishService.TeamCreateReplicatedMessage 
+	from: (Enum.MessageType messageType, string message, bool printToStatusBar, int statusCode, bool isPublish, string authorName)
+	  to: (Enum.MessageType messageType, string failureMessage, int statusCode, bool isPublish, string authorName)
 
-Changed the parameters of Event AssetImportSession.UploadComplete 
-	from: (bool succeeded, Dictionary errorMap)
-	  to: (Dictionary results)
+Removed Function MaterialGenerationSession:GenerateMaterialAsync
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#566) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#567) for a syntax highlighted version!)
