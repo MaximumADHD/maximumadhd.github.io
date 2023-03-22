@@ -633,12 +633,13 @@
 	<span class="Superclass">Instance</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">AdPortalStatus</span>
 	<span class="ClassName Property">AdPortal</span>
 	<span class="Name">PortalStatus</span>
 	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property deprecated child">
@@ -649,6 +650,14 @@
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotScriptable]</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">AdUnitStatus</span>
+	<span class="ClassName Property">AdPortal</span>
+	<span class="Name">Status</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -2867,6 +2876,19 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">AudioPages</span>
+	<span class="ClassName Function">AssetService</span>
+	<span class="Name">SearchAudio</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">AudioSearchParams</span>
+			<span class="ParamName">searchParameters</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
 <div class="Event child">
 	<span class="ClassName Event">AssetService</span>
 	<span class="Name">OpenPublishResultModal</span>
@@ -3097,6 +3119,61 @@
 	<span class="Name">Transform</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">AudioSearchParams</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">AudioSearchParams</span>
+	<span class="Name">Album</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">AudioSearchParams</span>
+	<span class="Name">Artist</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">AudioSubType</span>
+	<span class="ClassName Property">AudioSearchParams</span>
+	<span class="Name">AudioSubtype</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">AudioSearchParams</span>
+	<span class="Name">MaxDuration</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">AudioSearchParams</span>
+	<span class="Name">MinDuration</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">AudioSearchParams</span>
+	<span class="Name">SearchKeyword</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">AudioSearchParams</span>
+	<span class="Name">Tag</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">AudioSearchParams</span>
+	<span class="Name">Title</span>
 </div>
 
 <div class="Class">
@@ -9270,7 +9347,6 @@
 	<span class="Type">ControllerBase</span>
 	<span class="ClassName Property">ControllerManager</span>
 	<span class="Name">ActiveController</span>
-	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
@@ -9314,7 +9390,6 @@
 	<span class="ClassName Function">ControllerManager</span>
 	<span class="Name">GetControllers</span>
 	<span class="Parameters"></span>
-	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Class">
@@ -11928,7 +12003,7 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">ExperienceAuthService</span>
-	<span class="Name">scopeCheckUIComplete</span>
+	<span class="Name">ScopeCheckUIComplete</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -16589,6 +16664,14 @@
 
 <div class="Property child">
 	<span class="EnumName Type">Enum</span>
+	<span class="Type">AdUnitStatus</span>
+	<span class="ClassName Property">AdGui</span>
+	<span class="Name">Status</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
 	<span class="Type">AdShape</span>
 	<span class="ClassName Property">AdGui</span>
 	<span class="Name">AdShape</span>
@@ -20727,6 +20810,48 @@
 	<span class="ClassName Function">IKControl</span>
 	<span class="Name">GetChainLength</span>
 	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Function">IKControl</span>
+	<span class="Name">GetNodeLocalCFrame</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">index</span>
+		</span>
+	</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Function">IKControl</span>
+	<span class="Name">GetNodeWorldCFrame</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">index</span>
+		</span>
+	</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Function">IKControl</span>
+	<span class="Name">GetRawFinalTarget</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Function">IKControl</span>
+	<span class="Name">GetSmoothedFinalTarget</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Class">
@@ -29776,6 +29901,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">SharedString</span>
+	<span class="ClassName Property">PartOperation</span>
+	<span class="Name">SerializedCSGTree</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">PartOperation</span>
 	<span class="Name">TriangleCount</span>
@@ -30187,6 +30321,57 @@
 <div class="Class">
 	<span class="Name">Actor</span>
 	<span class="Superclass">Model</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">RBXScriptConnection</span>
+	<span class="ClassName Function">Actor</span>
+	<span class="Name">BindToMessage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">function</span>
+		</span>
+	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">RBXScriptConnection</span>
+	<span class="ClassName Function">Actor</span>
+	<span class="Name">BindToMessageParallel</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">function</span>
+		</span>
+	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Actor</span>
+	<span class="Name">SendMessage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Tuple</span>
+			<span class="ParamName">message</span>
+		</span>
+	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Class">
@@ -31564,6 +31749,13 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AudioPages</span>
+	<span class="Superclass">Pages</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">CatalogPages</span>
 	<span class="Superclass">Pages</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -32662,6 +32854,13 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PhysicsSettings</span>
+	<span class="Name">AreSolverIslandsShown</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PhysicsSettings</span>
 	<span class="Name">AreTerrainReplicationRegionsShown</span>
 </div>
 
@@ -32720,6 +32919,14 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PhysicsSettings</span>
 	<span class="Name">ShowDecompositionGeometry</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">SolverConvergenceVisualizationMode</span>
+	<span class="ClassName Property">PhysicsSettings</span>
+	<span class="Name">SolverConvergenceVisualizationMode</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -35302,6 +35509,19 @@
 	</span>
 	<span class="Security">{PluginSecurity}</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">Plugin</span>
+	<span class="Name">Intersect</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">objects</span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -40154,6 +40374,14 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">IsContentLoaded</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">DataModel</span>
@@ -40294,6 +40522,23 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">newValue</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">SetIsLoaded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">value</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int?</span>
+			<span class="ParamName">placeSizeInBytes</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -43938,22 +44183,6 @@
 <div class="Event child">
 	<span class="ClassName Event">StudioDeviceEmulatorService</span>
 	<span class="Name">TouchPositionsChanged</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Class">
-	<span class="Name">StudioHighDpiService</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Service]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">bool</span>
-	<span class="ClassName Function">StudioHighDpiService</span>
-	<span class="Name">IsNotHighDPIAwareBuild</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -48502,6 +48731,16 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">VRSafetyBubbleMode</span>
+	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">VRSafetyBubbleMode</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">AllTutorialsDisabled</span>
@@ -48678,6 +48917,15 @@
 	<span class="Name">PerformanceStatsVisible</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">PlayerHeight</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -52216,6 +52464,22 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">AdUnitStatus</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AdUnitStatus</span>
+	<span class="Name">Inactive</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AdUnitStatus</span>
+	<span class="Name">Active</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">AdornCullingMode</span>
 </div>
 
@@ -53021,6 +53285,22 @@
 	<span class="EnumName">AssetTypeVerification</span>
 	<span class="Name">Always</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AudioSubType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AudioSubType</span>
+	<span class="Name">Music</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AudioSubType</span>
+	<span class="Name">SoundEffect</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
@@ -62733,6 +63013,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">SolverConvergenceVisualizationMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SolverConvergenceVisualizationMode</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SolverConvergenceVisualizationMode</span>
+	<span class="Name">PerIsland</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SolverConvergenceVisualizationMode</span>
+	<span class="Name">PerEdge</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">SortDirection</span>
 </div>
 
@@ -65444,6 +65746,28 @@
 	<span class="EnumName">VRPlayMode</span>
 	<span class="Name">Standing</span>
 	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">VRSafetyBubbleMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VRSafetyBubbleMode</span>
+	<span class="Name">NoOne</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VRSafetyBubbleMode</span>
+	<span class="Name">OnlyFriends</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VRSafetyBubbleMode</span>
+	<span class="Name">Anyone</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">

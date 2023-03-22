@@ -1,81 +1,77 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/70b8bf0fba8cac6ea88161f40e8bed312af6c901
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/b9c7bc271a152c4dc20600856f3e286215ea6642
 
 ## API Changes
 
 ```plain
-Added Class MeshDataExperimental : Instance [NotCreatable]
-	Added Property Vector3 MeshDataExperimental.Size [ReadOnly]
-	Added Function void MeshDataExperimental:PopulateFromMeshAsync(Content meshId) [Yields]
+Added Class AudioSearchParams : Instance [NotReplicated]
+	Added Property string AudioSearchParams.Album
+	Added Property string AudioSearchParams.Artist
+	Added Property Enum.AudioSubType AudioSearchParams.AudioSubtype
+	Added Property int AudioSearchParams.MaxDuration
+	Added Property int AudioSearchParams.MinDuration
+	Added Property string AudioSearchParams.SearchKeyword
+	Added Property string AudioSearchParams.Tag
+	Added Property string AudioSearchParams.Title
 
-Added Property bool IncrementalPatchBuilder.SerializePatch
-Added Property float Selection.SelectionBoxThickness {RobloxScriptSecurity} [Hidden] [ReadOnly]
-Added Property bool SelectionBox.StudioSelectionBox {RobloxScriptSecurity} [Hidden]
-Added Property float Studio.Selection Box Thickness {RobloxSecurity}
+Added Class AudioPages : Pages [NotCreatable] [NotReplicated]
 
-Added Function Tuple AssetService:PromptPublishAssetAsync(Player player, Instance instance, Enum.AssetType assetType) [Yields]
-Added Function void ContextActionService:BindCoreActivate(Enum.UserInputType userInputTypeForActivation, Tuple keyCodesForActivation) {RobloxScriptSecurity}
-Added Function void ContextActionService:UnbindCoreActivate(Enum.UserInputType userInputTypeForActivation, Enum.KeyCode keyCodeForActivation = "Unknown") {RobloxScriptSecurity}
-Added Function void ImageDataExperimental:Clear()
-Added Function void ImageDataExperimental:DrawCircle(Vector2 center, int radius, Color3 color, float alpha)
-Added Function void ImageDataExperimental:Resize(Vector2 newSize)
-Added Function void ImageDataExperimental:Rotate(float degrees, bool resizeCanvas = true)
-Added Function string InsertService:GetLocalFileContents(string contentId) {RobloxScriptSecurity}
-Added Function double MaterialGenerationService:GetAccountingBalanceAsync() {RobloxScriptSecurity} [Yields]
-Added Function double MaterialGenerationService:RefillAccountingBalanceAsync() {RobloxScriptSecurity} [Yields]
-Added Function Dictionary MaterialGenerationSession:GenerateMaterialMapsAsync(string imageId) {RobloxScriptSecurity} [Yields]
-Added Function Dictionary MaterialGenerationSession:UploadMaterialAsync(string imageId) {RobloxScriptSecurity} [Yields]
-Added Function void ScriptEditorService:DeregisterScriptAnalysisCallback(string name) {PluginSecurity}
-Added Function void ScriptEditorService:RegisterScriptAnalysisCallback(string name, int priority, Function callbackFunction) {PluginSecurity}
-Added Function bool UGCValidationService:CanLoadAsset(string assetId) {RobloxScriptSecurity} [Yields]
+Added Property Enum.AdUnitStatus AdGui.Status [ReadOnly]
+Added Property Enum.AdUnitStatus AdPortal.Status [ReadOnly]
+Added Property SharedString PartOperation.SerializedCSGTree [Hidden] [NotReplicated] [NotScriptable]
+Added Property bool PhysicsSettings.AreSolverIslandsShown {RobloxScriptSecurity}
+Added Property Enum.SolverConvergenceVisualizationMode PhysicsSettings.SolverConvergenceVisualizationMode {RobloxScriptSecurity}
+Added Property Enum.VRSafetyBubbleMode UserGameSettings.VRSafetyBubbleMode {RobloxScriptSecurity} [Hidden] [NotReplicated]
+Added Property float UserGameSettings.PlayerHeight {RobloxScriptSecurity} [Hidden] [NotReplicated]
 
-Added Event Animator.OnStreamingUpdated(float fadeTime, float weight, Enum.AnimationPriority priority, int valuesUpdated) {RobloxSecurity} [Hidden]
-Added Event AssetService.OpenPublishResultModal(Enum.PromptPublishAssetResult resultType) {RobloxScriptSecurity}
-Added Event Players.PromptReportServerEnrichmentAndScan(string v1comment, int64 submitterId, int64 abuserId, string reportId) {RobloxSecurity} [Hidden]
+Added Function RBXScriptConnection Actor:BindToMessage(string name, Function function) {🧬Safe}
+Added Function RBXScriptConnection Actor:BindToMessageParallel(string name, Function function) {🧬Safe}
+Added Function void Actor:SendMessage(string name, Tuple message) {🧬Safe}
+Added Function AudioPages AssetService:SearchAudio(AudioSearchParams searchParameters) [Yields]
+Added Function bool DataModel:IsContentLoaded() {RobloxScriptSecurity}
+Added Function void DataModel:SetIsLoaded(bool value, int? placeSizeInBytes) {RobloxScriptSecurity}
+Added Function void ExperienceAuthService:ScopeCheckUIComplete(string guid, Array scopes, Enum.ScopeCheckResult result, Dictionary metadata) {RobloxScriptSecurity}
+Added Function CFrame IKControl:GetNodeLocalCFrame(int index) [NotBrowsable]
+Added Function CFrame IKControl:GetNodeWorldCFrame(int index) [NotBrowsable]
+Added Function CFrame IKControl:GetRawFinalTarget() [NotBrowsable]
+Added Function CFrame IKControl:GetSmoothedFinalTarget() [NotBrowsable]
+Added Function Instance Plugin:Intersect(Objects objects) {PluginSecurity}
 
-Added Enum PromptPublishAssetResult
-	Added EnumItem PromptPublishAssetResult.Success : 1
-	Added EnumItem PromptPublishAssetResult.PermissionDenied : 2
-	Added EnumItem PromptPublishAssetResult.Timeout : 3
-	Added EnumItem PromptPublishAssetResult.UploadFailed : 4
-	Added EnumItem PromptPublishAssetResult.NoUserInput : 5
+Added Enum AdUnitStatus
+	Added EnumItem AdUnitStatus.Inactive : 0
+	Added EnumItem AdUnitStatus.Active : 1
 
-Added Enum Severity
-	Added EnumItem Severity.Error : 1
-	Added EnumItem Severity.Warning : 2
+Added Enum AudioSubType
+	Added EnumItem AudioSubType.Music : 1
+	Added EnumItem AudioSubType.SoundEffect : 2
 
-Added Tags [Hidden] [NotScriptable] [Deprecated] to Property AdPortal.PortalType
+Added Enum SolverConvergenceVisualizationMode
+	Added EnumItem SolverConvergenceVisualizationMode.Disabled : 0
+	Added EnumItem SolverConvergenceVisualizationMode.PerIsland : 1
+	Added EnumItem SolverConvergenceVisualizationMode.PerEdge : 2
 
-Changed the security of Property Selection.SelectionLineThickness 
-	from: {None}
-	  to: {RobloxScriptSecurity}
+Added Enum VRSafetyBubbleMode
+	Added EnumItem VRSafetyBubbleMode.NoOne : 0
+	Added EnumItem VRSafetyBubbleMode.OnlyFriends : 1
+	Added EnumItem VRSafetyBubbleMode.Anyone : 2
 
-Changed the return-type of Function MaterialGenerationSession:GenerateImagesAsync 
-	from: Array
-	  to: Tuple
+Added Tag [Deprecated] to Property AdPortal.PortalStatus
 
-Changed the thread safety of Function BasePart:GetNetworkOwner 
-	from: {🧬Unsafe}
-	  to: {🧬Safe}
+Changed the serialization of Property ControllerManager.ActiveController 
+	from: [<💾> SaveOnly]
+	  to: [<💾|📁> Saves|Loads]
 
-Changed the thread safety of Function BasePart:GetNetworkOwnershipAuto 
-	from: {🧬Unsafe}
-	  to: {🧬Safe}
+Changed the thread safety of Function ControllerManager:GetControllers 
+	from: {🧬Safe}
+	  to: {🧬Unsafe}
 
-Changed the thread safety of Function Players:GetPlayerByUserId 
-	from: {🧬Unsafe}
-	  to: {🧬Safe}
+Removed Class StudioHighDpiService
+	Removed Function StudioHighDpiService:IsNotHighDPIAwareBuild
 
-Changed the thread safety of Function Terrain:GetMaterialColor 
-	from: {🧬Unsafe}
-	  to: {🧬Safe}
+Removed Function ExperienceAuthService:scopeCheckUIComplete
 
-Changed the parameters of Event TeamCreatePublishService.TeamCreateReplicatedMessage 
-	from: (Enum.MessageType messageType, string message, bool printToStatusBar, int statusCode, bool isPublish, string authorName)
-	  to: (Enum.MessageType messageType, string failureMessage, int statusCode, bool isPublish, string authorName)
-
-Removed Function MaterialGenerationSession:GenerateMaterialAsync
+Removed Tag [ReadOnly] from Property ControllerManager.ActiveController
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#567) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#568) for a syntax highlighted version!)
