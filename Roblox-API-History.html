@@ -11,6 +11,343 @@
 	</ul>
 </head>
 
+<hr id="569"/>
+<h2>Version 0.569.2.5690484</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ScriptRuntime</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">AnimationConstraint</span>
+			<span class="Name">IsKinematic</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">double</span>
+			<span class="ClassName Property">IncrementalPatchBuilder</span>
+			<span class="Name">BuildDebouncePeriod</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">PhysicsSettings</span>
+			<span class="Name">AreConstraintForcesShownForSelectedOrHoveredInstances</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">PhysicsSettings</span>
+			<span class="Name">AreConstraintTorquesShownForSelectedOrHoveredInstances</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">PhysicsSettings</span>
+			<span class="Name">AreContactForcesShownForSelectedOrHoveredAssemblies</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">PhysicsSettings</span>
+			<span class="Name">AreMagnitudesShownForDrawnForcesAndTorques</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">PhysicsSettings</span>
+			<span class="Name">ForceDrawScale</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AnimationStreamTrack</span>
+			<span class="Name">TogglePause</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">paused</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">AnimationStreamTrack</span>
+			<span class="ClassName Function">Animator</span>
+			<span class="Name">LoadStreamAnimationForSelfieView_deprecated</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">TrackerStreamAnimation</span>
+					<span class="ParamName">animation</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Player</span>
+					<span class="ParamName">player</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">DataModel</span>
+			<span class="Name">IsUniverseMetadataLoaded</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">ScriptEditorService</span>
+			<span class="Name">ForceReloadSource</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">uri</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">newsrc</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Tuple</span>
+			<span class="ClassName Function">Terrain</span>
+			<span class="Name">SmoothRegion</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Region3</span>
+					<span class="ParamName">region</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">resolution</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">strength</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[CustomLuaState]</span>
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Array</span>
+			<span class="ClassName Function">TerrainRegion</span>
+			<span class="Name">GetRegionWireframe</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">RaycastResult</span>
+			<span class="ClassName Function">WorldRoot</span>
+			<span class="Name">Blockcast</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">CFrame</span>
+					<span class="ParamName">cframe</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">size</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">direction</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">RaycastParams</span>
+					<span class="ParamName default">params</span>
+					<span class="ClassName Type">RaycastParams</span>
+					<span class="Name">new</span>
+					<span class="Parameters"></span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">RaycastResult</span>
+			<span class="ClassName Function">WorldRoot</span>
+			<span class="Name">Spherecast</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">position</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">float</span>
+					<span class="ParamName">radius</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">direction</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">RaycastParams</span>
+					<span class="ParamName default">params</span>
+					<span class="ClassName Type">RaycastParams</span>
+					<span class="Name">new</span>
+					<span class="Parameters"></span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">DataModel</span>
+			<span class="Name">UniverseMetadataLoaded</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">FacialAnimationStreamingServiceStats</span>
+			<span class="Name">isStreamingFacsUpdated</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">bool</span>
+					<span class="ParamName">isStreaming</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">playerId</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">TrackerError</span>
+			<span class="Name">VideoUnsupported</span>
+			<span class="Value">6</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">TrackerError</span>
+		<span class="Name">NoAudio</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">6</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">7</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">TrackerError</span>
+		<span class="Name">AudioError</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">7</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">8</span>
+	</span>
+</div>
+<div class="Changed">
+	<span class="WhatChanged">value</span>
+	<span class="EnumItem">
+		<span class="EnumName">TrackerError</span>
+		<span class="Name">AudioNoPermission</span>
+	</span>
+	<span class="ChangeFrom">
+		<span class="Int32">8</span>
+	</span>
+	<span class="ChangeTo">
+		<span class="Int32">9</span>
+	</span>
+</div>
 <hr id="568"/>
 <h2>Version 0.568.0.5680526</h2>
 
