@@ -1344,6 +1344,7 @@
 			<span class="ParamDefault float">1</span>
 		</span>
 	</span>
+	<span class="Tag">[CustomLuaState]</span>
 </div>
 
 <div class="Function child">
@@ -1362,6 +1363,7 @@
 			<span class="ParamDefault float">0.100000001</span>
 		</span>
 	</span>
+	<span class="Tag">[CustomLuaState]</span>
 </div>
 
 <div class="Function child">
@@ -1409,6 +1411,7 @@
 			<span class="ParamDefault float">1</span>
 		</span>
 	</span>
+	<span class="Tag">[CustomLuaState]</span>
 </div>
 
 <div class="Function child">
@@ -1422,6 +1425,7 @@
 			<span class="ParamDefault float">0.100000001</span>
 		</span>
 	</span>
+	<span class="Tag">[CustomLuaState]</span>
 </div>
 
 <div class="Event child">
@@ -22336,6 +22340,14 @@
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">LuaSourceContainer</span>
+	<span class="Name">RuntimeSource</span>
+	<span class="Security">{PluginSecurity}</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">BaseScript</span>
 	<span class="Superclass">LuaSourceContainer</span>
@@ -22583,6 +22595,21 @@
 		<span class="Parameter">
 			<span class="Type">bool</span>
 			<span class="ParamName">isRobloxPurchase</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">collectibleItemId</span>
+			<span class="ParamDefault string"></span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">collectibleProductId</span>
+			<span class="ParamDefault string"></span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">idempotencyKey</span>
+			<span class="ParamDefault string"></span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -24483,6 +24510,10 @@
 		<span class="Parameter">
 			<span class="Type">Function</span>
 			<span class="ParamName">callback</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">customTelemetryData</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -28089,7 +28120,7 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
-			<span class="ParamName">name</span>
+			<span class="ParamName">topic</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">Function</span>
@@ -28106,7 +28137,7 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
-			<span class="ParamName">name</span>
+			<span class="ParamName">topic</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">Function</span>
@@ -28123,7 +28154,7 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
-			<span class="ParamName">name</span>
+			<span class="ParamName">topic</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">Tuple</span>
@@ -34753,6 +34784,13 @@
 </div>
 
 <div class="Class">
+	<span class="Name">RemoteCursorService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">RemoteDebuggerServer</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -35656,13 +35694,6 @@
 <div class="Class">
 	<span class="Name">ScriptBuilder</span>
 	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">CoreScriptBuilder</span>
-	<span class="Superclass">ScriptBuilder</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -37753,6 +37784,20 @@
 	<span class="ClassName Function">UserSettings</span>
 	<span class="Name">Reset</span>
 	<span class="Parameters"></span>
+</div>
+
+<div class="Class">
+	<span class="Name">ServiceVisibilityService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">ServiceVisibilityService</span>
+	<span class="Name">VisibleServices</span>
+	<span class="Security">{RobloxSecurity}</span>
 </div>
 
 <div class="Class">
@@ -39861,12 +39906,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Set Pivot of Imported Parts</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">Show Deployment Warnings</span>
 </div>
 
 <div class="Property child">
@@ -46609,6 +46648,14 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">VRScaling</span>
+	<span class="ClassName Property">VRService</span>
+	<span class="Name">AutomaticScaling</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">VRService</span>
 	<span class="Name">DidPointerHit</span>
@@ -51451,26 +51498,8 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">ConnectionError</span>
-	<span class="Name">DisconnectOutOfMemory</span>
-	<span class="Value">286</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">ConnectionError</span>
 	<span class="Name">DisconnectModeratedGame</span>
 	<span class="Value">287</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">ConnectionError</span>
-	<span class="Name">DisconnectOutOfMemoryExitContinue</span>
-	<span class="Value">288</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">ConnectionError</span>
-	<span class="Name">DisconnectOutOfMemoryKeepPlayingExit</span>
-	<span class="Value">289</span>
 </div>
 
 <div class="EnumItem child">
@@ -51489,6 +51518,12 @@
 	<span class="EnumName">ConnectionError</span>
 	<span class="Name">DisconnectOutOfMemoryKeepPlayingLeave</span>
 	<span class="Value">292</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ConnectionError</span>
+	<span class="Name">DisconnectRomarkEndOfTest</span>
+	<span class="Value">293</span>
 </div>
 
 <div class="EnumItem child">
@@ -62058,6 +62093,22 @@
 	<span class="EnumName">VRSafetyBubbleMode</span>
 	<span class="Name">Anyone</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">VRScaling</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VRScaling</span>
+	<span class="Name">World</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VRScaling</span>
+	<span class="Name">Off</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">

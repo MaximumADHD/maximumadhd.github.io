@@ -1,37 +1,60 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/13c5151719d859935d013c7abcc93c12615c371f
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/36c9072dabbdb1d4299957bfc76c8030a18d4d7f
 
 ## API Changes
 
 ```plain
-Added Class ScriptRuntime : Instance [NotCreatable] [NotReplicated]
+Added Class RemoteCursorService : Instance [NotCreatable] [Service]
 
-Added Property bool AnimationConstraint.IsKinematic
-Added Property double IncrementalPatchBuilder.BuildDebouncePeriod
-Added Property bool PhysicsSettings.AreConstraintForcesShownForSelectedOrHoveredInstances {RobloxScriptSecurity}
-Added Property bool PhysicsSettings.AreConstraintTorquesShownForSelectedOrHoveredInstances {RobloxScriptSecurity}
-Added Property bool PhysicsSettings.AreContactForcesShownForSelectedOrHoveredAssemblies {RobloxScriptSecurity}
-Added Property bool PhysicsSettings.AreMagnitudesShownForDrawnForcesAndTorques {RobloxScriptSecurity}
-Added Property float PhysicsSettings.ForceDrawScale {RobloxScriptSecurity}
+Added Class ServiceVisibilityService : Instance [NotCreatable] [Service]
+	Added Property BinaryString ServiceVisibilityService.VisibleServices {RobloxSecurity}
 
-Added Function void AnimationStreamTrack:TogglePause(bool paused) {RobloxScriptSecurity}
-Added Function AnimationStreamTrack Animator:LoadStreamAnimationForSelfieView_deprecated(TrackerStreamAnimation animation, Player player) {RobloxScriptSecurity}
-Added Function bool DataModel:IsUniverseMetadataLoaded() {RobloxScriptSecurity}
-Added Function void ScriptEditorService:ForceReloadSource(string uri, string newsrc) {RobloxScriptSecurity}
-Added Function Tuple Terrain:SmoothRegion(Region3 region, float resolution, float strength) {RobloxScriptSecurity} [CustomLuaState] {🧬Safe}
-Added Function Array TerrainRegion:GetRegionWireframe() {RobloxScriptSecurity}
-Added Function RaycastResult WorldRoot:Blockcast(CFrame cframe, Vector3 size, Vector3 direction, RaycastParams params = RaycastParams.new())
-Added Function RaycastResult WorldRoot:Spherecast(Vector3 position, float radius, Vector3 direction, RaycastParams params = RaycastParams.new())
+Added Property string LuaSourceContainer.RuntimeSource {PluginSecurity} [NotReplicated]
+Added Property Enum.VRScaling VRService.AutomaticScaling [NotReplicated]
 
-Added Event DataModel.UniverseMetadataLoaded() {RobloxScriptSecurity}
-Added Event FacialAnimationStreamingServiceStats.isStreamingFacsUpdated(bool isStreaming, int64 playerId) {RobloxScriptSecurity}
+Added Enum VRScaling
+	Added EnumItem VRScaling.World : 0
+	Added EnumItem VRScaling.Off : 1
 
-Added EnumItem TrackerError.VideoUnsupported : 6
+Added EnumItem ConnectionError.DisconnectRomarkEndOfTest : 293
 
-Changed the value of EnumItem TrackerError.NoAudio from 6 to 7
-Changed the value of EnumItem TrackerError.AudioError from 7 to 8
-Changed the value of EnumItem TrackerError.AudioNoPermission from 8 to 9
+Added Tag [CustomLuaState] to Function AnimationTrack:AdjustSpeed
+Added Tag [CustomLuaState] to Function AnimationTrack:AdjustWeight
+Added Tag [CustomLuaState] to Function AnimationTrack:Play
+Added Tag [CustomLuaState] to Function AnimationTrack:Stop
+
+Changed the serialization of Property Workspace.SignalBehavior 
+	from: [<💾|📁> Saves|Loads]
+	  to: [<🕒> RuntimeOnly]
+
+Changed the parameters of Function Actor:BindToMessage 
+	from: (string name, Function function)
+	  to: (string topic, Function function)
+
+Changed the parameters of Function Actor:BindToMessageParallel 
+	from: (string name, Function function)
+	  to: (string topic, Function function)
+
+Changed the parameters of Function Actor:SendMessage 
+	from: (string name, Tuple message)
+	  to: (string topic, Tuple message)
+
+Changed the parameters of Function MarketplaceService:PerformPurchase 
+	from: (Enum.InfoType infoType, int64 productId, int expectedPrice, string requestId, bool isRobloxPurchase)
+	  to: (Enum.InfoType infoType, int64 productId, int expectedPrice, string requestId, bool isRobloxPurchase, string collectibleItemId = "", string collectibleProductId = "", string idempotencyKey = "")
+
+Changed the parameters of Function MessageBusService:MakeRequest 
+	from: (string protocolName, string methodName, Variant message, Function callback)
+	  to: (string protocolName, string methodName, Variant message, Function callback, Variant customTelemetryData)
+
+Removed Class CoreScriptBuilder
+
+Removed Property Studio.Show Deployment Warnings
+
+Removed EnumItem ConnectionError.DisconnectOutOfMemory
+Removed EnumItem ConnectionError.DisconnectOutOfMemoryExitContinue
+Removed EnumItem ConnectionError.DisconnectOutOfMemoryKeepPlayingExit
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#569) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#570) for a syntax highlighted version!)
