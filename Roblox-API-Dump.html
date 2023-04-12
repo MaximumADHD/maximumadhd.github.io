@@ -2782,7 +2782,17 @@
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">AudioSubType</span>
 	<span class="ClassName Property">AudioSearchParams</span>
+	<span class="Name">AudioSubType</span>
+</div>
+
+<div class="Property deprecated child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">AudioSubType</span>
+	<span class="ClassName Property">AudioSearchParams</span>
 	<span class="Name">AudioSubtype</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -8632,25 +8642,19 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">AirController</span>
-	<span class="Name">OrientationMaxTorque</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">AirController</span>
-	<span class="Name">OrientationSpeedFactor</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">AirController</span>
-	<span class="Name">VectorForce</span>
+	<span class="Name">BalanceMaxTorque</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">AirController</span>
-	<span class="Name">MaintainAngularMomentum</span>
+	<span class="Name">BalanceRigidityEnabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">BalanceSpeed</span>
 </div>
 
 <div class="Property child">
@@ -8665,10 +8669,64 @@
 	<span class="Name">MoveMaxForce</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">VectorForce</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">OrientationMaxTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">OrientationSpeedFactor</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">MaintainAngularMomentum</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">TurningMaxTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">TurningSpeedFactor</span>
+</div>
+
 <div class="Class">
 	<span class="Name">ClimbController</span>
 	<span class="Superclass">ControllerBase</span>
 	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ClimbController</span>
+	<span class="Name">BalanceMaxTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ClimbController</span>
+	<span class="Name">BalanceRigidityEnabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">ClimbController</span>
+	<span class="Name">BalanceSpeed</span>
 </div>
 
 <div class="Property child">
@@ -8717,6 +8775,24 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">GroundController</span>
 	<span class="Name">AlignTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">BalanceMaxTorque</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">BalanceRigidityEnabled</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">BalanceSpeed</span>
 </div>
 
 <div class="Property child">
@@ -37575,6 +37651,23 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">newValue</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DataModel</span>
+	<span class="Name">SetFlagVersion</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">version</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
