@@ -11,6 +11,972 @@
 	</ul>
 </head>
 
+<hr id="572"/>
+<h2>Version 0.572.0.5720484</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AvatarUnificationMode</span>
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">AvatarUnificationMode</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">VRService</span>
+			<span class="Name">LaserPointerTriggered</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">InputObject</span>
+					<span class="ParamName">input</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">AvatarUnificationMode</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AvatarUnificationMode</span>
+				<span class="Name">Default</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AvatarUnificationMode</span>
+				<span class="Name">Disabled</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AvatarUnificationMode</span>
+				<span class="Name">Enabled</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">VRSessionState</span>
+			<span class="Name">Stopping</span>
+			<span class="Value">4</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">ControllerManager</span>
+			<span class="Name">GetControllers</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">AirController</span>
+		<span class="Name">BalanceMaxTorque</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">AirController</span>
+		<span class="Name">BalanceSpeed</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">AirController</span>
+		<span class="Name">MaintainLinearMomentum</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">AirController</span>
+		<span class="Name">MoveMaxForce</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">AirController</span>
+		<span class="Name">VectorForce</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">AirController</span>
+		<span class="Name">MaintainAngularMomentum</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">AirController</span>
+		<span class="Name">TurningMaxTorque</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">AirController</span>
+		<span class="Name">TurningSpeedFactor</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ClimbController</span>
+		<span class="Name">BalanceMaxTorque</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ClimbController</span>
+		<span class="Name">BalanceRigidityEnabled</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ClimbController</span>
+		<span class="Name">BalanceSpeed</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ClimbController</span>
+		<span class="Name">AccelerationTime</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ClimbController</span>
+		<span class="Name">MoveMaxForce</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ControllerBase</span>
+		<span class="Name">RigidityEnabled</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ControllerBase</span>
+		<span class="Name">MoveSpeedFactor</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ControllerManager</span>
+		<span class="Name">ActiveController</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ControllerManager</span>
+		<span class="Name">BaseMoveSpeed</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ControllerManager</span>
+		<span class="Name">BaseTurnSpeed</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ControllerManager</span>
+		<span class="Name">ClimbSensor</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ControllerManager</span>
+		<span class="Name">GroundSensor</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ControllerManager</span>
+		<span class="Name">FacingDirection</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">ControllerManager</span>
+		<span class="Name">MovingDirection</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">AccelerationLean</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">AlignSpeed</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">AlignTorque</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">BalanceMaxTorque</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">BalanceRigidityEnabled</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">BalanceSpeed</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">AccelerationTime</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">DecelerationTime</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">Friction</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">FrictionWeight</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">GroundOffset</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">StandForce</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">StandSpeed</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">GroundController</span>
+		<span class="Name">TurningFactor</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">SwimController</span>
+		<span class="Name">PitchMaxTorque</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">SwimController</span>
+		<span class="Name">PitchSpeedFactor</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">SwimController</span>
+		<span class="Name">RollMaxTorque</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">SwimController</span>
+		<span class="Name">RollSpeedFactor</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Property">
+		<span class="ClassName Property">SwimController</span>
+		<span class="Name">AccelerationTime</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬LocalSafe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">WorldRoot</span>
+		<span class="Name">Blockcast</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">WorldRoot</span>
+		<span class="Name">Spherecast</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserInputService</span>
+			<span class="Name">GazeSelectionEnabled</span>
+		</span>
+	</span>
+</div>
 <hr id="571"/>
 <h2>Version 0.571.0.5710526</h2>
 

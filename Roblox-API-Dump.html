@@ -8927,11 +8927,12 @@
 	<span class="Name">MovingDirection</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">Objects</span>
 	<span class="ClassName Function">ControllerManager</span>
 	<span class="Name">GetControllers</span>
 	<span class="Parameters"></span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class">
@@ -28494,6 +28495,7 @@
 			<span class="Parameters"></span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -28924,6 +28926,7 @@
 			<span class="Parameters"></span>
 		</span>
 	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Class">
@@ -28938,6 +28941,14 @@
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">AllowThirdPartySales</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">AvatarUnificationMode</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">AvatarUnificationMode</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -45878,15 +45889,6 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserInputService</span>
-	<span class="Name">GazeSelectionEnabled</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">UserInputService</span>
 	<span class="Name">GyroscopeEnabled</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
@@ -46919,6 +46921,18 @@
 			<span class="ParamName">mode</span>
 		</span>
 	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VRService</span>
+	<span class="Name">LaserPointerTriggered</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">InputObject</span>
+			<span class="ParamName">input</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -50100,6 +50114,28 @@
 <div class="EnumItem child">
 	<span class="EnumName">AvatarThumbnailCustomizationType</span>
 	<span class="Name">FullBody</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AvatarUnificationMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarUnificationMode</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarUnificationMode</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarUnificationMode</span>
+	<span class="Name">Enabled</span>
 	<span class="Value">2</span>
 </div>
 
@@ -62230,6 +62266,12 @@
 	<span class="EnumName">VRSessionState</span>
 	<span class="Name">Focused</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VRSessionState</span>
+	<span class="Name">Stopping</span>
+	<span class="Value">4</span>
 </div>
 
 <div class="Enum">
