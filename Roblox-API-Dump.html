@@ -1794,6 +1794,14 @@
 <div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">AssetImportSession</span>
+	<span class="Name">HasAnimation</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AssetImportSession</span>
 	<span class="Name">IsAvatar</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -1811,6 +1819,14 @@
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetImportSession</span>
 	<span class="Name">Upload</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AssetImportSession</span>
+	<span class="Name">usesCustomRestPoseLua</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -3917,6 +3933,401 @@
 </div>
 
 <div class="Class">
+	<span class="Name">BaseImportData</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">BaseImportData</span>
+	<span class="Name">Id</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">BaseImportData</span>
+	<span class="Name">ImportName</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BaseImportData</span>
+	<span class="Name">ShouldImport</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">BaseImportData</span>
+	<span class="Name">GetStatuses</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">AnimationImportData</span>
+	<span class="Superclass">BaseImportData</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">FacsImportData</span>
+	<span class="Superclass">BaseImportData</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">GroupImportData</span>
+	<span class="Superclass">BaseImportData</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">GroupImportData</span>
+	<span class="Name">Anchored</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">GroupImportData</span>
+	<span class="Name">ImportAsModelAsset</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">GroupImportData</span>
+	<span class="Name">InsertInWorkspace</span>
+</div>
+
+<div class="Class">
+	<span class="Name">JointImportData</span>
+	<span class="Superclass">BaseImportData</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">MaterialImportData</span>
+	<span class="Superclass">BaseImportData</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">MaterialImportData</span>
+	<span class="Name">DiffuseFilePath</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MaterialImportData</span>
+	<span class="Name">IsPbr</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">MaterialImportData</span>
+	<span class="Name">MetalnessFilePath</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">MaterialImportData</span>
+	<span class="Name">NormalFilePath</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">MaterialImportData</span>
+	<span class="Name">RoughnessFilePath</span>
+</div>
+
+<div class="Class">
+	<span class="Name">MeshImportData</span>
+	<span class="Superclass">BaseImportData</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">Anchored</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">CageManifold</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">CageMeshIntersectedPreview</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">CageMeshNotIntersected</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">CageNoOverlappingVertices</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">CageNonManifoldPreview</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">CageOverlappingVerticesPreview</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">CageUVMatched</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">CageUVMisMatchedPreview</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">Dimensions</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">DoubleSided</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">IgnoreVertexColors</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">IrrelevantCageModifiedPreview</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">MeshHoleDetectedPreview</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">MeshNoHoleDetected</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">NoIrrelevantCageModified</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">NoOuterCageFarExtendedFromMesh</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">OuterCageFarExtendedFromMeshPreview</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">PolygonCount</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MeshImportData</span>
+	<span class="Name">UseImportedPivot</span>
+</div>
+
+<div class="Class">
+	<span class="Name">RootImportData</span>
+	<span class="Superclass">BaseImportData</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">AddModelToInventory</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">Anchored</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">AnimationIdForRestPose</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">ExistingPackageId</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">FileDimensions</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">ImportAsModelAsset</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">ImportAsPackage</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">InsertInWorkspace</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">InsertWithScenePosition</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">InvertNegativeFaces</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">MergeMeshes</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">PolygonCount</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">RestPose</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">RestPose</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">RigScale</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">RigScale</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">RigType</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">RigType</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">MeshScaleUnit</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">ScaleUnit</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">UseSceneOriginAsCFrame</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">UseSceneOriginAsPivot</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">UsesCages</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">NormalId</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">WorldForward</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">NormalId</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">WorldUp</span>
+</div>
+
+<div class="Class">
 	<span class="Name">BasePlayerGui</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -5330,6 +5741,11 @@
 	<span class="Name">BulkImportStarted</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">CSGOptions</span>
+	<span class="Superclass">Instance</span>
 </div>
 
 <div class="Class">
@@ -8658,6 +9074,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">AirController</span>
+	<span class="Name">LinearImpulse</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">AirController</span>
 	<span class="Name">MaintainLinearMomentum</span>
@@ -8669,10 +9091,14 @@
 	<span class="Name">MoveMaxForce</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">AirController</span>
 	<span class="Name">VectorForce</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -8835,6 +9261,12 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">GroundController</span>
 	<span class="Name">StandSpeed</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">GroundController</span>
+	<span class="Name">TurnSpeedFactor</span>
 </div>
 
 <div class="Property child">
@@ -20030,388 +20462,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">ImporterBaseSettings</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">ImporterBaseSettings</span>
-	<span class="Name">Id</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">ImporterBaseSettings</span>
-	<span class="Name">ImportName</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterBaseSettings</span>
-	<span class="Name">ShouldImport</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Dictionary</span>
-	<span class="ClassName Function">ImporterBaseSettings</span>
-	<span class="Name">GetStatuses</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Class">
-	<span class="Name">ImporterAnimationSettings</span>
-	<span class="Superclass">ImporterBaseSettings</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">ImporterFacsSettings</span>
-	<span class="Superclass">ImporterBaseSettings</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">ImporterGroupSettings</span>
-	<span class="Superclass">ImporterBaseSettings</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterGroupSettings</span>
-	<span class="Name">Anchored</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterGroupSettings</span>
-	<span class="Name">ImportAsModelAsset</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterGroupSettings</span>
-	<span class="Name">InsertInWorkspace</span>
-</div>
-
-<div class="Class">
-	<span class="Name">ImporterJointSettings</span>
-	<span class="Superclass">ImporterBaseSettings</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Class">
-	<span class="Name">ImporterMaterialSettings</span>
-	<span class="Superclass">ImporterBaseSettings</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">ImporterMaterialSettings</span>
-	<span class="Name">DiffuseFilePath</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMaterialSettings</span>
-	<span class="Name">IsPbr</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">ImporterMaterialSettings</span>
-	<span class="Name">MetalnessFilePath</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">ImporterMaterialSettings</span>
-	<span class="Name">NormalFilePath</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">ImporterMaterialSettings</span>
-	<span class="Name">RoughnessFilePath</span>
-</div>
-
-<div class="Class">
-	<span class="Name">ImporterMeshSettings</span>
-	<span class="Superclass">ImporterBaseSettings</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">Anchored</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">CageManifold</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">CageMeshIntersectedPreview</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">CageMeshNotIntersected</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">CageNoOverlappingVertices</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">CageNonManifoldPreview</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">CageOverlappingVerticesPreview</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">CageUVMatched</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">CageUVMisMatchedPreview</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">Dimensions</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">DoubleSided</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">IgnoreVertexColors</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">IrrelevantCageModifiedPreview</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">MeshHoleDetectedPreview</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">MeshNoHoleDetected</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">NoIrrelevantCageModified</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">NoOuterCageFarExtendedFromMesh</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">OuterCageFarExtendedFromMeshPreview</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">PolygonCount</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterMeshSettings</span>
-	<span class="Name">UseImportedPivot</span>
-</div>
-
-<div class="Class">
-	<span class="Name">ImporterRootSettings</span>
-	<span class="Superclass">ImporterBaseSettings</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">AddModelToInventory</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">Anchored</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">string</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">ExistingPackageId</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">FileDimensions</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">ImportAsModelAsset</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">ImportAsPackage</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">InsertInWorkspace</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">InsertWithScenePosition</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">InvertNegativeFaces</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">MergeMeshes</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">PolygonCount</span>
-	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">RigScale</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">RigScale</span>
-</div>
-
-<div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">RigType</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">RigType</span>
-</div>
-
-<div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">MeshScaleUnit</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">ScaleUnit</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">UseSceneOriginAsCFrame</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">UseSceneOriginAsPivot</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">UsesCages</span>
-</div>
-
-<div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">NormalId</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">WorldForward</span>
-</div>
-
-<div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">NormalId</span>
-	<span class="ClassName Property">ImporterRootSettings</span>
-	<span class="Name">WorldUp</span>
-</div>
-
-<div class="Class">
 	<span class="Name">IncrementalPatchBuilder</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -31229,6 +31279,13 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">Player</span>
+	<span class="Name">IsVerified</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Player</span>
 	<span class="Name">Kick</span>
@@ -40592,6 +40649,20 @@
 <div class="Property child">
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">Studio</span>
+	<span class="Name">HintColor</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">InformationColor</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">Studio</span>
 	<span class="Name">Keyword Color</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
@@ -48564,21 +48635,6 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Class deprecated">
-	<span class="Name">VoiceSource</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">int64</span>
-	<span class="ClassName Property">VoiceSource</span>
-	<span class="Name">UserId</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class">
@@ -58485,6 +58541,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">RestPose</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RestPose</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RestPose</span>
+	<span class="Name">RotationsReset</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">RestPose</span>
+	<span class="Name">Custom</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">ReturnKeyType</span>
 </div>
 
@@ -58770,26 +58848,14 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">RigType</span>
-	<span class="Name">Rthro</span>
+	<span class="Name">Custom</span>
 	<span class="Value">1</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">RigType</span>
-	<span class="Name">RthroNarrow</span>
-	<span class="Value">2</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">RigType</span>
-	<span class="Name">Custom</span>
-	<span class="Value">3</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">RigType</span>
 	<span class="Name">None</span>
-	<span class="Value">4</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
@@ -59410,6 +59476,18 @@
 	<span class="Value">2</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">Severity</span>
+	<span class="Name">Information</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">Severity</span>
+	<span class="Name">Hint</span>
+	<span class="Value">4</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">SignalBehavior</span>
 </div>
@@ -59890,92 +59968,104 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">Whitespace</span>
+	<span class="Name">Info</span>
 	<span class="Value">24</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">ActiveLine</span>
+	<span class="Name">Hint</span>
 	<span class="Value">25</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">DebuggerCurrentLine</span>
+	<span class="Name">Whitespace</span>
 	<span class="Value">26</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">DebuggerErrorLine</span>
+	<span class="Name">ActiveLine</span>
 	<span class="Value">27</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">Ruler</span>
+	<span class="Name">DebuggerCurrentLine</span>
 	<span class="Value">28</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">Bracket</span>
+	<span class="Name">DebuggerErrorLine</span>
 	<span class="Value">29</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">MenuPrimaryText</span>
+	<span class="Name">Ruler</span>
 	<span class="Value">30</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">MenuSecondaryText</span>
+	<span class="Name">Bracket</span>
 	<span class="Value">31</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">MenuSelectedText</span>
+	<span class="Name">MenuPrimaryText</span>
 	<span class="Value">32</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">MenuBackground</span>
+	<span class="Name">MenuSecondaryText</span>
 	<span class="Value">33</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">MenuSelectedBackground</span>
+	<span class="Name">MenuSelectedText</span>
 	<span class="Value">34</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">MenuScrollbarBackground</span>
+	<span class="Name">MenuBackground</span>
 	<span class="Value">35</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">MenuScrollbarHandle</span>
+	<span class="Name">MenuSelectedBackground</span>
 	<span class="Value">36</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">MenuBorder</span>
+	<span class="Name">MenuScrollbarBackground</span>
 	<span class="Value">37</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioScriptEditorColorCategories</span>
-	<span class="Name">DocViewCodeBackground</span>
+	<span class="Name">MenuScrollbarHandle</span>
 	<span class="Value">38</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioScriptEditorColorCategories</span>
+	<span class="Name">MenuBorder</span>
+	<span class="Value">39</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioScriptEditorColorCategories</span>
+	<span class="Name">DocViewCodeBackground</span>
+	<span class="Value">40</span>
 </div>
 
 <div class="Enum">
@@ -60384,338 +60474,350 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptWhitespace</span>
+	<span class="Name">ScriptInformation</span>
 	<span class="Value">62</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptRuler</span>
+	<span class="Name">ScriptHint</span>
 	<span class="Value">63</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DocViewCodeBackground</span>
+	<span class="Name">ScriptWhitespace</span>
 	<span class="Value">64</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DebuggerCurrentLine</span>
+	<span class="Name">ScriptRuler</span>
 	<span class="Value">65</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DebuggerErrorLine</span>
+	<span class="Name">DocViewCodeBackground</span>
 	<span class="Value">66</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffFilePathText</span>
+	<span class="Name">DebuggerCurrentLine</span>
 	<span class="Value">67</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextHunkInfo</span>
+	<span class="Name">DebuggerErrorLine</span>
 	<span class="Value">68</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextNoChange</span>
+	<span class="Name">DiffFilePathText</span>
 	<span class="Value">69</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextAddition</span>
+	<span class="Name">DiffTextHunkInfo</span>
 	<span class="Value">70</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextDeletion</span>
+	<span class="Name">DiffTextNoChange</span>
 	<span class="Value">71</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextSeparatorBackground</span>
+	<span class="Name">DiffTextAddition</span>
 	<span class="Value">72</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextNoChangeBackground</span>
+	<span class="Name">DiffTextDeletion</span>
 	<span class="Value">73</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextAdditionBackground</span>
+	<span class="Name">DiffTextSeparatorBackground</span>
 	<span class="Value">74</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffTextDeletionBackground</span>
+	<span class="Name">DiffTextNoChangeBackground</span>
 	<span class="Value">75</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNum</span>
+	<span class="Name">DiffTextAdditionBackground</span>
 	<span class="Value">76</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNumSeparatorBackground</span>
+	<span class="Name">DiffTextDeletionBackground</span>
 	<span class="Value">77</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNumNoChangeBackground</span>
+	<span class="Name">DiffLineNum</span>
 	<span class="Value">78</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNumAdditionBackground</span>
+	<span class="Name">DiffLineNumSeparatorBackground</span>
 	<span class="Value">79</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffLineNumDeletionBackground</span>
+	<span class="Name">DiffLineNumNoChangeBackground</span>
 	<span class="Value">80</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffFilePathBackground</span>
+	<span class="Name">DiffLineNumAdditionBackground</span>
 	<span class="Value">81</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DiffFilePathBorder</span>
+	<span class="Name">DiffLineNumDeletionBackground</span>
 	<span class="Value">82</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ChatIncomingBgColor</span>
+	<span class="Name">DiffFilePathBackground</span>
 	<span class="Value">83</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ChatIncomingTextColor</span>
+	<span class="Name">DiffFilePathBorder</span>
 	<span class="Value">84</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ChatOutgoingBgColor</span>
+	<span class="Name">ChatIncomingBgColor</span>
 	<span class="Value">85</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ChatOutgoingTextColor</span>
+	<span class="Name">ChatIncomingTextColor</span>
 	<span class="Value">86</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ChatModeratedMessageColor</span>
+	<span class="Name">ChatOutgoingBgColor</span>
 	<span class="Value">87</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">Separator</span>
+	<span class="Name">ChatOutgoingTextColor</span>
 	<span class="Value">88</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ButtonBorder</span>
+	<span class="Name">ChatModeratedMessageColor</span>
 	<span class="Value">89</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ButtonText</span>
+	<span class="Name">Separator</span>
 	<span class="Value">90</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">InputFieldBorder</span>
+	<span class="Name">ButtonBorder</span>
 	<span class="Value">91</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">CheckedFieldBackground</span>
+	<span class="Name">ButtonText</span>
 	<span class="Value">92</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">CheckedFieldBorder</span>
+	<span class="Name">InputFieldBorder</span>
 	<span class="Value">93</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">CheckedFieldIndicator</span>
+	<span class="Name">CheckedFieldBackground</span>
 	<span class="Value">94</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">HeaderSection</span>
+	<span class="Name">CheckedFieldBorder</span>
 	<span class="Value">95</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">Midlight</span>
+	<span class="Name">CheckedFieldIndicator</span>
 	<span class="Value">96</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">StatusBar</span>
+	<span class="Name">HeaderSection</span>
 	<span class="Value">97</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogButton</span>
+	<span class="Name">Midlight</span>
 	<span class="Value">98</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogButtonText</span>
+	<span class="Name">StatusBar</span>
 	<span class="Value">99</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogButtonBorder</span>
+	<span class="Name">DialogButton</span>
 	<span class="Value">100</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogMainButton</span>
+	<span class="Name">DialogButtonText</span>
 	<span class="Value">101</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">DialogMainButtonText</span>
+	<span class="Name">DialogButtonBorder</span>
 	<span class="Value">102</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">InfoBarWarningBackground</span>
+	<span class="Name">DialogMainButton</span>
 	<span class="Value">103</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">InfoBarWarningText</span>
+	<span class="Name">DialogMainButtonText</span>
 	<span class="Value">104</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptEditorCurrentLine</span>
+	<span class="Name">InfoBarWarningBackground</span>
 	<span class="Value">105</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptMethod</span>
+	<span class="Name">InfoBarWarningText</span>
 	<span class="Value">106</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptProperty</span>
+	<span class="Name">ScriptEditorCurrentLine</span>
 	<span class="Value">107</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptNil</span>
+	<span class="Name">ScriptMethod</span>
 	<span class="Value">108</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptBool</span>
+	<span class="Name">ScriptProperty</span>
 	<span class="Value">109</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptFunction</span>
+	<span class="Name">ScriptNil</span>
 	<span class="Value">110</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptLocal</span>
+	<span class="Name">ScriptBool</span>
 	<span class="Value">111</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptSelf</span>
+	<span class="Name">ScriptFunction</span>
 	<span class="Value">112</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptLuauKeyword</span>
+	<span class="Name">ScriptLocal</span>
 	<span class="Value">113</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptFunctionName</span>
+	<span class="Name">ScriptSelf</span>
 	<span class="Value">114</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptTodo</span>
+	<span class="Name">ScriptLuauKeyword</span>
 	<span class="Value">115</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">ScriptBracket</span>
+	<span class="Name">ScriptFunctionName</span>
 	<span class="Value">116</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">StudioStyleGuideColor</span>
-	<span class="Name">AttributeCog</span>
+	<span class="Name">ScriptTodo</span>
 	<span class="Value">117</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">ScriptBracket</span>
+	<span class="Value">118</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">AttributeCog</span>
+	<span class="Value">119</span>
 </div>
 
 <div class="Enum">
