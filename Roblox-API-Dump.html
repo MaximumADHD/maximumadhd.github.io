@@ -1773,6 +1773,14 @@
 <div class="Function child">
 	<span class="Type">Instance</span>
 	<span class="ClassName Function">AssetImportSession</span>
+	<span class="Name">GetImportTree</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">AssetImportSession</span>
 	<span class="Name">GetInstance</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -1780,14 +1788,6 @@
 			<span class="ParamName">nodeId</span>
 		</span>
 	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">Instance</span>
-	<span class="ClassName Function">AssetImportSession</span>
-	<span class="Name">GetSettingsRoot</span>
-	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -1803,6 +1803,14 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Function">AssetImportSession</span>
 	<span class="Name">IsAvatar</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AssetImportSession</span>
+	<span class="Name">IsGltf</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -9122,13 +9130,13 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">AirController</span>
-	<span class="Name">TurningMaxTorque</span>
+	<span class="Name">TurnMaxTorque</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">AirController</span>
-	<span class="Name">TurningSpeedFactor</span>
+	<span class="Name">TurnSpeedFactor</span>
 </div>
 
 <div class="Class">
@@ -9357,14 +9365,6 @@
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">ControllerManager</span>
 	<span class="Name">MovingDirection</span>
-</div>
-
-<div class="Function deprecated child">
-	<span class="Type">Objects</span>
-	<span class="ClassName Function">ControllerManager</span>
-	<span class="Name">GetControllers</span>
-	<span class="Parameters"></span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Class">
@@ -16244,6 +16244,12 @@
 <div class="Class">
 	<span class="Name">AdGui</span>
 	<span class="Superclass">SurfaceGuiBase</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">AdGui</span>
+	<span class="Name">FallbackImage</span>
 </div>
 
 <div class="Property child">
@@ -25353,6 +25359,20 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">MouseService</span>
+	<span class="Name">MouseEnterStudioViewport</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MouseService</span>
+	<span class="Name">MouseLeaveStudioViewport</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">MultipleDocumentInterfaceInstance</span>
 	<span class="Superclass">Instance</span>
@@ -26080,11 +26100,12 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">CollisionGroupId</span>
 	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -36892,6 +36913,15 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Selection</span>
+	<span class="Name">ShowActiveInstanceHighlight</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Selection</span>
 	<span class="Name">ShowBoundingBox</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -36995,11 +37025,12 @@
 	<span class="Name">UpdateType</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">SensorBase</span>
 	<span class="Name">Sense</span>
 	<span class="Parameters"></span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Event child">
@@ -41519,6 +41550,15 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">StudioService</span>
+	<span class="Name">DEPRECATED_ShowActiveInstanceHighlight</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">StudioService</span>
 	<span class="Name">DraggerSolveConstraints</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
@@ -41569,15 +41609,6 @@
 	<span class="ClassName Property">StudioService</span>
 	<span class="Name">RotateIncrement</span>
 	<span class="Tag">[ReadOnly]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">StudioService</span>
-	<span class="Name">ShowActiveInstanceHighlight</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -43429,6 +43460,14 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">KeyCode</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">KeyboardKeyCode</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector2</span>
 	<span class="ClassName Property">ChatInputBarConfiguration</span>
 	<span class="Name">AbsolutePosition</span>
@@ -43456,6 +43495,22 @@
 	<span class="Type">Vector2</span>
 	<span class="ClassName Property">ChatInputBarConfiguration</span>
 	<span class="Name">AbsoluteSizeWrite</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">IsFocused</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="ThreadSafety">{🧬Unsafe}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">ChatInputBarConfiguration</span>
+	<span class="Name">IsFocusedWrite</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 </div>
@@ -51709,6 +51764,18 @@
 	<span class="EnumName">ConnectionError</span>
 	<span class="Name">DisconnectRomarkEndOfTest</span>
 	<span class="Value">293</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ConnectionError</span>
+	<span class="Name">DisconnectCollaboratorPermissionRevoked</span>
+	<span class="Value">294</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ConnectionError</span>
+	<span class="Name">DisconnectCollaboratorUnderage</span>
+	<span class="Value">295</span>
 </div>
 
 <div class="EnumItem child">
@@ -60068,6 +60135,30 @@
 	<span class="Value">40</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">StudioScriptEditorColorCategories</span>
+	<span class="Name">AICOOverlayText</span>
+	<span class="Value">41</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioScriptEditorColorCategories</span>
+	<span class="Name">AICOOverlayButtonBackground</span>
+	<span class="Value">42</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioScriptEditorColorCategories</span>
+	<span class="Name">AICOOverlayButtonBackgroundHover</span>
+	<span class="Value">43</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioScriptEditorColorCategories</span>
+	<span class="Name">AICOOverlayButtonBackgroundPressed</span>
+	<span class="Value">44</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">StudioScriptEditorColorPresets</span>
 </div>
@@ -60818,6 +60909,30 @@
 	<span class="EnumName">StudioStyleGuideColor</span>
 	<span class="Name">AttributeCog</span>
 	<span class="Value">119</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">AICOOverlayText</span>
+	<span class="Value">128</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">AICOOverlayButtonBackground</span>
+	<span class="Value">129</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">AICOOverlayButtonBackgroundHover</span>
+	<span class="Value">130</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">AICOOverlayButtonBackgroundPressed</span>
+	<span class="Value">131</span>
 </div>
 
 <div class="Enum">
