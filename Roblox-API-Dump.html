@@ -35249,6 +35249,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RenderingTest</span>
+	<span class="Name">PerfTest</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">RenderingTest</span>
 	<span class="Name">Position</span>
@@ -36728,6 +36734,19 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">ScriptEditorService</span>
+	<span class="Name">GetEditorSource</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">LuaSourceContainer</span>
+			<span class="ParamName">script</span>
+		</span>
+	</span>
+	<span class="Security">{PluginSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -39339,75 +39358,6 @@
 	<span class="Tag">[Service]</span>
 </div>
 
-<div class="Class deprecated">
-	<span class="Name">Speaker</span>
-	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">int</span>
-	<span class="ClassName Property">Speaker</span>
-	<span class="Name">ChannelCount</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[NotBrowsable]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">Instance</span>
-	<span class="ClassName Property">Speaker</span>
-	<span class="Name">Source</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">Speaker</span>
-	<span class="Name">RollOffMaxDistance</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">Speaker</span>
-	<span class="Name">RollOffMinDistance</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">RollOffMode</span>
-	<span class="ClassName Property">Speaker</span>
-	<span class="Name">RollOffMode</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">double</span>
-	<span class="ClassName Property">Speaker</span>
-	<span class="Name">PlaybackLoudness</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">Speaker</span>
-	<span class="Name">Volume</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">SoundGroup</span>
-	<span class="ClassName Property">Speaker</span>
-	<span class="Name">SoundGroup</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
 <div class="Class">
 	<span class="Name">StackFrame</span>
 	<span class="Superclass">Instance</span>
@@ -41563,11 +41513,12 @@
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
-<div class="Property child">
+<div class="Property deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">StudioService</span>
 	<span class="Name">DrawConstraintsOnTop</span>
 	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -43464,7 +43415,6 @@
 	<span class="Type">KeyCode</span>
 	<span class="ClassName Property">ChatInputBarConfiguration</span>
 	<span class="Name">KeyboardKeyCode</span>
-	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
@@ -57477,6 +57427,20 @@
 	<span class="Value">2</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">PartType</span>
+	<span class="Name">Wedge</span>
+	<span class="Value">3</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PartType</span>
+	<span class="Name">CornerWedge</span>
+	<span class="Value">4</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">ParticleEmitterShape</span>
 </div>
@@ -62813,6 +62777,28 @@
 	<span class="EnumName">WaterForce</span>
 	<span class="Name">Max</span>
 	<span class="Value">4</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">WeldConstraintPreserve</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WeldConstraintPreserve</span>
+	<span class="Name">All</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WeldConstraintPreserve</span>
+	<span class="Name">None</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">WeldConstraintPreserve</span>
+	<span class="Name">Touching</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
