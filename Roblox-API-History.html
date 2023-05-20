@@ -11,6 +11,952 @@
 	</ul>
 </head>
 
+<hr id="576"/>
+<h2>Version 0.576.0.5760523</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">TextFilterTranslatedResult</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">TextFilterTranslatedResult</span>
+				<span class="Name">SourceLanguage</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">TextFilterResult</span>
+				<span class="ClassName Property">TextFilterTranslatedResult</span>
+				<span class="Name">SourceText</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Dictionary</span>
+				<span class="ClassName Function">TextFilterTranslatedResult</span>
+				<span class="Name">GetTranslations</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">DragDetector</span>
+			<span class="Superclass">ClickDetector</span>
+			<span class="Tag">[NotBrowsable]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">DragDetectorDragStyle</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">DragStyle</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">Enabled</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">DragDetectorResponseStyle</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">ResponseStyle</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">RunLocally</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">TrackballRadialPullFactor</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">TrackballRollFactor</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Instance</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">ReferenceInstance</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector3</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">Axis</span>
+				<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector3</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">Orientation</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector3</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">SecondaryAxis</span>
+				<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector3</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">WorldAxis</span>
+				<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector3</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">WorldSecondaryAxis</span>
+				<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+				<span class="Tag">[NotReplicated]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">MaxDragAngle</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector3</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">MaxDragTranslation</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">MinDragAngle</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">Vector3</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">MinDragTranslation</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">CFrame</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">DragFrame</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">KeyCode</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">GamepadModeSwitchKeyCode</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">KeyCode</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">KeyboardModeSwitchKeyCode</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="EnumName Type">Enum</span>
+				<span class="Type">KeyCode</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">VRSwitchKeyCode</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">bool</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">ApplyAtCenterOfMass</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">MaxForce</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">MaxTorque</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">float</span>
+				<span class="ClassName Property">DragDetector</span>
+				<span class="Name">Responsiveness</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">DragDetector</span>
+				<span class="Name">AddConstraintFunction</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">name</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">int</span>
+						<span class="ParamName">priority</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Function</span>
+						<span class="ParamName">function</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">CFrame</span>
+				<span class="ClassName Function">DragDetector</span>
+				<span class="Name">GetReferenceFrame</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">DragDetector</span>
+				<span class="Name">RemoveConstraintFunction</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">string</span>
+						<span class="ParamName">name</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">DragDetector</span>
+				<span class="Name">RestartDrag</span>
+				<span class="Parameters"></span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">DragDetector</span>
+				<span class="Name">SetDragStyleFunction</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Function</span>
+						<span class="ParamName">function</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">DragDetector</span>
+				<span class="Name">DragContinue</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Player</span>
+						<span class="ParamName">playerWhoDragged</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Ray</span>
+						<span class="ParamName">cursorRay</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">CFrame</span>
+						<span class="ParamName">viewFrame</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">OptionalCoordinateFrame</span>
+						<span class="ParamName">vrInputFrame</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">bool</span>
+						<span class="ParamName">isModeSwitchKeyDown</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">DragDetector</span>
+				<span class="Name">DragEnd</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Player</span>
+						<span class="ParamName">playerWhoDragged</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Event">
+				<span class="ClassName Event">DragDetector</span>
+				<span class="Name">DragStart</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Player</span>
+						<span class="ParamName">playerWhoDragged</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Ray</span>
+						<span class="ParamName">cursorRay</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">CFrame</span>
+						<span class="ParamName">viewFrame</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">CFrame</span>
+						<span class="ParamName">hitFrame</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">BasePart</span>
+						<span class="ParamName">clickedPart</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">OptionalCoordinateFrame</span>
+						<span class="ParamName">vrInputFrame</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">bool</span>
+						<span class="ParamName">isModeSwitchKeyDown</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">string</span>
+			<span class="ClassName Property">Humanoid</span>
+			<span class="Name">InternalDisplayName</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ParticleEmitter</span>
+			<span class="Name">WindAffectsDrag</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Automatically trigger AI Code Completion</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">CompileTarget</span>
+			<span class="ClassName Property">SyncScriptBuilder</span>
+			<span class="Name">CompileTarget</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">VoiceChatService</span>
+			<span class="Name">UseNewJoinFlow</span>
+			<span class="Security">{RobloxSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Objects</span>
+			<span class="ClassName Function">Attachment</span>
+			<span class="Name">GetConstraints</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Vector3</span>
+			<span class="ClassName Function">BasePart</span>
+			<span class="Name">GetClosestPointOnSurface</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Vector3</span>
+					<span class="ParamName">position</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Objects</span>
+			<span class="ClassName Function">InsertService</span>
+			<span class="Name">LoadAssetWithFormat</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">assetId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">format</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Instance</span>
+			<span class="Name">AddTag</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">tag</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Array</span>
+			<span class="ClassName Function">Instance</span>
+			<span class="Name">GetTags</span>
+			<span class="Parameters"></span>
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">Instance</span>
+			<span class="Name">HasTag</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">tag</span>
+				</span>
+			</span>
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">Instance</span>
+			<span class="Name">RemoveTag</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">tag</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Objects</span>
+			<span class="ClassName Function">Model</span>
+			<span class="Name">GetPersistentPlayers</span>
+			<span class="Parameters"></span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">int64</span>
+			<span class="ClassName Function">PluginManagementService</span>
+			<span class="Name">GetOTAPluginVersion</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName default">pluginName</span>
+					<span class="ParamDefault string"></span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">Instance</span>
+			<span class="ClassName Function">TextService</span>
+			<span class="Name">FilterAndTranslateStringAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">stringToFilter</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">fromUserId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Array</span>
+					<span class="ParamName">targetLocales</span>
+				</span>
+				<span class="Parameter">
+					<span class="EnumName Type">Enum</span>
+					<span class="Type">TextFilterContext</span>
+					<span class="ParamName default">textContext</span>
+					<span class="ParamDefault String">PrivateChat</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">UGCValidationService</span>
+			<span class="Name">ValidateNumTextureChannels</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">textureId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int</span>
+					<span class="ParamName">numChannelsRequired</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">CompileTarget</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompileTarget</span>
+				<span class="Name">Client</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompileTarget</span>
+				<span class="Name">CoreScript</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompileTarget</span>
+				<span class="Name">Studio</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">CompileTarget</span>
+				<span class="Name">CoreScriptRaw</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">DragDetectorDragStyle</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DragDetectorDragStyle</span>
+				<span class="Name">TranslateLine</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DragDetectorDragStyle</span>
+				<span class="Name">TranslatePlane</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DragDetectorDragStyle</span>
+				<span class="Name">TranslatePlaneOrLine</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DragDetectorDragStyle</span>
+				<span class="Name">TranslateLineOrPlane</span>
+				<span class="Value">3</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DragDetectorDragStyle</span>
+				<span class="Name">TranslateViewPlane</span>
+				<span class="Value">4</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DragDetectorDragStyle</span>
+				<span class="Name">RotateAxis</span>
+				<span class="Value">5</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DragDetectorDragStyle</span>
+				<span class="Name">RotateTrackball</span>
+				<span class="Value">6</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DragDetectorDragStyle</span>
+				<span class="Name">Scriptable</span>
+				<span class="Value">7</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DragDetectorDragStyle</span>
+				<span class="Name">BestForDevice</span>
+				<span class="Value">8</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">DragDetectorResponseStyle</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DragDetectorResponseStyle</span>
+				<span class="Name">Geometric</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DragDetectorResponseStyle</span>
+				<span class="Name">Physical</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">DragDetectorResponseStyle</span>
+				<span class="Name">Custom</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Player</span>
+			<span class="Name">DevEnableMouseLock</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">StarterPlayer</span>
+			<span class="Name">EnableMouseLockOption</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">SyncScriptBuilder</span>
+			<span class="Name">RawBytecode</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[Deprecated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserGameSettings</span>
+			<span class="Name">ControlMode</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Changed">
+	<span class="WhatChanged">thread safety</span>
+	<span class="Function">
+		<span class="ClassName Function">PVInstance</span>
+		<span class="Name">GetPivot</span>
+	</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Unsafe}</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="ThreadSafety">{🧬Safe}</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">UGCValidationService</span>
+			<span class="Name">GetMeshTriCountSync</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">UGCValidationService</span>
+			<span class="Name">GetMeshVertsSync</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">UGCValidationService</span>
+			<span class="Name">GetTextureSizeSync</span>
+		</span>
+	</span>
+</div>
 <hr id="575"/>
 <h2>Version 0.575.0.5750424</h2>
 
