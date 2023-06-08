@@ -1736,6 +1736,27 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Map</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">GetAllTemplates</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Map</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">GetTemplate</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">string</span>
 	<span class="ClassName Function">AssetImportService</span>
 	<span class="Name">PickFileWithPrompt</span>
@@ -1751,6 +1772,36 @@
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">RemoveTemplate</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetImportService</span>
+	<span class="Name">SaveTemplate</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">importTemplate</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2901,6 +2952,107 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AvatarChatService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">AvatarChatService</span>
+	<span class="Name">ClientFeatures</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">AvatarChatService</span>
+	<span class="Name">ClientFeaturesInitialized</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">AvatarChatService</span>
+	<span class="Name">ServerFeatures</span>
+	<span class="Security">{RobloxScriptSecurity} {✏️RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">AvatarChatService</span>
+	<span class="Name">GetClientFeaturesAsync</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">AvatarChatService</span>
+	<span class="Name">GetServerFeaturesAsync</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AvatarChatService</span>
+	<span class="Name">IsEnabled</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">mask</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AvatarChatServiceFeature</span>
+			<span class="ParamName">feature</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AvatarChatService</span>
+	<span class="Name">IsPlaceEnabled</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AvatarChatService</span>
+	<span class="Name">IsUniverseEnabled</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">AvatarChatService</span>
+	<span class="Name">PollClientFeatures</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">AvatarChatService</span>
+	<span class="Name">PollServerFeatures</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">AvatarEditorService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -3018,6 +3170,19 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">AvatarItemType</span>
 			<span class="ParamName">itemType</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">AvatarEditorService</span>
+	<span class="Name">GetOutfitDetails</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">outfitId</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -7702,6 +7867,27 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">AlignPosition</span>
 	<span class="Name">RigidityEnabled</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ForceLimitMode</span>
+	<span class="ClassName Property">AlignPosition</span>
+	<span class="Name">ForceLimitMode</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ActuatorRelativeTo</span>
+	<span class="ClassName Property">AlignPosition</span>
+	<span class="Name">ForceRelativeTo</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">AlignPosition</span>
+	<span class="Name">MaxAxesForce</span>
 </div>
 
 <div class="Property child">
@@ -13246,6 +13432,13 @@
 </div>
 
 <div class="Class">
+	<span class="Name">FacialAnimationStreamingSubsessionStats</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">Feature</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -14884,16 +15077,16 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">GuiButton</span>
-	<span class="Name">Selected</span>
-</div>
-
-<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">ButtonStyle</span>
 	<span class="ClassName Property">GuiButton</span>
 	<span class="Name">Style</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">GuiButton</span>
+	<span class="Name">Selected</span>
 </div>
 
 <div class="Event child">
@@ -31251,11 +31444,10 @@
 	<span class="Name">DevComputerCameraMode</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Player</span>
 	<span class="Name">DevEnableMouseLock</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -32450,7 +32642,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Players</span>
 	<span class="Name">UseStrafingAnimations</span>
-	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -37370,18 +37561,28 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Selection</span>
-	<span class="Name">ShowActiveInstanceHighlight</span>
+	<span class="Name">DEPRECATED_ShowBoundingBox</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">SelectionRenderMode</span>
+	<span class="ClassName Property">Selection</span>
+	<span class="Name">RenderMode</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
 </div>
 
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Selection</span>
-	<span class="Name">ShowBoundingBox</span>
+	<span class="Name">ShowActiveInstanceHighlight</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Function child">
@@ -40291,11 +40492,10 @@
 	<span class="Name">DevTouchMovementMode</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">EnableMouseLockOption</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -42570,6 +42770,41 @@
 	<span class="Tag">[NotCreatable]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">StyleBase</span>
+	<span class="Name">GetStyleRules</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StyleBase</span>
+	<span class="Name">InsertStyleRule</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">StyleRule</span>
+			<span class="ParamName">rule</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int?</span>
+			<span class="ParamName">index</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StyleBase</span>
+	<span class="Name">SetStyleRules</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">rules</span>
+		</span>
+	</span>
+</div>
+
 <div class="Class">
 	<span class="Name">StyleRule</span>
 	<span class="Superclass">StyleBase</span>
@@ -42588,9 +42823,96 @@
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">StyleRule</span>
+	<span class="Name">GetProperties</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">StyleRule</span>
+	<span class="Name">GetPropertiesResolved</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Variant</span>
+	<span class="ClassName Function">StyleRule</span>
+	<span class="Name">GetProperty</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Variant</span>
+	<span class="ClassName Function">StyleRule</span>
+	<span class="Name">GetPropertyResolved</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StyleRule</span>
+	<span class="Name">SetProperties</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">table</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StyleRule</span>
+	<span class="Name">SetProperty</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">value</span>
+		</span>
+	</span>
+</div>
+
 <div class="Class">
 	<span class="Name">StyleSheet</span>
 	<span class="Superclass">StyleBase</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">StyleSheet</span>
+	<span class="Name">GetDerives</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StyleSheet</span>
+	<span class="Name">SetDerives</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Objects</span>
+			<span class="ParamName">derives</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -42598,9 +42920,21 @@
 	<span class="Superclass">Instance</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">StyleSheet</span>
+	<span class="ClassName Property">StyleDerive</span>
+	<span class="Name">StyleSheet</span>
+</div>
+
 <div class="Class">
 	<span class="Name">StyleLink</span>
 	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">StyleSheet</span>
+	<span class="ClassName Property">StyleLink</span>
+	<span class="Name">StyleSheet</span>
 </div>
 
 <div class="Class">
@@ -42609,6 +42943,58 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">StylingService</span>
+	<span class="Name">GetAppliedStyles</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">instance</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">StylingService</span>
+	<span class="Name">GetStyleInfo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">StyleRule</span>
+			<span class="ParamName">style</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Objects</span>
+	<span class="ClassName Function">StylingService</span>
+	<span class="Name">GetStyleSheetDerivesChain</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">StyleSheet</span>
+			<span class="ParamName">styleSheet</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">StylingService</span>
+	<span class="Name">GetStyleSheetInfo</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">StyleSheet</span>
+			<span class="ParamName">styleSheet</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -44346,6 +44732,18 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">TextFilterResult</span>
+	<span class="ClassName Function">TextFilterTranslatedResult</span>
+	<span class="Name">GetTranslationForLocale</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">locale</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">TextFilterTranslatedResult</span>
 	<span class="Name">GetTranslations</span>
@@ -46076,12 +46474,11 @@
 	<span class="Name">ComputerMovementMode</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">ControlMode</span>
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">ControlMode</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property child">
@@ -50674,6 +51071,64 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">AvatarChatServiceFeature</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarChatServiceFeature</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarChatServiceFeature</span>
+	<span class="Name">UniverseAudio</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarChatServiceFeature</span>
+	<span class="Name">UniverseVideo</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarChatServiceFeature</span>
+	<span class="Name">PlaceAudio</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarChatServiceFeature</span>
+	<span class="Name">PlaceVideo</span>
+	<span class="Value">8</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarChatServiceFeature</span>
+	<span class="Name">UserAudioEligible</span>
+	<span class="Value">16</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarChatServiceFeature</span>
+	<span class="Name">UserAudio</span>
+	<span class="Value">32</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarChatServiceFeature</span>
+	<span class="Name">UserVideoEligible</span>
+	<span class="Value">64</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarChatServiceFeature</span>
+	<span class="Name">UserVideo</span>
+	<span class="Value">128</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">AvatarContextMenuOption</span>
 </div>
 
@@ -52289,6 +52744,12 @@
 	<span class="EnumName">ConnectionError</span>
 	<span class="Name">DisconnectClientRequest</span>
 	<span class="Value">285</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ConnectionError</span>
+	<span class="Name">DisconnectPrivateServerKickout</span>
+	<span class="Value">286</span>
 </div>
 
 <div class="EnumItem child">
@@ -54223,6 +54684,22 @@
 	<span class="EnumName">FontWeight</span>
 	<span class="Name">Heavy</span>
 	<span class="Value">900</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ForceLimitMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ForceLimitMode</span>
+	<span class="Name">Magnitude</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ForceLimitMode</span>
+	<span class="Name">PerAxis</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
@@ -60098,6 +60575,28 @@
 	<span class="EnumName">SelectionBehavior</span>
 	<span class="Name">Stop</span>
 	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">SelectionRenderMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SelectionRenderMode</span>
+	<span class="Name">Outlines</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SelectionRenderMode</span>
+	<span class="Name">BoundingBoxes</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SelectionRenderMode</span>
+	<span class="Name">Both</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
