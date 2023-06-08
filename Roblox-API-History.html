@@ -11,6 +11,394 @@
 	</ul>
 </head>
 
+<hr id="577"/>
+<h2>Version 0.577.0.5770506</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">ScriptCommitService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StyleBase</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StyleDerive</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StyleLink</span>
+			<span class="Superclass">Instance</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StylingService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StyleRule</span>
+			<span class="Superclass">StyleBase</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">StyleRule</span>
+				<span class="Name">Selector</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Property">
+				<span class="Type">string</span>
+				<span class="ClassName Property">StyleRule</span>
+				<span class="Name">SelectorError</span>
+				<span class="Tag">[ReadOnly]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">StyleSheet</span>
+			<span class="Superclass">StyleBase</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Camera</span>
+			<span class="Name">VRTiltAndRollEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">int</span>
+			<span class="ClassName Property">RenderingTest</span>
+			<span class="Name">Timeout</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">AssetImportSession</span>
+			<span class="Name">ApplySettings</span>
+			<span class="Parameters"></span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">SocialService</span>
+			<span class="Name">CanSendIrisInviteAsync</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">player</span>
+				</span>
+			</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">SocialService</span>
+			<span class="Name">InvokeIrisInvite</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">player</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">tag</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Array</span>
+					<span class="ParamName">irisParticipantIds</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">SocialService</span>
+			<span class="Name">InvokeIrisInvitePromptClosed</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">player</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">void</span>
+			<span class="ClassName Function">SocialService</span>
+			<span class="Name">PromptIrisInvite</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">player</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">tag</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">SocialService</span>
+			<span class="Name">IrisInvitePromptClosed</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">player</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Event">
+			<span class="ClassName Event">SocialService</span>
+			<span class="Name">PromptIrisInviteRequested</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">player</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">tag</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Callback">
+			<span class="Type">Instance</span>
+			<span class="ClassName Callback">SocialService</span>
+			<span class="Name">OnIrisInviteInvoked</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">tag</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">Array</span>
+					<span class="ParamName">irisParticipantIds</span>
+				</span>
+			</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="EnumItem">
+			<span class="EnumName">TrackerError</span>
+			<span class="Name">UnsupportedDevice</span>
+			<span class="Value">10</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">VehicleSeat</span>
+			<span class="Name">Steer</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="TagChange singular to">
+		<span class="Tag">[NotReplicated]</span>
+	</span>
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">VehicleSeat</span>
+			<span class="Name">Throttle</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">CSGOptions</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">AdPortal</span>
+			<span class="Name">PortalStatus</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">Display Team Create toggle when creating a new experience</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">Studio</span>
+			<span class="Name">File &gt; New creates a place with Team Create off</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">TeamCreateService</span>
+			<span class="Name">SendUnarchiveUniverseAsync</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Function">
+			<span class="ClassName Function">TeamCreateService</span>
+			<span class="Name">SendUnarchiveUniverseWithReasonAsync</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">AdPortalStatus</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AdPortalStatus</span>
+				<span class="Name">Invalid</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AdPortalStatus</span>
+				<span class="Name">Inactive</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">AdPortalStatus</span>
+				<span class="Name">Active</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
 <hr id="576"/>
 <h2>Version 0.576.0.5760523</h2>
 

@@ -567,15 +567,6 @@
 	<span class="Superclass">Instance</span>
 </div>
 
-<div class="Property deprecated child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">AdPortalStatus</span>
-	<span class="ClassName Property">AdPortal</span>
-	<span class="Name">PortalStatus</span>
-	<span class="Tag">[ReadOnly]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
 <div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">AdUnitStatus</span>
@@ -1789,6 +1780,14 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetImportSession</span>
+	<span class="Name">ApplySettings</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -5804,11 +5803,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">CSGOptions</span>
-	<span class="Superclass">Instance</span>
-</div>
-
-<div class="Class">
 	<span class="Name">CacheableContentProvider</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -6000,6 +5994,12 @@
 	<span class="ClassName Property">Camera</span>
 	<span class="Name">NearPlaneZ</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Camera</span>
+	<span class="Name">VRTiltAndRollEnabled</span>
 </div>
 
 <div class="Property child">
@@ -28392,6 +28392,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">VehicleSeat</span>
 	<span class="Name">Steer</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -28404,6 +28405,7 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">VehicleSeat</span>
 	<span class="Name">Throttle</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -35695,6 +35697,12 @@
 	<span class="Name">Ticket</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">RenderingTest</span>
+	<span class="Name">Timeout</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">RenderingTest</span>
@@ -36409,6 +36417,13 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ScriptCommitService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
@@ -38876,6 +38891,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">SocialService</span>
+	<span class="Name">CanSendIrisInviteAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">SocialService</span>
 	<span class="Name">InvokeGameInvitePromptClosed</span>
@@ -38887,6 +38915,40 @@
 		<span class="Parameter">
 			<span class="Type">Array</span>
 			<span class="ParamName">recipientIds</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SocialService</span>
+	<span class="Name">InvokeIrisInvite</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">tag</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">irisParticipantIds</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SocialService</span>
+	<span class="Name">InvokeIrisInvitePromptClosed</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -38909,6 +38971,22 @@
 	</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">SocialService</span>
+	<span class="Name">PromptIrisInvite</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">tag</span>
+		</span>
+	</span>
+</div>
+
 <div class="Event child">
 	<span class="ClassName Event">SocialService</span>
 	<span class="Name">GameInvitePromptClosed</span>
@@ -38920,6 +38998,17 @@
 		<span class="Parameter">
 			<span class="Type">Array</span>
 			<span class="ParamName">recipientIds</span>
+		</span>
+	</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">SocialService</span>
+	<span class="Name">IrisInvitePromptClosed</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
 		</span>
 	</span>
 </div>
@@ -38938,6 +39027,38 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">SocialService</span>
+	<span class="Name">PromptIrisInviteRequested</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">tag</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Callback child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Callback">SocialService</span>
+	<span class="Name">OnIrisInviteInvoked</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">tag</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">irisParticipantIds</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -40417,12 +40538,6 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
-	<span class="Name">Display Team Create toggle when creating a new experience</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
 	<span class="Name">Drag Multiple Parts As Single Part</span>
 </div>
 
@@ -40448,12 +40563,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Enable Internal Features</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">File &gt; New creates a place with Team Create off</span>
 </div>
 
 <div class="Property child">
@@ -42456,6 +42565,53 @@
 </div>
 
 <div class="Class">
+	<span class="Name">StyleBase</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">StyleRule</span>
+	<span class="Superclass">StyleBase</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">StyleRule</span>
+	<span class="Name">Selector</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">StyleRule</span>
+	<span class="Name">SelectorError</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">StyleSheet</span>
+	<span class="Superclass">StyleBase</span>
+</div>
+
+<div class="Class">
+	<span class="Name">StyleDerive</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Class">
+	<span class="Name">StyleLink</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Class">
+	<span class="Name">StylingService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">SurfaceAppearance</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -42631,36 +42787,6 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">TeamCreateService</span>
-	<span class="Name">SendUnarchiveUniverseAsync</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">universeId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">TeamCreateService</span>
-	<span class="Name">SendUnarchiveUniverseWithReasonAsync</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">universeId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">reason</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -49350,28 +49476,6 @@
 <div class="EnumItem child">
 	<span class="EnumName">ActuatorType</span>
 	<span class="Name">Servo</span>
-	<span class="Value">2</span>
-</div>
-
-<div class="Enum">
-	<span class="Name">AdPortalStatus</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">AdPortalStatus</span>
-	<span class="Name">Invalid</span>
-	<span class="Value">0</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">AdPortalStatus</span>
-	<span class="Name">Inactive</span>
-	<span class="Value">1</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">AdPortalStatus</span>
-	<span class="Name">Active</span>
 	<span class="Value">2</span>
 </div>
 
@@ -62555,6 +62659,12 @@
 	<span class="EnumName">TrackerError</span>
 	<span class="Name">AudioNoPermission</span>
 	<span class="Value">9</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TrackerError</span>
+	<span class="Name">UnsupportedDevice</span>
+	<span class="Value">10</span>
 </div>
 
 <div class="Enum">
