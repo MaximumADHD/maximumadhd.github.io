@@ -11,6 +11,633 @@
 	</ul>
 </head>
 
+<hr id="581"/>
+<h2>Version 0.581.0.5810563</h2>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">GeometryService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Dictionary</span>
+				<span class="ClassName Function">GeometryService</span>
+				<span class="Name">CalculateConstraintsToPreserve</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">source</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Objects</span>
+						<span class="ParamName">destination</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Variant</span>
+						<span class="ParamName">options</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Objects</span>
+				<span class="ClassName Function">GeometryService</span>
+				<span class="Name">IntersectAsync</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">part</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Objects</span>
+						<span class="ParamName">parts</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Variant</span>
+						<span class="ParamName">options</span>
+					</span>
+				</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Objects</span>
+				<span class="ClassName Function">GeometryService</span>
+				<span class="Name">SubtractAsync</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">part</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Objects</span>
+						<span class="ParamName">parts</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Variant</span>
+						<span class="ParamName">options</span>
+					</span>
+				</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">Objects</span>
+				<span class="ClassName Function">GeometryService</span>
+				<span class="Name">UnionAsync</span>
+				<span class="Parameters">
+					<span class="Parameter">
+						<span class="Type">Instance</span>
+						<span class="ParamName">part</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Objects</span>
+						<span class="ParamName">parts</span>
+					</span>
+					<span class="Parameter">
+						<span class="Type">Variant</span>
+						<span class="ParamName">options</span>
+					</span>
+				</span>
+				<span class="Tag">[Yields]</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">OpenCloudService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Class">
+			<span class="Name">RomarkService</span>
+			<span class="Superclass">Instance</span>
+			<span class="Tag">[NotCreatable]</span>
+			<span class="Tag">[Service]</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="Function">
+				<span class="Type">void</span>
+				<span class="ClassName Function">RomarkService</span>
+				<span class="Name">EndRemoteRomarkTest</span>
+				<span class="Parameters"></span>
+				<span class="Security">{RobloxScriptSecurity}</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">BasePart</span>
+			<span class="Name">EnableFluidForces</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Breakpoint</span>
+			<span class="Name">RemoveOnHit</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">ControllerBase</span>
+			<span class="Name">BalanceRigidityEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">MetaBreakpoint</span>
+			<span class="Name">RemoveOnHit</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Hidden]</span>
+			<span class="Tag">[NotReplicated]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">PhysicsSettings</span>
+			<span class="Name">AreCollisionCostsShown</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">TextDirection</span>
+			<span class="ClassName Property">TextBox</span>
+			<span class="Name">TextDirection</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">TextDirection</span>
+			<span class="ClassName Property">TextButton</span>
+			<span class="Name">TextDirection</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">TextDirection</span>
+			<span class="ClassName Property">TextLabel</span>
+			<span class="Name">TextDirection</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">float</span>
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">AirDensity</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="Type">bool</span>
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">EnableFluidForces</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Property">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">IKControlConstraintSupport</span>
+			<span class="ClassName Property">Workspace</span>
+			<span class="Name">IKControlConstraintSupport</span>
+			<span class="Tag">[NotScriptable]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">int64</span>
+			<span class="ClassName Function">PublishService</span>
+			<span class="Name">CreateAssetAndWaitForAssetId</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">Instance</span>
+					<span class="ParamName">instance</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">operationId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">int64</span>
+					<span class="ParamName">creatorId</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">assetType</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">name</span>
+				</span>
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">description</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">UGCValidationService</span>
+			<span class="Name">ValidateDynamicHeadMesh</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">meshId</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+<div class="Added">
+	<span class="Target">
+		<span class="Function">
+			<span class="Type">bool</span>
+			<span class="ClassName Function">UGCValidationService</span>
+			<span class="Name">ValidateSkinnedMesh</span>
+			<span class="Parameters">
+				<span class="Parameter">
+					<span class="Type">string</span>
+					<span class="ParamName">meshId</span>
+				</span>
+			</span>
+			<span class="Security">{RobloxScriptSecurity}</span>
+			<span class="Tag">[Yields]</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">IKControlConstraintSupport</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IKControlConstraintSupport</span>
+				<span class="Name">Default</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IKControlConstraintSupport</span>
+				<span class="Name">Disabled</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">IKControlConstraintSupport</span>
+				<span class="Name">Enabled</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Added">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">TextDirection</span>
+		</span>
+	</span>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TextDirection</span>
+				<span class="Name">Auto</span>
+				<span class="Value">0</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TextDirection</span>
+				<span class="Name">LeftToRight</span>
+				<span class="Value">1</span>
+			</span>
+		</span>
+	</div>
+	<div class="Added child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">TextDirection</span>
+				<span class="Name">RightToLeft</span>
+				<span class="Value">2</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Moved">
+<span class="Function"> CalculateConstraintsToPreserve</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Class">
+				<span class="Name">Geometry</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Class">
+				<span class="Name">GeometryService</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Moved">
+<span class="Function"> IntersectAsync</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Class">
+				<span class="Name">Geometry</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Class">
+				<span class="Name">GeometryService</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Moved">
+<span class="Function"> SubtractAsync</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Class">
+				<span class="Name">Geometry</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Class">
+				<span class="Name">GeometryService</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Moved">
+<span class="Function"> UnionAsync</span>
+	<div class="ChangeFrom">
+		<span class="ChangeList">
+			<span class="Class">
+				<span class="Name">Geometry</span>
+			</span>
+		</span>
+	</div>
+	<div class="ChangeTo">
+		<span class="ChangeList">
+			<span class="Class">
+				<span class="Name">GeometryService</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
+<div class="Merged">
+	<span class="ChangeList">
+		<li class="Property">
+			<span class="ClassName Property">AirController</span>
+			<span class="Name">BalanceRigidityEnabled</span>
+		</li>
+		<li class="Property">
+			<span class="ClassName Property">ClimbController</span>
+			<span class="Name">BalanceRigidityEnabled</span>
+		</li>
+		<li class="Property">
+			<span class="ClassName Property">GroundController</span>
+			<span class="Name">BalanceRigidityEnabled</span>
+		</li>
+	</span>
+	<span class="MergeListInto">
+		<span class="ChangeList">
+			<li class="Property">
+				<span class="ClassName Property">ControllerBase</span>
+				<span class="Name">BalanceRigidityEnabled</span>
+			</li>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">AirController</span>
+			<span class="Name">VectorForce</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">AirController</span>
+			<span class="Name">OrientationMaxTorque</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">AirController</span>
+			<span class="Name">OrientationSpeedFactor</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ClimbController</span>
+			<span class="Name">OrientationMaxTorque</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ClimbController</span>
+			<span class="Name">OrientationSpeedFactor</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">ControllerBase</span>
+			<span class="Name">RigidityEnabled</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GroundController</span>
+			<span class="Name">AlignSpeed</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GroundController</span>
+			<span class="Name">AlignTorque</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">GroundController</span>
+			<span class="Name">TurningFactor</span>
+		</span>
+	</span>
+</div>
+<div class="Removed">
+	<span class="Target">
+		<span class="Property">
+			<span class="ClassName Property">UserGameSettings</span>
+			<span class="Name">VRPlayMode</span>
+		</span>
+	</span>
+</div>
+
+<br/>
+
+<div class="Removed">
+	<span class="Target">
+		<span class="Enum">
+			<span class="Name">VRPlayMode</span>
+		</span>
+	</span>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VRPlayMode</span>
+				<span class="Name">Seated</span>
+			</span>
+		</span>
+	</div>
+	<div class="Removed child">
+		<span class="Target">
+			<span class="EnumItem">
+				<span class="EnumName">VRPlayMode</span>
+				<span class="Name">Standing</span>
+			</span>
+		</span>
+	</div>
+</div>
+
+<br/>
+
 <hr id="580"/>
 <h2>Version 0.580.0.5800572</h2>
 

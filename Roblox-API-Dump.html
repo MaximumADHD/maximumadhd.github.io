@@ -5747,6 +5747,15 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Breakpoint</span>
+	<span class="Name">RemoveOnHit</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Breakpoint</span>
 	<span class="Name">Valid</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -9642,7 +9651,7 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">ControllerBase</span>
-	<span class="Name">RigidityEnabled</span>
+	<span class="Name">BalanceRigidityEnabled</span>
 </div>
 
 <div class="Property child">
@@ -9661,12 +9670,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">AirController</span>
 	<span class="Name">BalanceMaxTorque</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">AirController</span>
-	<span class="Name">BalanceRigidityEnabled</span>
 </div>
 
 <div class="Property child">
@@ -9691,28 +9694,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">AirController</span>
 	<span class="Name">MoveMaxForce</span>
-</div>
-
-<div class="Property deprecated child">
-	<span class="Type">Vector3</span>
-	<span class="ClassName Property">AirController</span>
-	<span class="Name">VectorForce</span>
-	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">AirController</span>
-	<span class="Name">OrientationMaxTorque</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">AirController</span>
-	<span class="Name">OrientationSpeedFactor</span>
 </div>
 
 <div class="Property child">
@@ -9746,27 +9727,9 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">ClimbController</span>
-	<span class="Name">BalanceRigidityEnabled</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">ClimbController</span>
 	<span class="Name">BalanceSpeed</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">ClimbController</span>
-	<span class="Name">OrientationMaxTorque</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">ClimbController</span>
-	<span class="Name">OrientationSpeedFactor</span>
 </div>
 
 <div class="Property child">
@@ -9796,25 +9759,7 @@
 <div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">GroundController</span>
-	<span class="Name">AlignSpeed</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">GroundController</span>
-	<span class="Name">AlignTorque</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">GroundController</span>
 	<span class="Name">BalanceMaxTorque</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">GroundController</span>
-	<span class="Name">BalanceRigidityEnabled</span>
 </div>
 
 <div class="Property child">
@@ -9869,12 +9814,6 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">GroundController</span>
 	<span class="Name">TurnSpeedFactor</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">float</span>
-	<span class="ClassName Property">GroundController</span>
-	<span class="Name">TurningFactor</span>
 </div>
 
 <div class="Class">
@@ -14005,9 +13944,16 @@
 	<span class="Tag">[Service]</span>
 </div>
 
+<div class="Class">
+	<span class="Name">GeometryService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">Dictionary</span>
-	<span class="ClassName Function">Geometry</span>
+	<span class="ClassName Function">GeometryService</span>
 	<span class="Name">CalculateConstraintsToPreserve</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -14019,20 +13965,15 @@
 			<span class="ParamName">destination</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">float</span>
-			<span class="ParamName">tolerance</span>
-		</span>
-		<span class="Parameter">
-			<span class="EnumName Type">Enum</span>
-			<span class="Type">WeldConstraintPreserve</span>
-			<span class="ParamName">weldConstraintPreserve</span>
+			<span class="Type">Variant</span>
+			<span class="ParamName">options</span>
 		</span>
 	</span>
 </div>
 
 <div class="Function child">
 	<span class="Type">Objects</span>
-	<span class="ClassName Function">Geometry</span>
+	<span class="ClassName Function">GeometryService</span>
 	<span class="Name">IntersectAsync</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -14053,7 +13994,7 @@
 
 <div class="Function child">
 	<span class="Type">Objects</span>
-	<span class="ClassName Function">Geometry</span>
+	<span class="ClassName Function">GeometryService</span>
 	<span class="Name">SubtractAsync</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -14074,7 +14015,7 @@
 
 <div class="Function child">
 	<span class="Type">Objects</span>
-	<span class="ClassName Function">Geometry</span>
+	<span class="ClassName Function">GeometryService</span>
 	<span class="Name">UnionAsync</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -15514,6 +15455,13 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">TextDirection</span>
+	<span class="ClassName Property">TextButton</span>
+	<span class="Name">TextDirection</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">TextButton</span>
 	<span class="Name">TextFits</span>
@@ -15792,6 +15740,13 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">TextLabel</span>
 	<span class="Name">TextColor3</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">TextDirection</span>
+	<span class="ClassName Property">TextLabel</span>
+	<span class="Name">TextDirection</span>
 </div>
 
 <div class="Property child">
@@ -16226,6 +16181,13 @@
 	<span class="Type">Color3</span>
 	<span class="ClassName Property">TextBox</span>
 	<span class="Name">TextColor3</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">TextDirection</span>
+	<span class="ClassName Property">TextBox</span>
+	<span class="Name">TextDirection</span>
 </div>
 
 <div class="Property child">
@@ -25691,6 +25653,15 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">MetaBreakpoint</span>
+	<span class="Name">RemoveOnHit</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">MetaBreakpoint</span>
 	<span class="Name">Valid</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -26719,6 +26690,14 @@
 </div>
 
 <div class="Class">
+	<span class="Name">OpenCloudService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">PVInstance</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -26851,6 +26830,12 @@
 	<span class="ClassName Property">BasePart</span>
 	<span class="Name">AssemblyRootPart</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">BasePart</span>
+	<span class="Name">EnableFluidForces</span>
 </div>
 
 <div class="Property child">
@@ -29819,6 +29804,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">AirDensity</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">AllowThirdPartySales</span>
@@ -29838,6 +29829,12 @@
 	<span class="Type">ClientAnimatorThrottlingMode</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">ClientAnimatorThrottling</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">EnableFluidForces</span>
 </div>
 
 <div class="Property child">
@@ -29874,6 +29871,14 @@
 	<span class="Type">HumanoidOnlySetCollisionsOnStateChange</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">HumanoidOnlySetCollisionsOnStateChange</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">IKControlConstraintSupport</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">IKControlConstraintSupport</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -31436,6 +31441,13 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PhysicsSettings</span>
 	<span class="Name">AreBodyTypesShown</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PhysicsSettings</span>
+	<span class="Name">AreCollisionCostsShown</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -35154,6 +35166,40 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">int64</span>
+	<span class="ClassName Function">PublishService</span>
+	<span class="Name">CreateAssetAndWaitForAssetId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">instance</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">operationId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">creatorId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">assetType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">description</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Content</span>
 	<span class="ClassName Function">PublishService</span>
 	<span class="Name">PublishCageMeshAsync</span>
@@ -36212,6 +36258,21 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">RomarkService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RomarkService</span>
+	<span class="Name">EndRemoteRomarkTest</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -46022,6 +46083,20 @@
 <div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateDynamicHeadMesh</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
 	<span class="Name">ValidateFullBodyCageDeletion</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -46131,6 +46206,20 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Function">UGCValidationService</span>
 	<span class="Name">ValidateOverlappingVertices</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateSkinnedMesh</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -46823,16 +46912,6 @@
 	<span class="Type">TouchMovementMode</span>
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">TouchMovementMode</span>
-</div>
-
-<div class="Property child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">VRPlayMode</span>
-	<span class="ClassName Property">UserGameSettings</span>
-	<span class="Name">VRPlayMode</span>
-	<span class="Security">{✏️RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -56029,6 +56108,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">IKControlConstraintSupport</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IKControlConstraintSupport</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IKControlConstraintSupport</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">IKControlConstraintSupport</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">IKControlType</span>
 </div>
 
@@ -63001,6 +63102,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">TextDirection</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextDirection</span>
+	<span class="Name">Auto</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextDirection</span>
+	<span class="Name">LeftToRight</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">TextDirection</span>
+	<span class="Name">RightToLeft</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">TextFilterContext</span>
 </div>
 
@@ -63915,22 +64038,6 @@
 	<span class="EnumName">UserInputType</span>
 	<span class="Name">None</span>
 	<span class="Value">22</span>
-</div>
-
-<div class="Enum">
-	<span class="Name">VRPlayMode</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">VRPlayMode</span>
-	<span class="Name">Seated</span>
-	<span class="Value">0</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">VRPlayMode</span>
-	<span class="Name">Standing</span>
-	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
