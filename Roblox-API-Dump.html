@@ -1876,6 +1876,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetImportSession</span>
+	<span class="Name">ApplyTemplate</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">template</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetImportSession</span>
 	<span class="Name">Cancel</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -1946,6 +1959,14 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Function">AssetImportSession</span>
 	<span class="Name">IsR15</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetImportSession</span>
+	<span class="Name">Reset</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -4215,6 +4236,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Map</span>
+	<span class="ClassName Function">BaseImportData</span>
+	<span class="Name">CreateTemplateFromData</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">BaseImportData</span>
 	<span class="Name">GetStatuses</span>
@@ -5940,6 +5969,41 @@
 </div>
 
 <div class="Class">
+	<span class="Name">BubbleChatMessageProperties</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">BubbleChatMessageProperties</span>
+	<span class="Name">BackgroundColor3</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">double</span>
+	<span class="ClassName Property">BubbleChatMessageProperties</span>
+	<span class="Name">BackgroundTransparency</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Font</span>
+	<span class="ClassName Property">BubbleChatMessageProperties</span>
+	<span class="Name">FontFace</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Property">BubbleChatMessageProperties</span>
+	<span class="Name">TextColor3</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">BubbleChatMessageProperties</span>
+	<span class="Name">TextSize</span>
+</div>
+
+<div class="Class">
 	<span class="Name">BulkImportService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -6228,11 +6292,12 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">float</span>
 	<span class="ClassName Function">Camera</span>
 	<span class="Name">GetPanSpeed</span>
 	<span class="Parameters"></span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -6265,11 +6330,12 @@
 	<span class="Parameters"></span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">float</span>
 	<span class="ClassName Function">Camera</span>
 	<span class="Name">GetTiltSpeed</span>
 	<span class="Parameters"></span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function deprecated child">
@@ -8224,9 +8290,28 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ForceLimitMode</span>
+	<span class="ClassName Property">LinearVelocity</span>
+	<span class="Name">ForceLimitMode</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Property">LinearVelocity</span>
+	<span class="Name">MaxAxesForce</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">LinearVelocity</span>
 	<span class="Name">MaxForce</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Property">LinearVelocity</span>
+	<span class="Name">MaxPlanarAxesForce</span>
 </div>
 
 <div class="Property child">
@@ -10206,6 +10291,266 @@
 	<span class="Type">Content</span>
 	<span class="ClassName Property">FileMesh</span>
 	<span class="Name">TextureId</span>
+</div>
+
+<div class="Class">
+	<span class="Name">DynamicMesh</span>
+	<span class="Superclass">FileMesh</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">AddTriangle</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId0</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId1</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId2</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">AddVertex</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">p</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">Clear</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">MeshPart</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">CreateMeshPartAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">CollisionFidelity</span>
+			<span class="ParamName">collisionFidelity</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">GetPosition</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">GetTriangleVertices</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">triangleId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">GetTriangles</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">GetUV</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Color3</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">GetVertexColor</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">float</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">GetVertexColorAlpha</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Vector3</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">GetVertexNormal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">GetVertices</span>
+	<span class="Parameters"></span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">InitializeFromMeshIdAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">InitializeFromMeshPartAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">meshPart</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">RemoveTriangle</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">triangleId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">SetPosition</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">p</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">SetUV</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector2</span>
+			<span class="ParamName">uv</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">SetVertexColor</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Color3</span>
+			<span class="ParamName">color</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">SetVertexColorAlpha</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">alpha</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">SetVertexNormal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">vnormal</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -20800,7 +21145,6 @@
 			<span class="ParamName">index</span>
 		</span>
 	</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Function child">
@@ -20813,7 +21157,6 @@
 			<span class="ParamName">index</span>
 		</span>
 	</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Function child">
@@ -20821,7 +21164,6 @@
 	<span class="ClassName Function">IKControl</span>
 	<span class="Name">GetRawFinalTarget</span>
 	<span class="Parameters"></span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Function child">
@@ -20829,7 +21171,6 @@
 	<span class="ClassName Function">IKControl</span>
 	<span class="Name">GetSmoothedFinalTarget</span>
 	<span class="Parameters"></span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Class">
@@ -22942,6 +23283,13 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">LogService</span>
+	<span class="Name">ClearOutput</span>
+	<span class="Parameters"></span>
 </div>
 
 <div class="Function child">
@@ -25770,6 +26118,19 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MetaBreakpoint</span>
+	<span class="Name">SetRemoveOnHit</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">enabled</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">MetaBreakpointContext</span>
 	<span class="Superclass">Instance</span>
@@ -28367,6 +28728,37 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Terrain</span>
+	<span class="Name">ReplaceMaterialInTransformSubregion</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">cframe</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">size</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">Material</span>
+			<span class="ParamName">sourceMaterial</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">Material</span>
+			<span class="ParamName">targetMaterial</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Region3int16</span>
+			<span class="ParamName">targetRegion</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Terrain</span>
@@ -28465,6 +28857,32 @@
 			<span class="EnumName Type">Enum</span>
 			<span class="Type">Material</span>
 			<span class="ParamName">targetMaterial</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Terrain</span>
+	<span class="Name">SetMaterialInTransformSubregion</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">cframe</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">size</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">Material</span>
+			<span class="ParamName">targetMaterial</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Region3int16</span>
+			<span class="ParamName">targetRegion</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -36907,6 +37325,7 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -39697,7 +40116,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">PlaybackRegionsEnabled</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -41198,6 +41616,20 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
+	<span class="Name">ReloadBuiltinPluginsOnChange</span>
+	<span class="Security">{RobloxSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">ReloadLocalPluginsOnChange</span>
+	<span class="Security">{RobloxSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
 	<span class="Name">Show Core GUI in Explorer while Playing</span>
 </div>
 
@@ -42471,6 +42903,10 @@
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">gameId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">message</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -44022,6 +44458,27 @@
 		<span class="Parameter">
 			<span class="Type">Vector3</span>
 			<span class="ParamName">size</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">TerrainRegion</span>
+	<span class="ClassName Function">TerrainRegion</span>
+	<span class="Name">ApplyTransformSubregion</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">rotation</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">size</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Region3int16</span>
+			<span class="ParamName">region</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -45786,6 +46243,30 @@
 </div>
 
 <div class="Class">
+	<span class="Name">TutorialService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">TutorialService</span>
+	<span class="Name">PromptCloseStudio</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">TutorialService</span>
+	<span class="Name">ShouldLaunchTutorial</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">TweenBase</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -45899,6 +46380,13 @@
 			<span class="ParamName">easingDirection</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">UGCAvatarService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
