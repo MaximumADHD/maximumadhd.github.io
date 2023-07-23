@@ -416,3 +416,20 @@ div.Forking
 {
 	margin-left: 40px;
 }
+
+@keyframes rainbow { 
+    0%{background-position:0% 50%}
+    25%{background-position:25% 50%}
+    50%{background-position:50% 50%}
+    75%{background-position:75% 50%}
+    100%{background-position:100% 50%}
+}
+
+.rainbow-text {
+	background-image: repeating-linear-gradient(-45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+	background-size: 50% 50%;
+	text-align: center;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: #ffffff2f;
+	animation: rainbow 3s linear infinite;
+}
