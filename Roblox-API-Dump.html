@@ -702,16 +702,6 @@
 	<span class="Superclass">Instance</span>
 </div>
 
-<div class="Property deprecated child">
-	<span class="EnumName Type">Enum</span>
-	<span class="Type">AdPortalType</span>
-	<span class="ClassName Property">AdPortal</span>
-	<span class="Name">PortalType</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotScriptable]</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
 <div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">AdUnitStatus</span>
@@ -839,12 +829,12 @@
 			<span class="ParamName">destinationId</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Player</span>
-			<span class="ParamName">player</span>
-		</span>
-		<span class="Parameter">
 			<span class="Type">Instance</span>
 			<span class="ParamName">portal</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">requiresNoButton</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -3143,7 +3133,7 @@
 <div class="Function child">
 	<span class="Type">Tuple</span>
 	<span class="ClassName Function">AssetService</span>
-	<span class="Name">PromptPublishAssetAsync</span>
+	<span class="Name">PromptCreateAssetAsync</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Player</span>
@@ -3181,6 +3171,19 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AssetService</span>
+	<span class="Name">OpenCreateResultModal</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">PromptCreateAssetResult</span>
+			<span class="ParamName">resultType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Event child">
@@ -5067,6 +5070,12 @@
 	<span class="Type">RigType</span>
 	<span class="ClassName Property">RootImportData</span>
 	<span class="Name">RigType</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">RigVisualization</span>
 </div>
 
 <div class="Property child">
@@ -7100,6 +7109,20 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Vector2</span>
+	<span class="ClassName Function">CaptureService</span>
+	<span class="Name">GetCaptureSizeAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">captureContentId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Array</span>
 	<span class="ClassName Function">CaptureService</span>
 	<span class="Name">RetrieveCaptures</span>
@@ -7112,6 +7135,18 @@
 	<span class="ClassName Function">CaptureService</span>
 	<span class="Name">SaveScreenshotCapture</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">CaptureService</span>
+	<span class="Name">CaptureSaved</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">captureInfo</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -11102,25 +11137,8 @@
 </div>
 
 <div class="Class">
-	<span class="Name">FileMesh</span>
-	<span class="Superclass">DataModelMesh</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Content</span>
-	<span class="ClassName Property">FileMesh</span>
-	<span class="Name">MeshId</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Content</span>
-	<span class="ClassName Property">FileMesh</span>
-	<span class="Name">TextureId</span>
-</div>
-
-<div class="Class">
 	<span class="Name">DynamicMesh</span>
-	<span class="Superclass">FileMesh</span>
+	<span class="Superclass">DataModelMesh</span>
 </div>
 
 <div class="Function child">
@@ -11156,13 +11174,6 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">DynamicMesh</span>
-	<span class="Name">Clear</span>
-	<span class="Parameters"></span>
-</div>
-
-<div class="Function child">
 	<span class="Type">MeshPart</span>
 	<span class="ClassName Function">DynamicMesh</span>
 	<span class="Name">CreateMeshPartAsync</span>
@@ -11174,6 +11185,70 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">FindClosestPointOnSurface</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">point</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">FindClosestVertex</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">toThisPoint</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">FindVerticesWithinSphere</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">center</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">radius</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">GetAdjacentTriangles</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">triangleId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">GetAdjacentVertices</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId</span>
+		</span>
+	</span>
 </div>
 
 <div class="Function child">
@@ -11287,6 +11362,22 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">Raycast</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">origin</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">direction</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">DynamicMesh</span>
 	<span class="Name">RemoveTriangle</span>
@@ -11294,6 +11385,18 @@
 		<span class="Parameter">
 			<span class="Type">int</span>
 			<span class="ParamName">triangleId</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicMesh</span>
+	<span class="Name">RemoveVertex</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">vertexId</span>
 		</span>
 	</span>
 </div>
@@ -11376,6 +11479,23 @@
 			<span class="ParamName">vnormal</span>
 		</span>
 	</span>
+</div>
+
+<div class="Class">
+	<span class="Name">FileMesh</span>
+	<span class="Superclass">DataModelMesh</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">FileMesh</span>
+	<span class="Name">MeshId</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Content</span>
+	<span class="ClassName Property">FileMesh</span>
+	<span class="Name">TextureId</span>
 </div>
 
 <div class="Class">
@@ -13584,6 +13704,27 @@
 			<span class="ParamDefault bool">true</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicImage</span>
+	<span class="Name">WritePixels</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector2</span>
+			<span class="ParamName">position</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector2</span>
+			<span class="ParamName">size</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">pixels</span>
+		</span>
+	</span>
+	<span class="Tag">[CustomLuaState]</span>
 </div>
 
 <div class="Class">
@@ -18612,18 +18753,6 @@
 </div>
 
 <div class="Class">
-	<span class="Name">TextureGuiExperimental</span>
-	<span class="Superclass">LayerCollector</span>
-	<span class="Tag">[NotCreatable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">Vector2</span>
-	<span class="ClassName Property">TextureGuiExperimental</span>
-	<span class="Name">Size</span>
-</div>
-
-<div class="Class">
 	<span class="Name">GuiBase3d</span>
 	<span class="Superclass">GuiBase</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -20118,6 +20247,20 @@
 	<span class="ClassName Function">GuiService</span>
 	<span class="Name">ToggleFullscreen</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">GuiService</span>
+	<span class="Name">ToggleGuiIsVisibleForCaptures</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">GuiType</span>
+			<span class="ParamName">guiType</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -25636,7 +25779,7 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">IsPlayerSubscribed</span>
@@ -25651,6 +25794,7 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -25698,6 +25842,41 @@
 			<span class="Type">string</span>
 			<span class="ParamName default">purchaseAuthToken</span>
 			<span class="ParamDefault string"></span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">PerformPurchaseV2</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">InfoType</span>
+			<span class="ParamName">infoType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">productId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">expectedPrice</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">requestId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">bool</span>
+			<span class="ParamName">isRobloxPurchase</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">collectiblesProductDetails</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -25754,6 +25933,35 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">PrepareCollectiblesPurchase</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectibleItemId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectibleItemInstanceId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectibleProductId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">expectedPrice</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">PromptBundlePurchase</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -25765,6 +25973,35 @@
 			<span class="ParamName">bundleId</span>
 		</span>
 	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">PromptCollectiblesPurchase</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectibleItemId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectibleItemInstanceId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectibleProductId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">expectedPrice</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -25896,7 +26133,7 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">PromptSubscriptionCancellation</span>
@@ -25910,9 +26147,10 @@
 			<span class="ParamName">subscriptionId</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Function child">
+<div class="Function deprecated child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">PromptSubscriptionPurchase</span>
@@ -25926,6 +26164,7 @@
 			<span class="ParamName">subscriptionId</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -26324,6 +26563,34 @@
 
 <div class="Event child">
 	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PrepareCollectiblesPurchaseRequested</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectibleItemId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectibleItemInstanceId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectibleProductId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">expectedPrice</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
 	<span class="Name">PromptBundlePurchaseFinished</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -26352,6 +26619,42 @@
 		<span class="Parameter">
 			<span class="Type">int64</span>
 			<span class="ParamName">bundleId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">PromptCollectiblesPurchaseRequested</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectibleItemId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectibleItemInstanceId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectibleProductId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">expectedPrice</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">idempotencyKey</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">purchaseAuthToken</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -26581,7 +26884,7 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
-<div class="Event child">
+<div class="Event deprecated child">
 	<span class="ClassName Event">MarketplaceService</span>
 	<span class="Name">PromptSubscriptionCancellationFinished</span>
 	<span class="Parameters">
@@ -26598,6 +26901,7 @@
 			<span class="ParamName">wasCanceled</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Event child">
@@ -26616,7 +26920,7 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
-<div class="Event child">
+<div class="Event deprecated child">
 	<span class="ClassName Event">MarketplaceService</span>
 	<span class="Name">PromptSubscriptionPurchaseFinished</span>
 	<span class="Parameters">
@@ -26633,6 +26937,7 @@
 			<span class="ParamName">wasPurchased</span>
 		</span>
 	</span>
+	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Event child">
@@ -27182,7 +27487,7 @@
 	<span class="Type">Material</span>
 	<span class="ClassName Property">MaterialVariant</span>
 	<span class="Name">BaseMaterial</span>
-	<span class="Security">{PluginSecurity}</span>
+	<span class="Security">{✏️PluginSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -29138,6 +29443,36 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">OpenCloudModel</span>
+	<span class="ClassName Function">OpenCloudApiV1</span>
+	<span class="Name">CreateModel</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Tag">[CustomLuaState]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">OpenCloudModel</span>
+	<span class="ClassName Function">OpenCloudApiV1</span>
+	<span class="Name">CreateUserNotificationAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">user</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">OpenCloudModel</span>
+			<span class="ParamName">userNotification</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Class">
@@ -32969,12 +33304,6 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Workspace</span>
-	<span class="Name">EnableFluidForces</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Workspace</span>
 	<span class="Name">ExplicitAutoJoints</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotScriptable]</span>
@@ -32995,6 +33324,14 @@
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[Deprecated]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">FluidForces</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">FluidForces</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -34826,6 +35163,12 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PhysicsSettings</span>
 	<span class="Name">DisableCSGv2</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">PhysicsSettings</span>
+	<span class="Name">DisableCSGv3ForPlugins</span>
 </div>
 
 <div class="Property child">
@@ -37914,6 +38257,18 @@
 </div>
 
 <div class="Class">
+	<span class="Name">PluginCapabilities</span>
+	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">PluginCapabilities</span>
+	<span class="Name">Manifest</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">PluginDebugService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -38983,8 +39338,8 @@
 	<span class="Name">CreateAssetAndWaitForAssetId</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">instance</span>
+			<span class="Type">Objects</span>
+			<span class="ParamName">instances</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -39964,6 +40319,13 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ViewMode</span>
+	<span class="ClassName Property">RenderSettings</span>
+	<span class="Name">ViewMode</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">RenderSettings</span>
 	<span class="Name">ExportMergeByMaterial</span>
@@ -40185,6 +40547,14 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">RobloxServerStorage</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -42958,6 +43328,13 @@
 	<span class="Security">{RobloxSecurity}</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">ServiceVisibilityService</span>
+	<span class="Name">HiddenServices</span>
+	<span class="Security">{RobloxSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">SessionService</span>
 	<span class="Superclass">Instance</span>
@@ -44771,6 +45148,14 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">AvatarJointUpgrade</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">AvatarJointUpgrade</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">CharacterMaxSlopeAngle</span>
@@ -44780,6 +45165,14 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">CharacterWalkSpeed</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">DeathStyle</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">DeathStyle</span>
+	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -45341,12 +45734,6 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Show Diagnostics Bar</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">bool</span>
-	<span class="ClassName Property">Studio</span>
-	<span class="Name">Show QT warnings in output</span>
 </div>
 
 <div class="Property child">
@@ -47624,17 +48011,17 @@
 </div>
 
 <div class="Property child">
-	<span class="Type">StyleSheet</span>
-	<span class="ClassName Property">StyleDerive</span>
-	<span class="Name">StyleSheet</span>
-</div>
-
-<div class="Property child">
 	<span class="Type">int</span>
 	<span class="ClassName Property">StyleDerive</span>
 	<span class="Name">Index</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">StyleSheet</span>
+	<span class="ClassName Property">StyleDerive</span>
+	<span class="Name">StyleSheet</span>
 </div>
 
 <div class="Class">
@@ -49469,6 +49856,12 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">BubbleChatMessageProperties</span>
+	<span class="ClassName Property">TextChatMessage</span>
+	<span class="Name">BubbleChatMessageProperties</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">TextChatMessage</span>
 	<span class="Name">MessageId</span>
@@ -49615,11 +50008,11 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Instance</span>
-			<span class="ParamName">part</span>
+			<span class="ParamName">partOrCharacter</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">message</span>
+			<span class="Type">TextChatMessage</span>
+			<span class="ParamName">textChatMessage</span>
 		</span>
 	</span>
 </div>
@@ -49753,6 +50146,22 @@
 	</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Callback child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Callback">TextChatService</span>
+	<span class="Name">OnBubbleAdded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">TextChatMessage</span>
+			<span class="ParamName">message</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">adornee</span>
+		</span>
+	</span>
 </div>
 
 <div class="Callback child">
@@ -50072,20 +50481,6 @@
 	<span class="Type">void</span>
 	<span class="ClassName Function">ThirdPartyUserService</span>
 	<span class="Name">ShowAccountPicker</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">ThirdPartyUserService</span>
-	<span class="Name">ActiveGamepadAdded</span>
-	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">ThirdPartyUserService</span>
-	<span class="Name">ActiveGamepadRemoved</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -50712,6 +51107,20 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">int</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">CalculateUniqueUVCount</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">UGCValidationService</span>
 	<span class="Name">CanLoadAsset</span>
@@ -51059,6 +51468,24 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateUniqueUVCount</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int</span>
+			<span class="ParamName">numRequired</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -53370,6 +53797,13 @@
 </div>
 
 <div class="Class">
+	<span class="Name">VRStatusService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ValueBase</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -55083,6 +55517,7 @@
 	<span class="ClassName Property">VoiceChatService</span>
 	<span class="Name">UseNewJoinFlow</span>
 	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
 </div>
 
 <div class="Property child">
@@ -55523,22 +55958,6 @@
 </div>
 
 <div class="Enum">
-	<span class="Name">AdPortalType</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">AdPortalType</span>
-	<span class="Name">Forward</span>
-	<span class="Value">0</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">AdPortalType</span>
-	<span class="Name">Return</span>
-	<span class="Value">1</span>
-</div>
-
-<div class="Enum">
 	<span class="Name">AdShape</span>
 </div>
 
@@ -55566,20 +55985,14 @@
 
 <div class="EnumItem child">
 	<span class="EnumName">AdTeleportMethod</span>
-	<span class="Name">PortalReturn</span>
+	<span class="Name">InGameMenuBackButton</span>
 	<span class="Value">2</span>
 </div>
 
 <div class="EnumItem child">
 	<span class="EnumName">AdTeleportMethod</span>
-	<span class="Name">InGameMenuBackButton</span>
-	<span class="Value">3</span>
-</div>
-
-<div class="EnumItem child">
-	<span class="EnumName">AdTeleportMethod</span>
 	<span class="Name">UIBackButton</span>
-	<span class="Value">4</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
@@ -56821,6 +57234,28 @@
 <div class="EnumItem child">
 	<span class="EnumName">AvatarItemType</span>
 	<span class="Name">Bundle</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AvatarJointUpgrade</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarJointUpgrade</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarJointUpgrade</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AvatarJointUpgrade</span>
+	<span class="Name">Disabled</span>
 	<span class="Value">2</span>
 </div>
 
@@ -58851,6 +59286,34 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">DeathStyle</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DeathStyle</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DeathStyle</span>
+	<span class="Name">ClassicBreakApart</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DeathStyle</span>
+	<span class="Name">NonGraphic</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DeathStyle</span>
+	<span class="Name">Scriptable</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">DebuggerEndReason</span>
 </div>
 
@@ -59876,6 +60339,22 @@
 	<span class="EnumName">FinishRecordingOperation</span>
 	<span class="Name">Append</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">FluidForces</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FluidForces</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">FluidForces</span>
+	<span class="Name">Experimental</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
@@ -64978,6 +65457,46 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">PromptCreateAssetResult</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PromptCreateAssetResult</span>
+	<span class="Name">Success</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PromptCreateAssetResult</span>
+	<span class="Name">PermissionDenied</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PromptCreateAssetResult</span>
+	<span class="Name">Timeout</span>
+	<span class="Value">3</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PromptCreateAssetResult</span>
+	<span class="Name">UploadFailed</span>
+	<span class="Value">4</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PromptCreateAssetResult</span>
+	<span class="Name">NoUserInput</span>
+	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PromptCreateAssetResult</span>
+	<span class="Name">UnknownFailure</span>
+	<span class="Value">6</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">PromptPublishAssetResult</span>
 </div>
 
@@ -69521,6 +70040,34 @@
 	<span class="EnumName">VibrationMotor</span>
 	<span class="Name">RightHand</span>
 	<span class="Value">5</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">ViewMode</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ViewMode</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ViewMode</span>
+	<span class="Name">GeometryComplexity</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ViewMode</span>
+	<span class="Name">Transparent</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ViewMode</span>
+	<span class="Name">Decal</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
