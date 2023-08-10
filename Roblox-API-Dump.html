@@ -2379,6 +2379,14 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">AssetImportSession</span>
+	<span class="Name">GetRigVisualization</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">AssetImportSession</span>
 	<span class="Name">HasAnimation</span>
@@ -3155,6 +3163,19 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetService</span>
+	<span class="Name">RegisterUGCValidationFunction</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">function</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">AssetService</span>
 	<span class="Name">SavePlaceAsync</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[Yields]</span>
@@ -3443,6 +3464,14 @@
 	<span class="ClassName Property">AudioAnalyzer</span>
 	<span class="Name">RmsLevel</span>
 	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioAnalyzer</span>
+	<span class="Name">GetSpectrum</span>
+	<span class="Parameters"></span>
+	<span class="Tag">[CustomLuaState]</span>
 </div>
 
 <div class="Class">
@@ -8330,6 +8359,14 @@
 </div>
 
 <div class="Class">
+	<span class="Name">ChatbotUIService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">ClickDetector</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -8548,6 +8585,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">DragDetector</span>
+	<span class="Name">PhysicalDragIsInVR</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">CFrame</span>
 	<span class="ClassName Property">DragDetector</span>
 	<span class="Name">PhysicalDragTargetFrame</span>
@@ -8750,6 +8795,37 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">Collaborator</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">Collaborator</span>
+	<span class="Name">CFrame</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">Collaborator</span>
+	<span class="Name">UserId</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">string</span>
+	<span class="ClassName Property">Collaborator</span>
+	<span class="Name">Username</span>
+</div>
+
+<div class="Class">
+	<span class="Name">CollaboratorsService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
 </div>
 
 <div class="Class">
@@ -9289,7 +9365,6 @@
 	<span class="Type">ForceLimitMode</span>
 	<span class="ClassName Property">AlignPosition</span>
 	<span class="Name">ForceLimitMode</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -16699,6 +16774,12 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">GuiObject</span>
 	<span class="Name">BorderSizePixel</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">GuiObject</span>
+	<span class="Name">Interactable</span>
 </div>
 
 <div class="Property child">
@@ -26276,22 +26357,18 @@
 	<span class="Tag">[Yields]</span>
 </div>
 
-<div class="Function deprecated child">
-	<span class="Type">bool</span>
+<div class="Function child">
+	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">MarketplaceService</span>
-	<span class="Name">IsPlayerSubscribed</span>
+	<span class="Name">GetSubscriptionPurchaseInfoAsync</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">player</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
+			<span class="Type">string</span>
 			<span class="ParamName">subscriptionId</span>
 		</span>
 	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Yields]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Function child">
@@ -26638,38 +26715,21 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
-<div class="Function deprecated child">
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MarketplaceService</span>
-	<span class="Name">PromptSubscriptionCancellation</span>
+	<span class="Name">PromptSubscriptionPurchaseFinished</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">player</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
+			<span class="Type">string</span>
 			<span class="ParamName">subscriptionId</span>
 		</span>
-	</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Function deprecated child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">MarketplaceService</span>
-	<span class="Name">PromptSubscriptionPurchase</span>
-	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">player</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">subscriptionId</span>
+			<span class="Type">bool</span>
+			<span class="ParamName">didTryPurchasing</span>
 		</span>
 	</span>
-	<span class="Tag">[Deprecated]</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -26861,48 +26921,6 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">MarketplaceService</span>
-	<span class="Name">SignalPromptSubscriptionCancellationFinished</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">player</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">subscriptionId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">wasCanceled</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">MarketplaceService</span>
-	<span class="Name">SignalPromptSubscriptionPurchaseFinished</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">player</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">subscriptionId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">wasPurchased</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">SignalServerLuaDialogClosed</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -27009,23 +27027,6 @@
 	<span class="ClassName Event">MarketplaceService</span>
 	<span class="Name">MockPurchasePremium</span>
 	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">MarketplaceService</span>
-	<span class="Name">MockPurchaseSubscription</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">player</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">subscriptionId</span>
-		</span>
-	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 </div>
@@ -27397,72 +27398,16 @@
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
-<div class="Event deprecated child">
-	<span class="ClassName Event">MarketplaceService</span>
-	<span class="Name">PromptSubscriptionCancellationFinished</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">player</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">subscriptionId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">wasCanceled</span>
-		</span>
-	</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">MarketplaceService</span>
-	<span class="Name">PromptSubscriptionCancellationRequested</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">player</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">subscriptionId</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event deprecated child">
-	<span class="ClassName Event">MarketplaceService</span>
-	<span class="Name">PromptSubscriptionPurchaseFinished</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">player</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">int64</span>
-			<span class="ParamName">subscriptionId</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">wasPurchased</span>
-		</span>
-	</span>
-	<span class="Tag">[Deprecated]</span>
-</div>
-
 <div class="Event child">
 	<span class="ClassName Event">MarketplaceService</span>
 	<span class="Name">PromptSubscriptionPurchaseRequested</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">Instance</span>
-			<span class="ParamName">player</span>
+			<span class="ParamName">user</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">int64</span>
+			<span class="Type">string</span>
 			<span class="ParamName">subscriptionId</span>
 		</span>
 	</span>
@@ -35802,6 +35747,30 @@
 </div>
 
 <div class="Class">
+	<span class="Name">PlatformFriendsService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">PlatformFriendsService</span>
+	<span class="Name">IsInviteFriendsEnabled</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">PlatformFriendsService</span>
+	<span class="Name">ShowInviteFriendsUI</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">Player</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -39131,6 +39100,32 @@
 	<span class="Security">{PluginSecurity}</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">PluginToolbar</span>
+	<span class="Name">CreatePopupButton</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">buttonId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">tooltip</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">iconname</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">text</span>
+			<span class="ParamDefault string"></span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">PluginToolbarButton</span>
 	<span class="Superclass">Instance</span>
@@ -39179,6 +39174,13 @@
 	<span class="Name">Click</span>
 	<span class="Parameters"></span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">PluginToolbarButton</span>
+	<span class="Name">DropdownClick</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class deprecated">
@@ -45692,7 +45694,17 @@
 	<span class="Type">AvatarJointUpgrade</span>
 	<span class="ClassName Property">StarterPlayer</span>
 	<span class="Name">AvatarJointUpgrade</span>
+	<span class="Tag">[NotReplicated]</span>
 	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">AvatarJointUpgrade</span>
+	<span class="ClassName Property">StarterPlayer</span>
+	<span class="Name">AvatarJointUpgrade_Serialized</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -55869,6 +55881,22 @@
 	<span class="Tag">[Deprecated]</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
+	<span class="Name">LogPublisherWebRTCStats</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">VoiceChatInternal</span>
+	<span class="Name">LogSubscriptionWebRTCStats</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Function deprecated child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">VoiceChatInternal</span>
@@ -56056,6 +56084,15 @@
 	<span class="ClassName Property">VoiceChatService</span>
 	<span class="Name">EnableDefaultVoice</span>
 	<span class="Security">{PluginSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VoiceChatService</span>
+	<span class="Name">UseNewAudioApi</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Property child">
@@ -59186,6 +59223,18 @@
 	<span class="Value">9</span>
 </div>
 
+<div class="EnumItem child">
+	<span class="EnumName">CompletionItemTag</span>
+	<span class="Name">Invalidated</span>
+	<span class="Value">10</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CompletionItemTag</span>
+	<span class="Name">PutCursorBeforeEnd</span>
+	<span class="Value">11</span>
+</div>
+
 <div class="Enum">
 	<span class="Name">CompletionTriggerKind</span>
 </div>
@@ -61900,6 +61949,12 @@
 	<span class="EnumName">GuiState</span>
 	<span class="Name">Press</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">GuiState</span>
+	<span class="Name">NonInteractable</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
