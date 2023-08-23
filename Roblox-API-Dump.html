@@ -16,6 +16,24 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">SecurityCapabilities</span>
+	<span class="ClassName Property">Instance</span>
+	<span class="Name">Capabilities</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Instance</span>
+	<span class="Name">DefinesCapabilities</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">string</span>
 	<span class="ClassName Property">Instance</span>
 	<span class="Name">Attributes</span>
@@ -1995,6 +2013,18 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Animator</span>
+	<span class="Name">RegisterEvaluationParallelCallback</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Animator</span>
 	<span class="Name">StepAnimations</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -3004,6 +3034,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">DynamicImage</span>
+	<span class="ClassName Function">AssetService</span>
+	<span class="Name">CreateDynamicImageAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">textureId</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">int64</span>
 	<span class="ClassName Function">AssetService</span>
 	<span class="Name">CreatePlaceAsync</span>
@@ -3122,19 +3165,6 @@
 	<span class="ClassName Function">AssetService</span>
 	<span class="Name">GetGamePlacesAsync</span>
 	<span class="Parameters"></span>
-	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">DynamicImage</span>
-	<span class="ClassName Function">AssetService</span>
-	<span class="Name">LoadImageAsync</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Content</span>
-			<span class="ParamName">textureId</span>
-		</span>
-	</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -14353,6 +14383,22 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">DynamicImage</span>
+	<span class="Name">Crop</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector2</span>
+			<span class="ParamName">min</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector2</span>
+			<span class="ParamName">max</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicImage</span>
 	<span class="Name">DrawCircle</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -14370,6 +14416,27 @@
 		<span class="Parameter">
 			<span class="Type">float</span>
 			<span class="ParamName">transparency</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicImage</span>
+	<span class="Name">DrawImage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector2</span>
+			<span class="ParamName">position</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">DynamicImage</span>
+			<span class="ParamName">image</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">ImageCombineType</span>
+			<span class="ParamName">combineType</span>
 		</span>
 	</span>
 </div>
@@ -14724,6 +14791,23 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">ExperienceNotificationService</span>
+	<span class="Name">CreateUserNotificationAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">userId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">UserNotification</span>
+			<span class="ParamName">userNotification</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
 </div>
 
 <div class="Class">
@@ -16247,8 +16331,9 @@
 			<span class="ParamName">destination</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Variant</span>
-			<span class="ParamName">options</span>
+			<span class="Type">Dictionary</span>
+			<span class="ParamName default">options</span>
+			<span class="ParamDefault Dictionary">nil</span>
 		</span>
 	</span>
 </div>
@@ -16267,8 +16352,9 @@
 			<span class="ParamName">parts</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Variant</span>
-			<span class="ParamName">options</span>
+			<span class="Type">Dictionary</span>
+			<span class="ParamName default">options</span>
+			<span class="ParamDefault Dictionary">nil</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -16288,8 +16374,9 @@
 			<span class="ParamName">parts</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Variant</span>
-			<span class="ParamName">options</span>
+			<span class="Type">Dictionary</span>
+			<span class="ParamName default">options</span>
+			<span class="ParamDefault Dictionary">nil</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -16309,8 +16396,9 @@
 			<span class="ParamName">parts</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">Variant</span>
-			<span class="ParamName">options</span>
+			<span class="Type">Dictionary</span>
+			<span class="ParamName default">options</span>
+			<span class="ParamDefault Dictionary">nil</span>
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
@@ -20376,6 +20464,14 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">Rect</span>
+	<span class="ClassName Property">GuiService</span>
+	<span class="Name">TopbarInset</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[ReadOnly]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">GuiService</span>
 	<span class="Name">TouchControlsEnabled</span>
@@ -20959,7 +21055,7 @@
 	<span class="Name">SetTopbarInset</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">Dictionary</span>
+			<span class="Type">Rect</span>
 			<span class="ParamName">topbarInset</span>
 		</span>
 	</span>
@@ -21237,17 +21333,6 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">GuiService</span>
-	<span class="Name">TopbarInsetChanged</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Dictionary</span>
-			<span class="ParamName">topbarInset</span>
-		</span>
-	</span>
 </div>
 
 <div class="Event child">
@@ -25103,6 +25188,10 @@
 			<span class="Type">int64</span>
 			<span class="ParamName">id</span>
 		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">msg</span>
+		</span>
 	</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -28477,6 +28566,81 @@
 </div>
 
 <div class="Class">
+	<span class="Name">MemoryStoreHashMap</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Variant</span>
+	<span class="ClassName Function">MemoryStoreHashMap</span>
+	<span class="Name">GetAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">MemoryStoreHashMap</span>
+	<span class="Name">RemoveAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">MemoryStoreHashMap</span>
+	<span class="Name">SetAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Variant</span>
+			<span class="ParamName">value</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">expiration</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Variant</span>
+	<span class="ClassName Function">MemoryStoreHashMap</span>
+	<span class="Name">UpdateAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">transformFunction</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">expiration</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">MemoryStoreQueue</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -28545,6 +28709,18 @@
 	<span class="Name">MemoryStoreService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">MemoryStoreHashMap</span>
+	<span class="ClassName Function">MemoryStoreService</span>
+	<span class="Name">GetHashMap</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
 </div>
 
 <div class="Function child">
@@ -32408,6 +32584,15 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">SharedString</span>
+	<span class="ClassName Property">TriangleMeshPart</span>
+	<span class="Name">AeroMeshData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">Vector3</span>
 	<span class="ClassName Property">TriangleMeshPart</span>
 	<span class="Name">MeshSize</span>
@@ -32498,15 +32683,6 @@
 	<span class="Type">int</span>
 	<span class="ClassName Property">MeshPart</span>
 	<span class="Name">VertexCount</span>
-	<span class="Security">{RobloxSecurity}</span>
-	<span class="Tag">[Hidden]</span>
-	<span class="Tag">[NotScriptable]</span>
-</div>
-
-<div class="Property child">
-	<span class="Type">SharedString</span>
-	<span class="ClassName Property">MeshPart</span>
-	<span class="Name">AeroMeshData</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotScriptable]</span>
@@ -35913,6 +36089,14 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">PhysicsSettings</span>
 	<span class="Name">ShowDecompositionGeometry</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">SolverConvergenceMetricType</span>
+	<span class="ClassName Property">PhysicsSettings</span>
+	<span class="Name">SolverConvergenceMetricType</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -40122,6 +40306,11 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">operationId</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AssetCreatorType</span>
+			<span class="ParamName">creatorType</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">int64</span>
@@ -46489,6 +46678,24 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Function">StreamingService</span>
+	<span class="Name">GetInstance</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectorName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName default">requestId</span>
+			<span class="ParamDefault string">instanceId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StreamingService</span>
 	<span class="Name">RegisterCommand</span>
@@ -46509,11 +46716,98 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StreamingService</span>
+	<span class="Name">RegisterContextCollector</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectorName</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName default">function</span>
+			<span class="ParamDefault Function">nil</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StreamingService</span>
 	<span class="Name">UnregisterCommand</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">commandName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StreamingService</span>
+	<span class="Name">UnregisterContextCollector</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">collectorName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StreamingService</span>
+	<span class="Name">RequestEnded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">requestId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StreamingService</span>
+	<span class="Name">RequestError</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">requestId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">errorMessage</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StreamingService</span>
+	<span class="Name">RequestStarted</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">requestId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">StreamingService</span>
+	<span class="Name">Stream</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">requestId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">streamContent</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -46649,6 +46943,20 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Camera Zoom to Mouse Position</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">CameraAdaptiveSpeed</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">CameraTweenFocus</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Property child">
@@ -48814,6 +49122,18 @@
 	</span>
 </div>
 
+<div class="Event child">
+	<span class="ClassName Event">StyleRule</span>
+	<span class="Name">StyleRulePropertyChanged</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">styleProperty</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">StyleSheet</span>
 	<span class="Superclass">StyleBase</span>
@@ -49199,6 +49519,14 @@
 	<span class="Type">void</span>
 	<span class="ClassName Function">TeamCreateService</span>
 	<span class="Name">CloseGameIfUserDoesntHavePerms</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">TeamCreateService</span>
+	<span class="Name">GetIsUseUniverseSearchNewEndpoint</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -55169,6 +55497,19 @@
 
 <div class="Event child">
 	<span class="ClassName Event">VersionControlService</span>
+	<span class="Name">BroadcastScriptChangesSubmitted</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">scriptGuid</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VersionControlService</span>
 	<span class="Name">CommitRejectedInfo</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -57429,6 +57770,22 @@
 <div class="EnumItem child">
 	<span class="EnumName">AspectType</span>
 	<span class="Name">ScaleWithParentSize</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AssetCreatorType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AssetCreatorType</span>
+	<span class="Name">User</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AssetCreatorType</span>
+	<span class="Name">Group</span>
 	<span class="Value">1</span>
 </div>
 
@@ -63033,6 +63390,22 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">ImageCombineType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ImageCombineType</span>
+	<span class="Name">BlendSourceOver</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ImageCombineType</span>
+	<span class="Name">Overwrite</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">InOut</span>
 </div>
 
@@ -68163,6 +68536,22 @@
 	<span class="EnumName">SizeConstraint</span>
 	<span class="Name">RelativeYY</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">SolverConvergenceMetricType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SolverConvergenceMetricType</span>
+	<span class="Name">IterationBased</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SolverConvergenceMetricType</span>
+	<span class="Name">AlgorithmAgnostic</span>
+	<span class="Value">1</span>
 </div>
 
 <div class="Enum">
