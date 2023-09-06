@@ -1575,6 +1575,14 @@
 <div class="Property child">
 	<span class="Type">BinaryString</span>
 	<span class="ClassName Property">AnimationRigData</span>
+	<span class="Name">rootMotion</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">BinaryString</span>
+	<span class="ClassName Property">AnimationRigData</span>
 	<span class="Name">transform</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotScriptable]</span>
@@ -3060,6 +3068,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">DynamicMesh</span>
+	<span class="ClassName Function">AssetService</span>
+	<span class="Name">CreateDynamicMeshAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Content</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">int64</span>
 	<span class="ClassName Function">AssetService</span>
 	<span class="Name">CreatePlaceAsync</span>
@@ -3512,6 +3533,19 @@
 <div class="Function child">
 	<span class="Type">Array</span>
 	<span class="ClassName Function">AudioAnalyzer</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioAnalyzer</span>
 	<span class="Name">GetSpectrum</span>
 	<span class="Parameters"></span>
 	<span class="Tag">[CustomLuaState]</span>
@@ -3539,6 +3573,19 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">AudioChorus</span>
 	<span class="Name">Rate</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioChorus</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -3575,6 +3622,19 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">AudioCompressor</span>
 	<span class="Name">Threshold</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioCompressor</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -3629,6 +3689,19 @@
 <div class="Function child">
 	<span class="Type">Array</span>
 	<span class="ClassName Function">AudioDeviceInput</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioDeviceInput</span>
 	<span class="Name">GetUserIdAccessList</span>
 	<span class="Parameters"></span>
 </div>
@@ -3657,6 +3730,19 @@
 	<span class="Name">Player</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioDeviceOutput</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">AudioDistortion</span>
 	<span class="Superclass">Instance</span>
@@ -3667,6 +3753,19 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">AudioDistortion</span>
 	<span class="Name">Level</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioDistortion</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -3699,6 +3798,19 @@
 	<span class="Name">WetLevel</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioEcho</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">AudioEmitter</span>
 	<span class="Superclass">Instance</span>
@@ -3709,6 +3821,40 @@
 	<span class="Type">string</span>
 	<span class="ClassName Property">AudioEmitter</span>
 	<span class="Name">AudioInteractionGroup</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">float</span>
+	<span class="ClassName Function">AudioEmitter</span>
+	<span class="Name">GetAudibilityFor</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">AudioListener</span>
+			<span class="ParamName">listener</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioEmitter</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioEmitter</span>
+	<span class="Name">GetInteractingListeners</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -3741,6 +3887,19 @@
 	<span class="Name">MidRange</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioEqualizer</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">AudioFader</span>
 	<span class="Superclass">Instance</span>
@@ -3751,6 +3910,19 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">AudioFader</span>
 	<span class="Name">Volume</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioFader</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -3777,6 +3949,19 @@
 	<span class="Name">Rate</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioFlanger</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">AudioListener</span>
 	<span class="Superclass">Instance</span>
@@ -3789,6 +3974,40 @@
 	<span class="Name">AudioInteractionGroup</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">float</span>
+	<span class="ClassName Function">AudioListener</span>
+	<span class="Name">GetAudibilityOf</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">AudioEmitter</span>
+			<span class="ParamName">emitter</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioListener</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioListener</span>
+	<span class="Name">GetInteractingEmitters</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
 <div class="Class">
 	<span class="Name">AudioPitchShifter</span>
 	<span class="Superclass">Instance</span>
@@ -3799,6 +4018,19 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">AudioPitchShifter</span>
 	<span class="Name">Pitch</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioPitchShifter</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -3868,6 +4100,19 @@
 	<span class="Type">NumberRange</span>
 	<span class="ClassName Property">AudioPlayer</span>
 	<span class="Name">PlaybackRegion</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioPlayer</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -3960,6 +4205,19 @@
 	<span class="Type">float</span>
 	<span class="ClassName Property">AudioReverb</span>
 	<span class="Name">WetLevel</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">AudioReverb</span>
+	<span class="Name">GetConnectedWires</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">pin</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -7679,6 +7937,19 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">CaptureService</span>
+	<span class="Name">DeleteCapture</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">capturePath</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -12084,30 +12355,6 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">DynamicMesh</span>
-	<span class="Name">InitializeFromMeshIdAsync</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Content</span>
-			<span class="ParamName">meshId</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">DynamicMesh</span>
-	<span class="Name">InitializeFromMeshPartAsync</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Instance</span>
-			<span class="ParamName">meshPart</span>
-		</span>
-	</span>
-</div>
-
-<div class="Function child">
 	<span class="Type">Tuple</span>
 	<span class="ClassName Function">DynamicMesh</span>
 	<span class="Name">Raycast</span>
@@ -14465,6 +14712,30 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">DynamicImage</span>
+	<span class="Name">DrawRectangle</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Vector2</span>
+			<span class="ParamName">position</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector2</span>
+			<span class="ParamName">size</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Color3</span>
+			<span class="ParamName">color</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">float</span>
+			<span class="ParamName">transparency</span>
+		</span>
+	</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Array</span>
 	<span class="ClassName Function">DynamicImage</span>
 	<span class="Name">ReadPixels</span>
@@ -14830,6 +15101,91 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ExperienceService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">ExperienceService</span>
+	<span class="Name">LaunchExperience</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">params</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">ExperienceService</span>
+	<span class="Name">LaunchExperienceFromSource</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">params</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">source</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">ExperienceService</span>
+	<span class="Name">LaunchExperienceFromSourceWithCallback</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">params</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">source</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">RBXScriptConnection</span>
+	<span class="ClassName Function">ExperienceService</span>
+	<span class="Name">RegisterForExperienceJoin</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">RBXScriptConnection</span>
+	<span class="ClassName Function">ExperienceService</span>
+	<span class="Name">RegisterForExperienceLeave</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Function</span>
+			<span class="ParamName">callback</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -25186,6 +25542,24 @@
 
 <div class="Event child">
 	<span class="ClassName Event">LiveScriptingService</span>
+	<span class="Name">BroadcastMessage</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">message</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">LiveEditingBroadcastMessageType</span>
+			<span class="ParamName">type</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LiveScriptingService</span>
 	<span class="Name">EndEdit</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -25225,6 +25599,19 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">msg</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">LiveScriptingService</span>
+	<span class="Name">LiveEditingClientConfiguration</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">serializedConfig</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxSecurity}</span>
@@ -26715,6 +27102,19 @@
 <div class="Function child">
 	<span class="Type">Dictionary</span>
 	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">GetSubscriptionProductInfoAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">MarketplaceService</span>
 	<span class="Name">GetSubscriptionPurchaseInfoAsync</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -26723,6 +27123,40 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">GetUserSubscriptionPaymentHistoryAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName">user</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Dictionary</span>
+	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">GetUserSubscriptionStatusAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName">user</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+	</span>
 	<span class="Tag">[Yields]</span>
 </div>
 
@@ -37146,6 +37580,14 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Player</span>
+	<span class="Name">SetBlockListInitialized</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">Player</span>
 	<span class="Name">SetCharacterAppearanceJson</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -41586,6 +42028,39 @@
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
+</div>
+
+<div class="Class">
+	<span class="Name">RibbonNotificationService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">RibbonNotificationService</span>
+	<span class="Name">NewNotificationFromPlugin</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">notificationId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">RibbonNotificationService</span>
+	<span class="Name">NewNotificationId</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">notificationId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -47094,6 +47569,13 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">FreeCameraSpeedScroll</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">QDir</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">DefaultScriptFileDir</span>
@@ -52450,6 +52932,32 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">CheckMeshInCameraFrustum</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">Vector3</span>
+			<span class="ParamName">meshScale</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">handleWorldCF</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">CFrame</span>
+			<span class="ParamName">cameraWorldCF</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">Objects</span>
 	<span class="ClassName Function">UGCValidationService</span>
 	<span class="Name">FetchAssetWithFormat</span>
@@ -52548,6 +53056,12 @@
 		<span class="Parameter">
 			<span class="Type">Instance</span>
 			<span class="ParamName">meshPart</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">CollisionFidelity</span>
+			<span class="ParamName default">collisionFidelity</span>
+			<span class="ParamDefault String">Box</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -52672,6 +53186,20 @@
 		<span class="Parameter">
 			<span class="Type">CFrame</span>
 			<span class="ParamName">handleCF</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateMeshTriangleArea</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -57055,6 +57583,14 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">VoiceChatService</span>
+	<span class="Name">UseNewControlPaths</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">VoiceChatService</span>
 	<span class="Name">UseNewJoinFlow</span>
 	<span class="Security">{RobloxSecurity}</span>
 	<span class="Tag">[Hidden]</span>
@@ -57124,6 +57660,45 @@
 
 <div class="Event child">
 	<span class="ClassName Event">VoiceChatService</span>
+	<span class="Name">PublishingHandshakeAcked</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">handshakeAnswer</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VoiceChatService</span>
+	<span class="Name">PublishingHandshakeCompleted</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VoiceChatService</span>
+	<span class="Name">PublishingHandshakeInitiated</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">handshakeOffer</span>
+		</span>
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">MuteState</span>
+			<span class="ParamName">muteState</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VoiceChatService</span>
 	<span class="Name">ReJoinedVoice</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -57141,6 +57716,24 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">channelId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VoiceChatService</span>
+	<span class="Name">RelayCandidatesGathered</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">VoiceControlPath</span>
+			<span class="ParamName">voiceControlPath</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">serializedIceCandidates</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxSecurity}</span>
@@ -57211,6 +57804,24 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">value</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VoiceChatService</span>
+	<span class="Name">VoiceSetupFailed</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">VoiceControlPath</span>
+			<span class="ParamName">voiceControlPath</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">serializedFailure</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxSecurity}</span>
@@ -60984,6 +61595,24 @@
 	<span class="EnumName">DataStoreRequestType</span>
 	<span class="Name">OnUpdate</span>
 	<span class="Value">5</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DataStoreRequestType</span>
+	<span class="Name">ListAsync</span>
+	<span class="Value">6</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DataStoreRequestType</span>
+	<span class="Name">GetVersionAsync</span>
+	<span class="Value">7</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">DataStoreRequestType</span>
+	<span class="Name">RemoveVersionAsync</span>
+	<span class="Value">8</span>
 </div>
 
 <div class="Enum">
@@ -65558,6 +66187,28 @@
 	<span class="EnumName">LiveEditingAtomicUpdateResponse</span>
 	<span class="Name">FailureOperationIllegal</span>
 	<span class="Value">3</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">LiveEditingBroadcastMessageType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LiveEditingBroadcastMessageType</span>
+	<span class="Name">Normal</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LiveEditingBroadcastMessageType</span>
+	<span class="Name">Warning</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">LiveEditingBroadcastMessageType</span>
+	<span class="Name">Error</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
@@ -70236,6 +70887,32 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">SubscriptionPaymentStatus</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SubscriptionPaymentStatus</span>
+	<span class="Name">Paid</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SubscriptionPaymentStatus</span>
+	<span class="Name">Refunded</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">SubscriptionPeriod</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">SubscriptionPeriod</span>
+	<span class="Name">Month</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">SurfaceConstraint</span>
 </div>
 
@@ -72029,6 +72706,28 @@
 	<span class="EnumName">VoiceChatState</span>
 	<span class="Name">Failed</span>
 	<span class="Value">6</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">VoiceControlPath</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VoiceControlPath</span>
+	<span class="Name">Publish</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VoiceControlPath</span>
+	<span class="Name">Subscribe</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">VoiceControlPath</span>
+	<span class="Name">Join</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
