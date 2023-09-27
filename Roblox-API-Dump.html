@@ -620,6 +620,49 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AccessoryDescription</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">AccessoryType</span>
+	<span class="ClassName Property">AccessoryDescription</span>
+	<span class="Name">AccessoryType</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int64</span>
+	<span class="ClassName Property">AccessoryDescription</span>
+	<span class="Name">AssetId</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">Instance</span>
+	<span class="ClassName Property">AccessoryDescription</span>
+	<span class="Name">Instance</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">AccessoryDescription</span>
+	<span class="Name">IsLayered</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">int</span>
+	<span class="ClassName Property">AccessoryDescription</span>
+	<span class="Name">Order</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">AccessoryDescription</span>
+	<span class="Name">Puffiness</span>
+</div>
+
+<div class="Class">
 	<span class="Name">Accoutrement</span>
 	<span class="Superclass">Instance</span>
 </div>
@@ -1949,6 +1992,22 @@
 	<span class="Name">PreferLodEnabled</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">CFrame</span>
+	<span class="ClassName Property">Animator</span>
+	<span class="Name">RootMotion</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">float</span>
+	<span class="ClassName Property">Animator</span>
+	<span class="Name">RootMotionWeight</span>
+	<span class="Tag">[ReadOnly]</span>
+	<span class="Tag">[NotBrowsable]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">Animator</span>
@@ -2208,6 +2267,14 @@
 	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[Service]</span>
 	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">AppUpdateService</span>
+	<span class="Name">CanPerformBinaryUpdate</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -2530,21 +2597,6 @@
 		<span class="Parameter">
 			<span class="Type">Dictionary</span>
 			<span class="ParamName">results</span>
-		</span>
-	</span>
-</div>
-
-<div class="Event child">
-	<span class="ClassName Event">AssetImportSession</span>
-	<span class="Name">UploadCompleteDeprecated</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">bool</span>
-			<span class="ParamName">succeeded</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">Dictionary</span>
-			<span class="ParamName">errorMap</span>
 		</span>
 	</span>
 </div>
@@ -5973,6 +6025,12 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">RootImportData</span>
 	<span class="Name">UsesCages</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">RootImportData</span>
+	<span class="Name">ValidateUgcBody</span>
 </div>
 
 <div class="Property child">
@@ -11987,6 +12045,14 @@
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
+	<span class="Name">CreationDBService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Class">
@@ -22518,6 +22584,19 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">Secret</span>
+	<span class="ClassName Function">HttpService</span>
+	<span class="Name">GetSecret</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">key</span>
+		</span>
+	</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">string</span>
 	<span class="ClassName Function">HttpService</span>
 	<span class="Name">GetUserAgent</span>
@@ -23061,19 +23140,6 @@
 		</span>
 	</span>
 	<span class="Tag">[Yields]</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">Humanoid</span>
-	<span class="Name">ApplyDescriptionBlocking</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">HumanoidDescription</span>
-			<span class="ParamName">humanoidDescription</span>
-		</span>
-	</span>
-	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
@@ -35049,6 +35115,14 @@
 
 <div class="Property child">
 	<span class="EnumName Type">Enum</span>
+	<span class="Type">EditorLiveScripting</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">EditorLiveScripting</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
 	<span class="Type">ModelStreamingBehavior</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">ModelStreamingBehavior</span>
@@ -41716,6 +41790,27 @@
 <div class="Class">
 	<span class="Name">ReflectionMetadataYieldFunctions</span>
 	<span class="Superclass">Instance</span>
+</div>
+
+<div class="Class">
+	<span class="Name">ReflectionService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Array</span>
+	<span class="ClassName Function">ReflectionService</span>
+	<span class="Name">GetPropertyNames</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">name</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class">
@@ -51622,6 +51717,12 @@
 <div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">TextChatCommand</span>
+	<span class="Name">AutocompleteVisible</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TextChatCommand</span>
 	<span class="Name">Enabled</span>
 </div>
 
@@ -53139,10 +53240,31 @@
 </div>
 
 <div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">TutorialService</span>
+	<span class="Name">GetTutorialIDToLaunch</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">TutorialService</span>
 	<span class="Name">HasUserCompletedTutorial</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">TutorialService</span>
+	<span class="Name">HideOnlyNamedWidgets</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">configurationLabel</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -53172,6 +53294,19 @@
 	<span class="ClassName Function">TutorialService</span>
 	<span class="Name">ShouldLaunchTutorial</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">TutorialService</span>
+	<span class="Name">ShowOnlyNamedWidgets</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">configurationLabel</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -53725,6 +53860,24 @@
 	<span class="ClassName Function">UGCValidationService</span>
 	<span class="Name">ValidateUVSpace</span>
 	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">meshId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">UGCValidationService</span>
+	<span class="Name">ValidateUVValuesInReference</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Array</span>
+			<span class="ParamName">referenceValues</span>
+		</span>
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">meshId</span>
@@ -63068,6 +63221,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">EditorLiveScripting</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">EditorLiveScripting</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">EditorLiveScripting</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">EditorLiveScripting</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">ElasticBehavior</span>
 </div>
 
@@ -69836,6 +70011,12 @@
 	<span class="EnumName">ScreenInsets</span>
 	<span class="Name">CoreUISafeInsets</span>
 	<span class="Value">2</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">ScreenInsets</span>
+	<span class="Name">TopbarSafeInsets</span>
+	<span class="Value">3</span>
 </div>
 
 <div class="Enum">
