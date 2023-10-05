@@ -2365,7 +2365,7 @@
 <div class="Function child">
 	<span class="Type">Map</span>
 	<span class="ClassName Function">AssetImportService</span>
-	<span class="Name">GetAllTemplates</span>
+	<span class="Name">GetAllPresets</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -2373,7 +2373,7 @@
 <div class="Function child">
 	<span class="Type">Map</span>
 	<span class="ClassName Function">AssetImportService</span>
-	<span class="Name">GetTemplate</span>
+	<span class="Name">GetPreset</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -2404,7 +2404,7 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetImportService</span>
-	<span class="Name">RemoveTemplate</span>
+	<span class="Name">RemovePreset</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -2415,9 +2415,9 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">void</span>
+	<span class="Type">bool</span>
 	<span class="ClassName Function">AssetImportService</span>
-	<span class="Name">SaveTemplate</span>
+	<span class="Name">SavePreset</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -2425,7 +2425,7 @@
 		</span>
 		<span class="Parameter">
 			<span class="Type">Dictionary</span>
-			<span class="ParamName">importTemplate</span>
+			<span class="ParamName">preset</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -2463,21 +2463,21 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetImportSession</span>
-	<span class="Name">ApplySettings</span>
-	<span class="Parameters"></span>
+	<span class="Name">ApplyPreset</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">preset</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">AssetImportSession</span>
-	<span class="Name">ApplyTemplate</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">Dictionary</span>
-			<span class="ParamName">template</span>
-		</span>
-	</span>
+	<span class="Name">ApplySettings</span>
+	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -4499,6 +4499,31 @@
 </div>
 
 <div class="Class">
+	<span class="Name">AvatarCreationService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Tuple</span>
+	<span class="ClassName Function">AvatarCreationService</span>
+	<span class="Name">PromptCreateAvatarAsync</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Player</span>
+			<span class="ParamName">player</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">HumanoidDescription</span>
+			<span class="ParamName">humanoidDescription</span>
+		</span>
+	</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Class">
 	<span class="Name">AvatarEditorService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -5631,7 +5656,7 @@
 <div class="Function child">
 	<span class="Type">Map</span>
 	<span class="ClassName Function">BaseImportData</span>
-	<span class="Name">CreateTemplateFromData</span>
+	<span class="Name">CreatePresetFromData</span>
 	<span class="Parameters"></span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
@@ -11751,7 +11776,6 @@
 <div class="Class">
 	<span class="Name">AirController</span>
 	<span class="Superclass">ControllerBase</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -11807,7 +11831,6 @@
 <div class="Class">
 	<span class="Name">ClimbController</span>
 	<span class="Superclass">ControllerBase</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -11837,7 +11860,6 @@
 <div class="Class">
 	<span class="Name">GroundController</span>
 	<span class="Superclass">ControllerBase</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -11909,7 +11931,6 @@
 <div class="Class">
 	<span class="Name">SwimController</span>
 	<span class="Superclass">ControllerBase</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -11945,7 +11966,6 @@
 <div class="Class">
 	<span class="Name">ControllerManager</span>
 	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -14970,6 +14990,7 @@
 		</span>
 	</span>
 	<span class="Tag">[CustomLuaState]</span>
+	<span class="ThreadSafety">{🧬Safe}</span>
 </div>
 
 <div class="Function child">
@@ -26704,6 +26725,31 @@
 </div>
 
 <div class="Class">
+	<span class="Name">LogReporterService</span>
+	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotCreatable]</span>
+	<span class="Tag">[Service]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">bool</span>
+	<span class="ClassName Function">LogReporterService</span>
+	<span class="Name">ReportLog</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">logId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">desc</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Class">
 	<span class="Name">LogService</span>
 	<span class="Superclass">Instance</span>
 	<span class="Tag">[NotCreatable]</span>
@@ -27487,6 +27533,20 @@
 		<span class="Parameter">
 			<span class="Type">Dictionary</span>
 			<span class="ParamName">collectiblesProductDetails</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">string</span>
+	<span class="ClassName Function">MarketplaceService</span>
+	<span class="Name">PerformSubscriptionPurchase</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">subscriptionId</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -38236,6 +38296,24 @@
 
 <div class="Event child">
 	<span class="ClassName Event">Player</span>
+	<span class="Name">ServerUpdatedHead</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AssetType</span>
+			<span class="ParamName">assetType</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">assetId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">Player</span>
 	<span class="Name">SetShutdownMessage</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -43975,7 +44053,7 @@
 </div>
 
 <div class="Function child">
-	<span class="Type">Tuple</span>
+	<span class="Type">void</span>
 	<span class="ClassName Function">ScriptEditorService</span>
 	<span class="Name">UpdateSourceAsync</span>
 	<span class="Parameters">
@@ -44242,7 +44320,6 @@
 <div class="Class">
 	<span class="Name">BuoyancySensor</span>
 	<span class="Superclass">SensorBase</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -44266,7 +44343,6 @@
 <div class="Class">
 	<span class="Name">ControllerPartSensor</span>
 	<span class="Superclass">ControllerSensor</span>
-	<span class="Tag">[NotBrowsable]</span>
 </div>
 
 <div class="Property child">
@@ -47878,6 +47954,13 @@
 </div>
 
 <div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">CameraSpeedAdjustBinding</span>
+	<span class="ClassName Property">Studio</span>
+	<span class="Name">Camera Speed Adjust Binding</span>
+</div>
+
+<div class="Property child">
 	<span class="Type">bool</span>
 	<span class="ClassName Property">Studio</span>
 	<span class="Name">Camera Zoom to Mouse Position</span>
@@ -48884,6 +48967,7 @@
 <div class="Class">
 	<span class="Name">StudioAttachment</span>
 	<span class="Superclass">Instance</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -48919,7 +49003,6 @@
 <div class="Class">
 	<span class="Name">StudioCallout</span>
 	<span class="Superclass">Instance</span>
-	<span class="Tag">[NotCreatable]</span>
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
@@ -49978,6 +50061,61 @@
 <div class="Function child">
 	<span class="Type">void</span>
 	<span class="ClassName Function">StudioWidgetsService</span>
+	<span class="Name">ApplyFillInBox</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">StudioWidget</span>
+			<span class="ParamName">target</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioWidgetsService</span>
+	<span class="Name">ApplyHighlight</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">StudioWidget</span>
+			<span class="ParamName">target</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string?</span>
+			<span class="ParamName">rowName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioWidgetsService</span>
+	<span class="Name">ApplyShadows</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioWidgetsService</span>
+	<span class="Name">ApplySpotlight</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">StudioWidget</span>
+			<span class="ParamName">target</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string?</span>
+			<span class="ParamName">rowName</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">void</span>
+	<span class="ClassName Function">StudioWidgetsService</span>
 	<span class="Name">AttachPluginGui</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -50014,23 +50152,6 @@
 	<span class="ClassName Function">StudioWidgetsService</span>
 	<span class="Name">HideSpotlight</span>
 	<span class="Parameters"></span>
-	<span class="Security">{RobloxScriptSecurity}</span>
-</div>
-
-<div class="Function child">
-	<span class="Type">void</span>
-	<span class="ClassName Function">StudioWidgetsService</span>
-	<span class="Name">ShowSpotlight</span>
-	<span class="Parameters">
-		<span class="Parameter">
-			<span class="Type">StudioWidget</span>
-			<span class="ParamName">target</span>
-		</span>
-		<span class="Parameter">
-			<span class="Type">bool?</span>
-			<span class="ParamName">sinkInput</span>
-		</span>
-	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -53257,11 +53378,11 @@
 <div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">TutorialService</span>
-	<span class="Name">HideOnlyNamedWidgets</span>
+	<span class="Name">HideWidgets</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
-			<span class="ParamName">configurationLabel</span>
+			<span class="ParamName">commaSeparatedNames</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -53299,11 +53420,11 @@
 <div class="Function child">
 	<span class="Type">bool</span>
 	<span class="ClassName Function">TutorialService</span>
-	<span class="Name">ShowOnlyNamedWidgets</span>
+	<span class="Name">ShowWidgets</span>
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
-			<span class="ParamName">configurationLabel</span>
+			<span class="ParamName">commaSeparatedNames</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -58228,6 +58349,24 @@
 
 <div class="Event child">
 	<span class="ClassName Event">VoiceChatService</span>
+	<span class="Name">PublishStateChange</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">MuteState</span>
+			<span class="ParamName">muteState</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">sessionId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VoiceChatService</span>
 	<span class="Name">PublishingHandshakeAcked</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -58331,10 +58470,32 @@
 
 <div class="Event child">
 	<span class="ClassName Event">VoiceChatService</span>
+	<span class="Name">SubscribeStateChange</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">MuteState</span>
+			<span class="ParamName">muteState</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">userIds</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">sessionId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">VoiceChatService</span>
 	<span class="Name">SubscriptionHandshakeAcked</span>
 	<span class="Parameters">
 		<span class="Parameter">
-			<span class="Type">int</span>
+			<span class="Type">int64</span>
 			<span class="ParamName">eventTag</span>
 		</span>
 		<span class="Parameter">
@@ -58343,7 +58504,7 @@
 		</span>
 		<span class="Parameter">
 			<span class="Type">string</span>
-			<span class="ParamName">userToMute</span>
+			<span class="ParamName">usersToMute</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">string</span>
@@ -58360,11 +58521,11 @@
 	<span class="Parameters">
 		<span class="Parameter">
 			<span class="Type">string</span>
-			<span class="ParamName">subscriptionInfo</span>
+			<span class="ParamName">sessionId</span>
 		</span>
 		<span class="Parameter">
-			<span class="Type">string</span>
-			<span class="ParamName">sessionId</span>
+			<span class="Type">int64</span>
+			<span class="ParamName">eventTag</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxSecurity}</span>
@@ -58381,7 +58542,7 @@
 		</span>
 		<span class="Parameter">
 			<span class="Type">string</span>
-			<span class="ParamName">subscriptionInfo</span>
+			<span class="ParamName">newSubscriptionStates</span>
 		</span>
 		<span class="Parameter">
 			<span class="Type">bool</span>
@@ -58390,6 +58551,10 @@
 		<span class="Parameter">
 			<span class="Type">string</span>
 			<span class="ParamName">sessionId</span>
+		</span>
+		<span class="Parameter">
+			<span class="Type">int64</span>
+			<span class="ParamName">eventTag</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxSecurity}</span>
@@ -60745,6 +60910,28 @@
 	<span class="EnumName">CameraPanMode</span>
 	<span class="Name">EdgeBump</span>
 	<span class="Value">1</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">CameraSpeedAdjustBinding</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CameraSpeedAdjustBinding</span>
+	<span class="Name">None</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CameraSpeedAdjustBinding</span>
+	<span class="Name">RmbScroll</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">CameraSpeedAdjustBinding</span>
+	<span class="Name">AltScroll</span>
+	<span class="Value">2</span>
 </div>
 
 <div class="Enum">
@@ -71694,6 +71881,24 @@
 	<span class="EnumName">StudioStyleGuideColor</span>
 	<span class="Name">AICOOverlayButtonBackgroundPressed</span>
 	<span class="Value">131</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">OnboardingCover</span>
+	<span class="Value">132</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">OnboardingHighlight</span>
+	<span class="Value">133</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">StudioStyleGuideColor</span>
+	<span class="Name">OnboardingShadow</span>
+	<span class="Value">134</span>
 </div>
 
 <div class="Enum">
