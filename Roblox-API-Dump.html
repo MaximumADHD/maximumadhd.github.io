@@ -749,7 +749,6 @@
 	<span class="Type">AccessoryType</span>
 	<span class="ClassName Property">Accessory</span>
 	<span class="Name">AccessoryType</span>
-	<span class="Security">{✏️RobloxScriptSecurity}</span>
 </div>
 
 <div class="Class deprecated">
@@ -2486,6 +2485,19 @@
 	<span class="ClassName Function">AssetImportSession</span>
 	<span class="Name">Cancel</span>
 	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Function child">
+	<span class="Type">Map</span>
+	<span class="ClassName Function">AssetImportSession</span>
+	<span class="Name">CreatePresetFromData</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">importData</span>
+		</span>
+	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 </div>
 
@@ -12358,6 +12370,16 @@
 	<span class="Tag">[Hidden]</span>
 </div>
 
+<div class="Property child">
+	<span class="Type">SharedString</span>
+	<span class="ClassName Property">DynamicMesh</span>
+	<span class="Name">MeshData</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
 <div class="Function child">
 	<span class="Type">int</span>
 	<span class="ClassName Function">DynamicMesh</span>
@@ -19746,6 +19768,15 @@
 	<span class="Name">ImageTransparency</span>
 </div>
 
+<div class="Function child">
+	<span class="Type">Content</span>
+	<span class="ClassName Function">ViewportFrame</span>
+	<span class="Name">CaptureSnapshotAsync</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Yields]</span>
+</div>
+
 <div class="Class">
 	<span class="Name">LayerCollector</span>
 	<span class="Superclass">GuiBase2d</span>
@@ -20131,6 +20162,46 @@
 	<span class="Type">AdShape</span>
 	<span class="ClassName Property">AdGui</span>
 	<span class="Name">AdShape</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">AdGui</span>
+	<span class="Name">EnableVideoAds</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AdGui</span>
+	<span class="Name">AdEvent</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="EnumName Type">Enum</span>
+			<span class="Type">AdEventType</span>
+			<span class="ParamName">adEventType</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">AdGui</span>
+	<span class="Name">ReportIsSubscribedToVideoCompletion</span>
+	<span class="Parameters"></span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Callback child">
+	<span class="Type">bool</span>
+	<span class="ClassName Callback">AdGui</span>
+	<span class="Name">OnAdEvent</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Dictionary</span>
+			<span class="ParamName">eventInfo</span>
+		</span>
+	</span>
 </div>
 
 <div class="Class">
@@ -21100,7 +21171,6 @@
 	<span class="Type">Rect</span>
 	<span class="ClassName Property">GuiService</span>
 	<span class="Name">TopbarInset</span>
-	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[ReadOnly]</span>
 </div>
 
@@ -28141,6 +28211,19 @@
 
 <div class="Event child">
 	<span class="ClassName Event">MarketplaceService</span>
+	<span class="Name">ConfirmUserSubscriptionPurchase</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">string</span>
+			<span class="ParamName">subscriptionId</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">MarketplaceService</span>
 	<span class="Name">LuaDialogCallbackSignal</span>
 	<span class="Parameters">
 		<span class="Parameter">
@@ -35161,6 +35244,14 @@
 	<span class="Type">MeshPartHeadsAndAccessories</span>
 	<span class="ClassName Property">Workspace</span>
 	<span class="Name">MeshPartHeadsAndAccessories</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">PhysicsSolver</span>
+	<span class="ClassName Property">Workspace</span>
+	<span class="Name">NewPhysicsSolver</span>
 	<span class="Tag">[NotScriptable]</span>
 </div>
 
@@ -46140,26 +46231,23 @@
 	<span class="Tag">[NotReplicated]</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">EmitterSize</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">MaxDistance</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
-<div class="Property deprecated child">
+<div class="Property child">
 	<span class="Type">float</span>
 	<span class="ClassName Property">Sound</span>
 	<span class="Name">MinDistance</span>
 	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
-	<span class="Tag">[Deprecated]</span>
 </div>
 
 <div class="Property deprecated child">
@@ -46960,6 +47048,18 @@
 		<span class="Parameter">
 			<span class="Type">int</span>
 			<span class="ParamName">deviceIndex</span>
+		</span>
+	</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+</div>
+
+<div class="Event child">
+	<span class="ClassName Event">SoundService</span>
+	<span class="Name">AudioInstanceAdded</span>
+	<span class="Parameters">
+		<span class="Parameter">
+			<span class="Type">Instance</span>
+			<span class="ParamName">instance</span>
 		</span>
 	</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
@@ -52432,6 +52532,16 @@
 	<span class="ClassName Property">TextChatService</span>
 	<span class="Name">ChatTranslationEnabled</span>
 	<span class="Security">{✏️RobloxScriptSecurity}</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">TextChatService</span>
+	<span class="Name">ChatTranslationFTUXShown</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -52439,6 +52549,8 @@
 	<span class="ClassName Property">TextChatService</span>
 	<span class="Name">ChatTranslationToggleEnabled</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
 </div>
 
 <div class="Property child">
@@ -54502,10 +54614,35 @@
 </div>
 
 <div class="Property child">
+	<span class="Type">UDim</span>
+	<span class="ClassName Property">UIListLayout</span>
+	<span class="Name">HorizontalPadding</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
+</div>
+
+<div class="Property child">
+	<span class="EnumName Type">Enum</span>
+	<span class="Type">ItemLineAlignment</span>
+	<span class="ClassName Property">UIListLayout</span>
+	<span class="Name">ItemLineAlignment</span>
+</div>
+
+<div class="Property child">
 	<span class="EnumName Type">Enum</span>
 	<span class="Type">UIFlexAlignment</span>
 	<span class="ClassName Property">UIListLayout</span>
 	<span class="Name">VerticalFlex</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">UDim</span>
+	<span class="ClassName Property">UIListLayout</span>
+	<span class="Name">VerticalPadding</span>
+	<span class="Serialization">[&lt;📁&gt; LoadOnly]</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotScriptable]</span>
 </div>
 
 <div class="Class">
@@ -54953,6 +55090,33 @@
 	<span class="Type">bool</span>
 	<span class="ClassName Property">UserGameSettings</span>
 	<span class="Name">CameraYInverted</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">ChatTranslationEnabled</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">ChatTranslationFTUXShown</span>
+	<span class="Security">{RobloxScriptSecurity}</span>
+	<span class="Tag">[Hidden]</span>
+	<span class="Tag">[NotReplicated]</span>
+</div>
+
+<div class="Property child">
+	<span class="Type">bool</span>
+	<span class="ClassName Property">UserGameSettings</span>
+	<span class="Name">ChatTranslationToggleEnabled</span>
 	<span class="Security">{RobloxScriptSecurity}</span>
 	<span class="Tag">[Hidden]</span>
 	<span class="Tag">[NotReplicated]</span>
@@ -59236,6 +59400,28 @@
 <div class="EnumItem child">
 	<span class="EnumName">ActuatorType</span>
 	<span class="Name">Servo</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
+	<span class="Name">AdEventType</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AdEventType</span>
+	<span class="Name">VideoLoaded</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AdEventType</span>
+	<span class="Name">VideoRemoved</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">AdEventType</span>
+	<span class="Name">UserCompletedVideo</span>
 	<span class="Value">2</span>
 </div>
 
@@ -68803,6 +68989,28 @@
 </div>
 
 <div class="Enum">
+	<span class="Name">PhysicsSolver</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PhysicsSolver</span>
+	<span class="Name">Default</span>
+	<span class="Value">0</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PhysicsSolver</span>
+	<span class="Name">Enabled</span>
+	<span class="Value">1</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">PhysicsSolver</span>
+	<span class="Name">Disabled</span>
+	<span class="Value">2</span>
+</div>
+
+<div class="Enum">
 	<span class="Name">PhysicsSteppingMethod</span>
 </div>
 
@@ -68940,6 +69148,12 @@
 	<span class="EnumName">Platform</span>
 	<span class="Name">UWP</span>
 	<span class="Value">18</span>
+</div>
+
+<div class="EnumItem child">
+	<span class="EnumName">Platform</span>
+	<span class="Name">PS5</span>
+	<span class="Value">19</span>
 </div>
 
 <div class="EnumItem child">
