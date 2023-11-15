@@ -1,7 +1,7 @@
 body {
 	background-color: #151515;
 	color: white;
-	font-family: Consolas;
+	font-family: Consolas, "Courier New", Courier, monospace;
 	white-space: nowrap;
 	padding: 20px;
 	padding-top: unset;
