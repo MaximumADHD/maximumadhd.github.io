@@ -1,68 +1,82 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/529e763561489b17209fc587a7e981b70a1ab9f4
+
 
 ## API Changes
 
 ```plain
-Added Class TextureGenerationService : Instance [NotCreatable] [Service] [NotReplicated]
-	Added Function TextureGenerationService:CancelGenerationRequestAsync(jobUuid: string) -> () {RobloxScriptSecurity} [Yields]
-	Added Function TextureGenerationService:GenerateTextureAsync(previewUuid: string) -> { [string]: any } {RobloxScriptSecurity} [Yields]
-	Added Function TextureGenerationService:GetQuotasAsync() -> { [string]: any } {RobloxScriptSecurity} [Yields]
-	Added Function TextureGenerationService:PreviewTextureAsync(meshObj: string, prompt: string, options: { [string]: any }) -> { [string]: any } {RobloxScriptSecurity} [Yields]
-	Added Event TextureGenerationService.GenerationNotificationSignal(notificationData: { [string]: any }) {RobloxScriptSecurity}
-	Added Event TextureGenerationService.PreviewNotificationSignal(notificationData: { [string]: any }) {RobloxScriptSecurity}
+Added Property DragDetector.PermissionPolicy: Enum.DragDetectorPermissionPolicy
+Added Property PhysicsSettings.TorqueDrawScale: number {RobloxScriptSecurity}
+Added Property Studio.DraggerActiveColor: Color3 {RobloxScriptSecurity}
+Added Property Studio.DraggerMajorGridIncrement: number {RobloxScriptSecurity}
+Added Property Studio.DraggerMaxSoftSnaps: number {RobloxScriptSecurity}
+Added Property Studio.DraggerPassiveColor: Color3 {RobloxScriptSecurity}
+Added Property Studio.DraggerShowHoverRuler: boolean {RobloxScriptSecurity}
+Added Property Studio.DraggerShowMeasurement: boolean {RobloxScriptSecurity}
+Added Property Studio.DraggerShowTargetSnap: boolean {RobloxScriptSecurity}
+Added Property Studio.DraggerSoftSnapMarginFactor: number {RobloxScriptSecurity}
+Added Property Studio.DraggerSummonMarginFactor: number {RobloxScriptSecurity}
+Added Property Studio.DraggerTiltRotateDuration: number {RobloxScriptSecurity}
+Added Property UserGameSettings.FramerateCap: number {RobloxScriptSecurity} [Hidden] [NotReplicated]
 
-Added Property Path2D.ZIndex: number {RobloxScriptSecurity}
-Added Property RootImportData.PreferredUploadId: number
+Added Function CollaboratorsService:RequestFlyToCollaborator(collaboratorId: number) -> () {RobloxScriptSecurity}
+Added Function DragDetector:SetPermissionPolicyFunction(function: (...any) -> ...any) -> ()
+Added Function Path2D:GetControlPoint(index: number) -> Path2DControlPoint {RobloxScriptSecurity}
+Added Function Path2D:InsertControlPoint(index: number, point: Path2DControlPoint) -> () {RobloxScriptSecurity}
+Added Function Path2D:RemoveControlPoint(index: number) -> () {RobloxScriptSecurity}
+Added Function Path2D:UpdateControlPoint(index: number, point: Path2DControlPoint) -> () {RobloxScriptSecurity}
+Added Function Player:SetChatTranslationSettingsLocaleId(locale: string) -> () {RobloxScriptSecurity}
 
-Added Function AssetService:GetAudioMetadataAsync(idList: { any }) -> { any } [Yields]
-Added Function CaptureService:GetCaptureFilePathAsync(captureContentId: string) -> string {RobloxScriptSecurity} [Yields]
-Added Function Path2D:GetBoundingRect2D() -> Rect {RobloxScriptSecurity}
+Added Event Player.PlayerChatTranslationSettingsLocaleSetFromLua(newLocaleId: string) {RobloxSecurity} [Hidden]
 
-Added Enum ModerationStatus
-	Added EnumItem ModerationStatus.ReviewedApproved : 1
-	Added EnumItem ModerationStatus.ReviewedRejected : 2
-	Added EnumItem ModerationStatus.NotReviewed : 3
-	Added EnumItem ModerationStatus.NotApplicable : 4
-	Added EnumItem ModerationStatus.Invalid : 5
+Added Enum DragDetectorPermissionPolicy
+	Added EnumItem DragDetectorPermissionPolicy.Nobody : 0
+	Added EnumItem DragDetectorPermissionPolicy.Everybody : 1
+	Added EnumItem DragDetectorPermissionPolicy.Scriptable : 2
 
-Added Tag [NotBrowsable] to Class VRService
-Added Tag [NotReplicated] to Property VRService.FadeOutViewOnCollision
-Added Tag [NotReplicated] to Property VRService.GuiInputUserCFrame
+Added Tag [Deprecated] to Property CylindricalConstraint.SoftlockAngularServoUponReachingTarget
+Added Tag [Deprecated] to Property HingeConstraint.SoftlockServoUponReachingTarget
+Added Tag [Deprecated] to Property SlidingBallConstraint.SoftlockServoUponReachingTarget
+Added Tag [Hidden] to Property Collaborator.CFrame
+Added Tag [Hidden] to Property Collaborator.CollaboratorColor
+Added Tag [Hidden] to Property Collaborator.CurDocGUID
+Added Tag [Hidden] to Property Collaborator.CurScriptLineNumber
+Added Tag [Hidden] to Property Collaborator.IsIdle
+Added Tag [Hidden] to Property Collaborator.UserId
+Added Tag [Hidden] to Property Collaborator.Username
 
-Changed the serialization of Property VRService.AutomaticScaling 
-	from: [🚫 None]
-	  to: [💾|📁 Serialized]
+Changed the serialization of Property Collaborator.CFrame 
+	from: [💾|📁 Serialized]
+	  to: [🚫 None]
 
-Changed the serialization of Property VRService.FadeOutViewOnCollision 
-	from: [🚫 None]
-	  to: [💾|📁 Serialized]
+Changed the serialization of Property Collaborator.CollaboratorColor 
+	from: [💾|📁 Serialized]
+	  to: [🚫 None]
 
-Changed the parameters of Function StudioPublishService:PublishAs 
-	from: (universeId: number, placeId: number, groupId: number, isPublish: boolean, publishParameters: any)
-	  to: (universeId: number, placeId: number, groupId: number, isPublish: boolean, publishParameters: any, willRetryOnConflict: boolean? = false)
+Changed the serialization of Property Collaborator.CurDocGUID 
+	from: [💾|📁 Serialized]
+	  to: [🚫 None]
 
-Changed the parameters of Event CaptureService.OpenShareCapturePrompt 
-	from: (promptId: number, contentId: string, capturePath: string, launchData: string)
-	  to: (promptId: number, contentId: string, launchData: string)
+Changed the serialization of Property Collaborator.CurScriptLineNumber 
+	from: [💾|📁 Serialized]
+	  to: [🚫 None]
 
-Changed the security of Event CollaboratorsService.CollaboratorIdleUpdate 
-	from: {RobloxSecurity}
-	  to: {RobloxScriptSecurity}
+Changed the serialization of Property Collaborator.IsIdle 
+	from: [💾|📁 Serialized]
+	  to: [🚫 None]
 
-Changed the value of EnumItem CollaboratorStatus.None from 3 to 0
-Changed the value of EnumItem CollaboratorStatus.Editing3D from 0 to 1
-Changed the value of EnumItem CollaboratorStatus.Scripting from 1 to 2
-Changed the value of EnumItem CollaboratorStatus.PrivateScripting from 2 to 3
+Changed the serialization of Property Collaborator.UserId 
+	from: [💾|📁 Serialized]
+	  to: [🚫 None]
 
-Removed Function MaterialGenerationService:GetAccountingBalanceAsync
-Removed Function MaterialGenerationService:RefillAccountingBalanceAsync
+Changed the serialization of Property Collaborator.Username 
+	from: [💾|📁 Serialized]
+	  to: [🚫 None]
 
-Removed Tag [Hidden] from Event CollaboratorsService.CollaboratorIdleUpdate
-Removed Tag [Hidden] from Event CollaboratorsService.CollaboratorInstanceCreatedSignal
-Removed Tag [Hidden] from Event CollaboratorsService.CollaboratorInstanceDestroyedSignal
-Removed Tag [Hidden] from Event CollaboratorsService.CollaboratorStatusUpdatedSignal
+Removed Event DataModelSession.DataModelCreated
+Removed Event DataModelSession.DataModelWillBeDestroyed
+
+Removed Tag [NotScriptable] from Property Collaborator.Status
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#610) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#611) for a syntax highlighted version!)
