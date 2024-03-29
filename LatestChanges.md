@@ -1,65 +1,86 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/54d23909e13709fbf926f3fe5c6ecd9dbb1cee2b
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/2bc0a89a5073a9a0e4d492815303e999e36a0d50
 
 ## API Changes
 
 ```plain
-Added Class RobloxEditableMesh : EditableMesh
-	Added Property RobloxEditableMesh.MeshDataSerialize: BinaryString {RobloxSecurity} [Hidden] [NotReplicated] [NotScriptable]
+Added Class ExampleService : Instance [NotCreatable] [Service] [NotReplicated]
+	Added Function ExampleService:PrintHello() -> () {RobloxScriptSecurity}
+	Added Event ExampleService.OnPolo(message: string) {RobloxScriptSecurity}
 
-Added Property RenderingTest.QualityAuto: boolean
-Added Property UserGameSettings.QualityResetLevel: number {RobloxScriptSecurity} [Hidden]
-Added Property Workspace.DecreaseMinimumPartDensityMode: Enum.DecreaseMinimumPartDensityMode [NotScriptable]
+Added Property PartOperation.ManifoldMesh: SharedString {RobloxSecurity} [Hidden] [NotReplicated] [NotScriptable]
+Added Property PhysicsSettings.ShowInstanceNamesForDrawnForcesAndTorques: boolean {RobloxScriptSecurity}
 
-Added Function CaptureService:GetCaptureStorageSizeAsync(pathArr: { any }) -> number {RobloxScriptSecurity} [Yields]
-Added Function ConversationalAIAcceptanceService:RecordingActionEnded(requestId: string, waypointName: string) -> () {RobloxScriptSecurity}
-Added Function ProjectFolderService:ExportScripts(path: string) -> () {RobloxScriptSecurity} [Yields]
-Added Function ProjectFolderService:ImportScripts(path: string) -> () {RobloxScriptSecurity} [Yields]
-Added Function ProjectFolderService:SelectFolder() -> string {RobloxScriptSecurity} [Yields]
-Added Function StudioAssetService:DEPRECATED_SerializeInstances(instances: { Instance }) -> string {RobloxScriptSecurity} [Yields]
-Added Function StudioAssetService:UpdatePublishedPackage(assetmetadata: { [string]: any }, rootInstance: Instance, isConvert: boolean? = false, addUndoWaypoint: boolean? = false) -> () {RobloxScriptSecurity}
+Added Function ExperienceStateCaptureService:CanEnterCaptureMode() -> boolean {RobloxScriptSecurity}
+Added Function MarketplaceService:PerformSubscriptionPurchaseV2(subscriptionId: string, paymentProvider: string) -> () {RobloxScriptSecurity} [Yields]
 
-Added Event AdService.ShowDynamicEudsaDisclosure(advertiserName: string, payerName: string) {RobloxScriptSecurity}
-Added Event Animator.OnCombinedUpdate(animation: string, playState: boolean, fadeTime: number, weight: number, speed: number, timePosition: number, priority: Enum.AnimationPriority, looping: boolean, valuesUpdated: number) {RobloxSecurity} [Hidden]
+Added Event AvatarCreationService.ReplicateAvatarTempAssetIds(serializedModel: string, bufferMap: { [string]: any }) {RobloxSecurity} [Hidden]
+Added Event MarketplaceService.PromptCollectibleBundlePurchaseRequested(player: Instance, bundleId: number, collectibleItemId: string, collectibleItemInstanceId: string, collectibleProductId: string, expectedPrice: number, idempotencyKey: string, purchaseAuthToken: string) {RobloxScriptSecurity}
 
-Added Enum DecreaseMinimumPartDensityMode
-	Added EnumItem DecreaseMinimumPartDensityMode.Default : 0
-	Added EnumItem DecreaseMinimumPartDensityMode.Disabled : 1
-	Added EnumItem DecreaseMinimumPartDensityMode.Enabled : 2
+Changed the parameters of Function StudioPublishService:PublishAs 
+	from: (universeId: number, placeId: number, groupId: number, isPublish: boolean, publishParameters: any, willRetryOnConflict: boolean? = false)
+	  to: (universeId: number, placeId: number, groupId: number, isPublish: boolean, publishParameters: any, willRetryOnConflict: boolean? = false, allowOpeningNewPlace: boolean? = true)
 
-Added EnumItem AdEventType.RewardedAdLoaded : 3
-Added EnumItem AdEventType.RewardedAdGrant : 4
-Added EnumItem AdEventType.RewardedAdUnloaded : 5
-Added EnumItem AvatarChatServiceFeature.UserVerifiedForVoice : 512
-Added EnumItem StudioStyleGuideColor.DiffLineNumHover : 137
-Added EnumItem StudioStyleGuideColor.DiffLineNumSeparatorBackgroundHover : 138
+Changed the security of Function AudioAnalyzer:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
 
-Added Tag [Deprecated] to EnumItem AdEventType.VideoLoaded
-Added Tag [Deprecated] to EnumItem AdEventType.VideoRemoved
-Added Tag [Deprecated] to EnumItem AdEventType.UserCompletedVideo
+Changed the security of Function AudioChorus:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
 
-Added Tags [Deprecated] [Hidden] [NotReplicated] to Property Workspace.InterpolationThrottling
+Changed the security of Function AudioCompressor:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
 
-Changed the serialization of Property Workspace.InterpolationThrottling 
-	from: [💾|📁 Serialized]
-	  to: [🚫 None]
+Changed the security of Function AudioDeviceInput:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
 
-Changed the parameters of Function StudioAssetService:SerializeInstances 
-	from: (instances: { Instance })
-	  to: (instances: { Instance }, groupId: number? = 0, isPackage: boolean? = false)
+Changed the security of Function AudioDeviceOutput:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
 
-Changed the return-type of Function PluginToolbar:CreateButton 
-	from: Instance?
-	  to: PluginToolbarButton
+Changed the security of Function AudioDistortion:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
 
-Changed the return-type of Function PluginToolbar:CreatePopupButton 
-	from: Instance?
-	  to: PluginToolbarButton
+Changed the security of Function AudioEcho:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
 
-Changed the security of Function UGCValidationService:CompareTextureOverlapByteString 
-	from: {None}
-	  to: {RobloxScriptSecurity}
+Changed the security of Function AudioEmitter:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
+
+Changed the security of Function AudioEqualizer:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
+
+Changed the security of Function AudioFader:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
+
+Changed the security of Function AudioFlanger:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
+
+Changed the security of Function AudioListener:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
+
+Changed the security of Function AudioPitchShifter:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
+
+Changed the security of Function AudioPlayer:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
+
+Changed the security of Function AudioReverb:GetConnectedWires 
+	from: {PluginSecurity}
+	  to: {None}
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#617) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#618) for a syntax highlighted version!)
