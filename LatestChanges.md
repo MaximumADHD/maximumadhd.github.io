@@ -1,74 +1,89 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/21b4b88645e037c6edb0264169a47dcb04d25b0e
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/5fa1260845fe3e463bf0b110cde438bd59fe3b36
 
 ## API Changes
 
 ```plain
-Added Property Instance.Sandboxed: boolean {RobloxSecurity} [NotReplicated] [NotScriptable]
-Added Property UserGameSettings.MasterVolumeStudio: number {RobloxScriptSecurity}
+Added Class AvatarGenerationJob : Instance [NotCreatable]
+	Added Property AvatarGenerationJob.Error: Enum.AvatarGenerationError
+	Added Property AvatarGenerationJob.ErrorMessage: string
+	Added Property AvatarGenerationJob.Progress: number
+	Added Property AvatarGenerationJob.Status: Enum.AvatarGenerationJobStatus
+	Added Function AvatarGenerationJob:Cancel() -> ()
+	Added Function AvatarGenerationJob:Wait() -> () [Yields]
 
-Added Function AnalyticsService:LogEconomyEvent(player: Player, flowType: Enum.AnalyticsEconomyFlowType, currencyType: string, endingBalance: number, amount: number, transactionType: string, itemSku: string, customFields: { any }) -> ()
-Added Function AnalyticsService:LogFunnelStepEvent(player: Player, funnelName: string, step: number, customFields: { any }) -> ()
-Added Function AnalyticsService:LogOnboardingFunnelStepEvent(player: Player, step: number, customFields: { any }) -> ()
-Added Function AnalyticsService:LogProgressionCompleteEvent(player: Player, level: number, levelName: string, customFields: { any }) -> ()
-Added Function AnalyticsService:LogProgressionEvent(player: Player, status: Enum.AnalyticsProgressionType, level: number, levelName: string, customFields: { any }) -> ()
-Added Function AnalyticsService:LogProgressionFailEvent(player: Player, level: number, levelName: string, customFields: { any }) -> ()
-Added Function AnalyticsService:LogProgressionStartEvent(player: Player, level: number, levelName: string, customFields: { any }) -> ()
-Added Function AssetService:CreateMeshPartAsync(meshId: string, options: { [string]: any }? = nil) -> MeshPart {PluginSecurity} [Yields]
-Added Function Plugin:GetPluginComponent(name: string) -> { [string]: any } {RobloxScriptSecurity} [CustomLuaState]
-Added Function ScriptEditorService:StripComments(code: string) -> string {RobloxScriptSecurity}
-Added Function StudioDeviceEmulatorService:SendGamepadEvent(deviceId: number, keyCode: Enum.KeyCode, position: Vector3, rotation: Vector3) -> () {RobloxScriptSecurity} [Yields]
+Added Class AvatarGenerationSession : Instance [NotCreatable]
+	Added Function AvatarGenerationSession:GenerateAvatarModel(previewJob: Avatar2DGenerationJob, options: { [string]: any }) -> Avatar3DGenerationJob
+	Added Function AvatarGenerationSession:GenerateAvatarPreview(textPrompt: string, options: { [string]: any }) -> Avatar2DGenerationJob
 
-Added Event BaseWrap.VerticesModified() {RobloxScriptSecurity}
-Added Event ProjectFolderService.FileChangedAfterSync() {RobloxScriptSecurity}
+Added Class CommerceService : Instance [NotCreatable] [Service]
+	Added Function CommerceService:PromptRealWorldCommerceBrowser(player: Player, url: string) -> ()
+	Added Function CommerceService:UserEligibleForRealWorldCommerceAsync() -> boolean [Yields]
+	Added Event CommerceService.InExperienceBrowserRequested(url: string) {RobloxSecurity}
 
-Added Enum AnalyticsEconomyFlowType
-	Added EnumItem AnalyticsEconomyFlowType.Sink : 0
-	Added EnumItem AnalyticsEconomyFlowType.Source : 1
+Added Class ScriptProfilerService : Instance [NotCreatable] [Service]
+	Added Function ScriptProfilerService:ClientRequestData(player: Player) -> () {PluginSecurity}
+	Added Function ScriptProfilerService:ClientStart(player: Player, frequency: number?) -> () {PluginSecurity}
+	Added Function ScriptProfilerService:ClientStop(player: Player) -> () {PluginSecurity}
+	Added Function ScriptProfilerService:DeserializeJSON(jsonString: string?) -> { [string]: any } {PluginSecurity} [CustomLuaState]
+	Added Function ScriptProfilerService:SaveScriptProfilingData(jsonString: string, filename: string) -> string {RobloxScriptSecurity}
+	Added Function ScriptProfilerService:ServerRequestData() -> () {PluginSecurity}
+	Added Function ScriptProfilerService:ServerStart(frequency: number?) -> () {PluginSecurity}
+	Added Function ScriptProfilerService:ServerStop() -> () {PluginSecurity}
+	Added Event ScriptProfilerService.OnNewData(player: Player, jsonString: string) {PluginSecurity}
+	Added Event ScriptProfilerService.RequestData() {RobloxSecurity} [Hidden]
+	Added Event ScriptProfilerService.SetProfilingState(start: boolean, frequency: number) {RobloxSecurity} [Hidden]
 
-Added Enum AnalyticsEconomyTransactionType
-	Added EnumItem AnalyticsEconomyTransactionType.IAP : 0
-	Added EnumItem AnalyticsEconomyTransactionType.Shop : 1
-	Added EnumItem AnalyticsEconomyTransactionType.Gameplay : 2
-	Added EnumItem AnalyticsEconomyTransactionType.ContextualPurchase : 3
-	Added EnumItem AnalyticsEconomyTransactionType.TimedReward : 4
-	Added EnumItem AnalyticsEconomyTransactionType.Onboarding : 5
+Added Class Avatar2DGenerationJob : AvatarGenerationJob [NotCreatable]
+	Added Property Avatar2DGenerationJob.Result: string
 
-Added Enum AnalyticsProgressionType
-	Added EnumItem AnalyticsProgressionType.Custom : 0
-	Added EnumItem AnalyticsProgressionType.Start : 1
-	Added EnumItem AnalyticsProgressionType.Fail : 2
-	Added EnumItem AnalyticsProgressionType.Complete : 3
+Added Class Avatar3DGenerationJob : AvatarGenerationJob [NotCreatable]
+	Added Property Avatar3DGenerationJob.Result: Model?
 
-Added EnumItem ConnectionError.PlacelaunchCreatorBan : 600
-Added EnumItem Font.Arimo : 50
-Added EnumItem Font.ArimoBold : 51
+Added Property AudioEmitter.DistanceAttenuation: BinaryString {RobloxSecurity}
+Added Property Workspace.InsertPoint: Vector3 [NotReplicated]
 
-Added Tags [NotCreatable] [NotReplicated] to Class AnalyticsService
+Added Function AudioEmitter:GetDistanceAttenuation() -> { [string]: any } [CustomLuaState]
+Added Function AudioEmitter:SetDistanceAttenuation(curve: { [string]: any }) -> () [CustomLuaState]
+Added Function AvatarCreationService:LoadAvatarModelAsync(id: string) -> Instance? [Yields]
+Added Function AvatarCreationService:LoadAvatarPreviewImageAsync(avatarPreview: string) -> EditableImage [Yields]
+Added Function CaptureService:DeleteCapturesAsync(pathArr: { any }) -> number {RobloxScriptSecurity} [Yields]
+Added Function MaterialService:SetCurrentMaterial(baseMaterial: Enum.Material, materialVariant: string) -> () {RobloxScriptSecurity}
+Added Function Selection:AddFocusCallback(priority: number, function: (...any) -> ...any) -> RBXScriptConnection {RobloxScriptSecurity}
 
-Changed the category of Property Instance.Capabilities 
-	from: "Behavior"
-	  to: "Permissions"
+Added Event ActivityHistoryService.EventNotificationReceived()
+Added Event AvatarCreationService.RequestAvatarModel(id: string) {RobloxSecurity} [Hidden]
+Added Event GuiService.OpenAttenuationCurveEditor(selectedCurveObject: Instance) {RobloxScriptSecurity}
 
-Changed the category of Property Instance.DefinesCapabilities 
-	from: "Behavior"
-	  to: "Permissions"
+Added Enum AvatarGenerationError
+	Added EnumItem AvatarGenerationError.None : 0
+	Added EnumItem AvatarGenerationError.Timeout : 1
+	Added EnumItem AvatarGenerationError.DownloadFailed : 2
+	Added EnumItem AvatarGenerationError.Canceled : 3
+	Added EnumItem AvatarGenerationError.Unknown : 4
 
-Changed the parameters of Function EditableMesh:CreateMeshPartAsync 
-	from: (collisionFidelity: Enum.CollisionFidelity)
-	  to: (options: { [string]: any }? = nil)
+Added Enum AvatarGenerationJobStatus
+	Added EnumItem AvatarGenerationJobStatus.NotStarted : 0
+	Added EnumItem AvatarGenerationJobStatus.InProgress : 1
+	Added EnumItem AvatarGenerationJobStatus.Completed : 2
+	Added EnumItem AvatarGenerationJobStatus.Failed : 3
 
-Changed the parameters of Function LogReporterService:ReportLog 
-	from: (logId: string, desc: string)
-	  to: (fingerprint: string, uuid: string, desc: string, attributes: { [string]: any }, annotations: { [string]: any })
+Added EnumItem TextTruncate.SplitWord : 2
 
-Changed the parameters of Function StreamingService:GetInstance 
-	from: (collectorName: string, requestId: string? = "instanceId")
-	  to: (requestId: string, instanceId: string)
+Changed the parameters of Event AvatarCreationService.ReplicateAvatarTempAssetIds 
+	from: (serializedModel: string, bufferMap: { [string]: any })
+	  to: (id: string, serializedModel: string, bufferMap: { [string]: any })
 
-Removed Tag [Hidden] from Property Instance.Capabilities
-Removed Tag [Preliminary] from Class AnalyticsService
+Removed Property StarterPlayer.DeathStyle
+
+Removed Event ActivityHistoryService.onEventNotificationReceived
+
+Removed Enum DeathStyle
+	Removed EnumItem DeathStyle.Default
+	Removed EnumItem DeathStyle.ClassicBreakApart
+	Removed EnumItem DeathStyle.NonGraphic
+	Removed EnumItem DeathStyle.Scriptable
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#619) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#620) for a syntax highlighted version!)
