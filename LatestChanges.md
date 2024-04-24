@@ -1,42 +1,88 @@
 ## Client Difference Log
 
-https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/204aff77056178dee47f3a341dede6a95a20af13
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/094a6184596b5d4b1a1983e1dffc7dad7195ef05
 
 ## API Changes
 
 ```plain
-Added Property Path2D.Color3: Color3
+Added Class GenericChallengeService : Instance [NotCreatable] [Service]
+	Added Event GenericChallengeService.ChallengeRequiredEvent(challengeID: string, challengeType: string, challengeMetadata: string) {RobloxScriptSecurity}
 
-Added Function ConversationalAIAcceptanceService:DataModelHierarchyLatency(requestId: string, latency: number) -> () {RobloxScriptSecurity}
-Added Function ExperienceService:GetPendingJoinAttempt() -> { [string]: any } {RobloxScriptSecurity}
-Added Function Path2D:GetBoundingRect() -> Rect
-Added Function StudioPublishService:GetLocalFilePath() -> string {RobloxScriptSecurity}
-Added Function StudioPublishService:GetPlaceDisplayName() -> string {RobloxScriptSecurity}
+Added Function AvatarChatService:EnableVoice() -> boolean {RobloxScriptSecurity}
+Added Function AvatarChatService:deviceMeetsRequirementsForFeature(feature: Enum.DeviceFeatureType) -> boolean {RobloxScriptSecurity}
+Added Function AvatarCreationService:CreateAvatarGenerationSessionAsync(player: Player) -> AvatarGenerationSession [Yields]
+Added Function ConversationalAIAcceptanceService:ErrorTelemetry(requestId: string, errorType: string) -> () {RobloxScriptSecurity}
+Added Function LayerCollector:GetGuiObjectsAtPosition(x: number, y: number) -> { Instance } {RobloxScriptSecurity}
+Added Function Players:BanAsync(config: { [string]: any }) -> () [Yields]
+Added Function Players:UnbanAsync(config: { [string]: any }) -> () [Yields]
+Added Function ScriptEditorService:IsAutocompleteCallbackRegistered(name: string) -> boolean {RobloxScriptSecurity}
+Added Function ScriptEditorService:IsScriptAnalysisCallbackRegistered(name: string) -> boolean {RobloxScriptSecurity}
+Added Function StudioDeviceEmulatorService:ConnectGamepad(deviceId: number, gamepadDeviceType: Enum.GamepadType) -> () {RobloxScriptSecurity} [Yields]
+Added Function StudioDeviceEmulatorService:DisconnectGamepad(deviceId: number) -> () {RobloxScriptSecurity} [Yields]
 
-Added Event CaptureService.CaptureSavedInternal(captureInfo: { [string]: any }) {RobloxScriptSecurity}
-Added Event ExperienceService.OnNewJoinAttempt(params: { [string]: any }) {RobloxScriptSecurity}
-Added Event VoiceChatService.ClientRetryJoinWithConfig(sessionConfigFlags: number) {RobloxSecurity} [Hidden]
-Added Event VoiceChatService.VoiceChatClientVoiceCapabilityWithConfig(sessionConfigFlags: number) {RobloxSecurity} [Hidden]
+Added Event AvatarChatService.RefreshClientFeatures() {RobloxSecurity} [Hidden]
+Added Event AvatarCreationService.ReplicateAvatarModel(id: string, success: boolean, serializedModel: string, bufferTable: { [string]: any }) {RobloxSecurity} [Hidden]
+Added Event Player.PlayerCharacterLoaded(metrics: { [string]: any }) {RobloxSecurity} [Hidden]
 
-Added Enum GamepadType
-	Added EnumItem GamepadType.Unknown : 0
-	Added EnumItem GamepadType.PS4 : 1
-	Added EnumItem GamepadType.PS5 : 2
-	Added EnumItem GamepadType.XboxOne : 3
+Added Enum AnalyticsCustomFieldKeys
+	Added EnumItem AnalyticsCustomFieldKeys.CustomField01 : 0
+	Added EnumItem AnalyticsCustomFieldKeys.CustomField02 : 1
+	Added EnumItem AnalyticsCustomFieldKeys.CustomField03 : 2
 
-Added EnumItem GuiType.CoreBillboards : 4
+Added Enum DeviceFeatureType
+	Added EnumItem DeviceFeatureType.DeviceCapture : 0
+
+Changed the security of Property RunService.RunState 
+	from: {RobloxScriptSecurity}
+	  to: {PluginSecurity}
+
+Changed the value-type of Property Avatar3DGenerationJob.Result 
+	from: Model?
+	  to: string
+
+Changed the parameters of Function AnalyticsService:LogEconomyEvent 
+	from: (player: Player, flowType: Enum.AnalyticsEconomyFlowType, currencyType: string, endingBalance: number, amount: number, transactionType: string, itemSku: string, customFields: { any })
+	  to: (player: Player, flowType: Enum.AnalyticsEconomyFlowType, currencyType: string, endingBalance: number, amount: number, transactionType: string, itemSku: string? = "", customFields: { [string]: any }? = nil)
+
+Changed the parameters of Function AnalyticsService:LogFunnelStepEvent 
+	from: (player: Player, funnelName: string, step: number, customFields: { any })
+	  to: (player: Player, funnelName: string, funnelSessionId: string? = "", step: number? = 0, stepName: string? = "", customFields: { [string]: any }? = nil)
+
+Changed the parameters of Function AnalyticsService:LogOnboardingFunnelStepEvent 
+	from: (player: Player, step: number, customFields: { any })
+	  to: (player: Player, step: number, stepName: string? = "", customFields: { [string]: any }? = nil)
+
+Changed the parameters of Function AnalyticsService:LogProgressionCompleteEvent 
+	from: (player: Player, level: number, levelName: string, customFields: { any })
+	  to: (player: Player, progressionPathName: string, level: number, levelName: string? = "", customFields: { [string]: any }? = nil)
+
+Changed the parameters of Function AnalyticsService:LogProgressionEvent 
+	from: (player: Player, status: Enum.AnalyticsProgressionType, level: number, levelName: string, customFields: { any })
+	  to: (player: Player, progressionPathName: string, status: Enum.AnalyticsProgressionType, level: number, levelName: string? = "", customFields: { [string]: any }? = nil)
+
+Changed the parameters of Function AnalyticsService:LogProgressionFailEvent 
+	from: (player: Player, level: number, levelName: string, customFields: { any })
+	  to: (player: Player, progressionPathName: string, level: number, levelName: string? = "", customFields: { [string]: any }? = nil)
+
+Changed the parameters of Function AnalyticsService:LogProgressionStartEvent 
+	from: (player: Player, level: number, levelName: string, customFields: { any })
+	  to: (player: Player, progressionPathName: string, level: number, levelName: string? = "", customFields: { [string]: any }? = nil)
+
+Changed the parameters of Function HttpService:GetAsync 
+	from: (url: string, nocache: boolean? = false, headers: any)
+	  to: (url: any, nocache: boolean? = false, headers: any)
+
+Changed the parameters of Function HttpService:PostAsync 
+	from: (url: string, data: string, content_type: Enum.HttpContentType? = "ApplicationJson", compress: boolean? = false, headers: any)
+	  to: (url: any, data: string, content_type: Enum.HttpContentType? = "ApplicationJson", compress: boolean? = false, headers: any)
 
 Changed the parameters of Function StreamingService:RunSandboxedCode 
-	from: (code: string)
-	  to: (requestId: string, code: string)
+	from: (requestId: string, code: string)
+	  to: (requestId: string, runCodeGuid: string, defaultCode: string? = "")
 
-Removed Property Path2D.Color
-Removed Property Path2D.Position
+Removed Event AvatarCreationService.ReplicateAvatarTempAssetIds
 
-Removed Function Path2D:GetBoundingRect2D
-
-Removed Event LuaSourceContainer.RequestScriptHash
-Removed Event LuaSourceContainer.VerifyScriptHash
+Removed Tag [Hidden] from Property RunService.RunState
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#621) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#622) for a syntax highlighted version!)
