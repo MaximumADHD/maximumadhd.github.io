@@ -1,75 +1,47 @@
 ## Client Difference Log
 
-
+https://github.com/MaximumADHD/Roblox-Client-Tracker/commit/e2b41cdc193ca26fb759d4fd518deadca2587607
 
 ## API Changes
 
 ```plain
-Added Class PlayerHydrationService : Instance [NotCreatable] [Service]
-	Added Event PlayerHydrationService.PlayerHydration(userId: number, playerHydrationBlob: string, playerHydrationSignature: string) {RobloxSecurity} [Hidden]
+Added Class BanHistoryPages : Pages [NotCreatable] [NotReplicated]
 
-Added Property Beam.LocalTransparencyModifier: number [Hidden] [NotReplicated]
-Added Property EditableMesh.SkinningEnabled: boolean
-Added Property ParticleEmitter.LocalTransparencyModifier: number [Hidden] [NotReplicated]
-Added Property Trail.LocalTransparencyModifier: number [Hidden] [NotReplicated]
+Added Function CaptureService:OnCaptureShared(capturePath: string) -> () {RobloxScriptSecurity}
+Added Function CaptureService:SaveCapturesToExternalStorageAsync(pathArr: { any }) -> number {RobloxScriptSecurity} [Yields]
+Added Function MarketplaceService:PerformBulkPurchase(orderRequest: { [string]: any }, options: { [string]: any }) -> { [string]: any } {RobloxScriptSecurity} [Yields]
+Added Function MarketplaceService:PromptBulkPurchase(player: Player, lineItems: { any }, options: { [string]: any }) -> ()
+Added Function MarketplaceService:SignalPromptBulkPurchaseFinished(status: Enum.MarketplaceBulkPurchasePromptStatus, results: { [string]: any }) -> () {RobloxScriptSecurity}
+Added Function MaterialGenerationService:DEPRECATED_GenerateMaterialVariantsAync(prompt: string, samples: number) -> { Instance } {RobloxScriptSecurity} [Yields]
+Added Function Players:GetBanHistoryAsync(userId: number) -> BanHistoryPages [Yields]
+Added Function StreamingService:BindCodeToGuid(runCodeGuid: string, code: string) -> ...any {RobloxScriptSecurity} [Yields]
 
-Added Function AvatarCreationService:GetAvatarGenerationConfig() -> { [string]: any } [Yields]
-Added Function ExperienceService:StartCrossExperience(type: string, params: { [string]: any }) -> () {RobloxScriptSecurity}
-Added Function ExperienceService:StopCrossExperience(type: string, params: { [string]: any }) -> () {RobloxScriptSecurity}
+Added Event CaptureService.OnCaptureSignatureResult(content: string, signature: string, signatureVersion: number) {RobloxSecurity} [Hidden]
+Added Event CaptureService.RequestCaptureSignature(content: string) {RobloxSecurity} [Hidden]
+Added Event MarketplaceService.PromptBulkPurchaseFinished(player: Instance, status: Enum.MarketplaceBulkPurchasePromptStatus, results: { [string]: any })
+Added Event MarketplaceService.PromptBulkPurchaseRequested(player: Instance, displayData: { any }, orderRequest: { [string]: any }, purchaserRobuxBalance: number, orderTotalRobux: number, options: { [string]: any }) {RobloxScriptSecurity}
 
-Added Event ExperienceService.OnCrossExperienceStarted(type: string, params: { [string]: any }) {RobloxScriptSecurity}
-Added Event ExperienceService.OnCrossExperienceStopped(type: string, params: { [string]: any }) {RobloxScriptSecurity}
+Added Enum UIDragDetectorDragStyle
+	Added EnumItem UIDragDetectorDragStyle.TranslatePlane : 0
+	Added EnumItem UIDragDetectorDragStyle.TranslateLine : 1
+	Added EnumItem UIDragDetectorDragStyle.Rotate : 2
+	Added EnumItem UIDragDetectorDragStyle.Scriptable : 3
 
-Added Enum JoinSource
-	Added EnumItem JoinSource.CreatedItemAttribution : 1
+Added Enum UIDragDetectorResponseStyle
+	Added EnumItem UIDragDetectorResponseStyle.Offset : 0
+	Added EnumItem UIDragDetectorResponseStyle.Scale : 1
+	Added EnumItem UIDragDetectorResponseStyle.CustomOffset : 2
+	Added EnumItem UIDragDetectorResponseStyle.CustomScale : 3
 
-Added Enum MarketplaceBulkPurchasePromptStatus
-	Added EnumItem MarketplaceBulkPurchasePromptStatus.Completed : 1
-	Added EnumItem MarketplaceBulkPurchasePromptStatus.Aborted : 2
-	Added EnumItem MarketplaceBulkPurchasePromptStatus.Error : 3
-
-Added Enum MarketplaceItemPurchaseStatus
-	Added EnumItem MarketplaceItemPurchaseStatus.Success : 1
-	Added EnumItem MarketplaceItemPurchaseStatus.SystemError : 2
-	Added EnumItem MarketplaceItemPurchaseStatus.AlreadyOwned : 3
-	Added EnumItem MarketplaceItemPurchaseStatus.InsufficientRobux : 4
-	Added EnumItem MarketplaceItemPurchaseStatus.QuantityLimitExceeded : 5
-	Added EnumItem MarketplaceItemPurchaseStatus.QuotaExceeded : 6
-	Added EnumItem MarketplaceItemPurchaseStatus.NotForSale : 7
-	Added EnumItem MarketplaceItemPurchaseStatus.NotAvailableForPurchaser : 8
-	Added EnumItem MarketplaceItemPurchaseStatus.PriceMismatch : 9
-	Added EnumItem MarketplaceItemPurchaseStatus.SoldOut : 10
-	Added EnumItem MarketplaceItemPurchaseStatus.PurchaserIsSeller : 11
-	Added EnumItem MarketplaceItemPurchaseStatus.InsufficientMembership : 12
-
-Added Enum MarketplaceProductType
-	Added EnumItem MarketplaceProductType.AvatarAsset : 1
-	Added EnumItem MarketplaceProductType.AvatarBundle : 2
-
-Added Tag [CustomLuaState] to Function Player:GetJoinData
-Added Tag [NotScriptable] to Property Workspace.RenderingCacheOptimizations
-
-Changed the category of Property ServiceVisibilityService.HiddenServices 
+Changed the category of Property AudioEmitter.DistanceAttenuation 
 	from: "Data"
-	  to: "Behavior"
+	  to: "Emission"
 
-Changed the serialization of Property Workspace.RenderingCacheOptimizations 
-	from: [🚫 None]
-	  to: [💾|📁 Serialized]
+Changed the parameters of Function StreamingService:RunSandboxedCode 
+	from: (requestId: string, runCodeGuid: string, defaultCode: string? = "")
+	  to: (runCodeGuid: string, requestId: string)
 
-Changed the parameters of Function AssetManagerService:InsertMesh 
-	from: (aliasName: string, insertWithLocation: boolean)
-	  to: (aliasName: string, insertWithLocation: boolean, sourceAssetId: number)
-
-Changed the parameters of Function AssetManagerService:InsertMeshesWithLocation 
-	from: (aliasNames: { any })
-	  to: (aliasNames: { any }, meshIds: { any })
-
-Changed the parameters of Event GuiService.OpenAttenuationCurveEditor 
-	from: (selectedCurveObject: Instance)
-	  to: (selectedCurveObjects: { Instance })
-
-Removed Tag [Hidden] from Property Workspace.RenderingCacheOptimizations
+Removed Tag [NotReplicated] from Class CaptureService
 ```
 
-(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#624) for a syntax highlighted version!)
+(Click [here](https://maximumadhd.github.io/Roblox-API-History.html#625) for a syntax highlighted version!)
