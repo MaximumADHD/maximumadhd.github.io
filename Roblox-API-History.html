@@ -13,6 +13,728 @@
 	</ul>
 </head>
 
+<hr id="664"/>
+
+<h2>Version 0.664.0.6640713</h2>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Class"><span class="DescriptorType Class">Class</span><span class="symbol"> </span><span class="Name">AudioTextToSpeech</span><span class="symbol"> : </span><span class="Superclass">Instance</span><span class="symbol"> </span><span class="symbol"> </span></span>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">IsLoaded</span><span class="symbol">: </span><span class="Type">boolean</span><span class="symbol"> </span><span class="Capabilities">{🔐Audio}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Tag">[ReadOnly]</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">Pitch</span><span class="symbol">: </span><span class="Type">number</span><span class="symbol"> </span><span class="Capabilities">{🔐Audio}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">Speed</span><span class="symbol">: </span><span class="Type">number</span><span class="symbol"> </span><span class="Capabilities">{🔐Audio}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">Text</span><span class="symbol">: </span><span class="Type">string</span><span class="symbol"> </span><span class="Capabilities">{🔐Audio}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">TimeLength</span><span class="symbol">: </span><span class="Type">number</span><span class="symbol"> </span><span class="Capabilities">{🔐Audio}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Tag">[ReadOnly]</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">VoiceId</span><span class="symbol">: </span><span class="Type">string</span><span class="symbol"> </span><span class="Capabilities">{🔐Audio}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">IsPlaying</span><span class="symbol">: </span><span class="Type">boolean</span><span class="symbol"> </span><span class="Capabilities">{🔐Audio}</span><span class="symbol"> </span><span class="Security">{✏️RobloxSecurity}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">Looping</span><span class="symbol">: </span><span class="Type">boolean</span><span class="symbol"> </span><span class="Capabilities">{🔐Audio}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">PlaybackSpeed</span><span class="symbol">: </span><span class="Type">number</span><span class="symbol"> </span><span class="Capabilities">{🔐Audio}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">TimePosition</span><span class="symbol">: </span><span class="Type">number</span><span class="symbol"> </span><span class="Capabilities">{🔐Audio}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">Volume</span><span class="symbol">: </span><span class="Type">number</span><span class="symbol"> </span><span class="Capabilities">{🔐Audio}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">:</span><span class="Name">GetConnectedWires</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">pin</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">{ </span><span class="Type">Instance</span><span class="symbol"> }</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">:</span><span class="Name">GetWaveformAsync</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">timeRange</span><span class="symbol">: </span><span class="Type">NumberRange</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">samples</span><span class="symbol">: </span><span class="Type">number</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">{ </span><span class="Type">any</span><span class="symbol"> }</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Tag">[Yields]</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">:</span><span class="Name">LoadAsync</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">Enum</span><span class="symbol">.</span><span class="Type">AssetFetchStatus</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Tag">[Yields]</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">:</span><span class="Name">Pause</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">()</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">:</span><span class="Name">Play</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">()</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">:</span><span class="Name">Unload</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">()</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Event"><span class="DescriptorType Event">Event</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">Ended</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Event"><span class="DescriptorType Event">Event</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">Looped</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Event"><span class="DescriptorType Event">Event</span><span class="symbol"> </span><span class="ClassName">AudioTextToSpeech</span><span class="symbol">.</span><span class="Name">WiringChanged</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">connected</span><span class="symbol">: </span><span class="Type">boolean</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">pin</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">wire</span><span class="symbol">: </span><span class="Type">Wire</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">instance</span><span class="symbol">: </span><span class="Type">Instance</span></span><span class="symbol">)</span></span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Class"><span class="DescriptorType Class">Class</span><span class="symbol"> </span><span class="Name">MatchmakingService</span><span class="symbol"> : </span><span class="Superclass">Instance</span><span class="symbol"> </span><span class="symbol"> </span><span class="Tag">[NotCreatable]</span><span class="symbol"> </span><span class="Tag">[NotReplicated]</span><span class="symbol"> </span><span class="Tag">[Service]</span></span>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">MatchmakingService</span><span class="symbol">:</span><span class="Name">GetServerAttribute</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">name</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">...</span><span class="Type">any</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">MatchmakingService</span><span class="symbol">:</span><span class="Name">InitializeServerAttributesForStudio</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">serverAttributes</span><span class="symbol">: </span><span class="symbol">{ [</span><span class="Type">string</span><span class="symbol">]: </span><span class="Type">any</span><span class="symbol"> }</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">...</span><span class="Type">any</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">MatchmakingService</span><span class="symbol">:</span><span class="Name">SetServerAttribute</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">name</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">value</span><span class="symbol">: </span><span class="Type">any</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">...</span><span class="Type">any</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">PartyId</span><span class="symbol">: </span><span class="Type">string</span><span class="symbol"> </span><span class="Capabilities">{🔐Players}</span><span class="symbol"> </span><span class="Security">{✏️WritePlayerSecurity}</span><span class="symbol"> </span><span class="symbol"> </span><span class="Tag">[Hidden]</span><span class="symbol"> </span><span class="Tag">[NotReplicated]</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterGui</span><span class="symbol">.</span><span class="Name">StudioDefaultStyleSheet</span><span class="symbol">: </span><span class="Type">StyleSheet</span><span class="symbol">?</span><span class="symbol"> </span><span class="Capabilities">{🔐UI}</span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span><span class="Tag">[Hidden]</span><span class="symbol"> </span></span></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">AssetService</span><span class="symbol">:</span><span class="Name">CanEditAssetAsync</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">content</span><span class="symbol">: </span><span class="Type">Content</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">boolean</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="Tag">[Yields]</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">ConversationalAIAcceptanceService</span><span class="symbol">:</span><span class="Name">SendMeshGenActivatedTelemetry</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">()</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">ConversationalAIAcceptanceService</span><span class="symbol">:</span><span class="Name">SendMeshGenCompletedTelemetry</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">requestId</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">generationId</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">success</span><span class="symbol">: </span><span class="Type">boolean</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">errorMessage</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">prompt</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">()</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">:</span><span class="Name">GetData</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">PlayerData</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">PlayerData</span><span class="symbol">:</span><span class="Name">GetRecordAsync</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">recordName</span><span class="symbol">: </span><span class="Type">string</span><span class="symbol">?</span><span class="symbol"> = </span><span class="String">"Default"</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">PlayerDataRecord</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Tag">[Yields]</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">Stats</span><span class="symbol">:</span><span class="Name">GetHarmonyQualityLevel</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">number</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">ThirdPartyUserService</span><span class="symbol">:</span><span class="Name">GetVoiceChatRestrictionStatus</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">Enum</span><span class="symbol">.</span><span class="Type">ChatRestrictionStatus</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">UGCValidationService</span><span class="symbol">:</span><span class="Name">CalculateEditableMeshModifiedCageBoundingBox</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">referenceUVValues</span><span class="symbol">: </span><span class="symbol">{ </span><span class="Type">any</span><span class="symbol"> }</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">innerCage</span><span class="symbol">: </span><span class="Type">Object</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">innerTransform</span><span class="symbol">: </span><span class="Type">CFrame</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">outerCage</span><span class="symbol">: </span><span class="Type">Object</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">outerTransform</span><span class="symbol">: </span><span class="Type">CFrame</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">...</span><span class="Type">any</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">UGCValidationService</span><span class="symbol">:</span><span class="Name">CalculateEditableMeshNumModifiedCageUVsInSet</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">referenceUVValues</span><span class="symbol">: </span><span class="symbol">{ </span><span class="Type">any</span><span class="symbol"> }</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">innerCage</span><span class="symbol">: </span><span class="Type">Object</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">innerTransform</span><span class="symbol">: </span><span class="Type">CFrame</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">outerCage</span><span class="symbol">: </span><span class="Type">Object</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">outerTransform</span><span class="symbol">: </span><span class="Type">CFrame</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">...</span><span class="Type">any</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">:</span><span class="Name">getInternalChannelId</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">string</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">:</span><span class="Name">getInternalGroupId</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">string</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">:</span><span class="Name">getInternalPublishPause</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">boolean</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">:</span><span class="Name">getInternalSessionId</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">string</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">:</span><span class="Name">getInternalSubscribePause</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">userId</span><span class="symbol">: </span><span class="Type">number</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">boolean</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">:</span><span class="Name">getInternalSubscribePauseAll</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">boolean</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">:</span><span class="Name">getInternalVoiceChatApiVersion</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">number</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">:</span><span class="Name">isInternalPublishPaused</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">boolean</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">AnnotationRequestResult</span><span class="symbol">.</span><span class="Name">ErrorModerated</span><span class="symbol"> : </span><span class="Value">3</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">SecurityCapability</span><span class="symbol">.</span><span class="Name">Players</span><span class="symbol"> : </span><span class="Value">21</span><span class="symbol"> </span></span></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">CanLoadCharacterAppearance</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">GameplayPaused</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">CameraMaxZoomDistance</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">CameraMinZoomDistance</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">CameraMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">DevCameraOcclusionMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">DevComputerCameraMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">DevEnableMouseLock</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">DevTouchCameraMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">HealthDisplayDistance</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">NameDisplayDistance</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">DevComputerMovementMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">DevTouchMovementMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">AccountAge</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">AccountAgeReplicate</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">AppearanceDidLoad</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">AutoJumpEnabled</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">Character</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">CharacterAppearance</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">CharacterAppearanceId</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">ChararacterRegionId</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">ChatMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">ChatPrivacyMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">CloudEditCameraCoordinateFrame</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">CloudEditPlayerActive</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">CountryRegionCodeReplicate</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">DataComplexity</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">DataComplexityLimit</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">DataReady</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">DisplayName</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">FollowUserId</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">FollowUserIdReplicated</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">Guest</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">HasVerifiedBadge</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">InternalCharacterAppearanceLoaded</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">LocaleId</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">MaxSimulationRadius</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">MaximumSimulationRadius</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">MembershipType</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">MembershipTypeReplicate</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">OsPlatform</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">PlatformName</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">RawJoinData</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">ReplicationFocus</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">RespawnLocation</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">SimulationRadius</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">StepIdOffset</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">SuperSafeChatReplicate</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">Teleported</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">TeleportedIn</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">ThirdPartyTextChatRestrictionStatus</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">UnfilteredChat</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">UserId</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">VRDevice</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">VREnabled</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">Neutral</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">Team</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">.</span><span class="Name">TeamColor</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">BanningEnabled</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">CharacterAutoLoads</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">UseStrafingAnimations</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">BubbleChat</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Chat | Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">ClassicChat</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Chat | Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">LocalPlayer</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">MaxPlayers</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">MaxPlayersInternal</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">NumPlayers</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">PreferredPlayers</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">PreferredPlayersInternal</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">RespawnTime</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">ServerGitHash</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Players</span><span class="symbol">.</span><span class="Name">ServerLogPrefix</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">CameraMaxZoomDistance</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">CameraMinZoomDistance</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">CameraMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">DevCameraOcclusionMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">DevComputerCameraMovementMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">DevTouchCameraMovementMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">AllowCustomAnimations</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">AvatarJointUpgrade</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">AvatarJointUpgrade_SerializedRollout</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">CharacterMaxSlopeAngle</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">CharacterWalkSpeed</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">EnableDynamicHeads</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsAssetIDFace</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsAssetIDHead</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsAssetIDLeftArm</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsAssetIDLeftLeg</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsAssetIDPants</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsAssetIDRightArm</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsAssetIDRightLeg</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsAssetIDShirt</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsAssetIDTeeShirt</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsAssetIDTorso</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsAvatar</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsR15Collision</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsScaleRangeBodyType</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsScaleRangeHead</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsScaleRangeHeight</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsScaleRangeProportion</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">GameSettingsScaleRangeWidth</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">LoadCharacterAppearance</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">LoadCharacterLayeredClothing</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">LoadCharacterLayeredClothing</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">UserEmotesEnabled</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">CharacterJumpHeight</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">CharacterJumpPower</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">CharacterUseJumpPower</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">DevComputerMovementMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">DevTouchMovementMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">EnableMouseLockOption</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">LuaCharacterController</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">HealthDisplayDistance</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">NameDisplayDistance</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">StarterPlayer</span><span class="symbol">.</span><span class="Name">AutoJumpEnabled</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Team</span><span class="symbol">.</span><span class="Name">AutoAssignable</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Team</span><span class="symbol">.</span><span class="Name">AutoColorCharacters</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Team</span><span class="symbol">.</span><span class="Name">ChildOrder</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Team</span><span class="symbol">.</span><span class="Name">Score</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">capabilities</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Team</span><span class="symbol">.</span><span class="Name">TeamColor</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities darken">{🔓Undefined}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Capabilities">{🔐Players}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">parameters</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">ConversationalAIAcceptanceService</span><span class="symbol">:</span><span class="Name">SendMeshGenMeshInsertedTelemetry</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="symbol">)</span></span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">requestId</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">generationId</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">success</span><span class="symbol">: </span><span class="Type">boolean</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">errorMessage</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">parameters</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">ConversationalAIAcceptanceService</span><span class="symbol">:</span><span class="Name">SendMeshGenPublishedAssetsTelemetry</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="symbol">)</span></span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">requestId</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">generationId</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">success</span><span class="symbol">: </span><span class="Type">boolean</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">errorMessage</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">meshId</span><span class="symbol">: </span><span class="Type">number</span><span class="symbol">?</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">imageId</span><span class="symbol">: </span><span class="Type">number</span><span class="symbol">?</span></span><span class="symbol">)</span></span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">parameters</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">Instance</span><span class="symbol">:</span><span class="Name">IsPropertyModified</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">name</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">property</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">parameters</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">Instance</span><span class="symbol">:</span><span class="Name">ResetPropertyToDefault</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">name</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">property</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">parameters</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">StudioAssetService</span><span class="symbol">:</span><span class="Name">AutoSetupAvatarAsync</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">modelId</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">progressCallback</span><span class="symbol">: </span><span class="symbol">(...</span><span class="Type">any</span><span class="symbol">) -&gt; ...</span><span class="Type">any</span></span><span class="symbol">)</span></span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">modelId</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">progressCallback</span><span class="symbol">: </span><span class="symbol">(...</span><span class="Type">any</span><span class="symbol">) -&gt; ...</span><span class="Type">any</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">notificationCallback</span><span class="symbol">: </span><span class="symbol">(</span><span class="symbol">(...</span><span class="Type">any</span><span class="symbol">) -&gt; ...</span><span class="Type">any</span><span class="symbol">)</span><span class="symbol">?</span></span><span class="symbol">)</span></span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">parameters</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">StyleBase</span><span class="symbol">:</span><span class="Name">InsertStyleRule</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">rule</span><span class="symbol">: </span><span class="Type">StyleRule</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">index</span><span class="symbol">: </span><span class="Type">number</span><span class="symbol">?</span></span><span class="symbol">)</span></span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">rule</span><span class="symbol">: </span><span class="Type">StyleRule</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">priority</span><span class="symbol">: </span><span class="Type">number</span><span class="symbol">?</span></span><span class="symbol">)</span></span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">parameters</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">StyleRule</span><span class="symbol">:</span><span class="Name">SetProperties</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">table</span><span class="symbol">: </span><span class="symbol">{ [</span><span class="Type">string</span><span class="symbol">]: </span><span class="Type">any</span><span class="symbol"> }</span></span><span class="symbol">)</span></span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">styleProperties</span><span class="symbol">: </span><span class="symbol">{ [</span><span class="Type">string</span><span class="symbol">]: </span><span class="Type">any</span><span class="symbol"> }</span></span><span class="symbol">)</span></span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">return-type</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">OrderedDataStore</span><span class="symbol">:</span><span class="Name">GetSortedAsync</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Type">Instance</span><span class="symbol">?</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Type">DataStorePages</span></span></div></div>
+<br/>
+
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">.</span><span class="Name">UseRME</span></span></div>
+<br/>
+
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">ConversationalAIAcceptanceService</span><span class="symbol">:</span><span class="Name">SendMeshGenResultTelemetry</span></span></div>
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">PlayerData</span><span class="symbol">:</span><span class="Name">GetRecord</span></span></div>
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">PlayerDataRecord</span><span class="symbol">:</span><span class="Name">WaitForLoadAsync</span></span></div>
+<br/>
+
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="Event"><span class="DescriptorType Event">Event</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">.</span><span class="Name">SubscriptionInitialClientDescriptor</span></span></div>
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="Event"><span class="DescriptorType Event">Event</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">.</span><span class="Name">SubscriptionInitialClientDescriptorRequested</span></span></div>
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="Event"><span class="DescriptorType Event">Event</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">.</span><span class="Name">TurnServerInfoAcked</span></span></div>
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="Event"><span class="DescriptorType Event">Event</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">.</span><span class="Name">TurnServerInfoRequested</span></span></div>
+<br/>
+
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="DiffType Tags">Tag </span><span class="Tag">[Hidden]</span> from <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">BaseWrap</span><span class="symbol">.</span><span class="Name">CageMeshContent</span></span></div>
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="DiffType Tags">Tag </span><span class="Tag">[Hidden]</span> from <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">Decal</span><span class="symbol">.</span><span class="Name">TextureContent</span></span></div>
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="DiffType Tags">Tag </span><span class="Tag">[Hidden]</span> from <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">ImageButton</span><span class="symbol">.</span><span class="Name">ImageContent</span></span></div>
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="DiffType Tags">Tag </span><span class="Tag">[Hidden]</span> from <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">ImageLabel</span><span class="symbol">.</span><span class="Name">ImageContent</span></span></div>
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="DiffType Tags">Tag </span><span class="Tag">[Hidden]</span> from <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">MeshPart</span><span class="symbol">.</span><span class="Name">MeshContent</span></span></div>
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="DiffType Tags">Tag </span><span class="Tag">[Hidden]</span> from <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">MeshPart</span><span class="symbol">.</span><span class="Name">TextureContent</span></span></div>
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="DiffType Tags">Tag </span><span class="Tag">[Hidden]</span> from <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">WrapLayer</span><span class="symbol">.</span><span class="Name">ReferenceMeshContent</span></span></div>
+
 <hr id="663"/>
 
 <h2>Version 0.663.0.6630659</h2>
