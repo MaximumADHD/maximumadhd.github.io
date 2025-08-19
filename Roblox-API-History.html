@@ -16,6 +16,41 @@
 	</ul>
 </head>
 
+<hr id="682"/>
+
+<h2>Version 0.682.0.6820537</h2>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">AuroraService</span><span class="symbol">.</span><span class="Name">LockStepIdOffset</span><span class="symbol">: </span><span class="Type">boolean</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Tag">[Preliminary]</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">UserGameSettings</span><span class="symbol">.</span><span class="Name">ReadAloud</span><span class="symbol">: </span><span class="Type">boolean</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span><span class="Tag">[Hidden]</span><span class="symbol"> </span><span class="Tag">[NotReplicated]</span><span class="symbol"> </span></span></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">AvatarSettings</span><span class="symbol">:</span><span class="Name">Discard</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">()</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">BasePart</span><span class="symbol">:</span><span class="Name">SetPredictionMode</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">mode</span><span class="symbol">: </span><span class="Type">Enum</span><span class="symbol">.</span><span class="Type">PredictionMode</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">()</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="Tag">[Preliminary]</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">CaptureService</span><span class="symbol">:</span><span class="Name">GetDeviceInfo</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">{ [</span><span class="Type">string</span><span class="symbol">]: </span><span class="Type">any</span><span class="symbol"> }</span><span class="symbol"> </span><span class="Capabilities">{🔐InternalTest}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Event"><span class="DescriptorType Event">Event</span><span class="symbol"> </span><span class="ClassName">AvatarSettings</span><span class="symbol">.</span><span class="Name">DiscardRequested</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxSecurity}</span><span class="symbol"> </span><span class="Tag">[Hidden]</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Event"><span class="DescriptorType Event">Event</span><span class="symbol"> </span><span class="ClassName">AvatarSettings</span><span class="symbol">.</span><span class="Name">RefreshPluginState</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{RobloxScriptSecurity}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Enum"><span class="DescriptorType Enum">Enum</span><span class="symbol"> </span><span class="Name">PredictionMode</span><span class="symbol"> </span></span>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">PredictionMode</span><span class="symbol">.</span><span class="Name">Auto</span><span class="symbol"> : </span><span class="Value">0</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">PredictionMode</span><span class="symbol">.</span><span class="Name">None</span><span class="symbol"> : </span><span class="Value">1</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">PredictionMode</span><span class="symbol">.</span><span class="Name">Forced</span><span class="symbol"> : </span><span class="Value">2</span><span class="symbol"> </span><span class="Tag">[Preliminary]</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">security</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">SurfaceAppearance</span><span class="symbol">.</span><span class="Name">AlphaMode</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Security">{PluginSecurity}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Security darken">{None}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">serialization</span> of <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">PartOperation</span><span class="symbol">.</span><span class="Name">SolidMeshHolder</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Serialization">[🚫 None]</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Serialization">[💾|📁 Serialized]</span></span></div></div>
+<br/>
+
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="DiffType Tags">Tag </span><span class="Tag">[NotBrowsable]</span> from <span class="Class"><span class="DescriptorType Class">Class</span><span class="symbol"> </span><span class="Name">AudioGate</span></span></div>
+
 <hr id="681"/>
 
 <h2>Version 0.681.0.6810806</h2>
