@@ -113,20 +113,14 @@ span.Security {
 }
 
 span.Capabilities {
-	background-color: #003F1F;
-	color: #00FF7F !important;
+	background-color: #4F2F00;
+	color: #FFFF00 !important;
 	text-decoration: none !important;
 }
 
-span.Security.Darken {
+span.Darken {
 	background-color: #051525;
 	color: #6F7F8F !important;
-	text-decoration: none !important;
-}
-
-span.Capabilities.Darken {
-	background-color: #051525;
-	color: #FF7F00 !important;
 	text-decoration: none !important;
 }
 
