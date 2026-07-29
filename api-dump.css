@@ -93,7 +93,8 @@ span.Tag,
 span.Security,
 span.ThreadSafety,
 span.Capabilities,
-span.Serialization {
+span.Serialization,
+span.SimulationAccess {
 	font-weight: bold !important;
 	font-size: 12px !important;
 	font-style: normal !important;
@@ -132,6 +133,11 @@ span.Serialization {
 span.ThreadSafety {
 	background-color: #001F3F;
 	color: #007FFF !important;
+}
+
+span.SimulationAccess {
+	background-color: #3F0F3F;
+	color: #FF1FFF !important;
 }
 
 span.Type,
