@@ -17,6 +17,342 @@
 	</ul>
 </head>
 
+<hr id="733"/>
+
+<h2>Version 0.733.0.7330989</h2>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Class dim"><span class="DescriptorType Class">Class</span><span class="symbol"> </span><span class="Name">DataModelDiff</span><span class="symbol"> : </span><span class="Superclass">Object</span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="Tag">[🏷️NotCreatable]</span></span>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">DataModelDiff</span><span class="symbol">:</span><span class="Name">GetChangeType</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">identity</span><span class="symbol">: </span><span class="Type">ScopedInstanceIdentity</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">Enum</span><span class="symbol">.</span><span class="Type">DataModelChangeType</span><span class="symbol">?</span><span class="symbol"> </span><span class="symbol"> </span><span class="Capabilities">{🚧PluginOrOpenCloud}</span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">DataModelDiff</span><span class="symbol">:</span><span class="Name">GetIdentities</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">{ </span><span class="Type">any</span><span class="symbol"> }</span><span class="symbol"> </span><span class="symbol"> </span><span class="Capabilities">{🚧PluginOrOpenCloud}</span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">DataModelDiff</span><span class="symbol">:</span><span class="Name">GetPropertyNames</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">identity</span><span class="symbol">: </span><span class="Type">ScopedInstanceIdentity</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">{ </span><span class="Type">any</span><span class="symbol"> }</span><span class="symbol"> </span><span class="symbol"> </span><span class="Capabilities">{🚧PluginOrOpenCloud}</span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Class"><span class="DescriptorType Class">Class</span><span class="symbol"> </span><span class="Name">MemoryStoreDistributedCounter</span><span class="symbol"> : </span><span class="Superclass">Instance</span><span class="symbol"> </span><span class="symbol"> </span><span class="Tag">[🏷️NotCreatable]</span><span class="symbol"> </span><span class="Tag">[🏷️NotReplicated]</span></span>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">MemoryStoreDistributedCounter</span><span class="symbol">:</span><span class="Name">GetAsync</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">number</span><span class="symbol"> </span><span class="Tag">[🏷️Yields]</span><span class="symbol"> </span><span class="Capabilities">{🚧DataStore}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">MemoryStoreDistributedCounter</span><span class="symbol">:</span><span class="Name">IncrementAsync</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">delta</span><span class="symbol">: </span><span class="Type">number</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">expiration</span><span class="symbol">: </span><span class="Type">number</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">number</span><span class="symbol"> </span><span class="Tag">[🏷️Yields]</span><span class="symbol"> </span><span class="Capabilities">{🚧DataStore}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">UIShadow</span><span class="symbol">.</span><span class="Name">Inset</span><span class="symbol">: </span><span class="Type">boolean</span><span class="symbol"> </span><span class="symbol"> </span><span class="Capabilities">{🚧UI}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">UIShadow</span><span class="symbol">.</span><span class="Name">ShowBehindParent</span><span class="symbol">: </span><span class="Type">boolean</span><span class="symbol"> </span><span class="symbol"> </span><span class="Capabilities">{🚧UI}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Property dim"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">ImageButton</span><span class="symbol">.</span><span class="Name">LocalizedImageContent</span><span class="symbol">: </span><span class="Type">Content</span><span class="symbol"> </span><span class="Tag">[🏷️ReadOnly]</span><span class="symbol"> </span><span class="Capabilities">{🚧UI}</span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Property dim"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">ImageLabel</span><span class="symbol">.</span><span class="Name">LocalizedImageContent</span><span class="symbol">: </span><span class="Type">Content</span><span class="symbol"> </span><span class="Tag">[🏷️ReadOnly]</span><span class="symbol"> </span><span class="Capabilities">{🚧UI}</span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Property dim"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">LodDataEntity</span><span class="symbol">.</span><span class="Name">TranscoderFailureReason</span><span class="symbol">: </span><span class="Type">string</span><span class="symbol"> </span><span class="Tag">[🏷️Hidden]</span><span class="symbol"> </span><span class="Tag">[🏷️NotScriptable]</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{🔒RobloxEngine}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Property dim"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">LodDataEntity</span><span class="symbol">.</span><span class="Name">TranscoderStatus</span><span class="symbol">: </span><span class="Type">Enum</span><span class="symbol">.</span><span class="Type">SlimTranscoderStatus</span><span class="symbol"> </span><span class="Tag">[🏷️Hidden]</span><span class="symbol"> </span><span class="Tag">[🏷️NotScriptable]</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{🔒RobloxEngine}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">BasePart</span><span class="symbol">:</span><span class="Name">BindToCollisionSummaries</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">callback</span><span class="symbol">: </span><span class="symbol">(...</span><span class="Type">any</span><span class="symbol">) -&gt; ...</span><span class="Type">any</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">RBXScriptConnection</span><span class="symbol"> </span><span class="symbol"> </span><span class="Capabilities">{🚧Basic}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">MemoryStoreService</span><span class="symbol">:</span><span class="Name">GetDistributedCounter</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">name</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">MemoryStoreDistributedCounter</span><span class="symbol"> </span><span class="symbol"> </span><span class="Capabilities">{🚧DataStore}</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">PackageLink</span><span class="symbol">:</span><span class="Name">getOverrides</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">DataModelDiff</span><span class="symbol"> </span><span class="symbol"> </span><span class="Capabilities">{🚧AssetRead}</span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">AssetQualityService</span><span class="symbol">:</span><span class="Name">FetchAssetQualityValidationRawFromModelsAsync</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">models</span><span class="symbol">: </span><span class="symbol">{ </span><span class="Type">any</span><span class="symbol"> }</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">assetTypeIds</span><span class="symbol">: </span><span class="symbol">{ </span><span class="Type">any</span><span class="symbol"> }</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">settings</span><span class="symbol">: </span><span class="symbol">{ [</span><span class="Type">string</span><span class="symbol">]: </span><span class="Type">any</span><span class="symbol"> }</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">{ [</span><span class="Type">string</span><span class="symbol">]: </span><span class="Type">any</span><span class="symbol"> }</span><span class="symbol"> </span><span class="Tag">[🏷️Yields]</span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">RequestOrchestratorService</span><span class="symbol">:</span><span class="Name">ClearCache</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">name</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">()</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">RequestOrchestratorService</span><span class="symbol">:</span><span class="Name">GetBatchWindowDelayMax</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">name</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">number</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">RequestOrchestratorService</span><span class="symbol">:</span><span class="Name">GetBatchWindowDelayMin</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">name</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">number</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">RequestOrchestratorService</span><span class="symbol">:</span><span class="Name">GetRegisteredOrchestrators</span><span class="Parameters"><span class="symbol">(</span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">{ </span><span class="Type">any</span><span class="symbol"> }</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">RequestOrchestratorService</span><span class="symbol">:</span><span class="Name">GetResponseDelayMax</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">name</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">number</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">RequestOrchestratorService</span><span class="symbol">:</span><span class="Name">GetResponseDelayMin</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">name</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="Type">number</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">RequestOrchestratorService</span><span class="symbol">:</span><span class="Name">SetBatchWindowDelay</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">name</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">minMs</span><span class="symbol">: </span><span class="Type">number</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">maxMs</span><span class="symbol">: </span><span class="Type">number</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">()</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">RequestOrchestratorService</span><span class="symbol">:</span><span class="Name">SetResponseDelay</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">name</span><span class="symbol">: </span><span class="Type">string</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">minMs</span><span class="symbol">: </span><span class="Type">number</span></span><span class="symbol">, </span><span class="Parameter"><span class="ParamName">maxMs</span><span class="symbol">: </span><span class="Type">number</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">()</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added">Added </span><span class="Function dim"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">WindowProtocolService</span><span class="symbol">:</span><span class="Name">OnDragAreaDoubleClicked</span><span class="Parameters"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">windowId</span><span class="symbol">: </span><span class="Type">number</span></span><span class="symbol">)</span></span><span class="symbol"> -&gt; </span><span class="symbol">()</span><span class="symbol"> </span><span class="symbol"> </span><span class="symbol"> </span><span class="Security">{🔒RobloxScript}</span><span class="symbol"> </span><span class="symbol"> </span></span></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Enum"><span class="DescriptorType Enum">Enum</span><span class="symbol"> </span><span class="Name">DataModelChangeType</span><span class="symbol"> </span></span>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">DataModelChangeType</span><span class="symbol">.</span><span class="Name">Add</span><span class="symbol"> : </span><span class="Value">0</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">DataModelChangeType</span><span class="symbol">.</span><span class="Name">Remove</span><span class="symbol"> : </span><span class="Value">1</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">DataModelChangeType</span><span class="symbol">.</span><span class="Name">Modify</span><span class="symbol"> : </span><span class="Value">2</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">DataModelChangeType</span><span class="symbol">.</span><span class="Name">AddPackage</span><span class="symbol"> : </span><span class="Value">3</span><span class="symbol"> </span></span></div></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Enum"><span class="DescriptorType Enum">Enum</span><span class="symbol"> </span><span class="Name">SlimTranscoderStatus</span><span class="symbol"> </span></span>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">SlimTranscoderStatus</span><span class="symbol">.</span><span class="Name">Unknown</span><span class="symbol"> : </span><span class="Value">0</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">SlimTranscoderStatus</span><span class="symbol">.</span><span class="Name">NoHash</span><span class="symbol"> : </span><span class="Value">1</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">SlimTranscoderStatus</span><span class="symbol">.</span><span class="Name">NotUploaded</span><span class="symbol"> : </span><span class="Value">2</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">SlimTranscoderStatus</span><span class="symbol">.</span><span class="Name">Uploaded</span><span class="symbol"> : </span><span class="Value">3</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">SlimTranscoderStatus</span><span class="symbol">.</span><span class="Name">InProgress</span><span class="symbol"> : </span><span class="Value">4</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">SlimTranscoderStatus</span><span class="symbol">.</span><span class="Name">Succeeded</span><span class="symbol"> : </span><span class="Value">5</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">SlimTranscoderStatus</span><span class="symbol">.</span><span class="Name">Failed</span><span class="symbol"> : </span><span class="Value">6</span><span class="symbol"> </span></span></div></div>
+<br/>
+
+<div class="Added"><span class="DiffType Added">Added </span><span class="Enum"><span class="DescriptorType Enum">Enum</span><span class="symbol"> </span><span class="Name">VerifiedLevel</span><span class="symbol"> </span></span>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">VerifiedLevel</span><span class="symbol">.</span><span class="Name">Low</span><span class="symbol"> : </span><span class="Value">0</span><span class="symbol"> </span></span></div>
+<div class="Added"><span class="DiffType Added child">Added </span><span class="EnumItem"><span class="DescriptorType EnumItem">EnumItem</span><span class="symbol"> </span><span class="EnumName">VerifiedLevel</span><span class="symbol">.</span><span class="Name">High</span><span class="symbol"> : </span><span class="Value">1</span><span class="symbol"> </span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">parameters</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">Player</span><span class="symbol">:</span><span class="Name">IsVerified</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="symbol">)</span></span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="Parameters change"><span class="symbol">(</span><span class="Parameter"><span class="ParamName">level</span><span class="symbol">: </span><span class="Type">Enum</span><span class="symbol">.</span><span class="Type">VerifiedLevel</span><span class="symbol">?</span><span class="symbol"> = </span><span class="String">"Low"</span></span><span class="symbol">)</span></span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">BatchGetFaceAttributes</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">BatchGetValues</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">BatchGetVertexAttributes</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">BatchGetVertexFaceAttributes</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">FindClosestPointOnSurface</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">FindClosestVertex</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">FindVerticesWithinSphere</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetAdjacentFaces</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetAdjacentVertices</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetBoneByName</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetBoneCFrame</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetBoneIsVirtual</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetBoneName</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetBoneParent</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetBones</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetCenter</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetColor</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetColorAlpha</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetColors</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFaceColors</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFaceNormals</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFaceUVs</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFaceVertices</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFaces</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFacesWithColor</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFacesWithNormal</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFacesWithUV</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFacsCorrectivePose</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFacsCorrectivePoses</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFacsPose</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFacsPoses</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetNormal</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetNormals</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetPosition</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetSize</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetUV</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetUVs</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVertexBoneWeights</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVertexBones</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVertexColors</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVertexFaceColor</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVertexFaceNormal</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVertexFaceUV</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVertexFaces</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVertexNormals</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVertexUVs</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVertices</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVerticesWithColor</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVerticesWithNormal</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVerticesWithUV</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">RaycastLocal</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetFacesWithAttribute</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Changed"><span class="DiffType Changed">Changed </span> the <span class="WhatChanged">thread safety</span> of <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">GetVerticesWithAttribute</span></span>
+<div class="ChangeList"><span class="ChangeListPrefix">from<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Unsafe}</span></span></div>
+<div class="ChangeList"><span class="ChangeListPrefix">  to<span class="symbol">: </span></span><span class="ChangeListItem"><span class="ThreadSafety">{🧬Safe}</span></span></div></div>
+<br/>
+
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">RootImportData</span><span class="symbol">.</span><span class="Name">ValidateUgcBody</span></span></div>
+<br/>
+
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="DiffType Tags">Tag </span><span class="Tag">[🏷️NotBrowsable]</span> from <span class="Function"><span class="DescriptorType Function">Function</span><span class="symbol"> </span><span class="ClassName">EditableMesh</span><span class="symbol">:</span><span class="Name">Clear</span></span></div>
+<div class="Removed"><span class="DiffType Removed">Removed </span><span class="DiffType Tags">Tag </span><span class="Tag">[🏷️NotBrowsable]</span> from <span class="Property"><span class="DescriptorType Property">Property</span><span class="symbol"> </span><span class="ClassName">VoiceChatService</span><span class="symbol">.</span><span class="Name">EnableVoiceVolumeControls</span></span></div>
+
 <hr id="732"/>
 
 <h2>Version 0.732.0.7321040</h2>
