@@ -1,0 +1,120 @@
+name: Update Roblox API pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-roblox-api-pages
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      commit: ${{ steps.commit.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          path: site
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - id: version
+        name: Resolve current Roblox version
+        shell: bash
+        env:
+          RBX_API_KEY: ${{ secrets.RBX_API_KEY }}
+        run: python site/scripts/version_check.py
+
+      - if: steps.version.outputs.changed == 'true'
+        name: Check out API Dump Tool
+        uses: actions/checkout@v4
+        with:
+          repository: MaximumADHD/Roblox-API-Dump-Tool
+          path: tools/Roblox-API-Dump-Tool
+          persist-credentials: false
+
+      - if: steps.version.outputs.changed == 'true'
+        name: Check out Deploy History dependency
+        uses: actions/checkout@v4
+        with:
+          repository: MaximumADHD/Roblox-Deploy-History
+          path: tools/Roblox-Deploy-History
+          persist-credentials: false
+
+      - if: steps.version.outputs.changed == 'true'
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - if: steps.version.outputs.changed == 'true'
+        name: Build API Dump CLI
+        run: >-
+          dotnet build tools/Roblox-API-Dump-Tool/RobloxApiDumpTool.csproj
+          --configuration Cli --verbosity minimal
+
+      - if: steps.version.outputs.changed == 'true'
+        name: Update API pages
+        shell: bash
+        env:
+          ROBLOX_VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          release="$(cut -d. -f2 <<< "$ROBLOX_VERSION")"
+          latest_marker="$(sed -nE '/^<hr id="[0-9]+"\/>$/ { s/^<hr id="([0-9]+)"\/>$/\1/; p; q; }' site/Roblox-API-History.html)"
+          if [[ ! "$latest_marker" =~ ^[0-9]+$ ]] || (( latest_marker > release )); then
+            echo "History has no usable release marker for $ROBLOX_VERSION." >&2
+            exit 1
+          fi
+          first_release="$release"
+          if (( latest_marker < release )); then
+            first_release="$((latest_marker + 1))"
+          fi
+          for (( current=first_release; current<=release; current++ )); do
+            dotnet tools/Roblox-API-Dump-Tool/bin/Cli/net10.0/RobloxApiDumpTool.dll \
+              -updatePages "$GITHUB_WORKSPACE/site" -version "$current" -full
+          done
+          generated_version="$(tr -d '\r\n' < site/version.txt)"
+          if [[ "$generated_version" != "$ROBLOX_VERSION" ]]; then
+            echo "Expected $ROBLOX_VERSION, but the CLI generated $generated_version." >&2
+            exit 1
+          fi
+
+      - if: steps.version.outputs.changed == 'true'
+        id: commit
+        name: Commit updated pages
+        working-directory: site
+        shell: bash
+        env:
+          ROBLOX_VERSION: ${{ steps.version.outputs.version }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          git config user.name "Roblox-Client-Tracker"
+          git config user.email "rbxclientwatch@gmail.com"
+          git add Roblox-API-Dump.html Roblox-API-History.html version.txt
+          if git diff --cached --quiet; then
+            echo "API pages are already current."
+          else
+            git commit -m "$ROBLOX_VERSION"
+            git push origin "HEAD:$DEFAULT_BRANCH"
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: generate
+    if: needs.generate.outputs.commit != ''
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/pages.yml
+    with:
+      ref: ${{ needs.generate.outputs.commit }}
