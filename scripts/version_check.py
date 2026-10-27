@@ -63,11 +63,24 @@ def create_task(source: str, api_key: str) -> str:
 
 def wait_for_task(task_path: str, api_key: str, generator_name: str) -> str:
     task_url = f"{API_ROOT}/{task_path.lstrip('/')}?view=FULL"
-    deadline = time.monotonic() + TASK_TIMEOUT_SECONDS
+    started = time.monotonic()
+    deadline = started + TASK_TIMEOUT_SECONDS
+    next_progress = started
+    last_state = None
 
-    while time.monotonic() < deadline:
+    while True:
+        now = time.monotonic()
+
+        if now >= deadline:
+            break
+
         task = read_json(task_url, headers={"x-api-key": api_key})
         state = task.get("state")
+
+        if state != last_state or now >= next_progress:
+            print(f"{generator_name}: state={state or '<missing>'}, elapsed={int(now - started)}s", flush=True)
+            next_progress = now + 30
+            last_state = state
 
         if state == "COMPLETE":
             results = task.get("output", {}).get("results", [])
@@ -75,7 +88,7 @@ def wait_for_task(task_path: str, api_key: str, generator_name: str) -> str:
             if len(results) != 1 or not isinstance(results[0], str):
                 raise RuntimeError(f"{generator_name} task completed without one source result.")
             
-            print(f"{generator_name} completed ({len(results[0])} characters).")
+            print(f"{generator_name} completed ({len(results[0])} characters).", flush=True)
             return results[0]
 
         if state in {"FAILED", "CANCELLED"} or task.get("error"):
@@ -83,7 +96,10 @@ def wait_for_task(task_path: str, api_key: str, generator_name: str) -> str:
 
         time.sleep(3)
 
-    raise RuntimeError(f"Timed out waiting for {generator_name} after {TASK_TIMEOUT_SECONDS} seconds.")
+    raise RuntimeError(
+        f"Timed out waiting for {generator_name} after {TASK_TIMEOUT_SECONDS} seconds. "
+        f"Last state: {last_state or '<missing>'}."
+    )
 
 def main() -> int:
     api_key = os.environ.get("RBX_API_KEY")
@@ -91,7 +107,9 @@ def main() -> int:
     if not api_key:
         raise RuntimeError("RBX_API_KEY is required to read the Roblox version.")
 
+    print("Submitting Roblox version check (HTTP timeout: 30s)...", flush=True)
     task_path = create_task("return version()", api_key)
+    print(f"Task submitted; polling for up to {TASK_TIMEOUT_SECONDS} seconds...", flush=True)
     version = wait_for_task(task_path, api_key, "Version check")
 
     if not VERSION_PATTERN.fullmatch(version):

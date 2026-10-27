@@ -28,9 +28,10 @@ jobs:
 
       - id: version
         name: Compare current Roblox version
+        timeout-minutes: 1
         env:
           RBX_API_KEY: ${{ secrets.RBX_API_KEY }}
-        run: python scripts/version_check.py
+        run: python -u scripts/version_check.py
 
       - if: steps.version.outputs.changed == 'true'
         name: Start API page update
