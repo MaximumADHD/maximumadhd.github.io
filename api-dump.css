@@ -197,7 +197,16 @@ span.ChangeListItem {
 	color: #8f8f6f !important;
 }
 
+.notreplicated {
+	font-style: italic;
+}
+
 .child {
+	margin-left: 40px;
+}
+
+div.Class > div,
+div.Enum > div {
 	margin-left: 40px;
 }
 

@@ -1,0 +1,63 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Website: build",
+            "type": "npm",
+            "script": "build",
+            "path": "app",
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "Website: dev server",
+            "type": "process",
+            "command": "node",
+            "args": [
+                "${workspaceFolder}${pathSeparator}app${pathSeparator}node_modules${pathSeparator}vite${pathSeparator}bin${pathSeparator}vite.js",
+                "--host",
+                "127.0.0.1",
+                "--port",
+                "5173",
+                "--strictPort",
+                "--open",
+                "/index.html"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}${pathSeparator}app"
+            },
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "vite",
+                "pattern": {
+                    "regexp": "^$"
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "VITE.*",
+                    "endsPattern": "Local:.*http://127\\.0\\.0\\.1:5173/"
+                }
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "runOptions": {
+                "instanceLimit": 1
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Website: test locally",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Website: tests",
+                "Website: build",
+                "Website: dev server"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
